@@ -154,3 +154,30 @@ genuine TSVF object (soft / non-projective post-selection). Candidate next
 model. Second option: the MERA-style isometry tower (rungs on different
 spaces) — genuinely open, could land non-empty-and-selective or in either
 failure mode.
+
+## 2026-05-20 — QG-via-P_omega gate 1: the MERA isometry tower (Model 1'')
+
+construct_p_omega_mera.py. Rungs on different Hilbert spaces connected by
+coarse-graining isometries that keep each block's low-energy subspace:
+H_0 (256) -> H_1 (64) -> H_2 (16). rho_1 = W_0^dag rho_0 W_0, rho_2 =
+W_1^dag rho_1 W_1 (genuine RG coarse-graining). P_omega = intersection of the
+per-rung corridor projectors pulled back to H_0.
+
+Result: dim(P_omega) = 0 at EVERY band tested, including wide bands. The
+coarse-graining compresses the spectrum hard (rho_0 spans 1.7, rho_2 spans
+0.48); more fundamentally, the isometry keeps the low-ENERGY subspace while
+the corridor is the spectral INTERIOR of the correlation operator -- the
+RG-relevant subspace and the corridor subspace are different objects, so the
+pulled-back corridors do not overlap.
+
+This instantiates the squeeze rather than escaping it: an RG-physical
+isometry (keep low-energy) gives empty; a corridor-aware isometry (keep the
+corridor) would make the coarse corridor the image of the fine one and
+collapse P_omega to P_0 (trivial). Same empty/trivial squeeze.
+
+**Gate 1 status: the hard-projector multi-rung P_omega is obstructed across
+three independent constructions** -- shared-space additive coupling (Model 1),
+shared-space RG coarse-graining (Model 1'), and the isometry tower (Model
+1''). A robust F-12 no-go for the hard projector. The remaining route is a
+SOFT P_omega: a graded operator exp(-beta sum_n H_n), non-zero by
+construction, escaping the squeeze.
