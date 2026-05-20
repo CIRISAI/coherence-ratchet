@@ -265,3 +265,38 @@ grounded via this handle, and the one substrate with real multi-rung data
 shows no distinctive corridor-constraint signature in the cross-rung coupling.
 Untouched: the engineering tier and the within-rung corridor (F-10), which the
 within-rung EPG/FC3 bands here are consistent with.
+
+## 2026-05-20 — P_omega as an open-system steady state (the reframe)
+
+The gate-1 program built P_omega as a projector on a CLOSED Hilbert space and
+hit a robust dead zone. But a corridor cannot exist in a closed system; Piece 2
+(drho/dt = alpha - gammaM) is an open dissipative equation, and the gate-1
+constructions never used it -- only Piece 1 (rho as operator) and Piece 3 (the
+band), statically. The reframe: P_omega is the steady state of an open-system
+(Lindblad) dynamics whose dissipator is gammaM.
+
+experiments/open_system_pomega/construct_pomega_lindblad.py -- 3 rungs x 2 spins
+(dim 64). H = intra-rung Heisenberg + cross-rung ZZ. alpha = per-rung collective
+decay (rigidity drift, rates 0.6/1.0/1.5). gammaM = per-spin bit-flip
+(maintenance), swept. rho_n = |<Z Z>| of each rung in the steady state.
+P_omega = the steady-state density operator rho_ss.
+
+Result:
+- rho_ss exists and is a valid density operator (Hermitian, trace 1, positive,
+  rank ~63-64) at every gammaM. No intersection -> the closed-system dead zone
+  structurally cannot recur.
+- A real gammaM window [~0.05, 0.35] puts all three rungs simultaneously in
+  (0.1, 0.43): e.g. gammaM=0.10 -> rho = (0.251, 0.318, 0.343). The three rungs
+  have different drift rates, so this is a genuine overlap, not a symmetry
+  artifact. gammaM -> 0 drives rho_n toward rigidity; large gammaM toward chaos.
+
+Honest scope: steady-state existence is structural (a Lindbladian always has
+one), not a discovered corridor -- the contentful result is the non-empty
+simultaneous-band window, which holds for rungs whose drifts are not too
+disparate. rho_ss is full-rank: the graded object the soft-vs-hard debate
+circled. The reframe uses Piece 2 for the first time in the P_omega
+construction. CAVEAT: a forward dissipative steady state is not a TSVF backward
+post-selection; this reframes the corridor construction, it does not rescue the
+cosmological tier (asymptotic conditioning and Penrose-from-P_omega were built
+on future-boundary post-selection). F-11 stays armed; the open-system steady
+state is the live construction route.
