@@ -181,3 +181,43 @@ shared-space RG coarse-graining (Model 1'), and the isometry tower (Model
 1''). A robust F-12 no-go for the hard projector. The remaining route is a
 SOFT P_omega: a graded operator exp(-beta sum_n H_n), non-zero by
 construction, escaping the squeeze.
+
+## 2026-05-20 — soft-vs-hard P_omega debate (team p-omega-debate)
+
+Three-lens debate on what a soft vs hard P_omega means for reading the data.
+
+- **hard-reading** (p ~ 0.4): keep P_omega a hard projector, accept the F-12
+  no-go honestly. The hard projector is the crisper reading of Piece 7, not
+  the mandated one; exact post-selection and clean Lean are its virtues.
+- **soft-reading** (p ~ 0.6): reformulate as soft exp(-beta sum_n H_n).
+  Faithful to Piece 7's "integral against a measure"; but D1 survives only
+  in graded form (demoted from deriving the Weyl Curvature Hypothesis to
+  favouring it); beta is a new unpinned parameter; non-commuting H_n
+  re-import the multi-rung problem inside the exponent.
+- **data-arbiter** (~0.9): the soft-vs-hard choice is NOT empirically
+  decidable now. The entire empirical record (five substrates, F-10/F-20)
+  is single-rung; soft and hard differ only as descriptions of the
+  multi-rung joint object, which no measured datum touches. The choice is
+  FORMAL.
+
+**Correction surfaced in synthesis.** hard-reading and soft-reading both
+treated "the cross-rung-coupling test" as the decisive UNRUN experiment,
+citing the stale "decisive next test" line in the general.py section above.
+That toy test is NOT unrun -- it is Models 1, 1', 1'', all no-go. The stale
+line is superseded. What is genuinely unrun is the EMPIRICAL cross-rung
+measurement below.
+
+**Decisive measurement (data-arbiter).** Cross-rung mutual information on a
+simultaneously-instrumented two-rung system: hard P_omega predicts a sharp
+spectral edge in the joint constraint, soft predicts a graded exponential
+tail. Cheapest instance -- re-analyse the existing Drosophila dual-colour
+EPG+FC3 data (Ishida 2025) for I(EPG; FC3). The paper currently reports only
+the two INDEPENDENT within-rung values from that dataset; the cross-rung MI
+is the first empirical purchase on the multi-rung object.
+
+**Paper corrections owed (data-arbiter).** (1) F-11 is published as a
+conditional ("on a documented no-go") -- the no-go is now documented across
+three constructions; book F-11 as fired for the hard projector. (2) Paper
+section 6.1 still describes the hard projector ("well-defined projection
+rather than set-theoretic intersection") -- the construction that failed.
+Flagged for the author; not auto-applied.
