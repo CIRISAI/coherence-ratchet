@@ -221,3 +221,47 @@ three constructions; book F-11 as fired for the hard projector. (2) Paper
 section 6.1 still describes the hard projector ("well-defined projection
 rather than set-theoretic intersection") -- the construction that failed.
 Flagged for the author; not auto-applied.
+
+## 2026-05-20 — F-11 status check + soft-vs-hard empirical discriminator
+
+**F-11 is NOT fired.** Paper line 461: F-11's trigger is "documented no-go on
+formal P_omega operator construction." Paper line 473 (F-17) makes the
+P_omega no-go matter only "without an alternative TSVF-compatible operator
+emerging." What is documented is a no-go on the HARD-PROJECTOR construction
+specifically; the soft P_omega (exp(-beta sum H_n)) is an un-refuted
+TSVF-compatible alternative. data-arbiter's "book F-11 as fired" was
+overstated. What is owed: paper line 345's "well-defined projection" framing
+should record that the projection route is obstructed; F-11 stays armed and
+is now sharpened -- it fires if the soft route also fails.
+
+**Soft-vs-hard empirical discriminator -- run, inconclusive.** data-arbiter
+proposed: the SHAPE of the cross-rung coupling distribution in a real
+two-rung system (sharp edge => hard P_omega; graded exponential tail => soft).
+The autonomous loop's v19_biology agent had already fetched the real data
+(Ishida et al 2025, Cell; same-fly simultaneous dual-color EPG+FC3 imaging;
+Zenodo 17555687; 7 recordings / 4 flies) and already run a cross-rung test --
+v19's PRIMARY cross-rung prediction FAILED (pre-registered: no state-dependent
+shift). v19 did not characterise the distribution shape.
+
+experiments/cross_rung_shape/analyze_cross_rung_shape.py computes it on the
+real v19 data (windowed rho, 30 s windows, 846 windows pooled):
+- cross-rung rho_EF: median 0.194, p99 0.364, max 0.416; 0/846 windows exceed
+  0.43. Upper tail: Gaussian fit R^2 0.983 BEATS exponential R^2 0.933; cliff
+  ratio 0.31 (no hard edge).
+- within-EPG rho ~0.38 (28% of windows > 0.43), within-FC3 ~0.23 -- both in
+  corridor-like bands (consistent with F-10).
+
+Reading: the cross-rung coupling distribution is Gaussian-like -- it shows
+NEITHER the hard-P_omega signature (a cliff) NOR the soft-P_omega signature
+(an exponential tail). It is the generic null: a bounded correlation statistic
+fluctuating around its mean. The discriminator does not distinguish soft from
+hard.
+
+**Bottom line.** The soft-vs-hard P_omega choice remains FORMAL -- now not
+merely "unmeasured" but "the proposed empirical proxy was measured and does
+not discriminate." The QG-via-P_omega line is stuck at gate 1: the hard
+projector is obstructed (3 models), the soft alternative cannot be empirically
+grounded via this handle, and the one substrate with real multi-rung data
+shows no distinctive corridor-constraint signature in the cross-rung coupling.
+Untouched: the engineering tier and the within-rung corridor (F-10), which the
+within-rung EPG/FC3 bands here are consistent with.
