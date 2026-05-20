@@ -56,10 +56,53 @@ constructed and verified. The open problem is now sharper and smaller than
   configuration space it acts on at cosmological scale is not built. This is
   the genuine remaining frontier.
 
-## Next
+## 2026-05-20 — P_omega off the SU(2) toy (construct_p_omega_general.py)
 
-Apply the identical construction to the CMB 2-sphere mode space — rung =
-cosmological 2-sphere, constituents = spherical-harmonic modes, rho = a
-correlation operator on the a_lm coefficients, P_omega = spectral projection
-onto the corridor band. That makes the CMB temporal-drift direction (F-19)
-computable rather than order-of-magnitude.
+Tested the p-omega-debate team's three findings on a non-SU(2) substrate:
+anisotropic XYZ correlation operators (a != b != c), random independent
+couplings per rung, three RG-nested rungs on one 256-dim space.
+
+- **Non-commutation confirmed.** Anisotropic rungs do not commute
+  (||[rho_a, rho_b]|| ~ 1e-3). The earlier nesting-toy commutativity was an
+  SU(2) Casimir artifact (debate finding 3).
+- **Existence generalizes.** P_omega is constructible for non-commuting
+  rungs via the averaged-projector eigenspace method — the eigenvalue-1
+  space of (sum P_n)/R, exact and one-shot, valid for non-commuting
+  projectors. Halperin alternating projections are the textbook route but
+  converge impractically slowly here (20000 iterations, residual still
+  1e-6): a numerical-method fact, not a no-go. F-11 existence holds off the
+  toy.
+- **NEW — the dead zone.** dim(P_omega) vs corridor band half-width w:
+  w <= 0.20 -> 0;  w = 0.30 -> 56 (22%);  w = 0.40 -> 135 (53%);
+  w = 0.49 -> 232 (91%). On a generic non-commuting substrate the three
+  rung-corridor subspaces do not intersect unless each per-rung band is
+  wide (> ~0.6 of the spectral range). Narrow per-rung corridors -> empty
+  intersection -> P_omega = 0, "corridor at every rung simultaneously" is
+  unsatisfiable. Wide bands -> non-empty but generic (> 50%), post-selection
+  non-selective.
+
+**What this threatens, and what it does not.** It does not touch the
+within-rung corridor (F-10, single-rung, empirically supported) or the
+engineering tier. It is a genuine squeeze on the *multi-rung* P_omega: the
+asymptotic-conditioning theorem needs P_omega both non-empty and selective,
+and on a generic substrate you do not get both.
+
+**Decisive next test.** The toy used rungs in *generic relative position* —
+independent random couplings, no cross-rung correlation. Piece 6 of the
+framework asserts the opposite: adjacent rungs are coupled, cross-rung tau
+in its own corridor. Cross-rung coupling is the hypothesis that rungs are
+NOT in generic position — the candidate mechanism for making narrow per-rung
+corridor subspaces intersect. Next experiment: introduce cross-rung coupling
+(correlated / shared coupling structure) and measure whether the dead zone
+shrinks or closes. If it does, Piece 6's tau-coupling becomes load-bearing
+and motivated. If it does not, the multi-rung P_omega is in genuine trouble.
+
+## Later
+
+Apply the construction to the CMB 2-sphere mode space — rung = cosmological
+2-sphere, constituents = spherical-harmonic modes, rho = a correlation
+operator on the a_lm coefficients, P_omega = spectral projection onto the
+corridor band. Makes the CMB temporal-drift direction (F-19) computable
+rather than order-of-magnitude. Gated behind the cross-rung-coupling test:
+a CMB P_omega built with an uncalibrated band reproduces the dead-zone /
+generic-zone ambiguity at cosmological scale.
