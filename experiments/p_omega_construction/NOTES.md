@@ -106,3 +106,51 @@ corridor band. Makes the CMB temporal-drift direction (F-19) computable
 rather than order-of-magnitude. Gated behind the cross-rung-coupling test:
 a CMB P_omega built with an uncalibrated band reproduces the dead-zone /
 generic-zone ambiguity at cosmological scale.
+
+## 2026-05-20 — QG-via-P_omega, gate 1: the dead zone is robust
+
+The QG line takes "QG is a cross-rung interaction" and asks whether the
+cross-rung structure makes the multi-rung P_omega viable. Gate 1 — close the
+narrow-band dead zone — was tested two ways.
+
+- **Model 1 (construct_p_omega_coupled.py) — additive cross-rung coupling.**
+  rho_n(g) = intra_n + g * (nearest-neighbour cross-rung terms). Sweep g x
+  band width. Result: at narrow bands (half-width <= 0.15) dim(P_omega) = 0
+  for every g up to 1.5. Coupling aligned the rungs slightly (commutator
+  4.7e-3 -> 2.5e-3) and lifted mid-band occupancy, but did not close the
+  narrow-band dead zone.
+- **Model 1' (construct_p_omega_rg.py) — rungs as RG coarse-grainings.** All
+  rungs share an RG-inherited coupling; a flow parameter measures distance
+  from the RG fixed point. Result: even at the fixed point (flow = 0)
+  dim(P_omega) = 0 for half-width <= 0.15. The flow barely moved the
+  commutator — rung misalignment is driven by group/coarse-graining
+  STRUCTURE, not coupling values.
+
+**The no-go is robust and scale-free.** P_omega as a hard-projector
+intersection of per-rung corridor subspaces: three narrow subspaces of
+dimension d_n in a D-dim space, in generic position, intersect in dimension
+max(0, sum d_n - (R-1)D). For narrow bands d_n/D is small, so the
+intersection is generically empty — and this gets worse, not better, at
+higher dimension. Not a small-toy artifact.
+
+**The squeeze.** The hard-projector multi-rung P_omega is caught: independent
+rungs -> empty intersection (dead zone); rungs nested so the coarse corridor
+is by construction the image of the fine corridor -> non-empty but P_omega
+collapses to the finest-rung projector, the "every rung" structure doing no
+work (trivial). Empty or trivial.
+
+**What it touches.** Not the within-rung corridor (F-10, single-rung,
+empirically supported) or the engineering tier. It squeezes specifically the
+hard-projector multi-rung P_omega — the object D1 (Penrose past) and the
+asymptotic-conditioning theorem post-select through. F-12 territory: a
+documented obstruction in the universal-scale construction.
+
+**Reformulation, not dead end.** Piece 7 writes P_omega as "integral of
+|config><config| dconfig" — an integral against a MEASURE, naturally graded,
+not a hard projector. A soft P_omega — e.g. exp(-beta * sum_n H_n) with H_n
+penalising distance from rung n's corridor — is non-zero by construction,
+selective without being empty, escapes the empty/trivial squeeze, and is a
+genuine TSVF object (soft / non-projective post-selection). Candidate next
+model. Second option: the MERA-style isometry tower (rungs on different
+spaces) — genuinely open, could land non-empty-and-selective or in either
+failure mode.
