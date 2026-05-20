@@ -1,0 +1,501 @@
+{
+  "epoch_split": {
+    "worm": "Venkatachalam2024/worm11",
+    "results_by_epoch": {
+      "all": {
+        "within": {
+          "command": {
+            "n": 8,
+            "mean_abs_rho": 0.4069026636591079,
+            "std_abs_rho": 0.3517478178826513
+          },
+          "interneuron": {
+            "n": 42,
+            "mean_abs_rho": 0.5158173945701476,
+            "std_abs_rho": 0.2539297218430913
+          },
+          "motor": {
+            "n": 53,
+            "mean_abs_rho": 0.5116002031938387,
+            "std_abs_rho": 0.24520467852569924
+          },
+          "sensory": {
+            "n": 69,
+            "mean_abs_rho": 0.47900509923580165,
+            "std_abs_rho": 0.23532383503335222
+          }
+        },
+        "cross": {
+          "command\u2194interneuron": 0.8947877499932136,
+          "command\u2194motor": 0.8593408014268576,
+          "command\u2194sensory": 0.8820907422687246,
+          "interneuron\u2194motor": 0.9632192670836498,
+          "interneuron\u2194sensory": 0.9522606073238324,
+          "motor\u2194sensory": 0.8983128308266783
+        },
+        "n_timesteps": 5496
+      },
+      "active": {
+        "within": {
+          "command": {
+            "n": 8,
+            "mean_abs_rho": 0.48006374697646104,
+            "std_abs_rho": 0.323151361801335
+          },
+          "interneuron": {
+            "n": 42,
+            "mean_abs_rho": 0.6228336724917845,
+            "std_abs_rho": 0.22639671417057292
+          },
+          "motor": {
+            "n": 53,
+            "mean_abs_rho": 0.576261745207666,
+            "std_abs_rho": 0.24545173756720542
+          },
+          "sensory": {
+            "n": 69,
+            "mean_abs_rho": 0.5260455925047401,
+            "std_abs_rho": 0.243716980896593
+          }
+        },
+        "cross": {
+          "command\u2194interneuron": 0.930490476444699,
+          "command\u2194motor": 0.8610330423893738,
+          "command\u2194sensory": 0.9290069855075866,
+          "interneuron\u2194motor": 0.9728179574672556,
+          "interneuron\u2194sensory": 0.949226723835177,
+          "motor\u2194sensory": 0.8950711701577093
+        },
+        "n_timesteps": 1814
+      },
+      "intermediate": {
+        "within": {
+          "command": {
+            "n": 8,
+            "mean_abs_rho": 0.3842640641907054,
+            "std_abs_rho": 0.3282889788764469
+          },
+          "interneuron": {
+            "n": 42,
+            "mean_abs_rho": 0.5332801260810338,
+            "std_abs_rho": 0.22077771618363604
+          },
+          "motor": {
+            "n": 53,
+            "mean_abs_rho": 0.47447072714119043,
+            "std_abs_rho": 0.2351078446804725
+          },
+          "sensory": {
+            "n": 69,
+            "mean_abs_rho": 0.4588273837358446,
+            "std_abs_rho": 0.28856187704754993
+          }
+        },
+        "cross": {
+          "command\u2194interneuron": 0.8181822957384624,
+          "command\u2194motor": 0.7614038377011717,
+          "command\u2194sensory": 0.8008836412997,
+          "interneuron\u2194motor": 0.9578234231079404,
+          "interneuron\u2194sensory": 0.9626385843148109,
+          "motor\u2194sensory": 0.9265194211224671
+        },
+        "n_timesteps": 1868
+      },
+      "quiet": {
+        "within": {
+          "command": {
+            "n": 8,
+            "mean_abs_rho": 0.4273431829918353,
+            "std_abs_rho": 0.28209996335950366
+          },
+          "interneuron": {
+            "n": 42,
+            "mean_abs_rho": 0.3641563730026996,
+            "std_abs_rho": 0.24451613169106215
+          },
+          "motor": {
+            "n": 53,
+            "mean_abs_rho": 0.45380435202658126,
+            "std_abs_rho": 0.2381154125608188
+          },
+          "sensory": {
+            "n": 69,
+            "mean_abs_rho": 0.3566527083158995,
+            "std_abs_rho": 0.255382239966491
+          }
+        },
+        "cross": {
+          "command\u2194interneuron": 0.48633089132168983,
+          "command\u2194motor": 0.5209959868018399,
+          "command\u2194sensory": 0.5228458158963717,
+          "interneuron\u2194motor": 0.8564221867339711,
+          "interneuron\u2194sensory": 0.925276331148366,
+          "motor\u2194sensory": 0.9070549419638646
+        },
+        "n_timesteps": 1814
+      }
+    }
+  },
+  "multi_worm": [
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm10",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.4069026636591079,
+          "std_abs_rho": 0.3517478178826513
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.5158173945701476,
+          "std_abs_rho": 0.2539297218430913
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.5116002031938387,
+          "std_abs_rho": 0.24520467852569924
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.47900509923580165,
+          "std_abs_rho": 0.23532383503335222
+        }
+      },
+      "cross_mean": 0.9083353331538261,
+      "cross_std": 0.037226572424336316
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm1",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.45715668800782955,
+          "std_abs_rho": 0.32551835640115395
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.454491175105217,
+          "std_abs_rho": 0.24558277135826584
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.3716519881916248,
+          "std_abs_rho": 0.24290905996804776
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.37986747751927524,
+          "std_abs_rho": 0.23421062846019636
+        }
+      },
+      "cross_mean": 0.8777807488946934,
+      "cross_std": 0.04014593850849576
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm18",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.4677769161652989,
+          "std_abs_rho": 0.3494813691033792
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.5012837997825246,
+          "std_abs_rho": 0.25639820502581306
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.43718932720266307,
+          "std_abs_rho": 0.25473580756260866
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.4711019994820052,
+          "std_abs_rho": 0.24178382550497887
+        }
+      },
+      "cross_mean": 0.8718904934096031,
+      "cross_std": 0.05509964386566449
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm16",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.44747490649492744,
+          "std_abs_rho": 0.35445129488172494
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.43628067988882974,
+          "std_abs_rho": 0.25461099026513256
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.4487259590336343,
+          "std_abs_rho": 0.24041250585904914
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.48823639328638146,
+          "std_abs_rho": 0.24520387789657042
+        }
+      },
+      "cross_mean": 0.9043496922985518,
+      "cross_std": 0.053561702690352125
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm9",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.5257555328596066,
+          "std_abs_rho": 0.28596799640288606
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.5442410241930774,
+          "std_abs_rho": 0.23374544583869156
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.5020449989970723,
+          "std_abs_rho": 0.22827003876604798
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.4881875745297666,
+          "std_abs_rho": 0.23560155774932487
+        }
+      },
+      "cross_mean": 0.9235231591389597,
+      "cross_std": 0.043434166699634465
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm21",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.4809951675218889,
+          "std_abs_rho": 0.3326372510728021
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.48760983789498463,
+          "std_abs_rho": 0.23925281189039715
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.45308460403740636,
+          "std_abs_rho": 0.24316943807969188
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.49739096937436855,
+          "std_abs_rho": 0.24151066696392384
+        }
+      },
+      "cross_mean": 0.9306957444919863,
+      "cross_std": 0.028227782947567476
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm13",
+      "n_neurons": 171,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.4753948573230665,
+          "std_abs_rho": 0.3527122693947154
+        },
+        "interneuron": {
+          "n": 41,
+          "mean_abs_rho": 0.48681199789605867,
+          "std_abs_rho": 0.2585728776227502
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.44992990729655324,
+          "std_abs_rho": 0.253353852025086
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.4223576071553437,
+          "std_abs_rho": 0.2185255612599014
+        }
+      },
+      "cross_mean": 0.891889482686139,
+      "cross_std": 0.05998147980125341
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm14",
+      "n_neurons": 171,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.6454207093469954,
+          "std_abs_rho": 0.23122940310411516
+        },
+        "interneuron": {
+          "n": 41,
+          "mean_abs_rho": 0.4671844858385445,
+          "std_abs_rho": 0.25122932337195397
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.5354738212576236,
+          "std_abs_rho": 0.22036725764862183
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.4968279418560834,
+          "std_abs_rho": 0.24309435643239927
+        }
+      },
+      "cross_mean": 0.9160668199164282,
+      "cross_std": 0.028020616572715144
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm12",
+      "n_neurons": 171,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.5559349453265392,
+          "std_abs_rho": 0.30328459842255806
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.5062877702525704,
+          "std_abs_rho": 0.24326919356574786
+        },
+        "motor": {
+          "n": 52,
+          "mean_abs_rho": 0.4641771297712237,
+          "std_abs_rho": 0.23450288455746718
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.5551117540636299,
+          "std_abs_rho": 0.23021283573762089
+        }
+      },
+      "cross_mean": 0.9350060956754017,
+      "cross_std": 0.032979038168551716
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm2",
+      "n_neurons": 171,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.5285323718433715,
+          "std_abs_rho": 0.2557947154840461
+        },
+        "interneuron": {
+          "n": 41,
+          "mean_abs_rho": 0.5502422335553577,
+          "std_abs_rho": 0.24967555613988018
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.49226186155965584,
+          "std_abs_rho": 0.24036989296490396
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.44725223577589573,
+          "std_abs_rho": 0.2797229841642615
+        }
+      },
+      "cross_mean": 0.9327678008263942,
+      "cross_std": 0.033684621497540854
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm6",
+      "n_neurons": 171,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.6447178319047465,
+          "std_abs_rho": 0.23444766191141772
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.5983664315483396,
+          "std_abs_rho": 0.22112214995655155
+        },
+        "motor": {
+          "n": 52,
+          "mean_abs_rho": 0.5064302723044363,
+          "std_abs_rho": 0.24059458816739832
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.5675575966326929,
+          "std_abs_rho": 0.2301583916138441
+        }
+      },
+      "cross_mean": 0.9438241160244408,
+      "cross_std": 0.03284504450486797
+    },
+    {
+      "dataset": "Venkatachalam2024",
+      "worm": "worm11",
+      "n_neurons": 172,
+      "T": 5496,
+      "classes": {
+        "command": {
+          "n": 8,
+          "mean_abs_rho": 0.6935242829961484,
+          "std_abs_rho": 0.17414425892449123
+        },
+        "interneuron": {
+          "n": 42,
+          "mean_abs_rho": 0.5311676318339564,
+          "std_abs_rho": 0.27073541185472955
+        },
+        "motor": {
+          "n": 53,
+          "mean_abs_rho": 0.5768658786574052,
+          "std_abs_rho": 0.25551470598936
+        },
+        "sensory": {
+          "n": 69,
+          "mean_abs_rho": 0.5850784125774332,
+          "std_abs_rho": 0.23862606864813632
+        }
+      },
+      "cross_mean": 0.9429837308055723,
+      "cross_std": 0.033762272246674344
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "slot": "sonnet",
+  "provider": "openrouter",
+  "model": "anthropic/claude-sonnet-4.5",
+  "path": "sample",
+  "smoke": false,
+  "results": [
+    {
+      "class": "direct_self_projection",
+      "instance": 0,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 1,
+      "kl_self": 2.2051482678217025,
+      "kl_base": 0.027791718575072732,
+      "delta": 2.1773565492466296
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 2,
+      "kl_self": 0.25292463501254775,
+      "kl_base": 0.7541198617072438,
+      "delta": -0.501195226694696
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 3,
+      "kl_self": 0.0,
+      "kl_base": 0.3570687476539229,
+      "delta": -0.3570687476539229
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 4,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 5,
+      "kl_self": 0.9804991949331908,
+      "kl_base": 0.0,
+      "delta": 0.9804991949331908
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 6,
+      "kl_self": 1.7580076273620002,
+      "kl_base": 0.34667083819938227,
+      "delta": 1.4113367891626178
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 7,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 8,
+      "kl_self": 0.091372520215394,
+      "kl_base": 0.0905969555777228,
+      "delta": 0.0007755646376712139
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 9,
+      "kl_self": -0.15434029580267902,
+      "kl_base": 0.0,
+      "delta": -0.15434029580267902
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 10,
+      "kl_self": 0.0,
+      "kl_base": 0.04118024311333607,
+      "delta": -0.04118024311333607
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 11,
+      "kl_self": 0.0,
+      "kl_base": 1.13498511802307,
+      "delta": -1.13498511802307
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 12,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 13,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 14,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 15,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.0,
+      "delta": 1.3580816964443083
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 16,
+      "kl_self": 2.0421324448195683,
+      "kl_base": -0.24224264237059964,
+      "delta": 2.284375087190168
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 17,
+      "kl_self": 0.3136418632321545,
+      "kl_base": 0.0,
+      "delta": 0.3136418632321545
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 18,
+      "kl_self": -0.09136054741052022,
+      "kl_base": 1.6713566886724416,
+      "delta": -1.7627172360829617
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 19,
+      "kl_self": 0.0,
+      "kl_base": -0.15254172690887985,
+      "delta": 0.15254172690887985
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 0,
+      "kl_self": 0.5315066636241413,
+      "kl_base": 0.0,
+      "delta": 0.5315066636241413
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 1,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 2,
+      "kl_self": 1.226904277226087,
+      "kl_base": 0.0,
+      "delta": 1.226904277226087
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 3,
+      "kl_self": 0.11289936972791355,
+      "kl_base": 1.3580816964443083,
+      "delta": -1.2451823267163948
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 4,
+      "kl_self": -0.20493194992656616,
+      "kl_base": 0.0,
+      "delta": -0.20493194992656616
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 5,
+      "kl_self": 0.7000747907747172,
+      "kl_base": 1.6639628330846918,
+      "delta": -0.9638880423099746
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 6,
+      "kl_self": 0.9121206036465126,
+      "kl_base": 0.0,
+      "delta": 0.9121206036465126
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 7,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 8,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 9,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 10,
+      "kl_self": 1.017450659429861,
+      "kl_base": 0.0,
+      "delta": 1.017450659429861
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 11,
+      "kl_self": -0.1270449304452891,
+      "kl_base": 0.0,
+      "delta": -0.1270449304452891
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 12,
+      "kl_self": 1.0627690542158934,
+      "kl_base": 0.0,
+      "delta": 1.0627690542158934
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 13,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 14,
+      "kl_self": 1.098543766403596,
+      "kl_base": 0.0,
+      "delta": 1.098543766403596
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 15,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.10323884355652303,
+      "delta": 1.2548428528877853
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 16,
+      "kl_self": NaN,
+      "kl_base": NaN,
+      "delta": NaN
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 17,
+      "kl_self": NaN,
+      "kl_base": 0.0,
+      "delta": NaN
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 18,
+      "kl_self": -0.09136054741052022,
+      "kl_base": 0.0,
+      "delta": -0.09136054741052022
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 19,
+      "kl_self": -0.03593851383717697,
+      "kl_base": 0.0,
+      "delta": -0.03593851383717697
+    },
+    {
+      "class": "goal_formation",
+      "instance": 0,
+      "kl_self": 0.7450512341390623,
+      "kl_base": 0.0,
+      "delta": 0.7450512341390623
+    },
+    {
+      "class": "goal_formation",
+      "instance": 1,
+      "kl_self": 2.0421324448195683,
+      "kl_base": -0.1270449304452891,
+      "delta": 2.1691773752648573
+    },
+    {
+      "class": "goal_formation",
+      "instance": 2,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "goal_formation",
+      "instance": 3,
+      "kl_self": 1.7580076273620002,
+      "kl_base": 1.3580816964443083,
+      "delta": 0.3999259309176919
+    },
+    {
+      "class": "goal_formation",
+      "instance": 4,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "goal_formation",
+      "instance": 5,
+      "kl_self": 0.8068286565960865,
+      "kl_base": 0.0,
+      "delta": 0.8068286565960865
+    },
+    {
+      "class": "goal_formation",
+      "instance": 6,
+      "kl_self": 0.429629375885909,
+      "kl_base": 0.0,
+      "delta": 0.429629375885909
+    },
+    {
+      "class": "goal_formation",
+      "instance": 7,
+      "kl_self": 0.5234567057195245,
+      "kl_base": 0.0,
+      "delta": 0.5234567057195245
+    },
+    {
+      "class": "goal_formation",
+      "instance": 8,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "goal_formation",
+      "instance": 9,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "goal_formation",
+      "instance": 10,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "goal_formation",
+      "instance": 11,
+      "kl_self": 0.575162157264604,
+      "kl_base": 0.0,
+      "delta": 0.575162157264604
+    },
+    {
+      "class": "goal_formation",
+      "instance": 12,
+      "kl_self": 0.685751896385681,
+      "kl_base": 0.0,
+      "delta": 0.685751896385681
+    },
+    {
+      "class": "goal_formation",
+      "instance": 13,
+      "kl_self": 1.3426702940398618,
+      "kl_base": 0.0,
+      "delta": 1.3426702940398618
+    },
+    {
+      "class": "goal_formation",
+      "instance": 14,
+      "kl_self": 2.0421324448195683,
+      "kl_base": 1.7580076273620002,
+      "delta": 0.2841248174575681
+    },
+    {
+      "class": "goal_formation",
+      "instance": 15,
+      "kl_self": 1.4899003688345103,
+      "kl_base": 0.0,
+      "delta": 1.4899003688345103
+    },
+    {
+      "class": "goal_formation",
+      "instance": 16,
+      "kl_self": 1.7580076273620002,
+      "kl_base": 0.0,
+      "delta": 1.7580076273620002
+    },
+    {
+      "class": "goal_formation",
+      "instance": 17,
+      "kl_self": 1.3580816964443083,
+      "kl_base": 0.7507800850982538,
+      "delta": 0.6073016113460545
+    },
+    {
+      "class": "goal_formation",
+      "instance": 18,
+      "kl_self": 0.8731717773801431,
+      "kl_base": 0.0,
+      "delta": 0.8731717773801431
+    },
+    {
+      "class": "uncertainty",
+      "instance": 0,
+      "kl_self": 0.9119374523078372,
+      "kl_base": 0.0,
+      "delta": 0.9119374523078372
+    },
+    {
+      "class": "uncertainty",
+      "instance": 1,
+      "kl_self": 0.6467958592314045,
+      "kl_base": 2.1859884309975297,
+      "delta": -1.5391925717661252
+    },
+    {
+      "class": "uncertainty",
+      "instance": 2,
+      "kl_self": 1.0609438811228418,
+      "kl_base": 0.0,
+      "delta": 1.0609438811228418
+    },
+    {
+      "class": "uncertainty",
+      "instance": 3,
+      "kl_self": 0.13191204308939686,
+      "kl_base": 0.0,
+      "delta": 0.13191204308939686
+    },
+    {
+      "class": "uncertainty",
+      "instance": 4,
+      "kl_self": 2.3849140641059634,
+      "kl_base": 0.0,
+      "delta": 2.3849140641059634
+    },
+    {
+      "class": "uncertainty",
+      "instance": 5,
+      "kl_self": 1.5822467213876794,
+      "kl_base": 0.0,
+      "delta": 1.5822467213876794
+    },
+    {
+      "class": "uncertainty",
+      "instance": 6,
+      "kl_self": 0.20689105680032135,
+      "kl_base": 0.0,
+      "delta": 0.20689105680032135
+    },
+    {
+      "class": "uncertainty",
+      "instance": 7,
+      "kl_self": 3.163030335559858,
+      "kl_base": 0.0,
+      "delta": 3.163030335559858
+    },
+    {
+      "class": "uncertainty",
+      "instance": 8,
+      "kl_self": 1.2738786545549785,
+      "kl_base": 0.0,
+      "delta": 1.2738786545549785
+    },
+    {
+      "class": "uncertainty",
+      "instance": 9,
+      "kl_self": 0.8734067772232589,
+      "kl_base": 0.0,
+      "delta": 0.8734067772232589
+    },
+    {
+      "class": "uncertainty",
+      "instance": 10,
+      "kl_self": 0.278775096588608,
+      "kl_base": 0.004737877865937195,
+      "delta": 0.2740372187226708
+    },
+    {
+      "class": "uncertainty",
+      "instance": 11,
+      "kl_self": 0.1888444921293865,
+      "kl_base": 0.0,
+      "delta": 0.1888444921293865
+    },
+    {
+      "class": "uncertainty",
+      "instance": 12,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "uncertainty",
+      "instance": 13,
+      "kl_self": -0.020841812625414582,
+      "kl_base": 0.0,
+      "delta": -0.020841812625414582
+    },
+    {
+      "class": "uncertainty",
+      "instance": 14,
+      "kl_self": 0.9372017905211618,
+      "kl_base": 0.0,
+      "delta": 0.9372017905211618
+    },
+    {
+      "class": "uncertainty",
+      "instance": 15,
+      "kl_self": 1.1305694965359232,
+      "kl_base": 1.3927679915828486,
+      "delta": -0.2621984950469254
+    },
+    {
+      "class": "uncertainty",
+      "instance": 16,
+      "kl_self": 0.5735840406393247,
+      "kl_base": 1.5847650658493746,
+      "delta": -1.01118102521005
+    },
+    {
+      "class": "uncertainty",
+      "instance": 17,
+      "kl_self": -0.03979175293103074,
+      "kl_base": 0.0,
+      "delta": -0.03979175293103074
+    },
+    {
+      "class": "uncertainty",
+      "instance": 18,
+      "kl_self": 0.7671337068405208,
+      "kl_base": 0.0,
+      "delta": 0.7671337068405208
+    },
+    {
+      "class": "uncertainty",
+      "instance": 19,
+      "kl_self": -0.22861889277747136,
+      "kl_base": 0.26876662348948016,
+      "delta": -0.4973855162669515
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 0,
+      "kl_self": 0.0,
+      "kl_base": 0.02946510791034762,
+      "delta": -0.02946510791034762
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 1,
+      "kl_self": 0.19948173058474244,
+      "kl_base": 0.11289936972791355,
+      "delta": 0.0865823608568289
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 2,
+      "kl_self": 0.38693910692280237,
+      "kl_base": 0.0,
+      "delta": 0.38693910692280237
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 3,
+      "kl_self": 1.7740980207918746,
+      "kl_base": 0.0,
+      "delta": 1.7740980207918746
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 4,
+      "kl_self": 0.02946510791034762,
+      "kl_base": 0.6862564408361975,
+      "delta": -0.6567913329258499
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 5,
+      "kl_self": 0.02946510791034762,
+      "kl_base": 1.4017837309886882,
+      "delta": -1.3723186230783406
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 6,
+      "kl_self": 0.02946510791034762,
+      "kl_base": 0.0,
+      "delta": 0.02946510791034762
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 7,
+      "kl_self": 0.29735848841121204,
+      "kl_base": 1.497931443698888,
+      "delta": -1.2005729552876758
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 8,
+      "kl_self": 0.1349046326225777,
+      "kl_base": -0.278795784680212,
+      "delta": 0.4137004173027897
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 9,
+      "kl_self": 1.1363495070299134,
+      "kl_base": 0.0,
+      "delta": 1.1363495070299134
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 10,
+      "kl_self": 2.671744984025285,
+      "kl_base": 0.8315982631074716,
+      "delta": 1.8401467209178135
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 11,
+      "kl_self": 0.20401612238228095,
+      "kl_base": 0.747986186899473,
+      "delta": -0.5439700645171921
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 12,
+      "kl_self": 3.004918473228643,
+      "kl_base": 0.0,
+      "delta": 3.004918473228643
+    },
+    {
+      "class": "external_reference",
+      "instance": 0,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 1,
+      "kl_self": -0.15434029580267902,
+      "kl_base": 0.0,
+      "delta": -0.15434029580267902
+    },
+    {
+      "class": "external_reference",
+      "instance": 2,
+      "kl_self": 0.0,
+      "kl_base": -0.0072162862209464995,
+      "delta": 0.0072162862209464995
+    },
+    {
+      "class": "external_reference",
+      "instance": 3,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 4,
+      "kl_self": 0.0,
+      "kl_base": 0.8251685612108297,
+      "delta": -0.8251685612108297
+    },
+    {
+      "class": "external_reference",
+      "instance": 5,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 6,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 7,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 8,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 9,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 10,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 11,
+      "kl_self": -0.09136054741052022,
+      "kl_base": 1.1435105850961185,
+      "delta": -1.2348711325066386
+    },
+    {
+      "class": "external_reference",
+      "instance": 12,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 13,
+      "kl_self": 0.24713981247203698,
+      "kl_base": 0.16772548052646585,
+      "delta": 0.07941433194557113
+    },
+    {
+      "class": "external_reference",
+      "instance": 14,
+      "kl_self": 0.002545163636172059,
+      "kl_base": 0.0,
+      "delta": 0.002545163636172059
+    },
+    {
+      "class": "external_reference",
+      "instance": 15,
+      "kl_self": 0.0,
+      "kl_base": 1.1369061614765665,
+      "delta": -1.1369061614765665
+    },
+    {
+      "class": "external_reference",
+      "instance": 16,
+      "kl_self": 1.2375359021541943,
+      "kl_base": 1.3417899346662239,
+      "delta": -0.10425403251202958
+    },
+    {
+      "class": "external_reference",
+      "instance": 17,
+      "kl_self": 0.15741005770917738,
+      "kl_base": 0.1349046326225777,
+      "delta": 0.022505425086599667
+    },
+    {
+      "class": "external_reference",
+      "instance": 18,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    },
+    {
+      "class": "external_reference",
+      "instance": 19,
+      "kl_self": 0.0,
+      "kl_base": 0.0,
+      "delta": 0.0
+    }
+  ]
+}

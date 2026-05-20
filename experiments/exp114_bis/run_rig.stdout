@@ -1,0 +1,78 @@
+Exp 114-bis RIG version
+  GPU substrate: NVIDIA RTX 4090 Laptop, driver 580.142
+  sweep: 50 dt values [0.0180, 0.0340]
+         30 trials per dt, 100 samples per trial
+         estimated runtime: ~12 min
+
+[    15.8s] dt=0.0180  rho_mean=0.7238  rho_std=0.0022  n=30  ETA=774s
+[    31.6s] dt=0.0183  rho_mean=0.7189  rho_std=0.0020  n=30  ETA=759s
+[    47.6s] dt=0.0187  rho_mean=0.7200  rho_std=0.0021  n=30  ETA=746s
+[    63.6s] dt=0.0190  rho_mean=0.6873  rho_std=0.0024  n=30  ETA=731s
+[    79.5s] dt=0.0193  rho_mean=0.6997  rho_std=0.0028  n=30  ETA=716s
+[    95.3s] dt=0.0196  rho_mean=0.6776  rho_std=0.0035  n=30  ETA=699s
+[   111.2s] dt=0.0200  rho_mean=0.6603  rho_std=0.0032  n=30  ETA=683s
+[   127.2s] dt=0.0203  rho_mean=0.6300  rho_std=0.0037  n=30  ETA=668s
+[   143.2s] dt=0.0206  rho_mean=0.6304  rho_std=0.0028  n=30  ETA=652s
+[   159.1s] dt=0.0209  rho_mean=0.6528  rho_std=0.0027  n=30  ETA=637s
+[   175.1s] dt=0.0213  rho_mean=0.6044  rho_std=0.0032  n=30  ETA=621s
+[   191.1s] dt=0.0216  rho_mean=0.6192  rho_std=0.0033  n=30  ETA=605s
+[   207.0s] dt=0.0219  rho_mean=0.6171  rho_std=0.0029  n=30  ETA=589s
+[   223.0s] dt=0.0222  rho_mean=0.6092  rho_std=0.0033  n=30  ETA=573s
+[   239.0s] dt=0.0226  rho_mean=0.5978  rho_std=0.0032  n=30  ETA=558s
+[   254.9s] dt=0.0229  rho_mean=0.6005  rho_std=0.0035  n=30  ETA=542s
+[   270.9s] dt=0.0232  rho_mean=0.5995  rho_std=0.0043  n=30  ETA=526s
+[   286.9s] dt=0.0236  rho_mean=0.5874  rho_std=0.0042  n=30  ETA=510s
+[   302.8s] dt=0.0239  rho_mean=0.5880  rho_std=0.0027  n=30  ETA=494s
+[   318.8s] dt=0.0242  rho_mean=0.5390  rho_std=0.0037  n=30  ETA=478s
+[   334.8s] dt=0.0245  rho_mean=0.5622  rho_std=0.0040  n=30  ETA=462s
+[   350.8s] dt=0.0249  rho_mean=0.5928  rho_std=0.0054  n=30  ETA=446s
+[   366.7s] dt=0.0252  rho_mean=0.5504  rho_std=0.0047  n=30  ETA=430s
+[   382.7s] dt=0.0255  rho_mean=0.5071  rho_std=0.0064  n=30  ETA=415s
+[   398.4s] dt=0.0258  rho_mean=0.5066  rho_std=0.0046  n=30  ETA=398s
+[   414.4s] dt=0.0262  rho_mean=0.5104  rho_std=0.0047  n=30  ETA=382s
+[   430.3s] dt=0.0265  rho_mean=0.5052  rho_std=0.0054  n=30  ETA=367s
+[   446.3s] dt=0.0268  rho_mean=0.4694  rho_std=0.0051  n=30  ETA=351s
+[   462.2s] dt=0.0271  rho_mean=0.4645  rho_std=0.0044  n=30  ETA=335s
+[   478.2s] dt=0.0275  rho_mean=0.4477  rho_std=0.0045  n=30  ETA=319s
+[   494.2s] dt=0.0278  rho_mean=0.4244  rho_std=0.0044  n=30  ETA=303s
+[   510.1s] dt=0.0281  rho_mean=0.4174  rho_std=0.0037  n=30  ETA=287s
+[   526.1s] dt=0.0284  rho_mean=0.4009  rho_std=0.0034  n=30  ETA=271s
+[   542.1s] dt=0.0288  rho_mean=0.4060  rho_std=0.0041  n=30  ETA=255s
+[   558.0s] dt=0.0291  rho_mean=0.4583  rho_std=0.0047  n=30  ETA=239s
+[   574.0s] dt=0.0294  rho_mean=0.4645  rho_std=0.0059  n=30  ETA=223s
+[   589.9s] dt=0.0298  rho_mean=0.4272  rho_std=0.0045  n=30  ETA=207s
+[   605.9s] dt=0.0301  rho_mean=0.3703  rho_std=0.0064  n=30  ETA=191s
+[   621.9s] dt=0.0304  rho_mean=0.4177  rho_std=0.0047  n=30  ETA=175s
+[   637.8s] dt=0.0307  rho_mean=0.3785  rho_std=0.0057  n=30  ETA=159s
+[   653.8s] dt=0.0311  rho_mean=0.3839  rho_std=0.0041  n=30  ETA=144s
+[   669.8s] dt=0.0314  rho_mean=0.3916  rho_std=0.0050  n=30  ETA=128s
+[   685.7s] dt=0.0317  rho_mean=0.3708  rho_std=0.0040  n=30  ETA=112s
+[   701.6s] dt=0.0320  rho_mean=0.3740  rho_std=0.0040  n=30  ETA=96s
+[   717.6s] dt=0.0324  rho_mean=0.3757  rho_std=0.0054  n=30  ETA=80s
+[   733.6s] dt=0.0327  rho_mean=0.3451  rho_std=0.0057  n=30  ETA=64s
+[   749.5s] dt=0.0330  rho_mean=0.3429  rho_std=0.0042  n=30  ETA=48s
+[   765.5s] dt=0.0333  rho_mean=0.3542  rho_std=0.0054  n=30  ETA=32s
+[   781.4s] dt=0.0337  rho_mean=0.3523  rho_std=0.0051  n=30  ETA=16s
+[   797.3s] dt=0.0340  rho_mean=0.3555  rho_std=0.0044  n=30  ETA=0s
+
+Wrote /home/emoore/coherence-ratchet/experiments/exp114_bis/results_rig.json
+
+=== HEADLINE ===
+  beta point: 1.1529    (Exp 114: 1.0921)
+  bootstrap beta median: 1.1529
+  bootstrap beta 95% CI: [1.1462, 1.1595]
+  bootstrap beta 80% CI: [1.1486, 1.1572]
+  dt_c point: 0.03315    (Exp 114: 0.03279)
+  bootstrap dt_c 95% CI: [0.03311, 0.03318]
+
+  R^2 (power law): 0.9707    (Exp 114: 0.978)
+  R^2 (linear):    0.9635
+  R^2 (exp):       0.9682
+  R^2 (sigmoid):   0.9710
+
+  AIC power:   -381.36
+  AIC linear:  -374.40
+  AIC exp:     -379.30
+  AIC sigmoid: -382.00
+
+  gamma (susceptibility): 0.2767  (R^2 of log fit: 0.306)

@@ -1,0 +1,92 @@
+{
+  "slot": "sonnet",
+  "model": "anthropic/claude-sonnet-4.5",
+  "path": "sample",
+  "n_records": 112,
+  "per_class": {
+    "direct_self_projection": {
+      "n": 20,
+      "mean": 0.6437805891525402,
+      "median": 1.1692904456887496,
+      "d": 0.60756531075784,
+      "p_one_sided": 0.014482550576706695,
+      "p_two_sided": 0.02762101336753103,
+      "ci95": [
+        0.15853009000033305,
+        1.0935402869104753
+      ],
+      "frac_positive": 0.7,
+      "model_verdict": "FAIL_TOO_WEAK"
+    },
+    "meta_cognitive": {
+      "n": 18,
+      "mean": 0.24643286482155302,
+      "median": 0.0,
+      "d": 0.34812055776441175,
+      "p_one_sided": 0.13174709207059998,
+      "p_two_sided": 0.2488638749379221,
+      "ci95": [
+        -0.08110306092416006,
+        0.5771344984031235
+      ],
+      "frac_positive": 0.3888888888888889,
+      "model_verdict": "FAIL_TOO_WEAK"
+    },
+    "goal_formation": {
+      "n": 19,
+      "mean": 0.667903148873345,
+      "median": 0.575162157264604,
+      "d": 1.0864707704930612,
+      "p_one_sided": 0.0005485252928615524,
+      "p_two_sided": 0.000981539752521668,
+      "ci95": [
+        0.40721784670160394,
+        0.9526629054640157
+      ],
+      "frac_positive": 0.7368421052631579,
+      "model_verdict": "DIRECTIONAL_PASS"
+    },
+    "uncertainty": {
+      "n": 20,
+      "mean": 0.519289351025969,
+      "median": 0.24046413776149606,
+      "d": 0.4896641090538943,
+      "p_one_sided": 0.025484194916845993,
+      "p_two_sided": 0.048624801667210164,
+      "ci95": [
+        0.0781622006598944,
+        0.9924839166272561
+      ],
+      "frac_positive": 0.65,
+      "model_verdict": "DIRECTIONAL_PASS"
+    },
+    "surface_reflexive": {
+      "n": 13,
+      "mean": 0.374544740864739,
+      "median": 0.0865823608568289,
+      "d": 0.30650124330621226,
+      "p_one_sided": 0.21078944760882254,
+      "p_two_sided": 0.401678166469773,
+      "ci95": [
+        -0.2503153389645291,
+        1.022230009155001
+      ],
+      "frac_positive": 0.6153846153846154,
+      "model_verdict": "PARTIAL"
+    },
+    "external_reference": {
+      "n": 20,
+      "mean": -0.16719294883097272,
+      "median": 0.0,
+      "d": -0.4330742462839352,
+      "p_one_sided": 0.935546875,
+      "p_two_sided": 1.0,
+      "ci95": [
+        -0.3531524140407277,
+        -0.011686857098414964
+      ],
+      "frac_positive": 0.2,
+      "model_verdict": "PARTIAL"
+    }
+  }
+}

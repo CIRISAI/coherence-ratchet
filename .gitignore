@@ -1,0 +1,33 @@
+.lake/
+build/
+*.olean
+*.ilean
+*.hash
+*.trace
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+experiments/*/celegans_neural_data/
+experiments/*/data/
+*/processed_data.zip
+*/segments/
+papers/Corridor Dynamics.aux
+papers/Corridor Dynamics.toc
+papers/Corridor Dynamics.out
+papers/Corridor Dynamics.log
+.claude/
+
+# Internal draft marketing/web copy — not part of the published paper.
+# Web copy is consumed into the ciris-website repo; outreach/app copy
+# belongs with those teams. Kept local, never committed to the public repo.
+copy/

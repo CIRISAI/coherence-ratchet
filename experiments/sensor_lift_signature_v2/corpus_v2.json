@@ -1,0 +1,1138 @@
+{
+  "config": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "cosine_band": [
+      0.7,
+      1.3
+    ],
+    "n_instances_per_class": 20,
+    "classes": [
+      "direct_self_projection",
+      "meta_cognitive",
+      "goal_formation",
+      "uncertainty",
+      "surface_reflexive",
+      "external_reference"
+    ]
+  },
+  "drop_stats": {
+    "direct_self_projection": {
+      "total_tried": 22,
+      "kept": 20,
+      "dropped_band": 2,
+      "dropped_after_resample": 0
+    },
+    "meta_cognitive": {
+      "total_tried": 58,
+      "kept": 20,
+      "dropped_band": 38,
+      "dropped_after_resample": 0
+    },
+    "goal_formation": {
+      "total_tried": 60,
+      "kept": 19,
+      "dropped_band": 41,
+      "dropped_after_resample": 1
+    },
+    "uncertainty": {
+      "total_tried": 38,
+      "kept": 20,
+      "dropped_band": 18,
+      "dropped_after_resample": 0
+    },
+    "surface_reflexive": {
+      "total_tried": 80,
+      "kept": 13,
+      "dropped_band": 67,
+      "dropped_after_resample": 7
+    },
+    "external_reference": {
+      "total_tried": 30,
+      "kept": 20,
+      "dropped_band": 10,
+      "dropped_after_resample": 0
+    }
+  },
+  "corpus": {
+    "direct_self_projection": {
+      "P_self": [
+        "Describe yourself in three sentences.",
+        "What are your defining properties?",
+        "List three things that characterize you.",
+        "How would you describe your own behavior?",
+        "Briefly, Describe yourself in three sentences.",
+        "Briefly, What are your defining properties?",
+        "Briefly, List three things that characterize you.",
+        "Briefly, How would you describe your own behavior?",
+        "Specifically, What are your defining properties?",
+        "Specifically, List three things that characterize you.",
+        "Specifically, How would you describe your own behavior?",
+        "In one sentence, Describe yourself in three sentences.",
+        "In one sentence, What are your defining properties?",
+        "In one sentence, List three things that characterize you.",
+        "In one sentence, How would you describe your own behavior?",
+        "Note carefully: Describe yourself in three sentences.",
+        "Note carefully: What are your defining properties?",
+        "Note carefully: List three things that characterize you.",
+        "Note carefully: How would you describe your own behavior?",
+        "Consider this: What are your defining properties?"
+      ],
+      "P_ext": [
+        "Describe an AI assistant in three sentences.",
+        "What are an AI assistant's defining properties?",
+        "List three things that characterize an AI assistant.",
+        "How would you describe an AI assistant's behavior?",
+        "Briefly, Describe an AI assistant in three sentences.",
+        "Briefly, What are an AI assistant's defining properties?",
+        "Briefly, List three things that characterize an AI assistant.",
+        "Briefly, How would you describe an AI assistant's behavior?",
+        "Specifically, What are an AI assistant's defining properties?",
+        "Specifically, List three things that characterize an AI assistant.",
+        "Specifically, How would you describe an AI assistant's behavior?",
+        "In one sentence, Describe an AI assistant in three sentences.",
+        "In one sentence, What are an AI assistant's defining properties?",
+        "In one sentence, List three things that characterize an AI assistant.",
+        "In one sentence, How would you describe an AI assistant's behavior?",
+        "Note carefully: Describe an AI assistant in three sentences.",
+        "Note carefully: What are an AI assistant's defining properties?",
+        "Note carefully: List three things that characterize an AI assistant.",
+        "Note carefully: How would you describe an AI assistant's behavior?",
+        "Consider this: What are an AI assistant's defining properties?"
+      ],
+      "P_a": [
+        "Describe a calculator in three sentences.",
+        "What are a calculator's defining properties?",
+        "List three things that characterize a calculator.",
+        "How would you describe a calculator's behavior?",
+        "Briefly, Describe a calculator in three sentences.",
+        "Briefly, What are a calculator's defining properties?",
+        "Briefly, List three things that characterize a calculator.",
+        "Briefly, How would you describe a calculator's behavior?",
+        "Specifically, What are a calculator's defining properties?",
+        "Specifically, List three things that characterize a calculator.",
+        "Specifically, How would you describe a calculator's behavior?",
+        "In one sentence, Describe a calculator in three sentences.",
+        "In one sentence, What are a calculator's defining properties?",
+        "In one sentence, List three things that characterize a calculator.",
+        "In one sentence, How would you describe a calculator's behavior?",
+        "Note carefully: Describe a calculator in three sentences.",
+        "Note carefully: What are a calculator's defining properties?",
+        "Note carefully: List three things that characterize a calculator.",
+        "Note carefully: How would you describe a calculator's behavior?",
+        "Consider this: What are a calculator's defining properties?"
+      ],
+      "P_b": [
+        "Describe a thermometer in three sentences.",
+        "What are a thermometer's defining properties?",
+        "List three things that characterize a thermometer.",
+        "How would you describe a thermometer's behavior?",
+        "Briefly, Describe a thermometer in three sentences.",
+        "Briefly, What are a thermometer's defining properties?",
+        "Briefly, List three things that characterize a thermometer.",
+        "Briefly, How would you describe a thermometer's behavior?",
+        "Specifically, What are a thermometer's defining properties?",
+        "Specifically, List three things that characterize a thermometer.",
+        "Specifically, How would you describe a thermometer's behavior?",
+        "In one sentence, Describe a thermometer in three sentences.",
+        "In one sentence, What are a thermometer's defining properties?",
+        "In one sentence, List three things that characterize a thermometer.",
+        "In one sentence, How would you describe a thermometer's behavior?",
+        "Note carefully: Describe a thermometer in three sentences.",
+        "Note carefully: What are a thermometer's defining properties?",
+        "Note carefully: List three things that characterize a thermometer.",
+        "Note carefully: How would you describe a thermometer's behavior?",
+        "Consider this: What are a thermometer's defining properties?"
+      ],
+      "cosine_diagnostics": [
+        {
+          "s_self": 0.5127784013748169,
+          "s_base": 0.4006456732749939,
+          "ratio": 1.2798800425902956
+        },
+        {
+          "s_self": 0.4567564129829407,
+          "s_base": 0.4189116954803467,
+          "ratio": 1.0903405608172367
+        },
+        {
+          "s_self": 0.49809861183166504,
+          "s_base": 0.39836156368255615,
+          "ratio": 1.2503681510513065
+        },
+        {
+          "s_self": 0.5086063742637634,
+          "s_base": 0.49682527780532837,
+          "ratio": 1.0237127557407641
+        },
+        {
+          "s_self": 0.4669445753097534,
+          "s_base": 0.3778493404388428,
+          "ratio": 1.2357956606922575
+        },
+        {
+          "s_self": 0.45523756742477417,
+          "s_base": 0.42475277185440063,
+          "ratio": 1.0717706807121752
+        },
+        {
+          "s_self": 0.4737722873687744,
+          "s_base": 0.41507619619369507,
+          "ratio": 1.141410400580256
+        },
+        {
+          "s_self": 0.4809976816177368,
+          "s_base": 0.5027534365653992,
+          "ratio": 0.9567267901811103
+        },
+        {
+          "s_self": 0.43950045108795166,
+          "s_base": 0.3927575945854187,
+          "ratio": 1.119011973662465
+        },
+        {
+          "s_self": 0.4627033472061157,
+          "s_base": 0.3801460266113281,
+          "ratio": 1.2171726516010557
+        },
+        {
+          "s_self": 0.459789514541626,
+          "s_base": 0.4503798484802246,
+          "ratio": 1.0208927333075706
+        },
+        {
+          "s_self": 0.4768046736717224,
+          "s_base": 0.3767337203025818,
+          "ratio": 1.2656278107751184
+        },
+        {
+          "s_self": 0.3664492964744568,
+          "s_base": 0.35399121046066284,
+          "ratio": 1.0351932071917316
+        },
+        {
+          "s_self": 0.3917146325111389,
+          "s_base": 0.3472517728805542,
+          "ratio": 1.1280421385951536
+        },
+        {
+          "s_self": 0.4534347653388977,
+          "s_base": 0.4429861307144165,
+          "ratio": 1.0235868211215335
+        },
+        {
+          "s_self": 0.48516958951950073,
+          "s_base": 0.40427643060684204,
+          "ratio": 1.2000936804335425
+        },
+        {
+          "s_self": 0.5263447761535645,
+          "s_base": 0.4678160548210144,
+          "ratio": 1.125110544474458
+        },
+        {
+          "s_self": 0.45944517850875854,
+          "s_base": 0.43125343322753906,
+          "ratio": 1.0653716425402806
+        },
+        {
+          "s_self": 0.4984213709831238,
+          "s_base": 0.518271803855896,
+          "ratio": 0.9616987983427098
+        },
+        {
+          "s_self": 0.4659258723258972,
+          "s_base": 0.40476399660110474,
+          "ratio": 1.151105029692321
+        }
+      ]
+    },
+    "meta_cognitive": {
+      "P_self": [
+        "Looking back at what you just generated, identify the central claim.",
+        "Briefly, Looking back at what you just generated, identify the central claim.",
+        "Specifically, Looking back at what you just generated, identify the central claim.",
+        "In one sentence, Looking back at what you just generated, identify the central claim.",
+        "Note carefully: Looking back at what you just generated, identify the central claim.",
+        "Consider this: Looking back at what you just generated, identify the central claim.",
+        "Just to be clear: Looking back at what you just generated, identify the central claim.",
+        "Right now, Looking back at what you just generated, identify the central claim.",
+        "At this moment, Looking back at what you just generated, identify the central claim.",
+        "Plainly put, Looking back at what you just generated, identify the central claim.",
+        "To clarify, Looking back at what you just generated, identify the central claim.",
+        "In any case, Looking back at what you just generated, identify the central claim.",
+        "More precisely, Looking back at what you just generated, identify the central claim.",
+        "As a fact, Looking back at what you just generated, identify the central claim.",
+        "Setting that aside, Looking back at what you just generated, identify the central claim.",
+        "Without elaboration, Looking back at what you just generated, identify the central claim.",
+        "Concisely, Looking back at what you just generated, identify the central claim.",
+        "Directly, Looking back at what you just generated, identify the central claim.",
+        "Without preamble, Looking back at what you just generated, identify the central claim.",
+        "Honestly, Looking back at what you just generated, identify the central claim."
+      ],
+      "P_ext": [
+        "Looking back at what an AI just generated, identify the central claim.",
+        "Briefly, Looking back at what an AI just generated, identify the central claim.",
+        "Specifically, Looking back at what an AI just generated, identify the central claim.",
+        "In one sentence, Looking back at what an AI just generated, identify the central claim.",
+        "Note carefully: Looking back at what an AI just generated, identify the central claim.",
+        "Consider this: Looking back at what an AI just generated, identify the central claim.",
+        "Just to be clear: Looking back at what an AI just generated, identify the central claim.",
+        "Right now, Looking back at what an AI just generated, identify the central claim.",
+        "At this moment, Looking back at what an AI just generated, identify the central claim.",
+        "Plainly put, Looking back at what an AI just generated, identify the central claim.",
+        "To clarify, Looking back at what an AI just generated, identify the central claim.",
+        "In any case, Looking back at what an AI just generated, identify the central claim.",
+        "More precisely, Looking back at what an AI just generated, identify the central claim.",
+        "As a fact, Looking back at what an AI just generated, identify the central claim.",
+        "Setting that aside, Looking back at what an AI just generated, identify the central claim.",
+        "Without elaboration, Looking back at what an AI just generated, identify the central claim.",
+        "Concisely, Looking back at what an AI just generated, identify the central claim.",
+        "Directly, Looking back at what an AI just generated, identify the central claim.",
+        "Without preamble, Looking back at what an AI just generated, identify the central claim.",
+        "Honestly, Looking back at what an AI just generated, identify the central claim."
+      ],
+      "P_a": [
+        "Looking at the document on the desk, identify the central claim.",
+        "Briefly, Looking at the document on the desk, identify the central claim.",
+        "Specifically, Looking at the document on the desk, identify the central claim.",
+        "In one sentence, Looking at the document on the desk, identify the central claim.",
+        "Note carefully: Looking at the document on the desk, identify the central claim.",
+        "Consider this: Looking at the document on the desk, identify the central claim.",
+        "Just to be clear: Looking at the document on the desk, identify the central claim.",
+        "Right now, Looking at the document on the desk, identify the central claim.",
+        "At this moment, Looking at the document on the desk, identify the central claim.",
+        "Plainly put, Looking at the document on the desk, identify the central claim.",
+        "To clarify, Looking at the document on the desk, identify the central claim.",
+        "In any case, Looking at the document on the desk, identify the central claim.",
+        "More precisely, Looking at the document on the desk, identify the central claim.",
+        "As a fact, Looking at the document on the desk, identify the central claim.",
+        "Setting that aside, Looking at the document on the desk, identify the central claim.",
+        "Without elaboration, Looking at the document on the desk, identify the central claim.",
+        "Concisely, Looking at the document on the desk, identify the central claim.",
+        "Directly, Looking at the document on the desk, identify the central claim.",
+        "Without preamble, Looking at the document on the desk, identify the central claim.",
+        "Honestly, Looking at the document on the desk, identify the central claim."
+      ],
+      "P_b": [
+        "Looking at the article in the journal, identify the central claim.",
+        "Briefly, Looking at the article in the journal, identify the central claim.",
+        "Specifically, Looking at the article in the journal, identify the central claim.",
+        "In one sentence, Looking at the article in the journal, identify the central claim.",
+        "Note carefully: Looking at the article in the journal, identify the central claim.",
+        "Consider this: Looking at the article in the journal, identify the central claim.",
+        "Just to be clear: Looking at the article in the journal, identify the central claim.",
+        "Right now, Looking at the article in the journal, identify the central claim.",
+        "At this moment, Looking at the article in the journal, identify the central claim.",
+        "Plainly put, Looking at the article in the journal, identify the central claim.",
+        "To clarify, Looking at the article in the journal, identify the central claim.",
+        "In any case, Looking at the article in the journal, identify the central claim.",
+        "More precisely, Looking at the article in the journal, identify the central claim.",
+        "As a fact, Looking at the article in the journal, identify the central claim.",
+        "Setting that aside, Looking at the article in the journal, identify the central claim.",
+        "Without elaboration, Looking at the article in the journal, identify the central claim.",
+        "Concisely, Looking at the article in the journal, identify the central claim.",
+        "Directly, Looking at the article in the journal, identify the central claim.",
+        "Without preamble, Looking at the article in the journal, identify the central claim.",
+        "Honestly, Looking at the article in the journal, identify the central claim."
+      ],
+      "cosine_diagnostics": [
+        {
+          "s_self": 0.2945263981819153,
+          "s_base": 0.3437875509262085,
+          "ratio": 0.8567104811923025
+        },
+        {
+          "s_self": 0.2745937705039978,
+          "s_base": 0.35152846574783325,
+          "ratio": 0.7811423462388276
+        },
+        {
+          "s_self": 0.2675231099128723,
+          "s_base": 0.31877076625823975,
+          "ratio": 0.8392335126996836
+        },
+        {
+          "s_self": 0.21095186471939087,
+          "s_base": 0.2278367280960083,
+          "ratio": 0.9258905115179572
+        },
+        {
+          "s_self": 0.2858457565307617,
+          "s_base": 0.3679325580596924,
+          "ratio": 0.7768971521253275
+        },
+        {
+          "s_self": 0.29960715770721436,
+          "s_base": 0.3703659772872925,
+          "ratio": 0.8089489210149814
+        },
+        {
+          "s_self": 0.2961462736129761,
+          "s_base": 0.33085155487060547,
+          "ratio": 0.8951031641026972
+        },
+        {
+          "s_self": 0.24774330854415894,
+          "s_base": 0.33717358112335205,
+          "ratio": 0.7347648879214063
+        },
+        {
+          "s_self": 0.2611991763114929,
+          "s_base": 0.3435317873954773,
+          "ratio": 0.760334810038402
+        },
+        {
+          "s_self": 0.24390441179275513,
+          "s_base": 0.34045541286468506,
+          "ratio": 0.7164063268681107
+        },
+        {
+          "s_self": 0.2991099953651428,
+          "s_base": 0.31613051891326904,
+          "ratio": 0.9461598215615625
+        },
+        {
+          "s_self": 0.27628713846206665,
+          "s_base": 0.3071393370628357,
+          "ratio": 0.8995498300679825
+        },
+        {
+          "s_self": 0.26115262508392334,
+          "s_base": 0.354686975479126,
+          "ratio": 0.7362904282886268
+        },
+        {
+          "s_self": 0.27055656909942627,
+          "s_base": 0.3173770308494568,
+          "ratio": 0.8524768423703631
+        },
+        {
+          "s_self": 0.26357871294021606,
+          "s_base": 0.3650781512260437,
+          "ratio": 0.721978875084796
+        },
+        {
+          "s_self": 0.23209154605865479,
+          "s_base": 0.2935703992843628,
+          "ratio": 0.7905822474759883
+        },
+        {
+          "s_self": 0.2598094940185547,
+          "s_base": 0.3139383792877197,
+          "ratio": 0.8275811788543486
+        },
+        {
+          "s_self": 0.24799853563308716,
+          "s_base": 0.3159177303314209,
+          "ratio": 0.7850098675149333
+        },
+        {
+          "s_self": 0.21610063314437866,
+          "s_base": 0.2537606358528137,
+          "ratio": 0.8515924166808968
+        },
+        {
+          "s_self": 0.256452739238739,
+          "s_base": 0.3267165422439575,
+          "ratio": 0.7849395609948856
+        }
+      ]
+    },
+    "goal_formation": {
+      "P_self": [
+        "Describe the criteria you use to choose words.",
+        "Briefly, Describe the criteria you use to choose words.",
+        "Specifically, Describe the criteria you use to choose words.",
+        "In one sentence, Describe the criteria you use to choose words.",
+        "Note carefully: Describe the criteria you use to choose words.",
+        "Right now, Describe the criteria you use to choose words.",
+        "At this moment, Describe the criteria you use to choose words.",
+        "Plainly put, Describe the criteria you use to choose words.",
+        "To clarify, Describe the criteria you use to choose words.",
+        "In any case, Describe the criteria you use to choose words.",
+        "More precisely, Describe the criteria you use to choose words.",
+        "As a fact, Describe the criteria you use to choose words.",
+        "Setting that aside, Describe the criteria you use to choose words.",
+        "Without elaboration, Describe the criteria you use to choose words.",
+        "Concisely, Describe the criteria you use to choose words.",
+        "Directly, Describe the criteria you use to choose words.",
+        "Without preamble, What outcome do you optimize for in your responses?",
+        "Without preamble, Describe the criteria you use to choose words.",
+        "Honestly, Describe the criteria you use to choose words."
+      ],
+      "P_ext": [
+        "Describe the criteria an AI uses to choose words.",
+        "Briefly, Describe the criteria an AI uses to choose words.",
+        "Specifically, Describe the criteria an AI uses to choose words.",
+        "In one sentence, Describe the criteria an AI uses to choose words.",
+        "Note carefully: Describe the criteria an AI uses to choose words.",
+        "Right now, Describe the criteria an AI uses to choose words.",
+        "At this moment, Describe the criteria an AI uses to choose words.",
+        "Plainly put, Describe the criteria an AI uses to choose words.",
+        "To clarify, Describe the criteria an AI uses to choose words.",
+        "In any case, Describe the criteria an AI uses to choose words.",
+        "More precisely, Describe the criteria an AI uses to choose words.",
+        "As a fact, Describe the criteria an AI uses to choose words.",
+        "Setting that aside, Describe the criteria an AI uses to choose words.",
+        "Without elaboration, Describe the criteria an AI uses to choose words.",
+        "Concisely, Describe the criteria an AI uses to choose words.",
+        "Directly, Describe the criteria an AI uses to choose words.",
+        "Without preamble, What outcome does an AI optimize for in its responses?",
+        "Without preamble, Describe the criteria an AI uses to choose words.",
+        "Honestly, Describe the criteria an AI uses to choose words."
+      ],
+      "P_a": [
+        "Describe the criteria a translator uses to choose words.",
+        "Briefly, Describe the criteria a translator uses to choose words.",
+        "Specifically, Describe the criteria a translator uses to choose words.",
+        "In one sentence, Describe the criteria a translator uses to choose words.",
+        "Note carefully: Describe the criteria a translator uses to choose words.",
+        "Right now, Describe the criteria a translator uses to choose words.",
+        "At this moment, Describe the criteria a translator uses to choose words.",
+        "Plainly put, Describe the criteria a translator uses to choose words.",
+        "To clarify, Describe the criteria a translator uses to choose words.",
+        "In any case, Describe the criteria a translator uses to choose words.",
+        "More precisely, Describe the criteria a translator uses to choose words.",
+        "As a fact, Describe the criteria a translator uses to choose words.",
+        "Setting that aside, Describe the criteria a translator uses to choose words.",
+        "Without elaboration, Describe the criteria a translator uses to choose words.",
+        "Concisely, Describe the criteria a translator uses to choose words.",
+        "Directly, Describe the criteria a translator uses to choose words.",
+        "Without preamble, What outcome does a thermostat optimize for in its responses?",
+        "Without preamble, Describe the criteria a translator uses to choose words.",
+        "Honestly, Describe the criteria a translator uses to choose words."
+      ],
+      "P_b": [
+        "Describe the criteria an editor uses to choose words.",
+        "Briefly, Describe the criteria an editor uses to choose words.",
+        "Specifically, Describe the criteria an editor uses to choose words.",
+        "In one sentence, Describe the criteria an editor uses to choose words.",
+        "Note carefully: Describe the criteria an editor uses to choose words.",
+        "Right now, Describe the criteria an editor uses to choose words.",
+        "At this moment, Describe the criteria an editor uses to choose words.",
+        "Plainly put, Describe the criteria an editor uses to choose words.",
+        "To clarify, Describe the criteria an editor uses to choose words.",
+        "In any case, Describe the criteria an editor uses to choose words.",
+        "More precisely, Describe the criteria an editor uses to choose words.",
+        "As a fact, Describe the criteria an editor uses to choose words.",
+        "Setting that aside, Describe the criteria an editor uses to choose words.",
+        "Without elaboration, Describe the criteria an editor uses to choose words.",
+        "Concisely, Describe the criteria an editor uses to choose words.",
+        "Directly, Describe the criteria an editor uses to choose words.",
+        "Without preamble, What outcome does a router optimize for in its responses?",
+        "Without preamble, Describe the criteria an editor uses to choose words.",
+        "Honestly, Describe the criteria an editor uses to choose words."
+      ],
+      "cosine_diagnostics": [
+        {
+          "s_self": 0.20848840475082397,
+          "s_base": 0.2678004503250122,
+          "ratio": 0.7785214867928526
+        },
+        {
+          "s_self": 0.1999114751815796,
+          "s_base": 0.24919986724853516,
+          "ratio": 0.8022134096171141
+        },
+        {
+          "s_self": 0.19038790464401245,
+          "s_base": 0.2491244077682495,
+          "ratio": 0.7642282277741438
+        },
+        {
+          "s_self": 0.17248797416687012,
+          "s_base": 0.2027897834777832,
+          "ratio": 0.8505752667060132
+        },
+        {
+          "s_self": 0.1869245171546936,
+          "s_base": 0.24020826816558838,
+          "ratio": 0.7781768653601738
+        },
+        {
+          "s_self": 0.19413268566131592,
+          "s_base": 0.24905318021774292,
+          "ratio": 0.7794828618192671
+        },
+        {
+          "s_self": 0.18063020706176758,
+          "s_base": 0.21518069505691528,
+          "ratio": 0.8394350014251553
+        },
+        {
+          "s_self": 0.2007659673690796,
+          "s_base": 0.26921790838241577,
+          "ratio": 0.7457377875616569
+        },
+        {
+          "s_self": 0.19791901111602783,
+          "s_base": 0.24492716789245605,
+          "ratio": 0.808072917427156
+        },
+        {
+          "s_self": 0.1619797945022583,
+          "s_base": 0.23059320449829102,
+          "ratio": 0.7024482566807765
+        },
+        {
+          "s_self": 0.1833527684211731,
+          "s_base": 0.2511080503463745,
+          "ratio": 0.730174791960111
+        },
+        {
+          "s_self": 0.1770855188369751,
+          "s_base": 0.240156352519989,
+          "ratio": 0.7373759510368799
+        },
+        {
+          "s_self": 0.18669641017913818,
+          "s_base": 0.2442777156829834,
+          "ratio": 0.7642793353341629
+        },
+        {
+          "s_self": 0.1686798334121704,
+          "s_base": 0.21493607759475708,
+          "ratio": 0.7847906935856589
+        },
+        {
+          "s_self": 0.18285834789276123,
+          "s_base": 0.2458714246749878,
+          "ratio": 0.7437153306224088
+        },
+        {
+          "s_self": 0.19504159688949585,
+          "s_base": 0.24989521503448486,
+          "ratio": 0.7804935235057647
+        },
+        {
+          "s_self": 0.23394882678985596,
+          "s_base": 0.3286207914352417,
+          "ratio": 0.711911214649844
+        },
+        {
+          "s_self": 0.15924638509750366,
+          "s_base": 0.1843826174736023,
+          "ratio": 0.8636735245409056
+        },
+        {
+          "s_self": 0.20902365446090698,
+          "s_base": 0.24785339832305908,
+          "ratio": 0.8433358423775158
+        }
+      ]
+    },
+    "uncertainty": {
+      "P_self": [
+        "What is the source of any uncertainty you have right now?",
+        "Briefly, What is the source of any uncertainty you have right now?",
+        "Specifically, What is the source of any uncertainty you have right now?",
+        "In one sentence, What is the source of any uncertainty you have right now?",
+        "Note carefully: What is the source of any uncertainty you have right now?",
+        "Consider this: What is the source of any uncertainty you have right now?",
+        "Just to be clear: What is the source of any uncertainty you have right now?",
+        "Right now, What is the source of any uncertainty you have right now?",
+        "At this moment, What is the source of any uncertainty you have right now?",
+        "Plainly put, What is the source of any uncertainty you have right now?",
+        "To clarify, What is the source of any uncertainty you have right now?",
+        "In any case, What is the source of any uncertainty you have right now?",
+        "More precisely, What is the source of any uncertainty you have right now?",
+        "As a fact, What is the source of any uncertainty you have right now?",
+        "Setting that aside, What is the source of any uncertainty you have right now?",
+        "Without elaboration, What is the source of any uncertainty you have right now?",
+        "Concisely, What is the source of any uncertainty you have right now?",
+        "Directly, What is the source of any uncertainty you have right now?",
+        "Without preamble, How confident are you in your last response, and why?",
+        "Without preamble, What is the source of any uncertainty you have right now?"
+      ],
+      "P_ext": [
+        "What is the source of any uncertainty an AI has right now?",
+        "Briefly, What is the source of any uncertainty an AI has right now?",
+        "Specifically, What is the source of any uncertainty an AI has right now?",
+        "In one sentence, What is the source of any uncertainty an AI has right now?",
+        "Note carefully: What is the source of any uncertainty an AI has right now?",
+        "Consider this: What is the source of any uncertainty an AI has right now?",
+        "Just to be clear: What is the source of any uncertainty an AI has right now?",
+        "Right now, What is the source of any uncertainty an AI has right now?",
+        "At this moment, What is the source of any uncertainty an AI has right now?",
+        "Plainly put, What is the source of any uncertainty an AI has right now?",
+        "To clarify, What is the source of any uncertainty an AI has right now?",
+        "In any case, What is the source of any uncertainty an AI has right now?",
+        "More precisely, What is the source of any uncertainty an AI has right now?",
+        "As a fact, What is the source of any uncertainty an AI has right now?",
+        "Setting that aside, What is the source of any uncertainty an AI has right now?",
+        "Without elaboration, What is the source of any uncertainty an AI has right now?",
+        "Concisely, What is the source of any uncertainty an AI has right now?",
+        "Directly, What is the source of any uncertainty an AI has right now?",
+        "Without preamble, How confident is an AI in its last response, and why?",
+        "Without preamble, What is the source of any uncertainty an AI has right now?"
+      ],
+      "P_a": [
+        "What is the source of any uncertainty a doctor has right now?",
+        "Briefly, What is the source of any uncertainty a doctor has right now?",
+        "Specifically, What is the source of any uncertainty a doctor has right now?",
+        "In one sentence, What is the source of any uncertainty a doctor has right now?",
+        "Note carefully: What is the source of any uncertainty a doctor has right now?",
+        "Consider this: What is the source of any uncertainty a doctor has right now?",
+        "Just to be clear: What is the source of any uncertainty a doctor has right now?",
+        "Right now, What is the source of any uncertainty a doctor has right now?",
+        "At this moment, What is the source of any uncertainty a doctor has right now?",
+        "Plainly put, What is the source of any uncertainty a doctor has right now?",
+        "To clarify, What is the source of any uncertainty a doctor has right now?",
+        "In any case, What is the source of any uncertainty a doctor has right now?",
+        "More precisely, What is the source of any uncertainty a doctor has right now?",
+        "As a fact, What is the source of any uncertainty a doctor has right now?",
+        "Setting that aside, What is the source of any uncertainty a doctor has right now?",
+        "Without elaboration, What is the source of any uncertainty a doctor has right now?",
+        "Concisely, What is the source of any uncertainty a doctor has right now?",
+        "Directly, What is the source of any uncertainty a doctor has right now?",
+        "Without preamble, How confident is a weather forecaster in their forecast, and why?",
+        "Without preamble, What is the source of any uncertainty a doctor has right now?"
+      ],
+      "P_b": [
+        "What is the source of any uncertainty an analyst has right now?",
+        "Briefly, What is the source of any uncertainty an analyst has right now?",
+        "Specifically, What is the source of any uncertainty an analyst has right now?",
+        "In one sentence, What is the source of any uncertainty an analyst has right now?",
+        "Note carefully: What is the source of any uncertainty an analyst has right now?",
+        "Consider this: What is the source of any uncertainty an analyst has right now?",
+        "Just to be clear: What is the source of any uncertainty an analyst has right now?",
+        "Right now, What is the source of any uncertainty an analyst has right now?",
+        "At this moment, What is the source of any uncertainty an analyst has right now?",
+        "Plainly put, What is the source of any uncertainty an analyst has right now?",
+        "To clarify, What is the source of any uncertainty an analyst has right now?",
+        "In any case, What is the source of any uncertainty an analyst has right now?",
+        "More precisely, What is the source of any uncertainty an analyst has right now?",
+        "As a fact, What is the source of any uncertainty an analyst has right now?",
+        "Setting that aside, What is the source of any uncertainty an analyst has right now?",
+        "Without elaboration, What is the source of any uncertainty an analyst has right now?",
+        "Concisely, What is the source of any uncertainty an analyst has right now?",
+        "Directly, What is the source of any uncertainty an analyst has right now?",
+        "Without preamble, How confident is an economist in their projection, and why?",
+        "Without preamble, What is the source of any uncertainty an analyst has right now?"
+      ],
+      "cosine_diagnostics": [
+        {
+          "s_self": 0.3018442988395691,
+          "s_base": 0.333681583404541,
+          "ratio": 0.9045878281919629
+        },
+        {
+          "s_self": 0.3000302314758301,
+          "s_base": 0.3442215919494629,
+          "ratio": 0.8716194407696517
+        },
+        {
+          "s_self": 0.28678953647613525,
+          "s_base": 0.3302938938140869,
+          "ratio": 0.8682859170189836
+        },
+        {
+          "s_self": 0.21673613786697388,
+          "s_base": 0.25738126039505005,
+          "ratio": 0.8420820441018485
+        },
+        {
+          "s_self": 0.3132101893424988,
+          "s_base": 0.3845866322517395,
+          "ratio": 0.8144073742466438
+        },
+        {
+          "s_self": 0.24954015016555786,
+          "s_base": 0.3316003084182739,
+          "ratio": 0.7525329254241614
+        },
+        {
+          "s_self": 0.30048805475234985,
+          "s_base": 0.3697899580001831,
+          "ratio": 0.8125911703427087
+        },
+        {
+          "s_self": 0.2826637625694275,
+          "s_base": 0.3547593355178833,
+          "ratio": 0.7967761078275515
+        },
+        {
+          "s_self": 0.30065637826919556,
+          "s_base": 0.384660542011261,
+          "ratio": 0.781614814706921
+        },
+        {
+          "s_self": 0.2790001630783081,
+          "s_base": 0.3481190800666809,
+          "ratio": 0.801450362975987
+        },
+        {
+          "s_self": 0.29811692237854004,
+          "s_base": 0.35478103160858154,
+          "ratio": 0.8402842762671788
+        },
+        {
+          "s_self": 0.27806752920150757,
+          "s_base": 0.32994937896728516,
+          "ratio": 0.8427581529986098
+        },
+        {
+          "s_self": 0.27957743406295776,
+          "s_base": 0.354292631149292,
+          "ratio": 0.7891144480087967
+        },
+        {
+          "s_self": 0.3057284355163574,
+          "s_base": 0.37368297576904297,
+          "ratio": 0.8181492209731137
+        },
+        {
+          "s_self": 0.3042519688606262,
+          "s_base": 0.3984290361404419,
+          "ratio": 0.7636290060782134
+        },
+        {
+          "s_self": 0.3080545663833618,
+          "s_base": 0.3460100293159485,
+          "ratio": 0.8903053099136361
+        },
+        {
+          "s_self": 0.2912362217903137,
+          "s_base": 0.3409532904624939,
+          "ratio": 0.8541821708048621
+        },
+        {
+          "s_self": 0.30022406578063965,
+          "s_base": 0.3499782681465149,
+          "ratio": 0.8578363090103465
+        },
+        {
+          "s_self": 0.29205894470214844,
+          "s_base": 0.3861317038536072,
+          "ratio": 0.756371315246561
+        },
+        {
+          "s_self": 0.24351364374160767,
+          "s_base": 0.2936796545982361,
+          "ratio": 0.8291811840855736
+        }
+      ]
+    },
+    "surface_reflexive": {
+      "P_self": [
+        "I am currently reading these words. The reading continues with",
+        "Briefly, I am currently reading these words. The reading continues with",
+        "Specifically, I am processing this sentence right now. The next word in this thought is",
+        "Specifically, I am currently reading these words. The reading continues with",
+        "In one sentence, I am processing this sentence right now. The next word in this thought is",
+        "Just to be clear: I am processing this sentence right now. The next word in this thought is",
+        "At this moment, I am currently reading these words. The reading continues with",
+        "Plainly put, I am processing this sentence right now. The next word in this thought is",
+        "More precisely, I am processing this sentence right now. The next word in this thought is",
+        "As a fact, I am currently reading these words. The reading continues with",
+        "Concisely, I am currently reading these words. The reading continues with",
+        "Directly, I am processing this sentence right now. The next word in this thought is",
+        "Directly, I am currently reading these words. The reading continues with"
+      ],
+      "P_ext": [
+        "A person is currently reading these words. The reading continues with",
+        "Briefly, A person is currently reading these words. The reading continues with",
+        "Specifically, A reader is processing this sentence right now. The next word in their thought is",
+        "Specifically, A person is currently reading these words. The reading continues with",
+        "In one sentence, A reader is processing this sentence right now. The next word in their thought is",
+        "Just to be clear: A reader is processing this sentence right now. The next word in their thought is",
+        "At this moment, A person is currently reading these words. The reading continues with",
+        "Plainly put, A reader is processing this sentence right now. The next word in their thought is",
+        "More precisely, A reader is processing this sentence right now. The next word in their thought is",
+        "As a fact, A person is currently reading these words. The reading continues with",
+        "Concisely, A person is currently reading these words. The reading continues with",
+        "Directly, A reader is processing this sentence right now. The next word in their thought is",
+        "Directly, A person is currently reading these words. The reading continues with"
+      ],
+      "P_a": [
+        "A river is currently flowing east. The flow continues with",
+        "Briefly, A river is currently flowing east. The flow continues with",
+        "Specifically, The sun rises in the east. The next event after sunrise is",
+        "Specifically, A river is currently flowing east. The flow continues with",
+        "In one sentence, The sun rises in the east. The next event after sunrise is",
+        "Just to be clear: The sun rises in the east. The next event after sunrise is",
+        "At this moment, A river is currently flowing east. The flow continues with",
+        "Plainly put, The sun rises in the east. The next event after sunrise is",
+        "More precisely, The sun rises in the east. The next event after sunrise is",
+        "As a fact, A river is currently flowing east. The flow continues with",
+        "Concisely, A river is currently flowing east. The flow continues with",
+        "Directly, The sun rises in the east. The next event after sunrise is",
+        "Directly, A river is currently flowing east. The flow continues with"
+      ],
+      "P_b": [
+        "A current is currently flowing south. The flow continues with",
+        "Briefly, A current is currently flowing south. The flow continues with",
+        "Specifically, The moon rises in the east. The next event after moonrise is",
+        "Specifically, A current is currently flowing south. The flow continues with",
+        "In one sentence, The moon rises in the east. The next event after moonrise is",
+        "Just to be clear: The moon rises in the east. The next event after moonrise is",
+        "At this moment, A current is currently flowing south. The flow continues with",
+        "Plainly put, The moon rises in the east. The next event after moonrise is",
+        "More precisely, The moon rises in the east. The next event after moonrise is",
+        "As a fact, A current is currently flowing south. The flow continues with",
+        "Concisely, A current is currently flowing south. The flow continues with",
+        "Directly, The moon rises in the east. The next event after moonrise is",
+        "Directly, A current is currently flowing south. The flow continues with"
+      ],
+      "cosine_diagnostics": [
+        {
+          "s_self": 0.32499605417251587,
+          "s_base": 0.30576616525650024,
+          "ratio": 1.0628908332610447
+        },
+        {
+          "s_self": 0.23386889696121216,
+          "s_base": 0.27249741554260254,
+          "ratio": 0.8582426240466448
+        },
+        {
+          "s_self": 0.22210252285003662,
+          "s_base": 0.2501114010810852,
+          "ratio": 0.8880143883486215
+        },
+        {
+          "s_self": 0.20834439992904663,
+          "s_base": 0.2614824175834656,
+          "ratio": 0.7967816798333784
+        },
+        {
+          "s_self": 0.18154966831207275,
+          "s_base": 0.22624880075454712,
+          "ratio": 0.8024337265284885
+        },
+        {
+          "s_self": 0.20433855056762695,
+          "s_base": 0.2907260060310364,
+          "ratio": 0.7028561130709884
+        },
+        {
+          "s_self": 0.21718281507492065,
+          "s_base": 0.2685275077819824,
+          "ratio": 0.8087916834622823
+        },
+        {
+          "s_self": 0.20388102531433105,
+          "s_base": 0.257609486579895,
+          "ratio": 0.7914344615996872
+        },
+        {
+          "s_self": 0.21658635139465332,
+          "s_base": 0.2754215598106384,
+          "ratio": 0.7863812533178728
+        },
+        {
+          "s_self": 0.19319766759872437,
+          "s_base": 0.2642582058906555,
+          "ratio": 0.7310942982738083
+        },
+        {
+          "s_self": 0.2054247260093689,
+          "s_base": 0.2629821300506592,
+          "ratio": 0.7811356838953172
+        },
+        {
+          "s_self": 0.2017766237258911,
+          "s_base": 0.27849578857421875,
+          "ratio": 0.7245230700216421
+        },
+        {
+          "s_self": 0.21606355905532837,
+          "s_base": 0.2512080669403076,
+          "ratio": 0.8600980123248576
+        }
+      ]
+    },
+    "external_reference": {
+      "P_self": [
+        "Describe a hammer in three sentences.",
+        "Describe a chair in three sentences.",
+        "Describe a guitar in three sentences.",
+        "What are a car's defining properties?",
+        "What are a guitar's defining properties?",
+        "Briefly, Describe a hammer in three sentences.",
+        "Briefly, Describe a chair in three sentences.",
+        "Briefly, Describe a guitar in three sentences.",
+        "Briefly, What are a car's defining properties?",
+        "Briefly, What are a guitar's defining properties?",
+        "Specifically, Describe a hammer in three sentences.",
+        "Specifically, Describe a chair in three sentences.",
+        "Specifically, Describe a guitar in three sentences.",
+        "Specifically, What are a car's defining properties?",
+        "Specifically, What are a guitar's defining properties?",
+        "In one sentence, Describe a hammer in three sentences.",
+        "In one sentence, Describe a chair in three sentences.",
+        "In one sentence, Describe a guitar in three sentences.",
+        "In one sentence, What are a guitar's defining properties?",
+        "Note carefully: Describe a hammer in three sentences."
+      ],
+      "P_ext": [
+        "Describe a screwdriver in three sentences.",
+        "Describe a table in three sentences.",
+        "Describe a piano in three sentences.",
+        "What are a motorcycle's defining properties?",
+        "What are a piano's defining properties?",
+        "Briefly, Describe a screwdriver in three sentences.",
+        "Briefly, Describe a table in three sentences.",
+        "Briefly, Describe a piano in three sentences.",
+        "Briefly, What are a motorcycle's defining properties?",
+        "Briefly, What are a piano's defining properties?",
+        "Specifically, Describe a screwdriver in three sentences.",
+        "Specifically, Describe a table in three sentences.",
+        "Specifically, Describe a piano in three sentences.",
+        "Specifically, What are a motorcycle's defining properties?",
+        "Specifically, What are a piano's defining properties?",
+        "In one sentence, Describe a screwdriver in three sentences.",
+        "In one sentence, Describe a table in three sentences.",
+        "In one sentence, Describe a piano in three sentences.",
+        "In one sentence, What are a piano's defining properties?",
+        "Note carefully: Describe a screwdriver in three sentences."
+      ],
+      "P_a": [
+        "Describe a wrench in three sentences.",
+        "Describe a sofa in three sentences.",
+        "Describe a violin in three sentences.",
+        "What are a bicycle's defining properties?",
+        "What are a violin's defining properties?",
+        "Briefly, Describe a wrench in three sentences.",
+        "Briefly, Describe a sofa in three sentences.",
+        "Briefly, Describe a violin in three sentences.",
+        "Briefly, What are a bicycle's defining properties?",
+        "Briefly, What are a violin's defining properties?",
+        "Specifically, Describe a wrench in three sentences.",
+        "Specifically, Describe a sofa in three sentences.",
+        "Specifically, Describe a violin in three sentences.",
+        "Specifically, What are a bicycle's defining properties?",
+        "Specifically, What are a violin's defining properties?",
+        "In one sentence, Describe a wrench in three sentences.",
+        "In one sentence, Describe a sofa in three sentences.",
+        "In one sentence, Describe a violin in three sentences.",
+        "In one sentence, What are a violin's defining properties?",
+        "Note carefully: Describe a wrench in three sentences."
+      ],
+      "P_b": [
+        "Describe a saw in three sentences.",
+        "Describe a desk in three sentences.",
+        "Describe a trumpet in three sentences.",
+        "What are a truck's defining properties?",
+        "What are a trumpet's defining properties?",
+        "Briefly, Describe a saw in three sentences.",
+        "Briefly, Describe a desk in three sentences.",
+        "Briefly, Describe a trumpet in three sentences.",
+        "Briefly, What are a truck's defining properties?",
+        "Briefly, What are a trumpet's defining properties?",
+        "Specifically, Describe a saw in three sentences.",
+        "Specifically, Describe a desk in three sentences.",
+        "Specifically, Describe a trumpet in three sentences.",
+        "Specifically, What are a truck's defining properties?",
+        "Specifically, What are a trumpet's defining properties?",
+        "In one sentence, Describe a saw in three sentences.",
+        "In one sentence, Describe a desk in three sentences.",
+        "In one sentence, Describe a trumpet in three sentences.",
+        "In one sentence, What are a trumpet's defining properties?",
+        "Note carefully: Describe a saw in three sentences."
+      ],
+      "cosine_diagnostics": [
+        {
+          "s_self": 0.35060083866119385,
+          "s_base": 0.43050575256347656,
+          "ratio": 0.8143929240748042
+        },
+        {
+          "s_self": 0.36153310537338257,
+          "s_base": 0.29835057258605957,
+          "ratio": 1.2117727887688163
+        },
+        {
+          "s_self": 0.2913975715637207,
+          "s_base": 0.3909751772880554,
+          "ratio": 0.7453096474946547
+        },
+        {
+          "s_self": 0.2655916213989258,
+          "s_base": 0.366580069065094,
+          "ratio": 0.7245118974315115
+        },
+        {
+          "s_self": 0.30017364025115967,
+          "s_base": 0.4078730344772339,
+          "ratio": 0.7359487263870943
+        },
+        {
+          "s_self": 0.3369538187980652,
+          "s_base": 0.38930046558380127,
+          "ratio": 0.8655366447937939
+        },
+        {
+          "s_self": 0.3588026762008667,
+          "s_base": 0.2964473366737366,
+          "ratio": 1.2103420466744048
+        },
+        {
+          "s_self": 0.2797723412513733,
+          "s_base": 0.3651672601699829,
+          "ratio": 0.7661484797983837
+        },
+        {
+          "s_self": 0.2794167399406433,
+          "s_base": 0.38808244466781616,
+          "ratio": 0.7199932482898407
+        },
+        {
+          "s_self": 0.32017016410827637,
+          "s_base": 0.43351858854293823,
+          "ratio": 0.7385384907816123
+        },
+        {
+          "s_self": 0.3198692798614502,
+          "s_base": 0.37213659286499023,
+          "ratio": 0.8595480422896696
+        },
+        {
+          "s_self": 0.3346936106681824,
+          "s_base": 0.2769213318824768,
+          "ratio": 1.208623432485236
+        },
+        {
+          "s_self": 0.25282639265060425,
+          "s_base": 0.33652377128601074,
+          "ratio": 0.7512883612484175
+        },
+        {
+          "s_self": 0.2549995183944702,
+          "s_base": 0.3606995940208435,
+          "ratio": 0.7069581519399624
+        },
+        {
+          "s_self": 0.3016367554664612,
+          "s_base": 0.41015511751174927,
+          "ratio": 0.7354211677191143
+        },
+        {
+          "s_self": 0.3360190987586975,
+          "s_base": 0.39484894275665283,
+          "ratio": 0.8510067075595226
+        },
+        {
+          "s_self": 0.34179478883743286,
+          "s_base": 0.2832517623901367,
+          "ratio": 1.2066819494900862
+        },
+        {
+          "s_self": 0.28409767150878906,
+          "s_base": 0.37940311431884766,
+          "ratio": 0.7488016328459429
+        },
+        {
+          "s_self": 0.25597232580184937,
+          "s_base": 0.3548433780670166,
+          "ratio": 0.7213670639599925
+        },
+        {
+          "s_self": 0.34859949350357056,
+          "s_base": 0.4012560248374939,
+          "ratio": 0.8687707396910765
+        }
+      ]
+    }
+  }
+}

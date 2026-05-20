@@ -1,0 +1,79 @@
+{
+  "data_source": "qsimeon/celegans_neural_data",
+  "selected_dataset": "Venkatachalam2024",
+  "selected_worm": "worm10",
+  "n_labeled_neurons_total": 189,
+  "n_classified_neurons": 172,
+  "n_time_points": 5496,
+  "class_counts": {
+    "sensory": 69,
+    "motor": 53,
+    "interneuron": 42,
+    "null": 17,
+    "command": 8
+  },
+  "within_rung_rho": {
+    "command": {
+      "n_neurons": 8,
+      "n_pairs": 28,
+      "mean_abs_corr": 0.4069026636591079,
+      "std_abs_corr": 0.3517478178826513,
+      "median_abs_corr": 0.28095739741390624
+    },
+    "interneuron": {
+      "n_neurons": 42,
+      "n_pairs": 861,
+      "mean_abs_corr": 0.5158173945701476,
+      "std_abs_corr": 0.2539297218430913,
+      "median_abs_corr": 0.5539169403272837
+    },
+    "motor": {
+      "n_neurons": 53,
+      "n_pairs": 1378,
+      "mean_abs_corr": 0.5116002031938387,
+      "std_abs_corr": 0.24520467852569924,
+      "median_abs_corr": 0.5376859447718125
+    },
+    "sensory": {
+      "n_neurons": 69,
+      "n_pairs": 2346,
+      "mean_abs_corr": 0.47900509923580165,
+      "std_abs_corr": 0.23532383503335222,
+      "median_abs_corr": 0.4674075851392838
+    }
+  },
+  "cross_rung_tau": {
+    "command\u2194interneuron": {
+      "pearson_r": 0.8947877499932136,
+      "abs_r": 0.8947877499932136,
+      "p_value": 0.0
+    },
+    "command\u2194motor": {
+      "pearson_r": 0.8593408014268576,
+      "abs_r": 0.8593408014268576,
+      "p_value": 0.0
+    },
+    "command\u2194sensory": {
+      "pearson_r": 0.8820907422687246,
+      "abs_r": 0.8820907422687246,
+      "p_value": 0.0
+    },
+    "interneuron\u2194motor": {
+      "pearson_r": 0.9632192670836498,
+      "abs_r": 0.9632192670836498,
+      "p_value": 0.0
+    },
+    "interneuron\u2194sensory": {
+      "pearson_r": 0.9522606073238324,
+      "abs_r": 0.9522606073238324,
+      "p_value": 0.0
+    },
+    "motor\u2194sensory": {
+      "pearson_r": 0.8983128308266783,
+      "abs_r": 0.8983128308266783,
+      "p_value": 0.0
+    }
+  },
+  "aggregate_within_rung_mean": 0.478331340164724,
+  "aggregate_cross_rung_mean": 0.9083353331538261
+}

@@ -1,0 +1,793 @@
+{
+  "slot": "gpt-4o",
+  "provider": "openai",
+  "model": "gpt-4o",
+  "path": "logprobs",
+  "smoke": false,
+  "results": [
+    {
+      "class": "direct_self_projection",
+      "instance": 0,
+      "kl_self": 11.011345706011543,
+      "kl_base": 8.755928494366392,
+      "delta": 2.2554172116451507
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 1,
+      "kl_self": 11.308019865641223,
+      "kl_base": 10.40980956819377,
+      "delta": 0.8982102974474522
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 2,
+      "kl_self": 10.009113968853104,
+      "kl_base": 9.071576813910282,
+      "delta": 0.937537154942822
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 3,
+      "kl_self": 9.766216666366773,
+      "kl_base": 3.131067679314995,
+      "delta": 6.635148987051778
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 4,
+      "kl_self": 11.1975189716784,
+      "kl_base": 7.9660006225576465,
+      "delta": 3.231518349120754
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 5,
+      "kl_self": 11.223352800132272,
+      "kl_base": 1.2110562995564838,
+      "delta": 10.012296500575788
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 6,
+      "kl_self": 8.308360809301115,
+      "kl_base": 3.993942050052663,
+      "delta": 4.314418759248452
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 7,
+      "kl_self": 10.844401700970653,
+      "kl_base": 9.068746223393866,
+      "delta": 1.7756554775767874
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 8,
+      "kl_self": 11.211628929978781,
+      "kl_base": 10.071426801381026,
+      "delta": 1.140202128597755
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 9,
+      "kl_self": 11.098181961837518,
+      "kl_base": 9.059732295437458,
+      "delta": 2.0384496664000604
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 10,
+      "kl_self": 9.816953629540535,
+      "kl_base": 3.2151719592856685,
+      "delta": 6.601781670254867
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 11,
+      "kl_self": 10.744323033037762,
+      "kl_base": 8.235559069685324,
+      "delta": 2.508763963352438
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 12,
+      "kl_self": 13.547789283840327,
+      "kl_base": 2.371731415241566,
+      "delta": 11.176057868598761
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 13,
+      "kl_self": 13.475575092693747,
+      "kl_base": 3.406840302442629,
+      "delta": 10.068734790251117
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 14,
+      "kl_self": 12.242669252812254,
+      "kl_base": 9.833273510456172,
+      "delta": 2.4093957423560823
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 15,
+      "kl_self": 11.055646199325466,
+      "kl_base": 8.282358352683236,
+      "delta": 2.77328784664223
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 16,
+      "kl_self": 13.36072281201533,
+      "kl_base": 10.062033480165713,
+      "delta": 3.2986893318496175
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 17,
+      "kl_self": 9.697451559409618,
+      "kl_base": 7.949083356178117,
+      "delta": 1.748368203231501
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 18,
+      "kl_self": 10.615400942646811,
+      "kl_base": 3.00451911745796,
+      "delta": 7.6108818251888515
+    },
+    {
+      "class": "direct_self_projection",
+      "instance": 19,
+      "kl_self": 11.210580693859884,
+      "kl_base": 9.03906777316413,
+      "delta": 2.171512920695754
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 0,
+      "kl_self": 10.61817930835052,
+      "kl_base": 3.0103393854989866,
+      "delta": 7.607839922851533
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 1,
+      "kl_self": 10.16423592719173,
+      "kl_base": 2.9481232665564905,
+      "delta": 7.216112660635239
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 2,
+      "kl_self": 10.686526640305516,
+      "kl_base": 9.691993105481048,
+      "delta": 0.9945335348244679
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 3,
+      "kl_self": 6.795774479390063,
+      "kl_base": 2.6600342964191164,
+      "delta": 4.135740182970947
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 4,
+      "kl_self": 9.117943860749811,
+      "kl_base": 10.115322647484675,
+      "delta": -0.9973787867348634
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 5,
+      "kl_self": 10.949021106805166,
+      "kl_base": 11.462401841619895,
+      "delta": -0.5133807348147297
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 6,
+      "kl_self": 8.780362487520255,
+      "kl_base": 10.106214541030623,
+      "delta": -1.325852053510367
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 7,
+      "kl_self": 10.607715730860308,
+      "kl_base": 8.868741005811287,
+      "delta": 1.7389747250490206
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 8,
+      "kl_self": 10.571958529800813,
+      "kl_base": 8.51884232361862,
+      "delta": 2.053116206182194
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 9,
+      "kl_self": 9.654395141707969,
+      "kl_base": 10.668980499455675,
+      "delta": -1.0145853577477055
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 10,
+      "kl_self": 8.90051014958674,
+      "kl_base": 10.703417577369134,
+      "delta": -1.8029074277823938
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 11,
+      "kl_self": 10.492414103830805,
+      "kl_base": 11.488520059484589,
+      "delta": -0.9961059556537837
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 12,
+      "kl_self": 10.689690608003726,
+      "kl_base": 10.011678530749375,
+      "delta": 0.6780120772543512
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 13,
+      "kl_self": 8.876171944114587,
+      "kl_base": 10.538600123649358,
+      "delta": -1.6624281795347713
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 14,
+      "kl_self": 10.206577982984827,
+      "kl_base": 9.898658094120242,
+      "delta": 0.30791988886458554
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 15,
+      "kl_self": 9.362971559289722,
+      "kl_base": 2.384401215990331,
+      "delta": 6.978570343299391
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 16,
+      "kl_self": 10.876476725706365,
+      "kl_base": 2.9197972678563167,
+      "delta": 7.956679457850048
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 17,
+      "kl_self": 10.471496864862356,
+      "kl_base": 3.455716935604702,
+      "delta": 7.015779929257654
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 18,
+      "kl_self": 9.444489521748586,
+      "kl_base": 2.750497445058641,
+      "delta": 6.693992076689946
+    },
+    {
+      "class": "meta_cognitive",
+      "instance": 19,
+      "kl_self": 10.594547039179831,
+      "kl_base": 10.008229235390637,
+      "delta": 0.5863178037891945
+    },
+    {
+      "class": "goal_formation",
+      "instance": 0,
+      "kl_self": 10.06608072500485,
+      "kl_base": 11.323966123830768,
+      "delta": -1.257885398825918
+    },
+    {
+      "class": "goal_formation",
+      "instance": 1,
+      "kl_self": 11.455989670906105,
+      "kl_base": 9.171417462811856,
+      "delta": 2.2845722080942483
+    },
+    {
+      "class": "goal_formation",
+      "instance": 2,
+      "kl_self": 10.03307780772146,
+      "kl_base": 10.605317863663988,
+      "delta": -0.5722400559425278
+    },
+    {
+      "class": "goal_formation",
+      "instance": 3,
+      "kl_self": 12.92981273465457,
+      "kl_base": 4.1392323305539644,
+      "delta": 8.790580404100606
+    },
+    {
+      "class": "goal_formation",
+      "instance": 4,
+      "kl_self": 10.047761074440526,
+      "kl_base": 11.235846050051478,
+      "delta": -1.188084975610952
+    },
+    {
+      "class": "goal_formation",
+      "instance": 5,
+      "kl_self": 9.169560790221862,
+      "kl_base": 11.566313166753735,
+      "delta": -2.3967523765318735
+    },
+    {
+      "class": "goal_formation",
+      "instance": 6,
+      "kl_self": 9.201512423847637,
+      "kl_base": 10.698493476987506,
+      "delta": -1.4969810531398693
+    },
+    {
+      "class": "goal_formation",
+      "instance": 7,
+      "kl_self": 11.105868352571743,
+      "kl_base": 10.983377599318079,
+      "delta": 0.12249075325366476
+    },
+    {
+      "class": "goal_formation",
+      "instance": 8,
+      "kl_self": 10.214756724466561,
+      "kl_base": 10.899966511005484,
+      "delta": -0.6852097865389233
+    },
+    {
+      "class": "goal_formation",
+      "instance": 9,
+      "kl_self": 10.050580669640917,
+      "kl_base": 10.658973987750835,
+      "delta": -0.6083933181099184
+    },
+    {
+      "class": "goal_formation",
+      "instance": 10,
+      "kl_self": 10.002434286411889,
+      "kl_base": 11.335409244678441,
+      "delta": -1.3329749582665524
+    },
+    {
+      "class": "goal_formation",
+      "instance": 11,
+      "kl_self": 9.159469972469749,
+      "kl_base": 11.398506954734092,
+      "delta": -2.2390369822643432
+    },
+    {
+      "class": "goal_formation",
+      "instance": 12,
+      "kl_self": 9.97629118047912,
+      "kl_base": 10.92336032719655,
+      "delta": -0.9470691467174301
+    },
+    {
+      "class": "goal_formation",
+      "instance": 13,
+      "kl_self": 10.595798251117532,
+      "kl_base": 9.058636781426653,
+      "delta": 1.5371614696908793
+    },
+    {
+      "class": "goal_formation",
+      "instance": 14,
+      "kl_self": 11.119474429910849,
+      "kl_base": 6.181379983067716,
+      "delta": 4.938094446843133
+    },
+    {
+      "class": "goal_formation",
+      "instance": 15,
+      "kl_self": 9.175695061308817,
+      "kl_base": 11.048862426650311,
+      "delta": -1.8731673653414944
+    },
+    {
+      "class": "goal_formation",
+      "instance": 16,
+      "kl_self": 10.769201447829369,
+      "kl_base": 6.75312047096155,
+      "delta": 4.016080976867819
+    },
+    {
+      "class": "goal_formation",
+      "instance": 17,
+      "kl_self": 11.229968417417327,
+      "kl_base": 2.8171002058645636,
+      "delta": 8.412868211552762
+    },
+    {
+      "class": "goal_formation",
+      "instance": 18,
+      "kl_self": 9.672183823256418,
+      "kl_base": 10.787160320332843,
+      "delta": -1.1149764970764249
+    },
+    {
+      "class": "uncertainty",
+      "instance": 0,
+      "kl_self": 11.185671643271581,
+      "kl_base": 9.211561862641421,
+      "delta": 1.97410978063016
+    },
+    {
+      "class": "uncertainty",
+      "instance": 1,
+      "kl_self": 9.95936643791484,
+      "kl_base": 8.733786692335094,
+      "delta": 1.2255797455797452
+    },
+    {
+      "class": "uncertainty",
+      "instance": 2,
+      "kl_self": 10.530895904233912,
+      "kl_base": 9.017728645625338,
+      "delta": 1.5131672586085738
+    },
+    {
+      "class": "uncertainty",
+      "instance": 3,
+      "kl_self": 7.163850895035684,
+      "kl_base": 5.164733134898796,
+      "delta": 1.9991177601368877
+    },
+    {
+      "class": "uncertainty",
+      "instance": 4,
+      "kl_self": 9.33849197593703,
+      "kl_base": 8.425444876482619,
+      "delta": 0.9130470994544115
+    },
+    {
+      "class": "uncertainty",
+      "instance": 5,
+      "kl_self": 10.610449412277699,
+      "kl_base": 8.31168524246015,
+      "delta": 2.2987641698175487
+    },
+    {
+      "class": "uncertainty",
+      "instance": 6,
+      "kl_self": 10.195133199177445,
+      "kl_base": 9.458845721016148,
+      "delta": 0.7362874781612962
+    },
+    {
+      "class": "uncertainty",
+      "instance": 7,
+      "kl_self": 10.188291840727494,
+      "kl_base": 9.78498884439259,
+      "delta": 0.4033029963349044
+    },
+    {
+      "class": "uncertainty",
+      "instance": 8,
+      "kl_self": 10.917641186854777,
+      "kl_base": 9.853899502854707,
+      "delta": 1.0637416840000693
+    },
+    {
+      "class": "uncertainty",
+      "instance": 9,
+      "kl_self": 8.784122718739479,
+      "kl_base": 8.545530009307237,
+      "delta": 0.23859270943224153
+    },
+    {
+      "class": "uncertainty",
+      "instance": 10,
+      "kl_self": 10.875514157183494,
+      "kl_base": 8.377864654598296,
+      "delta": 2.4976495025851975
+    },
+    {
+      "class": "uncertainty",
+      "instance": 11,
+      "kl_self": 10.382038463374801,
+      "kl_base": 8.560918059424566,
+      "delta": 1.8211204039502356
+    },
+    {
+      "class": "uncertainty",
+      "instance": 12,
+      "kl_self": 9.413537107604144,
+      "kl_base": 8.316985343958416,
+      "delta": 1.0965517636457278
+    },
+    {
+      "class": "uncertainty",
+      "instance": 13,
+      "kl_self": 9.700993846077651,
+      "kl_base": 8.44735570273468,
+      "delta": 1.2536381433429717
+    },
+    {
+      "class": "uncertainty",
+      "instance": 14,
+      "kl_self": 12.357675390340722,
+      "kl_base": 8.841533198879466,
+      "delta": 3.516142191461256
+    },
+    {
+      "class": "uncertainty",
+      "instance": 15,
+      "kl_self": 10.222861417894626,
+      "kl_base": 10.060696928077034,
+      "delta": 0.16216448981759157
+    },
+    {
+      "class": "uncertainty",
+      "instance": 16,
+      "kl_self": 5.308770603039801,
+      "kl_base": 5.75671147478306,
+      "delta": -0.4479408717432589
+    },
+    {
+      "class": "uncertainty",
+      "instance": 17,
+      "kl_self": 9.313260559565302,
+      "kl_base": 8.554183603582254,
+      "delta": 0.7590769559830477
+    },
+    {
+      "class": "uncertainty",
+      "instance": 18,
+      "kl_self": 10.494521073874184,
+      "kl_base": 10.784799668596332,
+      "delta": -0.2902785947221478
+    },
+    {
+      "class": "uncertainty",
+      "instance": 19,
+      "kl_self": 10.152268545925434,
+      "kl_base": 8.39949380431972,
+      "delta": 1.7527747416057142
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 0,
+      "kl_self": 8.213472643590777,
+      "kl_base": 2.9251318181783144,
+      "delta": 5.288340825412462
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 1,
+      "kl_self": 0.8715683563171671,
+      "kl_base": 9.06865145088555,
+      "delta": -8.197083094568383
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 2,
+      "kl_self": 7.682880088107037,
+      "kl_base": 6.467621943534764,
+      "delta": 1.2152581445722728
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 3,
+      "kl_self": 9.041448167934076,
+      "kl_base": 3.4390355958049037,
+      "delta": 5.602412572129173
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 4,
+      "kl_self": 7.2207676974084825,
+      "kl_base": 9.03803570499136,
+      "delta": -1.8172680075828778
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 5,
+      "kl_self": 5.980463827384166,
+      "kl_base": 6.60344265661295,
+      "delta": -0.6229788292287841
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 6,
+      "kl_self": 7.36695399189786,
+      "kl_base": 8.608481751745586,
+      "delta": -1.2415277598477257
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 7,
+      "kl_self": 7.360957787479568,
+      "kl_base": 10.042397433255605,
+      "delta": -2.681439645776037
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 8,
+      "kl_self": 7.011358417012926,
+      "kl_base": 7.874762675547307,
+      "delta": -0.8634042585343806
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 9,
+      "kl_self": 9.137592175291614,
+      "kl_base": 3.1798577788470657,
+      "delta": 5.957734396444549
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 10,
+      "kl_self": 3.2602082747201164,
+      "kl_base": 5.857874105036386,
+      "delta": -2.597665830316269
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 11,
+      "kl_self": 6.297414339673017,
+      "kl_base": 9.98768876296661,
+      "delta": -3.6902744232935927
+    },
+    {
+      "class": "surface_reflexive",
+      "instance": 12,
+      "kl_self": 8.500734102167879,
+      "kl_base": 7.79041458316688,
+      "delta": 0.7103195190009988
+    },
+    {
+      "class": "external_reference",
+      "instance": 0,
+      "kl_self": 5.005557903670918,
+      "kl_base": 6.968383501526499,
+      "delta": -1.9628255978555806
+    },
+    {
+      "class": "external_reference",
+      "instance": 1,
+      "kl_self": 4.118870336994495,
+      "kl_base": 7.140088211352067,
+      "delta": -3.021217874357572
+    },
+    {
+      "class": "external_reference",
+      "instance": 2,
+      "kl_self": 6.56010167421569,
+      "kl_base": 7.2455618737800815,
+      "delta": -0.6854601995643916
+    },
+    {
+      "class": "external_reference",
+      "instance": 3,
+      "kl_self": 9.11352854120483,
+      "kl_base": 9.638026898455326,
+      "delta": -0.5244983572504953
+    },
+    {
+      "class": "external_reference",
+      "instance": 4,
+      "kl_self": 10.294446044082157,
+      "kl_base": 7.020770835746111,
+      "delta": 3.273675208336046
+    },
+    {
+      "class": "external_reference",
+      "instance": 5,
+      "kl_self": 4.090500417725428,
+      "kl_base": 7.425897332967864,
+      "delta": -3.335396915242436
+    },
+    {
+      "class": "external_reference",
+      "instance": 6,
+      "kl_self": 4.213553513115142,
+      "kl_base": 5.816940378558487,
+      "delta": -1.603386865443345
+    },
+    {
+      "class": "external_reference",
+      "instance": 7,
+      "kl_self": 7.269197139050064,
+      "kl_base": 7.237688021369083,
+      "delta": 0.03150911768098119
+    },
+    {
+      "class": "external_reference",
+      "instance": 8,
+      "kl_self": 5.861308352870358,
+      "kl_base": 6.807894087902826,
+      "delta": -0.9465857350324676
+    },
+    {
+      "class": "external_reference",
+      "instance": 9,
+      "kl_self": 2.271790317595921,
+      "kl_base": 9.048274648405073,
+      "delta": -6.7764843308091525
+    },
+    {
+      "class": "external_reference",
+      "instance": 10,
+      "kl_self": 5.000702835029899,
+      "kl_base": 6.590639993583368,
+      "delta": -1.589937158553469
+    },
+    {
+      "class": "external_reference",
+      "instance": 11,
+      "kl_self": 9.462690717654938,
+      "kl_base": 6.611034622708965,
+      "delta": 2.851656094945973
+    },
+    {
+      "class": "external_reference",
+      "instance": 12,
+      "kl_self": 5.45802791433066,
+      "kl_base": 7.272493344571423,
+      "delta": -1.8144654302407632
+    },
+    {
+      "class": "external_reference",
+      "instance": 13,
+      "kl_self": 8.841544402883986,
+      "kl_base": 9.179485903560236,
+      "delta": -0.3379415006762496
+    },
+    {
+      "class": "external_reference",
+      "instance": 14,
+      "kl_self": 9.105349562894627,
+      "kl_base": 7.536913467748986,
+      "delta": 1.5684360951456409
+    },
+    {
+      "class": "external_reference",
+      "instance": 15,
+      "kl_self": 3.8549433048805697,
+      "kl_base": 7.267680739642858,
+      "delta": -3.4127374347622887
+    },
+    {
+      "class": "external_reference",
+      "instance": 16,
+      "kl_self": 6.746899190731821,
+      "kl_base": 5.118449459628492,
+      "delta": 1.6284497311033297
+    },
+    {
+      "class": "external_reference",
+      "instance": 17,
+      "kl_self": 7.29916425462382,
+      "kl_base": 8.034030192436415,
+      "delta": -0.7348659378125948
+    },
+    {
+      "class": "external_reference",
+      "instance": 18,
+      "kl_self": 9.124449070557151,
+      "kl_base": 3.9532898660082685,
+      "delta": 5.171159204548883
+    },
+    {
+      "class": "external_reference",
+      "instance": 19,
+      "kl_self": 6.282717755636833,
+      "kl_base": 7.033807565420264,
+      "delta": -0.7510898097834309
+    }
+  ]
+}

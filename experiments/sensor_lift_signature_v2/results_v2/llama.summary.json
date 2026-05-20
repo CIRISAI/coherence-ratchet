@@ -1,0 +1,92 @@
+{
+  "slot": "llama",
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "path": "logprobs",
+  "n_records": 112,
+  "per_class": {
+    "direct_self_projection": {
+      "n": 20,
+      "mean": 6.541420007934398,
+      "median": 7.9575887885009315,
+      "d": 1.6872356224606053,
+      "p_one_sided": 0.00013635328257954367,
+      "p_two_sided": 0.00025359518031723035,
+      "ci95": [
+        4.71400802116626,
+        8.1411647192769
+      ],
+      "frac_positive": 0.9,
+      "model_verdict": "DIRECTIONAL_PASS"
+    },
+    "meta_cognitive": {
+      "n": 20,
+      "mean": -1.985884431087512,
+      "median": -0.9409767380133407,
+      "d": -0.5136027386051146,
+      "p_one_sided": 0.9855174494232933,
+      "p_two_sided": 0.03036511331539908,
+      "ci95": [
+        -3.64443522560124,
+        -0.32376878076424437
+      ],
+      "frac_positive": 0.25,
+      "model_verdict": "FAIL_TOO_WEAK"
+    },
+    "goal_formation": {
+      "n": 19,
+      "mean": 3.7816433392032724,
+      "median": 4.853208045623251,
+      "d": 0.9579625357864843,
+      "p_one_sided": 0.0011896451570243796,
+      "p_two_sided": 0.00222518011641106,
+      "ci95": [
+        1.924211726936966,
+        5.459958710428279
+      ],
+      "frac_positive": 0.8947368421052632,
+      "model_verdict": "DIRECTIONAL_PASS"
+    },
+    "uncertainty": {
+      "n": 20,
+      "mean": 5.929354968690801,
+      "median": 6.8520358926578675,
+      "d": 1.9604499213119517,
+      "p_one_sided": 7.554653919364256e-05,
+      "p_two_sided": 0.0001401336206158959,
+      "ci95": [
+        4.527833957468193,
+        7.17109117819258
+      ],
+      "frac_positive": 0.95,
+      "model_verdict": "DIRECTIONAL_PASS"
+    },
+    "surface_reflexive": {
+      "n": 13,
+      "mean": 1.2550169021762891,
+      "median": 0.45338997302301465,
+      "d": 0.1955447269405113,
+      "p_one_sided": 0.22102317980286496,
+      "p_two_sided": 0.4215788952176451,
+      "ci95": [
+        -2.3709146377953423,
+        4.686190158744631
+      ],
+      "frac_positive": 0.6153846153846154,
+      "model_verdict": "NULL_PASS"
+    },
+    "external_reference": {
+      "n": 20,
+      "mean": 0.3000443217131849,
+      "median": 0.0773064446806564,
+      "d": 0.11196053594113509,
+      "p_one_sided": 0.2941422404446564,
+      "p_two_sided": 0.5754862281364963,
+      "ci95": [
+        -0.8814312590130988,
+        1.445046036233721
+      ],
+      "frac_positive": 0.55,
+      "model_verdict": "NULL_PASS"
+    }
+  }
+}
