@@ -40,12 +40,21 @@ sometimes repetition (rigidity), sometimes wandering (chaos), sometimes
 neither. A corridor-exit RATE needs a clean corridor observable AND a clean
 monotone exit event over a real time axis; this setup supplies neither.
 
-The real path for condition 2: the framework's existing paired non-corridor
-data (CCA v3 / paired-substrate work) records Mode-(i) cases with OBSERVED
-LIFETIMES — the corridor-exit rate is ≈ 1/lifetime, from real already-collected
-data, not a fresh toy. Or genuine neural/biological time series with a
-measurable relaxation timescale. Condition 2 is a real-data dynamics
-measurement, not a quick script.
+CORRECTION (2026-05-21, exit-rate-paired agent): the "real path" first noted
+here — that the paired non-corridor record holds Mode-(i) LIFETIMES giving
+exit rate ≈ 1/lifetime — was WRONG on direct inspection. The CCA v3 paired
+record (noncorr_biology/cancer/tech/oss/social) is a Mode CLASSIFIER: it
+answers "Mode i/ii/iii?" well (Mode iii absent 5/5) but was never instrumented
+to log non-corridor entry/exit times on a clock. 0 of 5 substrates yield a
+usable unmaintained-non-corridor lifetime — see experiments/structural_series/
+corridor_dynamics/paired/RESULTS.md. So the corridor-exit rate has NOT been
+measured anywhere and the existing record cannot supply it.
+
+The actual real path for condition 2: a NEW time-series measurement — a
+trajectory through the corridor boundary with clean unmaintained entry/exit
+events, plus an independently-measured intrinsic timescale for a dimensionless
+rate. Real neural/biological time series (C. elegans whole-brain calcium) is
+the live candidate.
 """
 import functools
 import numpy as np
