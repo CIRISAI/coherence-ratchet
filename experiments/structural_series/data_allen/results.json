@@ -1,0 +1,676 @@
+[
+  {
+    "id": 627823695,
+    "area": "VISp",
+    "cre_line": "Ntsr1-Cre_GN220",
+    "imaging_depth": 550,
+    "spont_frames": 8910,
+    "dff": {
+      "raw": 0.12793406716958577,
+      "floor": 0.009670421385754812,
+      "floor_sd": 0.0004851786918597563,
+      "debiased": 0.1275680543583464,
+      "k_eff": 11.692296669416491,
+      "n_neurons": 21,
+      "n_frames": 8910
+    },
+    "events": {
+      "raw": 0.03366502145286725,
+      "floor": 0.004954416427142735,
+      "floor_sd": 0.0006022215758707733,
+      "debiased": 0.033298459833578944,
+      "k_eff": 10.125498910374182,
+      "n_neurons": 21,
+      "n_frames": 8910
+    }
+  },
+  {
+    "id": 652094901,
+    "area": "VISp",
+    "cre_line": "Slc17a7-IRES2-Cre",
+    "imaging_depth": 175,
+    "spont_frames": 9175,
+    "dff": {
+      "raw": 0.11078631540738634,
+      "floor": 0.01141684264214508,
+      "floor_sd": 7.575632868449756e-05,
+      "debiased": 0.11019647628499464,
+      "k_eff": 44.13814564997885,
+      "n_neurons": 207,
+      "n_frames": 9175
+    },
+    "events": {
+      "raw": 0.14235347426759237,
+      "floor": 0.004487512330089949,
+      "floor_sd": 4.038802675599044e-05,
+      "debiased": 0.1422827251255098,
+      "k_eff": 25.150880519581218,
+      "n_neurons": 207,
+      "n_frames": 9175
+    }
+  },
+  {
+    "id": 545446482,
+    "area": "VISp",
+    "cre_line": "Emx1-IRES-Cre",
+    "imaging_depth": 175,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.02167870213477387,
+      "floor": 0.009198728730217995,
+      "floor_sd": 6.492430418014879e-05,
+      "debiased": 0.019630321342151053,
+      "k_eff": 13.988271833508842,
+      "n_neurons": 171,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.005504176816080133,
+      "floor": 0.0034358266062340026,
+      "floor_sd": 7.479237554686853e-05,
+      "debiased": 0.004300123016213439,
+      "k_eff": 16.99719986993126,
+      "n_neurons": 171,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 662361096,
+    "area": "VISp",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8931,
+    "dff": {
+      "raw": 0.16268602585665892,
+      "floor": 0.023751109664440342,
+      "floor_sd": 0.0026083066757320427,
+      "debiased": 0.16094293336068294,
+      "k_eff": 3.0928436222012747,
+      "n_neurons": 16,
+      "n_frames": 8931
+    },
+    "events": {
+      "raw": 0.03561514385645365,
+      "floor": 0.008371815111349127,
+      "floor_sd": 0.0006642699945598354,
+      "debiased": 0.034617209356868656,
+      "k_eff": 5.7097288402506425,
+      "n_neurons": 16,
+      "n_frames": 8931
+    }
+  },
+  {
+    "id": 645086975,
+    "area": "VISp",
+    "cre_line": "Ntsr1-Cre_GN220",
+    "imaging_depth": 550,
+    "spont_frames": 8910,
+    "dff": {
+      "raw": 0.014297573656192495,
+      "floor": 0.008484237815520504,
+      "floor_sd": 0.0003110523138980199,
+      "debiased": 0.011508184963057446,
+      "k_eff": 7.054327265521373,
+      "n_neurons": 46,
+      "n_frames": 8910
+    },
+    "events": {
+      "raw": 0.004387073023496906,
+      "floor": 0.0034960667205043575,
+      "floor_sd": 0.00028264155635699545,
+      "debiased": 0.002650269269201941,
+      "k_eff": 9.815251564300834,
+      "n_neurons": 46,
+      "n_frames": 8910
+    }
+  },
+  {
+    "id": 657078119,
+    "area": "VISp",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 175,
+    "excluded": "too_few_rois"
+  },
+  {
+    "id": 581150104,
+    "area": "VISp",
+    "cre_line": "Sst-IRES-Cre",
+    "imaging_depth": 275,
+    "excluded": "too_few_rois"
+  },
+  {
+    "id": 644026238,
+    "area": "VISp",
+    "cre_line": "Rorb-IRES2-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8910,
+    "dff": {
+      "raw": 0.0244203645302292,
+      "floor": 0.011053122212056407,
+      "floor_sd": 7.148447728667886e-05,
+      "debiased": 0.021775736340124568,
+      "k_eff": 28.404678099350345,
+      "n_neurons": 240,
+      "n_frames": 8910
+    },
+    "events": {
+      "raw": 0.00815546362918752,
+      "floor": 0.004975276722526725,
+      "floor_sd": 5.301469187020041e-05,
+      "debiased": 0.006462059156436453,
+      "k_eff": 19.528813057034355,
+      "n_neurons": 240,
+      "n_frames": 8910
+    }
+  },
+  {
+    "id": 662982346,
+    "area": "VISl",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 250,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.06678895895853494,
+      "floor": 0.014560957846661865,
+      "floor_sd": 0.002108036929676461,
+      "debiased": 0.06518238677244491,
+      "k_eff": 4.541612474075606,
+      "n_neurons": 10,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.02337773337662194,
+      "floor": 0.0071464871601041825,
+      "floor_sd": 0.0007217242106702289,
+      "debiased": 0.02225861943380338,
+      "k_eff": 4.030272751496712,
+      "n_neurons": 10,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 645689073,
+    "area": "VISl",
+    "cre_line": "Tlx3-Cre_PL56",
+    "imaging_depth": 375,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.023730343049945948,
+      "floor": 0.009640323187184418,
+      "floor_sd": 6.333921984785558e-05,
+      "debiased": 0.02168394221802743,
+      "k_eff": 59.07004707021031,
+      "n_neurons": 184,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.008698802540758685,
+      "floor": 0.004356112207060155,
+      "floor_sd": 6.96967360024603e-05,
+      "debiased": 0.0075295054341311994,
+      "k_eff": 40.2333253637754,
+      "n_neurons": 184,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 613091721,
+    "area": "VISl",
+    "cre_line": "Slc17a7-IRES2-Cre",
+    "imaging_depth": 375,
+    "spont_frames": 9184,
+    "dff": {
+      "raw": 0.0415943948395029,
+      "floor": 0.00894112062347724,
+      "floor_sd": 0.00039617869586038474,
+      "debiased": 0.040622038895910866,
+      "k_eff": 6.230659786359505,
+      "n_neurons": 35,
+      "n_frames": 9184
+    },
+    "events": {
+      "raw": 0.005067713862618094,
+      "floor": 0.003729010085287163,
+      "floor_sd": 0.0004747973692060899,
+      "debiased": 0.0034316479389934844,
+      "k_eff": 2.775716551893335,
+      "n_neurons": 35,
+      "n_frames": 9184
+    }
+  },
+  {
+    "id": 502793808,
+    "area": "VISl",
+    "cre_line": "Cux2-CreERT2",
+    "imaging_depth": 175,
+    "spont_frames": 8909,
+    "dff": {
+      "raw": 0.029285886431145467,
+      "floor": 0.010887411984903967,
+      "floor_sd": 0.00012592088825913843,
+      "debiased": 0.02718689765914676,
+      "k_eff": 4.581369389502277,
+      "n_neurons": 153,
+      "n_frames": 8909
+    },
+    "events": {
+      "raw": 0.009844785015605715,
+      "floor": 0.005180683007657981,
+      "floor_sd": 0.00011305316911648305,
+      "debiased": 0.00837139866316607,
+      "k_eff": 4.535469171804748,
+      "n_neurons": 153,
+      "n_frames": 8909
+    }
+  },
+  {
+    "id": 501940850,
+    "area": "VISl",
+    "cre_line": "Cux2-CreERT2",
+    "imaging_depth": 175,
+    "spont_frames": 8931,
+    "dff": {
+      "raw": 0.02458376592949212,
+      "floor": 0.010773295822158841,
+      "floor_sd": 7.089283460278747e-05,
+      "debiased": 0.02209745787198863,
+      "k_eff": 5.862842298355512,
+      "n_neurons": 143,
+      "n_frames": 8931
+    },
+    "events": {
+      "raw": 0.008415089497794917,
+      "floor": 0.0052900371321207606,
+      "floor_sd": 9.163179623083599e-05,
+      "debiased": 0.006544405121680799,
+      "k_eff": 11.897045281591094,
+      "n_neurons": 143,
+      "n_frames": 8931
+    }
+  },
+  {
+    "id": 546641574,
+    "area": "VISl",
+    "cre_line": "Rorb-IRES2-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8909,
+    "dff": {
+      "raw": 0.024232357196852482,
+      "floor": 0.011884063896014558,
+      "floor_sd": 7.658295900429936e-05,
+      "debiased": 0.021118147660987966,
+      "k_eff": 7.0862620164433165,
+      "n_neurons": 191,
+      "n_frames": 8909
+    },
+    "events": {
+      "raw": 0.008000557360090792,
+      "floor": 0.00526218214612114,
+      "floor_sd": 7.074841782615366e-05,
+      "debiased": 0.006026471366657843,
+      "k_eff": 19.610365787546474,
+      "n_neurons": 191,
+      "n_frames": 8909
+    }
+  },
+  {
+    "id": 506030579,
+    "area": "VISl",
+    "cre_line": "Cux2-CreERT2",
+    "imaging_depth": 175,
+    "spont_frames": 8933,
+    "dff": {
+      "raw": 0.02258856701486185,
+      "floor": 0.009773250313153589,
+      "floor_sd": 8.837895563799881e-05,
+      "debiased": 0.020364845643936223,
+      "k_eff": 39.78804961318017,
+      "n_neurons": 117,
+      "n_frames": 8933
+    },
+    "events": {
+      "raw": 0.008250982269754643,
+      "floor": 0.005212727542303621,
+      "floor_sd": 0.00012540499978724916,
+      "debiased": 0.006395793929256534,
+      "k_eff": 28.45796610136455,
+      "n_neurons": 117,
+      "n_frames": 8933
+    }
+  },
+  {
+    "id": 614556106,
+    "area": "VISl",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 275,
+    "excluded": "too_few_rois"
+  },
+  {
+    "id": 649409874,
+    "area": "VISpm",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 175,
+    "spont_frames": 9174,
+    "dff": {
+      "raw": 0.03711508565139071,
+      "floor": 0.011178930976626372,
+      "floor_sd": 0.0007472165645781071,
+      "debiased": 0.03539153973946163,
+      "k_eff": 9.69523418115402,
+      "n_neurons": 26,
+      "n_frames": 9174
+    },
+    "events": {
+      "raw": 0.016739299100913273,
+      "floor": 0.005376370190141094,
+      "floor_sd": 0.00043054815933677695,
+      "debiased": 0.015852406062437277,
+      "k_eff": 10.417442210526268,
+      "n_neurons": 26,
+      "n_frames": 9174
+    }
+  },
+  {
+    "id": 657776356,
+    "area": "VISpm",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 275,
+    "excluded": "too_few_rois"
+  },
+  {
+    "id": 560809202,
+    "area": "VISpm",
+    "cre_line": "Nr5a1-Cre",
+    "imaging_depth": 350,
+    "spont_frames": 8928,
+    "dff": {
+      "raw": 0.06708036254020028,
+      "floor": 0.021463873374225787,
+      "floor_sd": 0.0007340503114359385,
+      "debiased": 0.06355373457398003,
+      "k_eff": 8.682964817160833,
+      "n_neurons": 41,
+      "n_frames": 8928
+    },
+    "events": {
+      "raw": 0.014353466473281907,
+      "floor": 0.007255360047251973,
+      "floor_sd": 0.00025221684616272554,
+      "debiased": 0.01238473860783374,
+      "k_eff": 16.82918920562611,
+      "n_neurons": 41,
+      "n_frames": 8928
+    }
+  },
+  {
+    "id": 601705404,
+    "area": "VISpm",
+    "cre_line": "Vip-IRES-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.023887205460503037,
+      "floor": 0.009507027202062108,
+      "floor_sd": 0.0011867975669516341,
+      "debiased": 0.02191380885404309,
+      "k_eff": 8.04649724828183,
+      "n_neurons": 12,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.00622360854499246,
+      "floor": 0.0037662191472128425,
+      "floor_sd": 0.0011349246663705417,
+      "debiased": 0.004954684314511929,
+      "k_eff": 5.1673908251542775,
+      "n_neurons": 12,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 603763073,
+    "area": "VISpm",
+    "cre_line": "Sst-IRES-Cre",
+    "imaging_depth": 325,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.011778875408055717,
+      "floor": 0.00851568238027149,
+      "floor_sd": 0.0005622429074812013,
+      "debiased": 0.008137878069671076,
+      "k_eff": 19.26915377307189,
+      "n_neurons": 22,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.0042616766594225225,
+      "floor": 0.002555113187220092,
+      "floor_sd": 0.0006412517927017203,
+      "debiased": 0.0034107601132241316,
+      "k_eff": 10.263410255961563,
+      "n_neurons": 22,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 662359728,
+    "area": "VISpm",
+    "cre_line": "Slc17a7-IRES2-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.03396543002206667,
+      "floor": 0.010381846059337582,
+      "floor_sd": 0.00017143005167159642,
+      "debiased": 0.03233987799890601,
+      "k_eff": 27.117917657311324,
+      "n_neurons": 92,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.007707662215099379,
+      "floor": 0.004636212576023558,
+      "floor_sd": 0.00014113473841986923,
+      "debiased": 0.0061574012190202185,
+      "k_eff": 32.272393221344004,
+      "n_neurons": 92,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 601273921,
+    "area": "VISpm",
+    "cre_line": "Sst-IRES-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8933,
+    "dff": {
+      "raw": 0.019400990802668938,
+      "floor": 0.008804899818181474,
+      "floor_sd": 0.0009156731149065998,
+      "debiased": 0.017287920155907494,
+      "k_eff": 9.7258448303303,
+      "n_neurons": 12,
+      "n_frames": 8933
+    },
+    "events": {
+      "raw": 0.006333542201324528,
+      "floor": 0.00404447694226079,
+      "floor_sd": 0.0013765517370598482,
+      "debiased": 0.004874008933052909,
+      "k_eff": 2.289006165393104,
+      "n_neurons": 12,
+      "n_frames": 8933
+    }
+  },
+  {
+    "id": 639117196,
+    "area": "VISpm",
+    "cre_line": "Sst-IRES-Cre",
+    "imaging_depth": 375,
+    "excluded": "too_few_rois"
+  },
+  {
+    "id": 638862121,
+    "area": "VISal",
+    "cre_line": "Nr5a1-Cre",
+    "imaging_depth": 350,
+    "excluded": "too_few_rois"
+  },
+  {
+    "id": 504853580,
+    "area": "VISal",
+    "cre_line": "Rorb-IRES2-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8931,
+    "dff": {
+      "raw": 0.024123448571097095,
+      "floor": 0.010458198191603514,
+      "floor_sd": 0.0001055907665321712,
+      "debiased": 0.02173860302658631,
+      "k_eff": 23.156614234687957,
+      "n_neurons": 126,
+      "n_frames": 8931
+    },
+    "events": {
+      "raw": 0.005947144340656411,
+      "floor": 0.003971211777280414,
+      "floor_sd": 0.0001249726200933231,
+      "debiased": 0.004426963160970611,
+      "k_eff": 28.626893120554396,
+      "n_neurons": 126,
+      "n_frames": 8931
+    }
+  },
+  {
+    "id": 505407318,
+    "area": "VISal",
+    "cre_line": "Cux2-CreERT2",
+    "imaging_depth": 275,
+    "spont_frames": 8930,
+    "dff": {
+      "raw": 0.045305605791747854,
+      "floor": 0.01027759443812397,
+      "floor_sd": 5.253864582136537e-05,
+      "debiased": 0.04412447131380386,
+      "k_eff": 20.178507331362788,
+      "n_neurons": 202,
+      "n_frames": 8930
+    },
+    "events": {
+      "raw": 0.00892778751997101,
+      "floor": 0.004546663634038631,
+      "floor_sd": 6.671898446405142e-05,
+      "debiased": 0.007683309169925465,
+      "k_eff": 33.32203835145682,
+      "n_neurons": 202,
+      "n_frames": 8930
+    }
+  },
+  {
+    "id": 638056634,
+    "area": "VISal",
+    "cre_line": "Cux2-CreERT2",
+    "imaging_depth": 276,
+    "spont_frames": 9177,
+    "dff": {
+      "raw": 0.06715060768080791,
+      "floor": 0.022981977882746005,
+      "floor_sd": 0.00013677300074700055,
+      "debiased": 0.06309542617732883,
+      "k_eff": 47.254593044624016,
+      "n_neurons": 155,
+      "n_frames": 9177
+    },
+    "events": {
+      "raw": 0.010079093651430917,
+      "floor": 0.004766957527456926,
+      "floor_sd": 5.3747073874626115e-05,
+      "debiased": 0.008880554305094743,
+      "k_eff": 27.555433651390647,
+      "n_neurons": 155,
+      "n_frames": 9177
+    }
+  },
+  {
+    "id": 502199136,
+    "area": "VISal",
+    "cre_line": "Cux2-CreERT2",
+    "imaging_depth": 175,
+    "spont_frames": 8909,
+    "dff": {
+      "raw": 0.025086273427713066,
+      "floor": 0.010355626455567157,
+      "floor_sd": 0.00010621220945042242,
+      "debiased": 0.02284911628931719,
+      "k_eff": 2.664519148093529,
+      "n_neurons": 159,
+      "n_frames": 8909
+    },
+    "events": {
+      "raw": 0.007151639420113838,
+      "floor": 0.005014977510323027,
+      "floor_sd": 9.083830913201312e-05,
+      "debiased": 0.005098622065448708,
+      "k_eff": 1.5621291618000568,
+      "n_neurons": 159,
+      "n_frames": 8909
+    }
+  },
+  {
+    "id": 591460070,
+    "area": "VISal",
+    "cre_line": "Rorb-IRES2-Cre",
+    "imaging_depth": 275,
+    "spont_frames": 8929,
+    "dff": {
+      "raw": 0.02591324194554806,
+      "floor": 0.009967911979317633,
+      "floor_sd": 5.800565230576283e-05,
+      "debiased": 0.023919382076071437,
+      "k_eff": 10.62199501105011,
+      "n_neurons": 207,
+      "n_frames": 8929
+    },
+    "events": {
+      "raw": 0.007477641833035932,
+      "floor": 0.004126599940600624,
+      "floor_sd": 7.664041812637808e-05,
+      "debiased": 0.0062358880933996805,
+      "k_eff": 14.320599714428363,
+      "n_neurons": 207,
+      "n_frames": 8929
+    }
+  },
+  {
+    "id": 562052595,
+    "area": "VISal",
+    "cre_line": "Emx1-IRES-Cre",
+    "imaging_depth": 175,
+    "spont_frames": 8932,
+    "dff": {
+      "raw": 0.025088754909774764,
+      "floor": 0.010050679548116167,
+      "floor_sd": 0.00011207244958502273,
+      "debiased": 0.022987593687548654,
+      "k_eff": 4.324672840352697,
+      "n_neurons": 152,
+      "n_frames": 8932
+    },
+    "events": {
+      "raw": 0.007151475499479823,
+      "floor": 0.003637816524345478,
+      "floor_sd": 7.42583854449329e-05,
+      "debiased": 0.006157101002489659,
+      "k_eff": 3.4995939042913937,
+      "n_neurons": 152,
+      "n_frames": 8932
+    }
+  },
+  {
+    "id": 572722662,
+    "area": "VISal",
+    "cre_line": "Rbp4-Cre_KL100",
+    "imaging_depth": 375,
+    "excluded": "too_few_rois"
+  }
+]
