@@ -73,6 +73,9 @@ substrate-instantiations.
 import CoherenceRatchet.Core.Levels
 import CoherenceRatchet.Core.AudienceStopping
 
+-- The five empirical structural claims + machine-checked falsification logic
+import CoherenceRatchet.StructuralClaims
+
 -- The 10-piece formal structure
 import CoherenceRatchet.Core.BaseIdentity                  -- Piece 1
 import CoherenceRatchet.Core.Dynamics                       -- Piece 2
