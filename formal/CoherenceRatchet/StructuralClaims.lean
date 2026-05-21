@@ -180,6 +180,32 @@ axiom framework_asserts_5 : Claim5
     `FalsifierN` witness ⇒ `¬ ClaimN` ⇒ contradiction with `framework_asserts_N`
     ⇒ the framework is wrong at claim N. That is the whole test logic, and it is
     checked here. The corridor is the empirical object; the Kish algebra
-    (Core.BaseIdentity) is the coordinate system it is stated in. -/
+    (Core.BaseIdentity) is the coordinate system it is stated in.
+
+    ## Test ledger (2026-05-21 structural series; experiments/structural_series/)
+
+    Claim 1 — E1 (LLM substrate, real weights: gpt2 / Pythia-160m / Qwen2.5-0.5B)
+      WEAKLY SUPPORTED. Decisively off the rigidity pole; debiased within-layer
+      ρ low (~0.05–0.22), at the chaos-side edge. No falsifier; not a clean
+      confirmation. Owed: real-data campaign across more substrates.
+    Claim 2 — E2 (6 Lindbladian instances)
+      FALSIFIED AS STATED → AMENDED. 2/6 (Heisenberg + symmetric bit-flip) had
+      non-ergodic forward generators. The `MaintenanceBreaksSymmetry` antecedent
+      above is the amendment the test forced.
+    Claim 3 — E3 (closed chaotic chain, energy-swept)
+      CONSISTENT. A closed system conserves energy ⇒ late-time ρ is energy-
+      indexed, a one-parameter family, no corridor attractor without
+      maintenance.
+    Claim 4 — E1 (3 architectures)
+      WEAKLY SUPPORTED (with Claim 1).
+    Claim 5 — E6 (Penrose-scope: 200 generic high-entropy ICs)
+      CONSISTENT at the cosmological-origin scope. 0/200 forward-evolve to the
+      multi-rung corridor.
+
+    Plus the orthogonality theorem (CMBOrthogonality.lean): the soft P_ω leaves
+    the bulk CMB power spectrum exactly invariant — the framework is a strict
+    extension of ΛCDM at the cosmological tier. PROVED, not an empirical claim.
+
+    The spec is live: a test (E2) already amended a claim. -/
 
 end CoherenceRatchet.StructuralClaims
