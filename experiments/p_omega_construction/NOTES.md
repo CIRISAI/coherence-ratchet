@@ -738,6 +738,66 @@ structural explanation of why the cosmological substrate's corridor centre
 differs. If it neither resolves nor is explained, cross-substrate consistency
 at the universal-scale tier weakens. This is the next gap.
 
+## 2026-05-21 — the rho_mid divergence: two parallel investigations + recalc
+
+Two sub-agents, two git worktrees, pre-registration enforced by commit order,
+to resolve the A3+/CMB rho_mid divergence without curve-fitting.
+
+PATH 1 (per-ell corridor bounds) -- VERDICT (b): the framework PROVIDES the
+per-ell bounds as free parameters; pre-registration impossible. The agent
+derived what the framework constrains (only the isotropic-Gaussian baseline
+rho_iso(ell), which standard LambdaCDM predicts identically), found the
+corridor bounds are bare axioms (Corridor.lean: ρ_lower/ρ_upper axioms; the
+k_eff numbers 2.33/10 are removed in the core; CorridorProjector.rungBounds
+ignores its rung argument), and STOPPED rather than fit. Sharp point: the
+framework-distinctive content (corridor brackets, drift) lives entirely in the
+uncalibrated layer. No derivation shortcut around per-rung calibration exists.
+
+PATH 2 (rung-type structural account) -- VERDICT: YES, existing machinery
+structurally accounts for the divergence, no new free parameter, pre-registered
+(the magnitude test flagged as the risk point before the comparison; passed).
+The account: the Kish identity is k-dependent, so ρ_mid is k-dependent; A3+
+goal-projector substrates are COORDINATED (their ρ is a corridor centre) while
+the CMB is statistically isotropic (its ρ_ell is the no-coordination baseline)
+-- the two are different KINDS of object, the framework never predicts them
+equal. The divergence is structurally expected, not a convergence failure.
+
+THE DISAGREEMENT. Path 2 uses the k_eff band (2.33,10) as the framework
+invariant; Path 1 found the core removed those numbers. Both are "the
+framework": CLAUDE.md Piece 3 asserts the k_eff band substrate-independent, the
+Lean core retired it with the (0.1,0.43) rho-band. The agents agree on the
+STRUCTURE, disagree on whether the GPU k_eff number is usable.
+
+THE RECALCULATION (corridor_recalculation.py). Instead of arguing the GPU
+number, calculate the corridor from the data now in hand -- five A3+ substrates
+with measured within-rung |rho|, vs the single GPU substrate the old numbers
+came from. Result:
+
+  CORRIDOR (coordinated systems): |rho| ~ 0.17-0.35 (centre ~0.25, median 0.27)
+                                  k_eff ~ 2.8-4.8  (centre ~3.5-3.8)
+  command-neuron class: rho 0.635 / k_eff 1.5 -- rigidity-side, out of corridor.
+
+The A3+ coordinated systems sit INSIDE the GPU rho envelope (0.1,0.43) but
+reach neither edge, and top out at k_eff ~ 5, NOT the GPU ceiling of 10. The
+"k_eff = 10 maximum, substrate-independent" claim is not supported by the A3+
+data. The honest combined corridor is the A3+ cluster, not the GPU number.
+Limiting uncertainty: the rho values are measured, the constituent counts k are
+estimated -- a proper per-substrate effective-k measurement is the next data
+step for a reliable k_eff corridor.
+
+NOT CIRCULAR. The corridor is now calibrated on A3+ substrates (biology / tech
+/ social) only. A CMB drift predicted from this corridor is a genuine
+out-of-sample prediction -- the corridor never saw CMB data. Calibrate on A3+,
+predict the drift, test on CMB-S4: disjoint data. That is what makes F-19 a
+real test. F-11 is untouched throughout: P_omega is constructed.
+
+SYNTHESIS verdict: not Path 3 (the tier does not weaken -- the divergence is
+structurally explained). Path 2's account holds: the present-epoch divergence
+is a category error (corridor centre vs isotropic baseline) plus the Kish
+k-dependence. Path 1's finding stands too: the drift PREDICTION is gated on
+calibrating the corridor -- which corridor_recalculation.py now does from 5
+substrates, replacing the single GPU number.
+
 ## Session arc (2026-05-21)
 
 P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
