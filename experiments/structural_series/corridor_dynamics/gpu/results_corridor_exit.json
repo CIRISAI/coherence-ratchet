@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-05-21T18:39:08.761796+00:00",
+  "instrument": "CIRISArray exp51 Test-4 (coherence decay), RTX 4090, CuPy",
+  "n_ossicles": 2048,
+  "capture_sec": 120.0,
+  "sample_rate_hz": 10.0,
+  "running_window_sec": 5.0,
+  "n_runs": 3,
+  "runs": [
+    {
+      "run": 0,
+      "k_eff_first": -0.0014032853836380248,
+      "k_eff_last": 0.1537788319182108,
+      "k_eff_mean": 0.12114928153401452,
+      "k_eff_std": 0.03923546144042194,
+      "r_start": 0.908748640819841,
+      "r_end": 0.20916549767982978,
+      "r_drop": 0.6995831431400112,
+      "fit": {
+        "r_inf": 5.375314303462796e-20,
+        "r_inf_err": 0.022077261816240167,
+        "A": 1.008216558117935,
+        "A_err": 0.016788682522013747,
+        "tau": 51.29316313120036,
+        "tau_err": 3.075983156583418,
+        "R2": 0.8046116622548658,
+        "converged": true
+      }
+    },
+    {
+      "run": 1,
+      "k_eff_first": 0.0029611453246224605,
+      "k_eff_last": 0.15556843622579936,
+      "k_eff_mean": 0.12139682157127239,
+      "k_eff_std": 0.038590629598320825,
+      "r_start": 0.7758324222066415,
+      "r_end": 0.02446628750768883,
+      "r_drop": 0.7513661346989526,
+      "fit": {
+        "r_inf": 3.8727337483657786e-17,
+        "r_inf_err": 0.019825783809997184,
+        "A": 1.0632068496983473,
+        "A_err": 0.016779803092878978,
+        "tau": 45.47896171609938,
+        "tau_err": 2.5756673831685326,
+        "R2": 0.8126389882373465,
+        "converged": true
+      }
+    },
+    {
+      "run": 2,
+      "k_eff_first": 0.0005130739303395694,
+      "k_eff_last": 0.15394798109012542,
+      "k_eff_mean": 0.12102554240702994,
+      "k_eff_std": 0.03882488527449461,
+      "r_start": 0.8766475667419651,
+      "r_end": 0.19899611864718839,
+      "r_drop": 0.6776514480947767,
+      "fit": {
+        "r_inf": 1.863983414122092e-14,
+        "r_inf_err": 0.01760408623435569,
+        "A": 1.128677960932322,
+        "A_err": 0.015974137603656687,
+        "tau": 43.287126693336894,
+        "tau_err": 2.1433496081991645,
+        "R2": 0.8342294323687952,
+        "converged": true
+      }
+    }
+  ],
+  "tau_mean_sec": 46.68641718021221,
+  "tau_across_run_sd_sec": 4.137344122074127,
+  "tau_per_fit_err_mean_sec": 2.5983333826503716,
+  "tau_err_combined_sec": 4.885586223971147,
+  "corridor_exit_rate_per_sec": 0.021419506151863044,
+  "corridor_exit_rate_err_per_sec": 0.0022414837226824367,
+  "gates": {
+    "C1_coherence_observable": {
+      "pass": true,
+      "note": "r(t) is the temporal autocorrelation of one device's coherence signal k_eff(t); it decays (drop>0) = the array loses coherence after reset. k_eff is the framework's coherence/k_eff observable."
+    },
+    "C2_not_crossdevice_artifact": {
+      "pass": true,
+      "note": "Single PhysicsTestSensor instantiated per run; r(t) is the TEMPORAL autocorrelation of that one device's k_eff(t). The CIRISArray-flagged artifact is correlation BETWEEN separate devices' k_eff series (r~0.97, shared algorithm). Different quantity: a within-device temporal decay is not produced by the cross-device algorithm collision."
+    },
+    "C3_not_window_dominated": {
+      "pass": true,
+      "tau_min": 43.287126693336894,
+      "window_sec": 5.0,
+      "gate_threshold_sec": 15.0,
+      "tau_over_W": [
+        10.258632626240072,
+        9.095792343219875,
+        8.657425338667379
+      ],
+      "note": "all taus must exceed 3*W=15.0s. min tau=43.3s; tau/W ~ 8.7x. C. elegans failed here (tau_ac~15s vs 30s window)."
+    },
+    "C4_real_fit": {
+      "pass": true,
+      "r_inf_range": [
+        5.375314303462796e-20,
+        1.863983414122092e-14
+      ],
+      "A_range": [
+        1.008216558117935,
+        1.128677960932322
+      ],
+      "r_drop_min": 0.6776514480947767,
+      "R2": [
+        0.8046116622548658,
+        0.8126389882373465,
+        0.8342294323687952
+      ],
+      "note": "r_inf in [-0.1,0.3] (near chaos pole), A in [0.5,1.5] (starts near full corr), r drops >=0.3 (monotone gross decay)."
+    },
+    "C5_reproducible": {
+      "pass": true,
+      "tau_values": [
+        51.29316313120036,
+        45.47896171609938,
+        43.287126693336894
+      ],
+      "max_over_min": 1.184951902550183,
+      "note": "tau across 3 independent resets must agree within factor 2."
+    }
+  },
+  "all_gates_pass": true,
+  "verdict": "POSITIVE \u2014 genuine GPU corridor-exit rate"
+}
