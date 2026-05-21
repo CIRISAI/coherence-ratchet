@@ -1,0 +1,92 @@
+================================================================================
+WAVE 1 RG -- crux assessment: is eps the cross-rung coupling g/J?
+================================================================================
+  backend: cupy / RTX 4090 (complex64)
+
+--------------------------------------------------------------------------------
+CHECK 1 -- the dead-zone model: rho_n = U_n(eps) Lambda U_n(eps)^dag
+--------------------------------------------------------------------------------
+  instance 1/4 done  (6s)
+  instance 2/4 done  (12s)
+  instance 3/4 done  (17s)
+  instance 4/4 done  (23s)
+
+  eps    ||[rho_n,rho_{n+1}]||   h_min(R=13)   h_min slope /rung
+  0.00            2.687e-07      0.00000         0.000000
+  0.05            2.167e-03      0.00061         0.000047
+  0.15            6.451e-03      0.00523         0.000402
+  0.20            8.541e-03      0.00912         0.000701
+  0.40            1.620e-02      0.03411         0.002624
+  1.00            2.743e-02      0.17384         0.013372
+
+  eps=0: all rungs are the SAME operator Lambda -> commutator 0,
+  h_min 0. eps is the operator-MISALIGNMENT amplitude. There is no
+  within-rung energy scale J in this model -- nothing to divide by.
+
+--------------------------------------------------------------------------------
+CHECK 2 -- the cross-rung tower: H = H_rung(J) + g H_couple
+--------------------------------------------------------------------------------
+
+  g/J     within-rho range      cross-rung tau range    ||[O_n,O_{n+1}]||(rung corr ops)
+   0.0    [0.285,0.285]        [-0.000,0.000]           0.000e+00
+   0.3    [0.285,0.285]        [0.002,0.002]           0.000e+00
+   0.6    [0.284,0.284]        [0.007,0.007]           0.000e+00
+   1.0    [0.283,0.284]        [0.020,0.020]           0.000e+00
+   2.0    [0.279,0.282]        [0.072,0.073]           0.000e+00
+   3.0    [0.273,0.278]        [0.143,0.145]           0.000e+00
+
+  (37s) g/J moves within-rho and cross-rung tau --
+  its actual job. The rung correlation OPERATORS O_n = Z_{2n}Z_{2n+1}
+  are FIXED Pauli products; they do not depend on g/J at all (the
+  commutator column is g/J-invariant by construction). g/J is an
+  energy-scale ratio in the Hamiltonian, not an operator-rotation knob.
+
+================================================================================
+THE GATE -- C1 / C2 / C3
+================================================================================
+
+  C1 -- same role in the model?
+    eps : amplitude of a per-rung unitary rotation exp(i eps A_n);
+          A_n is a random operator INTERNAL to rung n. eps tunes how
+          much each rung operator is rotated away from the common
+          Lambda -> rung-operator MISALIGNMENT (non-commutativity).
+    g/J : ratio of the cross-rung coupling Hamiltonian term g*H_couple
+          to the within-rung Heisenberg term J*H_rung. A ratio of two
+          ENERGY SCALES; sets the cross-rung mutual information tau.
+    --> eps acts WITHIN each rung's operator definition; g/J acts
+        BETWEEN rungs in the Hamiltonian. DIFFERENT roles. C1 FAILS.
+
+  C2 -- dimensional / structural commensurability?
+    g/J is a ratio of two scales OF THE SAME KIND (Hamiltonian energy
+    couplings). eps is NOT a ratio -- the dead-zone model has no
+    within-rung scale J at all; rungs are abstract operators on a
+    fixed shared space. There is no 'within-rung coupling' to divide
+    by, so eps cannot be a cross/within ratio. No monotone
+    model-independent map eps <-> g/J exists. C2 FAILS.
+
+  C3 -- shared mechanism?
+    Does g/J drive the rung-operator non-commutativity that eps
+    drives? Measured: the within-rung correlation operators O_n are
+    g/J-INVARIANT (commutator column constant across g/J).
+    eps DRIVES the rung-operator commutator (CHECK 1: 0 at eps=0,
+    rising to 2.7e-02 at eps=1). g/J does not touch it.
+    The mechanisms are disjoint: eps -> operator misalignment ->
+    h_min corridor penalty; g/J -> Hamiltonian energy ratio -> cross-
+    rung tau. C3 FAILS.
+
+================================================================================
+VERDICT
+================================================================================
+  C1, C2, C3 all FAIL. eps is NOT the cross-rung coupling g/J.
+  eps is a rung-operator non-commutativity / misalignment amplitude;
+  g/J is a cross-rung-vs-within-rung Hamiltonian energy-scale ratio.
+  The eps~=0.20 vs OOM-band-edge 0.3 proximity is a coincidence of
+  magnitude between two dimensionless numbers, not a shared axis.
+
+  PER PRE-REGISTRATION: any C-gate failure -> honest negative, STOP.
+  The OOM band (0.3, 3) does NOT constrain eps. R* is NOT recomputed.
+  The dead-zone rung budget R* ~= 25-56 stands UNCHANGED -- the cross-
+  rung coupling corridor and the dead-zone calibration are independent
+  constraints on the framework, not the same constraint.
+
+  Total runtime 37s.
