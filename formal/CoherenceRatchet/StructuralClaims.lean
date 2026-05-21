@@ -194,7 +194,16 @@ axiom framework_asserts_5 : Claim5
     UNCALIBRATED τ band. So the gate VALUE is not pinned; Claim 6 asserts the
     EXISTENCE of a dominance gate (coupling must dominate). The six-pair series
     both calibrates the gate and tests it. This is an empirical claim, not a
-    theorem — `CouplingDominates` carries the (uncalibrated) gate. -/
+    theorem — `CouplingDominates` carries the (uncalibrated) gate.
+    HEAD TO HEAD WITH SIMON. Claim 6 is in direct tension with Herbert Simon's
+    near-decomposability (Architecture of Complexity, 1962): Simon holds that
+    stable, evolvable complex hierarchies are NEAR-DECOMPOSABLE — within-
+    subsystem coupling DOMINATES between-subsystem coupling, the opposite
+    polarity to g/J ≳ 3. This is a feature: it gives Claim 6 a 60-year
+    established baseline to be tested against. Either coordinated rungs violate
+    near-decomposability (framework-distinctive content), or they obey it
+    (Claim 6 falsified against Simon). The six-pair series is run against Simon,
+    not against a self-chosen number. -/
 
 def Claim6 : Prop :=
   ∀ p, (CoordinatedPair p ∧ MultiRungCorridor p) → CouplingDominates p
