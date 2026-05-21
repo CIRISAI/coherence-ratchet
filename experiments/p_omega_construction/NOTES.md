@@ -900,6 +900,52 @@ it has not been run. So: the form is the framework's deepest commitment and the
 single highest-value next measurement is the one that actually tests it -- not
 "confirmed 5/5" but "used 5/5, tested 0/5; Exp 5 is the test."
 
+## 2026-05-21 — Exp 5 (quantum substrate): the form is a theorem, not a test
+
+exp5_quantum_substrate.py. The structural reframe made the Mobius/Kish form the
+framework's deepest commitment, to be tested first. Exp 5 is that test:
+N=8-qubit all-to-all transverse-field Ising, thermal states rho(T) (the steady
+states of a temperature-T bath -- T is the decoherence knob), T swept. rho (mean
+pairwise correlation) and k_eff measured by independent procedures, then checked
+against the Kish identity k_eff = N/(1+rho(N-1)).
+
+Result -- rho swept over a real range [0.006, 0.645]:
+- k_eff as the DESIGN-EFFECT size (sigma^2/Var(collective mean)): satisfies the
+  Kish identity IDENTICALLY, max|diff| = 1.8e-15 across the whole rho range. A
+  tautology -- k_var and rho are two moments of one covariance matrix, related
+  by algebra. K1-K4 are proven theorems.
+- k_eff as the PARTICIPATION RATIO of the correlation matrix: follows
+  N/(1+rho^2(N-1)) -- the rho-SQUARED form -- exactly (R^2 = 1.000), NOT the
+  Kish rho-form (R^2 = 0.54). A different effective-dimensionality measure obeys
+  a different (also tautological) algebra.
+- k_eff as the PURITY 1/Tr(rho^2) (Conjecture A's measure): ranges 1.9-254 --
+  it counts the 2^8 Hilbert dimension, not the 8 constituents. Mis-matched to
+  the Kish k_eff's range; Conjecture A needs an explicit constituent-level
+  reduction before its k_eff can be compared to the form at all.
+
+The verdict, and it is a third correction in the same series (calibration is
+not the content; the form is not the content either). The Mobius/Kish FORM is
+NOT the framework's falsifiable commitment -- it is a proven theorem. Given a
+k_eff definition and approximate equicorrelation, the rho<->k_eff relation is
+fixed by algebra; it cannot fail. CLAUDE.md already concedes this ("any system
+with an effective-sample-size analog and a pairwise-correlation analog will fit
+this algebra"). "Kish form confirmed/falsifiable at substrate X" is a category
+error: you cannot falsify a theorem.
+
+What IS empirical and falsifiable is the CORRIDOR: that coordinated systems
+across substrates occupy a bounded region between rigidity (rho->1) and chaos
+(rho->0), and that the dissipative dynamics makes that region an ATTRACTOR.
+Exp 5's thermal sweep shows rho spans the full rigidity-chaos range and passes
+through a corridor band at T in [0.9,1.3] -- corridor existence at the quantum
+substrate. The attractor property was shown separately by the dissipative
+steady-state window in construct_pomega_lindblad.py.
+
+Corrected priority for the whole program: the structural commitment to test
+and defend is the corridor and its attractor dynamics. The Mobius algebra is
+the coordinate system the corridor is stated in -- a theorem, not a claim. The
+five A3+ substrates and the dynamics experiments test the corridor; that is
+where the framework's empirical content has been all along.
+
 ## Session arc (2026-05-21)
 
 P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
