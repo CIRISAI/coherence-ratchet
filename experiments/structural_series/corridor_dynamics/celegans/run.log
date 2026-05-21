@@ -1,0 +1,109 @@
+==============================================================================
+C. elegans corridor relaxation rate — Kato2015 whole-brain imaging
+==============================================================================
+Loaded 12 Kato2015 worms.
+  worm0: N=107 neurons, T=2161, dt=0.336s, dur=726s
+  worm1: N=122 neurons, T=2162, dt=0.336s, dur=726s
+  worm10: N=125 neurons, T=3242, dt=0.375s, dur=1216s
+  worm11: N=129 neurons, T=3243, dt=0.375s, dur=1216s
+  worm2: N=124 neurons, T=2161, dt=0.336s, dur=726s
+  worm3: N=134 neurons, T=2162, dt=0.336s, dur=726s
+  worm4: N=121 neurons, T=2161, dt=0.336s, dur=726s
+  worm5: N=151 neurons, T=2162, dt=0.336s, dur=726s
+  worm6: N=146 neurons, T=2162, dt=0.336s, dur=726s
+  worm7: N=109 neurons, T=3243, dt=0.375s, dur=1216s
+  worm8: N=135 neurons, T=3243, dt=0.375s, dur=1216s
+  worm9: N=131 neurons, T=3243, dt=0.375s, dur=1216s
+
+==============================================================================
+WINDOW = 20 s
+==============================================================================
+worm       rho_mean  tau_ac/s   theta/s  T_glob/s      r*   theta*   sur_tau   >W  >sur
+worm0         0.391      6.72    0.0281     181.4   27.00     5.10      3.93    n     n
+worm1         0.400      5.43    0.0134     181.4   33.40     2.43      3.18    n     n
+worm10        0.432     15.67    0.0121     151.9    9.69     1.83      2.07    n     Y
+worm11        0.324      9.62    0.0084     151.9   15.78     1.27      4.09    n     n
+worm2         0.336     51.08    0.0099     181.4    3.55     1.80      4.45    Y     Y
+worm3         0.379      7.84    0.0144     181.4   23.13     2.61      3.39    n     n
+worm4         0.347      9.60    0.0153     181.4   18.90     2.77      3.90    n     n
+worm5         0.358     14.18    0.0132     181.4   12.80     2.40      5.08    n     n
+worm6         0.376      3.17    0.0153     181.4   57.25     2.78      3.73    n     n
+worm7         0.445     57.34    0.0148     151.9    2.65     2.25      2.18    Y     Y
+worm8         0.415     45.47    0.0130     101.2    2.23     1.32      1.97    Y     Y
+worm9         0.322      7.57    0.0122     151.9   20.07     1.85      4.53    n     n
+
+  across-worm (N=12):
+    tau_ac      = 19.47 +/- 18.82 s   range [3.17, 57.34]
+    k_relax     = 0.1091 +/- 0.0808 /s
+    OU theta    = 0.0142 +/- 0.0047 /s
+    T_global    = 164.9 +/- 23.5 s (N=12 with clear peak)
+    r* = T_g/tau_ac = 18.87 +/- 14.93  range [2.23, 57.25]  (N=12)
+    theta* = theta*T_g = 2.37 +/- 0.96  (N=12)
+    gate: tau_ac > window in 3/12 worms;  tau_ac > surrogate-p95 in 4/12 worms
+
+==============================================================================
+WINDOW = 30 s
+==============================================================================
+worm       rho_mean  tau_ac/s   theta/s  T_glob/s      r*   theta*   sur_tau   >W  >sur
+worm0         0.344      5.99    0.0259     181.4   30.30     4.69      9.20    n     n
+worm1         0.348      5.57    0.0061     181.4   32.57     1.11      6.79    n     n
+worm10        0.382      5.97    0.0072     151.9   25.42     1.09      5.06    n     n
+worm11        0.287     13.94    0.0041     151.9   10.89     0.63     10.16    n     n
+worm2         0.296      9.35    0.0051     181.4   19.40     0.93      8.34    n     n
+worm3         0.324      8.26    0.0068     181.4   21.96     1.23      8.56    n     n
+worm4         0.301     70.48    0.0068     181.4    2.57     1.24      7.30    Y     Y
+worm5         0.316     13.16    0.0065     181.4   13.79     1.18      7.33    n     n
+worm6         0.337      3.14    0.0079     181.4   57.73     1.44      6.43    n     n
+worm7         0.382      9.07    0.0067     151.9   16.75     1.01      3.75    n     n
+worm8         0.357     29.62    0.0054     101.2    3.42     0.55      6.13    n     Y
+worm9         0.264      7.66    0.0093     151.9   19.82     1.41     13.50    n     n
+
+  across-worm (N=12):
+    tau_ac      = 15.19 +/- 17.92 s   range [3.14, 70.48]
+    k_relax     = 0.1247 +/- 0.0765 /s
+    OU theta    = 0.0082 +/- 0.0055 /s
+    T_global    = 164.9 +/- 23.5 s (N=12 with clear peak)
+    r* = T_g/tau_ac = 21.22 +/- 14.18  range [2.57, 57.73]  (N=12)
+    theta* = theta*T_g = 1.38 +/- 1.03  (N=12)
+    gate: tau_ac > window in 1/12 worms;  tau_ac > surrogate-p95 in 2/12 worms
+
+==============================================================================
+WINDOW = 45 s
+==============================================================================
+worm       rho_mean  tau_ac/s   theta/s  T_glob/s      r*   theta*   sur_tau   >W  >sur
+worm0         0.294      4.63    0.0307     181.4   39.20     5.57     18.74    n     n
+worm1         0.297      5.40    0.0030     181.4   33.59     0.54      9.03    n     n
+worm10        0.333     10.92    0.0021     151.9   13.91     0.32     11.85    n     n
+worm11        0.257     16.41    0.0021     151.9    9.26     0.32     14.71    n     n
+worm2         0.254      6.55    0.0018     181.4   27.71     0.33     12.79    n     n
+worm3         0.266      8.46    0.0021     181.4   21.45     0.39     15.19    n     n
+worm4         0.257    211.61    0.0026     181.4    0.86     0.47     13.31    Y     Y
+worm5         0.258     14.86    0.0013     181.4   12.21     0.24     14.35    n     n
+worm6         0.301      7.12    0.0008     181.4   25.48     0.15     10.19    n     n
+worm7         0.320      5.07    0.0023     151.9   29.95     0.34     11.88    n     n
+worm8         0.302      7.47    0.0023     101.2   13.55     0.23     12.06    n     n
+worm9         0.223      7.73    0.0022     151.9   19.65     0.34     15.26    n     n
+
+  across-worm (N=12):
+    tau_ac      = 25.52 +/- 56.22 s   range [4.63, 211.61]
+    k_relax     = 0.1248 +/- 0.0587 /s
+    OU theta    = 0.0044 +/- 0.0079 /s
+    T_global    = 164.9 +/- 23.5 s (N=12 with clear peak)
+    r* = T_g/tau_ac = 20.57 +/- 10.65  range [0.86, 39.20]  (N=12)
+    theta* = theta*T_g = 0.77 +/- 1.45  (N=12)
+    gate: tau_ac > window in 1/12 worms;  tau_ac > surrogate-p95 in 1/12 worms
+
+==============================================================================
+VERDICT (headline window 30 s)
+==============================================================================
+WINDOW-DOMINATED NULL: tau_ac does not exceed the window in a majority of worms. The observable is window-correlated; no relaxation rate is claimed.
+
+  Corridor relaxation rate (headline):
+    tau_ac        = 15.19 +/- 17.92 s
+    k_relax       = 0.1247 +/- 0.0765 /s
+    T_global      = 164.9 +/- 23.5 s
+    DIMENSIONLESS r* = T_global / tau_ac = 21.22 +/- 14.18
+    DIMENSIONLESS theta* = theta * T_global = 1.38 +/- 1.03
+  W-stability of r*: {'20s': 18.870586425091634, '30s': 21.21837852374304, '45s': 20.567816271854376}
+
+Results: /home/emoore/coherence-ratchet/experiments/structural_series/corridor_dynamics/celegans/results_corridor_relaxation.json
