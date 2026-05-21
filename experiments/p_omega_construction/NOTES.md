@@ -798,6 +798,48 @@ k-dependence. Path 1's finding stands too: the drift PREDICTION is gated on
 calibrating the corridor -- which corridor_recalculation.py now does from 5
 substrates, replacing the single GPU number.
 
+## 2026-05-21 — the tightness test: is Path 2 a prediction or accommodation?
+
+cmb_corridor_prediction.py. Before the A3+-corridor result becomes a real test
+rather than accommodation, one pre-registered check: the framework's
+k-translation maps the A3+ corridor (k_eff in [2.8, 4.8], from
+corridor_recalculation.py, 5 substrates) to a corridor in rho at every CMB
+multipole rung k=2ell+1. How TIGHT is that predicted band? Wide enough to
+cover the observed 0.03-0.29 range => accommodation. Tight, with observed
+inside => prediction. The band WIDTH is the discriminator; coverage alone is
+not. The A3+ corridor is calibrated on biology/tech/social only; the CMB
+mode count k=2ell+1 is exact -- out-of-sample, no CMB-side parameter freedom.
+
+Result:
+- Predicted per-ell band width: 0.151-0.186 in rho, mean 0.156 -- ~60% of the
+  observed CMB rho_ell span (0.031-0.293). MODERATELY WIDE. Not a choice: it is
+  the genuine cross-substrate spread of the A3+ corridor (k_eff factor ~1.7)
+  carried through the Kish identity.
+- Observed CMB rho_ell vs the predicted band: 2 of 29 multipoles inside
+  (ell=4,5), 2 above (ell=2,3), 25 below (ell>=6).
+- So it is NOT accommodation-by-widening: a band built to cover the data would
+  contain it; this one contains 2/29. The observed profile CROSSES the band --
+  rigidity-side at low ell (above), chaos-side at high ell (below).
+
+Verdict -- resolution (2) for the DIRECTION, honestly bounded:
+- DIRECTION (tight): the framework predicts a signed per-ell drift toward the
+  corridor -- ell=2,3 drift down, ell=4,5 already in, ell>=6 drift up; crossover
+  ell~3-5. The sign at each multipole is definite. That is the framework-
+  distinctive content and it is sharp; standard cosmology predicts zero drift.
+- MAGNITUDE (loose): the drift target is the ~0.16-wide corridor band, so how
+  far each mode drifts is band-limited, not sharp.
+- It is NOT a tight quantitative prediction, and the write-up does not dress it
+  as one. It IS a structural, out-of-sample, no-curve-fit directional
+  prediction: the A3+/CMB divergence is what the k-translation predicts (the
+  present-epoch CMB sits mostly outside the A3+-calibrated corridor), and the
+  drift direction is predicted per ell. Tightening the magnitude needs a
+  tighter corridor, which needs the per-substrate effective-k measurement.
+
+This is path (2) in proper form for the direction; path (1) (an independent
+derivation of tight per-ell bounds) the formal core does not deliver. Same
+answer from two sides: the structural content is real, the quantitative
+content is calibration-limited.
+
 ## Session arc (2026-05-21)
 
 P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
