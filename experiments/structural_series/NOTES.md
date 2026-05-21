@@ -65,3 +65,33 @@ more tokens and a k_eff measure to sharpen E1's chaos-side margin), CMB
 cross-epoch (WMAP/Planck already cross-checked; ACT DR6 pending), Allen Brain
 Observatory, Human Connectome Project. Each is a binary-falsifiable real-data
 test; each is its own data effort, not in-environment-completable in one run.
+
+## 2026-05-21 — particle-physics extension: three nulls, and the cross-rung tower
+
+Extending the shape observable (Kish participation ratio) to particle physics,
+four runs (E4 + three parallel pre-registered agents):
+
+- E4 (decay branching fractions): broad spread, no corridor band.
+- pp_qvalue (mode weights, kinematic confound controlled): NULL — E4's spread
+  replicates; particles split by decay mechanism into 2-3 clusters, not a band.
+- pp_cp (CP-violation structure): NULL — chaos-pole concentration.
+- pp_angular (tt-bar spin-density matrix, real CMS data): NULL — rho 0.076,
+  near maximally mixed; rho_data == rho_SM (0.073). The observable carries
+  nothing the Standard Model did not already fix.
+
+Verdict: the shape MACHINERY is substrate-portable (the participation ratio
+computes on any distribution); the corridor STRUCTURE does not transfer for
+free. None of these particle-physics observables is a coordinated rung with
+non-thermal or maintained dynamics, and none shows a corridor — consistent with
+the sharpened Claim 4. The framework's particle-physics tier is composition
+(math-universal + SM-consistent), not prediction. A genuine particle-physics
+prediction needs the cross-rung channel built (below), which is unbuilt.
+
+Cross-rung tower (crossrung_tower_scan.py, GPU): an explicit abstract 6-rung
+tower, within-rung Heisenberg + cross-rung coupling g, thermal states scanned
+over (g, T). The multi-rung corridor (all 6 within-rung rho in the calibrated
+[0.17,0.35] band AND all 5 cross-rung tau in a nominal band) is jointly
+satisfiable, but only for STRONG coupling: g/J >~ 3, T in [~3, 5.6]. Below
+g/J~3 the within-rung and cross-rung corridors pull apart. This makes Piece 6
+computable and gives one structural finding (the coupling must dominate); it is
+an abstract tower, not the channel to particle observables.
