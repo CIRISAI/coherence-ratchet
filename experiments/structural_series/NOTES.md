@@ -48,11 +48,25 @@ architectures, but not a clean mid-corridor result.
 
 | Claim | Test | Verdict |
 |-------|------|---------|
-| 1 corridor attractor | E1 (LLM, real) | weakly supported (off rigidity; chaos-side edge) |
+| 1 corridor attractor | E1 (LLM, real); fMRI (human-neural, real) | weakly supported at LLM (chaos-side edge); CONFIRMED at human-neural |
 | 2 ergodicity split | E2 (6 Lindbladians) | falsified as stated → amended (symmetry-breaking qualifier) |
 | 3 closed thermal ⇒ no unmaintained corridor | E3 (closed chaotic) | consistent |
-| 4 fractal recurrence | E1 (3 architectures) | weakly supported |
+| 4 fractal recurrence | E1 (3 architectures); fMRI (139 subjects, 7 sites) | weakly supported at LLM; CONFIRMED at human-neural |
 | 5 multi-rung needs backward conditioning | E6 (Penrose-scope) | consistent (cosmological-origin scope) |
+
+**fMRI — Claims 1 & 4, human-neural substrate, real data.** `data_fmri/`.
+ABIDE-PCP (fully open; HCP needs a DUA), CC200 parcellation, 139 typically-
+developing controls across 7 sites. ρ = mean |functional connectivity|,
+phase-randomized noise floor, quadrature debias. Debiased ρ median 0.266, IQR
+0.134, all subject percentiles off both poles, distribution unimodal and
+concentrated, median inside the recalculated A3+ band (0.17, 0.35). All three
+pre-registered corridor criteria PASS. Stable under motion control (low-motion
+subset n=121) and uniform across all 7 sites. **Claims 1 & 4 CONFIRMED at the
+human-neural substrate** — the first clean corridor confirmation in the series,
+and stronger than E1's LLM result (where the chaos side was marginal; here the
+5th-percentile ρ is 0.168, far from zero). The corridor appears precisely where
+the substrate IS a coordinated rung — consistent with the particle-physics
+nulls, which were not coordinated rungs.
 
 ## Honest scope and what is owed
 
