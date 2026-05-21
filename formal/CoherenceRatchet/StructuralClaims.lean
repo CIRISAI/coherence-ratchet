@@ -49,6 +49,8 @@ axiom Carries      : Rung → Prop        -- the rung carries coordinated struct
 axiom ForwardErgodic     : Rung → Prop  -- forward generator: a unique steady state
 axiom BackwardNonErgodic : Rung → Prop  -- backward generator: many conserved quantities
 axiom RungInCorridor     : Rung → Prop  -- the rung occupies a corridor under some k_eff
+axiom MaintenanceBreaksSymmetry : Rung → Prop -- the γM maintenance breaks the
+                                              -- dynamical symmetries (Test E2)
 
 /-! ## The falsification lemma — the one logical fact this file rests on -/
 
@@ -84,19 +86,26 @@ axiom framework_asserts_1 : Claim1
 
 /-! ## Claim 2 — forward and backward generators in different ergodicity classes
 
-    At every rung carrying coordinated structure, the forward generator is
-    ergodic (a unique steady state) and the backward generator is non-ergodic
-    (many conserved quantities) — operator-level distinct.
+    At every rung carrying coordinated structure WHOSE MAINTENANCE BREAKS THE
+    DYNAMICAL SYMMETRIES, the forward generator is ergodic (a unique steady
+    state) and the backward generator is non-ergodic (many conserved
+    quantities) — operator-level distinct.
     TEST E2: ergodicity-class measurement on each operational instantiation.
-    FALSIFIER: a rung where the split fails.
-    STATUS: shown at n = 1 rung (backward_generator_legitimacy.py, dim-64
-    Lindbladian). "Every rung" is a conjecture from one instance. -/
+    FALSIFIER: a rung with symmetry-breaking maintenance where the split fails.
+    STATUS: tested at n = 6 instances (exp_E2_ergodicity_split.py). The split
+    holds for symmetry-breaking maintenance (4/6); it FAILS for symmetric
+    maintenance (2/6: Heisenberg + symmetric bit-flip → non-ergodic forward).
+    The `MaintenanceBreaksSymmetry` antecedent is the amendment E2 forced — the
+    original unqualified Claim 2 was falsified as stated. γM ("injects
+    distinction", Piece 2) is generically symmetry-breaking. -/
 
 def Claim2 : Prop :=
-  ∀ r, Carries r → (ForwardErgodic r ∧ BackwardNonErgodic r)
+  ∀ r, (Carries r ∧ MaintenanceBreaksSymmetry r) →
+       (ForwardErgodic r ∧ BackwardNonErgodic r)
 
 def Falsifier2 : Prop :=
-  ∃ r, Carries r ∧ ¬ (ForwardErgodic r ∧ BackwardNonErgodic r)
+  ∃ r, (Carries r ∧ MaintenanceBreaksSymmetry r) ∧
+       ¬ (ForwardErgodic r ∧ BackwardNonErgodic r)
 
 theorem claim2_iff : Claim2 ↔ ¬ Falsifier2 :=
   claim_iff_no_witness _ _
