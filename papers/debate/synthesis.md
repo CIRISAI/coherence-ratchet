@@ -2,6 +2,19 @@
 
 Adjudication of `strong_reading.md` against `conservative_reading.md`.
 
+> **Correction (2026-05-21, after reading `Corridor Dynamics.tex` directly).**
+> An earlier version of this synthesis was built on a compaction summary's
+> account of the paper and got three things wrong: it treated the structural
+> series as a re-run that downgraded v1's five-substrate record (it did not —
+> see v2 framing); it recommended retitling off "Five-Substrate Validation"
+> (the record stands); and it under-credited the paper, which already carries
+> the orthogonality theorem at full strength (§open-research) and the
+> structural series + Claim 2 amendment (§f-handles). The v2-framing section
+> and items 0–2 below are corrected. The conservative ledger's "2 positives"
+> is legitimate as the scope of *what the session paid for*, but it undercounts
+> the *paper's* evidence base, which is v1's five substrates plus the session's
+> additions.
+
 ## The debate converged
 
 The two sides were briefed as opponents. They are not. Set their concrete
@@ -42,43 +55,59 @@ gloss is the headline's meaning.
 
 v1 is public: *Corridor Dynamics in Coordinated Systems* — Zenodo v1 DOI
 `10.5281/zenodo.20300774`, published 2026-05-20, concept DOI
-`10.5281/zenodo.20300773`. v1 stays citable; v2 gets a new version DOI on
-upload. Zenodo carries no version-comment field, so the change-note must live
-*inside the v2 PDF* — a dated **"Changes in v2"** section listing each
-retraction and amendment against the experiment that forced it. Stated as a
-versioned changelog, the amendment record (Claim 2 by E2, Claim 6 by Path 1,
-the corridor-bounds retraction) reads as the falsification apparatus working —
-which is the honest reading.
+`10.5281/zenodo.20300773` (resolves to latest). v1 stays citable; v2 gets a new
+version DOI on upload. Zenodo carries no version-comment field, so the
+change-note lives *inside the v2 PDF* — a dated "Changes in v2" section.
 
-The v1 **title** is itself ahead of the evidence: *"...Five-Substrate Empirical
-Validation."* The structural-series re-runs give two clean confirmations
-(fMRI, TCGA), one weak (LLM), one chaos-pole datum (Allen) — not five-for-five.
-v1's nominal five substrates (neuroimaging, LLMs, OSS, cancer, religious
-communities) are not the set the structural series measured. v2 must drop
-"Five-Substrate ... Validation" as a count-claim from the title.
+**v1's five-substrate record stands.** §sec:corridor-empirical validates the
+corridor at five substrates (C. elegans, Drosophila, four LLM architectures,
+four OSS projects, five cancers) with a paired in-corridor / out-corridor
+matrix — Figure 2, Mode (iii) = 0/5. The 2026-05-21 structural series did not
+re-run those five and downgrade them. It is a second wave: it added human fMRI
+and Allen mouse cortex (new substrates), extended the cancer substrate from 5
+to 12 cancers (201/201 reproducing the prior 176/176), and re-measured LLM
+internals on smaller models with a debiased within-layer observable. The
+substrate base is broader after the session, not narrower. The title's
+"Five-Substrate Empirical Validation" is intact — now an undercount if v2 adds
+substrates, not an overclaim.
+
+**The proper v2 §corridor-empirical is a uniform-footing upgrade.** v1's five
+were measured 2026-05-15..19, before the structural series, against the nominal
+GPU-anchored (0.10, 0.43) band the paper itself flags as not transferring. v2
+should re-run the original five under the structural series' more robust
+framing (debiased ρ, substrate-local corridor calibration, canonical
+observable) so the flagship matrix is not a mix of pre- and
+post-structural-series methods — then add the new substrates. Caveat: two of
+the five — OSS (single-author-dominance proxy) and social groups (qualitative
+AM checklist) — are not ρ-correlation substrates; "robust framing" for them
+means pre-registration and proxy-stated-as-proxy, not the debiased-ρ upgrade,
+and needs its own definition before a re-run.
 
 ## Recommended paper update — section by section
 
-0. **Title + "Changes in v2" section.** Retitle off the "Five-Substrate
-   Validation" count-claim (e.g. "Cross-Substrate Empirical Tests"). Add a
-   dated change-note section: corridor-bounds retraction, five→six claims,
-   Claim 2 and Claim 6 amendments, cross-rung tier rebuilt — each against its
-   experiment.
+0. **"Changes in v2" section — no retitle.** The title's "Five-Substrate
+   Empirical Validation" stands; the record is intact and the session only
+   broadened it. Add a dated change-note section listing the genuine v1→v2
+   deltas, each against its experiment: structural spine five→six claims;
+   §corridor-empirical re-run on robust footing and extended; cross-rung
+   empirical tier added; GPU corridor-exit rate added; particle-physics shape
+   sector moved from "open research direction" to "tested null."
 
-1. **Abstract + universal-scale opening.** New statement of the orthogonality
-   theorem at full strength: proved, zero framework axioms, the framework is a
-   strict extension of ΛCDM. Immediately, the scope: it is a fence —
-   framework-distinctive cosmological content lives only in the shape sector,
-   which is calibration-gated.
+1. **Orthogonality theorem — already in v1; consider lifting.** v1
+   §sec:open-research already states the theorem at full strength ("strict
+   extension of ΛCDM," the proved Lean lemmas named) and §f-handles records it.
+   The only optional v2 change is lifting the headline to the abstract. No new
+   content owed here — the summary's "the paper is behind on this" was wrong.
 
-2. **§corridor-empirical — the largest revision.** Add the structural series in
-   flat register: fMRI confirmed (139 controls, pre-registered), TCGA confirmed
-   (7 new cancers, tumour drift 377/377 signed across two panels), LLM weak,
-   Allen a chaos-pole data point with an owed k_eff re-test. Relabel the prior
-   CCA v3 "5/5 PASS" matrix as the prior record — the structural series re-ran
-   the LLM substrate to a weak outcome and added Allen, and the paper must show
-   that. State Claim 4 as recurrence-of-*tightness*, not a fixed common band;
-   state the band-centre pipeline-dependence (0.27 → 0.34) in the body.
+2. **§corridor-empirical — re-run the five, then extend.** Re-run C. elegans
+   and Drosophila (the ρ-substrates still on the pre-structural-series framing)
+   under debiased ρ + substrate-local calibration; settle the framing for OSS
+   and social groups (non-ρ substrates) and re-run accordingly. Then add the
+   new rows: human fMRI confirmed, Allen mouse cortex (chaos-pole datum, owed
+   k_eff re-test), cancer extended 5→12. State the band centre as
+   substrate-local and pipeline-dependent (TCGA 0.27→0.34 on a GDC pipeline
+   change), and Claim 4 as recurrence-of-tightness, not a fixed common band.
+   The five-substrate paired matrix (Figure 2) is re-run, not downgraded.
 
 3. **New cross-rung empirical section** (the paper has none). Path 1 + w3 — the
    coupling ratio O(1) across 26 measurements, **n = 2 distinct rung pairs**
