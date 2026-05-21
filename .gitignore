@@ -31,3 +31,4 @@ papers/Corridor Dynamics.log
 # Web copy is consumed into the ciris-website repo; outreach/app copy
 # belongs with those teams. Kept local, never committed to the public repo.
 copy/
+experiments/open_system_pomega/cmb_data/

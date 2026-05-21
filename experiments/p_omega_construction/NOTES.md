@@ -557,12 +557,13 @@ Several entries above flagged paper corrections owed once the hard projector
 was documented dead and the soft pair constructed. With items (i) and (ii)
 done, the three corrections are now applied to papers/Corridor Dynamics.tex
 (builds clean):
-- The \Pomega subsection: the hard-projector formula int|c><c|dc is retracted
-  (documented dead zone, 3 models) and replaced with the soft graded operator
-  -- a forward/backward pair, depth-adequate (R* ~= 25-56, framework's 9
-  inside), irreducible (forward not Gibbs in H_sum). F-11's "without an
-  alternative TSVF-compatible operator emerging" clause is cited as the reason
-  it does not fire.
+- The \Pomega subsection: the hard-projector FORM int|c><c|dc is documented
+  dead (the dead zone, 3 models) and the construction recipe is reformulated as
+  the soft graded operator -- a forward/backward pair, depth-adequate (R* ~=
+  25-56, framework's 9 inside), irreducible (forward not Gibbs in H_sum). This
+  is a reformulation of the construction, NOT a retraction: F-11 has not fired
+  (its trigger needs a no-go AND no alternative emerging; the soft pair is the
+  alternative), and the universal-scale tier stands. Nothing is retracted.
 - Asymptotic conditioning: the Claim is regraded from "P(corridor-occupying |
   observed) -> 1" to "P(high corridor-compatibility weight | observed at
   t_late) -> maximum as t_late -> t_f" -- graded, not strict-everywhere.
@@ -654,15 +655,67 @@ concentration (axis-of-evil / hemispherical-asymmetry family); the named
 extension is a cross-ell H_sum carrying Piece-6 cross-rung coupling, which is
 what would give parity and low-ell-suppression drift.
 
-## Session close (2026-05-21)
+## 2026-05-21 — real-data: A3+ corridor calibration + WMAP CMB drift
 
-The P_omega arc this session: rung-scaling -> calibration (item i, R*~25-56)
--> postulate->dynamics bridge (item ii, D_omega named) -> paper corrections
--> generator legitimacy (item iii, legitimate backward Lindbladian exists)
--> CMB drift (the differentiator, computed). F-11 does not fire. The universal-
-scale tier survived the test that would have killed it, in tighter form:
-karma/grace irreducible at operator level, the corridor centre/width as master
-parameter, soft graded operator in place of the dead hard projector. Open and
-well-posed: empirical pinning of the corridor centre/width (the master
-parameter), toy->cosmological scaling, and the cross-ell H_sum extension for
-the full five-anomaly CMB profile.
+corridor_calibration_and_cmb_drift.py. Path step 1 (pin rho_mid from A3+ data)
+and a real-data instance of steps 3-4 (present-epoch rho_ell profile -> per-
+multipole drift), executed in-environment. NOTE the wording: nothing is
+retracted, F-11 has not fired; this is forward empirical work.
+
+PART 1 -- corridor centre from the five A3+ substrates, real measured values
+sourced from Corridor Dynamics.tex (which sources experiments/): cellular 0.27
++/-0.07; LLM 0.09-0.31; OSS 0.15-0.18; C. elegans sensory/inter/motor 0.25-0.45;
+EEG healthy 0.282; C. elegans command 0.52-0.75; social by AM-checklist (no
+rho). Low cluster of 5 rung classes: centres {0.165,0.20,0.27,0.282,0.35},
+median 0.27, mean 0.25, range 0.16-0.35. The command-neuron class (centre 0.63)
+is a documented substrate-local divergence, not folded in. rho_mid (A3+ side)
+~= 0.27, band 0.16-0.35.
+
+PART 2 -- present-epoch rho_ell from a REAL CMB map. WMAP 9-yr ILC map
+(lambda.gsfc.nasa.gov, nside 512; WMAP not Planck, but ell=2..30 is cosmic-
+variance-limited so they agree -- the low-ell anomalies were first found in
+WMAP). rho_ell read off the Kish identity from the 2ell+1 real-harmonic-mode
+power participation, galactic frame and rotation-averaged (frame-invariant).
+The profile falls 0.29 (ell=2) -> 0.03 (ell=30), tracking the isotropic-
+Gaussian baseline closely -- the CMB is nearly statistically isotropic in this
+measure. Cleanest real departure: the OCTUPOLE (ell=3), rotation-averaged
+concentration +0.033 above isotropic -- the octupole is independently a
+famously anomalous multipole; the Kish-rho measure picks it up.
+
+PART 3 -- the drift. d(rho_ell)/dbeta = 2(rho_mid - rho_ell). The profile is
+monotone so the drift has a single CROSSOVER multipole ell*: below it,
+multipoles de-concentrate (drift to isotropy); above, they concentrate. ell* is
+set by rho_mid: across the A3+ band ell* runs 5 (rho_mid=0.16) -> 4 -> 3
+(rho_mid=0.27) -> 2 (rho_mid=0.35). Standard cosmology and anthropic
+conditioning predict a flat zero -- no crossover. The crossover structure is
+the framework-distinctive signature, now computed from real data.
+
+THE HONEST DIVERGENCE. A single A3+ rho_mid does not transfer cleanly to the
+CMB: the A3+ centre ~0.27 sits at the TOP of the CMB rho_ell profile (which is
+mode-count-set, 0.29->0.03), so the crossover lands at ell*~2-3 and almost the
+whole spectrum drifts one way. This is the two-way-convergence test returning a
+DIVERGENCE at the cosmological substrate -- real empirical traction, consistent
+with the paper's already-open cross-substrate consistency-of-bounds question.
+It is NOT a refutation and does NOT touch F-11 (P_omega is constructed). And it
+shows a single rho_mid is the wrong model anyway: the framework's P_omega
+definition carries PER-RUNG bounds (rho_lower,n), so the CMB needs a per-ell
+corridor calibration -- the cosmological-consistency side of the two-way test,
+open work.
+
+Owed to a falsifiable forecast: per-ell corridor calibration, Planck cross-
+check of the low-ell rho_ell, a galactic mask, a frame-invariant rung
+observable (rotation-averaging is the v1 proxy), and the dbeta/dt magnitude
+(~1e-9/decade). All bounded engineering on a closed structural form.
+
+## Session arc (2026-05-21)
+
+P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
+postulate-dynamics bridge (item ii, D_omega named) -> paper corrections (hard-
+projector FORM superseded by the soft pair -- a reformulation, NOT a retraction;
+F-11 has not fired) -> generator legitimacy (item iii, legitimate backward
+Lindbladian exists) -> CMB drift differentiator (computed) -> real-data
+calibration + WMAP CMB drift profile. The universal-scale tier stands and is
+now empirically engaged in the same shape as the A3+ tier. Open and well-posed:
+per-ell / per-substrate corridor calibration, Planck cross-check, toy->
+cosmological scaling, the cross-ell H_sum extension for the full five-anomaly
+profile.
