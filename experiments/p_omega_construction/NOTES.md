@@ -424,3 +424,65 @@ fixed point of a modified L^dag, turning the free-standing postulate into a
 named, testable structural hypothesis. The backward soft P_omega is the live
 construction; F-11 stays armed but un-fired, and the open conjecture is
 well-posed.
+
+## 2026-05-21 — pinning the calibration: genuine RG-nested rungs (path item i)
+
+deadzone_rg_calibration.py answers path item (i). The rung-scaling result rode
+on a calibration step -- "the deadzone toy's RG-nested rungs commute at ~8e-3,
+so read the bet off the eps~=0.15 row." That 8e-3 was one toy number. This run
+measures the genuine quantity on two RG-nested constructions at a MATCHED
+Hilbert dimension D=4096 (M=12 constituents), so the commutator (max-abs-entry
+convention -- dimension-dependent, hence the matched-D rebuild of the eps curve)
+maps cleanly.
+
+- **PART A, nested-grouping correlation operators (the faithful model: all
+  rungs full-rank on the SAME D-dim space).** Genuine adjacent commutator
+  c_gen = 1.3e-3 (rung0-1: 1.15e-3, rung1-2: 1.46e-3) -- 6.1x SMALLER than the
+  8e-3 toy anchor. Genuine RG-nested rungs ARE near-commuting; the commutator
+  side of the bet is confirmed and then some.
+- **PART B, deep MERA isometry tower (rung n+1 = coarse-graining of rung n,
+  ~11 levels).** Adjacent commutator 1.4e-2 at the top, declining to 1.6e-6
+  deep -- deep RG rungs align. (Caveat: compressions on shrinking spaces; read
+  the trend, not the absolute values.)
+
+**The correction -- the commutator is NOT the whole calibration coordinate.**
+The directly-measured genuine corridor penalty: h_min(R=1,2,3) =
+0.0005 / 0.0011 / 0.0021, an ~linear slope of 0.00081 per rung. The
+random-operator scaling model reaches that slope only at eps ~= 0.20 -- NOT the
+eps ~= 0.05 the genuine commutator implies. The commutator UNDER-predicts
+h_min by ~4x in eps-equivalent. Reason: h_min = non-commutativity penalty +
+spectral-placement penalty. Genuine correlation operators have structured,
+non-uniform spectra, so co-locating every rung at rho_c is harder than for the
+random model's uniform-spectrum rungs; the commutator sees only the first
+term. The previous session's commutator-only reading missed this. The honest
+calibration uses the direct h_min slope.
+
+**The honest rung budget (from the direct h_min slope 0.00081/rung).**
+soft weight = exp(-beta_pin * slope * R), beta_pin = 1/2w^2:
+
+  w      R*(e^-1)  R*(0.1)   weight R=9   weight R=13   weight R=40
+  0.15      56       128       0.85         0.79          ~0.49
+  0.10      25        57       0.69         0.59          ~0.20
+
+The framework's nominal 9 rungs (Ph0,Ph1,Ph2,A0,A1,A2,A3,A4,A5) clear it
+comfortably (soft weight 0.69-0.85); 13 also survives (0.59-0.79). But the
+death rung is R* ~= 25-56 (e^-1 threshold), and **R=40 is marginal, not safe
+(~0.2-0.5)** -- the prior entry's "13 survives with margin to 40" was
+optimistic, written off the eps~=0.15 row; the calibrated rungs sit at
+eps~=0.20. The margin is finite and calibration-set, not unbounded.
+
+**Caveats.** (1) The faithful nested-grouping model is dimension-capped at 3
+rungs (M=12 -> groupings 12,6,3); the h_min slope is fit from R=1,2,3 only.
+Extrapolation to R=9+ assumes the ~linear growth continues -- the marginal
+cost h_min(3)-h_min(2)=0.00097 slightly exceeds the linear-fit 0.00081, a hint
+of mild super-linearity; if real, R* is somewhat below the quoted values.
+(2) D=4096 is one dimension; (3) random anisotropy per rung, 6 instances.
+
+**Verdict.** Path item (i) is done and it sharpened the result rather than
+just confirming it. F-11 still does not fire: the backward soft P_omega is
+constructible and the framework's actual rung count survives with a now-
+QUANTIFIED budget (R* ~= 25-56). The headline correction: the operative
+calibration coordinate is the corridor penalty h_min, not the commutator;
+genuine rungs are near-commuting yet sit at eps~=0.20 because of spectral
+placement. The open conjecture (b) is carried with a real rung budget
+attached. Remaining: path item (ii), the postulate-to-dynamics bridge.
