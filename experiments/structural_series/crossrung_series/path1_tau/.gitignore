@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# raw TCGA expression matrices are fetched per-cancer, computed, and deleted
+# in-run (the host is disk-constrained). Regenerable from measure_pairA_tcga.py
+# against the public NCI GDC API. results_pairA.json below is committed.
+*_expr.tsv.gz
