@@ -76,6 +76,9 @@ import CoherenceRatchet.Core.AudienceStopping
 -- The five empirical structural claims + machine-checked falsification logic
 import CoherenceRatchet.StructuralClaims
 
+-- The orthogonality theorem: soft P_ω leaves the bulk CMB power spectrum exact
+import CoherenceRatchet.CMBOrthogonality
+
 -- The 10-piece formal structure
 import CoherenceRatchet.Core.BaseIdentity                  -- Piece 1
 import CoherenceRatchet.Core.Dynamics                       -- Piece 2
