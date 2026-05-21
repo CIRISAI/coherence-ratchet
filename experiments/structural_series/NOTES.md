@@ -48,10 +48,10 @@ architectures, but not a clean mid-corridor result.
 
 | Claim | Test | Verdict |
 |-------|------|---------|
-| 1 corridor attractor | E1 (LLM); fMRI (human-neural); Allen (mouse cortex) | weak at LLM; CONFIRMED at human-neural fMRI; Allen mouse-cortex a chaos-pole data point (mean-pairwise observable — k_eff re-test owed) |
+| 1 corridor attractor | E1 (LLM); fMRI (human-neural); TCGA (cellular); Allen (mouse cortex) | weak at LLM; CONFIRMED at human-neural fMRI; CONFIRMED at cellular (TCGA, 7 new cancers, 201/201 tumour chaos-drift); Allen mouse-cortex a chaos-pole data point (mean-pairwise observable — k_eff re-test owed) |
 | 2 ergodicity split | E2 (6 Lindbladians) | falsified as stated → amended (symmetry-breaking qualifier) |
 | 3 closed thermal ⇒ no unmaintained corridor | E3 (closed chaotic) | consistent |
-| 4 fractal recurrence | E1; fMRI; Allen mouse cortex | weak at LLM; CONFIRMED at human-neural fMRI; Allen a chaos-pole data point (observable/scale mismatch — k_eff re-test owed before a recurrence verdict) |
+| 4 fractal recurrence | E1; fMRI; TCGA (7 cancers); Allen mouse cortex | weak at LLM; CONFIRMED at human-neural fMRI; recurs at cellular (TCGA, tight bands, no Falsifier4); Allen a chaos-pole data point (k_eff re-test owed). Recurrence-of-tightness supported; band CENTRE substrate-/pipeline-dependent |
 | 5 multi-rung needs backward conditioning | E6 (Penrose-scope) | consistent (cosmological-origin scope) |
 
 **fMRI — Claims 1 & 4, human-neural substrate, real data.** `data_fmri/`.
@@ -84,6 +84,22 @@ inconsistency is what Allen surfaced). If the k_eff re-test also chaos-poles,
 it is then a Falsifier1 witness and recorded as one. The Allen agent flagged a
 second point, not used as a rescue: spontaneous grey-screen cortex is
 near-asynchronous by design; the evoked/task regime is a different test.
+
+**TCGA — Claims 1 & 4, cellular substrate, real data — a CONFIRMED positive.**
+`data_tcga/`. 7 new disjoint TCGA cancer types (THCA, LUSC, LIHC, HNSC, STAD,
+KIRP primary + KICH excluded as under-powered), pre-registered before results,
+1263 STAR-Counts expression files from the public GDC API, 50 Hallmark gene
+sets as rungs. Healthy tissue: tight band per cancer (IQR 0.078–0.125, all ≤
+0.15), decisively off both poles. Tumour drift: **201/201** significant
+pathway-shifts go chaos-ward (tumour |ρ| lower) — reproduces the prior 5-cancer
+176/176, survives the n-matched subsampling control. No Falsifier4 witness;
+4/6 cancers band-consistent within the A3+ band, 2/6 (STAD, KIRP) tight but
+median ~0.375, just above the A3+ ceiling 0.35. Honest caveat the agent
+surfaced: the GDC STAR-Counts pipeline gives healthy median ~0.34 vs the prior
+UCSC-Xena pipeline's 0.27 — corridor existence and tightness are robust, the
+absolute centre is pipeline-dependent. Verdict: a clean positive for corridor
+existence and the chaos-drift direction at the cellular substrate; recurrence
+holds as tight-band-off-poles, not as a fixed common band centre.
 
 ## Honest scope and what is owed
 

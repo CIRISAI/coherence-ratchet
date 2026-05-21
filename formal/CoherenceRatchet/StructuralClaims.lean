@@ -230,17 +230,23 @@ axiom framework_asserts_6 : Claim6
       k_eff-of-covariance re-run on the same Allen data. If that ALSO lands at
       the chaos pole it becomes a `Falsifier1` witness and is recorded as one;
       the data-point status holds only until the canonical observable is run.
+      data_tcga (7 new TCGA cancers, real GDC data, pre-registered) SUPPORTED —
+      healthy tissue tight-banded off both poles, tumour drift 201/201 chaos-
+      ward (reproduces the prior 176/176). Caveat: the absolute band centre is
+      pipeline-dependent (GDC STAR-Counts ρ ≈ 0.34 vs the prior pipeline 0.27).
     Claim 2 — E2 (6 Lindbladian instances) FALSIFIED AS STATED → AMENDED. 2/6
       had non-ergodic forward generators; the `MaintenanceBreaksSymmetry`
       antecedent is the amendment the test forced.
     Claim 3 — E3 (closed chaotic chain) CONSISTENT. Energy conservation ⇒ no
       corridor attractor without maintenance.
     Claim 4 — E1 (LLM) weak; data_fmri SUPPORTED at the fMRI region scale;
-      data_allen a chaos-pole data point at the cortical-neuron scale. The
-      factor ~13 gap is mostly an observable/scale difference (region-region
-      functional connectivity vs neuron-neuron pairwise correlation), so it is
-      not yet a recurrence verdict — the k_eff re-test reconciles the
-      observable before recurrence can be judged.
+      data_tcga the corridor recurs at 7 new cancers (tight bands, 0 pole-
+      piled, no Falsifier4 witness); data_allen a chaos-pole data point at the
+      cortical-neuron scale. Recurrence holds as "a tight band off both poles"
+      — but the band CENTRE ranges across substrates and pipelines (TCGA ~0.34,
+      fMRI ~0.27, 2/6 TCGA cancers above the A3+ ceiling). Recurrence-of-
+      tightness is supported; recurrence-as-a-fixed-common-band is not, and the
+      framework should state Claim 4 as the former.
     Claim 5 — E6 (Penrose-scope, 200 generic ICs) CONSISTENT — 0/200
       forward-evolve to the multi-rung corridor.
     Claim 6 — crossrung_tower_scan.py: joint multi-rung corridor needs g/J ≳ 3
@@ -252,12 +258,15 @@ axiom framework_asserts_6 : Claim6
     the bulk CMB power spectrum exactly invariant — the framework is a strict
     extension of ΛCDM at the cosmological tier. PROVED, not an empirical claim.
 
-    The spec is live: E2 amended Claim 2. data_fmri is a clean positive for
-    Claims 1 & 4; data_allen is a chaos-pole data point that surfaced an
-    observable-consistency issue — the series so far used mean-pairwise ρ,
-    while the framework's canonical shape observable is the participation-ratio
-    k_eff. The k_eff re-test across E1, fMRI and Allen is owed; until it runs,
-    Allen is a data point, not a `Falsifier1` witness, and no claim is
-    retracted here. -/
+    The spec is live: E2 amended Claim 2. data_fmri (human-neural) and
+    data_tcga (cellular) are clean pre-registered positives for Claims 1 & 4;
+    data_allen is a chaos-pole data point that surfaced an observable-
+    consistency issue — the series so far used mean-pairwise ρ, while the
+    framework's canonical shape observable is the participation-ratio k_eff.
+    The k_eff re-test across E1, fMRI and Allen is owed; until it runs, Allen
+    is a data point, not a `Falsifier1` witness, and no claim is retracted
+    here. The consistent finding across positives: corridor EXISTENCE (tight
+    band, off both poles) is robust; the band CENTRE is substrate- and
+    pipeline-dependent. -/
 
 end CoherenceRatchet.StructuralClaims
