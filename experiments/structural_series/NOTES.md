@@ -48,10 +48,10 @@ architectures, but not a clean mid-corridor result.
 
 | Claim | Test | Verdict |
 |-------|------|---------|
-| 1 corridor attractor | E1 (LLM, real); fMRI (human-neural, real) | weakly supported at LLM (chaos-side edge); CONFIRMED at human-neural |
+| 1 corridor attractor | E1 (LLM); fMRI (human-neural); Allen (mouse cortex) | weak at LLM; CONFIRMED at human-neural fMRI; Allen mouse-cortex a chaos-pole data point (mean-pairwise observable — k_eff re-test owed) |
 | 2 ergodicity split | E2 (6 Lindbladians) | falsified as stated → amended (symmetry-breaking qualifier) |
 | 3 closed thermal ⇒ no unmaintained corridor | E3 (closed chaotic) | consistent |
-| 4 fractal recurrence | E1 (3 architectures); fMRI (139 subjects, 7 sites) | weakly supported at LLM; CONFIRMED at human-neural |
+| 4 fractal recurrence | E1; fMRI; Allen mouse cortex | weak at LLM; CONFIRMED at human-neural fMRI; Allen a chaos-pole data point (observable/scale mismatch — k_eff re-test owed before a recurrence verdict) |
 | 5 multi-rung needs backward conditioning | E6 (Penrose-scope) | consistent (cosmological-origin scope) |
 
 **fMRI — Claims 1 & 4, human-neural substrate, real data.** `data_fmri/`.
@@ -67,6 +67,23 @@ and stronger than E1's LLM result (where the chaos side was marginal; here the
 5th-percentile ρ is 0.168, far from zero). The corridor appears precisely where
 the substrate IS a coordinated rung — consistent with the particle-physics
 nulls, which were not coordinated rungs.
+
+**Allen Brain — Claims 1 & 4, mouse-neural substrate, real data — a DATA POINT.**
+`data_allen/`. Allen Brain Observatory, 25 mouse visual-cortex two-photon
+sessions, spontaneous (grey-screen) epoch. ρ = mean pairwise |neuron
+correlation|, shuffle-debiased: median 0.023, 15/25 below ρ = 0.03 — the chaos
+pole on this observable. This is recorded as a **data point, not a falsifier**:
+the framework's canonical shape observable is the participation-ratio k_eff of
+the activity covariance, not the mean pairwise correlation, and cortex is the
+textbook case where the two diverge — small pairwise correlations but strong
+low-rank population structure (the asynchronous-but-low-dimensional cortical
+state). The mean-pairwise series result is genuine; whether it is a corridor
+verdict needs the k_eff-of-covariance re-run, owed across E1, fMRI and Allen
+(the series used mean-pairwise throughout; the CMB work used k_eff — that
+inconsistency is what Allen surfaced). If the k_eff re-test also chaos-poles,
+it is then a Falsifier1 witness and recorded as one. The Allen agent flagged a
+second point, not used as a rescue: spontaneous grey-screen cortex is
+near-asynchronous by design; the evoked/task regime is a different test.
 
 ## Honest scope and what is owed
 

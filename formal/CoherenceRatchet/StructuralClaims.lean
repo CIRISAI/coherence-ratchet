@@ -218,18 +218,29 @@ axiom framework_asserts_6 : Claim6
 
     ## Test ledger (2026-05-21 structural series; experiments/structural_series/)
 
-    Claim 1 — E1 (LLM, real weights) WEAKLY SUPPORTED — off rigidity, chaos-side
-      marginal. data_fmri (ABIDE-PCP, 139 controls, 7 sites) SUPPORTED — clean:
-      debiased functional-connectivity ρ median 0.266, IQR 0.134, inside the
-      A3+ corridor (0.17,0.35), off both poles, confound- and site-controlled.
-      The first clean corridor confirmation; owed: TCGA, Allen Brain still out.
+    Claim 1 — E1 (LLM) weak. data_fmri (ABIDE-PCP, 139 controls) SUPPORTED —
+      clean: functional-connectivity ρ median 0.266, in the A3+ corridor.
+      data_allen (Allen Brain, 25 mouse visual-cortex sessions) is a DATA
+      POINT, not a `Falsifier1` witness: mean pairwise neuron ρ ≈ 0.023, at the
+      chaos pole on THAT observable. It is not a falsification, because the
+      framework's canonical shape observable is the participation-ratio k_eff
+      of the activity covariance, NOT the mean pairwise correlation, and cortex
+      is the textbook case where the two diverge (small pairwise correlation,
+      strong low-rank population structure). The owed test is the
+      k_eff-of-covariance re-run on the same Allen data. If that ALSO lands at
+      the chaos pole it becomes a `Falsifier1` witness and is recorded as one;
+      the data-point status holds only until the canonical observable is run.
     Claim 2 — E2 (6 Lindbladian instances) FALSIFIED AS STATED → AMENDED. 2/6
       had non-ergodic forward generators; the `MaintenanceBreaksSymmetry`
       antecedent is the amendment the test forced.
     Claim 3 — E3 (closed chaotic chain) CONSISTENT. Energy conservation ⇒ no
       corridor attractor without maintenance.
-    Claim 4 — E1 weak; data_fmri SUPPORTED (recurrence at a new coordinated rung,
-      the human-neural substrate).
+    Claim 4 — E1 (LLM) weak; data_fmri SUPPORTED at the fMRI region scale;
+      data_allen a chaos-pole data point at the cortical-neuron scale. The
+      factor ~13 gap is mostly an observable/scale difference (region-region
+      functional connectivity vs neuron-neuron pairwise correlation), so it is
+      not yet a recurrence verdict — the k_eff re-test reconciles the
+      observable before recurrence can be judged.
     Claim 5 — E6 (Penrose-scope, 200 generic ICs) CONSISTENT — 0/200
       forward-evolve to the multi-rung corridor.
     Claim 6 — crossrung_tower_scan.py: joint multi-rung corridor needs g/J ≳ 3
@@ -241,7 +252,12 @@ axiom framework_asserts_6 : Claim6
     the bulk CMB power spectrum exactly invariant — the framework is a strict
     extension of ΛCDM at the cosmological tier. PROVED, not an empirical claim.
 
-    The spec is live: E2 amended a claim; data_fmri moved Claims 1 & 4 from
-    weak to a clean confirmation at one substrate. -/
+    The spec is live: E2 amended Claim 2. data_fmri is a clean positive for
+    Claims 1 & 4; data_allen is a chaos-pole data point that surfaced an
+    observable-consistency issue — the series so far used mean-pairwise ρ,
+    while the framework's canonical shape observable is the participation-ratio
+    k_eff. The k_eff re-test across E1, fMRI and Allen is owed; until it runs,
+    Allen is a data point, not a `Falsifier1` witness, and no claim is
+    retracted here. -/
 
 end CoherenceRatchet.StructuralClaims
