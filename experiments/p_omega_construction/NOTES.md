@@ -486,3 +486,67 @@ calibration coordinate is the corridor penalty h_min, not the commutator;
 genuine rungs are near-commuting yet sit at eps~=0.20 because of spectral
 placement. The open conjecture (b) is carried with a real rung budget
 attached. Remaining: path item (ii), the postulate-to-dynamics bridge.
+
+## 2026-05-21 — the postulate-to-dynamics bridge (path item ii)
+
+backward_pomega_dynamics_bridge.py answers path item (ii). The standing
+limitation: the backward soft operator E_omega(beta) = exp(-beta H_sum) is a
+free-standing POSTULATE -- the forward Lindbladian L has steady state rho_ss
+(the forward soft P_omega) and its adjoint L^dag has only the identity as a
+fixed point, so E_omega is an input, not a dynamical output. Path item (ii):
+find the modification D_omega that makes E_omega a fixed point of a modified
+adjoint L~^dag = L^dag + D_omega, and characterise it. Model: the corridor
+Lindbladian of construct_pomega_lindblad.py (3 rungs x 2 spins, dim 64), with
+the rung observable upgraded to a genuine anisotropic correlation OPERATOR O_n
+(real [0,1] spectrum) so H_sum = sum_n (O_n - rho_c)^2 is non-trivial.
+
+Four tests:
+- **A. H_sum conservation.** ||L^dag[H_sum]|| / (||L|| ||H_sum||) = 0.054 --
+  the corridor-penalty operator is only WEAKLY non-conserved (~5%). So at
+  small beta, E_omega = exp(-beta H_sum) is already nearly a fixed point of
+  the bare adjoint.
+- **B. The modification D_omega.** The minimal-norm modification with
+  L~^dag[E_omega] = 0 is rank-1: D_omega[X] = -L^dag[E_omega] <E_omega,X> /
+  ||E_omega||^2. Its relative size ||D_omega||/||L|| grows with beta:
+  0.015 (beta=0.5), 0.030 (1), 0.060 (2), 0.148 (5), 0.243 (10),
+  0.289 (beta_pin=22.2, w=0.15), 0.300 (beta_pin=50, w=0.10).
+  **D_omega is NAMED:** the cosine between L^dag[E_omega] and L^dag[H_sum] is
+  -0.997 at small beta -- D_omega is, to leading order, exactly the corridor-
+  penalty current L^dag[H_sum] (E_omega ~= I - beta H_sum, so L^dag[E_omega]
+  ~= -beta L^dag[H_sum]). At the framework's large beta_pin the cosine drops
+  to -0.28: still penalty-current-dominated, with higher-order corrections.
+- **C. Gibbs test (does the bridge close completely?).** If rho_ss were
+  ~exp(-beta_dyn H_sum), E_omega would be a POWER of the forward steady state
+  -- fully dynamical. It is NOT: regressing log(rho_ss) on H_sum gives
+  R^2 = 0.02 (on H, R^2 = 0.15). rho_ss and H_sum nearly commute (0.041) but
+  rho_ss is not Gibbs in H_sum. The forward soft P_omega (rho_ss) and the
+  backward soft P_omega (E_omega) are GENUINELY DISTINCT operators -- the
+  input/output split is real, not an artifact.
+- **D. Detailed balance.** GNS-detailed-balance violation 8.9 -- the dynamics
+  is strongly time-asymmetric about rho_ss (the rigidity-drift collective
+  decay is strongly irreversible / non-unital). No equilibrium time-reversal
+  symmetry to make forward and backward coincide.
+
+**Verdict on the bridge.** It does NOT collapse the input/output split -- that
+would have required rho_ss Gibbs in H_sum (it is not) or H_sum exactly
+conserved (it is not). E_omega cannot be an exact fixed point of the bare
+adjoint: L^dag contracts to the identity, structurally. BUT path item (ii)'s
+actual ask is met: the modification is no longer mysterious. The free-standing
+postulate "the universe has a backward boundary E_omega" becomes the named,
+sized structural hypothesis:
+
+    L~^dag = L^dag + D_omega ,   D_omega ~ the corridor-penalty current
+                                          L^dag[H_sum] ,
+    relative magnitude ||D_omega||/||L|| = a few % (small beta) up to
+    ~0.29-0.30 at the framework-referenced beta_pin = 1/2w^2.
+
+The magnitude is set by the corridor width w: a narrow corridor forces a large
+beta_pin and hence a larger backward drive. This is the same narrow-corridor
+penalty that the soft operator hit before (large beta_pin -> near-hard-
+projector regime) -- it now reappears as the size of the dynamics-bridge
+modification. F-11 still does not fire. The open conjecture (b) is now carried
+with BOTH a quantified rung budget (item i: R* ~= 25-56) and a named backward-
+drive operator (item ii: D_omega ~ L^dag[H_sum], magnitude ~0.3||L|| at
+beta_pin). What remains genuinely open: whether L~^dag = L^dag + D_omega is
+itself a legitimate (completely-positive-dual) generator, and what physical
+process at cosmological scale realises the penalty-current drive.
