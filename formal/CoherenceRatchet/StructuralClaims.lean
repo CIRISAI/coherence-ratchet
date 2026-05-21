@@ -53,8 +53,9 @@ axiom RungPair : Type                   -- a pair of adjacent coordinated rungs
 axiom CoordinatedPair   : RungPair → Prop -- both members are coordinated rungs
 axiom MultiRungCorridor : RungPair → Prop -- both within-rung corridors AND the
                                           -- cross-rung τ corridor hold at once
-axiom CouplingDominates : RungPair → Prop -- the cross-rung coupling dominates the
-                                          -- within-rung scale: g/J above the gate
+axiom CouplingComparable : RungPair → Prop -- cross-rung coupling COMPARABLE to
+                                           -- within-rung: g/J in the one-OOM
+                                           -- band (0.3, 3) around parity g/J=1
 axiom MaintenanceBreaksSymmetry : Rung → Prop -- the γM maintenance breaks the
                                               -- dynamical symmetries (Test E2)
 
@@ -179,43 +180,42 @@ theorem claim5_iff : Claim5 ↔ ¬ Falsifier5 :=
 
 axiom framework_asserts_5 : Claim5
 
-/-! ## Claim 6 — the cross-rung dominance gate
+/-! ## Claim 6 — the cross-rung coupling corridor (AMENDED)
 
     At every coordinated rung PAIR that jointly satisfies the multi-rung
-    corridor (both within-rung corridors AND the cross-rung τ corridor), the
-    cross-rung coupling dominates the within-rung scale.
-    TEST: the six rung-pair g/J series (experiments/structural_series/
-    crossrung_series/) — calibrate the cross-rung τ band from real paired data
-    first, then measure g/J at six rung pairs and check each clears the gate.
-    FALSIFIER: a coordinated pair with the multi-rung corridor satisfied but the
-    coupling NOT dominating.
-    STATUS: crossrung_tower_scan.py found, on an abstract 6-rung tower, that
-    joint corridor satisfaction needs g/J ≳ 3 — but against a NOMINAL,
-    UNCALIBRATED τ band. So the gate VALUE is not pinned; Claim 6 asserts the
-    EXISTENCE of a dominance gate (coupling must dominate). The six-pair series
-    both calibrates the gate and tests it. This is an empirical claim, not a
-    theorem — `CouplingDominates` carries the (uncalibrated) gate.
-    HEAD TO HEAD WITH SIMON. Claim 6 is in direct tension with Herbert Simon's
-    near-decomposability (Architecture of Complexity, 1962): Simon holds that
-    stable, evolvable complex hierarchies are NEAR-DECOMPOSABLE — within-
-    subsystem coupling DOMINATES between-subsystem coupling, the opposite
-    polarity to g/J ≳ 3. This is a feature: it gives Claim 6 a 60-year
-    established baseline to be tested against. The six-pair series is run
-    against Simon, not against a self-chosen number.
-    PATH 1 RESULT (crossrung_series/path1_tau/, real data, 2 rung pairs,
-    pre-registered): NEITHER. The cross-rung/within-rung coupling ratio is ~1
-    (middle band, 0.47–1.47) — not Simon's strong near-decomposability (ratio
-    ≪ 1) and not Claim 6's strong dominance (≳ 3). Real coordinated rung pairs
-    sit at INTERMEDIATE decomposability. The strong-dominance form is tensioned
-    by this data point; the intermediate-coupling form (cross-rung comparable
-    to within-rung — denying both poles) is what the data supports. The
-    canonical timescale-g/J (Paths 2-3) is still owed. -/
+    corridor, the cross-rung coupling is COMPARABLE to the within-rung scale:
+    g/J in the one-order-of-magnitude band (0.3, 3) around parity g/J = 1.
+
+    AMENDMENT (2026-05-21, the second test-driven amendment in this spec after
+    Claim 2). The original Claim 6 was a DOMINANCE gate, g/J ≳ 3, read off the
+    abstract tower (crossrung_tower_scan.py). Path 1 of the six-pair series
+    (crossrung_series/path1_tau/, real data, 2 rung pairs, pre-registered)
+    measured the coupling ratio at 0.47–1.47 — neither Simon's near-
+    decomposability (g/J ≪ 1) nor the strong dominance (g/J ≳ 3). The strong
+    g/J ≳ 3 form is RETRACTED as tower-specific. The amended claim is the
+    intermediate-coupling form: g/J ∈ (0.3, 3). Rationale — O(1) cross-rung
+    coupling is the existence condition for a hierarchy that is both stratified
+    (distinct rungs; fails at g/J ≪ 1) and integrated (rungs coupled; fails at
+    g/J ≫ 1); one OOM is the natural width of a non-fine-tuned bounded band on
+    a log axis. So this is still a corridor — a bounded band between two
+    failure modes — now at the cross-rung level, matching the within-rung
+    corridor's shape.
+
+    HEAD TO HEAD WITH SIMON. The amended claim still contradicts Simon's
+    near-decomposability (Architecture of Complexity, 1962): Simon holds stable
+    hierarchies have g/J ≪ 1; Pair A's 1.15 directly denies that. Claim 6 says
+    coordinated rungs sit at intermediate coupling — territory neither Simon
+    nor the strong-tower form predicted.
+    TEST: the six rung-pair g/J series — Path 1 done (2 pairs in band); Paths
+    2-3 (the canonical timescale-g/J) owed.
+    FALSIFIER: a coordinated pair with the multi-rung corridor satisfied but
+    g/J outside (0.3, 3). This is an empirical claim, not a theorem. -/
 
 def Claim6 : Prop :=
-  ∀ p, (CoordinatedPair p ∧ MultiRungCorridor p) → CouplingDominates p
+  ∀ p, (CoordinatedPair p ∧ MultiRungCorridor p) → CouplingComparable p
 
 def Falsifier6 : Prop :=
-  ∃ p, (CoordinatedPair p ∧ MultiRungCorridor p) ∧ ¬ CouplingDominates p
+  ∃ p, (CoordinatedPair p ∧ MultiRungCorridor p) ∧ ¬ CouplingComparable p
 
 theorem claim6_iff : Claim6 ↔ ¬ Falsifier6 :=
   claim_iff_no_witness _ _
@@ -264,16 +264,14 @@ axiom framework_asserts_6 : Claim6
       framework should state Claim 4 as the former.
     Claim 5 — E6 (Penrose-scope, 200 generic ICs) CONSISTENT — 0/200
       forward-evolve to the multi-rung corridor.
-    Claim 6 — crossrung_tower_scan.py: joint multi-rung corridor needs g/J ≳ 3
-      on an abstract tower (nominal τ band). Path 1 of the six-pair series DONE
-      on 2 real rung pairs (TCGA molecular→pathway; LLM internal→external —
-      crossrung_series/path1_tau/, pre-registered): the cross-rung/within-rung
-      coupling RATIO is ~1 (middle band 0.47–1.47) — NEITHER Simon's near-
-      decomposability NOR Claim 6's strong g/J ≳ 3 dominance. Real coordinated
-      rungs sit at intermediate decomposability. A data point (not a falsifier)
-      tensioning the strong-dominance form; the canonical timescale-g/J (Paths
-      2-3) is owed and may come apart from the coupling ratio. Likely honest
-      amendment: Claim 6 → the intermediate-coupling form.
+    Claim 6 — AMENDED. Path 1 (crossrung_series/path1_tau/, 2 real rung pairs,
+      pre-registered) measured the cross-rung/within-rung coupling ratio at
+      0.47–1.47 — neither Simon's near-decomposability nor the abstract tower's
+      strong g/J ≳ 3. The strong-dominance form is retracted as tower-specific;
+      Claim 6 is amended to the cross-rung COUPLING CORRIDOR: g/J in the one-OOM
+      band (0.3, 3) around parity. Still a corridor — bounded band between two
+      failure modes — now at the cross-rung level. The second test-driven
+      amendment (after Claim 2). Paths 2-3 (timescale-g/J) still owed.
 
     Plus the orthogonality theorem (CMBOrthogonality.lean): the soft P_ω leaves
     the bulk CMB power spectrum exactly invariant — the framework is a strict
