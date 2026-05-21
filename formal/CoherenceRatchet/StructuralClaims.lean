@@ -54,8 +54,8 @@ axiom CoordinatedPair   : RungPair → Prop -- both members are coordinated rung
 axiom MultiRungCorridor : RungPair → Prop -- both within-rung corridors AND the
                                           -- cross-rung τ corridor hold at once
 axiom CouplingComparable : RungPair → Prop -- cross-rung coupling COMPARABLE to
-                                           -- within-rung: g/J in the one-OOM
-                                           -- band (0.3, 3) around parity g/J=1
+                                           -- within-rung: g/J ~ O(1), Path-1
+                                           -- measured band 0.47–1.47
 axiom MaintenanceBreaksSymmetry : Rung → Prop -- the γM maintenance breaks the
                                               -- dynamical symmetries (Test E2)
 
@@ -184,22 +184,27 @@ axiom framework_asserts_5 : Claim5
 
     At every coordinated rung PAIR that jointly satisfies the multi-rung
     corridor, the cross-rung coupling is COMPARABLE to the within-rung scale:
-    g/J in the one-order-of-magnitude band (0.3, 3) around parity g/J = 1.
+    g/J ~ O(1) — Path-1 measured 0.47–1.47, neither pole.
 
-    AMENDMENT (2026-05-21, the second test-driven amendment in this spec after
-    Claim 2). The original Claim 6 was a DOMINANCE gate, g/J ≳ 3, read off the
-    abstract tower (crossrung_tower_scan.py). Path 1 of the six-pair series
+    AMENDMENT (2026-05-21, the second test-driven amendment after Claim 2).
+    The original Claim 6 was a DOMINANCE gate, g/J ≳ 3, read off the abstract
+    tower (crossrung_tower_scan.py). Path 1 of the six-pair series
     (crossrung_series/path1_tau/, real data, 2 rung pairs, pre-registered)
     measured the coupling ratio at 0.47–1.47 — neither Simon's near-
     decomposability (g/J ≪ 1) nor the strong dominance (g/J ≳ 3). The strong
     g/J ≳ 3 form is RETRACTED as tower-specific. The amended claim is the
-    intermediate-coupling form: g/J ∈ (0.3, 3). Rationale — O(1) cross-rung
-    coupling is the existence condition for a hierarchy that is both stratified
-    (distinct rungs; fails at g/J ≪ 1) and integrated (rungs coupled; fails at
-    g/J ≫ 1); one OOM is the natural width of a non-fine-tuned bounded band on
-    a log axis. So this is still a corridor — a bounded band between two
-    failure modes — now at the cross-rung level, matching the within-rung
-    corridor's shape.
+    intermediate-coupling form: g/J ~ O(1), the measured band 0.47–1.47.
+    Rationale that STANDS — O(1) cross-rung coupling is the existence condition
+    for a hierarchy that is both stratified (distinct rungs; fails at g/J ≪ 1)
+    and integrated (rungs coupled; fails at g/J ≫ 1). Rationale RETRACTED — an
+    earlier draft called the band "one OOM (0.3, 3), the natural width of a
+    corridor on a log axis." Wave 1's oom_width check (oom_width/RESULT.md)
+    refuted that: the framework's measured corridors are SUB-decade (~0.5
+    decade typical, range 0.16–0.68); the only clean one-OOM "corridor" was the
+    (0.3, 3) band, which had been DEFINED as one OOM, not measured. So Claim 6
+    is the measured O(1) band, ~0.5 decade wide like the others — not a special
+    decade. It is still a corridor (bounded, off both poles); "one OOM" was an
+    over-fit and is dropped.
 
     HEAD TO HEAD WITH SIMON. The amended claim still contradicts Simon's
     near-decomposability (Architecture of Complexity, 1962): Simon holds stable
@@ -209,7 +214,8 @@ axiom framework_asserts_5 : Claim5
     TEST: the six rung-pair g/J series — Path 1 done (2 pairs in band); Paths
     2-3 (the canonical timescale-g/J) owed.
     FALSIFIER: a coordinated pair with the multi-rung corridor satisfied but
-    g/J outside (0.3, 3). This is an empirical claim, not a theorem. -/
+    g/J at a pole (≪ 1 or ≫ 1), outside the measured O(1) band. This is an
+    empirical claim, not a theorem. -/
 
 def Claim6 : Prop :=
   ∀ p, (CoordinatedPair p ∧ MultiRungCorridor p) → CouplingComparable p
