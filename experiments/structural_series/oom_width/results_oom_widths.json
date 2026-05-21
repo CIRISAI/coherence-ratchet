@@ -1,0 +1,106 @@
+{
+ "corridors": [
+  {
+   "name": "LLM within-layer rho (E1)",
+   "kind": "coordinated",
+   "primary_width_decades": 0.6757,
+   "rho_band": [
+    0.046,
+    0.218
+   ],
+   "source": "structural_series/NOTES.md (exp_E1_llm_corridor.py); debiased rho [0.046,0.218], 48 layers"
+  },
+  {
+   "name": "fMRI FC rho (human neural)",
+   "kind": "coordinated",
+   "primary_width_decades": 0.4412,
+   "rho_band": [
+    0.168,
+    0.464
+   ],
+   "source": "data_fmri/RESULTS.md; ABIDE-PCP n=139 controls; rho_debiased p5 0.168, p95 0.464"
+  },
+  {
+   "name": "TCGA healthy-tissue rho (cellular)",
+   "kind": "coordinated",
+   "primary_width_decades": 0.5945,
+   "rho_band": [
+    0.159,
+    0.625
+   ],
+   "source": "data_tcga/RESULT.md; 6 primary cancers, 300 pathway-values; pooled range [0.159,0.625]"
+  },
+  {
+   "name": "Allen mouse-cortex rho",
+   "kind": "falsifier",
+   "primary_width_decades": 1.3037,
+   "rho_band": [
+    0.008,
+    0.161
+   ],
+   "source": "data_allen/NOTES.md; pooled debiased rho [0.008,0.161]; 60% sessions chaos-pole-pinned"
+  },
+  {
+   "name": "C. elegans rho (whole-brain neural)",
+   "kind": "coordinated",
+   "primary_width_decades": 0.1609,
+   "rho_band": [
+    0.26393932355014793,
+    0.3823088538182043
+   ],
+   "source": "corridor_dynamics/celegans/results_corridor_relaxation.json; 30s window, 12 worms, rho_mean span [0.264,0.382]"
+  },
+  {
+   "name": "CMB shape-sector corridor (k_eff)",
+   "kind": "coordinated",
+   "primary_width_decades": 0.2341,
+   "rho_band": null,
+   "source": "open_system_pomega/cmb_corridor_prediction.py; A3+-calibrated k_eff corridor [2.8, 4.8]"
+  },
+  {
+   "name": "A3+ within-rung corridor (recalibrated)",
+   "kind": "coordinated",
+   "primary_width_decades": 0.3399,
+   "rho_band": [
+    0.16,
+    0.35
+   ],
+   "source": "open_system_pomega/corridor_recalculation.py; 5 A3+ substrates; corridor |rho| ~ 0.16-0.35, k_eff ~ 2.5-5"
+  },
+  {
+   "name": "Cross-rung coupling g/J",
+   "kind": "coordinated",
+   "primary_width_decades": 1.0,
+   "rho_band": null,
+   "source": "open_system_pomega/crossrung_oom_band.py; OOM_BAND g/J = (0.3, 3.0)"
+  },
+  {
+   "name": "GPU substrate corridor (original anchor)",
+   "kind": "reference",
+   "primary_width_decades": 0.6335,
+   "rho_band": [
+    0.1,
+    0.43
+   ],
+   "source": "CLAUDE.md; original GPU calibration rho (0.10,0.43), k_eff (2.33,10)"
+  }
+ ],
+ "coordinated_widths": [
+  0.6757,
+  0.4412,
+  0.5945,
+  0.1609,
+  0.2341,
+  0.3399,
+  1.0
+ ],
+ "width_range": [
+  0.1609,
+  1.0
+ ],
+ "width_mean": 0.4923,
+ "width_std": 0.2899,
+ "criterion_a_all_in_0p6_1p5": false,
+ "criterion_b_std_below_0p3": true,
+ "verdict": "SCATTER"
+}
