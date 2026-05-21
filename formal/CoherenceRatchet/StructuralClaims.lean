@@ -49,6 +49,12 @@ axiom Carries      : Rung → Prop        -- the rung carries coordinated struct
 axiom ForwardErgodic     : Rung → Prop  -- forward generator: a unique steady state
 axiom BackwardNonErgodic : Rung → Prop  -- backward generator: many conserved quantities
 axiom RungInCorridor     : Rung → Prop  -- the rung occupies a corridor under some k_eff
+axiom RungPair : Type                   -- a pair of adjacent coordinated rungs
+axiom CoordinatedPair   : RungPair → Prop -- both members are coordinated rungs
+axiom MultiRungCorridor : RungPair → Prop -- both within-rung corridors AND the
+                                          -- cross-rung τ corridor hold at once
+axiom CouplingDominates : RungPair → Prop -- the cross-rung coupling dominates the
+                                          -- within-rung scale: g/J above the gate
 axiom MaintenanceBreaksSymmetry : Rung → Prop -- the γM maintenance breaks the
                                               -- dynamical symmetries (Test E2)
 
@@ -173,9 +179,37 @@ theorem claim5_iff : Claim5 ↔ ¬ Falsifier5 :=
 
 axiom framework_asserts_5 : Claim5
 
+/-! ## Claim 6 — the cross-rung dominance gate
+
+    At every coordinated rung PAIR that jointly satisfies the multi-rung
+    corridor (both within-rung corridors AND the cross-rung τ corridor), the
+    cross-rung coupling dominates the within-rung scale.
+    TEST: the six rung-pair g/J series (experiments/structural_series/
+    crossrung_series/) — calibrate the cross-rung τ band from real paired data
+    first, then measure g/J at six rung pairs and check each clears the gate.
+    FALSIFIER: a coordinated pair with the multi-rung corridor satisfied but the
+    coupling NOT dominating.
+    STATUS: crossrung_tower_scan.py found, on an abstract 6-rung tower, that
+    joint corridor satisfaction needs g/J ≳ 3 — but against a NOMINAL,
+    UNCALIBRATED τ band. So the gate VALUE is not pinned; Claim 6 asserts the
+    EXISTENCE of a dominance gate (coupling must dominate). The six-pair series
+    both calibrates the gate and tests it. This is an empirical claim, not a
+    theorem — `CouplingDominates` carries the (uncalibrated) gate. -/
+
+def Claim6 : Prop :=
+  ∀ p, (CoordinatedPair p ∧ MultiRungCorridor p) → CouplingDominates p
+
+def Falsifier6 : Prop :=
+  ∃ p, (CoordinatedPair p ∧ MultiRungCorridor p) ∧ ¬ CouplingDominates p
+
+theorem claim6_iff : Claim6 ↔ ¬ Falsifier6 :=
+  claim_iff_no_witness _ _
+
+axiom framework_asserts_6 : Claim6
+
 /-! ## Summary
 
-    Five empirical claims, each `ClaimN ↔ ¬ FalsifierN` machine-checked above.
+    Six empirical claims, each `ClaimN ↔ ¬ FalsifierN` machine-checked above.
     The framework asserts each (`framework_asserts_N`). An experiment exhibits a
     `FalsifierN` witness ⇒ `¬ ClaimN` ⇒ contradiction with `framework_asserts_N`
     ⇒ the framework is wrong at claim N. That is the whole test logic, and it is
@@ -184,28 +218,30 @@ axiom framework_asserts_5 : Claim5
 
     ## Test ledger (2026-05-21 structural series; experiments/structural_series/)
 
-    Claim 1 — E1 (LLM substrate, real weights: gpt2 / Pythia-160m / Qwen2.5-0.5B)
-      WEAKLY SUPPORTED. Decisively off the rigidity pole; debiased within-layer
-      ρ low (~0.05–0.22), at the chaos-side edge. No falsifier; not a clean
-      confirmation. Owed: real-data campaign across more substrates.
-    Claim 2 — E2 (6 Lindbladian instances)
-      FALSIFIED AS STATED → AMENDED. 2/6 (Heisenberg + symmetric bit-flip) had
-      non-ergodic forward generators. The `MaintenanceBreaksSymmetry` antecedent
-      above is the amendment the test forced.
-    Claim 3 — E3 (closed chaotic chain, energy-swept)
-      CONSISTENT. A closed system conserves energy ⇒ late-time ρ is energy-
-      indexed, a one-parameter family, no corridor attractor without
-      maintenance.
-    Claim 4 — E1 (3 architectures)
-      WEAKLY SUPPORTED (with Claim 1).
-    Claim 5 — E6 (Penrose-scope: 200 generic high-entropy ICs)
-      CONSISTENT at the cosmological-origin scope. 0/200 forward-evolve to the
-      multi-rung corridor.
+    Claim 1 — E1 (LLM, real weights) WEAKLY SUPPORTED — off rigidity, chaos-side
+      marginal. data_fmri (ABIDE-PCP, 139 controls, 7 sites) SUPPORTED — clean:
+      debiased functional-connectivity ρ median 0.266, IQR 0.134, inside the
+      A3+ corridor (0.17,0.35), off both poles, confound- and site-controlled.
+      The first clean corridor confirmation; owed: TCGA, Allen Brain still out.
+    Claim 2 — E2 (6 Lindbladian instances) FALSIFIED AS STATED → AMENDED. 2/6
+      had non-ergodic forward generators; the `MaintenanceBreaksSymmetry`
+      antecedent is the amendment the test forced.
+    Claim 3 — E3 (closed chaotic chain) CONSISTENT. Energy conservation ⇒ no
+      corridor attractor without maintenance.
+    Claim 4 — E1 weak; data_fmri SUPPORTED (recurrence at a new coordinated rung,
+      the human-neural substrate).
+    Claim 5 — E6 (Penrose-scope, 200 generic ICs) CONSISTENT — 0/200
+      forward-evolve to the multi-rung corridor.
+    Claim 6 — crossrung_tower_scan.py: joint multi-rung corridor needs g/J ≳ 3
+      on an abstract tower, against a NOMINAL τ band. Gate value not pinned.
+      The six-pair g/J series (crossrung_series/) calibrates τ first, then tests
+      the gate at six rung pairs. SCAFFOLDED, not yet tested.
 
     Plus the orthogonality theorem (CMBOrthogonality.lean): the soft P_ω leaves
     the bulk CMB power spectrum exactly invariant — the framework is a strict
     extension of ΛCDM at the cosmological tier. PROVED, not an empirical claim.
 
-    The spec is live: a test (E2) already amended a claim. -/
+    The spec is live: E2 amended a claim; data_fmri moved Claims 1 & 4 from
+    weak to a clean confirmation at one substrate. -/
 
 end CoherenceRatchet.StructuralClaims
