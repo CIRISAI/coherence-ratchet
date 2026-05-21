@@ -550,3 +550,26 @@ drive operator (item ii: D_omega ~ L^dag[H_sum], magnitude ~0.3||L|| at
 beta_pin). What remains genuinely open: whether L~^dag = L^dag + D_omega is
 itself a legitimate (completely-positive-dual) generator, and what physical
 process at cosmological scale realises the penalty-current drive.
+
+## 2026-05-21 — paper corrections applied (closing the owed loop)
+
+Several entries above flagged paper corrections owed once the hard projector
+was documented dead and the soft pair constructed. With items (i) and (ii)
+done, the three corrections are now applied to papers/Corridor Dynamics.tex
+(builds clean):
+- The \Pomega subsection: the hard-projector formula int|c><c|dc is retracted
+  (documented dead zone, 3 models) and replaced with the soft graded operator
+  -- a forward/backward pair, depth-adequate (R* ~= 25-56, framework's 9
+  inside), irreducible (forward not Gibbs in H_sum). F-11's "without an
+  alternative TSVF-compatible operator emerging" clause is cited as the reason
+  it does not fire.
+- Asymptotic conditioning: the Claim is regraded from "P(corridor-occupying |
+  observed) -> 1" to "P(high corridor-compatibility weight | observed at
+  t_late) -> maximum as t_late -> t_f" -- graded, not strict-everywhere.
+- CMB temporal drift: the drift direction is recomputed as the gradient of the
+  soft weight function on the CMB 2-sphere mode space, not a hard projection;
+  F-19 is regated on computing that gradient.
+
+Still owed at the paper level: nothing from items (i)/(ii). The open work is
+forward (generator-legitimacy check, w pinning, toy->cosmological scaling, CMB
+drift gradient computation), not correction.
