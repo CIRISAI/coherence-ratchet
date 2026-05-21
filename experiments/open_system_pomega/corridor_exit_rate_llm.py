@@ -55,6 +55,16 @@ trajectory through the corridor boundary with clean unmaintained entry/exit
 events, plus an independently-measured intrinsic timescale for a dimensionless
 rate. Real neural/biological time series (C. elegans whole-brain calcium) is
 the live candidate.
+
+UPDATE (2026-05-21, w2-gpu-exitrate agent): condition 2 has its first
+real datum. The GPU substrate — via the CIRISArray strain gauge — gives
+a measured, artifact-checked, pre-registered corridor-exit rate: 1/tau =
+0.0214 +/- 0.0022 /s (tau = 46.7 +/- 4.9 s), the unmaintained relaxation
+of the GPU coherence observable toward the chaos pole. The GPU worked
+where C. elegans/LLM/paired failed because it has a native continuous
+coherence stream with tau >> the correlation window. See
+experiments/structural_series/corridor_dynamics/gpu/RESULTS.md. One
+substrate; does NOT give a cosmological time-to-fidelity.
 """
 import functools
 import numpy as np
