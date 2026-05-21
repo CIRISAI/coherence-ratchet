@@ -707,6 +707,37 @@ check of the low-ell rho_ell, a galactic mask, a frame-invariant rung
 observable (rotation-averaging is the v1 proxy), and the dbeta/dt magnitude
 (~1e-9/decade). All bounded engineering on a closed structural form.
 
+## 2026-05-21 — Planck cross-check of the WMAP rho_ell profile
+
+cmb_planck_crosscheck.py. The WMAP ILC profile (corridor_calibration_and_cmb_
+drift.py) needed an independent check: WMAP ILC carries residual foreground, so
+the octupole +0.033 excess could be CMB structure or ILC residual. Recomputed
+the same Kish-rho profile on the Planck 2018 SMICA component-separated map
+(COM_CMB_IQU-smica_2048_R3.00, 2.0 GB, ESA Planck Legacy Archive).
+
+Result -- the FULL profile reproduces. Mean |WMAP - Planck| over ell=2..30 =
+0.0015, max 0.0060. Two independent instruments and two independent foreground-
+separation pipelines (WMAP ILC, Planck SMICA) give the same rho_ell at every
+multipole; every multipole's departure from the isotropic baseline agrees
+between the datasets. The octupole excess: WMAP +0.033, Planck +0.037 -- it
+reproduces. It is CMB structure, not ILC residual.
+
+What this secures and what it does not: it secures the present-epoch rho_ell
+BASELINE and shows the Kish-rho observable is trustable -- it returns the same
+profile on independent data. It does NOT land the framework-distinctive
+prediction: that prediction is the DRIFT d<rho_ell>/dbeta over cosmological
+time, not the present-epoch profile. Present-epoch is calibration against
+current observation; the cross-check secures the calibration. The drift
+forecast is downstream and still owed.
+
+Next gap (named, to resolve): the rho_mid divergence. A3+ data pins rho_mid ~=
+0.27; the CMB rho_ell profile is mode-count-set and mostly well below that.
+Two-way convergence requires this to resolve -- either through per-ell /
+per-substrate corridor calibration bringing the two sides into agreement, or a
+structural explanation of why the cosmological substrate's corridor centre
+differs. If it neither resolves nor is explained, cross-substrate consistency
+at the universal-scale tier weakens. This is the next gap.
+
 ## Session arc (2026-05-21)
 
 P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
