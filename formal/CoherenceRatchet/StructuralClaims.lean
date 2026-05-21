@@ -200,10 +200,16 @@ axiom framework_asserts_5 : Claim5
     stable, evolvable complex hierarchies are NEAR-DECOMPOSABLE — within-
     subsystem coupling DOMINATES between-subsystem coupling, the opposite
     polarity to g/J ≳ 3. This is a feature: it gives Claim 6 a 60-year
-    established baseline to be tested against. Either coordinated rungs violate
-    near-decomposability (framework-distinctive content), or they obey it
-    (Claim 6 falsified against Simon). The six-pair series is run against Simon,
-    not against a self-chosen number. -/
+    established baseline to be tested against. The six-pair series is run
+    against Simon, not against a self-chosen number.
+    PATH 1 RESULT (crossrung_series/path1_tau/, real data, 2 rung pairs,
+    pre-registered): NEITHER. The cross-rung/within-rung coupling ratio is ~1
+    (middle band, 0.47–1.47) — not Simon's strong near-decomposability (ratio
+    ≪ 1) and not Claim 6's strong dominance (≳ 3). Real coordinated rung pairs
+    sit at INTERMEDIATE decomposability. The strong-dominance form is tensioned
+    by this data point; the intermediate-coupling form (cross-rung comparable
+    to within-rung — denying both poles) is what the data supports. The
+    canonical timescale-g/J (Paths 2-3) is still owed. -/
 
 def Claim6 : Prop :=
   ∀ p, (CoordinatedPair p ∧ MultiRungCorridor p) → CouplingDominates p
@@ -259,9 +265,15 @@ axiom framework_asserts_6 : Claim6
     Claim 5 — E6 (Penrose-scope, 200 generic ICs) CONSISTENT — 0/200
       forward-evolve to the multi-rung corridor.
     Claim 6 — crossrung_tower_scan.py: joint multi-rung corridor needs g/J ≳ 3
-      on an abstract tower, against a NOMINAL τ band. Gate value not pinned.
-      The six-pair g/J series (crossrung_series/) calibrates τ first, then tests
-      the gate at six rung pairs. SCAFFOLDED, not yet tested.
+      on an abstract tower (nominal τ band). Path 1 of the six-pair series DONE
+      on 2 real rung pairs (TCGA molecular→pathway; LLM internal→external —
+      crossrung_series/path1_tau/, pre-registered): the cross-rung/within-rung
+      coupling RATIO is ~1 (middle band 0.47–1.47) — NEITHER Simon's near-
+      decomposability NOR Claim 6's strong g/J ≳ 3 dominance. Real coordinated
+      rungs sit at intermediate decomposability. A data point (not a falsifier)
+      tensioning the strong-dominance form; the canonical timescale-g/J (Paths
+      2-3) is owed and may come apart from the coupling ratio. Likely honest
+      amendment: Claim 6 → the intermediate-coupling form.
 
     Plus the orthogonality theorem (CMBOrthogonality.lean): the soft P_ω leaves
     the bulk CMB power spectrum exactly invariant — the framework is a strict
