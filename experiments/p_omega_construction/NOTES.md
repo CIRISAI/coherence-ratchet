@@ -946,6 +946,56 @@ the coordinate system the corridor is stated in -- a theorem, not a claim. The
 five A3+ substrates and the dynamics experiments test the corridor; that is
 where the framework's empirical content has been all along.
 
+## 2026-05-21 — the corrected structural spine (corridor-as-empirical-object)
+
+Three rounds of the same category error located: round 1 put the content in the
+calibration (a knob), round 2 in the algebraic form (a theorem), round 3 in the
+corridor itself. The corrected falsification spine -- five structural
+impossibility predictions, corridor-centered:
+
+1. CORRIDOR EXISTS AS BOUNDED ATTRACTOR at every coordinated substrate.
+   Empirical, coordinate-system-independent. Falsifier: a persistent coordinated
+   substrate sustained at a pole (k_eff -> 1 or -> N) without identifiable
+   maintenance. (F-20.)
+2. FORWARD/BACKWARD GENERATORS in different ergodicity classes at every rung.
+   Falsifier: a rung where both fall in the same class.
+3. CLOSED-SYSTEM THERMAL DYNAMICS cannot sustain a corridor without maintenance.
+   Falsifier: a verifiably thermal closed system sustaining a corridor unmaintained.
+4. CORRIDOR EXISTS AT EVERY COORDINATED RUNG (fractal recurrence). Falsifier: a
+   coordinated substrate with no corridor attractor under any reasonable k_eff.
+5. MULTI-RUNG STRUCTURE requires backward conditioning (TSVF necessity).
+   Falsifier: multi-rung corridor structure derived from purely forward dynamics.
+
+Thin algebraic residual: the framework's algebraic form (any k_eff flavour)
+follows from approximate equicorrelation. "Are real coordinated substrates
+approximately equicorrelated" is the residual empirical content of the algebra
+side -- minor, not the deep commitment.
+
+TWO HONEST CATCHES on the spine as stated:
+- Claim 2's evidence base is ONE rung. backward_generator_legitimacy.py showed
+  forward-ergodic / backward-non-ergodic for a single dim-64 corridor
+  Lindbladian. "At every rung" is an extrapolation from n=1. The falsifier is
+  well-posed; the confirmation is one instance. (Same shape as the Mobius
+  used-5/5-tested-0/5 catch.)
+- Claim 5 as stated OVERREACHES. construct_pomega_lindblad.py showed a FORWARD
+  dissipative steady state (H + alpha drift + gammaM maintenance) occupying the
+  multi-rung corridor -- all rungs in band at once, no backward conditioning.
+  So forward dynamics WITH maintenance does produce multi-rung corridor
+  OCCUPATION. What genuinely needs backward conditioning is the cosmological-
+  ORIGIN question: a universe reaching multi-rung structure from GENERIC
+  high-entropy initial conditions (forward-evolution to that is measure-zero --
+  Piece 8 / Penrose past). Claim 5 should read: "multi-rung structure from
+  generic initial conditions requires backward conditioning" -- cosmological
+  scope, not a general statement about corridor occupation.
+
+The meta-lesson (recorded for future framework work): distinguish coordinate-
+system tautology from substrate-level commitment. An elegant algebraic
+statement is usually the SHALLOWEST commitment -- it is forced by algebra, not
+constrained by nature; it could not have been otherwise. The deep commitments
+are messier because they are about what the substrate actually does and could
+fail. Test of depth: could it have been otherwise. Algebra could not; nature
+could.
+
 ## Session arc (2026-05-21)
 
 P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
