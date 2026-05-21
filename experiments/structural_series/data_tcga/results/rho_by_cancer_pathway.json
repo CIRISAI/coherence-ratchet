@@ -1,0 +1,5651 @@
+{
+  "THCA": {
+    "n_tumor": 150,
+    "n_normal": 59,
+    "insufficient": false,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.31635888215060626,
+        "rho_normal": 0.34720923627952965,
+        "delta": -0.030850354128923396,
+        "ci_tumor": [
+          0.2797297543080987,
+          0.37097871584881076
+        ],
+        "ci_normal": [
+          0.3036795357685278,
+          0.4108723600284317
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.3105585553254657,
+        "rho_normal": 0.44388489567817474,
+        "delta": -0.13332634035270902,
+        "ci_tumor": [
+          0.2980566233838259,
+          0.34091599016962665
+        ],
+        "ci_normal": [
+          0.4212008186414853,
+          0.49597154583697545
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.3739756741764877,
+        "rho_normal": 0.35487056323234695,
+        "delta": 0.019105110944140746,
+        "ci_tumor": [
+          0.32531052609098793,
+          0.4391671696925127
+        ],
+        "ci_normal": [
+          0.28777799573720214,
+          0.45733062641169353
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.25662762705294045,
+        "rho_normal": 0.2548752612925933,
+        "delta": 0.001752365760347152,
+        "ci_tumor": [
+          0.23543543446168555,
+          0.2985776143226708
+        ],
+        "ci_normal": [
+          0.24097465582703004,
+          0.3149425117647387
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.28568480343812935,
+        "rho_normal": 0.3017038796738883,
+        "delta": -0.016019076235758933,
+        "ci_tumor": [
+          0.254907636090673,
+          0.33060955278074605
+        ],
+        "ci_normal": [
+          0.2636728408126715,
+          0.36634692712254757
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.2308333148133377,
+        "rho_normal": 0.24746381216820762,
+        "delta": -0.016630497354869933,
+        "ci_tumor": [
+          0.21797635923524591,
+          0.26244199934338247
+        ],
+        "ci_normal": [
+          0.2337876110352859,
+          0.3213099530241032
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.2886586462318234,
+        "rho_normal": 0.3022252474508692,
+        "delta": -0.013566601219045793,
+        "ci_tumor": [
+          0.25684661510168355,
+          0.33908819803737894
+        ],
+        "ci_normal": [
+          0.271691710573194,
+          0.374656649008108
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.24796989200907507,
+        "rho_normal": 0.30821890291261717,
+        "delta": -0.060249010903542094,
+        "ci_tumor": [
+          0.22701140318615687,
+          0.2882726298504059
+        ],
+        "ci_normal": [
+          0.2634230303334161,
+          0.373397043984344
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.276473708094119,
+        "rho_normal": 0.28700961100421585,
+        "delta": -0.010535902910096873,
+        "ci_tumor": [
+          0.2506396307171419,
+          0.32612847574154874
+        ],
+        "ci_normal": [
+          0.24017560738940014,
+          0.3597258203488062
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.22751949752712464,
+        "rho_normal": 0.23296195519637375,
+        "delta": -0.005442457669249112,
+        "ci_tumor": [
+          0.21770779287131814,
+          0.2608153768422732
+        ],
+        "ci_normal": [
+          0.21877950900346663,
+          0.30275878417705315
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.26282969602344275,
+        "rho_normal": 0.2928007413492621,
+        "delta": -0.029971045325819345,
+        "ci_tumor": [
+          0.24981309763302198,
+          0.2951474743109471
+        ],
+        "ci_normal": [
+          0.27559881282229226,
+          0.35107916627981617
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.41143144654584557,
+        "rho_normal": 0.35737469879355754,
+        "delta": 0.054056747752288026,
+        "ci_tumor": [
+          0.3515391862976765,
+          0.4924787311084363
+        ],
+        "ci_normal": [
+          0.3189662229560673,
+          0.42524629812885356
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4222401790526995,
+        "rho_normal": 0.38678771020223307,
+        "delta": 0.035452468850466434,
+        "ci_tumor": [
+          0.36593784010771496,
+          0.481402956642502
+        ],
+        "ci_normal": [
+          0.339128746993352,
+          0.4524231586468187
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.3116795387830889,
+        "rho_normal": 0.2849586787153744,
+        "delta": 0.026720860067714514,
+        "ci_tumor": [
+          0.27970311191905756,
+          0.3605202851612273
+        ],
+        "ci_normal": [
+          0.2613623624659657,
+          0.35432446559847924
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.27442819139688596,
+        "rho_normal": 0.29825914673724613,
+        "delta": -0.02383095534036017,
+        "ci_tumor": [
+          0.24948088881086436,
+          0.3178777780514475
+        ],
+        "ci_normal": [
+          0.25708678290995485,
+          0.3723009435424092
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2387098723039615,
+        "rho_normal": 0.2699648898884646,
+        "delta": -0.03125501758450311,
+        "ci_tumor": [
+          0.22270088119178472,
+          0.27980505454972865
+        ],
+        "ci_normal": [
+          0.24013846714431034,
+          0.33995991719862373
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.2936569372386796,
+        "rho_normal": 0.3169625925951095,
+        "delta": -0.023305655356429922,
+        "ci_tumor": [
+          0.2539156561172072,
+          0.3498202301955754
+        ],
+        "ci_normal": [
+          0.27324403383002177,
+          0.38683345295421884
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4195487060093926,
+        "rho_normal": 0.3935805048326384,
+        "delta": 0.02596820117675419,
+        "ci_tumor": [
+          0.3664788149296278,
+          0.481113336932148
+        ],
+        "ci_normal": [
+          0.3456046210187396,
+          0.45995206183944065
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.27574139953817844,
+        "rho_normal": 0.3072592987271431,
+        "delta": -0.03151789918896464,
+        "ci_tumor": [
+          0.24461622503372704,
+          0.33116391250171356
+        ],
+        "ci_normal": [
+          0.26650683242669104,
+          0.3803780919406455
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2987235171629934,
+        "rho_normal": 0.29780588186867063,
+        "delta": 0.0009176352943227606,
+        "ci_tumor": [
+          0.2575757553365714,
+          0.3528103513633354
+        ],
+        "ci_normal": [
+          0.2420011240724795,
+          0.37317631044094046
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.31682927348782247,
+        "rho_normal": 0.3541120291053474,
+        "delta": -0.03728275561752492,
+        "ci_tumor": [
+          0.28221167340443376,
+          0.36659137033027406
+        ],
+        "ci_normal": [
+          0.28206543070481804,
+          0.4333692874557769
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2546317492866718,
+        "rho_normal": 0.25518833672088315,
+        "delta": -0.0005565874342113308,
+        "ci_tumor": [
+          0.230369753525446,
+          0.3000650415368384
+        ],
+        "ci_normal": [
+          0.23701299357182667,
+          0.331354040802307
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2642547842954178,
+        "rho_normal": 0.3087029388228499,
+        "delta": -0.04444815452743206,
+        "ci_tumor": [
+          0.24203587562256354,
+          0.3065315180989114
+        ],
+        "ci_normal": [
+          0.2845866976419708,
+          0.36543490148094904
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.30235971102796444,
+        "rho_normal": 0.34419177674696233,
+        "delta": -0.04183206571899789,
+        "ci_tumor": [
+          0.27914482245645394,
+          0.3345921335569152
+        ],
+        "ci_normal": [
+          0.3181842418051032,
+          0.3900514162240233
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.27851638971006054,
+        "rho_normal": 0.32572195476896926,
+        "delta": -0.047205565058908716,
+        "ci_tumor": [
+          0.25553322003946105,
+          0.31606802738599016
+        ],
+        "ci_normal": [
+          0.3121099247716039,
+          0.3744700214219641
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.3705888758590835,
+        "rho_normal": 0.39092903818548663,
+        "delta": -0.02034016232640312,
+        "ci_tumor": [
+          0.333652919424147,
+          0.4252609329867485
+        ],
+        "ci_normal": [
+          0.35993460812574884,
+          0.44186622291004113
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.33934506359511296,
+        "rho_normal": 0.3983562171967862,
+        "delta": -0.05901115360167325,
+        "ci_tumor": [
+          0.3100348663527956,
+          0.37747835984724426
+        ],
+        "ci_normal": [
+          0.373246447977278,
+          0.44839420963686355
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.15706403748193504,
+        "rho_normal": 0.20619406942436452,
+        "delta": -0.049130031942429486,
+        "ci_tumor": [
+          0.1607080103886539,
+          0.18302872203240725
+        ],
+        "ci_normal": [
+          0.200814222480054,
+          0.2745819369872932
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2621477080991043,
+        "rho_normal": 0.29065174177315634,
+        "delta": -0.02850403367405202,
+        "ci_tumor": [
+          0.24971298796509964,
+          0.2933276822705302
+        ],
+        "ci_normal": [
+          0.2576796210055022,
+          0.36193793567142346
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.4723141502261674,
+        "rho_normal": 0.4483797784293232,
+        "delta": 0.02393437179684421,
+        "ci_tumor": [
+          0.40544974358343905,
+          0.5312238720147547
+        ],
+        "ci_normal": [
+          0.3733971249309943,
+          0.5196235619347493
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.3429720321197419,
+        "rho_normal": 0.33206390127788765,
+        "delta": 0.010908130841854269,
+        "ci_tumor": [
+          0.2887194171840049,
+          0.4170847250765378
+        ],
+        "ci_normal": [
+          0.29216998976769887,
+          0.3938185704858107
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.47979520252222696,
+        "rho_normal": 0.39953163590248986,
+        "delta": 0.0802635666197371,
+        "ci_tumor": [
+          0.39691746504475534,
+          0.5706085945740277
+        ],
+        "ci_normal": [
+          0.3348909557589695,
+          0.48427670479501317
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.3918268143813038,
+        "rho_normal": 0.32581022868938625,
+        "delta": 0.06601658569191754,
+        "ci_tumor": [
+          0.32735181248546746,
+          0.4808923937081593
+        ],
+        "ci_normal": [
+          0.27983173074988266,
+          0.40476111120751573
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.21902433740525074,
+        "rho_normal": 0.2533999768754437,
+        "delta": -0.034375639470192954,
+        "ci_tumor": [
+          0.2097770122293217,
+          0.25426963807961045
+        ],
+        "ci_normal": [
+          0.22903620167690888,
+          0.32264857192280605
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.32755760600588507,
+        "rho_normal": 0.3190034268676048,
+        "delta": 0.008554179138280271,
+        "ci_tumor": [
+          0.26680450132653255,
+          0.4049322434282566
+        ],
+        "ci_normal": [
+          0.27535261340006345,
+          0.38801491979040265
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4099690345247929,
+        "rho_normal": 0.42126013686999536,
+        "delta": -0.011291102345202475,
+        "ci_tumor": [
+          0.36600881104589217,
+          0.47068944879695934
+        ],
+        "ci_normal": [
+          0.39038569867622464,
+          0.47001704789370924
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2854478368423024,
+        "rho_normal": 0.2706560505570436,
+        "delta": 0.01479178628525879,
+        "ci_tumor": [
+          0.2475162436437307,
+          0.3418080494178768
+        ],
+        "ci_normal": [
+          0.2560863148236977,
+          0.33740615477105323
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.13511636071645225,
+        "rho_normal": 0.17786155386795086,
+        "delta": -0.042745193151498606,
+        "ci_tumor": [
+          0.13850022229621287,
+          0.16772620124932494
+        ],
+        "ci_normal": [
+          0.17608376537434997,
+          0.24317675754309287
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.31027624814585203,
+        "rho_normal": 0.317279039253887,
+        "delta": -0.007002791108034978,
+        "ci_tumor": [
+          0.2697099358688174,
+          0.37090931539085775
+        ],
+        "ci_normal": [
+          0.27440867242536854,
+          0.3897854781553905
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.36070690745545053,
+        "rho_normal": 0.3787684194459121,
+        "delta": -0.018061511990461576,
+        "ci_tumor": [
+          0.31992533692741876,
+          0.4202658796504613
+        ],
+        "ci_normal": [
+          0.32913663199761967,
+          0.44445979423718907
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.5474954067655945,
+        "rho_normal": 0.5967842195494675,
+        "delta": -0.04928881278387298,
+        "ci_tumor": [
+          0.4837369757992781,
+          0.6082840689461227
+        ],
+        "ci_normal": [
+          0.4789781466933324,
+          0.6722457959466891
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.2726578788583186,
+        "rho_normal": 0.31253339315095857,
+        "delta": -0.03987551429263997,
+        "ci_tumor": [
+          0.2399456670704154,
+          0.33924048195568046
+        ],
+        "ci_normal": [
+          0.28142492735568564,
+          0.3673355057099841
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.1935453763793496,
+        "rho_normal": 0.2534920759936312,
+        "delta": -0.05994669961428162,
+        "ci_tumor": [
+          0.18630295814543882,
+          0.22700476894562002
+        ],
+        "ci_normal": [
+          0.23098775068837177,
+          0.32352415792221756
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.45473966416987177,
+        "rho_normal": 0.4021061117624744,
+        "delta": 0.052633552407397366,
+        "ci_tumor": [
+          0.378091940517351,
+          0.5237447526841987
+        ],
+        "ci_normal": [
+          0.3221203156170203,
+          0.49822333985671496
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.31862247868781024,
+        "rho_normal": 0.3390963775259301,
+        "delta": -0.02047389883811984,
+        "ci_tumor": [
+          0.2809857194967857,
+          0.3686372009378502
+        ],
+        "ci_normal": [
+          0.3130957219566069,
+          0.39785240291697277
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.42491846210931233,
+        "rho_normal": 0.3665857055582494,
+        "delta": 0.05833275655106296,
+        "ci_tumor": [
+          0.36595550425917417,
+          0.499284540805839
+        ],
+        "ci_normal": [
+          0.3109526624001651,
+          0.439245834590085
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.40244394035271724,
+        "rho_normal": 0.4403950657863749,
+        "delta": -0.03795112543365764,
+        "ci_tumor": [
+          0.35392073876578006,
+          0.4560919529507287
+        ],
+        "ci_normal": [
+          0.34101385025210323,
+          0.5456227894540784
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.25908052653712793,
+        "rho_normal": 0.2814121637561539,
+        "delta": -0.02233163721902598,
+        "ci_tumor": [
+          0.2328284493123917,
+          0.30860077193537294
+        ],
+        "ci_normal": [
+          0.25177977010081154,
+          0.35224409245084704
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.3771193084592136,
+        "rho_normal": 0.3238702198569467,
+        "delta": 0.0532490886022669,
+        "ci_tumor": [
+          0.31618618909406154,
+          0.44103930628319477
+        ],
+        "ci_normal": [
+          0.26946561981606953,
+          0.41260986260007193
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.21718519645132034,
+        "rho_normal": 0.26012456915480225,
+        "delta": -0.042939372703481915,
+        "ci_tumor": [
+          0.20282724862421353,
+          0.25905173067758724
+        ],
+        "ci_normal": [
+          0.23051836976680531,
+          0.3421677660789267
+        ],
+        "non_overlap_95": false
+      }
+    }
+  },
+  "LUSC": {
+    "n_tumor": 150,
+    "n_normal": 51,
+    "insufficient": false,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.16594102057130358,
+        "rho_normal": 0.2535902026452234,
+        "delta": -0.08764918207391983,
+        "ci_tumor": [
+          0.16400029502544625,
+          0.19739074655018873
+        ],
+        "ci_normal": [
+          0.24790661935838232,
+          0.3108831260297642
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.26278099889542156,
+        "rho_normal": 0.23596101570654804,
+        "delta": 0.02681998318887352,
+        "ci_tumor": [
+          0.25131953765018566,
+          0.29368595636300904
+        ],
+        "ci_normal": [
+          0.23811726283988782,
+          0.2907955688625157
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.1684193510046667,
+        "rho_normal": 0.2615055515032646,
+        "delta": -0.09308620049859789,
+        "ci_tumor": [
+          0.1663544234795989,
+          0.2040959180288018
+        ],
+        "ci_normal": [
+          0.25481460043772186,
+          0.31569975072850426
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.19528238838427814,
+        "rho_normal": 0.23747205756796624,
+        "delta": -0.042189669183688105,
+        "ci_tumor": [
+          0.18727024113691532,
+          0.23578670064429777
+        ],
+        "ci_normal": [
+          0.24154908668750355,
+          0.293957938845339
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.17787724944354613,
+        "rho_normal": 0.2618232945707208,
+        "delta": -0.08394604512717466,
+        "ci_tumor": [
+          0.17253967392108815,
+          0.2114217171080696
+        ],
+        "ci_normal": [
+          0.2610165346679775,
+          0.3102123261042963
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.1469726742948625,
+        "rho_normal": 0.21075106440714295,
+        "delta": -0.06377839011228045,
+        "ci_tumor": [
+          0.14888437144287356,
+          0.17902232088253084
+        ],
+        "ci_normal": [
+          0.21652849240193991,
+          0.2663775631835499
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.16025133163970104,
+        "rho_normal": 0.23052917368598072,
+        "delta": -0.07027784204627968,
+        "ci_tumor": [
+          0.16007138892092482,
+          0.187688995612424
+        ],
+        "ci_normal": [
+          0.2363917236967816,
+          0.27793083768272125
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.1339577037728152,
+        "rho_normal": 0.21775821453699634,
+        "delta": -0.08380051076418113,
+        "ci_tumor": [
+          0.13670434250616084,
+          0.16855768013725012
+        ],
+        "ci_normal": [
+          0.22462489167586275,
+          0.271428654288681
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.1751641589099078,
+        "rho_normal": 0.2261431749181654,
+        "delta": -0.050979016008257605,
+        "ci_tumor": [
+          0.17005903069473205,
+          0.21050045763236686
+        ],
+        "ci_normal": [
+          0.2314911865721474,
+          0.28569017244682166
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.17774319377694595,
+        "rho_normal": 0.19282742908900122,
+        "delta": -0.015084235312055272,
+        "ci_tumor": [
+          0.17160950611687917,
+          0.21526738851888497
+        ],
+        "ci_normal": [
+          0.20666553233265567,
+          0.24059009579115304
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.17710169440187018,
+        "rho_normal": 0.21733423316870673,
+        "delta": -0.04023253876683655,
+        "ci_tumor": [
+          0.17828794785672555,
+          0.20206814311321225
+        ],
+        "ci_normal": [
+          0.22763497267758645,
+          0.26118763382769433
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.22317408743306463,
+        "rho_normal": 0.29616428636162956,
+        "delta": -0.07299019892856493,
+        "ci_tumor": [
+          0.20021161914497665,
+          0.2726398270448085
+        ],
+        "ci_normal": [
+          0.2815632222934238,
+          0.3634681332118652
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4033256719890183,
+        "rho_normal": 0.3451245115187941,
+        "delta": 0.05820116047022422,
+        "ci_tumor": [
+          0.34865626430048086,
+          0.45432736334362417
+        ],
+        "ci_normal": [
+          0.31261656853175784,
+          0.42473697763084994
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.29848312210831107,
+        "rho_normal": 0.293740393099979,
+        "delta": 0.004742729008332058,
+        "ci_tumor": [
+          0.27365290930445096,
+          0.3363254048503405
+        ],
+        "ci_normal": [
+          0.2807234204745301,
+          0.3475946447320531
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.15682188637152597,
+        "rho_normal": 0.2300321727718964,
+        "delta": -0.07321028640037042,
+        "ci_tumor": [
+          0.15896793765699316,
+          0.18567868903146248
+        ],
+        "ci_normal": [
+          0.23654059066558025,
+          0.2765089432284113
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.1507310819795712,
+        "rho_normal": 0.20645396191604967,
+        "delta": -0.05572287993647848,
+        "ci_tumor": [
+          0.15588721474917072,
+          0.17748300842841075
+        ],
+        "ci_normal": [
+          0.217937608666872,
+          0.2536074731210717
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.1618434334354668,
+        "rho_normal": 0.24062747307553803,
+        "delta": -0.07878403964007122,
+        "ci_tumor": [
+          0.15850550956497583,
+          0.19552285190288018
+        ],
+        "ci_normal": [
+          0.23512307073878963,
+          0.3142103120504807
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.3538858819242472,
+        "rho_normal": 0.3305154084196735,
+        "delta": 0.02337047350457372,
+        "ci_tumor": [
+          0.30927933808767616,
+          0.4035200428961863
+        ],
+        "ci_normal": [
+          0.3153570744032028,
+          0.3871510770141216
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.1602207530556995,
+        "rho_normal": 0.22414532548094285,
+        "delta": -0.06392457242524335,
+        "ci_tumor": [
+          0.15837704062261374,
+          0.19250157796484296
+        ],
+        "ci_normal": [
+          0.23411465937184617,
+          0.26645439844316493
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.19646993089569523,
+        "rho_normal": 0.3181456024944622,
+        "delta": -0.121675671598767,
+        "ci_tumor": [
+          0.17642102834966614,
+          0.23917509467125414
+        ],
+        "ci_normal": [
+          0.29382693543344773,
+          0.3716816040020497
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.1584034169725461,
+        "rho_normal": 0.23531160483174707,
+        "delta": -0.07690818785920098,
+        "ci_tumor": [
+          0.1554942890888187,
+          0.1916317090736801
+        ],
+        "ci_normal": [
+          0.23517537943961633,
+          0.2894146284095065
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.16055608082493356,
+        "rho_normal": 0.21275743846893658,
+        "delta": -0.05220135764400302,
+        "ci_tumor": [
+          0.16116925836625096,
+          0.18958600715248913
+        ],
+        "ci_normal": [
+          0.22418257169859493,
+          0.25694556257327844
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.17584527512374099,
+        "rho_normal": 0.22531559348406793,
+        "delta": -0.04947031836032695,
+        "ci_tumor": [
+          0.1772427845889198,
+          0.20137600931209113
+        ],
+        "ci_normal": [
+          0.23377724190341911,
+          0.2708248488185188
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.21092626320818603,
+        "rho_normal": 0.23048838980120007,
+        "delta": -0.01956212659301404,
+        "ci_tumor": [
+          0.20386234337115494,
+          0.24313841852495413
+        ],
+        "ci_normal": [
+          0.22665769301044614,
+          0.2884400425935286
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.21043388900334786,
+        "rho_normal": 0.23346480090908575,
+        "delta": -0.02303091190573789,
+        "ci_tumor": [
+          0.20483256916978881,
+          0.2413047830179318
+        ],
+        "ci_normal": [
+          0.2318502698917533,
+          0.2929644745744163
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.3069857243967861,
+        "rho_normal": 0.37751471341781606,
+        "delta": -0.07052898902102994,
+        "ci_tumor": [
+          0.2779660127280141,
+          0.34820933781577024
+        ],
+        "ci_normal": [
+          0.32424592307749167,
+          0.4595354786785478
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.25142465562684213,
+        "rho_normal": 0.2741241282879937,
+        "delta": -0.022699472661151576,
+        "ci_tumor": [
+          0.2316559898031372,
+          0.28855514801920656
+        ],
+        "ci_normal": [
+          0.26552510371499166,
+          0.3239035640730195
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.12073153730517432,
+        "rho_normal": 0.1662411091122694,
+        "delta": -0.04550957180709507,
+        "ci_tumor": [
+          0.12866487649181854,
+          0.14812366240581498
+        ],
+        "ci_normal": [
+          0.18354217635022274,
+          0.2155714052244387
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.17708354685742217,
+        "rho_normal": 0.2105951591446627,
+        "delta": -0.03351161228724053,
+        "ci_tumor": [
+          0.17920388685418825,
+          0.20135152386094368
+        ],
+        "ci_normal": [
+          0.22430841817587252,
+          0.2553229596952325
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.27010076887456996,
+        "rho_normal": 0.37488302238135357,
+        "delta": -0.10478225350678361,
+        "ci_tumor": [
+          0.23200546171962844,
+          0.3193549669678071
+        ],
+        "ci_normal": [
+          0.3511480744354843,
+          0.42615857660026163
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.22158767157250933,
+        "rho_normal": 0.24936614651370806,
+        "delta": -0.027778474941198728,
+        "ci_tumor": [
+          0.20043317200239605,
+          0.2624279975637235
+        ],
+        "ci_normal": [
+          0.2547829460248292,
+          0.2973794575185015
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.3378190411819536,
+        "rho_normal": 0.36732109908512184,
+        "delta": -0.029502057903168233,
+        "ci_tumor": [
+          0.2852016046669577,
+          0.39955120898441815
+        ],
+        "ci_normal": [
+          0.3384397572350111,
+          0.44563256012720437
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.3548366965448171,
+        "rho_normal": 0.32760290445532847,
+        "delta": 0.027233792089488618,
+        "ci_tumor": [
+          0.3040921331758485,
+          0.40470352204161103
+        ],
+        "ci_normal": [
+          0.305569335278114,
+          0.3855836735567233
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.15154055599060312,
+        "rho_normal": 0.22386938413824561,
+        "delta": -0.0723288281476425,
+        "ci_tumor": [
+          0.15276603498715685,
+          0.18153855168222457
+        ],
+        "ci_normal": [
+          0.23075686611609814,
+          0.2746195280836031
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.1756211137037135,
+        "rho_normal": 0.2842858810161667,
+        "delta": -0.1086647673124532,
+        "ci_tumor": [
+          0.1664151583012964,
+          0.21172162508017225
+        ],
+        "ci_normal": [
+          0.2727176435533285,
+          0.3395223298636712
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.23946761925806914,
+        "rho_normal": 0.3928896753634558,
+        "delta": -0.15342205610538667,
+        "ci_tumor": [
+          0.20967723261522533,
+          0.28689990427214157
+        ],
+        "ci_normal": [
+          0.34731626385633474,
+          0.4764052940377978
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.1658247946829674,
+        "rho_normal": 0.22570016734295217,
+        "delta": -0.05987537265998477,
+        "ci_tumor": [
+          0.1635616996139122,
+          0.2009292799377731
+        ],
+        "ci_normal": [
+          0.2322721738507069,
+          0.2750066169141261
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.1497390862946904,
+        "rho_normal": 0.15889194249504043,
+        "delta": -0.009152856200350029,
+        "ci_tumor": [
+          0.11772498789427899,
+          0.21225339827439024
+        ],
+        "ci_normal": [
+          0.17192095509074584,
+          0.22034956828889546
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.15028452911920195,
+        "rho_normal": 0.23733385375452043,
+        "delta": -0.08704932463531848,
+        "ci_tumor": [
+          0.1480337774953145,
+          0.18585587530795286
+        ],
+        "ci_normal": [
+          0.23394863656580075,
+          0.30060658585046196
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.18427307119643674,
+        "rho_normal": 0.2630475703706906,
+        "delta": -0.07877449917425386,
+        "ci_tumor": [
+          0.17257774941356072,
+          0.22463448144347795
+        ],
+        "ci_normal": [
+          0.25982051540009665,
+          0.3166546570430294
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.23805929535281087,
+        "rho_normal": 0.4324899552091584,
+        "delta": -0.19443065985634753,
+        "ci_tumor": [
+          0.20836380474490368,
+          0.28415520049762044
+        ],
+        "ci_normal": [
+          0.3744317718099676,
+          0.513813932065141
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.18793943960075912,
+        "rho_normal": 0.2517980556828992,
+        "delta": -0.06385861608214008,
+        "ci_tumor": [
+          0.1867676046771763,
+          0.21767011254171276
+        ],
+        "ci_normal": [
+          0.24877932961945193,
+          0.3106000397971015
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.14149896836941675,
+        "rho_normal": 0.193310261463123,
+        "delta": -0.051811293093706245,
+        "ci_tumor": [
+          0.13801588950196203,
+          0.17453357024787816
+        ],
+        "ci_normal": [
+          0.20324504919999953,
+          0.24439261646846466
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.21145150577623395,
+        "rho_normal": 0.33319138580226965,
+        "delta": -0.1217398800260357,
+        "ci_tumor": [
+          0.19123176971124398,
+          0.2556176968831494
+        ],
+        "ci_normal": [
+          0.30419641859591484,
+          0.39362684254230795
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.20956954331567004,
+        "rho_normal": 0.3145860056951368,
+        "delta": -0.10501646237946674,
+        "ci_tumor": [
+          0.19838907443136256,
+          0.23961272910697465
+        ],
+        "ci_normal": [
+          0.27678935640575203,
+          0.398084435653463
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.22032999524834443,
+        "rho_normal": 0.2844319633909327,
+        "delta": -0.06410196814258826,
+        "ci_tumor": [
+          0.1970371641419344,
+          0.2652697931550407
+        ],
+        "ci_normal": [
+          0.28535781522032033,
+          0.3333495040487055
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.2011106041809718,
+        "rho_normal": 0.3295688164491176,
+        "delta": -0.12845821226814583,
+        "ci_tumor": [
+          0.18837072732192026,
+          0.2383927509041098
+        ],
+        "ci_normal": [
+          0.3109317801039663,
+          0.38805624457371607
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.15223335776008695,
+        "rho_normal": 0.20525327201228732,
+        "delta": -0.05301991425220037,
+        "ci_tumor": [
+          0.15243212969666936,
+          0.18227120764169474
+        ],
+        "ci_normal": [
+          0.21606345205165023,
+          0.2555881157179865
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.195803715106789,
+        "rho_normal": 0.3100360663037916,
+        "delta": -0.11423235119700259,
+        "ci_tumor": [
+          0.17541918314118415,
+          0.24558428688815423
+        ],
+        "ci_normal": [
+          0.29041437085011956,
+          0.3674368273610902
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.14814918386237888,
+        "rho_normal": 0.18578629121706072,
+        "delta": -0.03763710735468184,
+        "ci_tumor": [
+          0.15268448931468256,
+          0.17588673324278536
+        ],
+        "ci_normal": [
+          0.20184846613241203,
+          0.23582090113785487
+        ],
+        "non_overlap_95": true
+      }
+    }
+  },
+  "LIHC": {
+    "n_tumor": 150,
+    "n_normal": 50,
+    "insufficient": false,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.20169560355772873,
+        "rho_normal": 0.26632231015511804,
+        "delta": -0.06462670659738931,
+        "ci_tumor": [
+          0.19477021676490483,
+          0.23041991389426728
+        ],
+        "ci_normal": [
+          0.2521169590554787,
+          0.33670270775394573
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2965904495583439,
+        "rho_normal": 0.4501915807828211,
+        "delta": -0.15360113122447722,
+        "ci_tumor": [
+          0.2656837157707987,
+          0.3442265967785119
+        ],
+        "ci_normal": [
+          0.38319232973575124,
+          0.5276737696479049
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.23292324151856483,
+        "rho_normal": 0.3350153846391065,
+        "delta": -0.10209214312054168,
+        "ci_tumor": [
+          0.219055903525083,
+          0.2656865835364313
+        ],
+        "ci_normal": [
+          0.2917593200131845,
+          0.4098477785433599
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2919107998434693,
+        "rho_normal": 0.3455930045727611,
+        "delta": -0.053682204729291805,
+        "ci_tumor": [
+          0.2651724805445439,
+          0.3353638856067758
+        ],
+        "ci_normal": [
+          0.2937526305021046,
+          0.4246488691615125
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2224416438755204,
+        "rho_normal": 0.3329663406981116,
+        "delta": -0.1105246968225912,
+        "ci_tumor": [
+          0.207571485689012,
+          0.2613915347022541
+        ],
+        "ci_normal": [
+          0.2993014347860007,
+          0.4101832517806646
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.19823180525988074,
+        "rho_normal": 0.265877665150358,
+        "delta": -0.06764585989047725,
+        "ci_tumor": [
+          0.1854578135981491,
+          0.2323390902311962
+        ],
+        "ci_normal": [
+          0.24403099515497031,
+          0.3346838673952152
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.23064230760562104,
+        "rho_normal": 0.34855414883162156,
+        "delta": -0.11791184122600051,
+        "ci_tumor": [
+          0.21664899130567525,
+          0.2675515846166117
+        ],
+        "ci_normal": [
+          0.302359902507269,
+          0.4284945930135038
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.2290073620947249,
+        "rho_normal": 0.25546100079760925,
+        "delta": -0.026453638702884363,
+        "ci_tumor": [
+          0.2092802555101242,
+          0.26882403022438295
+        ],
+        "ci_normal": [
+          0.24424127544143945,
+          0.3288522232192606
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.19873098394942593,
+        "rho_normal": 0.2675792724094885,
+        "delta": -0.06884828846006255,
+        "ci_tumor": [
+          0.1972568466032312,
+          0.22470564837117826
+        ],
+        "ci_normal": [
+          0.2621098648416934,
+          0.32441572759558734
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.2360754282095931,
+        "rho_normal": 0.2550975640716639,
+        "delta": -0.0190221358620708,
+        "ci_tumor": [
+          0.21829396183614044,
+          0.2727647261572261
+        ],
+        "ci_normal": [
+          0.24614079187170207,
+          0.3247108667978141
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2334061060396234,
+        "rho_normal": 0.34812967765791486,
+        "delta": -0.11472357161829147,
+        "ci_tumor": [
+          0.21699468909181088,
+          0.2698149733411468
+        ],
+        "ci_normal": [
+          0.30840743243545216,
+          0.4311279330530592
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.3261093655970705,
+        "rho_normal": 0.3871775020281245,
+        "delta": -0.06106813643105402,
+        "ci_tumor": [
+          0.3016178604070377,
+          0.3625775893490054
+        ],
+        "ci_normal": [
+          0.33197342835013227,
+          0.4761220596521753
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.5334722375044592,
+        "rho_normal": 0.41236170742186645,
+        "delta": 0.1211105300825927,
+        "ci_tumor": [
+          0.48614913438769575,
+          0.5813047363440728
+        ],
+        "ci_normal": [
+          0.33618225857115697,
+          0.5036947617538712
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2935313291801505,
+        "rho_normal": 0.38056406118286484,
+        "delta": -0.08703273200271433,
+        "ci_tumor": [
+          0.27826158490619174,
+          0.32705338966107117
+        ],
+        "ci_normal": [
+          0.3089464584860328,
+          0.4783357116688683
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.1904668393156307,
+        "rho_normal": 0.2599364780599564,
+        "delta": -0.06946963874432571,
+        "ci_tumor": [
+          0.18523959947150512,
+          0.21952800479475165
+        ],
+        "ci_normal": [
+          0.2491091473749537,
+          0.3256542419580076
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.17444253886321331,
+        "rho_normal": 0.22818229095415835,
+        "delta": -0.05373975209094503,
+        "ci_tumor": [
+          0.17409259686969053,
+          0.2012542529463941
+        ],
+        "ci_normal": [
+          0.22484846889630822,
+          0.2916534085662731
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.1948928339647084,
+        "rho_normal": 0.24495960468891145,
+        "delta": -0.05006677072420304,
+        "ci_tumor": [
+          0.19282285962477066,
+          0.22190553428381066
+        ],
+        "ci_normal": [
+          0.23512355939964197,
+          0.31203718018540677
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4945320502224919,
+        "rho_normal": 0.39361373168487696,
+        "delta": 0.10091831853761496,
+        "ci_tumor": [
+          0.4452594830632062,
+          0.5445069205094764
+        ],
+        "ci_normal": [
+          0.3326950377109555,
+          0.47583117879034464
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.22229242961977483,
+        "rho_normal": 0.2732253728538204,
+        "delta": -0.0509329432340456,
+        "ci_tumor": [
+          0.21313472308788242,
+          0.2539202419700859
+        ],
+        "ci_normal": [
+          0.25516407027652915,
+          0.34115688700128943
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.27308373159913457,
+        "rho_normal": 0.3118644105416649,
+        "delta": -0.038780678942530344,
+        "ci_tumor": [
+          0.23423360351491448,
+          0.32823451798582426
+        ],
+        "ci_normal": [
+          0.2832730427838204,
+          0.3756978826756602
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.21433027179093508,
+        "rho_normal": 0.31221403973724704,
+        "delta": -0.09788376794631196,
+        "ci_tumor": [
+          0.20629733097375821,
+          0.24269705719638887
+        ],
+        "ci_normal": [
+          0.28012553164857773,
+          0.3818215420916783
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2138531592151665,
+        "rho_normal": 0.2572927849820788,
+        "delta": -0.04343962576691229,
+        "ci_tumor": [
+          0.20199582091773544,
+          0.24711351845049126
+        ],
+        "ci_normal": [
+          0.2465435677279898,
+          0.32432983444990665
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.21466998382680275,
+        "rho_normal": 0.3162953582757645,
+        "delta": -0.10162537444896175,
+        "ci_tumor": [
+          0.2071620714693141,
+          0.24736494576880552
+        ],
+        "ci_normal": [
+          0.2871481211572561,
+          0.3799866061840323
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.24161350253419586,
+        "rho_normal": 0.35911437076914265,
+        "delta": -0.11750086823494679,
+        "ci_tumor": [
+          0.2257610910477437,
+          0.27683859183065374
+        ],
+        "ci_normal": [
+          0.3140254632190454,
+          0.43012375958140636
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2586311795397347,
+        "rho_normal": 0.37151171671413263,
+        "delta": -0.11288053717439794,
+        "ci_tumor": [
+          0.24098940221422624,
+          0.2955972819394061
+        ],
+        "ci_normal": [
+          0.3188878012760274,
+          0.45230526780348057
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.3192324048235458,
+        "rho_normal": 0.5948145007723142,
+        "delta": -0.2755820959487684,
+        "ci_tumor": [
+          0.28150792320667883,
+          0.3629839762566982
+        ],
+        "ci_normal": [
+          0.4941000154244383,
+          0.6818901516220962
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2738926066804608,
+        "rho_normal": 0.4590499419697884,
+        "delta": -0.1851573352893276,
+        "ci_tumor": [
+          0.2495673713679205,
+          0.3127148715808701
+        ],
+        "ci_normal": [
+          0.39473644933904994,
+          0.5362027635140308
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.12413925433838109,
+        "rho_normal": 0.17316470823831717,
+        "delta": -0.04902545389993608,
+        "ci_tumor": [
+          0.12900070168894068,
+          0.15628949505783943
+        ],
+        "ci_normal": [
+          0.18718368090062784,
+          0.224663135118925
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.21160336216225545,
+        "rho_normal": 0.3070472958813865,
+        "delta": -0.09544393371913107,
+        "ci_tumor": [
+          0.20229934699618082,
+          0.24335859813860128
+        ],
+        "ci_normal": [
+          0.271403746834011,
+          0.3770768181811833
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.41210738757400145,
+        "rho_normal": 0.46024892109887866,
+        "delta": -0.04814153352487721,
+        "ci_tumor": [
+          0.3657081217426235,
+          0.45793892036369005
+        ],
+        "ci_normal": [
+          0.39170603039026936,
+          0.5485252380640337
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2718338526395688,
+        "rho_normal": 0.3242455705062092,
+        "delta": -0.05241171786664045,
+        "ci_tumor": [
+          0.2479079743007616,
+          0.3071326742816552
+        ],
+        "ci_normal": [
+          0.2872888085746741,
+          0.3986477164476053
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.45198994281420707,
+        "rho_normal": 0.47175620044420885,
+        "delta": -0.019766257630001782,
+        "ci_tumor": [
+          0.41321254119680906,
+          0.4995247445031575
+        ],
+        "ci_normal": [
+          0.3841631096188742,
+          0.5721376382893062
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.39502936528158417,
+        "rho_normal": 0.40669848426955296,
+        "delta": -0.011669118987968796,
+        "ci_tumor": [
+          0.347209315630534,
+          0.4461100069744743
+        ],
+        "ci_normal": [
+          0.34461253044139883,
+          0.4807167522791594
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.17587851537089633,
+        "rho_normal": 0.25545926727653645,
+        "delta": -0.07958075190564012,
+        "ci_tumor": [
+          0.17215971494576773,
+          0.20776034497139578
+        ],
+        "ci_normal": [
+          0.2412323997559747,
+          0.3202398821770452
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.25447888396602836,
+        "rho_normal": 0.30634316467597644,
+        "delta": -0.051864280709948085,
+        "ci_tumor": [
+          0.23177124623913017,
+          0.2950953622453992
+        ],
+        "ci_normal": [
+          0.27305576666300535,
+          0.39139529923649197
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.26086815399364593,
+        "rho_normal": 0.35004291601135945,
+        "delta": -0.08917476201771352,
+        "ci_tumor": [
+          0.24936898341992245,
+          0.28867329613506365
+        ],
+        "ci_normal": [
+          0.3189785914504245,
+          0.4069892898148767
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.21965524383736065,
+        "rho_normal": 0.2936556475184133,
+        "delta": -0.07400040368105262,
+        "ci_tumor": [
+          0.20507028195076954,
+          0.24974098646500667
+        ],
+        "ci_normal": [
+          0.2668865814866817,
+          0.3712980103552629
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.1525200271415399,
+        "rho_normal": 0.16866806957091998,
+        "delta": -0.01614804242938009,
+        "ci_tumor": [
+          0.1328235048269255,
+          0.19673688359140531
+        ],
+        "ci_normal": [
+          0.18042083074858078,
+          0.23098975337263833
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.2171400746851093,
+        "rho_normal": 0.2556024102430614,
+        "delta": -0.038462335557952115,
+        "ci_tumor": [
+          0.2084932759920191,
+          0.24687888970944152
+        ],
+        "ci_normal": [
+          0.24476169283442265,
+          0.31931424614107123
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.2856213189104475,
+        "rho_normal": 0.39590349134449015,
+        "delta": -0.11028217243404265,
+        "ci_tumor": [
+          0.2633036625640836,
+          0.32274002445374417
+        ],
+        "ci_normal": [
+          0.3503366837142413,
+          0.471239679217492
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.40009815433586504,
+        "rho_normal": 0.5165105982489988,
+        "delta": -0.11641244391313377,
+        "ci_tumor": [
+          0.36087659436419844,
+          0.44380295795248925
+        ],
+        "ci_normal": [
+          0.4375545480272056,
+          0.5964625554709525
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.18576519807193848,
+        "rho_normal": 0.287109887147459,
+        "delta": -0.10134468907552052,
+        "ci_tumor": [
+          0.18450402414814154,
+          0.20917457743908904
+        ],
+        "ci_normal": [
+          0.27297270847438515,
+          0.35288275799438684
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.17290875306797657,
+        "rho_normal": 0.21941650864230228,
+        "delta": -0.04650775557432571,
+        "ci_tumor": [
+          0.16991197762697077,
+          0.20345587167735138
+        ],
+        "ci_normal": [
+          0.21510656747343065,
+          0.2824770481665893
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.3223755073001852,
+        "rho_normal": 0.4038441187779055,
+        "delta": -0.08146861147772028,
+        "ci_tumor": [
+          0.29285450313571265,
+          0.36534598990241646
+        ],
+        "ci_normal": [
+          0.3399562768610387,
+          0.4846086754450153
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2709239772240631,
+        "rho_normal": 0.3870580540679882,
+        "delta": -0.11613407684392513,
+        "ci_tumor": [
+          0.25102099031856556,
+          0.3067132717660539
+        ],
+        "ci_normal": [
+          0.3384936580168684,
+          0.4619370843667006
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.3326031570051314,
+        "rho_normal": 0.39177370251813964,
+        "delta": -0.059170545513008266,
+        "ci_tumor": [
+          0.30309658286670055,
+          0.37096774414854333
+        ],
+        "ci_normal": [
+          0.33350643627838705,
+          0.47587452719705536
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.2938771368503702,
+        "rho_normal": 0.39454457369512275,
+        "delta": -0.10066743684475254,
+        "ci_tumor": [
+          0.2667757020651934,
+          0.33248181154506884
+        ],
+        "ci_normal": [
+          0.3311029720665285,
+          0.4786072749828785
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.22091457333168935,
+        "rho_normal": 0.2928393468434358,
+        "delta": -0.07192477351174648,
+        "ci_tumor": [
+          0.20819720429875957,
+          0.2571833741482194
+        ],
+        "ci_normal": [
+          0.26740573561810527,
+          0.3583667455508614
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.2836734909720944,
+        "rho_normal": 0.3552261299818635,
+        "delta": -0.0715526390097691,
+        "ci_tumor": [
+          0.25892918886906713,
+          0.32357681178750125
+        ],
+        "ci_normal": [
+          0.30869841355425837,
+          0.42830608792861896
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.21488195301349905,
+        "rho_normal": 0.23074855765415236,
+        "delta": -0.015866604640653315,
+        "ci_tumor": [
+          0.20425102078807195,
+          0.24706902387849353
+        ],
+        "ci_normal": [
+          0.22976686024487092,
+          0.28886058083943594
+        ],
+        "non_overlap_95": false
+      }
+    }
+  },
+  "HNSC": {
+    "n_tumor": 150,
+    "n_normal": 44,
+    "insufficient": false,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2186356911794113,
+        "rho_normal": 0.30913252190523083,
+        "delta": -0.09049683072581952,
+        "ci_tumor": [
+          0.1953031903326361,
+          0.26411203253828075
+        ],
+        "ci_normal": [
+          0.30168830583331047,
+          0.3634310562650902
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.3020109552324485,
+        "rho_normal": 0.3414917120018164,
+        "delta": -0.03948075676936791,
+        "ci_tumor": [
+          0.282544216332661,
+          0.33586119955211996
+        ],
+        "ci_normal": [
+          0.31466199753606083,
+          0.4042125318152904
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.23839787588120806,
+        "rho_normal": 0.34442352510721164,
+        "delta": -0.10602564922600358,
+        "ci_tumor": [
+          0.21339915486019082,
+          0.283378632286191
+        ],
+        "ci_normal": [
+          0.3262570473527948,
+          0.40001207874287226
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2566487412254878,
+        "rho_normal": 0.35017677071816977,
+        "delta": -0.09352802949268196,
+        "ci_tumor": [
+          0.2317006521739463,
+          0.30801279352621774
+        ],
+        "ci_normal": [
+          0.3099624503316217,
+          0.4293770952641707
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2212162658190542,
+        "rho_normal": 0.3336433933571414,
+        "delta": -0.11242712753808717,
+        "ci_tumor": [
+          0.2039178392231885,
+          0.2595162174405849
+        ],
+        "ci_normal": [
+          0.3163074506292546,
+          0.39150893422591204
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.182499992528976,
+        "rho_normal": 0.3047101943277276,
+        "delta": -0.12221020179875161,
+        "ci_tumor": [
+          0.17369293179680903,
+          0.22006476493443305
+        ],
+        "ci_normal": [
+          0.2872309853616331,
+          0.3634669221160855
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.20651952570845392,
+        "rho_normal": 0.30866703649094157,
+        "delta": -0.10214751078248765,
+        "ci_tumor": [
+          0.19048089192118167,
+          0.25177516540488387
+        ],
+        "ci_normal": [
+          0.29484538088737716,
+          0.36765829356689783
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.17358604922728224,
+        "rho_normal": 0.26503041127029275,
+        "delta": -0.09144436204301051,
+        "ci_tumor": [
+          0.16631497651261493,
+          0.2072170749879414
+        ],
+        "ci_normal": [
+          0.26501976055607257,
+          0.32835271566829866
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.19336539751219858,
+        "rho_normal": 0.32841699976199834,
+        "delta": -0.13505160224979976,
+        "ci_tumor": [
+          0.1887909232174941,
+          0.22252841191336703
+        ],
+        "ci_normal": [
+          0.30848617365081343,
+          0.38926947411527535
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.17823578573215,
+        "rho_normal": 0.27478102115908243,
+        "delta": -0.09654523542693244,
+        "ci_tumor": [
+          0.1750172632489635,
+          0.21086899610306062
+        ],
+        "ci_normal": [
+          0.2704022891087021,
+          0.32751494912745543
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.21258516578916065,
+        "rho_normal": 0.3092379375701608,
+        "delta": -0.09665277178100018,
+        "ci_tumor": [
+          0.200630850275654,
+          0.24823590276753546
+        ],
+        "ci_normal": [
+          0.2964119537026837,
+          0.3694703355964643
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.28439957746550604,
+        "rho_normal": 0.40366689487864543,
+        "delta": -0.1192673174131394,
+        "ci_tumor": [
+          0.2445843683625586,
+          0.34223703616179824
+        ],
+        "ci_normal": [
+          0.3533697576421493,
+          0.48630602248642085
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.5114625631727313,
+        "rho_normal": 0.5846423988540623,
+        "delta": -0.07317983568133102,
+        "ci_tumor": [
+          0.44485071968967976,
+          0.5701912736583575
+        ],
+        "ci_normal": [
+          0.481291897409528,
+          0.6819640866713451
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.34941985391795344,
+        "rho_normal": 0.3816952728060077,
+        "delta": -0.03227541888805424,
+        "ci_tumor": [
+          0.31503933702105685,
+          0.39779971940812375
+        ],
+        "ci_normal": [
+          0.3410485969868133,
+          0.44844097537922323
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.19405500701114628,
+        "rho_normal": 0.3293086243412595,
+        "delta": -0.13525361733011323,
+        "ci_tumor": [
+          0.18868556103114073,
+          0.22474750014229616
+        ],
+        "ci_normal": [
+          0.3201167156267479,
+          0.380849143103583
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.1804374169598412,
+        "rho_normal": 0.3214166826721648,
+        "delta": -0.14097926571232358,
+        "ci_tumor": [
+          0.17759052559943364,
+          0.20848498573893784
+        ],
+        "ci_normal": [
+          0.3128865631245273,
+          0.3723041563449948
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.19438855275905167,
+        "rho_normal": 0.2810016081148557,
+        "delta": -0.08661305535580402,
+        "ci_tumor": [
+          0.18169368338759356,
+          0.23271240160202042
+        ],
+        "ci_normal": [
+          0.28339834556698323,
+          0.33501020507889895
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.44775239548447854,
+        "rho_normal": 0.5610465995142987,
+        "delta": -0.11329420402982016,
+        "ci_tumor": [
+          0.38917362585178067,
+          0.49847963673068446
+        ],
+        "ci_normal": [
+          0.4810612304080303,
+          0.650192034425533
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.204253889970468,
+        "rho_normal": 0.3103533995569997,
+        "delta": -0.10609950958653169,
+        "ci_tumor": [
+          0.18608321358881658,
+          0.24475680227995955
+        ],
+        "ci_normal": [
+          0.30430569111906297,
+          0.36623765833719846
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2251967566932794,
+        "rho_normal": 0.285487737535223,
+        "delta": -0.06029098084194359,
+        "ci_tumor": [
+          0.1991497813864728,
+          0.27375352647921464
+        ],
+        "ci_normal": [
+          0.2787098452295925,
+          0.3535360899746679
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.20407731236846344,
+        "rho_normal": 0.2872515854331793,
+        "delta": -0.08317427306471586,
+        "ci_tumor": [
+          0.18282285566356332,
+          0.24590403959347812
+        ],
+        "ci_normal": [
+          0.2870680006041436,
+          0.3462160977230388
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.18413796722062192,
+        "rho_normal": 0.2712776213304294,
+        "delta": -0.08713965410980745,
+        "ci_tumor": [
+          0.17686257154522808,
+          0.21819908594383455
+        ],
+        "ci_normal": [
+          0.26979460044695847,
+          0.33271098503788527
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2137028463626712,
+        "rho_normal": 0.2931935483562709,
+        "delta": -0.07949070199359973,
+        "ci_tumor": [
+          0.20173454032466062,
+          0.25019183049383786
+        ],
+        "ci_normal": [
+          0.28912308106367024,
+          0.3463095776484686
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.2475124798346564,
+        "rho_normal": 0.3245249964841158,
+        "delta": -0.0770125166494594,
+        "ci_tumor": [
+          0.2262655100452863,
+          0.28827450035359675
+        ],
+        "ci_normal": [
+          0.3013623912105151,
+          0.3927581050090745
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2367785040112877,
+        "rho_normal": 0.30063215172065455,
+        "delta": -0.06385364770936686,
+        "ci_tumor": [
+          0.22391372443924185,
+          0.27321849239305335
+        ],
+        "ci_normal": [
+          0.2882914580766423,
+          0.35924693557493736
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.4508715313839882,
+        "rho_normal": 0.46388579623306325,
+        "delta": -0.01301426484907503,
+        "ci_tumor": [
+          0.4046484222272729,
+          0.4977667377682787
+        ],
+        "ci_normal": [
+          0.411979195300162,
+          0.5249718236204638
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.33897870116773327,
+        "rho_normal": 0.3877866575392171,
+        "delta": -0.04880795637148383,
+        "ci_tumor": [
+          0.3077241823493633,
+          0.38112721690824947
+        ],
+        "ci_normal": [
+          0.35088989913821844,
+          0.44719371661199153
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.144308454615591,
+        "rho_normal": 0.24588858297101457,
+        "delta": -0.10158012835542357,
+        "ci_tumor": [
+          0.1476314664026025,
+          0.1714654829952198
+        ],
+        "ci_normal": [
+          0.25229798008048177,
+          0.299574062600374
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.20799592939805683,
+        "rho_normal": 0.2896952766739312,
+        "delta": -0.08169934727587436,
+        "ci_tumor": [
+          0.19802072442797325,
+          0.24443436962020534
+        ],
+        "ci_normal": [
+          0.27790057537601853,
+          0.35010145498675166
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.3879034146841886,
+        "rho_normal": 0.45881556213078467,
+        "delta": -0.07091214744659607,
+        "ci_tumor": [
+          0.3290190303411059,
+          0.44635592354352016
+        ],
+        "ci_normal": [
+          0.4026825713783598,
+          0.5298347965513196
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.25669177823270856,
+        "rho_normal": 0.37074449816483646,
+        "delta": -0.1140527199321279,
+        "ci_tumor": [
+          0.22432006158002357,
+          0.3000393393189347
+        ],
+        "ci_normal": [
+          0.32427050840032406,
+          0.4462784202520454
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.39730644745154475,
+        "rho_normal": 0.5047522405353803,
+        "delta": -0.1074457930838355,
+        "ci_tumor": [
+          0.3391690815018686,
+          0.4638171065070556
+        ],
+        "ci_normal": [
+          0.41807784822339705,
+          0.6004431128915065
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.40433958649035656,
+        "rho_normal": 0.5443536112111547,
+        "delta": -0.1400140247207981,
+        "ci_tumor": [
+          0.3453461073070129,
+          0.48605358681011007
+        ],
+        "ci_normal": [
+          0.4260087172812092,
+          0.6606995590565676
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.26177682857431317,
+        "rho_normal": 0.4003747429219171,
+        "delta": -0.13859791434760393,
+        "ci_tumor": [
+          0.2415189315481837,
+          0.29921657510556504
+        ],
+        "ci_normal": [
+          0.3613654436205986,
+          0.4671694853391587
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.22397290676633366,
+        "rho_normal": 0.32846970120138275,
+        "delta": -0.10449679443504908,
+        "ci_tumor": [
+          0.19920738212018663,
+          0.2715497545967029
+        ],
+        "ci_normal": [
+          0.30222905410764117,
+          0.39716800847164463
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.29293383910072784,
+        "rho_normal": 0.3584518056124322,
+        "delta": -0.06551796651170433,
+        "ci_tumor": [
+          0.2599384235741046,
+          0.34632404989622906
+        ],
+        "ci_normal": [
+          0.3456256253946888,
+          0.4308588667510859
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.18836698380778072,
+        "rho_normal": 0.3227797026609895,
+        "delta": -0.13441271885320877,
+        "ci_tumor": [
+          0.17937901930069022,
+          0.22116791721251178
+        ],
+        "ci_normal": [
+          0.29540952466855636,
+          0.3974601630116728
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.12535163295160975,
+        "rho_normal": 0.22023363364432344,
+        "delta": -0.09488200069271369,
+        "ci_tumor": [
+          0.12721660926571257,
+          0.1555254908135064
+        ],
+        "ci_normal": [
+          0.21737801224940545,
+          0.2872209031065157
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.20465562660368206,
+        "rho_normal": 0.31575531026133963,
+        "delta": -0.11109968365765757,
+        "ci_tumor": [
+          0.18548875604620954,
+          0.24793968373065045
+        ],
+        "ci_normal": [
+          0.3083888490827231,
+          0.37776244363466926
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.2626169887069409,
+        "rho_normal": 0.377100177549445,
+        "delta": -0.11448318884250414,
+        "ci_tumor": [
+          0.22987462001842182,
+          0.3119238826621049
+        ],
+        "ci_normal": [
+          0.33958429226123243,
+          0.44382862101263726
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.363363212937947,
+        "rho_normal": 0.5051933910153021,
+        "delta": -0.14183017807735515,
+        "ci_tumor": [
+          0.2969555333330084,
+          0.43229356903414806
+        ],
+        "ci_normal": [
+          0.44537097380013774,
+          0.5692919870830804
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.2045223261678903,
+        "rho_normal": 0.2824760338888569,
+        "delta": -0.0779537077209666,
+        "ci_tumor": [
+          0.19260203613338878,
+          0.2425136156186645
+        ],
+        "ci_normal": [
+          0.27332567431783544,
+          0.37454813224007416
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.17688968396553606,
+        "rho_normal": 0.24634689436952995,
+        "delta": -0.06945721040399389,
+        "ci_tumor": [
+          0.16684888864028596,
+          0.2116580202205702
+        ],
+        "ci_normal": [
+          0.2529235311887342,
+          0.2992314219296954
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.31192019370588175,
+        "rho_normal": 0.3855392866500728,
+        "delta": -0.07361909294419106,
+        "ci_tumor": [
+          0.25804666509291135,
+          0.3768817271452411
+        ],
+        "ci_normal": [
+          0.34200377119740816,
+          0.4521199085404398
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.24107189919399963,
+        "rho_normal": 0.3287139260780286,
+        "delta": -0.08764202688402895,
+        "ci_tumor": [
+          0.22104207255850994,
+          0.2788770981291639
+        ],
+        "ci_normal": [
+          0.29058949550668245,
+          0.4027079975512796
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.29064047262586723,
+        "rho_normal": 0.37872989168475163,
+        "delta": -0.0880894190588844,
+        "ci_tumor": [
+          0.24584039584148532,
+          0.34723301337943957
+        ],
+        "ci_normal": [
+          0.3468116300396406,
+          0.4545763434452167
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.29362630003259504,
+        "rho_normal": 0.3581291523139335,
+        "delta": -0.06450285228133845,
+        "ci_tumor": [
+          0.2507426984697814,
+          0.35011569495962813
+        ],
+        "ci_normal": [
+          0.3352536877406221,
+          0.41942620471480685
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.19577732621345711,
+        "rho_normal": 0.29315341171290243,
+        "delta": -0.09737608549944532,
+        "ci_tumor": [
+          0.18533271976746368,
+          0.2367394536844372
+        ],
+        "ci_normal": [
+          0.28292246530687415,
+          0.35766347708368856
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.2389767966771221,
+        "rho_normal": 0.3630105457278434,
+        "delta": -0.12403374905072131,
+        "ci_tumor": [
+          0.21129659760192065,
+          0.2896969437406441
+        ],
+        "ci_normal": [
+          0.3212924762611127,
+          0.4264863464119891
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.1682277576866108,
+        "rho_normal": 0.2544315237518214,
+        "delta": -0.08620376606521057,
+        "ci_tumor": [
+          0.16442845563999736,
+          0.20097439273167803
+        ],
+        "ci_normal": [
+          0.2611398494183577,
+          0.30425012649239913
+        ],
+        "non_overlap_95": true
+      }
+    }
+  },
+  "STAD": {
+    "n_tumor": 150,
+    "n_normal": 36,
+    "insufficient": false,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.20427081697238908,
+        "rho_normal": 0.3530518818568048,
+        "delta": -0.14878106488441573,
+        "ci_tumor": [
+          0.19852556293113732,
+          0.2285065512856289
+        ],
+        "ci_normal": [
+          0.3427510883203699,
+          0.41161569833038386
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2710133180121683,
+        "rho_normal": 0.388827288496406,
+        "delta": -0.1178139704842377,
+        "ci_tumor": [
+          0.2570271354639829,
+          0.3040477225689935
+        ],
+        "ci_normal": [
+          0.37719822515414597,
+          0.44234611050153466
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.2168944461604932,
+        "rho_normal": 0.3847240196965872,
+        "delta": -0.167829573536094,
+        "ci_tumor": [
+          0.20697001312943572,
+          0.2463033473877992
+        ],
+        "ci_normal": [
+          0.366639723913497,
+          0.44186220573142404
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2111201912397409,
+        "rho_normal": 0.3677629702674497,
+        "delta": -0.1566427790277088,
+        "ci_tumor": [
+          0.202698945663416,
+          0.24467751068093738
+        ],
+        "ci_normal": [
+          0.3456782564846405,
+          0.435286893672026
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2138838912646951,
+        "rho_normal": 0.4255229459750815,
+        "delta": -0.2116390547103864,
+        "ci_tumor": [
+          0.2064408864188268,
+          0.24117957293089032
+        ],
+        "ci_normal": [
+          0.3991632899191465,
+          0.4769933129301129
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.16454720837382106,
+        "rho_normal": 0.3943452974703658,
+        "delta": -0.22979808909654473,
+        "ci_tumor": [
+          0.16181196775402182,
+          0.1920137651020355
+        ],
+        "ci_normal": [
+          0.3754524555013648,
+          0.44705507897563596
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.19371196304152635,
+        "rho_normal": 0.3686313712050892,
+        "delta": -0.17491940816356286,
+        "ci_tumor": [
+          0.19060231186788726,
+          0.2203940223564707
+        ],
+        "ci_normal": [
+          0.3511956538500288,
+          0.4190825110039477
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.16056152514378316,
+        "rho_normal": 0.3403952317202821,
+        "delta": -0.17983370657649891,
+        "ci_tumor": [
+          0.16108227855138577,
+          0.1878201171302099
+        ],
+        "ci_normal": [
+          0.3391114926484252,
+          0.3873318130228558
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.2090909805961577,
+        "rho_normal": 0.3382891430221205,
+        "delta": -0.1291981624259628,
+        "ci_tumor": [
+          0.19999655891186954,
+          0.24004653420494548
+        ],
+        "ci_normal": [
+          0.3302484251312356,
+          0.39546822524815217
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.17079508592803055,
+        "rho_normal": 0.3278488908354,
+        "delta": -0.15705380490736942,
+        "ci_tumor": [
+          0.17066043978493128,
+          0.20046941430889592
+        ],
+        "ci_normal": [
+          0.3273419430608366,
+          0.3806582144750651
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.1992717023206235,
+        "rho_normal": 0.3433972554143141,
+        "delta": -0.1441255530936906,
+        "ci_tumor": [
+          0.19452658019672617,
+          0.2247661558453724
+        ],
+        "ci_normal": [
+          0.3427062362662831,
+          0.39075021453564124
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.2505025660424093,
+        "rho_normal": 0.39144223203444667,
+        "delta": -0.1409396659920374,
+        "ci_tumor": [
+          0.23099653458227187,
+          0.2851720559349811
+        ],
+        "ci_normal": [
+          0.36215560999379387,
+          0.465992639113105
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4817382018752334,
+        "rho_normal": 0.4493494282410765,
+        "delta": 0.03238877363415693,
+        "ci_tumor": [
+          0.4220213313283574,
+          0.5353289417091082
+        ],
+        "ci_normal": [
+          0.4325366596684981,
+          0.5002860737620786
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.33010987623670934,
+        "rho_normal": 0.4837471382042843,
+        "delta": -0.15363726196757493,
+        "ci_tumor": [
+          0.3082242000788333,
+          0.3643007125542111
+        ],
+        "ci_normal": [
+          0.452804726145987,
+          0.5429115455734674
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.18561995648132357,
+        "rho_normal": 0.38631720908313427,
+        "delta": -0.2006972526018107,
+        "ci_tumor": [
+          0.1821943329496298,
+          0.214454849666632
+        ],
+        "ci_normal": [
+          0.37593935183757654,
+          0.4313816489669925
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.17054872499042778,
+        "rho_normal": 0.3784303797137372,
+        "delta": -0.20788165472330944,
+        "ci_tumor": [
+          0.16738099490190558,
+          0.20414790653560314
+        ],
+        "ci_normal": [
+          0.35552368351429364,
+          0.4337949210135515
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.17268456201761373,
+        "rho_normal": 0.33546168765428913,
+        "delta": -0.1627771256366754,
+        "ci_tumor": [
+          0.16938710002870452,
+          0.20083940031445308
+        ],
+        "ci_normal": [
+          0.3314142723793071,
+          0.3880782423380765
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4322017835737736,
+        "rho_normal": 0.4507137658725174,
+        "delta": -0.01851198229874379,
+        "ci_tumor": [
+          0.3912465501255375,
+          0.4772126939484292
+        ],
+        "ci_normal": [
+          0.43444350612467453,
+          0.49611339985396585
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.1974203751553599,
+        "rho_normal": 0.34957386234743754,
+        "delta": -0.15215348719207764,
+        "ci_tumor": [
+          0.19013878918997099,
+          0.22654593641225118
+        ],
+        "ci_normal": [
+          0.34469356688643343,
+          0.3975632720015224
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.21577937083710216,
+        "rho_normal": 0.43109796091184294,
+        "delta": -0.21531859007474077,
+        "ci_tumor": [
+          0.20099458936264075,
+          0.25757429994686276
+        ],
+        "ci_normal": [
+          0.4020932514725147,
+          0.4872207283306745
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.19643884421795083,
+        "rho_normal": 0.368380528280017,
+        "delta": -0.17194168406206617,
+        "ci_tumor": [
+          0.18946130600571512,
+          0.226631281491346
+        ],
+        "ci_normal": [
+          0.352797222659334,
+          0.42337705699789707
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.18124098155720075,
+        "rho_normal": 0.3532382640562762,
+        "delta": -0.17199728249907542,
+        "ci_tumor": [
+          0.1781932104034111,
+          0.20871702918233187
+        ],
+        "ci_normal": [
+          0.3467884655649912,
+          0.4057931287730474
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.19445609455121485,
+        "rho_normal": 0.3467176662648354,
+        "delta": -0.15226157171362056,
+        "ci_tumor": [
+          0.19099987076201522,
+          0.22247852258979234
+        ],
+        "ci_normal": [
+          0.3365194832124467,
+          0.4007978733923816
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.24088988785122933,
+        "rho_normal": 0.32597154492845526,
+        "delta": -0.08508165707722593,
+        "ci_tumor": [
+          0.22045607317842092,
+          0.2789085807939499
+        ],
+        "ci_normal": [
+          0.3239434000087219,
+          0.3751165656093705
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.22596051758981167,
+        "rho_normal": 0.3279031260736409,
+        "delta": -0.10194260848382924,
+        "ci_tumor": [
+          0.21131105599759675,
+          0.2595680179545227
+        ],
+        "ci_normal": [
+          0.3258303657278708,
+          0.37568088139678285
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.3622122947890415,
+        "rho_normal": 0.3827259980950565,
+        "delta": -0.020513703306014985,
+        "ci_tumor": [
+          0.32658831144221945,
+          0.40231210735464873
+        ],
+        "ci_normal": [
+          0.3689716334790392,
+          0.4389805438319023
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.3056517002578515,
+        "rho_normal": 0.3632201257202769,
+        "delta": -0.05756842546242541,
+        "ci_tumor": [
+          0.2761460446157736,
+          0.347135186126038
+        ],
+        "ci_normal": [
+          0.3578653650297363,
+          0.4061713313629907
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.13777952078879915,
+        "rho_normal": 0.32769439878599693,
+        "delta": -0.18991487799719778,
+        "ci_tumor": [
+          0.142316395964461,
+          0.16527308347495134
+        ],
+        "ci_normal": [
+          0.3246370674410221,
+          0.3767837006137015
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.18758248265998073,
+        "rho_normal": 0.3750553188737195,
+        "delta": -0.18747283621373878,
+        "ci_tumor": [
+          0.1866125206811094,
+          0.21317131335825718
+        ],
+        "ci_normal": [
+          0.3594978761327831,
+          0.4250260066320818
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.3342007398041855,
+        "rho_normal": 0.4769410460832525,
+        "delta": -0.14274030627906698,
+        "ci_tumor": [
+          0.3017381613959904,
+          0.3789825701847658
+        ],
+        "ci_normal": [
+          0.44475398439469854,
+          0.5314834768468756
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2808894695373242,
+        "rho_normal": 0.35514396862298686,
+        "delta": -0.07425449908566267,
+        "ci_tumor": [
+          0.25848020921675613,
+          0.31473430412694914
+        ],
+        "ci_normal": [
+          0.34682180412110625,
+          0.4114003642309693
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.4231343332775631,
+        "rho_normal": 0.47561384737442425,
+        "delta": -0.052479514096861135,
+        "ci_tumor": [
+          0.3633431245287904,
+          0.4775165552173003
+        ],
+        "ci_normal": [
+          0.4205771965540454,
+          0.560715126973802
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.4646169049717617,
+        "rho_normal": 0.42950829668818236,
+        "delta": 0.03510860828357937,
+        "ci_tumor": [
+          0.403461336898474,
+          0.5172425271605942
+        ],
+        "ci_normal": [
+          0.39914333215579745,
+          0.49712149927820776
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2249765725337694,
+        "rho_normal": 0.4463082470554434,
+        "delta": -0.22133167452167402,
+        "ci_tumor": [
+          0.21273253072484866,
+          0.2525100609375894
+        ],
+        "ci_normal": [
+          0.40534240375635205,
+          0.5109664655909295
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.21929042337339805,
+        "rho_normal": 0.3939961359235577,
+        "delta": -0.17470571255015965,
+        "ci_tumor": [
+          0.20165831541856402,
+          0.25591939142084114
+        ],
+        "ci_normal": [
+          0.3694367531183401,
+          0.45517329422130604
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.24630499494855698,
+        "rho_normal": 0.39503757214663826,
+        "delta": -0.14873257719808128,
+        "ci_tumor": [
+          0.2291719526695082,
+          0.2790716941151168
+        ],
+        "ci_normal": [
+          0.36106783828691913,
+          0.4740643840502471
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.1818716090753704,
+        "rho_normal": 0.36658128805871354,
+        "delta": -0.18470967898334315,
+        "ci_tumor": [
+          0.17740931848067476,
+          0.20959588136293505
+        ],
+        "ci_normal": [
+          0.35526784852969456,
+          0.4135055525825085
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.1543359774122297,
+        "rho_normal": 0.3747757921449171,
+        "delta": -0.22043981473268737,
+        "ci_tumor": [
+          0.14473165661114315,
+          0.20169468770565951
+        ],
+        "ci_normal": [
+          0.34893293016135907,
+          0.44510939459531146
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.17660280300569137,
+        "rho_normal": 0.3360846391303023,
+        "delta": -0.15948183612461092,
+        "ci_tumor": [
+          0.1744867650319552,
+          0.20568845394758944
+        ],
+        "ci_normal": [
+          0.33041202647683654,
+          0.382627994674358
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.2395343869462438,
+        "rho_normal": 0.4123337120880845,
+        "delta": -0.1727993251418407,
+        "ci_tumor": [
+          0.22412222944134327,
+          0.27427259549239125
+        ],
+        "ci_normal": [
+          0.39294792811326834,
+          0.46882323238475687
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.32331418902261183,
+        "rho_normal": 0.4771403485981549,
+        "delta": -0.15382615957554308,
+        "ci_tumor": [
+          0.29353559175194016,
+          0.3617120980273313
+        ],
+        "ci_normal": [
+          0.42757236477313826,
+          0.5437625790793487
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.19012445164769395,
+        "rho_normal": 0.31098729246675577,
+        "delta": -0.12086284081906182,
+        "ci_tumor": [
+          0.18197594418570098,
+          0.22265978137042355
+        ],
+        "ci_normal": [
+          0.31347287493888204,
+          0.3610767508758753
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.18282414473497854,
+        "rho_normal": 0.329678117904398,
+        "delta": -0.14685397316941945,
+        "ci_tumor": [
+          0.17883414374353354,
+          0.21302580772912108
+        ],
+        "ci_normal": [
+          0.3106402718944405,
+          0.3939741413480506
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.2602289682224583,
+        "rho_normal": 0.432288353622066,
+        "delta": -0.17205938539960774,
+        "ci_tumor": [
+          0.24018286992205334,
+          0.2967716743297063
+        ],
+        "ci_normal": [
+          0.3970100823755793,
+          0.4893162093276126
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.22983157325456857,
+        "rho_normal": 0.34125578348481034,
+        "delta": -0.11142421023024177,
+        "ci_tumor": [
+          0.2108014168187813,
+          0.26606063066195107
+        ],
+        "ci_normal": [
+          0.33617932250302246,
+          0.3914836465568619
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.29291957029707183,
+        "rho_normal": 0.372652891472504,
+        "delta": -0.07973332117543219,
+        "ci_tumor": [
+          0.2671859030211176,
+          0.32825233115238955
+        ],
+        "ci_normal": [
+          0.3595989039150614,
+          0.4303422636931259
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.2690780483165871,
+        "rho_normal": 0.4862752698705691,
+        "delta": -0.21719722155398202,
+        "ci_tumor": [
+          0.24995668725766468,
+          0.3019882124993663
+        ],
+        "ci_normal": [
+          0.44638796015652665,
+          0.5679796238231342
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.1905464311140471,
+        "rho_normal": 0.3528976652772241,
+        "delta": -0.162351234163177,
+        "ci_tumor": [
+          0.18512613844788933,
+          0.21972545061834167
+        ],
+        "ci_normal": [
+          0.34669693231441345,
+          0.401470577934638
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.22628436373065036,
+        "rho_normal": 0.47205935270763927,
+        "delta": -0.2457749889769889,
+        "ci_tumor": [
+          0.206797608561055,
+          0.26722621759784426
+        ],
+        "ci_normal": [
+          0.4254375548352616,
+          0.5340448500190583
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.15706459037364273,
+        "rho_normal": 0.3287105664232926,
+        "delta": -0.17164597604964987,
+        "ci_tumor": [
+          0.16026331387213494,
+          0.18368625314988465
+        ],
+        "ci_normal": [
+          0.32751501256548576,
+          0.3766409796418965
+        ],
+        "non_overlap_95": true
+      }
+    }
+  },
+  "KIRP": {
+    "n_tumor": 150,
+    "n_normal": 32,
+    "insufficient": false,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.25082056626765475,
+        "rho_normal": 0.3306431121471878,
+        "delta": -0.07982254587953302,
+        "ci_tumor": [
+          0.23886605680884737,
+          0.2821961612286816
+        ],
+        "ci_normal": [
+          0.32843208509138666,
+          0.3943452806040748
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.30715145799359134,
+        "rho_normal": 0.4929847317498644,
+        "delta": -0.18583327375627307,
+        "ci_tumor": [
+          0.2823020652187873,
+          0.34888427198380695
+        ],
+        "ci_normal": [
+          0.3966770190238569,
+          0.5915069777477165
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.3431359197565149,
+        "rho_normal": 0.3760887048686236,
+        "delta": -0.032952785112108696,
+        "ci_tumor": [
+          0.30851784690473233,
+          0.3929300892265721
+        ],
+        "ci_normal": [
+          0.35253418590608265,
+          0.4453067438911437
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2237902043571522,
+        "rho_normal": 0.3438860009873307,
+        "delta": -0.1200957966301785,
+        "ci_tumor": [
+          0.21156972003183078,
+          0.2589973678149487
+        ],
+        "ci_normal": [
+          0.331663578780969,
+          0.4107482516080475
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2700416083747365,
+        "rho_normal": 0.39516513939348397,
+        "delta": -0.12512353101874746,
+        "ci_tumor": [
+          0.2496829521093501,
+          0.31177934670877344
+        ],
+        "ci_normal": [
+          0.3596198540747567,
+          0.4804294995428817
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.22695559183732575,
+        "rho_normal": 0.3803372967435724,
+        "delta": -0.15338170490624667,
+        "ci_tumor": [
+          0.2148637866472229,
+          0.26049830713973965
+        ],
+        "ci_normal": [
+          0.3595174258601506,
+          0.45134119109608395
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.2870124209433906,
+        "rho_normal": 0.37736515980537183,
+        "delta": -0.09035273886198125,
+        "ci_tumor": [
+          0.25927378580831617,
+          0.3296028062288616
+        ],
+        "ci_normal": [
+          0.3422211355287022,
+          0.4588004310427956
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.19796078586918486,
+        "rho_normal": 0.3384979437462168,
+        "delta": -0.14053715787703192,
+        "ci_tumor": [
+          0.19572626495553955,
+          0.2271419203221043
+        ],
+        "ci_normal": [
+          0.33351655864477925,
+          0.40378547994605535
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.25556261676122116,
+        "rho_normal": 0.33015700331250836,
+        "delta": -0.0745943865512872,
+        "ci_tumor": [
+          0.23547531936994087,
+          0.29647407065505205
+        ],
+        "ci_normal": [
+          0.3206321210694693,
+          0.39755297179832466
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.18040148940016384,
+        "rho_normal": 0.31017460804922886,
+        "delta": -0.12977311864906502,
+        "ci_tumor": [
+          0.18086626968855032,
+          0.20958237581762057
+        ],
+        "ci_normal": [
+          0.30971190362921625,
+          0.378322382891869
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.24195979483406047,
+        "rho_normal": 0.36125867221510216,
+        "delta": -0.1192988773810417,
+        "ci_tumor": [
+          0.22939221038771765,
+          0.2783312407247063
+        ],
+        "ci_normal": [
+          0.3409966155053059,
+          0.43881749256246944
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.38314860535222545,
+        "rho_normal": 0.5501452466504089,
+        "delta": -0.16699664129818342,
+        "ci_tumor": [
+          0.33988775731513104,
+          0.4405693401025257
+        ],
+        "ci_normal": [
+          0.48475298129530553,
+          0.6186277681635316
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4735899447571413,
+        "rho_normal": 0.5825483026060131,
+        "delta": -0.10895835784887181,
+        "ci_tumor": [
+          0.4247294625373584,
+          0.5222235066443821
+        ],
+        "ci_normal": [
+          0.4967614073699268,
+          0.6661168409385483
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2662638531586393,
+        "rho_normal": 0.40375202139955974,
+        "delta": -0.13748816824092042,
+        "ci_tumor": [
+          0.2419237497408127,
+          0.30492767098260637
+        ],
+        "ci_normal": [
+          0.36617595946134734,
+          0.4868648627489334
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.24812470721555963,
+        "rho_normal": 0.34821237337180083,
+        "delta": -0.1000876661562412,
+        "ci_tumor": [
+          0.2317617256787018,
+          0.2857879179252946
+        ],
+        "ci_normal": [
+          0.3392864389569511,
+          0.40858687250899367
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2146120714855367,
+        "rho_normal": 0.3411815155715245,
+        "delta": -0.12656944408598778,
+        "ci_tumor": [
+          0.2064231307238428,
+          0.2441007977656496
+        ],
+        "ci_normal": [
+          0.339678972374604,
+          0.404481494583071
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.2306459806600228,
+        "rho_normal": 0.3516362848218079,
+        "delta": -0.12099030416178513,
+        "ci_tumor": [
+          0.2207278615515947,
+          0.2654806026742827
+        ],
+        "ci_normal": [
+          0.3466221838201393,
+          0.40826788497816124
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4688241890293114,
+        "rho_normal": 0.5218941831642163,
+        "delta": -0.05306999413490493,
+        "ci_tumor": [
+          0.4157022409413442,
+          0.5152503532839412
+        ],
+        "ci_normal": [
+          0.4334974121604902,
+          0.6219032658159072
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2615734794355887,
+        "rho_normal": 0.39100743161383966,
+        "delta": -0.129433952178251,
+        "ci_tumor": [
+          0.24454695264596493,
+          0.29962753512985735
+        ],
+        "ci_normal": [
+          0.37086801608056674,
+          0.4547109220993463
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.2618675406748931,
+        "rho_normal": 0.349924467700574,
+        "delta": -0.08805692702568091,
+        "ci_tumor": [
+          0.2430593086577698,
+          0.3059432640144955
+        ],
+        "ci_normal": [
+          0.3343236724248752,
+          0.4244258212947273
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2665064117763048,
+        "rho_normal": 0.3460133449606669,
+        "delta": -0.07950693318436208,
+        "ci_tumor": [
+          0.24721205333392132,
+          0.3046872047762436
+        ],
+        "ci_normal": [
+          0.3335409848310155,
+          0.40982080182251845
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.24914441179203065,
+        "rho_normal": 0.33516730854126964,
+        "delta": -0.08602289674923899,
+        "ci_tumor": [
+          0.22920550109562274,
+          0.2871935051055606
+        ],
+        "ci_normal": [
+          0.3236082314683339,
+          0.40113085661509695
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.24891122047486355,
+        "rho_normal": 0.34774399609599776,
+        "delta": -0.09883277562113421,
+        "ci_tumor": [
+          0.2303984735179905,
+          0.2901348664531079
+        ],
+        "ci_normal": [
+          0.32937410115810906,
+          0.42493469323946503
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.28786425694812984,
+        "rho_normal": 0.4250215504840346,
+        "delta": -0.13715729353590478,
+        "ci_tumor": [
+          0.25775187914945474,
+          0.3316916574247334
+        ],
+        "ci_normal": [
+          0.36593502845411635,
+          0.5086115278926574
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2611284274488267,
+        "rho_normal": 0.3956306094173609,
+        "delta": -0.1345021819685342,
+        "ci_tumor": [
+          0.2418416950705126,
+          0.300352238559497
+        ],
+        "ci_normal": [
+          0.3462756009578585,
+          0.48342962665065464
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.37135996138465177,
+        "rho_normal": 0.52782801512687,
+        "delta": -0.15646805374221828,
+        "ci_tumor": [
+          0.3266678797548677,
+          0.4180022458898251
+        ],
+        "ci_normal": [
+          0.4500761842686313,
+          0.619920702109519
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.3369467924513109,
+        "rho_normal": 0.476518414517054,
+        "delta": -0.13957162206574314,
+        "ci_tumor": [
+          0.3006211982262867,
+          0.3888644477311409
+        ],
+        "ci_normal": [
+          0.39681249191798557,
+          0.5740447052743991
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.15165568848474176,
+        "rho_normal": 0.26329504338822707,
+        "delta": -0.11163935490348531,
+        "ci_tumor": [
+          0.15342129050680658,
+          0.17934709707147184
+        ],
+        "ci_normal": [
+          0.2691031415103397,
+          0.3313338905458224
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.23645076243849328,
+        "rho_normal": 0.3456893158361663,
+        "delta": -0.10923855339767302,
+        "ci_tumor": [
+          0.2255667245926249,
+          0.2723604313949061
+        ],
+        "ci_normal": [
+          0.3202117441824584,
+          0.4251036243054665
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.4576925127414873,
+        "rho_normal": 0.5062108581415188,
+        "delta": -0.04851834540003147,
+        "ci_tumor": [
+          0.413806134403207,
+          0.5059756048350932
+        ],
+        "ci_normal": [
+          0.42913737758911513,
+          0.5958600396075784
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.32982782208972106,
+        "rho_normal": 0.40758828244316314,
+        "delta": -0.07776046035344208,
+        "ci_tumor": [
+          0.3026626402318181,
+          0.37374114547985016
+        ],
+        "ci_normal": [
+          0.3764921633365876,
+          0.47570634855649496
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.4641940305779126,
+        "rho_normal": 0.6250161584252969,
+        "delta": -0.1608221278473843,
+        "ci_tumor": [
+          0.41204808171387386,
+          0.5197163958719861
+        ],
+        "ci_normal": [
+          0.5491993422069175,
+          0.6963664599941402
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.4036899289464152,
+        "rho_normal": 0.5494125094191042,
+        "delta": -0.14572258047268905,
+        "ci_tumor": [
+          0.35493567744437465,
+          0.4618159891601813
+        ],
+        "ci_normal": [
+          0.4930588470642834,
+          0.6166163126713101
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.19551673837771777,
+        "rho_normal": 0.31100158832351815,
+        "delta": -0.11548484994580038,
+        "ci_tumor": [
+          0.19171207907343313,
+          0.2259137428038046
+        ],
+        "ci_normal": [
+          0.30425203625297,
+          0.37849387075103064
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.3182986442185428,
+        "rho_normal": 0.3348754578028059,
+        "delta": -0.016576813584263106,
+        "ci_tumor": [
+          0.2843662527498186,
+          0.3687778976655503
+        ],
+        "ci_normal": [
+          0.3148284941683355,
+          0.4103985619312738
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.34000284153869914,
+        "rho_normal": 0.48208063593738465,
+        "delta": -0.1420777943986855,
+        "ci_tumor": [
+          0.3075639893440494,
+          0.38310365993695594
+        ],
+        "ci_normal": [
+          0.4187895823083991,
+          0.5723185203589256
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2668009466168515,
+        "rho_normal": 0.3938975495446268,
+        "delta": -0.1270966029277753,
+        "ci_tumor": [
+          0.2443562874705794,
+          0.30648564305998455
+        ],
+        "ci_normal": [
+          0.3620464961821386,
+          0.4666625191629014
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.1356742938575655,
+        "rho_normal": 0.2641225967014559,
+        "delta": -0.1284483028438904,
+        "ci_tumor": [
+          0.13753943179610842,
+          0.17151217761165635
+        ],
+        "ci_normal": [
+          0.2634577035058185,
+          0.32982272232480164
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.24702472094812708,
+        "rho_normal": 0.3691693859744078,
+        "delta": -0.12214466502628071,
+        "ci_tumor": [
+          0.23443422097195393,
+          0.2796537203153006
+        ],
+        "ci_normal": [
+          0.3610580180556256,
+          0.42613110625120487
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.34685047717841583,
+        "rho_normal": 0.4447653192276592,
+        "delta": -0.09791484204924339,
+        "ci_tumor": [
+          0.31204987576300675,
+          0.3949002375686661
+        ],
+        "ci_normal": [
+          0.3901077577577158,
+          0.5194667204087414
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.4946907679810217,
+        "rho_normal": 0.5801129715621351,
+        "delta": -0.08542220358111347,
+        "ci_tumor": [
+          0.4533889403423974,
+          0.541150596301123
+        ],
+        "ci_normal": [
+          0.5044601345493368,
+          0.6616371342010787
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.2290975828886383,
+        "rho_normal": 0.3678290037862194,
+        "delta": -0.13873142089758111,
+        "ci_tumor": [
+          0.21748116446529384,
+          0.2690958816566273
+        ],
+        "ci_normal": [
+          0.355031609110048,
+          0.42956495853817805
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.19200532168940218,
+        "rho_normal": 0.30359542721914684,
+        "delta": -0.11159010552974466,
+        "ci_tumor": [
+          0.1872174180260214,
+          0.22523769413323
+        ],
+        "ci_normal": [
+          0.2963954291512407,
+          0.37176174274602075
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.44573168641677136,
+        "rho_normal": 0.3922259508356319,
+        "delta": 0.05350573558113947,
+        "ci_tumor": [
+          0.39116813550156626,
+          0.4987616612994687
+        ],
+        "ci_normal": [
+          0.346653084312269,
+          0.47104546989071194
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.30339777252570777,
+        "rho_normal": 0.36976897661357433,
+        "delta": -0.06637120408786656,
+        "ci_tumor": [
+          0.2698720263726535,
+          0.34562245664514835
+        ],
+        "ci_normal": [
+          0.33505252394286394,
+          0.4409985062439519
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.3982820629028624,
+        "rho_normal": 0.4745270728169633,
+        "delta": -0.07624500991410094,
+        "ci_tumor": [
+          0.35586912358649025,
+          0.4495213469972015
+        ],
+        "ci_normal": [
+          0.40892525248517786,
+          0.5472410119827191
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.372828438984593,
+        "rho_normal": 0.3870708093383384,
+        "delta": -0.01424237035374537,
+        "ci_tumor": [
+          0.3337362361875697,
+          0.421568194298545
+        ],
+        "ci_normal": [
+          0.3405461737122665,
+          0.46657200403218124
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.23906104241697515,
+        "rho_normal": 0.37710775295873816,
+        "delta": -0.138046710541763,
+        "ci_tumor": [
+          0.22418315782608353,
+          0.2768311779978567
+        ],
+        "ci_normal": [
+          0.3637059919524355,
+          0.4446183178498963
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.3320202572995267,
+        "rho_normal": 0.431169581581917,
+        "delta": -0.09914932428239026,
+        "ci_tumor": [
+          0.2948243342234876,
+          0.3836155874945752
+        ],
+        "ci_normal": [
+          0.37313330303387804,
+          0.5271311981665255
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.18937822174667418,
+        "rho_normal": 0.33901763803117846,
+        "delta": -0.14963941628450428,
+        "ci_tumor": [
+          0.1896578225099444,
+          0.2150121668089793
+        ],
+        "ci_normal": [
+          0.3360441332796735,
+          0.39944077295461433
+        ],
+        "non_overlap_95": true
+      }
+    }
+  },
+  "KICH": {
+    "n_tumor": 66,
+    "n_normal": 25,
+    "insufficient": true,
+    "pathways": {
+      "HALLMARK_ADIPOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.30948052143245924,
+        "rho_normal": 0.32152820428121265,
+        "delta": -0.012047682848753405,
+        "ci_tumor": [
+          0.26739851228088807,
+          0.39880748773096264
+        ],
+        "ci_normal": [
+          0.3252995671749865,
+          0.3941390690825481
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.39139408019773664,
+        "rho_normal": 0.42223569928057075,
+        "delta": -0.030841619082834115,
+        "ci_tumor": [
+          0.3408388980527058,
+          0.46092939274752137
+        ],
+        "ci_normal": [
+          0.35949960794261326,
+          0.5298960954680023
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "n_genes_in_pathway": 101,
+        "n_genes_used": 100,
+        "rho_tumor": 0.36202483773237415,
+        "rho_normal": 0.33671817346979127,
+        "delta": 0.02530666426258288,
+        "ci_tumor": [
+          0.3020268084521152,
+          0.4513823511260662
+        ],
+        "ci_normal": [
+          0.31767068627480566,
+          0.4322787077723557
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.269965494292732,
+        "rho_normal": 0.33317936906494117,
+        "delta": -0.06321387477220919,
+        "ci_tumor": [
+          0.23466906811633245,
+          0.3396408267285422
+        ],
+        "ci_normal": [
+          0.32218406919975345,
+          0.41530273620094815
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_APICAL_JUNCTION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.29396795070018583,
+        "rho_normal": 0.390541714654551,
+        "delta": -0.09657376395436518,
+        "ci_tumor": [
+          0.2603379293778699,
+          0.35965622548762166
+        ],
+        "ci_normal": [
+          0.33724512083074076,
+          0.48970594064116957
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_APICAL_SURFACE": {
+        "n_genes_in_pathway": 44,
+        "n_genes_used": 44,
+        "rho_tumor": 0.2302414660884176,
+        "rho_normal": 0.3545433789714503,
+        "delta": -0.12430191288303266,
+        "ci_tumor": [
+          0.21706863922994862,
+          0.29183480910997545
+        ],
+        "ci_normal": [
+          0.3137594376935209,
+          0.47183316857478036
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_APOPTOSIS": {
+        "n_genes_in_pathway": 161,
+        "n_genes_used": 161,
+        "rho_tumor": 0.29562607489087867,
+        "rho_normal": 0.34282174511811525,
+        "delta": -0.047195670227236586,
+        "ci_tumor": [
+          0.2654655750194,
+          0.3613720564875052
+        ],
+        "ci_normal": [
+          0.3261996890409356,
+          0.43360210876311833
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_BILE_ACID_METABOLISM": {
+        "n_genes_in_pathway": 112,
+        "n_genes_used": 112,
+        "rho_tumor": 0.2279221731880411,
+        "rho_normal": 0.31074755984717817,
+        "delta": -0.08282538665913708,
+        "ci_tumor": [
+          0.2208629757605533,
+          0.2836586425701633
+        ],
+        "ci_normal": [
+          0.3126035406916706,
+          0.3834792751027512
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_CHOLESTEROL_HOMEOSTASIS": {
+        "n_genes_in_pathway": 74,
+        "n_genes_used": 74,
+        "rho_tumor": 0.282911762254398,
+        "rho_normal": 0.3121380643528399,
+        "delta": -0.029226302098441903,
+        "ci_tumor": [
+          0.2536518669927083,
+          0.3548590852540942
+        ],
+        "ci_normal": [
+          0.31298747736452787,
+          0.39109493539326473
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_COAGULATION": {
+        "n_genes_in_pathway": 138,
+        "n_genes_used": 138,
+        "rho_tumor": 0.2418339332519591,
+        "rho_normal": 0.31519035732867173,
+        "delta": -0.07335642407671264,
+        "ci_tumor": [
+          0.22038802005699865,
+          0.30617753257996805
+        ],
+        "ci_normal": [
+          0.31124587716932695,
+          0.39594540441202275
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_COMPLEMENT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2955491489122165,
+        "rho_normal": 0.3407960245975439,
+        "delta": -0.04524687568532737,
+        "ci_tumor": [
+          0.26295042909768934,
+          0.3524543034331209
+        ],
+        "ci_normal": [
+          0.3258145747100426,
+          0.4284940157264621
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_DNA_REPAIR": {
+        "n_genes_in_pathway": 150,
+        "n_genes_used": 150,
+        "rho_tumor": 0.46800729072035,
+        "rho_normal": 0.41426774901499575,
+        "delta": 0.05373954170535428,
+        "ci_tumor": [
+          0.39917393336143586,
+          0.5316783204346547
+        ],
+        "ci_normal": [
+          0.37531235958624914,
+          0.5072045176778592
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.5987883986733286,
+        "rho_normal": 0.45425996133379914,
+        "delta": 0.14452843733952941,
+        "ci_tumor": [
+          0.49845980552032065,
+          0.6766165144850285
+        ],
+        "ci_normal": [
+          0.3749656032942571,
+          0.5511034992226461
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.36338899849486134,
+        "rho_normal": 0.4378798785712758,
+        "delta": -0.07449088007641447,
+        "ci_tumor": [
+          0.28257721860286694,
+          0.4401860597258931
+        ],
+        "ci_normal": [
+          0.36893911472851093,
+          0.5433070384989402
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.24020755723193019,
+        "rho_normal": 0.32901178851722923,
+        "delta": -0.08880423128529905,
+        "ci_tumor": [
+          0.22165738341592714,
+          0.2984525112862788
+        ],
+        "ci_normal": [
+          0.3247741208919891,
+          0.4102647789387541
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2154245725422061,
+        "rho_normal": 0.32058913865368177,
+        "delta": -0.10516456611147568,
+        "ci_tumor": [
+          0.2106435690716097,
+          0.27223881800277544
+        ],
+        "ci_normal": [
+          0.31521188650364323,
+          0.4012592814076702
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 157,
+        "rho_tumor": 0.2865433406199444,
+        "rho_normal": 0.3290437536196945,
+        "delta": -0.0425004129997501,
+        "ci_tumor": [
+          0.2511376313441017,
+          0.363838424807251
+        ],
+        "ci_normal": [
+          0.3274996801451825,
+          0.408154489085775
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.5296711206449325,
+        "rho_normal": 0.45090592620392217,
+        "delta": 0.07876519444101032,
+        "ci_tumor": [
+          0.4366393731873703,
+          0.6051502357752486
+        ],
+        "ci_normal": [
+          0.3673147374603648,
+          0.5738601747303915
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_GLYCOLYSIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.313571091827988,
+        "rho_normal": 0.32600095010121627,
+        "delta": -0.01242985827322829,
+        "ci_tumor": [
+          0.27126524648711486,
+          0.38246142880638795
+        ],
+        "ci_normal": [
+          0.31536889463242074,
+          0.40776826729702725
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_HEDGEHOG_SIGNALING": {
+        "n_genes_in_pathway": 36,
+        "n_genes_used": 36,
+        "rho_tumor": 0.20901685777539858,
+        "rho_normal": 0.3689435330442687,
+        "delta": -0.1599266752688701,
+        "ci_tumor": [
+          0.20436060173981782,
+          0.2682311371856775
+        ],
+        "ci_normal": [
+          0.3325679586765636,
+          0.47051057531286283
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_HEME_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.30894492705007515,
+        "rho_normal": 0.3044378281849926,
+        "delta": 0.004507098865082548,
+        "ci_tumor": [
+          0.27149608720063134,
+          0.3732845327820858
+        ],
+        "ci_normal": [
+          0.307825166325123,
+          0.39189994861413985
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_HYPOXIA": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2650664553426384,
+        "rho_normal": 0.3131593317223517,
+        "delta": -0.04809287637971332,
+        "ci_tumor": [
+          0.24270621750050658,
+          0.33252259900530806
+        ],
+        "ci_normal": [
+          0.30857875896323994,
+          0.39526769236607656
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_IL2_STAT5_SIGNALING": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 198,
+        "rho_tumor": 0.2946915099948507,
+        "rho_normal": 0.33400902526692783,
+        "delta": -0.03931751527207711,
+        "ci_tumor": [
+          0.2595579126870073,
+          0.3516652524719938
+        ],
+        "ci_normal": [
+          0.3152171135333517,
+          0.4239940935440252
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "n_genes_in_pathway": 87,
+        "n_genes_used": 87,
+        "rho_tumor": 0.3665614884122231,
+        "rho_normal": 0.39059454733948307,
+        "delta": -0.024033058927259987,
+        "ci_tumor": [
+          0.3129777781388812,
+          0.43419536372405243
+        ],
+        "ci_normal": [
+          0.33350305920107987,
+          0.5005240442284555
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INFLAMMATORY_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.32729899341463936,
+        "rho_normal": 0.3897070645263925,
+        "delta": -0.062408071111753116,
+        "ci_tumor": [
+          0.28716548991512886,
+          0.38473902173672564
+        ],
+        "ci_normal": [
+          0.3417513586140004,
+          0.4938614256854989
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "n_genes_in_pathway": 97,
+        "n_genes_used": 97,
+        "rho_tumor": 0.3768247833742176,
+        "rho_normal": 0.48887439011718975,
+        "delta": -0.11204960674297215,
+        "ci_tumor": [
+          0.3264494831776246,
+          0.4459926915900183
+        ],
+        "ci_normal": [
+          0.39867035895248903,
+          0.5919364538403106
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 198,
+        "rho_tumor": 0.37163914127089315,
+        "rho_normal": 0.43488374549695014,
+        "delta": -0.06324460422605699,
+        "ci_tumor": [
+          0.32561045176433584,
+          0.4344620144923903
+        ],
+        "ci_normal": [
+          0.3645760063818963,
+          0.5330681340374862
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_KRAS_SIGNALING_DN": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.159863312843233,
+        "rho_normal": 0.2634944164912281,
+        "delta": -0.10363110364799513,
+        "ci_tumor": [
+          0.16525317061975153,
+          0.20903445752053282
+        ],
+        "ci_normal": [
+          0.2782900113382756,
+          0.34176797410467963
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.2733071650070832,
+        "rho_normal": 0.3231841259123484,
+        "delta": -0.04987696090526522,
+        "ci_tumor": [
+          0.25409253091652517,
+          0.3315075900974783
+        ],
+        "ci_normal": [
+          0.31634239804074926,
+          0.4036057998909473
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "n_genes_in_pathway": 199,
+        "n_genes_used": 199,
+        "rho_tumor": 0.4717373201262159,
+        "rho_normal": 0.4853148056722369,
+        "delta": -0.013577485546021006,
+        "ci_tumor": [
+          0.39947973610913173,
+          0.5531000986292465
+        ],
+        "ci_normal": [
+          0.4040917237565113,
+          0.609630239714483
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.4164814266901154,
+        "rho_normal": 0.33340900098109705,
+        "delta": 0.08307242570901835,
+        "ci_tumor": [
+          0.32954301356689997,
+          0.5051760748138373
+        ],
+        "ci_normal": [
+          0.33147261868510747,
+          0.4090575742594634
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.5983078533190851,
+        "rho_normal": 0.46597559139027916,
+        "delta": 0.13233226192880593,
+        "ci_tumor": [
+          0.5068162323985216,
+          0.6748346304349669
+        ],
+        "ci_normal": [
+          0.423951024051445,
+          0.5650982721929944
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYC_TARGETS_V2": {
+        "n_genes_in_pathway": 58,
+        "n_genes_used": 57,
+        "rho_tumor": 0.5058700500828373,
+        "rho_normal": 0.38869328614841525,
+        "delta": 0.117176763934422,
+        "ci_tumor": [
+          0.4213165361626697,
+          0.5906405881602784
+        ],
+        "ci_normal": [
+          0.3606555700856064,
+          0.4800984450368461
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_MYOGENESIS": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2055318606848678,
+        "rho_normal": 0.29988898184675805,
+        "delta": -0.09435712116189024,
+        "ci_tumor": [
+          0.20170608872214052,
+          0.2602454928402157
+        ],
+        "ci_normal": [
+          0.3018997246202117,
+          0.37588682294175446
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "n_genes_in_pathway": 32,
+        "n_genes_used": 32,
+        "rho_tumor": 0.35053972172535464,
+        "rho_normal": 0.3802768514880319,
+        "delta": -0.029737129762677283,
+        "ci_tumor": [
+          0.28998110205008915,
+          0.4176156681592861
+        ],
+        "ci_normal": [
+          0.34277649328296145,
+          0.46898914926206325
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 200,
+        "rho_tumor": 0.4057728164048515,
+        "rho_normal": 0.48930120982464587,
+        "delta": -0.08352839341979434,
+        "ci_tumor": [
+          0.3136984359770491,
+          0.5245455860727091
+        ],
+        "ci_normal": [
+          0.4485469768470513,
+          0.5859697549734093
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.2916714096417947,
+        "rho_normal": 0.3223962097201127,
+        "delta": -0.03072480007831796,
+        "ci_tumor": [
+          0.26259245220750244,
+          0.3479968947915058
+        ],
+        "ci_normal": [
+          0.3180244290779848,
+          0.4001785152201706
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PANCREAS_BETA_CELLS": {
+        "n_genes_in_pathway": 40,
+        "n_genes_used": 40,
+        "rho_tumor": 0.15651712448753408,
+        "rho_normal": 0.261761381427262,
+        "delta": -0.10524425693972794,
+        "ci_tumor": [
+          0.1584045208938168,
+          0.21019970775064054
+        ],
+        "ci_normal": [
+          0.2654945796117669,
+          0.3565354180612537
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_PEROXISOME": {
+        "n_genes_in_pathway": 104,
+        "n_genes_used": 104,
+        "rho_tumor": 0.29132366170423213,
+        "rho_normal": 0.31619923215359613,
+        "delta": -0.024875570449364004,
+        "ci_tumor": [
+          0.25378759246319466,
+          0.36459357377616863
+        ],
+        "ci_normal": [
+          0.32021704527382466,
+          0.38612701593339144
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "n_genes_in_pathway": 105,
+        "n_genes_used": 105,
+        "rho_tumor": 0.38336357810186206,
+        "rho_normal": 0.3578878959418799,
+        "delta": 0.025475682159982138,
+        "ci_tumor": [
+          0.3322113277202752,
+          0.4584759382481925
+        ],
+        "ci_normal": [
+          0.3283098676308961,
+          0.44983822031526144
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_PROTEIN_SECRETION": {
+        "n_genes_in_pathway": 96,
+        "n_genes_used": 96,
+        "rho_tumor": 0.5442883635505423,
+        "rho_normal": 0.452742168450545,
+        "delta": 0.09154619509999734,
+        "ci_tumor": [
+          0.4505520967852594,
+          0.6244034442999978
+        ],
+        "ci_normal": [
+          0.3982191701665281,
+          0.5555739729470731
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+        "n_genes_in_pathway": 49,
+        "n_genes_used": 49,
+        "rho_tumor": 0.3269936687726576,
+        "rho_normal": 0.3382403208149948,
+        "delta": -0.011246652042337157,
+        "ci_tumor": [
+          0.25820960468130055,
+          0.41345657564247634
+        ],
+        "ci_normal": [
+          0.3312308406805931,
+          0.42626179730047226
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_SPERMATOGENESIS": {
+        "n_genes_in_pathway": 135,
+        "n_genes_used": 134,
+        "rho_tumor": 0.22228765942426998,
+        "rho_normal": 0.2794339628207762,
+        "delta": -0.057146303396506226,
+        "ci_tumor": [
+          0.2152578873172256,
+          0.2818243353440828
+        ],
+        "ci_normal": [
+          0.29201827785758133,
+          0.3686254868018407
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "n_genes_in_pathway": 54,
+        "n_genes_used": 54,
+        "rho_tumor": 0.3747739833891086,
+        "rho_normal": 0.39512289676738577,
+        "delta": -0.020348913378277156,
+        "ci_tumor": [
+          0.3119257366962701,
+          0.4518461050847927
+        ],
+        "ci_normal": [
+          0.3528172340337597,
+          0.48438013777973776
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.3489249160784022,
+        "rho_normal": 0.41115063636843274,
+        "delta": -0.06222572029003054,
+        "ci_tumor": [
+          0.2949913310629731,
+          0.416333932600096
+        ],
+        "ci_normal": [
+          0.35721076355452225,
+          0.504481463439825
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+        "n_genes_in_pathway": 113,
+        "n_genes_used": 112,
+        "rho_tumor": 0.4813291660675246,
+        "rho_normal": 0.3764277953980864,
+        "delta": 0.10490137066943822,
+        "ci_tumor": [
+          0.3989444075347335,
+          0.557006872703625
+        ],
+        "ci_normal": [
+          0.3557223245383339,
+          0.4603272137755153
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_DN": {
+        "n_genes_in_pathway": 144,
+        "n_genes_used": 144,
+        "rho_tumor": 0.35239941748430575,
+        "rho_normal": 0.4000905475219435,
+        "delta": -0.04769113003763775,
+        "ci_tumor": [
+          0.3036871907579494,
+          0.42810321183189304
+        ],
+        "ci_normal": [
+          0.3548078276777786,
+          0.48798132172072917
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_UV_RESPONSE_UP": {
+        "n_genes_in_pathway": 158,
+        "n_genes_used": 158,
+        "rho_tumor": 0.275698487593007,
+        "rho_normal": 0.314112799620893,
+        "delta": -0.03841431202788598,
+        "ci_tumor": [
+          0.24566229955289007,
+          0.3401482724430161
+        ],
+        "ci_normal": [
+          0.31321208853379695,
+          0.39840876717351936
+        ],
+        "non_overlap_95": false
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "n_genes_in_pathway": 42,
+        "n_genes_used": 42,
+        "rho_tumor": 0.30580379595116225,
+        "rho_normal": 0.4644554866302016,
+        "delta": -0.15865169067903934,
+        "ci_tumor": [
+          0.26642179333862825,
+          0.37270777658800314
+        ],
+        "ci_normal": [
+          0.3729792855413603,
+          0.5951625532497496
+        ],
+        "non_overlap_95": true
+      },
+      "HALLMARK_XENOBIOTIC_METABOLISM": {
+        "n_genes_in_pathway": 200,
+        "n_genes_used": 199,
+        "rho_tumor": 0.23489121860242246,
+        "rho_normal": 0.30508444329546514,
+        "delta": -0.07019322469304268,
+        "ci_tumor": [
+          0.22248695238768038,
+          0.28967598252113674
+        ],
+        "ci_normal": [
+          0.3100044944435634,
+          0.38315463935277816
+        ],
+        "non_overlap_95": true
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# raw expression matrices (~335 MB) — regenerable from 01_fetch_gdc.py
+# against the public NCI GDC API. Not committed; results JSON below is.
+data/*_expr.tsv.gz

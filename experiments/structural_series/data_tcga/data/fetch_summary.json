@@ -1,0 +1,58 @@
+{
+  "THCA": {
+    "n_tumor": 150,
+    "n_normal": 59,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 150,
+    "manifest_normal": 59
+  },
+  "LUSC": {
+    "n_tumor": 150,
+    "n_normal": 51,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 150,
+    "manifest_normal": 51
+  },
+  "LIHC": {
+    "n_tumor": 150,
+    "n_normal": 50,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 150,
+    "manifest_normal": 50
+  },
+  "HNSC": {
+    "n_tumor": 150,
+    "n_normal": 44,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 150,
+    "manifest_normal": 44
+  },
+  "STAD": {
+    "n_tumor": 150,
+    "n_normal": 36,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 150,
+    "manifest_normal": 36
+  },
+  "KIRP": {
+    "n_tumor": 150,
+    "n_normal": 32,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 150,
+    "manifest_normal": 32
+  },
+  "KICH": {
+    "n_tumor": 66,
+    "n_normal": 25,
+    "n_genes": 59427,
+    "cached": false,
+    "manifest_tumor": 66,
+    "manifest_normal": 25
+  }
+}

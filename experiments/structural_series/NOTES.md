@@ -95,3 +95,35 @@ satisfiable, but only for STRONG coupling: g/J >~ 3, T in [~3, 5.6]. Below
 g/J~3 the within-rung and cross-rung corridors pull apart. This makes Piece 6
 computable and gives one structural finding (the coupling must dominate); it is
 an abstract tower, not the channel to particle observables.
+
+## 2026-05-21 — TCGA cellular-substrate extension: corridor recurs (data_tcga/)
+
+Claims 1 & 4 at the cellular gene-regulatory rung, real data. The cellular
+substrate IS a coordinated rung (unlike the particle-physics nulls), so the
+corridor IS expected if Claims 1 & 4 hold; a null would be a Falsifier4 witness.
+
+7 new TCGA cancers (THCA, LUSC, LIHC, HNSC, STAD, KIRP primary-tier; KICH
+borderline) pulled fresh from the NCI GDC API — disjoint from the existing
+5-cancer noncorr_cancer work (LUAD/BRCA/COAD/KIRC/PRAD). 1,263 STAR-Counts
+files, 50 MSigDB Hallmark gene sets = 50 rungs, within-rung |rho| = mean
+|Pearson| over pathway gene-pairs. Pre-registered (PREREGISTRATION.md, committed
+before results): corridor criterion is a BOUNDED BAND — healthy |rho| IQR <=
+0.15, off both poles, median in the recalibrated A3+ band [0.17,0.35].
+
+Result. C1: all 7/7 cancers' healthy tissue is in a TIGHT band (IQR 0.078-0.125,
+all <= 0.15) decisively off both poles (p90 max 0.53, p10 min 0.20). 4/6
+primary-tier BAND-CONSISTENT, 2/6 (STAD,KIRP) BROAD-SPREAD only because their
+healthy median (0.374,0.377) lands just above the A3+ ceiling 0.35 — still
+tightly banded, just rigidity-side of centre. 0 POLE-PILED. C2 = WEAKLY RECURS;
+Falsifier4 did NOT appear. C3: tumor drift is CHAOS-DRIFT CONFIRMED — 201/201
+significant pathway-shifts across all 7 cancers go chaos-ward, zero rigidity-
+ward, exactly reproducing the prior 176/176. Survives the tumor-subsampled-to-
+normal-n control (35-50 of 50 pathways preserved per primary cancer).
+
+One real caveat surfaced: pooled healthy median here is 0.34 vs the prior work's
+0.27. The difference is pipeline — GDC STAR-Counts log2(TPM+1) here vs UCSC-Xena
+log2(norm_count+1) prior. The corridor's EXISTENCE and TIGHTNESS is robust; its
+absolute CENTRE is normalization-dependent. Sharpens the per-substrate caveat to
+per-substrate-AND-per-pipeline. Claims 1 & 4 weakly supported at the cellular
+substrate, not falsified — combined with the prior 5, the band is seen in 12
+TCGA cancers, the chaos-drift in 377/377 significant shifts.
