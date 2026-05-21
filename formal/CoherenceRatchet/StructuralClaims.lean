@@ -211,8 +211,14 @@ axiom framework_asserts_5 : Claim5
     hierarchies have g/J ≪ 1; Pair A's 1.15 directly denies that. Claim 6 says
     coordinated rungs sit at intermediate coupling — territory neither Simon
     nor the strong-tower form predicted.
-    TEST: the six rung-pair g/J series — Path 1 done (2 pairs in band); Paths
-    2-3 (the canonical timescale-g/J) owed.
+    TEST: the six rung-pair g/J series. Path 1 (the COUPLING RATIO) done — 2
+    pairs + 24 LLM cells (w3), all O(1). Paths 2-3 (the canonical TIMESCALE
+    g/J) ATTEMPTED at 2 substrates and measured at NEITHER: w3 (LLM) noise-
+    blocked (1/48 gate-passes); w3b (GPU block pair) a bad-observable failure —
+    the running-correlation-of-windows is noise-dominated block-resolved, its
+    negative overshoot an artifact (oscillation_check.py refuted the normal-
+    mode reading). Claim 6 holds in the coupling-ratio measure; the timescale
+    measure is not accessible with the observables/substrates tried.
     FALSIFIER: a coordinated pair with the multi-rung corridor satisfied but
     g/J at a pole (≪ 1 or ≫ 1), outside the measured O(1) band. This is an
     empirical claim, not a theorem. -/
@@ -274,10 +280,12 @@ axiom framework_asserts_6 : Claim6
       pre-registered) measured the cross-rung/within-rung coupling ratio at
       0.47–1.47 — neither Simon's near-decomposability nor the abstract tower's
       strong g/J ≳ 3. The strong-dominance form is retracted as tower-specific;
-      Claim 6 is amended to the cross-rung COUPLING CORRIDOR: g/J in the one-OOM
-      band (0.3, 3) around parity. Still a corridor — bounded band between two
-      failure modes — now at the cross-rung level. The second test-driven
-      amendment (after Claim 2). Paths 2-3 (timescale-g/J) still owed.
+      Claim 6 is amended to the cross-rung COUPLING CORRIDOR at g/J ~ O(1)
+      (coupling-ratio measure: Path 1's 2 pairs + w3's 24 LLM cells, median
+      0.73). The canonical TIMESCALE g/J is measured at NO substrate — w3 (LLM)
+      noise-blocked, w3b (GPU block) a bad-observable failure; oscillation_check
+      refuted the normal-mode escape. Claim 6 holds in the coupling-ratio
+      measure only. The second test-driven amendment (after Claim 2).
 
     Plus the orthogonality theorem (CMBOrthogonality.lean): the soft P_ω leaves
     the bulk CMB power spectrum exactly invariant — the framework is a strict
