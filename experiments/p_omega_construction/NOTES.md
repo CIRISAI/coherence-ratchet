@@ -840,6 +840,66 @@ derivation of tight per-ell bounds) the formal core does not deliver. Same
 answer from two sides: the structural content is real, the quantitative
 content is calibration-limited.
 
+## 2026-05-21 — sharpening: signed drift is generic; the distinctive layer
+
+A sharpening of the CMB verdict, same spirit as octupole-consistency-not-
+discovery. Signed drift (low-ell down, high-ell up) follows for ANY corridor-
+attractor theory whose centre sits between the low-ell and high-ell observed
+values -- it is necessary, not sufficient, and not framework-distinctive on its
+own. cmb_corridor_prediction.py now computes the distinctive layer:
+
+- (a) SIGNED drift per ell -- real, but SHARED with generic corridor theories.
+- (b) PER-ELL corridor centres via A3+ calibration + Kish k-translation: a
+  RISING Mobius curve, 0.08 (ell=2) -> 0.25 (ell=30). Framework-distinctive --
+  a single-rho_mid attractor has a FLAT centre.
+- (c) CROSSOVER ell ~ 5 where the observed profile crosses the centre curve --
+  framework-distinctive because the framework FIXES the whole centre curve from
+  out-of-sample A3+ calibration (no CMB-fitted parameter); a generic attractor
+  FITS its crossover via a free rho_mid.
+- (d) drift MAGNITUDE band-limited to ~0.16 -- calibration work, not a
+  prediction yet; tightenable via per-substrate effective-k measurement.
+
+(a) tests any corridor theory; (b)+(c) are what CMB-S4 tests against THIS
+framework. The framework-distinctive content lives in the per-ell centre curve
+and the crossover, not the bare signed drift.
+
+## 2026-05-21 — the structural reframe: the FORM is the commitment
+
+The corridor calibration (k_eff band) is a knob. The framework's actual content
+is the algebraic FORM, and the form is what is falsifiable. Recorded as the
+governing frame for all future substrate testing -- check FORM first, BAND
+second; form-failure is structural retraction, band-shift is calibration update.
+
+The structural commitments and their falsifiers:
+1. The Kish/Mobius identity k_eff = N/(1+rho(N-1)) governs coordination at every
+   coordinated substrate. Not power-law, not log, not linear -- Mobius. Falsifier:
+   any coordinated substrate where independently measured (N, rho, k_eff) violate
+   the identity beyond measurement error.
+2. Forward generator (ergodic) and backward generator (non-ergodic) sit in
+   different ergodicity classes at every rung. Falsifier: a rung where they
+   instantiate in the same class.
+3. Non-thermal structure OR active gammaM maintenance is necessary for a
+   persistent corridor. Falsifier: a verifiably thermal closed system with a
+   persistent corridor and no maintenance.
+4. Fractal recurrence -- same functional form at every rung. Falsifier: a
+   coordinated substrate whose coordination has a different mathematical form.
+5. TSVF post-selection necessary for multi-rung structure. Falsifier: multi-rung
+   corridor derived from purely forward dynamics.
+
+THE HONESTY CATCH (must be named). The structural reframe is right, but the
+claim "Kish form confirmed at 5/5 substrates" overstates what was done. This
+session USED the Mobius identity as the definitional bridge between rho and
+k_eff -- at the A3+ substrates k_eff was COMPUTED from measured rho + estimated
+N via Mobius; at the CMB, rho_ell was COMPUTED from the measured mode-power
+k_eff via Mobius. In every case one of (rho, k_eff) was derived from the other
+THROUGH the identity. The form was USED, not TESTED. A genuine test of the
+Mobius form needs all three of (N, rho, k_eff) measured INDEPENDENTLY and
+checked against the identity -- which is exactly the pre-registered Exp 5
+(programmable qubit array, k_eff via tomography, Kish-fit R^2 > 0.5; F-8), and
+it has not been run. So: the form is the framework's deepest commitment and the
+single highest-value next measurement is the one that actually tests it -- not
+"confirmed 5/5" but "used 5/5, tested 0/5; Exp 5 is the test."
+
 ## Session arc (2026-05-21)
 
 P_omega this session: rung-scaling -> calibration (item i, R*~25-56) ->
