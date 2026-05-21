@@ -1,0 +1,236 @@
+{
+  "C1_band": {
+    "THCA": {
+      "median": 0.31712081592449826,
+      "iqr": 0.0788115420794917,
+      "p10": 0.2534828660818125,
+      "p25": 0.28547141178758473,
+      "p75": 0.36428295386707643,
+      "p90": 0.4040215142732265,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": true,
+      "verdict": "BAND-CONSISTENT",
+      "n_pathways": 50,
+      "tumor_median": 0.3005416140954789,
+      "insufficient": false
+    },
+    "LUSC": {
+      "median": 0.23904976532175215,
+      "iqr": 0.08262975184433113,
+      "p10": 0.20405897095737088,
+      "p25": 0.22393836947391993,
+      "p75": 0.30656812131825106,
+      "p90": 0.3473441702754269,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": true,
+      "verdict": "BAND-CONSISTENT",
+      "n_pathways": 50,
+      "tumor_median": 0.17781022161024604,
+      "insufficient": false
+    },
+    "LIHC": {
+      "median": 0.32860595560216044,
+      "iqr": 0.1246358259940879,
+      "p10": 0.24353849998543556,
+      "p25": 0.265988826401548,
+      "p75": 0.3906246523956359,
+      "p90": 0.45107741690151787,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": true,
+      "verdict": "BAND-CONSISTENT",
+      "n_pathways": 50,
+      "tumor_median": 0.23474076712460823,
+      "insufficient": false
+    },
+    "HNSC": {
+      "median": 0.32844335048169054,
+      "iqr": 0.08515901727718045,
+      "p10": 0.2706529003244157,
+      "p25": 0.29316344587374454,
+      "p75": 0.378322463150925,
+      "p90": 0.467972440663295,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": true,
+      "verdict": "BAND-CONSISTENT",
+      "n_pathways": 50,
+      "tumor_median": 0.22458483172980653,
+      "insufficient": false
+    },
+    "STAD": {
+      "median": 0.37371434180871055,
+      "iqr": 0.07799827937638781,
+      "p10": 0.32862982238832744,
+      "p25": 0.34422735812694444,
+      "p75": 0.42222563750333225,
+      "p90": 0.47241480217431775,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": false,
+      "verdict": "BROAD-SPREAD",
+      "n_pathways": 50,
+      "tumor_median": 0.21483163105089864,
+      "insufficient": false
+    },
+    "KIRP": {
+      "median": 0.377236456382055,
+      "iqr": 0.09702955511668404,
+      "p10": 0.32824146181360936,
+      "p25": 0.3443368296995396,
+      "p75": 0.44136638481622364,
+      "p90": 0.5299864645560936,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": false,
+      "verdict": "BROAD-SPREAD",
+      "n_pathways": 50,
+      "tumor_median": 0.2663851324674721,
+      "insufficient": false
+    },
+    "KICH": {
+      "median": 0.34180888485782956,
+      "iqr": 0.08756170909624594,
+      "p10": 0.3050197817844179,
+      "p25": 0.32082390506056446,
+      "p75": 0.4083856141568104,
+      "p90": 0.4552795138634394,
+      "off_rigidity": true,
+      "off_chaos": true,
+      "bounded_iqr": true,
+      "median_in_A3band": true,
+      "verdict": "BAND-CONSISTENT",
+      "n_pathways": 50,
+      "tumor_median": 0.3092127242412672,
+      "insufficient": true
+    }
+  },
+  "C2_recurrence": {
+    "verdict": "WEAKLY RECURS",
+    "n_band_consistent": 4,
+    "n_broad_spread": 2,
+    "n_pole_piled": 0,
+    "primary_tier": [
+      "THCA",
+      "LUSC",
+      "LIHC",
+      "HNSC",
+      "STAD",
+      "KIRP"
+    ]
+  },
+  "C3_drift": {
+    "per_cancer": {
+      "THCA": {
+        "n_sig": 4,
+        "n_neg_of_sig": 4,
+        "frac_neg": 1.0,
+        "median_delta": -0.01920083715843235
+      },
+      "LUSC": {
+        "n_sig": 37,
+        "n_neg_of_sig": 37,
+        "frac_neg": 1.0,
+        "median_delta": -0.06381850309721027
+      },
+      "LIHC": {
+        "n_sig": 28,
+        "n_neg_of_sig": 28,
+        "frac_neg": 1.0,
+        "median_delta": -0.06915896360219413
+      },
+      "HNSC": {
+        "n_sig": 37,
+        "n_neg_of_sig": 37,
+        "frac_neg": 1.0,
+        "median_delta": -0.09420501509269782
+      },
+      "STAD": {
+        "n_sig": 45,
+        "n_neg_of_sig": 45,
+        "frac_neg": 1.0,
+        "median_delta": -0.1568482919675391
+      },
+      "KIRP": {
+        "n_sig": 38,
+        "n_neg_of_sig": 38,
+        "frac_neg": 1.0,
+        "median_delta": -0.11739186366342104
+      },
+      "KICH": {
+        "n_sig": 12,
+        "n_neg_of_sig": 12,
+        "frac_neg": 1.0,
+        "median_delta": -0.04387364434253874
+      }
+    },
+    "verdict": "CHAOS-DRIFT CONFIRMED",
+    "n_cancers_chaos_drift": 5
+  },
+  "sample_size_control": {
+    "THCA": {
+      "n_normal": 59,
+      "n_paths": 50,
+      "preserved": 36,
+      "preservation_rate": 0.72,
+      "median_delta_full": -0.01920083715843235,
+      "median_delta_subsampled": -0.00853066319232823
+    },
+    "LUSC": {
+      "n_normal": 51,
+      "n_paths": 50,
+      "preserved": 35,
+      "preservation_rate": 0.7,
+      "median_delta_full": -0.06381850309721027,
+      "median_delta_subsampled": -0.03589883182032766
+    },
+    "LIHC": {
+      "n_normal": 50,
+      "n_paths": 50,
+      "preserved": 43,
+      "preservation_rate": 0.86,
+      "median_delta_full": -0.06915896360219413,
+      "median_delta_subsampled": -0.050293353293850776
+    },
+    "HNSC": {
+      "n_normal": 44,
+      "n_paths": 50,
+      "preserved": 50,
+      "preservation_rate": 1.0,
+      "median_delta_full": -0.09420501509269782,
+      "median_delta_subsampled": -0.07158187653369341
+    },
+    "STAD": {
+      "n_normal": 36,
+      "n_paths": 50,
+      "preserved": 48,
+      "preservation_rate": 0.96,
+      "median_delta_full": -0.1568482919675391,
+      "median_delta_subsampled": -0.12259310065295385
+    },
+    "KIRP": {
+      "n_normal": 32,
+      "n_paths": 50,
+      "preserved": 44,
+      "preservation_rate": 0.88,
+      "median_delta_full": -0.11739186366342104,
+      "median_delta_subsampled": -0.07978573600457581
+    },
+    "KICH": {
+      "n_normal": 25,
+      "n_paths": 50,
+      "preserved": 26,
+      "preservation_rate": 0.52,
+      "median_delta_full": -0.04387364434253874,
+      "median_delta_subsampled": -0.01503628095464063
+    }
+  }
+}
