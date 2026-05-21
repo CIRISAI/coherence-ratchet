@@ -38,7 +38,32 @@ sector — which is itself calibration-gated and, in the timescale form, measure
 at no substrate. The strong side gets the headline; the conservative side's
 gloss is the headline's meaning.
 
+## v2 framing — this is a Zenodo version, not a draft edit
+
+v1 is public: *Corridor Dynamics in Coordinated Systems* — Zenodo v1 DOI
+`10.5281/zenodo.20300774`, published 2026-05-20, concept DOI
+`10.5281/zenodo.20300773`. v1 stays citable; v2 gets a new version DOI on
+upload. Zenodo carries no version-comment field, so the change-note must live
+*inside the v2 PDF* — a dated **"Changes in v2"** section listing each
+retraction and amendment against the experiment that forced it. Stated as a
+versioned changelog, the amendment record (Claim 2 by E2, Claim 6 by Path 1,
+the corridor-bounds retraction) reads as the falsification apparatus working —
+which is the honest reading.
+
+The v1 **title** is itself ahead of the evidence: *"...Five-Substrate Empirical
+Validation."* The structural-series re-runs give two clean confirmations
+(fMRI, TCGA), one weak (LLM), one chaos-pole datum (Allen) — not five-for-five.
+v1's nominal five substrates (neuroimaging, LLMs, OSS, cancer, religious
+communities) are not the set the structural series measured. v2 must drop
+"Five-Substrate ... Validation" as a count-claim from the title.
+
 ## Recommended paper update — section by section
+
+0. **Title + "Changes in v2" section.** Retitle off the "Five-Substrate
+   Validation" count-claim (e.g. "Cross-Substrate Empirical Tests"). Add a
+   dated change-note section: corridor-bounds retraction, five→six claims,
+   Claim 2 and Claim 6 amendments, cross-rung tier rebuilt — each against its
+   experiment.
 
 1. **Abstract + universal-scale opening.** New statement of the orthogonality
    theorem at full strength: proved, zero framework axioms, the framework is a
