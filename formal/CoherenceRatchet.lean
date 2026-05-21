@@ -79,6 +79,9 @@ import CoherenceRatchet.StructuralClaims
 -- The orthogonality theorem: soft P_ω leaves the bulk CMB power spectrum exact
 import CoherenceRatchet.CMBOrthogonality
 
+-- The maximal claim scaffolded — an honest audit of where it bends and breaks
+import CoherenceRatchet.MaximalClaim
+
 -- The 10-piece formal structure
 import CoherenceRatchet.Core.BaseIdentity                  -- Piece 1
 import CoherenceRatchet.Core.Dynamics                       -- Piece 2
