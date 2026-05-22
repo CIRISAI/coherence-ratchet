@@ -1,0 +1,145 @@
+{
+ "preregistration": "experiments/structural_series/band_calibration/PREREGISTRATION.md",
+ "scope": "STATIC band of healthy/in-corridor debiased rho. NOT the dynamical corridor-as-attractor bounds (drho/dt regime change), which require per-substrate drho/dt measured so far only at the GPU substrate.",
+ "estimator": "debiased rho (phase-randomized / shuffle noise floor, quadrature subtraction)",
+ "missing": {
+  "TCGA": "rho_normal in data_tcga is RAW mean|corr| (02_compute_rho.py has no floor subtraction) -- not a debiased-rho value; excluded from the debiased-rho pool.",
+  "GPU": "corridor_dynamics/gpu* are corridor-exit relaxation runs (k_eff/r decay), no healthy in-corridor rho distribution on disk; GPU supplies the dynamical data the honest-scope section separates from the static band."
+ },
+ "substrates": {
+  "C. elegans (whole-brain)": {
+   "n": 832,
+   "rho_mid_median": 0.3115407431343349,
+   "rho_mean": 0.3409949988411954,
+   "iqr": 0.19588480338866382,
+   "p5": 0.15671929303858348,
+   "p25": 0.22741522146332377,
+   "p75": 0.4233000248519876,
+   "p95": 0.6495649617414753,
+   "half_width_w": 0.2464228343514459,
+   "min": 0.0,
+   "max": 0.8721535378225943,
+   "k_eff_at_p5": 6.380835317792081,
+   "k_eff_at_median": 3.209853035398342,
+   "k_eff_at_p95": 1.53949190442633
+  },
+  "Drosophila (central complex)": {
+   "n": 57,
+   "rho_mid_median": 0.3308215413706422,
+   "rho_mean": 0.3237165302408734,
+   "iqr": 0.08659661730070034,
+   "p5": 0.09742662177436356,
+   "p25": 0.30120294166990225,
+   "p75": 0.3877995589706026,
+   "p95": 0.44137481680048163,
+   "half_width_w": 0.17197409751305903,
+   "min": 0.07494963142824881,
+   "max": 0.45611899456071886,
+   "k_eff_at_p5": 10.264135015539827,
+   "k_eff_at_median": 3.022777766698182,
+   "k_eff_at_p95": 2.265648065852471
+  },
+  "EEG interictal (CHB-MIT)": {
+   "n": 1324,
+   "rho_mid_median": 0.26897236444558137,
+   "rho_mean": 0.2698991064743588,
+   "iqr": 0.03609119250947823,
+   "p5": 0.21713090828572984,
+   "p25": 0.25234375939930836,
+   "p75": 0.2884349519087866,
+   "p95": 0.3216872212809973,
+   "half_width_w": 0.05227815649763373,
+   "min": 0.1452371324418634,
+   "max": 0.4126845799916703,
+   "k_eff_at_p5": 4.605516588564473,
+   "k_eff_at_median": 3.71785407047764,
+   "k_eff_at_p95": 3.1086096488939767
+  },
+  "fMRI resting-state (ABIDE)": {
+   "n": 139,
+   "rho_mid_median": 0.2659802033714072,
+   "rho_mean": 0.2879695656903589,
+   "iqr": 0.13455717709548792,
+   "p5": 0.16850159089069153,
+   "p25": 0.2141247342520079,
+   "p75": 0.3486819113474958,
+   "p95": 0.46425159287205264,
+   "half_width_w": 0.14787500099068057,
+   "min": 0.15599496460877693,
+   "max": 0.6453113929252036,
+   "k_eff_at_p5": 5.934662068850785,
+   "k_eff_at_median": 3.759678304342178,
+   "k_eff_at_p95": 2.154004456535272
+  },
+  "LLM internals (3 models)": {
+   "n": 48,
+   "rho_mid_median": 0.08190128910886259,
+   "rho_mean": 0.0906703829578624,
+   "iqr": 0.04731990758600879,
+   "p5": 0.05195467126974299,
+   "p25": 0.06726512763726053,
+   "p75": 0.11458503522326932,
+   "p95": 0.1362603914163854,
+   "half_width_w": 0.04215286007332121,
+   "min": 0.046192945478865856,
+   "max": 0.21790230277098963,
+   "k_eff_at_p5": 19.247547440115806,
+   "k_eff_at_median": 12.209820027018225,
+   "k_eff_at_p95": 7.338889824147014
+  }
+ },
+ "cross_substrate": {
+  "per_substrate_rho_mid": {
+   "C. elegans (whole-brain)": 0.3115407431343349,
+   "Drosophila (central complex)": 0.3308215413706422,
+   "EEG interictal (CHB-MIT)": 0.26897236444558137,
+   "fMRI resting-state (ABIDE)": 0.2659802033714072,
+   "LLM internals (3 models)": 0.08190128910886259
+  },
+  "per_substrate_half_width_w": {
+   "C. elegans (whole-brain)": 0.2464228343514459,
+   "Drosophila (central complex)": 0.17197409751305903,
+   "EEG interictal (CHB-MIT)": 0.05227815649763373,
+   "fMRI resting-state (ABIDE)": 0.14787500099068057,
+   "LLM internals (3 models)": 0.04215286007332121
+  },
+  "rho_mid_max_over_min": 4.039271481196305,
+  "verdict": "SUBSTRATE-SPECIFIC",
+  "verdict_detail": "per-substrate rho_mid spans 0.082-0.331, a factor of 4.04x; exceeds the pre-registered ~2x threshold -> the corridor is substrate-local in centre; the per-substrate values ARE the calibration.",
+  "biological_subcluster": {
+   "substrates": [
+    "C. elegans (whole-brain)",
+    "Drosophila (central complex)",
+    "EEG interictal (CHB-MIT)",
+    "fMRI resting-state (ABIDE)"
+   ],
+   "rho_mid_range": [
+    0.2659802033714072,
+    0.3308215413706422
+   ],
+   "rho_mid_max_over_min": 1.2437825717002418,
+   "clustered": true,
+   "note": "the four biological substrates (C. elegans, Drosophila, EEG, fMRI) cluster within a factor of 1.24x; the LLM substrate (rho_mid 0.082) is the lone outlier and drives the substrate-specific verdict. Read: a shared corridor centre holds across coordinated BIOLOGICAL rungs; the LLM internal-representation rung sits at a substrate-specific lower centre."
+  }
+ },
+ "pooled_estimate": {
+  "all_substrates": {
+   "rho_mid": 0.26897236444558137,
+   "half_width_w": 0.14787500099068057,
+   "implied_band": [
+    0.1210973634549008,
+    0.41684736543626194
+   ]
+  },
+  "biological_substrates_only": {
+   "rho_mid": 0.2902565537899581,
+   "half_width_w": 0.1599245492518698,
+   "implied_band": [
+    0.13033200453808833,
+    0.4501811030418279
+   ],
+   "note": "recommended first estimate of P_omega's master parameters: pools only the clustered biological rungs, excludes the LLM outlier."
+  },
+  "caveat": "STATIC-BAND estimate of P_omega master parameters: where healthy debiased rho sits, not the dynamical attractor bounds. Tightening to true corridor bounds is gated on per-substrate drho/dt and is NOT claimed here."
+ }
+}
