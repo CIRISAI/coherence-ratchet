@@ -1,0 +1,7 @@
+{
+  "pair": "fMRI region->network",
+  "status": "MISSING",
+  "reason": "The on-disk ABIDE-PCP timeseries use the CC200 (Craddock-2012, 200-cluster functional) parcellation. The cross-rung n+1 rung needs a fixed region->network membership map -- the analog of TCGA gene-sets and the C. elegans functional-class map. No CC200->network lookup is on disk, and the CC200 atlas image (which a spatial-overlay assignment would need) is not cached and is not fetchable (cluster_roi.projects.nitrc.org returns an SSL certificate failure). A data-driven network partition (clustering the 200 regions) would introduce a clustering method choice absent from crossrung_lib.py, violating the pre-registered 'same method as Path 1' constraint. Reported MISSING per the pre-registration discipline, not fabricated.",
+  "data_on_disk": "ABIDE-PCP rois_cc200 timeseries (250 .1D files) -- region-level only, no network grouping",
+  "data_missing": "CC200 region->network membership map"
+}

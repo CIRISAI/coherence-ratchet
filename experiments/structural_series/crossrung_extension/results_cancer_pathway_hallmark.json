@@ -1,0 +1,7 @@
+{
+  "pair": "cancer pathway->hallmark",
+  "status": "MISSING",
+  "reason": "A pathway->hallmark pair distinct from Path 1's measured molecular->pathway needs (a) a fine pathway layer below Hallmark (Reactome / KEGG / GO gene-sets) as rung n and (b) the Hallmark layer as rung n+1, plus the raw gene x sample expression matrices to compute both. Only the MSigDB Hallmark GMT (h.all.v2024.1) is on disk -- no finer-grained pathway GMT. The TCGA gene-expression matrices are not on disk: Path 1's measure_pairA_tcga.py fetches them per-cancer from the GDC API and deletes each matrix after computing (the host is disk-constrained). What remains on disk (data_tcga/results/rho_by_cancer_pathway.json) is per-pathway within-rung rho summaries only -- not the gene x sample matrices a cross-rung MI needs. Reported MISSING per the pre-registration discipline, not fabricated.",
+  "data_on_disk": "MSigDB Hallmark GMT; per-pathway rho summaries (rho_by_cancer_pathway.json)",
+  "data_missing": "a fine-grained pathway GMT (rung n); TCGA gene x sample expression matrices"
+}
