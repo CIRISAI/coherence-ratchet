@@ -1,0 +1,570 @@
+{
+  "substrate": "OSS contribution (Substrate 4)",
+  "note": "non-rho proxy substrate; rigid_w/multi_w are a single-author-dominance proxy, NOT a debiased rho",
+  "repos": {
+    "C1a_audacity_orig": {
+      "class": "chaos",
+      "n_commits": 2000,
+      "span_observed_years": 1.36,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 32,
+        "rigid_w": 0.1875,
+        "multi_w": 0.6875,
+        "first_week": "2025-01-06",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": null,
+      "post_event": {
+        "n_weeks": 32,
+        "rigid_w": 0.1875,
+        "multi_w": 0.6875,
+        "first_week": "2025-01-06",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w": {
+        "n_weeks": 32,
+        "rigid_w": 0.1875,
+        "multi_w": 0.6875,
+        "first_week": "2025-01-06",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 18,
+      "heavy_maintenance": true,
+      "v1_overall_rigid_w": 0.1875,
+      "v1_overall_multi_w": 0.6875,
+      "matches_v1": true
+    },
+    "C1b_tenacity_fork": {
+      "class": "chaos",
+      "n_commits": 2000,
+      "span_observed_years": 7.76,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 252,
+        "rigid_w": 0.4722,
+        "multi_w": 0.1508,
+        "first_week": "2018-08-13",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": {
+        "n_weeks": 33,
+        "rigid_w": 0.9091,
+        "multi_w": 0.0,
+        "first_week": "2018-08-13",
+        "last_week": "2021-05-03"
+      },
+      "post_event": {
+        "n_weeks": 219,
+        "rigid_w": 0.4064,
+        "multi_w": 0.1735,
+        "first_week": "2021-06-14",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w": {
+        "n_weeks": 92,
+        "rigid_w": 0.3913,
+        "multi_w": 0.1739,
+        "first_week": "2024-05-20",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 85,
+      "heavy_maintenance": false,
+      "v1_overall_rigid_w": 0.4722,
+      "v1_overall_multi_w": 0.1508,
+      "matches_v1": true
+    },
+    "C2a_elastic_orig": {
+      "class": "chaos",
+      "n_commits": 3000,
+      "span_observed_years": 0.17,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 10,
+        "rigid_w": 0.0,
+        "multi_w": 1.0,
+        "first_week": "2026-03-16",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": null,
+      "post_event": {
+        "n_weeks": 10,
+        "rigid_w": 0.0,
+        "multi_w": 1.0,
+        "first_week": "2026-03-16",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w": {
+        "n_weeks": 10,
+        "rigid_w": 0.0,
+        "multi_w": 1.0,
+        "first_week": "2026-03-16",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 191,
+      "heavy_maintenance": true,
+      "v1_overall_rigid_w": 0.0,
+      "v1_overall_multi_w": 1.0,
+      "matches_v1": true
+    },
+    "C2b_opensearch_fork": {
+      "class": "chaos",
+      "n_commits": 3000,
+      "span_observed_years": 2.28,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 120,
+        "rigid_w": 0.0,
+        "multi_w": 0.9833,
+        "first_week": "2024-02-05",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": null,
+      "post_event": {
+        "n_weeks": 120,
+        "rigid_w": 0.0,
+        "multi_w": 0.9833,
+        "first_week": "2024-02-05",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w": {
+        "n_weeks": 105,
+        "rigid_w": 0.0,
+        "multi_w": 0.981,
+        "first_week": "2024-05-20",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 284,
+      "heavy_maintenance": true,
+      "v1_overall_rigid_w": 0.0,
+      "v1_overall_multi_w": 0.9833,
+      "matches_v1": true
+    },
+    "C3a_cm_orig": {
+      "class": "chaos",
+      "n_commits": 497,
+      "span_observed_years": 5.25,
+      "silence_weeks": 492,
+      "overall": {
+        "n_weeks": 189,
+        "rigid_w": 0.4709,
+        "multi_w": 0.0476,
+        "first_week": "2011-09-12",
+        "last_week": "2016-12-12"
+      },
+      "pre_event": {
+        "n_weeks": 189,
+        "rigid_w": 0.4709,
+        "multi_w": 0.0476,
+        "first_week": "2011-09-12",
+        "last_week": "2016-12-12"
+      },
+      "post_event": null,
+      "trailing_104w": {
+        "n_weeks": 78,
+        "rigid_w": 0.3846,
+        "multi_w": 0.0769,
+        "first_week": "2014-12-15",
+        "last_week": "2016-12-12"
+      },
+      "trailing_104w_distinct_authors": 57,
+      "heavy_maintenance": false,
+      "v1_overall_rigid_w": 0.4709,
+      "v1_overall_multi_w": 0.0476,
+      "matches_v1": true
+    },
+    "C3b_lineage_fork": {
+      "class": "chaos",
+      "n_commits": 1311,
+      "span_observed_years": 14.68,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 504,
+        "rigid_w": 0.5298,
+        "multi_w": 0.0437,
+        "first_week": "2011-09-12",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": {
+        "n_weeks": 190,
+        "rigid_w": 0.4737,
+        "multi_w": 0.0474,
+        "first_week": "2011-09-12",
+        "last_week": "2016-12-19"
+      },
+      "post_event": {
+        "n_weeks": 314,
+        "rigid_w": 0.5637,
+        "multi_w": 0.0414,
+        "first_week": "2016-12-26",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w": {
+        "n_weeks": 57,
+        "rigid_w": 0.6316,
+        "multi_w": 0.0,
+        "first_week": "2024-06-10",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 19,
+      "heavy_maintenance": true,
+      "v1_overall_rigid_w": 0.5298,
+      "v1_overall_multi_w": 0.0437,
+      "matches_v1": true
+    },
+    "K1_kubernetes": {
+      "class": "corridor",
+      "n_commits": 3000,
+      "span_observed_years": 1.53,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 49,
+        "rigid_w": 0.2245,
+        "multi_w": 0.5102,
+        "first_week": "2024-11-04",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": null,
+      "post_event": null,
+      "trailing_104w": {
+        "n_weeks": 49,
+        "rigid_w": 0.2245,
+        "multi_w": 0.5102,
+        "first_week": "2024-11-04",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 293,
+      "heavy_maintenance": null,
+      "v1_overall_rigid_w": 0.2245,
+      "v1_overall_multi_w": 0.5102,
+      "matches_v1": true
+    },
+    "K2_rust": {
+      "class": "corridor",
+      "n_commits": 3000,
+      "span_observed_years": 1.15,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 37,
+        "rigid_w": 0.4324,
+        "multi_w": 0.3514,
+        "first_week": "2025-03-24",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": null,
+      "post_event": null,
+      "trailing_104w": {
+        "n_weeks": 37,
+        "rigid_w": 0.4324,
+        "multi_w": 0.3514,
+        "first_week": "2025-03-24",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 282,
+      "heavy_maintenance": null,
+      "v1_overall_rigid_w": 0.4324,
+      "v1_overall_multi_w": 0.3514,
+      "matches_v1": true
+    },
+    "K3_django": {
+      "class": "corridor",
+      "n_commits": 3000,
+      "span_observed_years": 9.66,
+      "silence_weeks": 1,
+      "overall": {
+        "n_weeks": 187,
+        "rigid_w": 0.1176,
+        "multi_w": 0.8556,
+        "first_week": "2016-09-12",
+        "last_week": "2026-05-11"
+      },
+      "pre_event": null,
+      "post_event": null,
+      "trailing_104w": {
+        "n_weeks": 105,
+        "rigid_w": 0.0,
+        "multi_w": 0.981,
+        "first_week": "2024-05-13",
+        "last_week": "2026-05-11"
+      },
+      "trailing_104w_distinct_authors": 372,
+      "heavy_maintenance": null,
+      "v1_overall_rigid_w": 0.1176,
+      "v1_overall_multi_w": 0.8556,
+      "matches_v1": true
+    },
+    "K4_redis": {
+      "class": "corridor",
+      "n_commits": 3000,
+      "span_observed_years": 8.09,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 277,
+        "rigid_w": 0.0578,
+        "multi_w": 0.6931,
+        "first_week": "2018-04-16",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": null,
+      "post_event": null,
+      "trailing_104w": {
+        "n_weeks": 105,
+        "rigid_w": 0.0571,
+        "multi_w": 0.5429,
+        "first_week": "2024-05-20",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 142,
+      "heavy_maintenance": null,
+      "v1_overall_rigid_w": 0.0578,
+      "v1_overall_multi_w": 0.6931,
+      "matches_v1": true
+    },
+    "R1_jquery": {
+      "class": "rigidity",
+      "n_commits": 3000,
+      "span_observed_years": 14.58,
+      "silence_weeks": 1,
+      "overall": {
+        "n_weeks": 518,
+        "rigid_w": 0.4208,
+        "multi_w": 0.1506,
+        "first_week": "2011-10-10",
+        "last_week": "2026-05-11"
+      },
+      "pre_event": {
+        "n_weeks": 48,
+        "rigid_w": 0.0208,
+        "multi_w": 0.5833,
+        "first_week": "2011-10-10",
+        "last_week": "2012-09-24"
+      },
+      "post_event": {
+        "n_weeks": 470,
+        "rigid_w": 0.4617,
+        "multi_w": 0.1064,
+        "first_week": "2012-10-01",
+        "last_week": "2026-05-11"
+      },
+      "trailing_104w": {
+        "n_weeks": 66,
+        "rigid_w": 0.6212,
+        "multi_w": 0.0,
+        "first_week": "2024-05-20",
+        "last_week": "2026-05-11"
+      },
+      "trailing_104w_distinct_authors": 12,
+      "heavy_maintenance": true,
+      "v1_overall_rigid_w": 0.4208,
+      "v1_overall_multi_w": 0.1506,
+      "matches_v1": true
+    },
+    "R2_colors_orig": {
+      "class": "rigidity",
+      "n_commits": 259,
+      "span_observed_years": 11.58,
+      "silence_weeks": 228,
+      "overall": {
+        "n_weeks": 70,
+        "rigid_w": 0.7857,
+        "multi_w": 0.0,
+        "first_week": "2010-06-07",
+        "last_week": "2022-01-03"
+      },
+      "pre_event": {
+        "n_weeks": 70,
+        "rigid_w": 0.7857,
+        "multi_w": 0.0,
+        "first_week": "2010-06-07",
+        "last_week": "2022-01-03"
+      },
+      "post_event": null,
+      "trailing_104w": {
+        "n_weeks": 1,
+        "rigid_w": 1.0,
+        "multi_w": 0.0,
+        "first_week": "2022-01-03",
+        "last_week": "2022-01-03"
+      },
+      "trailing_104w_distinct_authors": 1,
+      "heavy_maintenance": false,
+      "v1_overall_rigid_w": 0.7857,
+      "v1_overall_multi_w": 0.0,
+      "matches_v1": true
+    },
+    "R2b_colors_dabh": {
+      "class": "rigidity",
+      "n_commits": 295,
+      "span_observed_years": 14.2,
+      "silence_weeks": 91,
+      "overall": {
+        "n_weeks": 81,
+        "rigid_w": 0.7901,
+        "multi_w": 0.0,
+        "first_week": "2010-06-07",
+        "last_week": "2024-08-19"
+      },
+      "pre_event": {
+        "n_weeks": 70,
+        "rigid_w": 0.7857,
+        "multi_w": 0.0,
+        "first_week": "2010-06-07",
+        "last_week": "2022-01-03"
+      },
+      "post_event": {
+        "n_weeks": 11,
+        "rigid_w": 0.8182,
+        "multi_w": 0.0,
+        "first_week": "2022-01-10",
+        "last_week": "2024-08-19"
+      },
+      "trailing_104w": {
+        "n_weeks": 3,
+        "rigid_w": 0.3333,
+        "multi_w": 0.0,
+        "first_week": "2023-07-10",
+        "last_week": "2024-08-19"
+      },
+      "trailing_104w_distinct_authors": 4,
+      "heavy_maintenance": false,
+      "v1_overall_rigid_w": 0.7901,
+      "v1_overall_multi_w": 0.0,
+      "matches_v1": true
+    },
+    "R3_faker_succ": {
+      "class": "rigidity",
+      "n_commits": 3000,
+      "span_observed_years": 5.73,
+      "silence_weeks": 0,
+      "overall": {
+        "n_weeks": 260,
+        "rigid_w": 0.2154,
+        "multi_w": 0.4231,
+        "first_week": "2020-08-24",
+        "last_week": "2026-05-18"
+      },
+      "pre_event": {
+        "n_weeks": 45,
+        "rigid_w": 0.5333,
+        "multi_w": 0.1333,
+        "first_week": "2020-08-24",
+        "last_week": "2022-01-03"
+      },
+      "post_event": {
+        "n_weeks": 215,
+        "rigid_w": 0.1488,
+        "multi_w": 0.4837,
+        "first_week": "2022-01-10",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w": {
+        "n_weeks": 92,
+        "rigid_w": 0.2826,
+        "multi_w": 0.2391,
+        "first_week": "2024-05-20",
+        "last_week": "2026-05-18"
+      },
+      "trailing_104w_distinct_authors": 83,
+      "heavy_maintenance": true,
+      "v1_overall_rigid_w": 0.2154,
+      "v1_overall_multi_w": 0.4231,
+      "matches_v1": true
+    },
+    "R4_leftpad": {
+      "class": "rigidity",
+      "n_commits": 72,
+      "span_observed_years": 5.0,
+      "silence_weeks": 375,
+      "overall": {
+        "n_weeks": 28,
+        "rigid_w": 0.6071,
+        "multi_w": 0.0,
+        "first_week": "2014-03-10",
+        "last_week": "2019-03-11"
+      },
+      "pre_event": {
+        "n_weeks": 5,
+        "rigid_w": 0.6,
+        "multi_w": 0.0,
+        "first_week": "2014-03-10",
+        "last_week": "2016-03-21"
+      },
+      "post_event": {
+        "n_weeks": 23,
+        "rigid_w": 0.6087,
+        "multi_w": 0.0,
+        "first_week": "2016-04-04",
+        "last_week": "2019-03-11"
+      },
+      "trailing_104w": {
+        "n_weeks": 14,
+        "rigid_w": 0.6429,
+        "multi_w": 0.0,
+        "first_week": "2017-06-19",
+        "last_week": "2019-03-11"
+      },
+      "trailing_104w_distinct_authors": 9,
+      "heavy_maintenance": false,
+      "v1_overall_rigid_w": 0.6071,
+      "v1_overall_multi_w": 0.0,
+      "matches_v1": true
+    }
+  },
+  "v1_compare": {},
+  "class_medians": {
+    "rigidity": {
+      "median_rigid_w": 0.6071,
+      "median_multi_w": 0.0,
+      "n": 5
+    },
+    "chaos": {
+      "median_rigid_w": 0.4709,
+      "median_multi_w": 0.6875,
+      "n": 6
+    },
+    "corridor": {
+      "median_rigid_w": 0.2245,
+      "median_multi_w": 0.6931,
+      "n": 4
+    }
+  },
+  "three_mode": {
+    "mode_i": [
+      "C3a_cm_orig",
+      "R2_colors_orig",
+      "R2b_colors_dabh",
+      "R4_leftpad"
+    ],
+    "mode_ii": [
+      "C1b_tenacity_fork",
+      "C3b_lineage_fork",
+      "R1_jquery",
+      "R3_faker_succ"
+    ],
+    "mode_iii": [],
+    "back_in_corridor": [
+      "C1a_audacity_orig",
+      "C2a_elastic_orig",
+      "C2b_opensearch_fork"
+    ],
+    "corridor_control": [
+      "K1_kubernetes",
+      "K2_rust",
+      "K3_django",
+      "K4_redis"
+    ]
+  },
+  "mode_iii_candidate_adjudications": [
+    {
+      "alias": "C1b_tenacity_fork",
+      "trailing_104w_distinct_authors": 85,
+      "verdict": "Mode (ii): actively maintained by a volunteer team (85 distinct authors in trailing 104w); volunteer dev IS gamma*M(t). weekly rigid_w is a low-traffic artifact, not single-author rigidity."
+    }
+  ],
+  "verdict": {
+    "all_proxy_metrics_match_v1": true,
+    "rigidity_vs_corridor_bands_distinct": true,
+    "mode_iii_count": 0,
+    "verdict": "PASS"
+  }
+}

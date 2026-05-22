@@ -1,0 +1,211 @@
+{
+  "substrate": "social groups (Substrate 5)",
+  "note": "non-rho substrate; instrument is a qualitative active-maintenance CHECKLIST, NOT a debiased rho. rho_analog is a hand-assigned ordinal label, not a correlation, and is not used in any PASS/FAIL test.",
+  "groups": {
+    "R1": {
+      "name": "Peoples Temple / Jonestown",
+      "pole": "rigidity",
+      "t_persist_years": 23,
+      "AM_total": 5,
+      "LD_months": 0,
+      "status": "dissolved 1978 (mass suicide)"
+    },
+    "R2": {
+      "name": "Heaven's Gate",
+      "pole": "rigidity",
+      "t_persist_years": 23,
+      "AM_total": 4,
+      "LD_months": 0,
+      "status": "dissolved 1997 (mass suicide)"
+    },
+    "R3": {
+      "name": "NXIVM",
+      "pole": "rigidity",
+      "t_persist_years": 20,
+      "AM_total": 5,
+      "LD_months": 3,
+      "status": "dissolved 2021 (formal); operations suspended 2018"
+    },
+    "R4": {
+      "name": "Aum Shinrikyo / Aleph",
+      "pole": "rigidity",
+      "t_persist_years": 39,
+      "AM_total": 4,
+      "LD_months": null,
+      "status": "persists as Aleph (1200+) and Hikari no Wa in 2026"
+    },
+    "C1": {
+      "name": "Occupy Wall Street (encampment phase)",
+      "pole": "chaos",
+      "t_persist_years": 0.16666666666666666,
+      "AM_total": 0,
+      "LD_months": null,
+      "status": "encampment cleared Nov 15 2011; dispersed phase ended Dec 2011-early 2012"
+    },
+    "C2": {
+      "name": "Tahrir / Coalition of Youth of the Revolution",
+      "pole": "chaos",
+      "t_persist_years": 1.5,
+      "AM_total": 0,
+      "LD_months": null,
+      "status": "Coalition disbanded 7 July 2012; April 6 banned 2014/2016"
+    },
+    "K1": {
+      "name": "Religious Society of Friends (Quakers)",
+      "pole": "corridor",
+      "t_persist_years": 374,
+      "AM_total": 0,
+      "LD_months": null,
+      "status": "ongoing 2026"
+    },
+    "K2": {
+      "name": "Trappists (OCSO)",
+      "pole": "corridor",
+      "t_persist_years": 362,
+      "AM_total": 0,
+      "LD_months": null,
+      "status": "ongoing 2026"
+    },
+    "K3": {
+      "name": "Mennonites",
+      "pole": "corridor",
+      "t_persist_years": 501,
+      "AM_total": 0,
+      "LD_months": null,
+      "status": "ongoing 2026"
+    }
+  },
+  "consistency_checks": [
+    {
+      "id": "R1",
+      "name": "Peoples Temple / Jonestown",
+      "AM_total_stored": 5,
+      "AM_total_recomputed": 5,
+      "consistent": true
+    },
+    {
+      "id": "R2",
+      "name": "Heaven's Gate",
+      "AM_total_stored": 4,
+      "AM_total_recomputed": 4,
+      "consistent": true
+    },
+    {
+      "id": "R3",
+      "name": "NXIVM",
+      "AM_total_stored": 5,
+      "AM_total_recomputed": 5,
+      "consistent": true
+    },
+    {
+      "id": "R4",
+      "name": "Aum Shinrikyo / Aleph",
+      "AM_total_stored": 4,
+      "AM_total_recomputed": 4,
+      "consistent": true
+    },
+    {
+      "id": "C1",
+      "name": "Occupy Wall Street (encampment phase)",
+      "AM_total_stored": 0,
+      "AM_total_recomputed": 0,
+      "consistent": true
+    },
+    {
+      "id": "C2",
+      "name": "Tahrir / Coalition of Youth of the Revolution",
+      "AM_total_stored": 0,
+      "AM_total_recomputed": 0,
+      "consistent": true
+    },
+    {
+      "id": "K1",
+      "name": "Religious Society of Friends (Quakers)",
+      "AM_total_stored": 0,
+      "AM_total_recomputed": 0,
+      "consistent": true
+    },
+    {
+      "id": "K2",
+      "name": "Trappists (OCSO)",
+      "AM_total_stored": 0,
+      "AM_total_recomputed": 0,
+      "consistent": true
+    },
+    {
+      "id": "K3",
+      "name": "Mennonites",
+      "AM_total_stored": 0,
+      "AM_total_recomputed": 0,
+      "consistent": true
+    }
+  ],
+  "hypotheses": {
+    "H1_corridor_median_T_ge_250": {
+      "value_years": 374,
+      "threshold": 250,
+      "pass": true
+    },
+    "H2_rigidity_median_T_le_50": {
+      "value_years": 23.0,
+      "threshold": 50,
+      "pass": true
+    },
+    "H3_chaos_median_T_le_5": {
+      "value_years": 0.8333333333333334,
+      "threshold": 5,
+      "pass": true
+    },
+    "H4_rigidity_LD_le_24mo_in_ge_3of4": {
+      "ld_months": [
+        0,
+        0,
+        3,
+        null
+      ],
+      "n_le_24mo": 3,
+      "threshold": "3/4",
+      "pass": true
+    },
+    "H5_rigidity_all_AM_ge_3": {
+      "AM_totals": [
+        5,
+        4,
+        5,
+        4
+      ],
+      "threshold": 3,
+      "pass": true
+    }
+  },
+  "three_mode": {
+    "mode_i": [
+      "C1",
+      "C2"
+    ],
+    "mode_ii": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "mode_iii": []
+  },
+  "framework_contradicting": {
+    "rigidity_T_gt_100_and_AM_le_1": [],
+    "chaos_T_gt_20_unconsolidated": []
+  },
+  "persistence_spread": {
+    "corridor_median_T": 374,
+    "rigidity_median_T": 23.0,
+    "chaos_median_T": 0.8333333333333334,
+    "orders_of_magnitude": 2.7
+  },
+  "verdict": {
+    "AM_total_internally_consistent": true,
+    "hypotheses_H1_H5_all_pass": true,
+    "mode_iii_count": 0,
+    "framework_contradicting_cases": 0,
+    "verdict": "PASS"
+  }
+}
