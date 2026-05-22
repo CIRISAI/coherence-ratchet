@@ -1,0 +1,90 @@
+==============================================================================
+P_omega TOWER -- the FORWARD-BACKWARD CLOSURE
+==============================================================================
+  backend: cupy/float64;  d=3  beta_pin=18.37
+  backward boundary = omega post-selection (weak-value covector of the
+  soft corridor operator at the top rung) -- state-dependent BY the
+  omega condition, no free knob. Control: a flat (no-post-selection)
+  boundary, to check any coupling found is omega-specific.
+
+------------------------------------------------------------------------------
+SANITY -- forward/backward propagation and the weak (two-state) state
+------------------------------------------------------------------------------
+  forward psi_0..psi_4 entropies: [0.869, 0.884, 1.006, 0.864, 1.092]
+  backward phi_0..phi_4 entropies: [1.099, 1.099, 1.098, 1.025, 0.682]
+  weak q_n rho values: [0.21, 0.197, 0.092, 0.302, 0.387]
+  omega boundary covector spread (max-min) = 0.5828  (non-flat -- genuine post-selection)
+  boundary varies with top state: ||delta|| = 0.0103  (state-dependent (genuine weak value))
+
+------------------------------------------------------------------------------
+STAGE A -- depth scan: joint H_min(R) under the forward-backward closure
+------------------------------------------------------------------------------
+  R=  2  H_min=1.092195e-07  /R=5.460974e-08  (within=7.564e-08 cross=3.358e-08)  sweeps=10  post-sweep1 gain=-1.297e-07  [10s]
+  R=  3  H_min=2.276175e-06  /R=7.587249e-07  (within=6.431e-07 cross=1.633e-06)  sweeps=10  post-sweep1 gain=1.067e-02  [21s]
+  R=  4  H_min=4.558937e-06  /R=1.139734e-06  (within=3.087e-06 cross=1.472e-06)  sweeps=10  post-sweep1 gain=1.028e-02  [35s]
+  R=  5  H_min=1.408750e-05  /R=2.817500e-06  (within=1.262e-05 cross=1.470e-06)  sweeps=10  post-sweep1 gain=2.369e-02  [51s]
+  R=  6  H_min=8.760397e-06  /R=1.460066e-06  (within=5.069e-06 cross=3.691e-06)  sweeps=10  post-sweep1 gain=6.576e-02  [72s]
+  R=  7  H_min=4.779746e-05  /R=6.828209e-06  (within=2.512e-05 cross=2.267e-05)  sweeps=10  post-sweep1 gain=5.307e-02  [97s]
+  R=  8  H_min=3.044251e-05  /R=3.805314e-06  (within=1.988e-05 cross=1.056e-05)  sweeps=10  post-sweep1 gain=3.292e-02  [129s]
+  R=  9  H_min=4.807047e-05  /R=5.341164e-06  (within=2.570e-05 cross=2.237e-05)  sweeps=10  post-sweep1 gain=5.512e-02  [167s]
+  R= 11  H_min=9.913796e-05  /R=9.012542e-06  (within=8.856e-05 cross=1.058e-05)  sweeps=10  post-sweep1 gain=7.010e-02  [219s]
+  R= 13  H_min=4.090685e-05  /R=3.146681e-06  (within=2.984e-05 cross=1.106e-05)  sweeps=10  post-sweep1 gain=1.111e-01  [289s]
+  R= 20  H_min=1.392747e-04  /R=6.963734e-06  (within=1.113e-04 cross=2.802e-05)  sweeps=10  post-sweep1 gain=1.355e-01  [408s]
+  R= 30  H_min=1.026436e-03  /R=3.421452e-05  (within=9.458e-04 cross=8.065e-05)  sweeps=7  post-sweep1 gain=3.622e-01  [592s]
+  R= 40  H_min=9.651508e-04  /R=2.412877e-05  (within=8.875e-04 cross=7.766e-05)  sweeps=7  post-sweep1 gain=4.000e-01  [920s]
+  R= 56  H_min=1.090105e-03  /R=1.946616e-05  (within=1.036e-03 cross=5.383e-05)  sweeps=7  post-sweep1 gain=4.832e-01  [1550s]
+  per-rung energy density e_inf (slope over deep tail) = 2.641195e-05
+
+------------------------------------------------------------------------------
+STAGE B -- DECISIVE: does the backward boundary COUPLE the chain?
+------------------------------------------------------------------------------
+  D1: joint optimum vs sum of independent per-bond optima.
+  D2: fix-W_n perturbation -- does optimal W_{n+1}/W_{n-1} move?
+  Recast verdict: joint == sum-of-independent (gap ~1e-7); no move.
+  R=5: joint H=1.4088e-05  indep-sum=9.5925e-07  gap=+1.3128e-05
+        fix-W_2: optimal W_3 shift (diff W_n) = 1.2887e+00  vs solver noise = 2.0030e+00  ratio = 0.64
+  R=9: joint H=4.8070e-05  indep-sum=1.0445e-06  gap=+4.7026e-05
+        fix-W_4: optimal W_5 shift (diff W_n) = 2.1033e+00  vs solver noise = 3.1890e-01  ratio = 6.60
+  R=13: joint H=4.0907e-05  indep-sum=1.9853e-06  gap=+3.8922e-05
+        fix-W_6: optimal W_7 shift (diff W_n) = 1.5044e+00  vs solver noise = 1.9899e+00  ratio = 0.76
+
+------------------------------------------------------------------------------
+STAGE C -- CONTROL: flat boundary (no omega post-selection)
+------------------------------------------------------------------------------
+  If the flat boundary ALSO couples the chain, the coupling is an
+  artifact of the two-state algebra, NOT of the omega condition.
+  If only b_omega couples, the omega post-selection does the work.
+  R=9: flat-boundary joint H=1.9899e-05  indep-sum=1.8106e-05  gap=+1.7929e-06
+  R=13: flat-boundary joint H=9.5317e-05  indep-sum=9.2687e-05  gap=+2.6300e-06
+
+------------------------------------------------------------------------------
+STAGE D -- selectivity: how concentrated is the joint object?
+------------------------------------------------------------------------------
+  Measured on the genuine joint penalty H_total (band-centre-agnostic):
+  fraction of random towers within 10x of the joint optimum H_min.
+  Trivial if a large fraction land near the optimum (any tower works);
+  selective if measure-concentrated. Run for BOTH omega and the flat
+  control -- selectivity is omega-specific iff omega concentrates more.
+  R=5: omega -- 0/6000 random towers within 10x of H_min (0.000%); median H_rand 1.222e+00 vs H_min 1.409e-05
+  R=9: omega -- 0/6000 random towers within 10x of H_min (0.000%); median H_rand 2.516e+00 vs H_min 4.807e-05
+         flat  -- 0/6000 within 10x of flat-H_min (0.000%)
+  R=13: omega -- 0/6000 random towers within 10x of H_min (0.000%); median H_rand 3.814e+00 vs H_min 4.091e-05
+         flat  -- 0/6000 within 10x of flat-H_min (0.000%)
+
+==============================================================================
+VERDICT
+==============================================================================
+  e_inf = 2.641195e-05   empty=False
+  D1 (decisive) joint/indep ratio -- omega: {5: 14.7, 9: 46.0, 13: 20.6}
+  D1 joint/indep ratio -- FLAT control: {9: 1.1, 13: 1.03}
+  -> min omega ratio 14.7  vs  max flat ratio 1.10  => D1 coupled & omega-specific: True
+  D2 (secondary, noisy) median coupling ratio 0.76  signal: False
+  post-sweep1 mean gain (deep R>=13): 2.984e-01  (feed-forward chain would be ~0): True
+  selective: True  (pass fractions [0.0, 0.0, 0.0])
+  well-defined to 9 rungs: True
+
+  >>> VERDICT: DISCOVERY
+  the forward-backward closure yields a joint object that is non-empty, COUPLED (the joint optimum is several-fold above the sum of independent per-bond optima, and this excess is omega-specific -- the flat-boundary control decouples), selective (almost no random tower satisfies the joint constraint), and well-defined to the framework's rung count -- this is the genuine P_omega form
+
+done. results -> /home/emoore/coherence-ratchet/experiments/open_system_pomega/tower/closure/results_tower_closure.json  (2089s)
+EXIT=0
