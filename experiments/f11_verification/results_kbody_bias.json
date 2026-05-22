@@ -1,0 +1,62 @@
+{
+  "3": {
+    "n_all": 1615118,
+    "tau_measured": 1.1452925396060465e-05,
+    "tau_shuffled_mean": 8.664422630477731e-07,
+    "tau_shuffled_sd": 4.3700419141181674e-07,
+    "ii3_measured": 1.765346411275459e-07,
+    "ii3_shuffled_mean": 5.192379249896462e-07,
+    "ii3_shuffled_sd": 6.211600530684677e-07,
+    "runtime_s": 3.0
+  },
+  "5": {
+    "n_all": 531138,
+    "tau_measured": 6.795926190972246e-05,
+    "tau_shuffled_mean": 8.324924158420455e-06,
+    "tau_shuffled_sd": 2.3588597636856726e-06,
+    "ii3_measured": 1.3284739264207701e-06,
+    "ii3_shuffled_mean": 1.3848723569576116e-06,
+    "ii3_shuffled_sd": 1.4937835854100339e-06,
+    "runtime_s": 3.4
+  },
+  "7": {
+    "n_all": 165772,
+    "tau_measured": 0.0008686065666097716,
+    "tau_shuffled_mean": 8.651058994429972e-05,
+    "tau_shuffled_sd": 1.2314852796039816e-05,
+    "ii3_measured": -9.11291151064475e-05,
+    "ii3_shuffled_mean": 4.309112933531534e-06,
+    "ii3_shuffled_sd": 4.895041108936004e-06,
+    "runtime_s": 9.0
+  },
+  "9": {
+    "n_all": 55848,
+    "tau_measured": 0.0023653461188632985,
+    "tau_shuffled_mean": 0.0008136668982108852,
+    "tau_shuffled_sd": 4.266213329850169e-05,
+    "ii3_measured": -0.00011301074798719668,
+    "ii3_shuffled_mean": 7.942569634822316e-06,
+    "ii3_shuffled_sd": 1.2312687845357565e-05,
+    "runtime_s": 19.3
+  },
+  "11": {
+    "n_all": 20759,
+    "tau_measured": 0.009524285973077796,
+    "tau_shuffled_mean": 0.007220988249621052,
+    "tau_shuffled_sd": 0.0001896620071848743,
+    "ii3_measured": -0.00031010071788406535,
+    "ii3_shuffled_mean": 3.966829487955792e-05,
+    "ii3_shuffled_sd": 4.706102798101412e-05,
+    "runtime_s": 32.6
+  },
+  "13": {
+    "n_all": 8437,
+    "tau_measured": 0.050439652133113334,
+    "tau_shuffled_mean": 0.04777385341411307,
+    "tau_shuffled_sd": 0.0004179077957231552,
+    "ii3_measured": 1.4530797724177091e-05,
+    "ii3_shuffled_mean": 0.00014182086596647991,
+    "ii3_shuffled_sd": 0.00013780167349382059,
+    "runtime_s": 49.1
+  }
+}
