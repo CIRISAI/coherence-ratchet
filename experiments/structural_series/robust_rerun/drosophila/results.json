@@ -1,0 +1,1541 @@
+{
+  "n_records": 57,
+  "records": [
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 1,
+      "rec_name": "2022_06_10_0006",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.27523725498595414,
+        "floor": 0.084602901770134,
+        "rho_deb": 0.26191199961871964,
+        "k_eff_emp": 5.668855101535465,
+        "k_eff_kish": 3.2463053025488136
+      },
+      "walking_only": {
+        "n_timepoints": 7048,
+        "n_rois": 16,
+        "rho_raw": 0.27926537144364566,
+        "floor": 0.08814859076836704,
+        "rho_deb": 0.26498862925248007,
+        "k_eff_emp": 5.590258791142707,
+        "k_eff_kish": 3.2161906648000764
+      },
+      "n_walking": 7048
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 1,
+      "rec_name": "2022_06_10_0009",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.34465270740259907,
+        "floor": 0.09695795929781457,
+        "rho_deb": 0.3307334921787403,
+        "k_eff_emp": 4.387502052738324,
+        "k_eff_kish": 2.68411233092036
+      },
+      "walking_only": {
+        "n_timepoints": 7333,
+        "n_rois": 16,
+        "rho_raw": 0.34547533885044324,
+        "floor": 0.09791841359173752,
+        "rho_deb": 0.3313083066171236,
+        "k_eff_emp": 4.373222676737739,
+        "k_eff_kish": 2.6802355380925973
+      },
+      "n_walking": 7333
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 2,
+      "rec_name": "2022_06_12_0002",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.37751197223335,
+        "floor": 0.0941072291169588,
+        "rho_deb": 0.36559419936241033,
+        "k_eff_emp": 3.957240200385512,
+        "k_eff_kish": 2.4676456984540325
+      },
+      "walking_only": {
+        "n_timepoints": 7216,
+        "n_rois": 16,
+        "rho_raw": 0.379094939931992,
+        "floor": 0.09095847147208638,
+        "rho_deb": 0.3680210998699698,
+        "k_eff_emp": 3.9379665701763393,
+        "k_eff_kish": 2.453868612786842
+      },
+      "n_walking": 7216
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 2,
+      "rec_name": "2022_06_12_0001",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3791175537207173,
+        "floor": 0.08054338710667991,
+        "rho_deb": 0.37046306473461627,
+        "k_eff_emp": 3.949940557138165,
+        "k_eff_kish": 2.4401604147293106
+      },
+      "walking_only": {
+        "n_timepoints": 7124,
+        "n_rois": 16,
+        "rho_raw": 0.38059084590575376,
+        "floor": 0.07953913243877433,
+        "rho_deb": 0.37218667144074935,
+        "k_eff_emp": 3.9374362998036574,
+        "k_eff_kish": 2.430576627870115
+      },
+      "n_walking": 7124
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 3,
+      "rec_name": "2022_06_12_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.29904301004599176,
+        "floor": 0.08167315722882817,
+        "rho_deb": 0.28767380354429606,
+        "k_eff_emp": 4.907072029186152,
+        "k_eff_kish": 3.0102874391728616
+      },
+      "walking_only": {
+        "n_timepoints": 7447,
+        "n_rois": 16,
+        "rho_raw": 0.29824325786326494,
+        "floor": 0.08002625700028657,
+        "rho_deb": 0.28730617649368073,
+        "k_eff_emp": 4.924332817903563,
+        "k_eff_kish": 3.0134138459414914
+      },
+      "n_walking": 7447
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 4,
+      "rec_name": "2022_06_12_0005",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.33570776560014287,
+        "floor": 0.08392141539319298,
+        "rho_deb": 0.3250490730991916,
+        "k_eff_emp": 4.324746794786073,
+        "k_eff_kish": 2.7230630745250353
+      },
+      "walking_only": {
+        "n_timepoints": 7186,
+        "n_rois": 16,
+        "rho_raw": 0.3364166986731653,
+        "floor": 0.0822797509500137,
+        "rho_deb": 0.3261996899596243,
+        "k_eff_emp": 4.313137196090885,
+        "k_eff_kish": 2.7150878375704735
+      },
+      "n_walking": 7186
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 4,
+      "rec_name": "2022_06_12_0004",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.34016009011003434,
+        "floor": 0.10085875649336913,
+        "rho_deb": 0.3248636608521765,
+        "k_eff_emp": 4.324357005113743,
+        "k_eff_kish": 2.7243526023289504
+      },
+      "walking_only": {
+        "n_timepoints": 7110,
+        "n_rois": 16,
+        "rho_raw": 0.3426519903891042,
+        "floor": 0.0985226269910704,
+        "rho_deb": 0.3281823860117925,
+        "k_eff_emp": 4.329991349503174,
+        "k_eff_kish": 2.7014542884956456
+      },
+      "n_walking": 7110
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 5,
+      "rec_name": "2022_06_13_0002",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3412400502291214,
+        "floor": 0.051832069917459554,
+        "rho_deb": 0.3372806078155767,
+        "k_eff_emp": 4.523398556602375,
+        "k_eff_kish": 2.6406086488239318
+      },
+      "walking_only": {
+        "n_timepoints": 7379,
+        "n_rois": 16,
+        "rho_raw": 0.3417883341354922,
+        "floor": 0.051981988200861126,
+        "rho_deb": 0.3378122825679972,
+        "k_eff_emp": 4.511078220324622,
+        "k_eff_kish": 2.6371376524908485
+      },
+      "n_walking": 7379
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 5,
+      "rec_name": "2022_06_13_0001",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3521260773099773,
+        "floor": 0.09977852931891033,
+        "rho_deb": 0.33769367688582425,
+        "k_eff_emp": 4.268301045736953,
+        "k_eff_kish": 2.6379111692692496
+      },
+      "walking_only": {
+        "n_timepoints": 7456,
+        "n_rois": 16,
+        "rho_raw": 0.3528002833160142,
+        "floor": 0.10305955691118507,
+        "rho_deb": 0.33741186647349863,
+        "k_eff_emp": 4.257491202293597,
+        "k_eff_kish": 2.639750887970743
+      },
+      "n_walking": 7456
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 6,
+      "rec_name": "2022_06_13_0008",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4166694199077316,
+        "floor": 0.17721331299207493,
+        "rho_deb": 0.3771058832537865,
+        "k_eff_emp": 3.6170343347969136,
+        "k_eff_kish": 2.4036337237575154
+      },
+      "walking_only": {
+        "n_timepoints": 7477,
+        "n_rois": 16,
+        "rho_raw": 0.4192315158573304,
+        "floor": 0.1764426189375307,
+        "rho_deb": 0.3802933947763232,
+        "k_eff_emp": 3.5912584635504974,
+        "k_eff_kish": 2.386492124649757
+      },
+      "n_walking": 7477
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 6,
+      "rec_name": "2022_06_13_0007",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4413535063690747,
+        "floor": 0.14259385009989797,
+        "rho_deb": 0.41768398520647726,
+        "k_eff_emp": 3.3815575742991513,
+        "k_eff_kish": 2.2022612389216665
+      },
+      "walking_only": {
+        "n_timepoints": 7365,
+        "n_rois": 16,
+        "rho_raw": 0.4404732146681925,
+        "floor": 0.1412025945404891,
+        "rho_deb": 0.41722713254912586,
+        "k_eff_emp": 3.3895298780740086,
+        "k_eff_kish": 2.204340432539799
+      },
+      "n_walking": 7365
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 7,
+      "rec_name": "2022_06_14_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3448205607064014,
+        "floor": 0.06399392924401316,
+        "rho_deb": 0.3388303352797522,
+        "k_eff_emp": 4.490735651807557,
+        "k_eff_kish": 2.630516777057732
+      },
+      "walking_only": {
+        "n_timepoints": 7286,
+        "n_rois": 16,
+        "rho_raw": 0.34274336009101153,
+        "floor": 0.06394519937938375,
+        "rho_deb": 0.3367254406230804,
+        "k_eff_emp": 4.50829010826517,
+        "k_eff_kish": 2.6442427786533393
+      },
+      "n_walking": 7286
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 7,
+      "rec_name": "2022_06_14_0002",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3189888152885825,
+        "floor": 0.10502691183030585,
+        "rho_deb": 0.30120294166990225,
+        "k_eff_emp": 4.506127677119761,
+        "k_eff_kish": 2.8995781181541878
+      },
+      "walking_only": {
+        "n_timepoints": 7092,
+        "n_rois": 16,
+        "rho_raw": 0.322744368296313,
+        "floor": 0.10550060850129586,
+        "rho_deb": 0.30501401422367863,
+        "k_eff_emp": 4.440737880382787,
+        "k_eff_kish": 2.869846945263639
+      },
+      "n_walking": 7092
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 8,
+      "rec_name": "2023_04_26_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.35468421676428946,
+        "floor": 0.10254951081118706,
+        "rho_deb": 0.3395356998226898,
+        "k_eff_emp": 4.378343767185254,
+        "k_eff_kish": 2.6259489226649206
+      },
+      "walking_only": {
+        "n_timepoints": 7021,
+        "n_rois": 16,
+        "rho_raw": 0.36185205117782215,
+        "floor": 0.10952517515120852,
+        "rho_deb": 0.34487844662967027,
+        "k_eff_emp": 4.291586683683142,
+        "k_eff_kish": 2.591858418930134
+      },
+      "n_walking": 7021
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 9,
+      "rec_name": "2023_04_26_0006",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3338400972944048,
+        "floor": 0.06914025977703311,
+        "rho_deb": 0.32660195198360653,
+        "k_eff_emp": 4.751202601941855,
+        "k_eff_kish": 2.712310660147624
+      },
+      "walking_only": {
+        "n_timepoints": 7326,
+        "n_rois": 16,
+        "rho_raw": 0.33253771977023033,
+        "floor": 0.06969420516373778,
+        "rho_deb": 0.3251523532693237,
+        "k_eff_emp": 4.762108128455412,
+        "k_eff_kish": 2.7223452981964047
+      },
+      "n_walking": 7326
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 9,
+      "rec_name": "2023_04_26_0005",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3522291922252371,
+        "floor": 0.1209235776050126,
+        "rho_deb": 0.3308215413706422,
+        "k_eff_emp": 4.3061001310711395,
+        "k_eff_kish": 2.6835177625358577
+      },
+      "walking_only": {
+        "n_timepoints": 7246,
+        "n_rois": 16,
+        "rho_raw": 0.35337664680773645,
+        "floor": 0.12611543572238804,
+        "rho_deb": 0.33010596992728247,
+        "k_eff_emp": 4.288102657269487,
+        "k_eff_kish": 2.6883574326681114
+      },
+      "n_walking": 7246
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 10,
+      "rec_name": "2022_08_29_0006",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4170047514070848,
+        "floor": 0.19628303648333556,
+        "rho_deb": 0.3679210951888546,
+        "k_eff_emp": 3.5571600147474083,
+        "k_eff_kish": 2.4544332820427655
+      },
+      "walking_only": {
+        "n_timepoints": 7379,
+        "n_rois": 16,
+        "rho_raw": 0.41728649183315875,
+        "floor": 0.20214352278376455,
+        "rho_deb": 0.3650561771330469,
+        "k_eff_emp": 3.553880041783651,
+        "k_eff_kish": 2.4707209312313307
+      },
+      "n_walking": 7379
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 10,
+      "rec_name": "2022_08_29_0005",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.336901703744217,
+        "floor": 0.09552285276477067,
+        "rho_deb": 0.32307606315763493,
+        "k_eff_emp": 4.27870956518614,
+        "k_eff_kish": 2.7368481437678813
+      },
+      "walking_only": {
+        "n_timepoints": 7487,
+        "n_rois": 16,
+        "rho_raw": 0.33819279390480095,
+        "floor": 0.09934085837025362,
+        "rho_deb": 0.3232735060400038,
+        "k_eff_emp": 4.267472438306558,
+        "k_eff_kish": 2.7354623640408002
+      },
+      "n_walking": 7487
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 11,
+      "rec_name": "2022_08_30_0004",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.36974655361806313,
+        "floor": 0.16014156460117962,
+        "rho_deb": 0.33326744995501956,
+        "k_eff_emp": 3.6575885536858888,
+        "k_eff_kish": 2.667105961544335
+      },
+      "walking_only": {
+        "n_timepoints": 7221,
+        "n_rois": 16,
+        "rho_raw": 0.36818736230897703,
+        "floor": 0.15450508247302747,
+        "rho_deb": 0.3342007080394129,
+        "k_eff_emp": 3.6756774919986035,
+        "k_eff_kish": 2.660896680476326
+      },
+      "n_walking": 7221
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 11,
+      "rec_name": "2022_08_30_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3157959802961446,
+        "floor": 0.08150858334732763,
+        "rho_deb": 0.3050958079225519,
+        "k_eff_emp": 4.653159905450355,
+        "k_eff_kish": 2.8692155329697733
+      },
+      "walking_only": {
+        "n_timepoints": 7369,
+        "n_rois": 16,
+        "rho_raw": 0.3165278815125012,
+        "floor": 0.08389269861393239,
+        "rho_deb": 0.305207986288144,
+        "k_eff_emp": 4.646582164802795,
+        "k_eff_kish": 2.868350015768043
+      },
+      "n_walking": 7369
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 12,
+      "rec_name": "2022_08_30_0006",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3648223157169008,
+        "floor": 0.15849354032637114,
+        "rho_deb": 0.32859567818194907,
+        "k_eff_emp": 3.7952164942121827,
+        "k_eff_kish": 2.6986296078246377
+      },
+      "walking_only": {
+        "n_timepoints": 7404,
+        "n_rois": 16,
+        "rho_raw": 0.3643961156995204,
+        "floor": 0.15386630134786888,
+        "rho_deb": 0.33031756000313556,
+        "k_eff_emp": 3.8072274858433786,
+        "k_eff_kish": 2.68692455520124
+      },
+      "n_walking": 7404
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 12,
+      "rec_name": "2022_08_30_0005",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3173494126730283,
+        "floor": 0.05113066153372947,
+        "rho_deb": 0.3132032968776657,
+        "k_eff_emp": 4.819901170240648,
+        "k_eff_kish": 2.807978437448062
+      },
+      "walking_only": {
+        "n_timepoints": 7397,
+        "n_rois": 16,
+        "rho_raw": 0.31865189505639413,
+        "floor": 0.053901190258189124,
+        "rho_deb": 0.31406001323279237,
+        "k_eff_emp": 4.805165281170428,
+        "k_eff_kish": 2.80165988616387
+      },
+      "n_walking": 7397
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 13,
+      "rec_name": "2022_08_30_0008",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3945680716200638,
+        "floor": 0.07276994712229712,
+        "rho_deb": 0.3877995589706026,
+        "k_eff_emp": 3.7999998743606533,
+        "k_eff_kish": 2.347075770418247
+      },
+      "walking_only": {
+        "n_timepoints": 7305,
+        "n_rois": 16,
+        "rho_raw": 0.395075983363153,
+        "floor": 0.07481025735531278,
+        "rho_deb": 0.38792841868673944,
+        "k_eff_emp": 3.790785902145,
+        "k_eff_kish": 2.3464104673226522
+      },
+      "n_walking": 7305
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 13,
+      "rec_name": "2022_08_30_0007",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3696830053472809,
+        "floor": 0.13418948214204213,
+        "rho_deb": 0.34446873199907163,
+        "k_eff_emp": 4.102505190660963,
+        "k_eff_kish": 2.594441320616834
+      },
+      "walking_only": {
+        "n_timepoints": 7395,
+        "n_rois": 16,
+        "rho_raw": 0.3696996558677565,
+        "floor": 0.13370206649569874,
+        "rho_deb": 0.34467606961249475,
+        "k_eff_emp": 4.103074638324992,
+        "k_eff_kish": 2.59313359053158
+      },
+      "n_walking": 7395
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 14,
+      "rec_name": "2022_09_01_0004",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.33955379953754833,
+        "floor": 0.06526012294994801,
+        "rho_deb": 0.33322349727014033,
+        "k_eff_emp": 4.362127821423631,
+        "k_eff_kish": 2.667399108209192
+      },
+      "walking_only": {
+        "n_timepoints": 7363,
+        "n_rois": 16,
+        "rho_raw": 0.3417369466876455,
+        "floor": 0.0664338211054164,
+        "rho_deb": 0.3352173744672674,
+        "k_eff_emp": 4.35228555960022,
+        "k_eff_kish": 2.6541652752794516
+      },
+      "n_walking": 7363
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 14,
+      "rec_name": "2022_09_01_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.30435006325327213,
+        "floor": 0.09697819029758058,
+        "rho_deb": 0.2884860336461316,
+        "k_eff_emp": 4.577525928245982,
+        "k_eff_kish": 3.0034029467527836
+      },
+      "walking_only": {
+        "n_timepoints": 7373,
+        "n_rois": 16,
+        "rho_raw": 0.30395964794688257,
+        "floor": 0.0991198547383544,
+        "rho_deb": 0.28734425690561544,
+        "k_eff_emp": 4.573113830692852,
+        "k_eff_kish": 3.013089697637181
+      },
+      "n_walking": 7373
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "FC2",
+      "fly_id": 15,
+      "rec_name": "2022_09_04_0007",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3175827357523401,
+        "floor": 0.06110271313215158,
+        "rho_deb": 0.3116492459413798,
+        "k_eff_emp": 4.635627969746008,
+        "k_eff_kish": 2.8195130871266967
+      },
+      "walking_only": {
+        "n_timepoints": 7349,
+        "n_rois": 16,
+        "rho_raw": 0.31607489123586535,
+        "floor": 0.06261416779252413,
+        "rho_deb": 0.30981091469057986,
+        "k_eff_emp": 4.648826017134654,
+        "k_eff_kish": 2.8332807037837586
+      },
+      "n_walking": 7349
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 1,
+      "rec_name": "2019_07_22_0002",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.43308374138486105,
+        "floor": 0.08276318121263458,
+        "rho_deb": 0.4251020852542055,
+        "k_eff_emp": 3.470477688450652,
+        "k_eff_kish": 2.1690411651822443
+      },
+      "walking_only": {
+        "n_timepoints": 7255,
+        "n_rois": 16,
+        "rho_raw": 0.43377577329108896,
+        "floor": 0.08557660745230276,
+        "rho_deb": 0.4252505917118008,
+        "k_eff_emp": 3.4613085622515203,
+        "k_eff_kish": 2.1683863464818773
+      },
+      "n_walking": 7255
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 2,
+      "rec_name": "2019_07_22_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.46160467203896377,
+        "floor": 0.07500503261607216,
+        "rho_deb": 0.45547021673262156,
+        "k_eff_emp": 3.1971919738064707,
+        "k_eff_kish": 2.0428870293979324
+      },
+      "walking_only": {
+        "n_timepoints": 7352,
+        "n_rois": 16,
+        "rho_raw": 0.4620325738862208,
+        "floor": 0.0738562647963628,
+        "rho_deb": 0.4560913850121,
+        "k_eff_emp": 3.1936232397411124,
+        "k_eff_kish": 2.0404595648813273
+      },
+      "n_walking": 7352
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 2,
+      "rec_name": "2019_07_22_0004",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4375840751227841,
+        "floor": 0.08022950928820226,
+        "rho_deb": 0.43016630346929385,
+        "k_eff_emp": 3.4373228849271995,
+        "k_eff_kish": 2.1469321296748256
+      },
+      "walking_only": {
+        "n_timepoints": 7491,
+        "n_rois": 16,
+        "rho_raw": 0.4381816425256426,
+        "floor": 0.0798249772137882,
+        "rho_deb": 0.43084930643937247,
+        "k_eff_emp": 3.4306054457529704,
+        "k_eff_kish": 2.14398476496617
+      },
+      "n_walking": 7491
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 3,
+      "rec_name": "2019_07_22_0005",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4579452672332388,
+        "floor": 0.06263236451889588,
+        "rho_deb": 0.45364198956456253,
+        "k_eff_emp": 3.2566461941977067,
+        "k_eff_kish": 2.0500651947497714
+      },
+      "walking_only": {
+        "n_timepoints": 7371,
+        "n_rois": 16,
+        "rho_raw": 0.4584214618205256,
+        "floor": 0.06373715738251909,
+        "rho_deb": 0.4539689542539926,
+        "k_eff_emp": 3.2517143344674313,
+        "k_eff_kish": 2.048777732073807
+      },
+      "n_walking": 7371
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 3,
+      "rec_name": "2019_07_22_0006",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4224225605284094,
+        "floor": 0.07718491725297383,
+        "rho_deb": 0.4153110980843508,
+        "k_eff_emp": 3.6272013573553323,
+        "k_eff_kish": 2.2131034762935395
+      },
+      "walking_only": {
+        "n_timepoints": 7348,
+        "n_rois": 16,
+        "rho_raw": 0.4226460424634774,
+        "floor": 0.07714678445340874,
+        "rho_deb": 0.4155454859080277,
+        "k_eff_emp": 3.62515499151555,
+        "k_eff_kish": 2.2120277578476015
+      },
+      "n_walking": 7348
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 4,
+      "rec_name": "2022_08_29_0001",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3661738093515131,
+        "floor": 0.05236576079066474,
+        "rho_deb": 0.36241010713253174,
+        "k_eff_emp": 4.1410017663083805,
+        "k_eff_kish": 2.485957599666886
+      },
+      "walking_only": {
+        "n_timepoints": 7022,
+        "n_rois": 16,
+        "rho_raw": 0.3703101424296341,
+        "floor": 0.05188480070234225,
+        "rho_deb": 0.36665729099846645,
+        "k_eff_emp": 4.094079597864712,
+        "k_eff_kish": 2.4615917209243534
+      },
+      "n_walking": 7022
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 4,
+      "rec_name": "2022_08_29_0002",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3692998146996225,
+        "floor": 0.06154522556430865,
+        "rho_deb": 0.3641353297160465,
+        "k_eff_emp": 4.16808289143385,
+        "k_eff_kish": 2.476002143961905
+      },
+      "walking_only": {
+        "n_timepoints": 7250,
+        "n_rois": 16,
+        "rho_raw": 0.37051839061005043,
+        "floor": 0.06376634795625494,
+        "rho_deb": 0.3649900418485191,
+        "k_eff_emp": 4.150354644305558,
+        "k_eff_kish": 2.471099477026062
+      },
+      "n_walking": 7250
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 5,
+      "rec_name": "2022_08_29_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4290245657376751,
+        "floor": 0.05377078692343914,
+        "rho_deb": 0.4256416103719593,
+        "k_eff_emp": 3.5465841914860183,
+        "k_eff_kish": 2.1666640932445205
+      },
+      "walking_only": {
+        "n_timepoints": 7128,
+        "n_rois": 16,
+        "rho_raw": 0.43061667255145536,
+        "floor": 0.0550429832982991,
+        "rho_deb": 0.42708428754627636,
+        "k_eff_emp": 3.52829299578513,
+        "k_eff_kish": 2.1603333777186764
+      },
+      "n_walking": 7128
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 5,
+      "rec_name": "2022_08_29_0004",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.3468244672734378,
+        "floor": 0.13986335721624946,
+        "rho_deb": 0.31737273419073625,
+        "k_eff_emp": 4.518389262515274,
+        "k_eff_kish": 2.777492789243073
+      },
+      "walking_only": {
+        "n_timepoints": 7178,
+        "n_rois": 16,
+        "rho_raw": 0.3446502362775791,
+        "floor": 0.13522774715081803,
+        "rho_deb": 0.3170129993654922,
+        "k_eff_emp": 4.544296374779533,
+        "k_eff_kish": 2.780096943102692
+      },
+      "n_walking": 7178
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 6,
+      "rec_name": "2022_08_30_0009",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.44036303531642695,
+        "floor": 0.1178172256396564,
+        "rho_deb": 0.4243096796158096,
+        "k_eff_emp": 3.4461205528180128,
+        "k_eff_kish": 2.1725418642733865
+      },
+      "walking_only": {
+        "n_timepoints": 7586,
+        "n_rois": 16,
+        "rho_raw": 0.44031884493638257,
+        "floor": 0.11998047806772472,
+        "rho_deb": 0.4236571374221734,
+        "k_eff_emp": 3.446677302806654,
+        "k_eff_kish": 2.175433168391313
+      },
+      "n_walking": 7586
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 6,
+      "rec_name": "2022_08_30_0010",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4260254043986738,
+        "floor": 0.13589770906981852,
+        "rho_deb": 0.4037690650144319,
+        "k_eff_emp": 3.5150604223392445,
+        "k_eff_kish": 2.2674014638618996
+      },
+      "walking_only": {
+        "n_timepoints": 7535,
+        "n_rois": 16,
+        "rho_raw": 0.4264132102139425,
+        "floor": 0.13623912744281746,
+        "rho_deb": 0.40406326979642637,
+        "k_eff_emp": 3.5112482138714194,
+        "k_eff_kish": 2.265984344826765
+      },
+      "n_walking": 7535
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 7,
+      "rec_name": "2022_09_01_0001",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4558029621467415,
+        "floor": 0.12506964756211492,
+        "rho_deb": 0.4383080236094615,
+        "k_eff_emp": 3.246652067012649,
+        "k_eff_kish": 2.1123170867898278
+      },
+      "walking_only": {
+        "n_timepoints": 7535,
+        "n_rois": 16,
+        "rho_raw": 0.45597760903769563,
+        "floor": 0.12452964227070344,
+        "rho_deb": 0.4386433039950163,
+        "k_eff_emp": 3.244677108963314,
+        "k_eff_kish": 2.1109155342213213
+      },
+      "n_walking": 7535
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 7,
+      "rec_name": "2022_09_01_0002",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.44960977281355985,
+        "floor": 0.2161975648470892,
+        "rho_deb": 0.39421765658535585,
+        "k_eff_emp": 3.325151274084481,
+        "k_eff_kish": 2.3143912970183367
+      },
+      "walking_only": {
+        "n_timepoints": 7473,
+        "n_rois": 16,
+        "rho_raw": 0.44994373856445,
+        "floor": 0.21431350436129115,
+        "rho_deb": 0.3956249356672769,
+        "k_eff_emp": 3.3216590427981822,
+        "k_eff_kish": 2.307345972285569
+      },
+      "n_walking": 7473
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 8,
+      "rec_name": "2022_09_01_0007",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.46662865118167834,
+        "floor": 0.09847721007700909,
+        "rho_deb": 0.45611899456071886,
+        "k_eff_emp": 3.134645623484,
+        "k_eff_kish": 2.0403518033803154
+      },
+      "walking_only": {
+        "n_timepoints": 7533,
+        "n_rois": 16,
+        "rho_raw": 0.46680169914785746,
+        "floor": 0.09994569553239621,
+        "rho_deb": 0.4559766268920726,
+        "k_eff_emp": 3.1331185388180227,
+        "k_eff_kish": 2.0409075937885066
+      },
+      "n_walking": 7533
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 8,
+      "rec_name": "2022_09_01_0008",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4422795877648956,
+        "floor": 0.0901157508566935,
+        "rho_deb": 0.43300159953633005,
+        "k_eff_emp": 3.353163986371068,
+        "k_eff_kish": 2.134749670561067
+      },
+      "walking_only": {
+        "n_timepoints": 7471,
+        "n_rois": 16,
+        "rho_raw": 0.44262686175103394,
+        "floor": 0.09312755862478886,
+        "rho_deb": 0.4327190734970616,
+        "k_eff_emp": 3.351628580592313,
+        "k_eff_kish": 2.1359573990177414
+      },
+      "n_walking": 7471
+    },
+    {
+      "dataset": "v18_MussellsPires2024",
+      "rung": "EPG",
+      "fly_id": 9,
+      "rec_name": "2022_09_02_0003",
+      "full": {
+        "n_timepoints": 7600,
+        "n_rois": 16,
+        "rho_raw": 0.4233297696363375,
+        "floor": 0.06178342199067667,
+        "rho_deb": 0.41879697065222016,
+        "k_eff_emp": 3.5961617677339963,
+        "k_eff_kish": 2.1972122825875107
+      },
+      "walking_only": {
+        "n_timepoints": 6914,
+        "n_rois": 16,
+        "rho_raw": 0.42185564990866653,
+        "floor": 0.06155631996755645,
+        "rho_deb": 0.4173403992329466,
+        "k_eff_emp": 3.605820873267688,
+        "k_eff_kish": 2.2038245757509283
+      },
+      "n_walking": 6914
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_06-001",
+      "rec_name": "2023_03_06-001",
+      "full": {
+        "n_timepoints": 7700,
+        "n_rois": 16,
+        "rho_raw": 0.10894808661510771,
+        "floor": 0.01749605006478535,
+        "rho_deb": 0.10753405883357857,
+        "k_eff_emp": 12.052903812659649,
+        "k_eff_kish": 6.123204502183115
+      },
+      "walking_only": {
+        "n_timepoints": 5986,
+        "n_rois": 16,
+        "rho_raw": 0.10530345597139229,
+        "floor": 0.019652131479845677,
+        "rho_deb": 0.10345342704723616,
+        "k_eff_emp": 12.268823869785685,
+        "k_eff_kish": 6.270080408376208
+      },
+      "n_walking": 5986
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_06-001",
+      "rec_name": "2023_03_06-001",
+      "full": {
+        "n_timepoints": 7700,
+        "n_rois": 32,
+        "rho_raw": 0.2592259426443199,
+        "floor": 0.034685220750158105,
+        "rho_deb": 0.2568949684235739,
+        "k_eff_emp": 6.915500077493299,
+        "k_eff_kish": 3.5699368394015285
+      },
+      "walking_only": {
+        "n_timepoints": 5986,
+        "n_rois": 32,
+        "rho_raw": 0.24785573972981526,
+        "floor": 0.03617173822652236,
+        "rho_deb": 0.2452021065788095,
+        "k_eff_emp": 7.398520250229361,
+        "k_eff_kish": 3.7203828587091925
+      },
+      "n_walking": 5986
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_06-002",
+      "rec_name": "2023_03_06-002",
+      "full": {
+        "n_timepoints": 7700,
+        "n_rois": 16,
+        "rho_raw": 0.09234344553653623,
+        "floor": 0.017273433554057818,
+        "rho_deb": 0.09071350741103985,
+        "k_eff_emp": 13.030092490851825,
+        "k_eff_kish": 6.777643200089482
+      },
+      "walking_only": {
+        "n_timepoints": 6610,
+        "n_rois": 16,
+        "rho_raw": 0.08326849669085142,
+        "floor": 0.017653538755179807,
+        "rho_deb": 0.08137564199792034,
+        "k_eff_emp": 13.498716557972976,
+        "k_eff_kish": 7.205147476343177
+      },
+      "n_walking": 6610
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_06-002",
+      "rec_name": "2023_03_06-002",
+      "full": {
+        "n_timepoints": 7700,
+        "n_rois": 32,
+        "rho_raw": 0.29082654854224976,
+        "floor": 0.04870072230983278,
+        "rho_deb": 0.2867199347507915,
+        "k_eff_emp": 5.809510454937897,
+        "k_eff_kish": 3.2361418871786714
+      },
+      "walking_only": {
+        "n_timepoints": 6610,
+        "n_rois": 32,
+        "rho_raw": 0.272705710624703,
+        "floor": 0.0470805128514875,
+        "rho_deb": 0.2686109266522216,
+        "k_eff_emp": 6.419268103875894,
+        "k_eff_kish": 3.430922078435565
+      },
+      "n_walking": 6610
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_06-003",
+      "rec_name": "2023_03_06-003",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 16,
+        "rho_raw": 0.10183586665406313,
+        "floor": 0.023425679516056758,
+        "rho_deb": 0.09910490036519448,
+        "k_eff_emp": 11.87930112152681,
+        "k_eff_kish": 6.434557419980559
+      },
+      "walking_only": {
+        "n_timepoints": 6047,
+        "n_rois": 16,
+        "rho_raw": 0.09158908217963112,
+        "floor": 0.023423491216393484,
+        "rho_deb": 0.08854320998101864,
+        "k_eff_emp": 12.40427852088802,
+        "k_eff_kish": 6.872414885606277
+      },
+      "n_walking": 6047
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_06-003",
+      "rec_name": "2023_03_06-003",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 32,
+        "rho_raw": 0.21815865592770953,
+        "floor": 0.024909453519206547,
+        "rho_deb": 0.21673190416170673,
+        "k_eff_emp": 8.579086647813947,
+        "k_eff_kish": 4.145781735696154
+      },
+      "walking_only": {
+        "n_timepoints": 6047,
+        "n_rois": 32,
+        "rho_raw": 0.20741834406624288,
+        "floor": 0.023946616769731883,
+        "rho_deb": 0.20603137867923396,
+        "k_eff_emp": 9.29450889729745,
+        "k_eff_kish": 4.331950466096924
+      },
+      "n_walking": 6047
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_21-001",
+      "rec_name": "2023_03_21-001",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 16,
+        "rho_raw": 0.0790994495323359,
+        "floor": 0.022220519990074676,
+        "rho_deb": 0.07591423718703394,
+        "k_eff_emp": 13.66480177366291,
+        "k_eff_kish": 7.481132731218705
+      },
+      "walking_only": {
+        "n_timepoints": 6747,
+        "n_rois": 16,
+        "rho_raw": 0.07774094920868506,
+        "floor": 0.02320212377563124,
+        "rho_deb": 0.07419782096643834,
+        "k_eff_emp": 13.740317375042325,
+        "k_eff_kish": 7.572289400895005
+      },
+      "n_walking": 6747
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_21-001",
+      "rec_name": "2023_03_21-001",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 32,
+        "rho_raw": 0.21958625547941668,
+        "floor": 0.028170703636644378,
+        "rho_deb": 0.2177717498944434,
+        "k_eff_emp": 8.830739111976833,
+        "k_eff_kish": 4.128539898130166
+      },
+      "walking_only": {
+        "n_timepoints": 6747,
+        "n_rois": 32,
+        "rho_raw": 0.215562726521501,
+        "floor": 0.028394973491246166,
+        "rho_deb": 0.2136843806781742,
+        "k_eff_emp": 9.04202364392829,
+        "k_eff_kish": 4.1971529708936925
+      },
+      "n_walking": 6747
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_21-002",
+      "rec_name": "2023_03_21-002",
+      "full": {
+        "n_timepoints": 7500,
+        "n_rois": 16,
+        "rho_raw": 0.3226017743356028,
+        "floor": 0.14394727089444434,
+        "rho_deb": 0.2887058849530446,
+        "k_eff_emp": 5.4160490934721075,
+        "k_eff_kish": 3.0015448908618025
+      },
+      "walking_only": {
+        "n_timepoints": 7372,
+        "n_rois": 16,
+        "rho_raw": 0.321829508719515,
+        "floor": 0.14057481222417573,
+        "rho_deb": 0.28950467155260573,
+        "k_eff_emp": 5.441357905765476,
+        "k_eff_kish": 2.994813316533591
+      },
+      "n_walking": 7372
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_21-002",
+      "rec_name": "2023_03_21-002",
+      "full": {
+        "n_timepoints": 7500,
+        "n_rois": 32,
+        "rho_raw": 0.3269998931122867,
+        "floor": 0.06739369647324774,
+        "rho_deb": 0.3199797177496079,
+        "k_eff_emp": 4.868087940617995,
+        "k_eff_kish": 2.9305716663221775
+      },
+      "walking_only": {
+        "n_timepoints": 7372,
+        "n_rois": 32,
+        "rho_raw": 0.3256221918636096,
+        "floor": 0.06588058913936366,
+        "rho_deb": 0.3188880051189002,
+        "k_eff_emp": 4.899437522917165,
+        "k_eff_kish": 2.939682809461679
+      },
+      "n_walking": 7372
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_21-004",
+      "rec_name": "2023_03_21-004",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 16,
+        "rho_raw": 0.07659524074783818,
+        "floor": 0.015791885700857478,
+        "rho_deb": 0.07494963142824881,
+        "k_eff_emp": 13.606677239437701,
+        "k_eff_kish": 7.532089745431382
+      },
+      "walking_only": {
+        "n_timepoints": 4195,
+        "n_rois": 16,
+        "rho_raw": 0.07448012354300114,
+        "floor": 0.017294287843063562,
+        "rho_deb": 0.07244443671519557,
+        "k_eff_emp": 13.658606619813792,
+        "k_eff_kish": 7.667732055425147
+      },
+      "n_walking": 4195
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_21-004",
+      "rec_name": "2023_03_21-004",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 32,
+        "rho_raw": 0.31453409940567106,
+        "floor": 0.046546084902517146,
+        "rho_deb": 0.31107099136561134,
+        "k_eff_emp": 5.386715054518091,
+        "k_eff_kish": 3.0066143451362595
+      },
+      "walking_only": {
+        "n_timepoints": 4195,
+        "n_rois": 32,
+        "rho_raw": 0.3097534413955464,
+        "floor": 0.0458707236493815,
+        "rho_deb": 0.3063381647269342,
+        "k_eff_emp": 5.48096520760007,
+        "k_eff_kish": 3.0486401659692337
+      },
+      "n_walking": 4195
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "EPG",
+      "fly_id": "2023_03_22-002",
+      "rec_name": "2023_03_22-002",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 16,
+        "rho_raw": 0.15845507621845997,
+        "floor": 0.03400407934995472,
+        "rho_deb": 0.15476347685083822,
+        "k_eff_emp": 9.922028359068085,
+        "k_eff_kish": 4.817170100340665
+      },
+      "walking_only": {
+        "n_timepoints": 5289,
+        "n_rois": 16,
+        "rho_raw": 0.12736063049401666,
+        "floor": 0.03242251647171732,
+        "rho_deb": 0.12316456724835542,
+        "k_eff_emp": 11.110542676745865,
+        "k_eff_kish": 5.6190261458457345
+      },
+      "n_walking": 5289
+    },
+    {
+      "dataset": "v19_Ishida2025",
+      "rung": "FC3",
+      "fly_id": "2023_03_22-002",
+      "rec_name": "2023_03_22-002",
+      "full": {
+        "n_timepoints": 6900,
+        "n_rois": 32,
+        "rho_raw": 0.32660800560866327,
+        "floor": 0.04579570088144087,
+        "rho_deb": 0.323381420475027,
+        "k_eff_emp": 4.6203187465113436,
+        "k_eff_kish": 2.9025406572664423
+      },
+      "walking_only": {
+        "n_timepoints": 5289,
+        "n_rois": 32,
+        "rho_raw": 0.2959923176336953,
+        "floor": 0.044042536812331626,
+        "rho_deb": 0.29269729593780125,
+        "k_eff_emp": 5.34393270239689,
+        "k_eff_kish": 3.176614975897512
+      },
+      "n_walking": 5289
+    }
+  ],
+  "summary_full": {
+    "v18_MussellsPires2024|EPG": {
+      "n_recordings": 16,
+      "rho_raw_median": 0.43533390825382257,
+      "floor_median": 0.08149634525041842,
+      "rho_deb_median": 0.42470588243500756,
+      "rho_deb_min": 0.31737273419073625,
+      "rho_deb_max": 0.45611899456071886,
+      "rho_deb_p95": 0.45563241118964587,
+      "k_eff_emp_median": 3.458299120634332
+    },
+    "v18_MussellsPires2024|FC2": {
+      "n_recordings": 27,
+      "rho_raw_median": 0.34465270740259907,
+      "floor_median": 0.09552285276477067,
+      "rho_deb_median": 0.3308215413706422,
+      "rho_deb_min": 0.26191199961871964,
+      "rho_deb_max": 0.41768398520647726,
+      "rho_deb_p95": 0.38459145625555774,
+      "k_eff_emp_median": 4.324746794786073
+    },
+    "v19_Ishida2025|EPG": {
+      "n_recordings": 7,
+      "rho_raw_median": 0.10183586665406313,
+      "floor_median": 0.022220519990074676,
+      "rho_deb_median": 0.09910490036519448,
+      "rho_deb_min": 0.07494963142824881,
+      "rho_deb_max": 0.2887058849530446,
+      "rho_deb_p95": 0.2485231625223826,
+      "k_eff_emp_median": 12.052903812659649
+    },
+    "v19_Ishida2025|FC3": {
+      "n_recordings": 7,
+      "rho_raw_median": 0.29082654854224976,
+      "floor_median": 0.04579570088144087,
+      "rho_deb_median": 0.2867199347507915,
+      "rho_deb_min": 0.21673190416170673,
+      "rho_deb_max": 0.323381420475027,
+      "rho_deb_p95": 0.3223609096574013,
+      "k_eff_emp_median": 5.809510454937897
+    }
+  },
+  "summary_walking_only": {
+    "v18_MussellsPires2024|EPG": {
+      "n_recordings": 16,
+      "rho_raw_median": 0.4359787079083658,
+      "floor_median": 0.08270079233304548,
+      "rho_deb_median": 0.4244538645669871,
+      "rho_deb_min": 0.3170129993654922,
+      "rho_deb_max": 0.4560913850121,
+      "rho_deb_p95": 0.4560053164220794,
+      "k_eff_emp_median": 3.4539929325290872
+    },
+    "v18_MussellsPires2024|FC2": {
+      "n_recordings": 27,
+      "rho_raw_median": 0.34274336009101153,
+      "floor_median": 0.09791841359173752,
+      "rho_deb_median": 0.3313083066171236,
+      "rho_deb_min": 0.26498862925248007,
+      "rho_deb_max": 0.41722713254912586,
+      "rho_deb_p95": 0.38563791151361454,
+      "k_eff_emp_median": 4.313137196090885
+    },
+    "v19_Ishida2025|EPG": {
+      "n_recordings": 7,
+      "rho_raw_median": 0.09158908217963112,
+      "floor_median": 0.02320212377563124,
+      "rho_deb_median": 0.08854320998101864,
+      "rho_deb_min": 0.07244443671519557,
+      "rho_deb_max": 0.28950467155260573,
+      "rho_deb_p95": 0.23960264026133052,
+      "k_eff_emp_median": 12.40427852088802
+    },
+    "v19_Ishida2025|FC3": {
+      "n_recordings": 7,
+      "rho_raw_median": 0.272705710624703,
+      "floor_median": 0.044042536812331626,
+      "rho_deb_median": 0.2686109266522216,
+      "rho_deb_min": 0.20603137867923396,
+      "rho_deb_max": 0.3188880051189002,
+      "rho_deb_p95": 0.3151230530013104,
+      "k_eff_emp_median": 6.419268103875894
+    }
+  },
+  "rung_verdicts": {
+    "v18_MussellsPires2024|EPG": {
+      "rho_deb_median": 0.4244538645669871,
+      "off_chaos": true,
+      "off_rigidity": true,
+      "verdict": "PASS"
+    },
+    "v18_MussellsPires2024|FC2": {
+      "rho_deb_median": 0.3313083066171236,
+      "off_chaos": true,
+      "off_rigidity": true,
+      "verdict": "PASS"
+    },
+    "v19_Ishida2025|EPG": {
+      "rho_deb_median": 0.08854320998101864,
+      "off_chaos": true,
+      "off_rigidity": true,
+      "verdict": "PASS"
+    },
+    "v19_Ishida2025|FC3": {
+      "rho_deb_median": 0.2686109266522216,
+      "off_chaos": true,
+      "off_rigidity": true,
+      "verdict": "PASS"
+    }
+  },
+  "overall_verdict": "PASS"
+}
