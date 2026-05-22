@@ -160,22 +160,25 @@ def run_R(R, n_hist, beta, seed, chunk=40_000):
     # boundary factorises, the shuffled ensemble has the same log_joint
     # distribution as the real post-selected ensemble. If it couples, the real
     # post-selected histories carry cross-rung correlation the shuffle destroys.
-    rng = cp.random.RandomState(seed + 777)
+    # numpy RNG for the weighted index draws: numpy's choice(p=...) uses
+    # inverse-CDF (O(K+size) memory); cupy's choice(p=...) builds an
+    # (size x K) array and OOMs when both K and size are large.
+    nrng = np.random.RandomState((seed + 777) % (2**32))
     # resample K histories from the post-selected ensemble per-rung independently
     nshuf = K
     log_joint_shuf = cp.zeros(nshuf, dtype=cp.float64)
     # sample indices per rung from the joint-weighted distribution
-    wnp = cp.asnumpy(w)
+    wnp = cp.asnumpy(w).astype(np.float64)
     wnp = wnp / wnp.sum()
     for n in range(R):
-        pick = rng.choice(K, size=nshuf, p=cp.asarray(wnp))
+        pick = cp.asarray(nrng.choice(K, size=nshuf, p=wnp))
         log_joint_shuf += cp.log(soft(rtf[pick, n], beta) + 1e-300)
     for n in range(R - 1):
-        pick = rng.choice(K, size=nshuf, p=cp.asarray(wnp))
+        pick = cp.asarray(nrng.choice(K, size=nshuf, p=wnp))
         log_joint_shuf += cp.log(soft(rvia[pick, n], beta) + 1e-300)
     # compare the post-selected ensemble's log_joint to the shuffled one.
     # the post-selected ensemble: sample K histories with prob w.
-    pick_real = rng.choice(K, size=nshuf, p=cp.asarray(wnp))
+    pick_real = cp.asarray(nrng.choice(K, size=nshuf, p=wnp))
     log_joint_real = log_joint[pick_real]
     mean_real = float(cp.mean(log_joint_real))
     mean_shuf = float(cp.mean(log_joint_shuf))
