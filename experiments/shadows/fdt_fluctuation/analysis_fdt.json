@@ -1,0 +1,169 @@
+{
+  "fdt_ratio_rigidity_acf": 0.5935915141127501,
+  "fdt_same_order_of_magnitude": true,
+  "rigidity_corner_railed_low": true,
+  "corridor_spectrum_white": true,
+  "chaos_spectrum_white": true,
+  "rigidity_spectrum_red_lorentzian": true,
+  "spectral_shape_discriminates_rigidity": true,
+  "spectral_shape_discriminates_corridor_from_chaos": false,
+  "per_regime": {
+    "corridor": [
+      {
+        "run": 0,
+        "rho_mean": 0.21722423365172625,
+        "rho_std": 0.010820283634412729,
+        "fc": 4.999999999999332,
+        "R2_lorentzian": 0.0004265898420036107,
+        "kappa_acf": 1.3330590801668665,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": false,
+        "corner_railed_high": true,
+        "lf_hf_power_ratio": 1.8344753247567955
+      },
+      {
+        "run": 1,
+        "rho_mean": 0.2171377813879658,
+        "rho_std": 0.01070592567757778,
+        "fc": 4.999999999979216,
+        "R2_lorentzian": -0.024167255867322712,
+        "kappa_acf": 2.0250078179087296,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": false,
+        "corner_railed_high": true,
+        "lf_hf_power_ratio": 1.7597205141845316
+      },
+      {
+        "run": 2,
+        "rho_mean": 0.2170707788505148,
+        "rho_std": 0.010810783947340044,
+        "fc": 4.999999998253583,
+        "R2_lorentzian": -0.07333348209192447,
+        "kappa_acf": 2.0089486081240473,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": false,
+        "corner_railed_high": true,
+        "lf_hf_power_ratio": 1.5343105314112238
+      }
+    ],
+    "rigidity": [
+      {
+        "run": 0,
+        "rho_mean": 0.9733787727470615,
+        "rho_std": 0.022407380676445484,
+        "fc": 0.0048828125013653904,
+        "R2_lorentzian": 0.845276975504825,
+        "kappa_acf": 0.012650631529080818,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": true,
+        "corner_railed_high": false,
+        "lf_hf_power_ratio": 303.88133205486184
+      },
+      {
+        "run": 1,
+        "rho_mean": 0.9733886391645077,
+        "rho_std": 0.022564073801094094,
+        "fc": 0.004882812501903779,
+        "R2_lorentzian": 0.8447608666574544,
+        "kappa_acf": 0.012757289561348868,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": true,
+        "corner_railed_high": false,
+        "lf_hf_power_ratio": 345.80367348311717
+      },
+      {
+        "run": 2,
+        "rho_mean": 0.9733695648146385,
+        "rho_std": 0.022369979345722442,
+        "fc": 0.004882812500987998,
+        "R2_lorentzian": 0.8434986677201716,
+        "kappa_acf": 0.012700654115608874,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": true,
+        "corner_railed_high": false,
+        "lf_hf_power_ratio": 307.3944224164585
+      }
+    ],
+    "chaos": [
+      {
+        "run": 0,
+        "rho_mean": 0.0019978674249496653,
+        "rho_std": 0.010075064250606532,
+        "fc": 4.999999999948747,
+        "R2_lorentzian": -0.20883571222747555,
+        "kappa_acf": 9.269294598926663,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": false,
+        "corner_railed_high": true,
+        "lf_hf_power_ratio": 1.155533574885509
+      },
+      {
+        "run": 1,
+        "rho_mean": 0.0020459387862765866,
+        "rho_std": 0.010057858947897305,
+        "fc": 4.999999999890868,
+        "R2_lorentzian": -0.18803425917884664,
+        "kappa_acf": 9.592183301645074,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": false,
+        "corner_railed_high": true,
+        "lf_hf_power_ratio": 1.1911442676589683
+      },
+      {
+        "run": 2,
+        "rho_mean": 0.002000475378033758,
+        "rho_std": 0.009910133047623716,
+        "fc": 4.9999999983852765,
+        "R2_lorentzian": -0.1097603759856125,
+        "kappa_acf": 9.477695990711755,
+        "f_lowest_bin": 0.0048828125,
+        "nyquist": 5.0,
+        "corner_railed_low": false,
+        "corner_railed_high": true,
+        "lf_hf_power_ratio": 1.2362671807793675
+      }
+    ]
+  },
+  "stationarity_check": {
+    "note": "thirds-mean of rho over a 24000-step (2400 s) record, per regime",
+    "rigidity": {
+      "thirds_mean": [
+        0.9659,
+        0.9903,
+        0.9941
+      ],
+      "drift_total_over_record": 0.0464,
+      "stationary": false,
+      "interpretation": "rho still climbing toward the rho->1 pole over the whole record; the regime is a slow MONOTONE DRIFT, not a stationary steady state. The R2~0.84 \"Lorentzian\" is the spectral shadow of this ramp; its apparent corner frequency tracks 1/record-length (0.0049 Hz at 1200 s, 0.0012 Hz at 2400 s) -- the signature of non-stationarity, not a genuine relaxation corner."
+    },
+    "corridor": {
+      "thirds_mean": [
+        0.2173,
+        0.2174,
+        0.2177
+      ],
+      "drift_total_over_record": 0.001,
+      "stationary": true,
+      "interpretation": "gamma*M pins a genuinely stationary steady state. Spectrum is white."
+    },
+    "chaos": {
+      "thirds_mean": [
+        0.0021,
+        0.0022,
+        0.002
+      ],
+      "drift_total_over_record": -0.0001,
+      "stationary": true,
+      "interpretation": "stationary at the chaos pole. Spectrum is white."
+    }
+  },
+  "fdt_link_honest_verdict": "No genuine FDT link. The only regime with a slow spectral feature (rigidity) is non-stationary -- a drift, not a fluctuation -- so its spectral feature is not an FDT relaxation rate. Its order-of-magnitude agreement with the 0.0214/s anchor is because rigidity-drift and the anchor (measured with maintenance OFF) are the SAME unmaintained pole-relaxation process, not because a fluctuation-dissipation theorem links a fluctuation spectrum to a dissipation rate. The genuinely stationary in-corridor steady state -- the one gamma*M holds open, the one FDT would apply to -- has a WHITE fluctuation spectrum: no corner, no slow mode, nothing encoding 0.0214/s."
+}
