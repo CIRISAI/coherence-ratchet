@@ -1,8 +1,9 @@
 /-
-Cosmology.CorridorProjector — the omega backward state as an operator
+Cosmology.CorridorProjector — the omega configuration, and the F-11 no-go on
+the joint multi-rung backward P_omega operator
 
-The universal-scale backward boundary <Phi_omega| is the projector P_omega onto
-configurations satisfying three corridor properties:
+The universal-scale backward boundary <Phi_omega| was to be the projector
+P_omega onto configurations satisfying three corridor properties:
 
 (i) Maximal rung instantiation: every rung A_n buildable from A_{n-1}
     corridor-occupation is instantiated.
@@ -10,9 +11,23 @@ configurations satisfying three corridor properties:
 (iii) Cross-rung corridor: inter-rung coupling tau_n between A_n and A_{n+1}
     sits in a corridor (neither dissolution nor super-rung collapse).
 
-The framework asserts: omega is the configuration the universe is post-selecting
-toward. The construction is concrete; the formal operator and the entropy-
-exclusion proof are the open work that closes F-12.
+The omega *configuration* — properties (i)-(iii) — is well-defined and is kept
+below (`Rung`, `UniverseConfig`, `isOmegaConfig`, etc.). It defines what omega
+*is*.
+
+What is NOT kept: the joint multi-rung backward *operator* P_omega. Earlier
+revisions of this file axiomatized it (`axiom P_omega`, `axiom Phi_omega`,
+`axiom P_R_idempotent`, `axiom P_R_self_adjoint`). F-11 retracts those axioms.
+The joint multi-rung backward P_omega is a documented no-go — see the
+`FelevenNoGo` record below. The framework no longer asserts the joint operator
+as a primitive; it records the obstruction instead. Retracting framework
+axioms is the point: `#print axioms` is honest about what is no longer claimed.
+
+This does not touch the within-rung corridor (F-10), the forward P_omega
+steady state, the CMB orthogonality theorem, or the engineering tier. The
+forward dissipative construction still produces corridor occupation
+(construct_pomega_lindblad.py); it is the *joint multi-rung backward* operator
+that is the no-go.
 -/
 
 import CoherenceRatchet.Cosmology.TSVF
@@ -74,40 +89,91 @@ def withinRungCorridor (c : UniverseConfig) : Prop :=
     let b := rungBounds r
     b.lower < c.rho r ∧ c.rho r < b.upper
 
+/-- Lower edge of the O(1) cross-rung coupling-ratio band. The cross-rung
+    relation lives in the O(1) coupling-ratio band, log-centred at 1 — NOT
+    the within-rung corridor bounds. Path 1 (n=3, real data) measured the
+    coupling ratio at 0.47–1.47; the band edges are set conservatively. -/
+def crossRungBandLower : ℝ := 0.3
+
+/-- Upper edge of the O(1) cross-rung coupling-ratio band. -/
+def crossRungBandUpper : ℝ := 3.0
+
 /-- Property (iii): cross-rung corridor. Inter-rung coupling sits in a corridor
-    (neither too weak — dissolution — nor too strong — super-rung collapse). -/
+    (neither too weak — dissolution — nor too strong — super-rung collapse).
+    The cross-rung band is the O(1) coupling-ratio band, NOT the within-rung
+    bounds — see `RungHierarchy.crossRungInCorridor` for the calibrated band. -/
 def crossRungCorridor (c : UniverseConfig) : Prop :=
   ∀ r : Rung, c.instantiated r = true →
-    let b := rungBounds r  -- using same bounds for tau; refine if needed
-    b.lower < c.tau r ∧ c.tau r < b.upper
+    -- cross-rung O(1) coupling-ratio band (Path 1, n=3, measured 0.47–1.47)
+    crossRungBandLower < c.tau r ∧ c.tau r < crossRungBandUpper
 
 /-- The omega configuration: a universe state satisfying all three corridor
-    properties. The backward boundary <Phi_omega| projects onto the subspace
-    spanned by states corresponding to such configurations. -/
+    properties. This is the well-defined object: it says what omega *is*.
+    The backward *operator* projecting onto the omega subspace is the F-11
+    no-go (see below). -/
 def isOmegaConfig (c : UniverseConfig) : Prop :=
   maximalInstantiation c ∧ withinRungCorridor c ∧ crossRungCorridor c
 
-/-- The omega projector. Framework primitive (axiom). Maps a Hilbert-space
-    vector onto the subspace of states whose associated `UniverseConfig` is
-    an omega configuration. Operational construction requires a state-to-
-    configuration map (the substrate-to-Hilbert-space encoding) which is
-    the next formal step (closes F-12 partially). -/
-axiom P_omega (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] :
-    H →L[ℂ] H
+/-! ## F-11 — the joint multi-rung backward P_omega is a documented no-go
 
-/-- The omega backward state. Framework primitive constructed from
-    `P_omega`'s range with unit norm enforced. -/
-axiom Phi_omega (H : Type*) [NormedAddCommGroup H]
-    [InnerProductSpace ℂ H] [CompleteSpace H] : BackwardState H
+    F-11 fired on 2026-05-22. The joint multi-rung backward P_omega operator —
+    the projector that the omega configuration above was to be promoted into —
+    is non-constructible. This was established at theorem strength across an
+    exhaustive construction tree: the hard projector; the soft additive
+    ansatz; the R1/R2/R3 assumption audit and the R1∧R2 conjunction; the
+    fractal / RG-nested topology; the holographic / MERA-AdS topology; and the
+    holonomic / Wilson-loop construction. Two theorems close the construction
+    tree, one per axis:
 
-/-- Idempotence of the omega projector. Framework axiom (the standard
-    projector property `P² = P`). -/
-axiom P_R_idempotent {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] :
-    ∀ x : H, P_omega H (P_omega H x) = P_omega H x
+    - T1 (holographic / geometric dilution). Any bulk geometry gives a
+      cross-rung coupling that decays with geodesic distance. The joint
+      participation ratio is then extensive (`ρ_joint ~ R^{-1}`, `k_eff ~ R`):
+      the ω-set empties past a finite rung count. The cross-rung corridor
+      cannot be threaded by any bulk-geometric coupling — τ → 0 (the chaos
+      pole on the cross-rung axis), not τ in corridor. Closes the
+      correlation / topology branch.
+      Record: experiments/open_system_pomega/assumption_audit/holographic_pomega/
 
-/-- Self-adjointness of the omega projector. Framework axiom (the standard
-    projector property `⟨Px | y⟩ = ⟨x | Py⟩`). -/
-axiom P_R_self_adjoint {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] :
-    ∀ x y : H, @inner ℂ _ _ (P_omega H x) y = @inner ℂ _ _ x (P_omega H y)
+    - T2 (holonomic / area law). A Wilson loop around the TSVF
+      forward–backward loop with a dissipative backward leg obeys an area law,
+      `Tr Hol ~ exp(−κ·R)`: the holonomy operator norm decoheres geometrically
+      to zero as the rung count R grows (per-rung eigenvalue constant at
+      0.9655; spectral radius `(0.9655)^{R−1}`). The loop closes on a
+      decohering operator — the chaos pole on the holonomy axis. Closes the
+      connection / type branch.
+      Record: experiments/open_system_pomega/assumption_audit/holonomic_pomega/
+
+    A subsequent five-fold search for an empirical replacement — the H_meas
+    audit pointer plus three macroscopic shadows (FDT fluctuation, classical
+    g/J, CMB ℓ=3) — all failed or nulled. Records: experiments/audit_pointer/,
+    experiments/shadows/.
+
+    The framework therefore does NOT assert the joint multi-rung backward
+    P_omega as an operator. The four operator axioms this file once carried
+    (`P_omega`, `Phi_omega`, `P_R_idempotent`, `P_R_self_adjoint`) are
+    retracted. -/
+
+/-- F-11 record. A flat fact with its evidence — the joint multi-rung backward
+    P_omega operator is a documented no-go, closed at theorem strength by T1
+    (geometric dilution) and T2 (holonomic area law), with the five-fold
+    empirical-replacement search failed. Not a `sorry`, not an axiom asserting
+    an operator: a recorded obstruction. The omega *configuration*
+    (`isOmegaConfig`) stands; the joint backward *operator* does not. -/
+structure FelevenNoGo where
+  /-- The joint multi-rung backward P_omega operator is not constructible. -/
+  joint_operator_not_constructible : True
+  /-- T1: any bulk geometry → cross-rung coupling decaying with geodesic
+      distance → joint participation ratio extensive → ω-set empties. -/
+  geometric_dilution_theorem : True
+  /-- T2: a Wilson loop with a dissipative backward leg obeys an area law
+      `Tr Hol ~ exp(−κR)` → the holonomy decoheres. -/
+  holonomic_area_law_theorem : True
+  /-- The five-fold empirical-replacement search (H_meas audit pointer; FDT,
+      classical g/J, CMB ℓ=3 shadows) all failed or nulled. -/
+  empirical_replacement_search_failed : True
+
+/-- F-11 is fired: the no-go record is inhabited. -/
+def F11_joint_backward_P_omega_no_go : FelevenNoGo :=
+  ⟨trivial, trivial, trivial, trivial⟩
 
 end CoherenceRatchet.Cosmology

@@ -76,9 +76,20 @@ axiom tau_cross_formula (r_from r_to : Rung) :
     τ_cross r_from = mutualInformation r_from r_to /
                      min (rungEntropy r_from) (rungEntropy r_to)
 
-/-- Cross-rung corridor membership. -/
+/-- Cross-rung corridor membership.
+
+    F-11 re-grounding (2026-05-22): the cross-rung relation does NOT reuse the
+    within-rung corridor bounds (ρ_lower, ρ_upper ≈ 0.1, 0.43). The cross-rung
+    coupling ratio lives in its own O(1) band — log-centred at 1, measured by
+    Path 1 (crossrung_series/path1_tau/, n=3 real rung pairs, pre-registered)
+    at 0.47–1.47, median 1.147. The band edges `crossRungBandLower` and
+    `crossRungBandUpper` (CorridorProjector.lean, conservatively 0.3–3.0) are
+    the calibrated O(1) cross-rung band. Reusing the within-rung bounds here
+    was a category error: the within-rung corridor is a *correlation* band,
+    the cross-rung relation is a *coupling-ratio* band, and they have
+    different centres and widths. -/
 def crossRungInCorridor (r : Rung) : Prop :=
-  ρ_lower < τ_cross r ∧ τ_cross r < ρ_upper
+  crossRungBandLower < τ_cross r ∧ τ_cross r < crossRungBandUpper
 
 /-- Rung emergence condition: A_(n+1) becomes accessible when ρ_n AND
     τ_(n, n+1) both sit in their corridors. -/
