@@ -99,15 +99,22 @@ and needs its own definition before a re-run.
    The only optional v2 change is lifting the headline to the abstract. No new
    content owed here — the summary's "the paper is behind on this" was wrong.
 
-2. **§corridor-empirical — re-run the five, then extend.** Re-run C. elegans
-   and Drosophila (the ρ-substrates still on the pre-structural-series framing)
-   under debiased ρ + substrate-local calibration; settle the framing for OSS
-   and social groups (non-ρ substrates) and re-run accordingly. Then add the
-   new rows: human fMRI confirmed, Allen mouse cortex (chaos-pole datum, owed
-   k_eff re-test), cancer extended 5→12. State the band centre as
-   substrate-local and pipeline-dependent (TCGA 0.27→0.34 on a GDC pipeline
-   change), and Claim 4 as recurrence-of-tightness, not a fixed common band.
-   The five-substrate paired matrix (Figure 2) is re-run, not downgraded.
+2. **§corridor-empirical — the five re-run (5/5 PASS), now extend.** The
+   robust re-run is done — `experiments/structural_series/robust_rerun/`,
+   all five substrates re-measured under debiased ρ + canonical k_eff +
+   substrate-local calibration, every one PASS, no whole-wave falsifier fired.
+   v2 states the five-substrate matrix on that uniform footing and folds in
+   four named precision amendments: (a) Figure 1 carries per-substrate bands —
+   the 0.25–0.75 neural band was C. elegans-driven, Drosophila CX is ~0.09–0.46;
+   (b) a C. elegans footnote that band centres sit lower once the substantial
+   (~0.18) surrogate floor is debiased out; (c) the OSS rubric stated precisely
+   — γM(t) is active maintenance of any provenance; (d) the social persistence
+   spread restated median-to-median (2.7 orders, not "four"). Then add the new
+   rows: human fMRI confirmed, Allen mouse cortex (chaos-pole datum, owed k_eff
+   re-test), cancer extended 5→12. State Claim 4 as recurrence-of-tightness,
+   and the band centre as substrate-local and pipeline-dependent (TCGA
+   0.27→0.34 on a GDC pipeline change). The five-substrate paired matrix
+   (Figure 2, Mode (iii) = 0/5) is re-run and holds — not downgraded.
 
 3. **New cross-rung empirical section** (the paper has none). Path 1 + w3 — the
    coupling ratio O(1) across 26 measurements, **n = 2 distinct rung pairs**
