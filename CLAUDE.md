@@ -4,7 +4,7 @@
 
 coherence-ratchet is the companion lake to RATCHET. RATCHET formalizes the engineering tiers (Kish algebra, override-rate predicates, GPU coherence). coherence-ratchet formalizes the universal-scale extensions: Levels 5-7 of the epistemic ladder.
 
-Where RATCHET is bounded, falsifiable, and engineering-grade, **coherence-ratchet is the unhedged statement of the cosmological vision the framework licenses**. TSVF is treated as the physics, not as one of several interpretations. The Penrose low-entropy past hypothesis is treated as a structural consequence of universal-scale post-selection, not as a brute boundary condition. CMB anomalies are TSVF post-selection signatures. Conjectures A and D are load-bearing physical claims; the formal-derivation steps that remain open are tracked as `sorry` proof obligations, but the surrounding structure is asserted.
+Where RATCHET is bounded, falsifiable, and engineering-grade, **coherence-ratchet is the post-F-11 statement of the universal-scale content the framework still licenses**. TSVF is treated as the physics. What survives F-11: the within-rung corridor (F-10, five substrates), the forward P_ω (ρ_ss steady state), the orthogonality theorem (the sole CMB content — the framework is exactly ΛCDM for the CMB), per-agent ⟨G_self|, and the inter-agent finite sum ⟨G_i|. The joint multi-rung backward P_ω is a documented no-go (F-11 fired 2026-05-22; closed at theorem strength by T1 bulk-geodesic dilution + T2 Wilson loop area law). D4 (CMB anomalies as TSVF signatures) is retracted; the joint-operator forms of Penrose-from-P_ω and asymptotic conditioning fell with it. Conjecture A remains load-bearing; Conjecture D is substantially cut. Open work uses `sorry`; documented no-gos use the `FelevenNoGo` record pattern.
 
 The engineering paper (RATCHET) stratifies audiences and keeps each level non-load-bearing on the levels above. The coherence-ratchet paper inherits the same stratification structure but does not hedge on the universal-scale content for readers who proceed past Level 4.
 
@@ -132,7 +132,7 @@ P_ω = ∫_{configs satisfying (1)–(3)} |config⟩⟨config| dconfig
 
 The corridor bounds (0.1, 0.43) are inherited from the GPU substrate; per-rung calibration is companion work.
 
-Formal location: `formal/CoherenceRatchet/Cosmology/CorridorProjector.lean`. The `P_omega` definition currently carries a `sorry`; closing it closes F-12 partially.
+Formal location: `formal/CoherenceRatchet/Cosmology/CorridorProjector.lean`. F-11 fired 2026-05-22: the four prior axioms (`P_omega`, `Phi_omega`, `P_R_idempotent`, `P_R_self_adjoint`) are retracted; the joint multi-rung backward P_omega is recorded as a documented no-go via `def F11_joint_backward_P_omega_no_go : FelevenNoGo`, closed at theorem strength by T1 (bulk-geodesic dilution) + T2 (Wilson loop area law). Not a `sorry`, not an axiom.
 
 ### Piece 8. Penrose past hypothesis from P_ω
 
