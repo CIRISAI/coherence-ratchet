@@ -127,10 +127,21 @@ complete partition — is structural and pre-spectral, fixed before any spectrum
 computed. Formalized in `formal/CoherenceRatchet/Cosmology/CriticalityDiscriminator.lean`
 (`GrainAndObjectiveMeasure`).
 
-**Kept honest:** a *complete* unit whose k_eff fails to saturate falsifies the
-corridor for that substrate. **Larval zebrafish whole-brain light-sheet** (~all 1e5
-neurons of an entire vertebrate brain) is the clean decisive next dataset — grain
-cannot be invoked.
+**THE DECISIVE COMPLETE-UNIT TEST — DONE (confirmation).** Larval zebrafish
+whole-brain light-sheet (ZAPBench, **all 71,721 neurons** of an entire vertebrate
+brain) is the one case where grain cannot be invoked. Result: k_eff **saturates**
+dead-flat at ~34 from N'=500 to the full 71,721 (β≈0); a power law would have grown
+~3× over that range. Within each of the 3 longest single visual conditions it
+**still saturates** (β≈0; PR ~17–46), so the low-rank is *intrinsic*, not a
+between-condition stimulus artifact. Cross-validated (noise-removed) power-law
+**α = 1.42 / 1.63 / 1.56** — steep (>1 ⇒ saturating/low-rank), decisively unlike
+mouse-V1 cortex's shallow α≈0.97; noise-free k_eff ~6–16 (2/3 conditions in the
+(2.3,10) corridor); 4–10 modes above the autocorrelation floor (cortex: ~0). A
+complete unit that failed to saturate would have falsified the corridor for
+vertebrate brains — it saturates. Honest caveat: the saturation *level* is
+state/substrate-specific (raw 17–46), so the universal invariant is saturation +
+steep α, not the specific band. (`zebrafish_finalize.py`,
+`spectral_results_zebrafish{,_condition}.json`.)
 
 **Averaging-null control — DISCHARGED for fMRI** (`spectral_fmri_averaging_null.py`).
 The worry: averaging ~10³ neurons into 200 regions lowers dimensionality

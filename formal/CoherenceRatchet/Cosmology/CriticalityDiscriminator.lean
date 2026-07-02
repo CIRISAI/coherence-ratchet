@@ -47,10 +47,18 @@ real content of this update.
 
   LOW-RANK, read at COMPLETE coordinating units (records at the foot of this file):
   C. elegans whole-brain calcium (~50% of the 302-neuron nervous system),
-  Drosophila EPG compass (the whole ring-attractor circuit), and — the non-neural
-  adversarial case — the S&P-100 return correlation spectrum (criticality/power-law
-  was the competing prediction; the measured spectrum is instead the RMT
-  market-mode-plus-noise-bulk). Corroborating, agent-run through the identical
+  Drosophila EPG compass (the whole ring-attractor circuit), the S&P-100 return
+  correlation spectrum (the non-neural adversarial case; criticality/power-law was
+  the competing prediction, the measured spectrum is instead the RMT
+  market-mode-plus-noise-bulk), and — THE DECISIVE TEST — a COMPLETE larval
+  zebrafish brain (ZAPBench, all 71,721 neurons of an entire vertebrate brain,
+  where grain cannot be invoked). Its k_eff saturates dead-flat to the full N
+  (β≈0), WITHIN single visual conditions as well as whole-recording (so intrinsic,
+  not stimulus-driven), with CV power-law α≈1.4-1.6 (steep = saturating/low-rank,
+  decisively distinct from cortex's shallow α≈0.97) and genuine coordination (4-10
+  modes above the autocorrelation floor, vs cortex's ~0). A complete unit that
+  fails to saturate would have falsified the corridor claim for vertebrate brains;
+  it saturates. Corroborating, agent-run through the identical
   pipeline: resting-state fMRI at a complete ~200-region cortical partition
   (β≈0.06) and TCGA transcriptomes (spectrum-only) — both low-rank. The fMRI
   result is averaging-null-controlled: real region k_eff (median 8.0) is 4.3× below
@@ -289,6 +297,27 @@ def gate0_drosophila_epg_low_rank : SpectralDetermination :=
 def gate0_sp500_low_rank : SpectralDetermination :=
   ⟨trivial, trivial, trivial, trivial, trivial⟩
 
+/-- THE DECISIVE COMPLETE-UNIT TEST: a complete larval zebrafish brain (ZAPBench,
+    Immer 2025 / Ahrens-Engert data; all 71,721 neurons of an entire vertebrate
+    brain). This is the one case where the grain escape is unavailable — you cannot
+    subsample a bigger unit than the whole brain — so it can CONFIRM or FALSIFY
+    without the grain caveat that neutralized mouse-V1. Result: k_eff SATURATES.
+    The subsampling PR is dead flat at ~34 (whole-recording) from N'=500 to the full
+    71,721 (β≈0); a power law would have grown (α=1 predicts ~3× growth over this
+    range). WITHIN each of the 3 longest single visual conditions it still saturates
+    (β≈0, PR flat), so the low-rank is INTRINSIC, not an artifact of switching among
+    the 9 stimulus conditions. CV (noise-removed) power-law α = 1.42/1.63/1.56 across
+    conditions — STEEP (>1 ⇒ PR converges ⇒ saturating/low-rank), decisively unlike
+    cortex's shallow α≈0.97 (borderline, non-saturating). Noise-free k_eff ~6-16
+    (2 of 3 conditions inside the (2.3,10) corridor); 4-10 modes above the
+    per-neuron autocorrelation floor (genuine coordination; cortex had ~0). Honest
+    caveat: the saturation LEVEL is state/substrate-specific (raw 17-46, noise-free
+    6-16) — the universal invariant is SATURATION + steep α, not the specific band.
+    (`experiments/keff_saturation/zebrafish_finalize.py`,
+    `spectral_results_zebrafish{,_condition}.json`.) -/
+def gate0_zebrafish_complete_vertebrate_low_rank : SpectralDetermination :=
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
+
 /-! ## The objective measure, and the grain qualification (2026-07-02)
 
 The mouse-V1 read (high-dimensional, dimensionality growing with the number of
@@ -356,7 +385,10 @@ structure GrainAndObjectiveMeasure where
       ~200-region partition reads low-rank (corroborating, agent-run). -/
   region_grain_partition_low_rank : True
   /-- Falsifiable: a COMPLETE unit whose k_eff fails to saturate falsifies the
-      corridor at that substrate. Larval zebrafish whole-brain is the clean case. -/
+      corridor at that substrate. RUN on larval zebrafish whole-brain (all 71,721
+      neurons) — it SATURATES (β≈0 to full N, intrinsic within single conditions,
+      CV α≈1.5 steep), so the decisive complete-vertebrate-unit test CONFIRMS rather
+      than falsifies. See `gate0_zebrafish_complete_vertebrate_low_rank`. -/
   falsification_path_complete_unit_no_saturation : True
   /-- Controls: (i) DISCHARGED for ABIDE fMRI — real region k_eff (median 8.0) is
       4.3× below an averaging null (200 independent AR(1) region signals matched to
