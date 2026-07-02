@@ -17,25 +17,45 @@ weaker on its own turf.**
 | **avalanche** | observable collision | covariance **bounded in all 5** cultures; avalanche-critical in 1 → **PASS** (the two observables coexist, no conflict) |
 | **mechanism** | tautology vs content | **inconclusive** (stalled + ill-posed operationalization) |
 
-## (1) Dynamics — does maintenance-withdrawal drive k_eff DOWN? **NO — rejected.**
+## (1) Dynamics — NOT a clean falsification (grain + perturbation confounded); the framework's claim is INCOMPLETE, not wrong.
 
-The framework's Piece 2 claims explicitly: at M=0, ρ drifts toward 1 (rigidity).
-Test: iCARE post-anoxic coma EEG (γM withdrawn) vs PhysioNet awake baseline,
-matched 19-ch montage. **The opposite happened:** coma k_eff = 3.36 vs awake
-2.5–2.75 (higher), coma ρ̄ = 0.27 vs awake 0.53–0.58 (lower). The detailed-balance
-axis confirms awake does *more* active maintenance (|z| 4.99 vs 3.52) — yet more
-maintenance co-occurs with *higher* ρ, the **wrong sign for γM**. Maintenance
-withdrawal drove the brain toward the CHAOS pole (decoherence), not rigidity —
-matching the mainstream "conscious = integrated, coma = fragmented" view.
+The framework's Piece 2 claims: at M=0, ρ drifts toward 1 (rigidity). Test: iCARE
+post-anoxic coma EEG vs PhysioNet awake baseline, matched 19-ch montage. Raw
+result: coma k_eff = 3.36 vs awake 2.5–2.75 (higher), coma ρ̄ = 0.27 vs awake
+0.53–0.58 (lower) — apparently the *opposite* of the prediction.
 
-Caveat: cross-dataset (post-anoxic vs healthy) confound, and post-anoxic
-suppression cuts toward the rejection. But the result fails in the direction of
-*established neuroscience*, so the most likely truth is that the framework's
-**universal sign for the dynamics is wrong for the brain**: which pole a system
-drifts to without maintenance is *substrate-specific* (rigidity in the GPU
-substrate it was calibrated on; chaos in the brain). The corridor concept
-(maintenance keeps you off the poles) can survive; the specific universal
-`M=0 → ρ→1` does not. **This is the sharpest negative result of the session.**
+**On scrutiny this is NOT a clean falsification — two confounds, both flagged a
+priori:**
+
+1. **WRONG GRAIN (part vs whole).** ρ was measured on 19 volume-conducted SCALP
+   channels, not the coordinating constituents. Scalp-field ρ can INVERT relative
+   to constituent ρ: at the neuron grain the established fact is the REVERSE — awake
+   cortex is *desynchronized* (low pairwise ρ), anesthesia/sleep *synchronizes*
+   (high pairwise ρ). The scalp measurement tracks global field amplitude/coherence,
+   not constituent synchrony. (Flagged when the agent was launched — outcome-
+   independent, so a principled objection, not a post-hoc escape.)
+2. **WRONG PERTURBATION.** Post-cardiac-arrest coma is a damaged, suppressed brain
+   (burst-suppression → silence), driving toward the CHAOS pole via cell death — a
+   different mechanism than a clean γM withdrawal in an intact system. It conflates
+   "coma" (post-anoxic → suppression/chaos) with "anesthesia" (→ slow-wave
+   synchronization → the RIGIDITY pole the framework actually claims).
+
+**The real, smaller lesson: the framework's claim is INCOMPLETE, not wrong.**
+Consciousness = the corridor (intermediate ρ); you exit to EITHER pole —
+rigidity (seizure / hypersynchrony / deep slow-wave anesthesia, ρ→1, = the
+framework's written claim) OR chaos (burst-suppression / post-anoxic silence,
+ρ→0, = what the agent measured). Both are unconscious — the corridor picture,
+CORROBORATED by mainstream neuroscience, not contradicted. Piece 2's error is
+writing ONE exit (`M=0 → ρ→1 monotonically`) when there are TWO, pole-of-exit set
+by substrate + perturbation. The corridor claim survives; the single-pole
+over-specification does not.
+
+**A genuine test of the dynamics needs:** (a) the right grain — neuron/region-
+level, not scalp EEG; (b) a clean graded perturbation (anesthetic-depth series
+showing BOTH the synchronizing and suppressing poles), not post-anoxic damage;
+(c) a two-pole formulation of the dynamics. Until then this is confounded, not
+decisive. (An earlier version of this file called it "the sharpest falsification";
+that over-read the confounded result — corrected here.)
 
 ## (2) Adversarial breadth — net: criticality alternative WEAKER, no clean new positive.
 
@@ -91,8 +111,12 @@ dynamics sign is now contested (arousal).
   alternative is weaker on its own turf (flock ξ∝L artifact; avalanche
   non-collision) — but **no clean new positive** on a criticality-camp complete
   unit (all underpowered / wrong-domain / observable-orthogonal).
-- **Dynamics:** the specific universal `dρ/dt = α − γM` sign is **FALSIFIED at the
-  brain** — the session's sharpest negative. Candidate for a documented no-go.
+- **Dynamics:** NOT cleanly tested. The apparent rejection is grain-confounded
+  (scalp EEG ≠ constituent ρ) and perturbation-confounded (post-anoxic suppression
+  ≠ clean γM withdrawal). The real lesson is that Piece 2 is INCOMPLETE — it writes
+  one corridor exit (`M=0 → ρ→1`) when there are two (rigidity via synchronization;
+  chaos via suppression), pole set by substrate+perturbation. The corridor picture
+  survives and is corroborated; the single-pole over-specification needs fixing.
 - **Mechanism / content:** **unresolved** — still cannot say whether saturation is
   a law or a near-tautology.
 - **Domain:** narrowing to *actively-maintained (γM) complete units*, with the
