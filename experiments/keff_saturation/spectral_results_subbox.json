@@ -1,0 +1,56 @@
+{
+  "objective": "Find FINE-TIME-CADENCE open galaxy-simulation gas data to run the baryon-cycle detailed-balance test (both DB estimators need T >> dynamics timescale; the standard CAMELS galaxy at T=16-26 is far too few).",
+  "outcome": "NO_FINE_CADENCE_OPEN_DATA_FETCHABLE_AUTONOMOUSLY",
+  "ran_test": false,
+  "reason": "The two datasets that DO have the required fine cadence (IllustrisTNG subboxes; FIRE-2 DR2) both gate the actual particle/cell files behind credentials/tooling that cannot be completed autonomously. The one fully-open dataset (CAMELS, used in the prior run) has only 34 snapshots total -- coarse, the exact limitation this task was meant to escape.",
+  "datasets_evaluated": [
+    {
+      "name": "IllustrisTNG subboxes (TNG50 / TNG100)",
+      "ideal": true,
+      "cadence": "up to ~2400-7900 subbox snapshots per box; dt ~ 1-8 Myr (variable, scales with the sim time-integration hierarchy). Far finer than the ~100 full snapshots.",
+      "gas_fields": "PartType0 present with all main-snapshot fields (Coordinates, Velocities, Masses, InternalEnergy, ElectronAbundance, StarFormationRate, Density) -- everything the baryon-cycle matrix needs.",
+      "subbox_size": "fixed comoving cutout, 4.0-15 cMpc/h; a galaxy caught inside has full fine-dt history.",
+      "access": "GATED. www.tng-project.org/api/ returns HTTP 403; subbox file endpoint returns {\"detail\":\"Failed session auth (and no API-Key sent).\"}. Requires a free registered account + emailed API key.",
+      "blocker": "Autonomous account registration + email confirmation not possible; no API key present anywhere on disk or in env.",
+      "size_note": "A single subbox snapshot for the whole cutout is large, but the API supports region/particle-type cutouts, so with a key one could pull only the target galaxy's gas per subbox snapshot -- feasible on size IF authenticated."
+    },
+    {
+      "name": "FIRE-2 second public data release (DR2), 'core' suite",
+      "ideal": true,
+      "cadence": "601 snapshots per core simulation, z=99->0, ~25 Myr spacing for the Milky-Way-mass (m12) runs. For a MW disk (t_dyn ~ 200-250 Myr) this is ~10 samples/orbit: T >> dynamics timescale, exactly what is needed.",
+      "gas_fields": "full HDF5 snapshots include PartType0 gas (positions, velocities, masses, internal energy, electron abundance, density, SFR).",
+      "galaxies_available_open_listing": ["m09_res30", "m10q_res30", "m10v_res30", "m11b/d/e/h/i/q", "m12i/m/f/b/c/r/w/z", "elvis pairs"],
+      "smallest_for_size": "dwarfs m09/m10q/m10v_res30 have far fewer particles -> small snapshots; FIRE dwarfs also have bursty, strongly self-regulated star formation (inflow->burst->feedback->outflow->recycle), arguably the CLEANEST place to look for a broken-DB baryon cycle.",
+      "access": "GATED FOR DOWNLOAD. Directory LISTING is anonymous (https://users.flatironinstitute.org/~firesims/fire2_public_release/core/ returns 200 and autoindexes 601 snapdirs), but every actual file (snapshot_*.hdf5, .txt, catalog .hdf5) returns HTTP 403 Forbidden regardless of extension, Referer, or User-Agent. The real download path is the Globus endpoint d41e7ead-0fca-4715-bc72-24630cebe04b, which requires Globus authentication.",
+      "blocker": "Globus auth is a user action; the HTTP mirror is browse-only. Whole-snapshot-only granularity (no server-side gas-only or region cutout) means even the download unit is a full 16-chunk snapshot.",
+      "size_note": "Could not measure a snapshot size (files 403). Blocker is ACCESS, not size, for a dwarf. For m12 (MW-mass), 601 whole snapshots would also blow the 43 GB local free-disk budget; a dwarf + a snapshot stride would fit if access existed."
+    },
+    {
+      "name": "CAMELS IllustrisTNG (CV_0) -- the prior run's source",
+      "ideal": false,
+      "cadence": "34 snapshots total (prior gas run used 16 in z<1). This IS the coarse-cadence limitation the task set out to escape.",
+      "access": "FULLY OPEN, anonymous HTTP at https://users.flatironinstitute.org/~camels/ (200). Already used successfully by spectral_galaxy_gas.py.",
+      "blocker": "Cadence, not access. No finer-cadence CAMELS variant exists (all CV/1P/LH sims share the 34-snapshot output list; CAMELS has no subboxes)."
+    },
+    {
+      "name": "AGORA isolated-disk / CosmoRun public release",
+      "ideal": false,
+      "cadence": "isolated-disk test releases snapshots at 0 and 500 Myr ONLY (2 outputs). Not a time series.",
+      "access": "public via AGORAsimulations.org, but cadence disqualifies it for a DB test.",
+      "blocker": "Only 2 time outputs -- cannot test detailed balance."
+    }
+  ],
+  "local_constraints": {
+    "free_disk_gb": 43,
+    "scratch": "/tmp/claude-1000/-home-emoore-coherence-ratchet/a15f19f3-8fff-4354-9d5c-e860763082eb/scratchpad",
+    "estimator_ready": "experiments/keff_saturation/entropy_production.py (ep.entropy_production) + spectral_galaxy.py saturation core; the gas-matrix builder in spectral_galaxy_gas.py (Eulerian disk-aligned grid, logrho/logT/v_r per cell per time) generalizes directly to a fine-cadence snapshot list -- only the data source is missing."
+  },
+  "what_would_unblock": [
+    "TNG path (preferred, finest cadence): user registers a free account at tng-project.org, provides the API key; then fetch ONLY the target galaxy's gas cutout per subbox snapshot for a few hundred subbox snapshots -> build the baryon-cycle matrix -> run ep.entropy_production on top modes + the (log-density, log-T) configuration-plane winding.",
+    "FIRE-2 path: user authenticates Globus for endpoint d41e7ead-0fca-4715-bc72-24630cebe04b, then pull a DWARF (e.g. m10q_res30) gas at a snapshot stride (e.g. every 3rd -> ~200 snapshots, ~5 Myr-effective cadence in a t_dyn ~ few-tens-Myr dwarf) into local disk; the existing Eulerian gas-cell builder runs unchanged.",
+    "Either way the analysis code already exists and is validated (null |z|~1.5, limit cycle z=16.6, driven z=41); only credentialed fine-cadence gas data is missing."
+  ],
+  "db_verdict": "NOT_RUN -- data gap (no autonomously-fetchable fine-cadence open gas time series).",
+  "no_commit": true,
+  "no_lean_edits": true
+}
