@@ -25,6 +25,13 @@ Within any substrate's local corridor, k_eff is bounded between
 identity. Specific numerical values (formerly ceiling = 10, floor ≈ 2.33)
 were derived from the substrate-independent (0.1, 0.43) claim; those are
 removed.
+
+Axiom consolidation: the former three axioms (`ρ_lower`, `ρ_upper`,
+`corridor_bounds_well_formed`) are now ONE axiom `corridorBounds` on a
+proof-carrying structure (mirroring `Cosmology.CorridorProjector.
+CorridorBounds`, restated locally — Core does not import Cosmology).
+`ρ_lower`/`ρ_upper` are projections and `corridor_bounds_well_formed`
+is a theorem; the public API is unchanged.
 -/
 
 import CoherenceRatchet.Core.BaseIdentity
@@ -35,18 +42,36 @@ namespace CoherenceRatchet.Core.Corridor
 open CoherenceRatchet.Core
 open CoherenceRatchet.Core.Dynamics
 
+/-- Corridor bounds bundled with their structural validity. Local Core
+    analogue of `Cosmology.CorridorProjector.CorridorBounds` (restated
+    rather than imported — Core does not depend on Cosmology). -/
+structure CorridorBoundsSpec where
+  lower : ℝ
+  upper : ℝ
+  valid : 0 < lower ∧ lower < upper ∧ upper < 1
+
+/-- THE single corridor-bounds axiom. Substrate-specific framework
+    primitive; no universal numerical value. Consolidates the former three
+    axioms `ρ_lower`, `ρ_upper`, `corridor_bounds_well_formed` into one
+    proof-carrying posit (net: 3 axioms → 1). -/
+axiom corridorBounds : CorridorBoundsSpec
+
 /-- The lower corridor bound. Substrate-specific framework primitive;
     no universal numerical value. Required structural property:
-    0 < ρ_lower < ρ_upper < 1. -/
-axiom ρ_lower : ℝ
+    0 < ρ_lower < ρ_upper < 1. Projection of `corridorBounds`. -/
+noncomputable def ρ_lower : ℝ := corridorBounds.lower
 
 /-- The upper corridor bound. Substrate-specific framework primitive
-    (= ρ_c from Dynamics in the per-substrate calibration). -/
-axiom ρ_upper : ℝ
+    (= ρ_c from Dynamics in the per-substrate calibration).
+    Projection of `corridorBounds`. -/
+noncomputable def ρ_upper : ℝ := corridorBounds.upper
 
 /-- The corridor bounds satisfy the open-interval structural condition.
-    Required for the dynamical reading to be coherent. -/
-axiom corridor_bounds_well_formed : 0 < ρ_lower ∧ ρ_lower < ρ_upper ∧ ρ_upper < 1
+    Required for the dynamical reading to be coherent. Formerly an axiom;
+    now recovered from `corridorBounds.valid`. -/
+theorem corridor_bounds_well_formed :
+    0 < ρ_lower ∧ ρ_lower < ρ_upper ∧ ρ_upper < 1 :=
+  corridorBounds.valid
 
 /-- The corridor membership predicate. -/
 def inCorridor (ρ : ℝ) : Prop :=

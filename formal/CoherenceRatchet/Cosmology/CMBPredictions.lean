@@ -1,59 +1,55 @@
 /-
-Cosmology.CMBPredictions — CMB anomalies as TSVF post-selection signatures
+Cosmology.CMBPredictions — D4 RETRACTED: the CMB anomalies are not framework content
 
-The cosmic microwave background has several large-angle anomalies that
-standard inflationary cosmology treats as statistical flukes:
+RETRACTION (2026-05-22, recorded in-lake 2026-07-01). This file once asserted
+D4: that five large-angle CMB anomalies (axis of evil, cold spot, hemispherical
+asymmetry, low-ℓ suppression, parity asymmetry) are TSVF post-selection
+signatures of the joint multi-rung backward P_omega. D4 is retracted, on two
+independent grounds:
 
-A1. Axis of evil. The dipole, quadrupole (l=2), and octupole (l=3) moments
-    of the CMB temperature field share an unexpectedly aligned preferred axis,
-    nearly perpendicular to the ecliptic. Probability under isotropic
-    inflation: ~few permille.
+1. F-11 fired (CorridorProjector.FelevenNoGo): the joint multi-rung backward
+   P_omega operator is non-constructible at theorem strength (T1 geometric
+   dilution; T2 holonomic area law). There is no operator for the anomalies
+   to be a signature OF.
 
-A2. Cold spot. A ~70-microKelvin anomalously-cold ~5-degree region in the
-    southern hemisphere. No standard inflationary explanation. Probability
-    under Gaussian inflation: ~1%.
+2. Direct test: the anomalies are within cosmic variance, and the CMB weight
+   `w = exp(−β H_sum)` with `H_sum = Σ_ℓ (ρ_ℓ − ρ_mid)²` is additive over
+   multipoles and factorizes, `w = Π_ℓ w_ℓ` — it does no joint cross-multipole
+   work. The framework-distinctive prediction (a signed temporal drift of the
+   shape profile via a time-dependent β(t)) lost its mechanism with the joint
+   operator: no joint P_omega, no β(t), no drift. F-19 is moot.
 
-A3. Hemispherical asymmetry. The northern and southern ecliptic hemispheres
-    have different temperature power spectra. Probability under statistical
-    isotropy: ~1%.
+What this file carried and no longer does: the axioms `C_l_TSVF` and
+`prediction_low_l_suppression`, the four statement-only prediction theorems
+(axis alignment, hemispherical asymmetry, cold spot, parity asymmetry), and
+the conjunction `TSVF_predicts_all_CMB_anomalies`. All deleted; the retraction
+record below replaces them, mirroring the `FelevenNoGo` pattern.
 
-A4. Low-l power suppression. The l=2 quadrupole has anomalously low power
-    compared to the inflationary prediction. The whole low-l power spectrum
-    is suppressed below inflation's ΛCDM expectation.
+THE SURVIVING CMB CONTENT is the orthogonality theorem
+(`CoherenceRatchet.CMBOrthogonality`): the soft forward P_omega leaves the
+bulk CMB power spectrum exactly invariant, so the framework predicts EXACTLY
+ΛCDM for the CMB — a provable consistency, not a distinctive prediction. The
+framework is a strict extension of ΛCDM at the cosmological tier.
 
-A5. Parity asymmetry. Even-l vs odd-l power imbalance at low multipoles.
+The anomaly catalog is retained below as documentation of what D4 claimed;
+it is observational context, not framework content.
 
-Each anomaly is a few-percent deviation taken individually; collectively
-they have very low joint probability under standard inflation. The standard
-response is "look-elsewhere effect" / a priori unspecified ensemble.
+A1. Axis of evil — aligned ℓ=2/ℓ=3 preferred axis (~few permille under
+    isotropic inflation).
+A2. Cold spot — ~70 μK cold ~5° southern region (~1% under Gaussian inflation).
+A3. Hemispherical asymmetry — north/south power difference (~1% under isotropy).
+A4. Low-ℓ suppression — quadrupole power below ΛCDM expectation.
+A5. Parity asymmetry — even-ℓ/odd-ℓ imbalance at low multipoles.
 
-coherence-ratchet's claim: the CMB anomalies are TSVF post-selection signatures.
-The omega backward boundary state preferentially weights and suppresses
-specific large-angle modes of the early-universe perturbation field. The
-anomaly pattern is exactly what universal-scale post-selection predicts.
-
-The structural argument:
-- P_omega prefers configurations admitting all instantiable rungs.
-- The cosmological substrate for those rungs requires specific large-scale
-  structure (galaxy clusters, filaments, voids) that emerges from specific
-  large-l-mode early perturbations.
-- The l=2-3 axis selects the direction of the largest-scale-structure
-  organization that admits the most rung-trajectories.
-- The cold spot and low-l suppression reflect P_omega's selection against
-  configurations that would have produced too-uniform or too-clumpy
-  large-scale structure.
-
-The calculations are the open work. The structural prediction is concrete:
-TSVF post-selection produces large-angle anomalies; standard inflation
-without post-selection does not.
+Individually few-percent flukes; the retracted claim was that collectively
+they were post-selection signatures. Post-F-11 the framework reads them the
+way standard cosmology does: within cosmic variance.
 -/
 
 import CoherenceRatchet.Cosmology.CorridorProjector
 import CoherenceRatchet.Cosmology.PenrosePast
 
 namespace CoherenceRatchet.Cosmology.CMB
-
-variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
 
 /-- A CMB mode indexed by (l, m): spherical-harmonic decomposition of the
     temperature field on the cosmological 2-sphere. -/
@@ -67,82 +63,32 @@ structure CMBMode where
 axiom C_l : Nat → ℝ
 
 /-- The standard inflationary ΛCDM prediction for C_l. Framework primitive
-    (the theoretical baseline against which deviations are measured). -/
+    (the theoretical baseline). Post-retraction this is also the framework's
+    own CMB prediction: by the orthogonality theorem
+    (`CMBOrthogonality.framework_cmb_power_eq_lcdm`) the framework predicts
+    exactly ΛCDM. -/
 axiom C_l_inflation : Nat → ℝ
 
-/-- The TSVF-modified prediction: standard inflation modulated by the
-    P_omega projection on the cosmological state space. Framework primitive
-    at this layer; derivable in principle from `Cosmology.CorridorProjector.P_omega`
-    once that operator is in place. -/
-axiom C_l_TSVF : Nat → ℝ
+/-- D4 retraction record. A flat fact with its evidence — the CMB-anomalies-as-
+    TSVF-signatures claim is retracted. Not a `sorry`, not an axiom asserting
+    a prediction: a recorded retraction, mirroring the `FelevenNoGo` pattern.
+    The sole surviving CMB content is the orthogonality theorem
+    (`CoherenceRatchet.CMBOrthogonality`). -/
+structure DfourRetraction where
+  /-- F-11: there is no joint multi-rung backward P_omega for the anomalies
+      to be a signature of (`CorridorProjector.FelevenNoGo`). -/
+  no_joint_operator : True
+  /-- Direct test: the anomalies are within cosmic variance. -/
+  anomalies_within_cosmic_variance : True
+  /-- The CMB weight factorizes over multipoles (`w = Π_ℓ w_ℓ`); it does no
+      joint cross-multipole work. -/
+  weight_factorizes : True
+  /-- The predicted temporal drift lost its mechanism: no joint P_omega,
+      no β(t), no drift. F-19 is moot. -/
+  no_drift_mechanism : True
 
-/-- PREDICTION 1 — Low-l suppression. For low multipoles ℓ=2, 3, the
-    TSVF-predicted power is BELOW the inflationary prediction. P_omega's
-    corridor selection disfavors initial perturbations that would have
-    produced too-uniform large-scale structure (no rung-trajectory seeds)
-    or too-clumpy large-scale structure (premature collapse).
-
-    Framework axiom. Formal derivation from P_omega's action awaits that
-    operator's concrete construction; asserted here as the framework's
-    quantitative prediction (Planck 2018 and ACT 2024 measurements show
-    ~10% suppression at ℓ=2). -/
-axiom prediction_low_l_suppression :
-    C_l_TSVF 2 < C_l_inflation 2 ∧ C_l_TSVF 3 < C_l_inflation 3
-
-/-- PREDICTION 2 — Preferred-axis alignment.
-
-    The l=2 and l=3 modes of the TSVF prediction share a preferred axis.
-    This is structurally because P_omega's rung-trajectory-admitting
-    configurations have a small set of preferred orientations (the
-    directions along which galaxy-cluster filaments and voids organize
-    to admit the most rung-trajectories from the corridor configuration).
-
-    Formally: the TSVF predicted spherical-harmonic coefficients
-    a_{2,m} and a_{3,m} are correlated under P_omega in a way that
-    inflation's coefficients are not. -/
-theorem prediction_axis_alignment :
-    -- The (l=2, l=3) angular correlation under TSVF exceeds inflation.
-    True := by
-  trivial  -- statement-only
-
-/-- PREDICTION 3 — Hemispherical asymmetry.
-
-    The TSVF-predicted variance differs between any two opposite
-    hemispheres in a non-isotropic way. This is structurally because
-    P_omega does not commute with rotations (omega is a specific
-    multi-rung configuration, not an isotropic distribution over them). -/
-theorem prediction_hemispherical_asymmetry :
-    True := by
-  trivial
-
-/-- PREDICTION 4 — Cold spot localization.
-
-    The TSVF prediction includes a specific large-angle cold region
-    in a direction selected by the omega configuration's substrate-
-    structure preferences. -/
-theorem prediction_cold_spot :
-    True := by
-  trivial
-
-/-- PREDICTION 5 — Parity asymmetry.
-
-    Even-l and odd-l modes are weighted asymmetrically by P_omega
-    because they correspond to spatially symmetric versus antisymmetric
-    large-scale-structure configurations, and the corridor selection
-    distinguishes between them. -/
-theorem prediction_parity_asymmetry :
-    True := by
-  trivial
-
-/-- The conjunction. The TSVF framework predicts ALL FIVE anomalies as
-    structural signatures of universal-scale post-selection. Inflation
-    without post-selection predicts none of them. -/
-theorem TSVF_predicts_all_CMB_anomalies :
-    (C_l_TSVF 2 < C_l_inflation 2) ∧
-    (C_l_TSVF 3 < C_l_inflation 3) ∧
-    True ∧ True ∧ True := by
-  refine ⟨?_, ?_, trivial, trivial, trivial⟩
-  · exact prediction_low_l_suppression.1
-  · exact prediction_low_l_suppression.2
+/-- D4 is retracted: the retraction record is inhabited. -/
+def D4_cmb_anomalies_retracted : DfourRetraction :=
+  ⟨trivial, trivial, trivial, trivial⟩
 
 end CoherenceRatchet.Cosmology.CMB

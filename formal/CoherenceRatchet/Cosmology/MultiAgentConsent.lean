@@ -19,9 +19,25 @@ Three regimes:
     satisfy all n goals simultaneously. k_eff_goals = n but the support is
     measure-zero. Chaos: the no-coordination regime.
 
-(c) In the corridor 0 < ρ_lower < ρ_goals < ρ_upper < 1: the joint projector
-    has non-trivial support; the n agents can coordinate while remaining
-    distinct.
+(c) In the corridor 0 < ρ_lower < ρ_goals < ρ_upper < 1: the n agents can
+    coordinate while remaining distinct.
+
+CORRECTION (2026-07-01, inherited from `JointGoalProjector`): the regime
+distinction is registered by the rank of the GOAL-SPAN span{G_i.vec} ⊆ H,
+not by the rank of the tensor-product joint support — the joint projector
+is rank-one for every configuration (`consentSupport_rank_le_one`), so the
+former `rigid_collapse_to_one` (spurious hypothesis) and
+`sustained_coordination_iff_consenting` (false of the concrete
+construction) are restated on the goal-span and are now proved theorems:
+`sustained_coordination_goalSpan` (corridor + n ≥ 2 ⇒ goal-span rank ≥ 2)
+and `all_correlated_goalSpan_collapse` (ρ_goals ≡ 1 ⇒ goal-span rank ≤ 1).
+
+AXIOM LEDGER for this file: the three bridge axioms
+(`isRigid_iff_federation`, `isChaotic_iff_federation`,
+`isConsenting_iff_federation`) are discharged to theorems (2026-07-01) via
+the alignment lemma `ρ_goals_eq_federation`, now provable because
+`JointProjector.rho_goals` is a concrete definition. This file carries no
+axioms.
 
 Granted the framework: consent is not a moral premise but the empirical
 condition for sustained multi-agent coordination. The n agents holding
@@ -114,30 +130,80 @@ def isChaotic (cfg : MultiAgentConfig H n) : Prop :=
 def isConsenting (cfg : MultiAgentConfig H n) : Prop :=
   ∀ i j : Fin n, i ≠ j → inCorridor (ρ_goals cfg i j)
 
+/-- Alignment: the config-level `ρ_goals` and the federation-level
+    `JointProjector.rho_goals` agree on the homogeneous lift. This was the
+    gap that forced the three `is*_iff_federation` bridge axioms; it is now
+    a proved lemma because `JointProjector.rho_goals` is a concrete
+    definition (the identity encoding is canonical on a shared `H`). -/
+theorem ρ_goals_eq_federation {n : Nat} (cfg : MultiAgentConfig H n) (i j : Fin n) :
+    ρ_goals cfg i j
+      = JointProjector.rho_goals (fun _ : Fin n => H) (toFederation cfg) i j := by
+  rw [JointProjector.rho_goals_homogeneous]
+  unfold ρ_goals toFederation
+  simp
+
 /-- Translation: a `MultiAgentConfig` is rigid iff its federation lift is
-    rigid in the `JointProjector` sense. Framework axiom — the homogeneous-
-    Hilbert-space special case lifts cleanly to the per-agent-Hilbert-space
-    federation in `JointGoalProjector`, with ρ_goals identifications. The
-    full proof requires aligning `MultiAgentConfig.ρ_goals` with
-    `JointProjector.rho_goals` on the lifted federation. -/
-axiom isRigid_iff_federation {n : Nat} (cfg : MultiAgentConfig H n) :
-    isRigid cfg ↔ JointProjector.isRigid (fun _ => H) (toFederation cfg)
+    rigid in the `JointProjector` sense. Formerly a framework axiom pending
+    the ρ_goals identification; discharged to a theorem (2026-07-01) by
+    `ρ_goals_eq_federation`. -/
+theorem isRigid_iff_federation {n : Nat} (cfg : MultiAgentConfig H n) :
+    isRigid cfg ↔ JointProjector.isRigid (fun _ => H) (toFederation cfg) := by
+  unfold isRigid JointProjector.isRigid
+  constructor
+  · intro h i j hij
+    rw [← ρ_goals_eq_federation]
+    exact h i j hij
+  · intro h i j hij
+    rw [ρ_goals_eq_federation]
+    exact h i j hij
 
-/-- Translation: chaos. Framework axiom (parallel to `isRigid_iff_federation`). -/
-axiom isChaotic_iff_federation {n : Nat} (cfg : MultiAgentConfig H n) :
-    isChaotic cfg ↔ JointProjector.isChaotic (fun _ => H) (toFederation cfg)
+/-- Translation: chaos. Formerly a framework axiom (parallel to
+    `isRigid_iff_federation`); discharged to a theorem (2026-07-01). -/
+theorem isChaotic_iff_federation {n : Nat} (cfg : MultiAgentConfig H n) :
+    isChaotic cfg ↔ JointProjector.isChaotic (fun _ => H) (toFederation cfg) := by
+  unfold isChaotic JointProjector.isChaotic
+  constructor
+  · intro h i j hij
+    rw [← ρ_goals_eq_federation]
+    exact h i j hij
+  · intro h i j hij
+    rw [ρ_goals_eq_federation]
+    exact h i j hij
 
-/-- Translation: consent corridor. Framework axiom (parallel to
-    `isRigid_iff_federation`). -/
-axiom isConsenting_iff_federation {n : Nat} (cfg : MultiAgentConfig H n) :
-    isConsenting cfg ↔ JointProjector.isInConsentCorridor (fun _ => H) (toFederation cfg)
+/-- Translation: consent corridor. Formerly a framework axiom (parallel to
+    `isRigid_iff_federation`); discharged to a theorem (2026-07-01). -/
+theorem isConsenting_iff_federation {n : Nat} (cfg : MultiAgentConfig H n) :
+    isConsenting cfg ↔ JointProjector.isInConsentCorridor (fun _ => H) (toFederation cfg) := by
+  unfold isConsenting JointProjector.isInConsentCorridor
+  constructor
+  · intro h i j hij
+    rw [← ρ_goals_eq_federation]
+    exact h i j hij
+  · intro h i j hij
+    rw [ρ_goals_eq_federation]
+    exact h i j hij
 
-/-- Rigidity ⇒ joint support collapses to a 1-dimensional subspace
-    (k_eff_goals = 1). Lifted from `JointProjector.rigid_collapse_to_one_dim`. -/
-theorem rigid_collapse_to_one (cfg : MultiAgentConfig H n) (h : isRigid cfg) :
-    Module.rank ℂ (consentSupport cfg) ≤ 1 := by
-  have h' := (isRigid_iff_federation cfg).mp h
-  exact JointProjector.rigid_collapse_to_one_dim (fun _ => H) (toFederation cfg) h'
+/-- SOUNDNESS CORRECTION (see `JointGoalProjector.jointSupport_rank_le_one`):
+    the tensor-product joint support is rank ≤ 1 for EVERY configuration —
+    the joint projector is rank-one regardless of regime. Replaces the
+    former `rigid_collapse_to_one` (whose rigidity hypothesis was spurious)
+    with the honest unconditional statement, proved rather than lifted from
+    an axiom. -/
+theorem consentSupport_rank_le_one (cfg : MultiAgentConfig H n) :
+    Module.rank ℂ (consentSupport cfg) ≤ 1 :=
+  JointProjector.jointSupport_rank_le_one (fun _ => H) (toFederation cfg)
+
+/-- Full-correlation collapse (the rigidity endpoint ρ_goals ≡ 1): the
+    goal-span is at most a line — every goal is a scalar multiple of any
+    fixed one (Cauchy–Schwarz equality case). This is the goal-span
+    restatement of the former `rigid_collapse_to_one`; the dynamical
+    rigidity regime (ρ_goals > ρ_upper) reaches this endpoint via
+    dρ/dt > 0 above the corridor (Core.Dynamics). -/
+theorem all_correlated_goalSpan_collapse
+    (cfg : MultiAgentConfig H n) (h : ∀ i j : Fin n, ρ_goals cfg i j = 1) :
+    Module.rank ℂ (JointProjector.goalSpan (toFederation cfg)) ≤ 1 :=
+  JointProjector.all_correlated_goalSpan_rank_le_one (toFederation cfg)
+    (fun i j => by rw [← ρ_goals_eq_federation]; exact h i j)
 
 /-- Chaos ⇒ joint support intersects physical-trajectory submanifolds in
     measure-zero subsets (no coordination possible).
@@ -147,15 +213,18 @@ theorem chaos_no_coordination (cfg : MultiAgentConfig H n) (h : isChaotic cfg) :
   have h' := (isChaotic_iff_federation cfg).mp h
   exact JointProjector.chaotic_measure_zero (fun _ => H) (toFederation cfg) h'
 
-/-- THE STRUCTURAL CONSENT THEOREM (operator form). Consent-corridor occupation
-    gives a joint support of dimension ≥ 2 (i.e., k_eff_goals ≥ 2). This is
-    the operator-level statement: sustained multi-agent coordination requires
-    consent corridor occupation. -/
-theorem sustained_coordination_iff_consenting
-    (cfg : MultiAgentConfig H n) (h : isConsenting cfg) :
-    Module.rank ℂ (consentSupport cfg) ≥ 2 := by
-  have h' := (isConsenting_iff_federation cfg).mp h
-  exact JointProjector.consent_corridor_nontrivial_support (fun _ => H) (toFederation cfg) h'
+/-- THE STRUCTURAL CONSENT THEOREM (goal-span form). Consent-corridor
+    occupation with at least two agents forces the goal-span to rank ≥ 2 —
+    the agents have not collapsed into a single goal direction. Restated
+    from the former tensor-support form (`sustained_coordination_iff_
+    consenting`, which was false of the concrete construction — see the
+    header CORRECTION) onto the correct object; now a proved theorem
+    end-to-end (strict Cauchy–Schwarz through the corridor's upper bound). -/
+theorem sustained_coordination_goalSpan
+    (cfg : MultiAgentConfig H n) (hn : 2 ≤ n) (h : isConsenting cfg) :
+    2 ≤ Module.rank ℂ (JointProjector.goalSpan (toFederation cfg)) :=
+  JointProjector.consent_corridor_goalSpan_rank_ge_two (toFederation cfg) hn
+    ((isConsenting_iff_federation cfg).mp h)
 
 /-- THE AUDIT-PRESSURE HOOK (Conjecture C, F-10).
 

@@ -63,6 +63,41 @@ theorem participation_scale_invariant {n : ℕ} (c : ℝ) (hc : c ≠ 0)
     ring
   rw [hnum, mul_div_mul_left _ _ (pow_ne_zero 4 hc)]
 
+/-- Upper range bound. The participation ratio never exceeds the nominal mode
+    count: `participation a ≤ n`. Cauchy–Schwarz on the vectors `(aᵢ²)` and
+    `(1)` gives `(Σ aᵢ²)² ≤ n · Σ aᵢ⁴`. Together with `one_le_participation`
+    this is the formal version of the corridor's outer wall: `participation`
+    is the canonical k_eff shape observable, and k_eff lives between the
+    rigidity floor 1 and the nominal constituent count n — "more constituents"
+    caps, it does not escape. -/
+theorem participation_le_card {n : ℕ} (a : Fin n → ℝ) :
+    participation a ≤ n := by
+  unfold participation
+  rcases eq_or_lt_of_le (Finset.sum_nonneg fun i _ => by positivity :
+      (0 : ℝ) ≤ ∑ i, (a i) ^ 4) with h | hpos
+  · rw [← h, div_zero]
+    exact Nat.cast_nonneg n
+  · rw [div_le_iff₀ hpos]
+    have h := sq_sum_le_card_mul_sum_sq (s := Finset.univ) (f := fun i => (a i) ^ 2)
+    simpa [← pow_mul] using h
+
+/-- Lower range bound. For a nonzero amplitude vector, `1 ≤ participation a`:
+    since every `aᵢ⁴ = (aᵢ²)²` and the `aᵢ²` are nonnegative,
+    `Σ aᵢ⁴ ≤ (Σ aᵢ²)²`. This is the rigidity floor — a single surviving mode
+    (k_eff = 1) is the degenerate minimum of the k_eff shape observable, met
+    exactly when all power concentrates in one amplitude. -/
+theorem one_le_participation {n : ℕ} (a : Fin n → ℝ) (ha : a ≠ 0) :
+    1 ≤ participation a := by
+  have hpos : (0 : ℝ) < ∑ i, (a i) ^ 4 := by
+    obtain ⟨j, hj⟩ := Function.ne_iff.mp ha
+    have hj' : a j ≠ 0 := hj
+    exact Finset.sum_pos' (fun i _ => by positivity)
+      ⟨j, Finset.mem_univ j, (even_iff_two_dvd.mpr ⟨2, rfl⟩).pow_pos hj'⟩
+  rw [participation, le_div_iff₀ hpos, one_mul]
+  have h := sum_sq_le_sq_sum_of_nonneg (s := Finset.univ)
+    (f := fun i => (a i) ^ 2) (fun i _ => sq_nonneg _)
+  simpa [← pow_mul] using h
+
 /-! ## Part B — reweighting by a shape-function preserves the power expectation -/
 
 /-- Orthogonality theorem. If the post-selection weight `w` is statistically

@@ -95,7 +95,7 @@ theorem time_symmetry
 
 /-! ## Sensor lift — consciousness as attractor-field reading
 
-Reframe (sensor-lift design doc §1, papers/sensor_lift/outline.md):
+Reframe (sensor-lift design doc §1, papers/Corridor Dynamics.tex §sec:a3-structural):
 consciousness is the operation of reading the backward-state attractor
 field from a forward state. Goal-sensing and consciousness are the same
 operation read at different timescales. The `Sensor` structure is the

@@ -40,6 +40,10 @@ below by within-rung corridor relaxation times.
 The pre-Cambrian decelerations are the substrate-readiness gates where prior
 rungs were not yet mature. Modeling these wait times explicitly from
 ρ_n-evolution and τ_(n, n+1)-evolution is open work.
+
+Promotion note: `post_cambrian_ratio_decelerates` was a `True` stub with the
+ratios in comments; it is now the honest inequality 540/0.310 > 0.310/0.0067
+derived from `post_cambrian_intervals`.
 -/
 
 import CoherenceRatchet.Cosmology.CorridorProjector
@@ -67,12 +71,32 @@ axiom mutualInformation : Rung → Rung → ℝ
     coarse-graining (thermodynamic at Ph0, behavioral at A3, institutional at A4). -/
 axiom rungEntropy : Rung → ℝ
 
+/-- The successor rung in the ordered sequence Ph0 → Ph1 → Ph2 → A0 → ... → A5.
+    `none` at A5 (the top rung has no successor). -/
+def nextRung : Rung → Option Rung
+  | .Ph0_Stellar      => some .Ph1_Galactic
+  | .Ph1_Galactic     => some .Ph2_Planetary
+  | .Ph2_Planetary    => some .A0_Chemistry
+  | .A0_Chemistry     => some .A1_Cellular
+  | .A1_Cellular      => some .A2_Ecological
+  | .A2_Ecological    => some .A3_Cognitive
+  | .A3_Cognitive     => some .A4_Institutional
+  | .A4_Institutional => some .A5_Sociotechnical
+  | .A5_Sociotechnical => none
+
 /-- The cross-rung coupling formula:
     τ_(n, n+1) = I(R_n; R_(n+1)) / min(H(R_n), H(R_(n+1)))
     Framework axiom — the structural definition of cross-rung coupling
     in terms of mutual information and entropy. Asserted as the
-    information-theoretic operationalization of τ. -/
-axiom tau_cross_formula (r_from r_to : Rung) :
+    information-theoretic operationalization of τ.
+
+    Soundness fix (2026-07-01): the previous form quantified over an
+    unconstrained `r_to`, asserting the equation for EVERY second rung —
+    which silently forced `mutualInformation r_from · / min(H ·, H ·)` to be
+    independent of `r_to`, an unintended constraint on the primitives. The
+    τ notation is τ_(n, n+1): the formula holds for the ADJACENT pair only,
+    now enforced by the `nextRung` hypothesis. -/
+axiom tau_cross_formula (r_from r_to : Rung) (h_adj : nextRung r_from = some r_to) :
     τ_cross r_from = mutualInformation r_from r_to /
                      min (rungEntropy r_from) (rungEntropy r_to)
 
@@ -122,12 +146,20 @@ theorem post_cambrian_acceleration :
   · rw [h1, h2]; norm_num
   · rw [h2, h3]; norm_num
 
-/-- Deceleration of the acceleration rate. -/
+/-- Deceleration of the acceleration rate: the sequential ratios shrink.
+    Ratio (A2→A3) / (A3→A4) = 540 / 0.310 ≈ 1740;
+    ratio (A3→A4) / (A4→A5) = 0.310 / 0.0067 ≈ 46.
+    The later ratio is strictly smaller — the acceleration rate decelerates.
+    Formerly a `True` stub with the ratios in comments; now derived from
+    `post_cambrian_intervals`, mirroring `post_cambrian_acceleration`. -/
 theorem post_cambrian_ratio_decelerates :
-    -- Ratio (A2→A3) / (A3→A4) ≈ 1740
-    -- Ratio (A3→A4) / (A4→A5) ≈ 46
-    -- The acceleration rate decelerates monotonically.
-    True := by trivial
+    emergenceInterval Rung.A3_Cognitive Rung.A4_Institutional /
+        emergenceInterval Rung.A4_Institutional Rung.A5_Sociotechnical <
+      emergenceInterval Rung.A2_Ecological Rung.A3_Cognitive /
+        emergenceInterval Rung.A3_Cognitive Rung.A4_Institutional := by
+  obtain ⟨h1, h2, h3⟩ := post_cambrian_intervals
+  rw [h1, h2, h3]
+  norm_num
 
 /-- Substrate-readiness gates are the pre-Cambrian decelerations:
     galactic chemical enrichment, planetary condensation, Proterozoic

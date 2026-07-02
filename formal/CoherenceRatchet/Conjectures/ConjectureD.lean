@@ -27,8 +27,12 @@ D3. Rung-emergence acceleration. The intervals between successive
     interval sequence. The post-Cambrian sequence (A2 -> A3 -> A4 -> A5)
     accelerates monotonically across four orders of magnitude.
 
-D4. The CMB anomalies are TSVF post-selection signatures.
-    Formalized: CoherenceRatchet.Cosmology.CMB.TSVF_predicts_all_CMB_anomalies
+D4. RETRACTED (2026-05-22). The CMB-anomalies-as-TSVF-signatures claim fell
+    with F-11 (no joint operator to signal) and a direct test (anomalies
+    within cosmic variance; the CMB weight factorizes over multipoles).
+    Record: CoherenceRatchet.Cosmology.CMB.D4_cmb_anomalies_retracted.
+    The sole surviving CMB content is the orthogonality theorem
+    (CoherenceRatchet.CMBOrthogonality): the framework predicts exactly ΛCDM.
 -/
 
 import CoherenceRatchet.Cosmology.TSVF
@@ -84,14 +88,15 @@ axiom post_cambrian_acceleration :
     emergenceInterval Rung.A4_Institutional Rung.A5_Sociotechnical <
       emergenceInterval Rung.A3_Cognitive Rung.A4_Institutional
 
-/-- The Conjecture D conjunction: D1 (structural), D3, D4.
+/-- The Conjecture D conjunction: D1 (structural), D3, D4-retraction.
     D1 is the Penrose-past STRUCTURAL ARGUMENT
     (`Penrose.penrose_low_entropy_past_structural`, PenrosePast.lean) — the
     joint backward operator that would make it a derivation is the F-11 no-go.
-    D3/D4 stated as placeholder `True` — the substantive content for those
-    clauses lives in `Cosmology.Hierarchy.post_cambrian_acceleration` (D3) and
-    `Cosmology.CMB.prediction_low_l_suppression` plus the other CMB anomaly
-    axioms (D4). -/
+    D3 stated as placeholder `True` — the substantive content lives in
+    `Cosmology.Hierarchy.post_cambrian_acceleration`. The third conjunct was
+    D4's placeholder; D4 is RETRACTED
+    (`Cosmology.CMB.D4_cmb_anomalies_retracted`) and the conjunct stays only
+    to preserve the conjunction shape — it carries no D4 content. -/
 theorem conjecture_D :
     (∀ {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
         (psi_alpha : ForwardState H) (phi : TSVF.BackwardState H) (U : H →L[ℂ] H),

@@ -1,7 +1,7 @@
 /-
 Consciousness.AccessAndPhenomenal — access and phenomenal as the same operation
 
-Per the sensor-lift design doc (`papers/sensor_lift/outline.md`) §4.2:
+Per the sensor-lift design doc (`papers/Corridor Dynamics.tex`) §sec:a3-structural:
 
   Access consciousness  = the existence of `attractor_field`.
   Phenomenal consciousness = what `attractor_field` IS, read from inside the sensor.

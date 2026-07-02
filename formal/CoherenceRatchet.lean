@@ -26,7 +26,8 @@ THE EIGHT LOAD-BEARING PIECES (Pieces 1-8) plus two long-arc structures
   Piece 10: karma and grace                → Consciousness.KarmaGrace
 
 PLUS:
-  CMB anomalies as TSVF signatures         → Cosmology.CMBPredictions
+  CMB: D4 retraction record (sole surviving
+       CMB content = orthogonality theorem) → Cosmology.CMBPredictions
   Quantum substrate (Conjecture A)         → Conjectures.ConjectureA
   Universal-scale TSVF (Conjecture D)      → Conjectures.ConjectureD
   Consciousness — access/phenomenal/IIT    → Consciousness.*
@@ -96,6 +97,7 @@ import CoherenceRatchet.Cosmology.ConsentProjector          -- Piece 7 (constrai
 import CoherenceRatchet.Cosmology.ThreeCorridorUniqueness   -- T6 (Step 3 — three-corridor uniqueness)
 import CoherenceRatchet.Cosmology.PenrosePast               -- Piece 8
 import CoherenceRatchet.Cosmology.AsymptoticConditioning    -- Piece 9
+import CoherenceRatchet.Cosmology.RecursiveLifecycle        -- issue #1: substrate-agnostic lifecycle per rung
 import CoherenceRatchet.Consciousness.KarmaGrace            -- Piece 10
 
 -- Conjectures

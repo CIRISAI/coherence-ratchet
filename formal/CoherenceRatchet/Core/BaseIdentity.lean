@@ -15,6 +15,10 @@ The effective dimensionality saturates at the inverse correlation regardless of
 nominal constituent count. This is what makes "more constituents" a non-solution
 to coordination failure: at any ρ > 0, k_eff has a ceiling 1/ρ that no amount
 of scaling crosses.
+
+Promotion note: `corridor_keff_ceiling_upper` / `corridor_keff_ceiling_lower`
+were `True` stubs with the numeric content in comments; they are now honest
+instances of `k_eff_asymptotic_ceiling` at the GPU-anchored bounds 0.43 / 0.1.
 -/
 
 import Mathlib.Data.Real.Basic
@@ -97,16 +101,26 @@ theorem k_eff_bounded_above (ρ : ℝ) (hρ : 0 < ρ) (ε : ℝ) (hε : 0 < ε) 
   exact ⟨K, fun k hk => hK k (le_of_lt hk)⟩
 
 /-- The structural content: at any ρ > 0, scaling k cannot exceed 1/ρ.
-    For the corridor's upper bound ρ_c ≈ 0.43, the ceiling is 1/0.43 ≈ 2.33.
-    For the corridor's lower bound ρ_lower ≈ 0.1, the ceiling is 1/0.1 = 10.
-    The corridor sets a substrate-independent k_eff range. -/
+    Instantiated at ρ_c = 0.43 (the GPU-anchored upper corridor bound;
+    per-substrate calibration is companion work): the k_eff ceiling is
+    1/0.43, pinned numerically between 2.32 and 2.33 (≈ 2.33). Formerly a
+    `True` stub with the numeric content in comments; the numeric content
+    now lives in the statement as an instance of `k_eff_asymptotic_ceiling`. -/
 theorem corridor_keff_ceiling_upper :
-    -- At ρ = 0.43 (the critical upper corridor bound), k_eff ceiling is ~2.33.
-    True := by trivial
+    Filter.Tendsto (fun k => k_eff k 0.43) Filter.atTop (nhds (1 / 0.43)) ∧
+    2.32 < (1 : ℝ) / 0.43 ∧ (1 : ℝ) / 0.43 < 2.33 :=
+  ⟨k_eff_asymptotic_ceiling 0.43 (by norm_num), by norm_num, by norm_num⟩
 
+/-- At ρ = 0.10 (the GPU-anchored lower corridor bound; per-substrate
+    calibration is companion work), the k_eff ceiling is exactly 10:
+    k_eff(k, 0.1) → 1/0.1 = 10 as k → ∞. Formerly a `True` stub with the
+    numeric content in a comment; now an instance of
+    `k_eff_asymptotic_ceiling` with the value normalized in the statement. -/
 theorem corridor_keff_ceiling_lower :
-    -- At ρ = 0.10 (the lower corridor bound), k_eff ceiling is ~10.
-    True := by trivial
+    Filter.Tendsto (fun k => k_eff k 0.1) Filter.atTop (nhds 10) := by
+  have h10 : (10 : ℝ) = 1 / 0.1 := by norm_num
+  rw [h10]
+  exact k_eff_asymptotic_ceiling 0.1 (by norm_num)
 
 /-! ## K3 and K4 — ported from RATCHET.Core.EffectiveConstraints
 

@@ -53,6 +53,10 @@ structure.
 The recognition claim at Level 6 stands for karma and for the surviving
 inter-agent grace; the universal-operator reading of grace is retracted with
 F-11.
+
+Promotion note: `grace_non_trivial` was a `True` stub; it now carries the
+honest cons-decomposition grace ⟨g :: gs⟩ = P_G g + grace ⟨gs⟩ via the new
+`grace_cons` unfold lemma.
 -/
 
 import CoherenceRatchet.Cosmology.TSVF
@@ -219,19 +223,27 @@ theorem grace_empty :
   unfold grace
   simp
 
+/-- The cons-unfold of the grace fold: with one more contributing agent,
+    grace gains exactly that agent's goal-projector as a summand.
+    Proved by routing the `foldl (· + ·) 0` through `List.sum`. -/
+theorem grace_cons (g : GoalState H) (gs : List (GoalState H)) :
+    grace (H := H) ⟨g :: gs⟩ = P_G g + grace ⟨gs⟩ := by
+  unfold grace
+  simp only [List.map_cons, ← List.sum_eq_foldl, List.sum_cons]
+
 /-- THE GRACE THEOREM, re-grounded. An agent surrounded by other A3+
     goal-holders has a non-trivial grace component: the inter-agent
     boundary conditions it receives. The universal-operator form of this
     claim is retracted (F-11); this is the surviving local/inter-agent form.
     Structural statement — the grace operator is a genuine sum of per-agent
-    projectors, non-zero whenever at least one other agent contributes a
-    goal-state. -/
+    projectors: any non-empty contributor list decomposes as the head
+    agent's goal-projector plus the grace of the rest (`grace_cons`).
+    Formerly a `True` stub; now carries the honest decomposition. The
+    universal component (ii) is the F-11 no-go; it is NOT asserted. -/
 theorem grace_non_trivial
-    (G_agent : GoalState H) (others : OtherAgents H) :
-    -- grace is the inter-agent component (i): a sum of the other agents'
-    -- goal-projectors. Non-trivial exactly when `others.goals` is non-empty.
-    -- The universal component (ii) is the F-11 no-go; it is NOT asserted.
-    True := by trivial
+    (g : GoalState H) (gs : List (GoalState H)) :
+    grace (H := H) ⟨g :: gs⟩ = P_G g + grace ⟨gs⟩ :=
+  grace_cons g gs
 
 /-- The agent's present amplitude decomposed into karma and the SURVIVING
     grace component.
