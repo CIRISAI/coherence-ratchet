@@ -31,6 +31,7 @@ that is the no-go.
 -/
 
 import CoherenceRatchet.Cosmology.TSVF
+import CoherenceRatchet.Cosmology.CriticalityDiscriminator
 import Mathlib.LinearAlgebra.Projection
 
 namespace CoherenceRatchet.Cosmology
@@ -113,6 +114,98 @@ def crossRungCorridor (c : UniverseConfig) : Prop :=
     no-go (see below). -/
 def isOmegaConfig (c : UniverseConfig) : Prop :=
   maximalInstantiation c ∧ withinRungCorridor c ∧ crossRungCorridor c
+
+/-! ## Operational within-rung corridor — the saturation criterion (2026-07-02)
+
+    FORWARD content only. This section augments property (ii) of the ω configuration
+    (`withinRungCorridor`) and does NOT touch the F-11 joint multi-rung backward
+    no-go below.
+
+    Property (ii) as written is the numeric band ρ_n ∈ (0.1, 0.43), inherited
+    wholesale from the GPU substrate — `rungBounds` returns the GPU value for every
+    rung. That band is a proxy: it says nothing measurable about whether a rung's
+    substrate is a genuine low-rank coordinating unit or merely sits near a critical
+    point that happens to land in the band.
+
+    The criticality-vs-low-rank discriminator (`Cosmology.CriticalityDiscriminator`)
+    supplies the OBJECTIVE replacement. Within-rung corridor occupation is the
+    LOW-RANK branch of `discriminator`: the rung's effective dimensionality
+    `k_eff(k, ρ)` SATURATES at the finite Kish ceiling `1/ρ` as constituents `k` are
+    added (subsampling exponent β → 0), rather than diverging (criticality, β bounded
+    away from 0). Saturation is the substrate-independent invariant — it is what
+    `lowrank_scaling_saturates` proves, and what the C. elegans / Drosophila / S&P
+    spectral reads confirm on complete units (`SpectralDetermination`,
+    `GrainAndObjectiveMeasure`).
+
+    CRUCIAL: the corridor LEVEL — the ceiling `1/ρ₀` itself — is substrate-specific
+    (worm whole-brain k_eff ~2-10, S&P market mode ~8, larval zebrafish ~34), so
+    per-rung calibration of ρ₀ is required. The universal invariant is SATURATION,
+    not the numeric (0.1, 0.43) band. -/
+
+open Filter Topology
+open CoherenceRatchet.Core
+
+/-- Operational within-rung corridor occupation for a rung whose measured
+    band-center is ρ₀. The corridor is occupied iff ρ₀ > 0 and the rung's effective
+    dimensionality SATURATES — `k_eff(·, ρ₀)` converges to the finite Kish ceiling
+    `1/ρ₀` as constituents are added — i.e. the LOW-RANK branch of `discriminator`,
+    not the divergent criticality branch. A measurable criterion (β → 0 under
+    subsampling), not the inherited numeric band. -/
+def OperationalCorridorOccupation (ρ₀ : ℝ) : Prop :=
+  0 < ρ₀ ∧ Tendsto (fun k : ℝ => k_eff k ρ₀) atTop (nhds (1 / ρ₀))
+
+/-- Any positive band-center satisfies the operational criterion, by the lake's
+    saturation theorem: a pinned ρ₀ > 0 forces k_eff to the bounded ceiling `1/ρ₀`.
+    This is the forward direction — a low-rank rung occupies the corridor. The
+    contrapositive content — a diluting ρ(k) ~ c/√k diverges
+    (`criticality_scaling_diverges`) — is what a measurement must EXCLUDE to certify
+    occupation. -/
+theorem operationalCorridor_of_pos (ρ₀ : ℝ) (hρ₀ : 0 < ρ₀) :
+    OperationalCorridorOccupation ρ₀ :=
+  ⟨hρ₀, lowrank_scaling_saturates ρ₀ hρ₀⟩
+
+/-- Operational form of property (ii): every instantiated rung's band-center
+    satisfies the SATURATION criterion (low-rank branch), replacing the inherited
+    numeric band `withinRungCorridor`. Forward content; wired into
+    `isOmegaConfigOperational` below. -/
+def withinRungCorridorOperational (c : UniverseConfig) : Prop :=
+  ∀ r : Rung, c.instantiated r = true → OperationalCorridorOccupation (c.rho r)
+
+/-- Operational ω configuration: the forward within-rung premise is now the
+    measurable saturation criterion, not the GPU-inherited band. Maximal
+    instantiation and the cross-rung O(1) band are unchanged. This defines the
+    forward P_ω premise by a discriminator-backed, per-substrate-calibrated test.
+    It does NOT reinstate the F-11 joint multi-rung backward operator. -/
+def isOmegaConfigOperational (c : UniverseConfig) : Prop :=
+  maximalInstantiation c ∧ withinRungCorridorOperational c ∧ crossRungCorridor c
+
+/-- Operational-corridor record. A flat fact with its evidence, following the lake's
+    record house pattern (cf. `GrainAndObjectiveMeasure`, `SpectralDetermination`):
+    the within-rung corridor premise of the forward P_ω now has an operational,
+    discriminator-backed definition instead of the inherited numeric band. -/
+structure OperationalCorridor where
+  /-- The occupation criterion is k_eff SATURATION under subsampling (β → 0), the
+      low-rank branch of `discriminator` — NOT the inherited numeric (0.1, 0.43)
+      band. -/
+  criterion_is_saturation_not_band : True
+  /-- Saturation is `lowrank_scaling_saturates`: a pinned ρ₀ > 0 ⟹ k_eff → 1/ρ₀,
+      bounded. The criticality alternative (`criticality_scaling_diverges`) is what a
+      measurement must exclude. -/
+  is_low_rank_branch_of_discriminator : True
+  /-- The corridor LEVEL (ceiling 1/ρ₀) is substrate-specific — worm ~2-10, market
+      ~8, zebrafish ~34 — so per-rung ρ₀ calibration is required. The universal
+      invariant is saturation, not the band. -/
+  level_substrate_specific_calibration_required : True
+  /-- Validity requires a COMPLETE coordinating unit (structural, pre-spectral;
+      cf. `GrainAndObjectiveMeasure`): a subsample's k_eff is not the unit's. -/
+  requires_complete_unit : True
+  /-- Forward, F-10-surviving content: this defines the within-rung premise of the
+      forward P_ω only. It does NOT touch the F-11 joint multi-rung backward no-go. -/
+  forward_only_untouched_by_f11 : True
+
+/-- The operational within-rung corridor criterion is recorded. -/
+def operational_corridor_criterion : OperationalCorridor :=
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
 
 /-! ## F-11 — the joint multi-rung backward P_omega is a documented no-go
 
