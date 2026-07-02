@@ -390,11 +390,14 @@ structure GrainAndObjectiveMeasure where
       CV α≈1.5 steep), so the decisive complete-vertebrate-unit test CONFIRMS rather
       than falsifies. See `gate0_zebrafish_complete_vertebrate_low_rank`. -/
   falsification_path_complete_unit_no_saturation : True
-  /-- Controls: (i) DISCHARGED for ABIDE fMRI — real region k_eff (median 8.0) is
-      4.3× below an averaging null (200 independent AR(1) region signals matched to
-      per-region autocorrelation+variance, k_eff≈35), 139/139 subjects below the
+  /-- Controls, BOTH now discharged: (i) ABIDE fMRI — real region k_eff (median 8.0)
+      is 4.3× below an averaging null (200 independent AR(1) region signals matched
+      to per-region autocorrelation+variance, k_eff≈35), 139/139 subjects below the
       null: genuine cross-region coordination, not a coarse-graining artifact.
-      (ii) still open: "complete" is a matter of degree (S&P-100 ⊂ full market). -/
+      (ii) S&P completeness — extending 100→486 stocks (~the full S&P 500), PR still
+      saturates (plateaus at k_eff≈11 from N'=50, β≈0.04); the S&P-100 read was not a
+      small-N artifact, the whole market is low-rank (1 market mode + ~10 sector
+      modes). -/
   owed_controls_averaging_null_and_full_completeness : True
 
 /-- The grain qualification is recorded: the objective measure is complete-unit

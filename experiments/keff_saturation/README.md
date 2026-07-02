@@ -152,7 +152,7 @@ null **35.3** — real is **4.3× lower** (CI [3.96, 4.67]), **139/139** subject
 below the null. Holding N=200 fixed, independent regions give k_eff≈35, so the grain
 does not force low k_eff; the real brain's collapse to ~8 is genuine cross-region
 coordination (67% strictly in the (2.3,10) corridor). Not an averaging artifact.
-Still owed: "complete" is a matter of degree (S&P-100 ⊂ full market).
+**S&P completeness — DISCHARGED**: extending 100→486 stocks (~full S&P 500), PR still saturates (plateaus at k_eff≈11 from N'=50, β≈0.04) — the S&P-100 read was not a small-N artifact; the whole market is low-rank (`finance_fullmarket.py`).
 
 Scripts: `spectral_test.py` (C. elegans), `spectral_drosophila.py`,
 `spectral_finance.py` (+ `finance_dynamics.py`: rolling k_eff predicts forward risk
