@@ -1,0 +1,292 @@
+{
+ "dataset": "ZAPBench whole-brain zebrafish (Immer 2025); mechanism test",
+ "driver": "stimuli_features [7879,26] (experimental stimulus regressors); driver_dim = PR of active-feature covariance per condition. CAVEAT: coarse parameters, lower bound on perceptual richness.",
+ "readout": "neural k_eff = noise-free block-CV participation ratio (full N)",
+ "conditions": [
+  {
+   "cond_idx": 0,
+   "name": "gain",
+   "frames": [
+    1,
+    648
+   ],
+   "T": 647,
+   "n_active_feats": 1,
+   "driver_dim": 1.0,
+   "spontaneous": false,
+   "neural_PR_fullN": 11.592093592510757,
+   "neural_topeigs": [
+    18329.58048997983,
+    5693.462975947375,
+    4431.503220278552,
+    4227.9806475453615,
+    4055.5259124274885,
+    2808.3945408521004,
+    1879.1936082594016,
+    1396.72599228044
+   ],
+   "noise_free_keff": 7.574134275402832,
+   "n_cv_pos": 153,
+   "alpha": 1.9077782361139453,
+   "stim_locked_var_frac": 0.1458675098178096,
+   "residual_PR_fullN": 15.706959855348906,
+   "residual_noise_free_keff": 9.517850113722076
+  },
+  {
+   "cond_idx": 1,
+   "name": "dots",
+   "frames": [
+    650,
+    2421
+   ],
+   "T": 1771,
+   "n_active_feats": 1,
+   "driver_dim": 1.0,
+   "spontaneous": false,
+   "neural_PR_fullN": 46.641235752525525,
+   "neural_topeigs": [
+    5230.581894229878,
+    4754.982670144424,
+    4624.110359853776,
+    3443.032482696155,
+    2148.60904377534,
+    1902.886821755553,
+    1413.2492187088117,
+    1386.934094738181
+   ],
+   "noise_free_keff": 17.361304620278716,
+   "n_cv_pos": 742,
+   "alpha": 1.4957305725254977,
+   "stim_locked_var_frac": 0.0062150470901138465,
+   "residual_PR_fullN": 46.49119826796551,
+   "residual_noise_free_keff": 17.876358225574542
+  },
+  {
+   "cond_idx": 2,
+   "name": "flash",
+   "frames": [
+    2423,
+    3077
+   ],
+   "T": 654,
+   "n_active_feats": 1,
+   "driver_dim": 1.0,
+   "spontaneous": false,
+   "neural_PR_fullN": 25.752218275007472,
+   "neural_topeigs": [
+    7986.8172737929945,
+    6458.065090943915,
+    5000.709677594493,
+    4871.143688158538,
+    4191.881294972747,
+    3081.3608868031115,
+    1828.8034650056366,
+    1633.9104071239094
+   ],
+   "noise_free_keff": 11.062392469486378,
+   "n_cv_pos": 200,
+   "alpha": 1.8477276116434396,
+   "stim_locked_var_frac": 0.09997548408000055,
+   "residual_PR_fullN": 29.129059421540294,
+   "residual_noise_free_keff": 11.705545058896142
+  },
+  {
+   "cond_idx": 3,
+   "name": "taxis",
+   "frames": [
+    3079,
+    3734
+   ],
+   "T": 655,
+   "n_active_feats": 2,
+   "driver_dim": 1.9930924661965768,
+   "spontaneous": false,
+   "neural_PR_fullN": 29.92295016329329,
+   "neural_topeigs": [
+    7077.4853817907115,
+    6092.448265719928,
+    5122.967553677921,
+    3681.9548359373616,
+    3561.4187610311233,
+    2793.707847678373,
+    2332.8422260163516,
+    1881.225212931116
+   ],
+   "noise_free_keff": 10.926707350213864,
+   "n_cv_pos": 233,
+   "alpha": 1.79055462753137,
+   "stim_locked_var_frac": 0.0837695098020186,
+   "residual_PR_fullN": 29.537501578672455,
+   "residual_noise_free_keff": 11.280196650628948
+  },
+  {
+   "cond_idx": 4,
+   "name": "turning",
+   "frames": [
+    3736,
+    5046
+   ],
+   "T": 1310,
+   "n_active_feats": 3,
+   "driver_dim": 2.0023001261179485,
+   "spontaneous": false,
+   "neural_PR_fullN": 18.43739274101644,
+   "neural_topeigs": [
+    12695.88980180044,
+    7031.879328779095,
+    4517.052677433409,
+    4353.150506316772,
+    2428.8227595207873,
+    2197.4826852319247,
+    1708.5386399250074,
+    1610.7351114979651
+   ],
+   "noise_free_keff": 5.8797850242663925,
+   "n_cv_pos": 420,
+   "alpha": 1.660314811975486,
+   "stim_locked_var_frac": 0.2497787789180211,
+   "residual_PR_fullN": 33.073915451351866,
+   "residual_noise_free_keff": 11.67161226568163
+  },
+  {
+   "cond_idx": 5,
+   "name": "position",
+   "frames": [
+    5048,
+    5637
+   ],
+   "T": 589,
+   "n_active_feats": 4,
+   "driver_dim": 1.3516341203100328,
+   "spontaneous": false,
+   "neural_PR_fullN": 28.662048950583763,
+   "neural_topeigs": [
+    7438.580487389521,
+    6616.719670519826,
+    5829.116590496267,
+    3681.1759540850867,
+    3458.734789680673,
+    2069.511902288314,
+    1834.2056325227973,
+    1469.3460928855616
+   ],
+   "noise_free_keff": 10.060260439399658,
+   "n_cv_pos": 156,
+   "alpha": 1.7955474894648926,
+   "stim_locked_var_frac": 0.06418293687185843,
+   "residual_PR_fullN": 27.947563287660735,
+   "residual_noise_free_keff": 12.539176548488799
+  },
+  {
+   "cond_idx": 6,
+   "name": "cond6",
+   "frames": [
+    5639,
+    6622
+   ],
+   "T": 983,
+   "n_active_feats": 0,
+   "driver_dim": 0.0,
+   "spontaneous": true,
+   "neural_PR_fullN": 17.3898782712269,
+   "neural_topeigs": [
+    14002.608794339121,
+    6002.3940989942075,
+    5588.295756188107,
+    3229.1044909564866,
+    2300.9657732654123,
+    2009.1048799580742,
+    1508.1682911221149,
+    1162.8748000961282
+   ],
+   "noise_free_keff": 8.637172982239937,
+   "n_cv_pos": 284,
+   "alpha": 1.641953416253902,
+   "stim_locked_var_frac": -1.3760882048357209e-18,
+   "residual_PR_fullN": 17.38987827122691,
+   "residual_noise_free_keff": 8.637172982299365
+  },
+  {
+   "cond_idx": 7,
+   "name": "cond7",
+   "frames": [
+    6624,
+    7278
+   ],
+   "T": 654,
+   "n_active_feats": 1,
+   "driver_dim": 1.0,
+   "spontaneous": false,
+   "neural_PR_fullN": 18.93278784605545,
+   "neural_topeigs": [
+    12077.104204820593,
+    6202.662832094506,
+    5401.0216093761865,
+    4937.964680839868,
+    3539.9647342379367,
+    2313.2339345030814,
+    1864.3364448488812,
+    1498.411423989375
+   ],
+   "noise_free_keff": 8.849247477804917,
+   "n_cv_pos": 229,
+   "alpha": 1.7530924993799157,
+   "stim_locked_var_frac": 0.13716223604976113,
+   "residual_PR_fullN": 26.14302604711287,
+   "residual_noise_free_keff": 8.11661210478782
+  },
+  {
+   "cond_idx": 8,
+   "name": "cond8",
+   "frames": [
+    7280,
+    7878
+   ],
+   "T": 598,
+   "n_active_feats": 0,
+   "driver_dim": 0.0,
+   "spontaneous": true,
+   "neural_PR_fullN": 14.893974905941125,
+   "neural_topeigs": [
+    15283.000145090718,
+    5904.5962462167845,
+    5863.252693651817,
+    4249.745060305563,
+    3044.4904227446887,
+    1704.475341562164,
+    1390.8287882105706,
+    1234.6232570026343
+   ],
+   "noise_free_keff": 8.394540715466569,
+   "n_cv_pos": 163,
+   "alpha": 1.7486255276782587,
+   "stim_locked_var_frac": 3.8801464495755074e-18,
+   "residual_PR_fullN": 14.893974905941125,
+   "residual_noise_free_keff": 8.394540715483949
+  }
+ ],
+ "status": "done",
+ "analysis": {
+  "pearson_keff_vs_driverdim": -0.009208006621673032,
+  "pearson_keff_vs_nfeat": -0.10397460450020646,
+  "pearson_neuralPR_vs_driverdim": 0.29180073091830455,
+  "driver_dim_range": [
+   0.0,
+   2.0023001261179485
+  ],
+  "neural_keff_range": [
+   5.8797850242663925,
+   17.361304620278716
+  ],
+  "stimulus_keff_mean": 10.244833093836107,
+  "spontaneous_keff_mean": 8.515856848853254,
+  "spontaneous_conditions": [
+   "cond6",
+   "cond8"
+  ],
+  "keff_over_driverdim_ratio": 7.574134275402832,
+  "mean_stim_locked_frac": 0.08743905584773147
+ },
+ "verdict": "NOT driver-bound (near-tautological / intrinsic): neural k_eff does NOT track the measured shared-driver dimensionality.",
+ "runtime_s": 350.4
+}
