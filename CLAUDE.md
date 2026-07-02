@@ -277,11 +277,22 @@ coherence-ratchet/
 └── experiments/                             # Empirical protocols (placeholder)
 ```
 
+## Gate 0 — done (2026-07-02)
+
+The criticality-vs-low-rank discriminator is proved (`Cosmology/CriticalityDiscriminator.lean`) and the branch is read empirically across substrates: **the corridor is genuine low-rank structure (k_eff SATURATES), not criticality**, confirmed at *complete* coordinating units — C. elegans whole-brain, Drosophila compass, S&P market, human fMRI, TCGA, and the decisive complete larval-zebrafish brain (all 71,721 neurons). The objective measure is **saturation, not level** (the level is substrate-specific; the universal invariant is boundedness). Mouse-V1 cortex is high-dimensional but a wrong-grain subsample; the cosmic web is power-law but untestable at the universal scale. A **second axis** (bound vs coordinating = broken detailed balance = the γM term) is tooled and positive-controlled on macaque motor cortex. Full record: `experiments/keff_saturation/README.md`; formal records in `CriticalityDiscriminator.lean` (`SpectralDetermination`, `GrainAndObjectiveMeasure`, `CosmologicalGrainLimit`) and the operational forward-P_ω corridor in `CorridorProjector.lean` (`OperationalCorridorOccupation`).
+
+## AI-safety application: k_eff → Neff → deception-resistance
+
+Gate 0 validates the metric the CIRIS safety program runs on. The *Constrained Reasoning Chains* study measures **Neff** — the participation ratio of the reasoning-constraint feature covariance, i.e. `k_eff` of the constraint system — and argues a coherent lie must be simultaneously consistent across every *independent* constraint axis (exponentially expensive: deception ≈ O(2^m) vs truth ≈ O(n)), so high effective constraint dimensionality **computationally starves deception**. H3ERE (semantic conscience pipeline) contributes Neff ≈ 7.1; **CEG** (the CIRIS Epistemic Grammar — a conformance-frozen cryptographic-attestation substrate, *orthogonal* to semantic reasoning) + CIRISServer/lens-core push the joint measure to ≈ 9. Because Gate 0 showed `k_eff` is a real saturating object (not a tautology, not criticality), Neff-as-alignment-metric is validated; the natural-substrate saturation ceiling (~11) resonates with the study's intrinsic manifold rank (11).
+
+**Honest load-bearing gap:** Neff is measured on *benign* traces, an **upper bound** on the adversarial value — a capable optimizer collapses effective dimensionality by exploiting the shared subspace (ρ→1, k_eff→1, rigidity pole). The decisive open test is **adversarial-Neff** (`experiments/adversarial_neff/SPEC.md`): does ≈9 survive an adaptive attacker? The strongest guarantee is the attack-invariant **substrate (CEG) floor**. Safety here is a *maintained* non-equilibrium (conscience runs per-trace), consistent with the second axis — kept, not achieved.
+
 ## Open formal steps, ordered by urgency
 
+0. **Adversarial-Neff (safety-program priority)** — measure Neff/k_eff under an adaptive attacker, not just benign traces; report the substrate (CEG) floor. Spec: `experiments/adversarial_neff/SPEC.md`. Converts "9 on friendly traffic" into a real deception-probability bound.
 1. **P_ω as an operator (Piece 7)** is the bottleneck. Without it, D1 is structural-argument-not-derivation. Closes F-12 partially.
 2. Corridor reproducibility at the quantum substrate (Conjecture A / Exp 5).
-3. Per-substrate corridor calibration (per-rung ρ_lower, ρ_upper bounds).
+3. Per-substrate corridor calibration (per-rung ρ_lower, ρ_upper bounds) — **partially done by Gate 0** (levels measured across several substrates; systematic per-rung calibration remains).
 4. Substrate-readiness-wait-time modeling (cross-rung τ evolution; explains the pre-Cambrian decelerations from first principles).
 5. Controlled cascade comparison at sociotechnical scale (Exp 4 generalized).
 6. Audit-pressure ρ-drift measurement (Exp 6 / Conjecture C / F-10).
@@ -293,7 +304,9 @@ coherence-ratchet/
 ../RATCHET/                     # Engineering tiers (L0-L4)
 ../CIRISOssicle/                # Single-GPU strain gauge
 ../CIRISArray/                  # Multi-GPU strain gauge array
-../CIRISLensCore/               # Science module (cohort scoring)
+../CIRISServer/                 # Federation server + lens-core scoring; CEG (CIRIS Epistemic Grammar) substrate
+../CIRISConstitution/           # Unified CEG+Accord constitution (Book IX coherence math F = k_eff·λ·σ)
+../CIRIS-RED/                   # Constrained Reasoning Chains study (Neff / deception-resistance telemetry)
 ```
 
 ## Style discipline

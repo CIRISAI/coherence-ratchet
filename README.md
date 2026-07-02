@@ -26,6 +26,39 @@ k_eff(k, ρ) = k / (1 + ρ(k-1))
 
 A **second axis** surfaced. Saturation says *coordinated structure exists*; it cannot say whether that structure is *actively maintained* (the `γM` term) or merely *bound* by a conservative force (like gravity). The distinguishing signature is thermodynamic: an actively-coordinating system is a non-equilibrium steady state that **breaks detailed balance** (a directed cycle / entropy production in its collective modes); a bound one is time-reversible. Validated positive control: **macaque motor cortex** during reaching is low-rank *and* breaks detailed balance strongly. On exoplanets this second axis reduces to the established atmospheric-disequilibrium biosignature. Status: the saturation axis is solid; the detailed-balance axis has a validated estimator and a clean real positive control, with a real *negative* control still pending (the ideal data — a fine-cadence bound-galaxy simulation — is behind a free login). Full method, per-substrate results, honest caveats, and every script live in [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md).
 
+## AI-safety application: effective dimensionality as deception-resistance
+
+The same measured quantity is the load-bearing metric of the CIRIS alignment
+program. The [*Constrained Reasoning Chains*](../CIRIS-RED/constrained_reasoning_chains.txt)
+study measures the effective dimensionality **Neff** (the participation ratio of
+the reasoning-constraint feature covariance — i.e. `k_eff` of the constraint
+system) of production reasoning traces, and argues that a *coherent lie must be
+simultaneously consistent across every independent constraint axis*, which is
+exponentially expensive (deception ≈ O(2^m) vs. truth ≈ O(n)). So **high effective
+constraint dimensionality computationally starves deception.** The H3ERE semantic
+conscience pipeline contributes Neff ≈ 7.1; the **CEG** substrate (the CIRIS
+Epistemic Grammar — a conformance-frozen cryptographic-attestation modality,
+*orthogonal* to semantic reasoning) plus CIRISServer scoring push the joint measure
+to ≈ 9. Because Gate 0 validated that `k_eff` is a **real, saturating structural
+object** (not a tautology, not criticality), Neff-as-alignment-metric rests on a
+validated foundation rather than a definition — and the natural-substrate
+saturation ceiling (~11) resonates with the study's intrinsic manifold rank (11).
+
+**What is *not* yet established, honestly:** Neff is measured on *benign* traces, so
+it is an **upper bound** on the value under adversarial optimization — a capable
+optimizer collapses effective dimensionality by finding the shared low-dimensional
+subspace (ρ→1, k_eff→1, the rigidity pole). Whether the ≈9 survives an *adaptive
+attacker* is the decisive open test, spec'd in
+[`experiments/adversarial_neff/SPEC.md`](experiments/adversarial_neff/SPEC.md); the
+strongest defensible guarantee is the **substrate (CEG) floor**, which is
+attack-invariant because you cannot semantically-reason past a frozen cryptographic
+attestation. At Neff ≈ 9 the deception tax is ~1–2 orders of magnitude — sufficient
+against current models, thin against the superintelligent optimizer the architecture
+targets — so the goal is (a) confirm Neff holds under attack, and (b) push it toward
+and past the manifold rank. Safety here is a *maintained* non-equilibrium (the
+conscience runs per-trace), consistent with the detailed-balance axis above: it is
+kept, not achieved.
+
 ## The ten pieces
 
 | # | Piece | Lean file |
