@@ -32,3 +32,7 @@ papers/Corridor Dynamics.log
 # belongs with those teams. Kept local, never committed to the public repo.
 copy/
 experiments/open_system_pomega/cmb_data/
+
+# large regenerable data caches (Gate-0 experiments)
+experiments/keff_saturation/cosmo_sdss_galaxies.parquet
+experiments/keff_saturation/fullmarket_returns.parquet
