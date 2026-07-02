@@ -324,10 +324,13 @@ axiom framework_asserts_6 : Claim6
     ALLEN OWED-TEST, RESOLVED — but with a grain finding, not the rescue. The owed
     k_eff-of-covariance re-run on Allen was run at the mechanism level (raw 2p dF/F,
     21 sessions; cross-validated, block-interleaved). It does NOT rescue the Allen
-    point into low-rank: cross-validated intrinsic dimensionality is large and grows
-    with N (median 70 CV+ dims, Stringer no-saturation). But this does NOT convert
-    data_allen into a `Falsifier1` witness either, because the mouse-V1 2p field of
-    view is a sparse subsample (~200 of ~1e8 neurons) of a sensory representational
+    point into low-rank: the raw k_eff (44-59) is noise-inflated, but the CV
+    eigenspectrum is a Stringer power law (α≈1.0 at the largest-N sessions),
+    reproducible dims grow with N, β high — genuinely high-dimensional. (The
+    noise-free k_eff LEVEL is only ~5, which is why the participation-ratio level
+    alone MISLEADS here and the saturation/α reads carry the verdict.) But this does
+    NOT convert data_allen into a `Falsifier1` witness either, because the mouse-V1
+    2p field of view is a sparse subsample (~200 of ~1e8 neurons) of a sensory representational
     patch — NOT a complete coordinating unit, so its k_eff is not the system's.
     Per `Cosmology.CriticalityDiscriminator.cortex_grain_and_objective_measure`, the
     objective valid-test criterion is k_eff SATURATION on a COMPLETE unit (β→0), a

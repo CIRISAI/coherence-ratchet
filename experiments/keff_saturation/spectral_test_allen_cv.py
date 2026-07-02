@@ -255,6 +255,15 @@ def analyse(results):
     alpha_med = (float(np.median(alp[np.isfinite(alp)]))
                  if np.isfinite(alp).any() else float("nan"))
 
+    # matched-N pure-noise null: the level the intrinsic-dim readouts reach with
+    # NO cross-neuron structure (parallel-analysis false-positive floor).
+    Nmed, Tmed = int(np.median(N)), int(np.median([r["T"] for r in ok]))
+    null = null_baseline(Nmed, Tmed, np.random.default_rng(1))
+    print(f"\n[null baseline @ N={Nmed}, pure AR noise] "
+          f"n_cv_pos={null['n_cv_pos']}, noise_free_keff="
+          f"{null['noise_free_keff']:.1f}, n_above_surr={null['n_above_surr']}, "
+          f"alpha={null['alpha']:.3f}")
+
     print("\n" + "=" * 70)
     print(f"{len(ok)} sessions. N [{N.min()}, {N.max()}] median {int(np.median(N))}")
     print(f"(a) CV-positive intrinsic dims : median {int(np.median(ncv))}, "
@@ -270,10 +279,12 @@ def analyse(results):
     keff_med = float(np.median(nfk))
     coord_med = float(np.median(nab))
     stringer = (alo <= 1.15 and ahi >= 0.90)
-    if keff_med <= 12:
+    low_rank = keff_med <= max(12.0, 1.5 * null["noise_free_keff"])
+    if low_rank:
         verdict = "LOW-RANK"
-        note = ("noise-removed effective dimension at/under the ~10 ceiling: "
-                "the covariance-observable rescue HOLDS")
+        note = ("noise-removed effective dimension at/under the ~10 ceiling "
+                "(and not above the pure-noise null): the covariance-observable "
+                "rescue HOLDS")
     elif coord_med >= 2 or stringer:
         verdict = "HIGH-DIM COORDINATED (corridor boundary)"
         note = (f"noise-removed k_eff {keff_med:.1f} >> 10 with a power-law "
@@ -306,6 +317,7 @@ def analyse(results):
                  n_above_surr_ci=[bm, blo, bhi],
                  alpha_median=alpha_med, alpha_ci=[am, alo, ahi],
                  stringer_match=bool(stringer),
+                 null_baseline=null, null_N=Nmed,
                  verdict=verdict, verdict_note=note)
     with open(OUT, "w") as f:
         json.dump(dict(substrate="Allen mouse visual cortex (2p dF/F, "
@@ -345,6 +357,12 @@ def write_summary(s):
         f"**{s['alpha_median']:.3f}**, 95% CI [{s['alpha_ci'][1]:.3f}, "
         f"{s['alpha_ci'][2]:.3f}]. Stringer mouse V1 ~ 1.04; "
         f"match={s['stringer_match']}.",
+        f"- **pure-noise null @ N={s['null_N']}** (calibration, synthetic): "
+        f"n_cv_pos={s['null_baseline']['n_cv_pos']}, noise_free_keff="
+        f"{s['null_baseline']['noise_free_keff']:.1f}, "
+        f"n_above_surr={s['null_baseline']['n_above_surr']}, "
+        f"alpha={s['null_baseline']['alpha']:.3f}. Cortex readouts must clear "
+        f"this to count as structure beyond independent autocorrelation.",
         "",
         f"## VERDICT: {s['verdict']}",
         "",

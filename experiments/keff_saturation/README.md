@@ -102,16 +102,22 @@ Same spectral discriminator, β ruler recalibrated at each substrate's N. Verdic
 | TCGA transcriptome | gene set × samples | 1500 | small, size-indep | ~0.04 | **low-rank** (agent-run) |
 | iCARE EEG | 19 scalp electrodes | 19 | 3 | 0.15 | low-rank (weak: volume conduction) |
 | Drosophila PFL3 | 2 bulk ROIs only | 2 | — | — | BLOCKED (not a population) |
-| **mouse V1 2p** | **~200 of ~1e8 neurons (subsample of a sensory patch)** | ≤240 | **CV+ dims 3–152, median 70, grows with N** | high | **NOT low-rank — wrong grain** |
+| **mouse V1 2p** | **~200 of ~1e8 neurons (subsample of a sensory patch)** | ≤240 | **CV noise-free k_eff ~5 (level misleads); CV power law α≈1.0 (Stringer)** | β 0.83 | **high-dim / scale-free — NOT low-rank; wrong grain** |
 
 **The grain qualification (the real result).** Mouse V1 reads high-dimensional —
-cross-validated (block-interleaved, validated rank-3→3 / noise→0) intrinsic
-dimensionality grows with the number of neurons sampled (Stringer no-saturation),
-with ~0 dims above the per-neuron autocorrelation floor. But a 2p field of view is
-~0.001% of the brain — a sparse subsample of a *representational* patch, not a
-complete coordinating unit. It is excluded as the wrong grain **outcome-
-independently**: a subsample's k_eff is not the system's (a low-rank read there
-would have been rejected for the same reason).
+but note the subtlety, because it is itself the cleanest validation of the measure
+below. The *raw* k_eff (44–59) is noise-inflated; cross-validated (block-
+interleaved, validated rank-3→3 / noise→0) the noise-free k_eff is only ~5, which
+by **level** looks corridor-sized. Yet the CV eigenspectrum is a **power law with
+α ≈ 1.0** at the largest-N sessions (0.97, 1.06 — matching Stringer 2019 mouse-V1
+α≈1.04), reproducible dims grow with N, β=0.83. So the participation-ratio *level*
+misclassifies cortex as corridor; only *saturation/α* reads it correctly as scale-
+free. (Caveat: ~0 CV dims exceed the per-neuron autocorrelation floor, so cross-
+neuron coordination is weak; α is the stable readout, not a specific dim count.)
+And a 2p field of view is ~0.001% of the brain — a sparse subsample of a
+*representational* patch, not a complete coordinating unit. It is excluded as the
+wrong grain **outcome-independently**: a subsample's k_eff is not the system's (a
+low-rank read there would have been rejected for the same reason).
 
 **The objective measure** is therefore SATURATION, not level: does k_eff saturate
 (β→0) as constituents are added, *on a complete unit*? Level is grain-tunable;

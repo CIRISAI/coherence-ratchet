@@ -56,13 +56,23 @@ real content of this update.
 
   NOT low-rank, at an INCOMPLETE subsample: mouse V1 two-photon (~200 of ~1e8
   neurons, a sparse field-of-view of a sensory representational patch — NOT a
-  complete coordinating unit). Cross-validated (block-interleaved, validated
-  rank-3→3 / noise→0) intrinsic dimensionality is large and GROWS with N (CV+ dims
-  median 70, range 3-152 over 15 sessions — the Stringer no-saturation signature),
-  with ~0 dims above the per-neuron autocorrelation floor. Recorded below as a
-  SCOPE finding (`cortex_grain_and_objective_measure`), NOT a low-rank determination
-  and NOT a falsification — see that record for why the disqualification is
-  outcome-independent and what the objective, pre-spectral measure is. The earlier proxy reads were
+  complete coordinating unit). The RAW k_eff (up to 44-59, above the corridor
+  ceiling) is noise-inflated; after cross-validation (block-interleaved, validated
+  rank-3→3 / noise→0) the noise-free k_eff is only ~5 (session values 1, 4.1, 4.8,
+  6.9, 13.5), which by LEVEL alone looks corridor-sized. But the SATURATION reads
+  reveal the truth the level hides: the CV eigenspectrum is a power law with
+  exponent α ≈ 1.0 at the best-powered (largest-N) sessions (0.97, 1.06 — matching
+  Stringer 2019 mouse-V1 α≈1.04; smaller sessions lack the dims to fit α),
+  reproducible dims grow with N, and β is high (0.83). So cortex-at-neuron-grain is
+  genuinely HIGH-DIMENSIONAL / scale-free, NOT low-rank — a case where the
+  participation-ratio LEVEL (~5) MISLEADS and only saturation/α classifies it (a
+  live validation of "saturation not level"). Caveat: ~0 CV dims exceed the
+  per-neuron autocorrelation surrogate floor, so cross-neuron coordination above
+  single-neuron structure is weak; and the CV magnitude (n_cv_pos) is method- and
+  N-sensitive — α is the stable, interpretable readout, not a specific dim count.
+  Recorded below as a SCOPE finding (`cortex_grain_and_objective_measure`), NOT a
+  low-rank determination and NOT a falsification — see that record for why the
+  disqualification is outcome-independent and what the objective measure is. The earlier proxy reads were
 inconclusive: a log-log fit of band-center ρ* against k over the clean substrates
 is UNDERPOWERED (k spans ~1.7 decades; slope CI contains both 0 and -1/2) and
 flips with the LLM-outlier and TCGA k-axis conventions; the directly-measured
@@ -322,13 +332,17 @@ TWO CONTROLS this criterion still owes (open):
     owed controls (averaging-null; full-constituent completeness). -/
 structure GrainAndObjectiveMeasure where
   /-- The objective measure is SATURATION of k_eff under subsampling (β→0), the
-      low-rank branch of `discriminator` — NOT the level of k_eff. -/
+      low-rank branch of `discriminator` — NOT the level of k_eff. Validated by
+      cortex: its noise-free k_eff LEVEL is ~5 (looks corridor) yet its CV spectrum
+      is a Stringer power law α≈1.0 (β high) — the level misleads, saturation does
+      not. Participation ratio is a POOR discriminator for a power-law spectrum. -/
   measure_is_saturation_not_level : True
   /-- Validity requires a COMPLETE unit (all/most constituents of a bounded
       functionally-closed system, or a complete partition): structural, pre-spectral. -/
   completeness_is_structural_and_pre_spectral : True
-  /-- Mouse-V1 2p is a sparse subsample → high-dimensional (CV+ dims grow with N,
-      Stringer no-saturation) → excluded as wrong grain, OUTCOME-INDEPENDENTLY. -/
+  /-- Mouse-V1 2p is a sparse subsample → high-dimensional (CV power law α≈1.0,
+      Stringer; level-k_eff ~5 misleads) → excluded as wrong grain,
+      OUTCOME-INDEPENDENTLY, whatever the subsample's dimensionality reads. -/
   cortex_neuron_subsample_wrong_grain : True
   /-- The coordinating grain of a large brain is regions; fMRI at a complete
       ~200-region partition reads low-rank (corroborating, agent-run). -/
