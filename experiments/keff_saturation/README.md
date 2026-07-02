@@ -54,13 +54,30 @@ in C. elegans is LOW-RANK, not critical. Yay/nay at this substrate: NOVEL, not
 trivial** — by mechanism, calibrated, on raw data. This is the first decisive read
 (every proxy was inconclusive).
 
-**Scope, stated honestly.** This is ONE substrate. The universal claim needs the
-same spectral test on each substrate's raw data. C. elegans is decisive because
-its raw traces are in-tree; the template (`spectral_test.py`) runs on any
-neuron/unit × time matrix. Next: Drosophila CX (raw `.mat` exists in a worktree),
-then fMRI/Allen/TCGA from raw. The high-k engineered point (GPU, k≈2048) still
-extends the k-range for the proxy figure, but the spectral test is the stronger
-instrument and should lead.
+## SECOND substrate (2026-07-02): Drosophila EPG compass — `spectral_drosophila.py`
+
+Independent phylum, independent mechanism. Drosophila central-complex EPG
+(ellipsoid-body compass) neurons, Mussells Pires 2024 (60D05 NoLaser; raw
+background-subtracted fluorescence `bgsubF`, 32 EB-wedge ROIs, 20 flies × 9
+trials = 180 fly-trials). Same analysis core as `spectral_test.py`; the synthetic
+calibration is re-run **at N=32** because β's baseline drifts with N (at N=32 the
+low-rank r=3 control gives β≈0.12, power-law α=1.0 → 0.42, α=0.6 → 0.78, noise →
+0.99 — the hypotheses still separate cleanly).
+
+**Result: β = 0.122 ± 0.077, 95% CI [0.110, 0.133]** — statistically on top of the
+N=32 low-rank control and far below the criticality band — with **effective rank
+median 1 (range 0-2)**, the ring-attractor fingerprint (a heading bump on a 1-D
+ring is essentially rank ~1-2). Verdict: **LOW-RANK, not criticality**. The
+insect-compass read replicates the nematode whole-brain read at a mechanistically
+unrelated substrate. Regenerate: `python3 spectral_drosophila.py` (needs
+`h5py`; reads the v7.3 `Preproc_60D05.mat` in the v17_biology worktree).
+
+**Scope, stated honestly.** Now TWO substrates, both low-rank. The universal claim
+still needs the same spectral test on each remaining substrate's raw data; the
+template (`spectral_test.py`) runs on any unit × time matrix. Next: fMRI/Allen/
+TCGA and non-neural substrates from raw. The high-k engineered point (GPU, k≈2048)
+still extends the k-range for the proxy figure, but the spectral test is the
+stronger instrument and leads.
 
 **Estimator discipline.** Markers are the reported participation-ratio /
 empirical k_eff. The LLM point is shown hollow as a Kish 1/ρ* fallback (ρ*-only

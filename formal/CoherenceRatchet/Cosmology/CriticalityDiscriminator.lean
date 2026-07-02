@@ -42,7 +42,9 @@ hypothesis. The low-rank saturation branch is imported from the lake; the
 criticality divergence branch (`criticality_scaling_diverges`) is proved here.
 
 Empirical status (2026-07-02): the discriminator is proved AND the branch is now
-read at one substrate — DECISIVELY, low-rank. The earlier proxy reads were
+read at TWO independent substrates — DECISIVELY, low-rank at both (C. elegans
+whole-brain calcium; Drosophila EPG compass). See the two determination records
+at the foot of this file. The earlier proxy reads were
 inconclusive: a log-log fit of band-center ρ* against k over the clean substrates
 is UNDERPOWERED (k spans ~1.7 decades; slope CI contains both 0 and -1/2) and
 flips with the LLM-outlier and TCGA k-axis conventions; the directly-measured
@@ -216,8 +218,22 @@ structure SpectralDetermination where
 
 /-- Gate 0 is read at C. elegans: the low-rank determination record is inhabited.
     Low-rank (novel), not criticality (trivial) — by mechanism, calibrated, on raw
-    data. -/
+    data. β = 0.10 ± 0.02, effective rank 1-3 (Kato 2015, 12 worms, N ≤ 151). -/
 def gate0_c_elegans_low_rank : SpectralDetermination :=
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
+
+/-- SECOND substrate, independent phylum and mechanism: Drosophila EPG compass
+    (ring-attractor) neurons, Mussells Pires 2024 (60D05, 20 flies × 9 trials,
+    N = 32 EB-wedge ROIs). Same pipeline, calibrated at N=32 (where the low-rank
+    synthetic control gives β≈0.12, the power-law controls 0.42/0.78, noise 0.99).
+    Measured β = 0.122 ± 0.077 — 95% CI [0.110, 0.133], sitting on top of the
+    low-rank control and far below the criticality band — with effective rank
+    median 1 (range 0-2), the ring-attractor fingerprint. Low-rank, not
+    criticality. The insect-compass read replicates the nematode whole-brain read
+    at a mechanistically unrelated substrate.
+    (`experiments/keff_saturation/spectral_drosophila.py`,
+    `spectral_results_drosophila.json`.) -/
+def gate0_drosophila_epg_low_rank : SpectralDetermination :=
   ⟨trivial, trivial, trivial, trivial, trivial⟩
 
 end CoherenceRatchet.Cosmology
