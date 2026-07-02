@@ -1,16 +1,27 @@
 # k_eff saturation — the direct read of the Gate-0 discriminator
 
-**Question.** Is the corridor the known criticality/edge-of-chaos physics (a
-diluting critical correlation — "trivial"), or a genuine low-rank shared
-structure (a bounded effective rank — novel)?
+**Question.** Does a coordinating system's covariance spectrum fall on the
+**bounded / low-dimensional** side or the **criticality / scale-free** side? This
+is a *live, named debate on the same observable* — not a novel-vs-trivial choice.
+The low-dimensional-manifold reading (Cunningham–Yu; Gao–Ganguli; Pandarinath) and
+the criticality / edge-of-instability reading (Stringer et al. 2019's power-law
+spectrum; Morales–Di Santo–Muñoz 2021; Meshulam–Bialek 2019) read the *identical*
+covariance eigenspectrum in opposite ways, and **neither camp is "trivial"**
+(criticality-in-biology is a major research program). So the discriminator below
+does **not discover low-rank structure** — that literature is established — it
+**adjudicates which side a given system sits on**. The framework's actual
+contributions are narrower and honest: the *completeness / grain control* (testing
+on a complete unit, so the "you only sampled a patch" objection can't be raised),
+the completeness-fixed-before-spectrum discipline, and the second, thermodynamic
+axis (bound vs coordinating) — not the phenomenon.
 
 **The discriminator** (formalized and machine-checked in
 `formal/CoherenceRatchet/Cosmology/CriticalityDiscriminator.lean`):
 
-| hypothesis | band-center scaling | large-k limit of k_eff |
+| reading | band-center scaling | large-k limit of k_eff |
 |---|---|---|
-| low-rank (novel) | ρ* fixed at ρ₀ | k_eff → 1/ρ₀ — **bounded** (Kish ceiling) |
-| criticality (trivial) | ρ* ~ c/√k | k_eff → ∞ — **unbounded**, grows like √k |
+| bounded / low-dimensional | ρ* fixed at ρ₀ | k_eff → 1/ρ₀ — **bounded** (Kish ceiling) |
+| criticality / scale-free | ρ* ~ c/√k | k_eff → ∞ — **unbounded**, grows like √k |
 
 `keff_saturation.png` plots the **directly-measured** k_eff against system size
 k. This is more robust than the log-log ρ*-vs-k slope regression
@@ -35,10 +46,10 @@ whole-brain calcium (Kato 2015, 12 worms, up to 151 neurons — the one substrat
 with raw data in the main tree). The discriminator is the covariance **eigenvalue
 spectrum**:
 
-- LOW-RANK (novel): a few spikes above a flat noise bulk; effective rank small
-  and size-independent; PR **subsampling curve saturates** (exponent β≈0).
-- CRITICALITY (trivial): scale-free / power-law spectrum; PR grows as a power of
-  N (β≈0.3–0.8).
+- BOUNDED / LOW-DIMENSIONAL: a few spikes above a flat noise bulk; effective rank
+  small and size-independent; PR **subsampling curve saturates** (exponent β≈0).
+- CRITICALITY / SCALE-FREE: power-law spectrum; PR grows as a power of N
+  (β≈0.3–0.8). (A serious reading — Muñoz/Bialek — not a null hypothesis.)
 - NOISE (chaos): PR≈N (β≈1), zero spikes.
 
 **Calibrated against synthetic controls through the identical pipeline** (this is
@@ -50,9 +61,11 @@ separates the hypotheses cleanly at the real data's (N,T).
 band), effective rank 1–3 across all 12 worms** — statistically on top of the
 low-rank control and far from even the mildest criticality (α=1.0 → 0.25). Both
 readouts (subsampling saturation + spike count) agree: **whole-brain coordination
-in C. elegans is LOW-RANK, not critical. Yay/nay at this substrate: NOVEL, not
-trivial** — by mechanism, calibrated, on raw data. This is the first decisive read
-(every proxy was inconclusive).
+in C. elegans sits on the BOUNDED / LOW-DIMENSIONAL side of the debate, not the
+criticality side** — by mechanism, calibrated, on raw data. This is the first
+decisive read at this substrate (every proxy was inconclusive); it is a
+well-controlled data point *in* the live dimensionality debate, not a discovery of
+low-rank structure.
 
 ## SECOND substrate (2026-07-02): Drosophila EPG compass — `spectral_drosophila.py`
 

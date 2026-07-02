@@ -7,39 +7,50 @@ Cosmology.CriticalityDiscriminator — the formal core of the
 THE QUESTION. The corridor is an empirical band on the correlation ρ. Two rival
 readings of *why* a coordinating system sits in that band make OPPOSITE
 predictions about how the band-center ρ* scales with the system size k, and hence
-about the large-k limit of the effective dimensionality k_eff:
+about the large-k limit of the effective dimensionality k_eff. IMPORTANT FRAMING:
+this is a LIVE, NAMED debate in the literature on the *same observable* (the
+covariance eigenspectrum), NOT a novel-vs-trivial choice — the low-dimensional-
+manifold camp (Cunningham–Yu, Gao–Ganguli, Pandarinath) and the criticality /
+edge-of-instability camp (Stringer 2019's power-law spectrum; Morales–Di
+Santo–Muñoz 2021; Meshulam–Bialek 2019) read the identical spectrum oppositely.
+Neither reading is "trivial"; criticality-in-biology is a major research program.
+This discriminator does NOT discover low-rank structure — that literature is
+established — it ADJUDICATES which side a given system sits on. The framework's
+contribution is the completeness/grain control and the second (detailed-balance)
+axis, not the phenomenon.
 
-  • LOW-RANK (the framework's claim, and the non-trivial one).
-    The band-center is a genuine property of shared low-rank structure: ρ* does
+  • BOUNDED / LOW-DIMENSIONAL reading.
+    The band-center is a genuine property of shared bounded-rank structure: ρ* does
     NOT shrink as k grows — it is pinned at some constant ρ₀ > 0. Then
 
         k_eff(k, ρ₀) → 1/ρ₀      (SATURATES / BOUNDED).
 
     Effective dimensionality has a hard ceiling — the Kish ceiling — no matter how
     many nominal constituents k you add. "More constituents" is a non-solution to
-    coordination failure. This is the fingerprint of real shared structure.
-    (Already proved in the lake: `k_eff_asymptotic_ceiling`, reused below.)
+    coordination failure. (Already proved in the lake: `k_eff_asymptotic_ceiling`,
+    reused below.)
 
-  • CRITICALITY (the trivial alternative, to be ruled out).
-    The band is just the neighborhood of a critical point, where the correlation
-    length diverges and correlations decay as a power law. Then the band-center
-    dilutes with size, ρ*(k) ~ c/√k, and
+  • CRITICALITY / SCALE-FREE reading.
+    The band is the neighborhood of a critical point, where the correlation length
+    diverges and correlations decay as a power law. Then the band-center dilutes
+    with size, ρ*(k) ~ c/√k, and
 
         k_eff(k, c/√k) → +∞       (DIVERGES / UNBOUNDED).
 
-    There is no ceiling: effective dimensionality grows without bound with k. This
-    is the fingerprint of a critical point, NOT of low-rank shared structure.
+    No ceiling: effective dimensionality grows without bound with k. (The serious
+    Muñoz/Bialek reading, not a null hypothesis.)
 
 THE DISCRIMINATOR is exactly the boundedness of the large-k limit of k_eff:
-saturating (⟨ nhds (1/ρ₀) ⟩, this file's low-rank branch) versus divergent
-(atTop, this file's criticality branch). Equivalently, in the empirical protocol:
-the log-log slope of the band-center ρ* against k is 0 under low-rank (constant
-ρ*) and -1/2 under criticality (ρ* ∝ k^{-1/2}). Measuring that slope decides
-between the two.
+saturating (nhds (1/ρ₀), this file's bounded branch) versus divergent (atTop, this
+file's criticality branch). Equivalently, in the empirical protocol: the log-log
+slope of the band-center ρ* against k is 0 under the bounded reading (constant ρ*)
+and -1/2 under criticality (ρ* ∝ k^{-1/2}). Measuring that slope decides between
+the two.
 
-This file is the formal core of ruling out the "corridor = criticality (trivial)"
-hypothesis. The low-rank saturation branch is imported from the lake; the
-criticality divergence branch (`criticality_scaling_diverges`) is proved here.
+This file is the formal core that ADJUDICATES the bounded-vs-criticality reading
+(it does not claim to invent either). The bounded/saturation branch is imported
+from the lake; the criticality divergence branch (`criticality_scaling_diverges`)
+is proved here.
 
 Empirical status (2026-07-02): the discriminator is proved AND the branch is now
 read across several substrates — with a CRUCIAL grain qualification that is the
@@ -99,9 +110,10 @@ covariance eigenvalue spectrum on raw C. elegans whole-brain calcium (Kato 2015,
 pipeline calibrated on synthetic controls (injected low-rank r=3 → β≈0.03;
 power-law α=1.0 → 0.25; α=0.6 → 0.65; pure noise → 0.96), the measured
 subsampling exponent is β = 0.10 ± 0.02 — its 95% CI excludes the entire
-criticality band — with effective rank 1-3 across all 12 worms. The LOW-RANK
-branch is selected; the criticality (trivial) reading is ruled out at C. elegans.
-The determination is recorded below as `gate0_c_elegans_low_rank`. Scope is honest:
+criticality band — with effective rank 1-3 across all 12 worms. The BOUNDED /
+LOW-DIMENSIONAL branch is selected; the criticality / scale-free reading is ruled
+out at C. elegans (a well-controlled data point in the live debate, not a discovery
+of low-rank structure). Recorded below as `gate0_c_elegans_low_rank`. Scope honest:
 this is ONE substrate; the same spectral test on each substrate's raw data is the
 cross-substrate verdict (`experiments/keff_saturation/spectral_test.py` is the
 template). This theorem is the `if-then`; the spectral test reads the branch.
@@ -237,8 +249,8 @@ at the covariance eigenvalue spectrum directly. See
 `experiments/keff_saturation/{spectral_test.py, spectral_results.json,
 spectral_discriminator.png}`. -/
 
-/-- Gate-0 spectral determination. The criticality (trivial) hypothesis is ruled
-    out at C. elegans; the low-rank (novel) branch is selected. -/
+/-- Gate-0 spectral determination. The criticality / scale-free reading is ruled
+    out at C. elegans; the bounded / low-dimensional branch is selected. -/
 structure SpectralDetermination where
   /-- Raw whole-brain calcium traces are in-tree (Kato 2015, 12 worms, N ≤ 151):
       the spectrum is measured on data, not on a cross-substrate proxy. -/
@@ -261,7 +273,7 @@ structure SpectralDetermination where
   scope_single_substrate : True
 
 /-- Gate 0 is read at C. elegans: the low-rank determination record is inhabited.
-    Low-rank (novel), not criticality (trivial) — by mechanism, calibrated, on raw
+    Bounded / low-dimensional, not criticality / scale-free — by mechanism, on raw
     data. β = 0.10 ± 0.02, effective rank 1-3 (Kato 2015, 12 worms, N ≤ 151). -/
 def gate0_c_elegans_low_rank : SpectralDetermination :=
   ⟨trivial, trivial, trivial, trivial, trivial⟩
