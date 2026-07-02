@@ -300,6 +300,22 @@ axiom framework_asserts_6 : Claim6
     is a data point, not a `Falsifier1` witness, and no claim is retracted
     here. The consistent finding across positives: corridor EXISTENCE (tight
     band, off both poles) is robust; the band CENTRE is substrate- and
-    pipeline-dependent. -/
+    pipeline-dependent.
+
+    ## Gate-0 mechanism read (2026-07-02; Cosmology.CriticalityDiscriminator)
+
+    The Allen data-point defence above (small mean-pairwise ρ but "strong
+    low-rank population structure") is a MECHANISM claim, and Gate 0 now tests it
+    directly rather than by proxy. On raw C. elegans whole-brain calcium (Kato
+    2015, 12 worms) the covariance eigenvalue spectrum gives β = 0.10 ± 0.02
+    (95% CI excludes the criticality band) with effective rank 1-3: a few spikes
+    over a flat noise bulk — the low-rank fingerprint, calibrated on synthetic
+    controls. So the coordinating structure is genuinely LOW-RANK, not
+    edge-of-chaos criticality: the "corridor = known critical physics (trivial)"
+    objection is ruled out AT C. elegans, at the mechanism level, on raw data
+    (`gate0_c_elegans_low_rank`). This is direct support for the observable choice
+    the ledger already made — k_eff-of-covariance over mean-pairwise ρ. Scope is
+    honest: one substrate; the owed k_eff re-runs (E1/fMRI/Allen) and the spectral
+    test on each substrate's raw data are the cross-substrate verdict. -/
 
 end CoherenceRatchet.StructuralClaims

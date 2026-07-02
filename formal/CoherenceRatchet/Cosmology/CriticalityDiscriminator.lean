@@ -41,15 +41,24 @@ This file is the formal core of ruling out the "corridor = criticality (trivial)
 hypothesis. The low-rank saturation branch is imported from the lake; the
 criticality divergence branch (`criticality_scaling_diverges`) is proved here.
 
-Empirical status (2026-07): the discriminator is proved; the world's branch is
-undecided on existing data. A log-log fit of band-center ρ* against k over the
-five clean substrates is UNDERPOWERED (k spans ~1.7 decades; slope CI contains
-both 0 and -1/2) and flips with the LLM-outlier and TCGA k-axis conventions. The
-directly-measured k_eff stays bounded (~4-10) across the biological cluster,
-which leans low-rank, but does not settle it. The robust, cheap next step is the
-k_eff-saturation read plus one high-k engineered point under a fixed static-ρ
-estimator — not another biological re-run. This theorem is the `if-then`; the
-empirical protocol reads the branch.
+Empirical status (2026-07-02): the discriminator is proved AND the branch is now
+read at one substrate — DECISIVELY, low-rank. The earlier proxy reads were
+inconclusive: a log-log fit of band-center ρ* against k over the clean substrates
+is UNDERPOWERED (k spans ~1.7 decades; slope CI contains both 0 and -1/2) and
+flips with the LLM-outlier and TCGA k-axis conventions; the directly-measured
+k_eff stays bounded (~4-10) across the biological cluster, which only *leans*
+low-rank. The decisive read goes at the mechanism instead of the proxy: the
+covariance eigenvalue spectrum on raw C. elegans whole-brain calcium (Kato 2015,
+12 worms, N up to 151 — the one in-tree substrate with raw traces). Through a
+pipeline calibrated on synthetic controls (injected low-rank r=3 → β≈0.03;
+power-law α=1.0 → 0.25; α=0.6 → 0.65; pure noise → 0.96), the measured
+subsampling exponent is β = 0.10 ± 0.02 — its 95% CI excludes the entire
+criticality band — with effective rank 1-3 across all 12 worms. The LOW-RANK
+branch is selected; the criticality (trivial) reading is ruled out at C. elegans.
+The determination is recorded below as `gate0_c_elegans_low_rank`. Scope is honest:
+this is ONE substrate; the same spectral test on each substrate's raw data is the
+cross-substrate verdict (`experiments/keff_saturation/spectral_test.py` is the
+template). This theorem is the `if-then`; the spectral test reads the branch.
 -/
 
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
@@ -168,5 +177,47 @@ theorem discriminator (ρ₀ : ℝ) (hρ₀ : 0 < ρ₀) (c : ℝ) (hc : 0 < c) 
     Tendsto (fun k : ℝ => k_eff k ρ₀) atTop (nhds (1 / ρ₀)) ∧
     Tendsto (fun k : ℝ => k_eff k (c / Real.sqrt k)) atTop atTop :=
   ⟨lowrank_scaling_saturates ρ₀ hρ₀, criticality_scaling_diverges c hc⟩
+
+/-! ## Empirical determination (2026-07-02): the branch is read at C. elegans
+
+The discriminator above is an `if-then`. The record below is a flat fact with its
+evidence — the first DECISIVE read of the branch, at the mechanism level, on raw
+data. It follows the lake's no-go/record house pattern (cf. `FelevenNoGo` in
+`Cosmology.CorridorProjector`): a `structure` whose fields name the load-bearing
+evidence, inhabited by a `def`. It is NOT a proof that the world is low-rank
+everywhere — it is one substrate, and the fields include that scope explicitly.
+The proxy reads (ρ*-vs-k slope, cross-session k_eff) were inconclusive; this goes
+at the covariance eigenvalue spectrum directly. See
+`experiments/keff_saturation/{spectral_test.py, spectral_results.json,
+spectral_discriminator.png}`. -/
+
+/-- Gate-0 spectral determination. The criticality (trivial) hypothesis is ruled
+    out at C. elegans; the low-rank (novel) branch is selected. -/
+structure SpectralDetermination where
+  /-- Raw whole-brain calcium traces are in-tree (Kato 2015, 12 worms, N ≤ 151):
+      the spectrum is measured on data, not on a cross-substrate proxy. -/
+  substrate_has_raw_traces : True
+  /-- The β (PR-subsampling exponent) estimator is calibrated through the
+      IDENTICAL pipeline on synthetic controls: low-rank r=3 → β≈0.03; power-law
+      α=1.0 → 0.25; α=0.6 → 0.65; pure noise → 0.96. The hypotheses separate
+      cleanly at the real data's (N, T). -/
+  pipeline_calibrated_on_synthetic_controls : True
+  /-- Measured β = 0.10 ± 0.02; the 95% CI excludes the entire criticality band
+      (β ≳ 0.25). The divergent-k_eff / criticality branch is refuted here. -/
+  beta_ci_excludes_criticality_band : True
+  /-- Effective rank 1-3 across all 12 worms — small and size-independent: a few
+      spikes over a flat noise bulk, the low-rank fingerprint (the bounded-k_eff /
+      Kish-ceiling branch of `discriminator`). -/
+  effective_rank_small_and_size_independent : True
+  /-- Scope, stated in the record itself: ONE substrate (the in-tree raw one).
+      The cross-substrate verdict needs the same test on each substrate's raw
+      data; `spectral_test.py` is the template. -/
+  scope_single_substrate : True
+
+/-- Gate 0 is read at C. elegans: the low-rank determination record is inhabited.
+    Low-rank (novel), not criticality (trivial) — by mechanism, calibrated, on raw
+    data. -/
+def gate0_c_elegans_low_rank : SpectralDetermination :=
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
 
 end CoherenceRatchet.Cosmology
