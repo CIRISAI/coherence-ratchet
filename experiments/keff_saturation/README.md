@@ -159,3 +159,43 @@ Scripts: `spectral_test.py` (C. elegans), `spectral_drosophila.py`,
 but is ~94% collinear with volatility — validation of the rigidity-pole dynamics,
 not new alpha), `spectral_test_allen*.py` (agent-run), `spectral_test_icare.py`,
 `spectral_test_tcga_fmri.py`. Per-substrate result JSONs alongside.
+
+---
+
+## The SECOND axis — bound vs coordinating (detailed balance) — TOOLING READY, decisive test pending data
+
+Saturation (above) is one axis: is there *coordinated structure* (bounded k_eff)?
+It cannot tell **coordinating** (actively maintained, the framework's γM term) from
+merely **bound** (conservative, the α term). The second axis is thermodynamic:
+a coordinating system is a non-equilibrium steady state that **breaks detailed
+balance** (a directed cycle / entropy production in its collective modes); a bound
+system is time-reversible. On exoplanets this reduces to the atmospheric-
+disequilibrium biosignature (Lovelock; Krissansen-Totton).
+
+**Estimator (`entropy_production.py`).** v1 (circulation ⟨x dy − y dx⟩ vs a
+phase-randomized null) FAILED on cyclic signals — a noisy limit cycle read z≈1
+(the null variance is inflated for narrowband data). v2 is the **integrated
+angular velocity (net winding rate) with a block-bootstrap null**, taking the
+strongest of the top-4 mode pairs. Validated: OU-equilibrium |z|≈1.5,
+relaxation ≈1.5 (null ceiling), **noisy limit cycle z=16.6**, OU-driven z=41.
+
+**Positive control (`db_control_v2.py`).** On known-coordinating brains:
+- **C. elegans** (Kato cyclic attractor): median **|z| = 2.75**, 83% of worms
+  |z|>2, up to 7 — genuinely above the null (~1.5), so the worms DO break detailed
+  balance. **But weak** vs the clean-cycle synthetics (16–41), almost certainly
+  because slow GCaMP calcium (~1 s decay) smears the fast arrow of time.
+- **zebrafish** whole-brain: |z|≈1.9 (marginal, one animal).
+
+**Two hard limitations surfaced, so no substrate tested is decisive for this axis:**
+1. **Calcium is too slow** — it washes out irreversibility; a clean positive
+   control needs spike-train / electrophysiology data.
+2. **The galaxy has T=26 snapshots** — too few for *either* DB estimator
+   (block-bootstrap / transition-counting need T ≫ dynamics timescale). So the
+   galaxy stellar and baryon-cycle DB readings are under-powered on the time axis
+   regardless of estimator; a decisive test needs a fine-cadence sim subbox.
+
+**Status: the axis is real and detectable, the estimator is built and validated,
+but every substrate measured so far is imperfect for it.** Saturation axis: solid.
+Detailed-balance axis: tooling ready, decisive test pending faster neural data
+(spikes) and/or fine-cadence simulation. Do NOT read the galaxy "bound" or any
+calcium DB number as decisive.

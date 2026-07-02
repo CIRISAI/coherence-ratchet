@@ -1,3 +1,14 @@
+> **NOTE (team-lead, SUPERSEDING any 'falsification / high-dim' verdict below).**
+> The whole-recording readout below reads PR≈34 + many CV-positive dims as 'high-dimensional /
+> falsification'. That uses the WRONG criterion (raw reproducible-dim COUNT, not k_eff). By the
+> framework's saturation criterion the complete zebrafish brain is a CONFIRMATION: the subsampling
+> PR SATURATES flat to the full 71,721 neurons (β≈0), and the cross-validated power-law α≈1.4-1.6
+> is STEEP (>1 ⇒ participation ratio converges ⇒ bounded effective dimension). A steep power-law
+> tail has many individually-reproducible dims yet bounded k_eff. Within single stimulus conditions
+> it still saturates (intrinsic). Authoritative record: `zebrafish_finalize.py`,
+> `spectral_results_zebrafish_condition.json`, and CriticalityDiscriminator.lean
+> (`gate0_zebrafish_complete_vertebrate_low_rank`).
+
 # ZAPBench whole-brain zebrafish -- k_eff saturation verdict
 
 DECISIVE saturation test on a COMPLETE vertebrate brain. ZAPBench (Immer et al. 2025; Ahrens/Engert light-sheet data): **71721 segmented neurons x 7879 volumes** = ~all neurons of one entire larval-zebrafish brain, 1 animal. Because the whole brain is captured, subsampling runs up to the full N and 'wrong grain' cannot be invoked. Stimulus: 9 successive visual conditions (gain,dots,flash,taxis,turning,position,...); not purely spontaneous.

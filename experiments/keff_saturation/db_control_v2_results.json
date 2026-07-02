@@ -1,0 +1,121 @@
+{
+ "estimator": "winding-rate irreversibility (block-bootstrap z), max over top-4 mode pairs",
+ "calibration": {
+  "OU-equilibrium": -1.48,
+  "relaxation": -1.43,
+  "limit-cycle": 16.61,
+  "OU-driven": 41.41
+ },
+ "celegans": {
+  "units": [
+   {
+    "worm": "worm5",
+    "z": 3.812594170589568,
+    "pair": [
+     1,
+     3
+    ]
+   },
+   {
+    "worm": "worm6",
+    "z": 2.628144295479045,
+    "pair": [
+     0,
+     3
+    ]
+   },
+   {
+    "worm": "worm8",
+    "z": 2.8348835079583465,
+    "pair": [
+     0,
+     1
+    ]
+   },
+   {
+    "worm": "worm3",
+    "z": -6.980147772925027,
+    "pair": [
+     1,
+     3
+    ]
+   },
+   {
+    "worm": "worm9",
+    "z": -1.8046932296237932,
+    "pair": [
+     0,
+     2
+    ]
+   },
+   {
+    "worm": "worm11",
+    "z": 4.087855574047054,
+    "pair": [
+     0,
+     3
+    ]
+   },
+   {
+    "worm": "worm10",
+    "z": 3.3309799740440154,
+    "pair": [
+     0,
+     2
+    ]
+   },
+   {
+    "worm": "worm2",
+    "z": 2.3017340066425307,
+    "pair": [
+     0,
+     2
+    ]
+   },
+   {
+    "worm": "worm1",
+    "z": -1.7478410517619618,
+    "pair": [
+     1,
+     3
+    ]
+   },
+   {
+    "worm": "worm4",
+    "z": -2.520004350631613,
+    "pair": [
+     1,
+     3
+    ]
+   },
+   {
+    "worm": "worm7",
+    "z": -3.0679831369318653,
+    "pair": [
+     1,
+     3
+    ]
+   },
+   {
+    "worm": "worm0",
+    "z": 2.6668521046293323,
+    "pair": [
+     1,
+     2
+    ]
+   }
+  ],
+  "median_abs_z": 2.750867806293839,
+  "frac_abs_z_gt2": 0.8333333333333334,
+  "frac_abs_z_gt3": 0.4166666666666667
+ },
+ "zebrafish": {
+  "z": 1.9368811530207737,
+  "pair": [
+   0,
+   3
+  ],
+  "T": 7879
+ },
+ "verdict": "REAL but WEAK DB-breaking (median|z|>2, above null ~1.5, but far below clean-cycle ~16; calcium-limited)"
+}

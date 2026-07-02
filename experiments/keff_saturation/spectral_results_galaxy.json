@@ -1,0 +1,435 @@
+{
+ "substrate": "CAMELS IllustrisTNG L25n256 CV_0, SUBFIND subhalo 0 (central galaxy)",
+ "complete_unit": "all star particles of one gravitationally-bound galaxy; subsampling runs to full N so 'wrong grain' cannot be invoked",
+ "gravity_caveat": "galaxy is bound by GRAVITY = the spontaneous alpha-term in drho/dt = alpha(rho,S) - gamma*M, NOT the active-maintenance gamma*M that defines corridor coordination; this is a complete-BOUND-unit test, adjacent to but not identical to the complete-COORDINATING-unit question.",
+ "construction": "units=star particles tracked by ParticleID; observations=snapshots; X[i,t]=kinematic scalar in the galaxy's instantaneous frame; star x star correlation over snapshots reveals collective dynamical modes. Not the trivial rank<=6 stars x 6-phase-coords table.",
+ "n_star_particles_z0": 47736,
+ "snapshots": [
+  40,
+  42,
+  44,
+  46,
+  48,
+  50,
+  52,
+  54,
+  56,
+  58,
+  60,
+  62,
+  64,
+  66,
+  68,
+  70,
+  72,
+  74,
+  76,
+  78,
+  80,
+  82,
+  84,
+  86,
+  88,
+  90
+ ],
+ "z_range": [
+  2.3,
+  0.0
+ ],
+ "N_persistent": 25579,
+ "T": 26,
+ "results_by_scalar": {
+  "zheight": {
+   "scalar": "zheight",
+   "N": 25579,
+   "T": 26,
+   "PR_keff": 4.258466697651399,
+   "mp_edge": 1047.5391100282473,
+   "eff_rank_mp": 3,
+   "eff_rank_surr": 2,
+   "surr_rank_mp": 10,
+   "surr_top": 1898.1262353641164,
+   "beta_top": 0.00011646362527801818,
+   "alpha": 1.2038641095817582,
+   "top_eigs": [
+    9547.071025998657,
+    7493.3319202002485,
+    1784.2503950779865,
+    883.6003026568803,
+    737.6460411345121,
+    635.4293427752629,
+    519.9521323762937,
+    484.996174340402,
+    423.22709270702495,
+    419.3104852630293,
+    361.16669781672107,
+    311.71251708907704
+   ],
+   "subsample": [
+    [
+     10,
+     3.18229742768574,
+     0.5479030365313621
+    ],
+    [
+     20,
+     3.8071297161783244,
+     0.5516433559369014
+    ],
+    [
+     50,
+     4.042887083062942,
+     0.42469429091041777
+    ],
+    [
+     100,
+     4.080111511262274,
+     0.33706969700558037
+    ],
+    [
+     300,
+     4.214789198326022,
+     0.1920949553887828
+    ],
+    [
+     1000,
+     4.239064793702976,
+     0.11755358580411904
+    ],
+    [
+     3000,
+     4.257558207931728,
+     0.056054867116976013
+    ],
+    [
+     10000,
+     4.259951992740851,
+     0.029057300157851348
+    ],
+    [
+     25579,
+     4.258466697651398,
+     1.472877282518059e-15
+    ]
+   ]
+  },
+  "jz": {
+   "scalar": "jz",
+   "N": 25579,
+   "T": 26,
+   "PR_keff": 10.703254900107618,
+   "mp_edge": 1047.5391100282473,
+   "eff_rank_mp": 10,
+   "eff_rank_surr": 3,
+   "surr_rank_mp": 6,
+   "surr_top": 2308.657335005441,
+   "beta_top": 0.0012416516022322635,
+   "alpha": 2.0056372396809077,
+   "top_eigs": [
+    4239.2787566879215,
+    3442.6326442259606,
+    2561.787477578582,
+    2223.8275526640978,
+    2120.415270149158,
+    2063.0140823371717,
+    1858.1166311873026,
+    1692.1865703450735,
+    1420.8975905377251,
+    1189.6549262944293,
+    848.7147011696269,
+    548.7263419764352
+   ],
+   "subsample": [
+    [
+     10,
+     5.485590890406513,
+     0.38561290912926816
+    ],
+    [
+     20,
+     7.253161382932866,
+     0.596795104059201
+    ],
+    [
+     50,
+     9.098589651847586,
+     0.500515343302505
+    ],
+    [
+     100,
+     9.738385372815216,
+     0.3214485285923102
+    ],
+    [
+     300,
+     10.412973348811722,
+     0.19847524112629228
+    ],
+    [
+     1000,
+     10.613568911649008,
+     0.15132644448167068
+    ],
+    [
+     3000,
+     10.67477198646544,
+     0.06265762775207113
+    ],
+    [
+     10000,
+     10.690289447178932,
+     0.03074426862336705
+    ],
+    [
+     25579,
+     10.703254900107622,
+     2.6939785314722364e-15
+    ]
+   ]
+  },
+  "vr": {
+   "scalar": "vr",
+   "N": 25579,
+   "T": 26,
+   "PR_keff": 10.941464618676335,
+   "mp_edge": 1047.5391100282473,
+   "eff_rank_mp": 4,
+   "eff_rank_surr": 2,
+   "surr_rank_mp": 2,
+   "surr_top": 2575.6285806912742,
+   "beta_top": 0.00027914740457816653,
+   "alpha": 0.5016661934998705,
+   "top_eigs": [
+    5994.783632666005,
+    3210.077106658806,
+    1403.2567331617283,
+    1239.9144032758702,
+    1040.5808769017822,
+    975.610563854483,
+    959.9414007875436,
+    904.2821114095935,
+    883.3828150087553,
+    877.8445378017843,
+    832.1670883988068,
+    753.025916346829
+   ],
+   "subsample": [
+    [
+     10,
+     5.4023306845179375,
+     0.9729036805371675
+    ],
+    [
+     20,
+     7.427113041160453,
+     1.0640383007914695
+    ],
+    [
+     50,
+     9.259925486128802,
+     1.2609609195909575
+    ],
+    [
+     100,
+     9.986622353202065,
+     0.7221997367463019
+    ],
+    [
+     300,
+     10.65309841545116,
+     0.49602480295942
+    ],
+    [
+     1000,
+     10.778579566251533,
+     0.2831464263133383
+    ],
+    [
+     3000,
+     10.934235509604324,
+     0.16452380514442666
+    ],
+    [
+     10000,
+     10.929934476003101,
+     0.09783951339420831
+    ],
+    [
+     25579,
+     10.941464618676331,
+     3.881654710264854e-15
+    ]
+   ]
+  }
+ },
+ "primary_scalar": "zheight",
+ "verdict": "SATURATES (bounded k_eff, few collective modes): a complete BOUND galaxy collapses to a low-rank set of dynamical modes -- like the complete zebrafish brain's spectral shape but at the corridor ceiling. NOTE gravity is the alpha-term, not gamma*M, so this is a bound-unit result, not a coordinating-unit result.",
+ "compare": {
+  "zebrafish": "complete brain, FALSIFICATION (high-dim), PR~34, 1592 CV dims, alpha~1.36",
+  "celegans": "complete brain, LOW-RANK (saturates)",
+  "cortex_subsample": "alpha~0.97 (grain-inconclusive)",
+  "cosmic_web_subsample": "power-law alpha~0.75, grain-inconclusive"
+ },
+ "elapsed_sec": 10.6,
+ "detailed_balance": {
+  "note": "broken-detailed-balance (bound vs coordinating) on top collective modes",
+  "T": 26,
+  "N": 25579,
+  "estimator": "omega=<x dy - y dx>/<x^2+y^2>; null=phase-randomized modes",
+  "calibration": {
+   "OU-equilibrium (reversible)": {
+    "pairs": {
+     "0-1": {
+      "omega": -0.11522440660198882,
+      "null_sd": 0.10921845567553645,
+      "z": -1.069061216475495
+     },
+     "0-2": {
+      "omega": -0.008300716427450594,
+      "null_sd": 0.11822063550797798,
+      "z": -0.0792728889535164
+     },
+     "1-2": {
+      "omega": 0.001831323934421932,
+      "null_sd": 0.11501850946718069,
+      "z": 0.006417461985865376
+     }
+    },
+    "circulation": {
+     "circulation_sum": 0.12535644696386133,
+     "null_mean": 0.28010054651192245,
+     "null_sd": 0.11275386985345817,
+     "z": -1.3724061067509576
+    }
+   },
+   "OU-driven (NESS, breaks DB)": {
+    "pairs": {
+     "0-1": {
+      "omega": 0.8172785786224793,
+      "null_sd": 0.25952379904035094,
+      "z": 3.1330491053983365
+     },
+     "0-2": {
+      "omega": 0.17878213275597216,
+      "null_sd": 0.13208036521833535,
+      "z": 1.3384138331477469
+     },
+     "1-2": {
+      "omega": -0.23602170297625544,
+      "null_sd": 0.14193918740925562,
+      "z": -1.6738926046775493
+     }
+    },
+    "circulation": {
+     "circulation_sum": 1.232082414354707,
+     "null_mean": 0.4455641955358612,
+     "null_sd": 0.18085015149522957,
+     "z": 4.349005031578551
+    }
+   },
+   "relaxation (transient)": {
+    "pairs": {
+     "0-1": {
+      "omega": -0.03063014673253307,
+      "null_sd": 0.020460127128296653,
+      "z": -1.5083078455142713
+     },
+     "0-2": {
+      "omega": -0.05075360721835928,
+      "null_sd": 0.025798612770057978,
+      "z": -1.9621726052293078
+     },
+     "1-2": {
+      "omega": -0.012074354253167465,
+      "null_sd": 0.04758284329481692,
+      "z": -0.25098731178026207
+     }
+    },
+    "circulation": {
+     "circulation_sum": 0.09345810820405982,
+     "null_mean": 0.07575079919250784,
+     "null_sd": 0.03446498898552824,
+     "z": 0.5137767204415317
+    }
+   }
+  },
+  "galaxy": {
+   "zheight": {
+    "pairs": {
+     "0-1": {
+      "omega": -0.318794266351382,
+      "null_sd": 0.1599701235483346,
+      "z": -2.0046880954584205
+     },
+     "0-2": {
+      "omega": 0.03425711243019282,
+      "null_sd": 0.09775298326356724,
+      "z": 0.36325343125857307
+     },
+     "1-2": {
+      "omega": 0.004263581527203132,
+      "null_sd": 0.09218995361117996,
+      "z": 0.03315881790846352
+     }
+    },
+    "circulation": {
+     "circulation_sum": 0.35731496030877796,
+     "null_mean": 0.2831915573959234,
+     "null_sd": 0.12034271739534946,
+     "z": 0.6159359246370405
+    }
+   },
+   "jz": {
+    "pairs": {
+     "0-1": {
+      "omega": 0.020961358545226356,
+      "null_sd": 0.10346622838823658,
+      "z": 0.18281767001750887
+     },
+     "0-2": {
+      "omega": 0.022774731064907537,
+      "null_sd": 0.0730683907201106,
+      "z": 0.2914569576476038
+     },
+     "1-2": {
+      "omega": -0.23403895220691642,
+      "null_sd": 0.16002049702457485,
+      "z": -1.4430080341920173
+     }
+    },
+    "circulation": {
+     "circulation_sum": 0.2777750418170503,
+     "null_mean": 0.2739562408060118,
+     "null_sd": 0.1173671926249515,
+     "z": 0.03253721014874264
+    }
+   },
+   "vr": {
+    "pairs": {
+     "0-1": {
+      "omega": -0.08659454593689353,
+      "null_sd": 0.08559390792791624,
+      "z": -0.9893043114308342
+     },
+     "0-2": {
+      "omega": -0.08794132054410479,
+      "null_sd": 0.07481589792593399,
+      "z": -1.1642103229895753
+     },
+     "1-2": {
+      "omega": 0.11189651697995237,
+      "null_sd": 0.14866813589246763,
+      "z": 0.7383625994069987
+     }
+    },
+    "circulation": {
+     "circulation_sum": 0.2864323834609507,
+     "null_mean": 0.24933879592619201,
+     "null_sd": 0.10943988631000266,
+     "z": 0.33894029667892134
+    }
+   }
+  },
+  "verdict": "WEAK / MARGINAL circulation (|z|~2 in one mode pair only, others ~0), far below the driven-NESS ruler and consistent with TRANSIENT cosmic-assembly drift rather than sustained gamma*M. Reads as BOUND (near-detailed-balance), NOT coordinating."
+ }
+}
