@@ -194,8 +194,20 @@ relaxation ≈1.5 (null ceiling), **noisy limit cycle z=16.6**, OU-driven z=41.
    galaxy stellar and baryon-cycle DB readings are under-powered on the time axis
    regardless of estimator; a decisive test needs a fine-cadence sim subbox.
 
-**Status: the axis is real and detectable, the estimator is built and validated,
-but every substrate measured so far is imperfect for it.** Saturation axis: solid.
-Detailed-balance axis: tooling ready, decisive test pending faster neural data
-(spikes) and/or fine-cadence simulation. Do NOT read the galaxy "bound" or any
-calcium DB number as decisive.
+**CLEAN POSITIVE CONTROL achieved (`spectral_spikes_summary.md`).** Fast spike-train
+data settles it: **macaque motor cortex during reaching** (DANDI:000140 MC_Maze;
+Churchland jPCA rotational dynamics) reads **|z| = 8.8** (up to 44 with shot-noise
+smoothing) — far above the null (~1.5) and far above the weak calcium worm (2.75).
+So the detector WORKS on good data; the weak calcium signal was a slow-substrate
+(~1 s GCaMP) limitation, not a detector failure. Motor cortex is also low-rank
+(surrogate-debiased effective rank 5-8; raw spike-count PR is inflated by Poisson
+shot noise and must be debiased). So a known-coordinating fast-spiking system reads
+**low-rank AND strongly breaks detailed balance** — the two-axis coordination
+signature, clean, on real data.
+
+**Status:** saturation axis SOLID; detailed-balance axis now has a VALIDATED
+estimator AND a clean real positive control (motor cortex). Still pending: a clean
+real *negative* control — a bound system with long-enough time series (the galaxy is
+T-limited at 16-26 snapshots; a fine-cadence sim subbox is being chased). Do NOT
+read the galaxy "bound" or the weak calcium DB numbers as decisive; DO read the
+motor-cortex positive control as decisive that the axis is real and measurable.
