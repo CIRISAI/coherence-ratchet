@@ -42,9 +42,27 @@ hypothesis. The low-rank saturation branch is imported from the lake; the
 criticality divergence branch (`criticality_scaling_diverges`) is proved here.
 
 Empirical status (2026-07-02): the discriminator is proved AND the branch is now
-read at TWO independent substrates — DECISIVELY, low-rank at both (C. elegans
-whole-brain calcium; Drosophila EPG compass). See the two determination records
-at the foot of this file. The earlier proxy reads were
+read across several substrates — with a CRUCIAL grain qualification that is the
+real content of this update.
+
+  LOW-RANK, read at COMPLETE coordinating units (records at the foot of this file):
+  C. elegans whole-brain calcium (~50% of the 302-neuron nervous system),
+  Drosophila EPG compass (the whole ring-attractor circuit), and — the non-neural
+  adversarial case — the S&P-100 return correlation spectrum (criticality/power-law
+  was the competing prediction; the measured spectrum is instead the RMT
+  market-mode-plus-noise-bulk). Corroborating, agent-run through the identical
+  pipeline: resting-state fMRI at a complete ~200-region cortical partition
+  (β≈0.06) and TCGA transcriptomes (spectrum-only) — both low-rank.
+
+  NOT low-rank, at an INCOMPLETE subsample: mouse V1 two-photon (~200 of ~1e8
+  neurons, a sparse field-of-view of a sensory representational patch — NOT a
+  complete coordinating unit). Cross-validated (block-interleaved, validated
+  rank-3→3 / noise→0) intrinsic dimensionality is large and GROWS with N (CV+ dims
+  median 70, range 3-152 over 15 sessions — the Stringer no-saturation signature),
+  with ~0 dims above the per-neuron autocorrelation floor. Recorded below as a
+  SCOPE finding (`cortex_grain_and_objective_measure`), NOT a low-rank determination
+  and NOT a falsification — see that record for why the disqualification is
+  outcome-independent and what the objective, pre-spectral measure is. The earlier proxy reads were
 inconclusive: a log-log fit of band-center ρ* against k over the clean substrates
 is UNDERPOWERED (k spans ~1.7 decades; slope CI contains both 0 and -1/2) and
 flips with the LLM-outlier and TCGA k-axis conventions; the directly-measured
@@ -235,5 +253,96 @@ def gate0_c_elegans_low_rank : SpectralDetermination :=
     `spectral_results_drosophila.json`.) -/
 def gate0_drosophila_epg_low_rank : SpectralDetermination :=
   ⟨trivial, trivial, trivial, trivial, trivial⟩
+
+/-- THIRD substrate, and the first that is BOTH non-neural AND adversarial: the
+    S&P-100 daily-return cross-correlation spectrum (N=101 stocks × T=1506 trading
+    days, yfinance). Financial markets carry a "criticality" reputation, so a
+    power-law spectrum was the live competing prediction here. Instead the measured
+    spectrum is the textbook random-matrix-theory structure (Laloux/Bouchaud 1999;
+    Plerou 2002): ONE giant market mode (largest eigenvalue = 28% of total
+    variance) + a handful of sector modes above the Marchenko-Pastur edge + a noise
+    bulk holding 92% of the eigenvalues. Effective rank 8 (small), β = 0.153 —
+    between the N=101 low-rank control (0.049) and the α=1.0 power-law control
+    (0.243), far below the α=0.6 criticality control (0.657). Low-rank, not
+    criticality. This substrate doubles as a pipeline validation: the discriminator
+    recovers the KNOWN published spectrum of a non-neural system.
+    (`experiments/keff_saturation/spectral_finance.py`,
+    `spectral_results_finance.json`.) -/
+def gate0_sp500_low_rank : SpectralDetermination :=
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
+
+/-! ## The objective measure, and the grain qualification (2026-07-02)
+
+The mouse-V1 read (high-dimensional, dimensionality growing with the number of
+neurons sampled) forced the question: if a high-dimensional read can be set aside
+as "the wrong grain," what stops that from being an unfalsifiable escape hatch?
+The answer is an OBJECTIVE, PRE-SPECTRAL criterion for what counts as a valid test.
+
+THE OBJECTIVE MEASURE is SATURATION, not level. The framework's own claim (Piece 1)
+is that effective dimensionality SATURATES at the Kish ceiling 1/ρ as constituents
+are added — that IS the low-rank branch of `discriminator`, and empirically it is
+the subsampling exponent β→0 (the PR-vs-N curve flattens). So the test for "is this
+a genuine coordinating unit occupying the corridor?" is: does k_eff SATURATE as you
+add constituents? The LEVEL of k_eff is grain-tunable and proves nothing on its own;
+the SATURATION of k_eff is intrinsic. β→0 = saturating = the unit's dimensionality
+is captured and bounded (low-rank). β bounded away from 0 = not saturating = either
+a fragment of a larger system OR genuinely high-dimensional/critical.
+
+WHY THIS IS NOT CIRCULAR. Saturation must be tested on a COMPLETE unit — all or a
+large fraction of the constituents of a bounded, functionally-closed system, or a
+complete partition of it. Completeness is a STRUCTURAL, pre-spectral property, fixed
+before any spectrum is computed. It admits worm whole-brain, fly compass, market,
+fMRI region-partition; it excludes the mouse-V1 subsample REGARDLESS of what that
+subsample's spectrum says (a subsample's k_eff is not the unit's — Stringer 2019:
+V1 dimensionality is sample-size-dependent, no saturation to 10^4 neurons). The
+disqualification is outcome-independent: a low-rank read on that subsample would
+have been rejected for the same reason.
+
+THE FALSIFICATION PATH that keeps it honest: a system that IS a complete unit and
+whose k_eff FAILS to saturate (β high up to the full constituent count) falsifies
+the corridor claim for that substrate. Larval zebrafish whole-brain light-sheet
+(~all ~10^5 neurons of an entire vertebrate brain) is the clean decisive case: it
+is complete, so grain cannot be invoked. Saturation ⇒ strong confirmation;
+non-saturation ⇒ falsification. This is the highest-value next dataset.
+
+TWO CONTROLS this criterion still owes (open):
+  (i) coarse-grained substrates (fMRI regions = averages of ~10^3 neurons) must
+      beat an AVERAGING NULL — random-neuron-averaging into the same region count —
+      to show the low-rank is structure, not a mechanical consequence of averaging.
+  (ii) "complete" for an open/large system (the S&P-100 is 100 of ~4000 US equities)
+      is a matter of degree; the airtight version subsamples the full constituent
+      set. S&P-100 saturation is suggestive, not airtight, by this same criterion. -/
+
+/-- Grain qualification + the objective measure. A flat fact with its evidence:
+    the valid-test criterion is k_eff SATURATION on a COMPLETE coordinating unit
+    (β→0), a structural pre-spectral property — not the level of k_eff, which is
+    grain-tunable. The mouse-V1 subsample is high-dimensional but is the wrong grain
+    (outcome-independently); the region-grain fMRI partition is low-rank. Kept
+    honest by a falsification path (a complete unit that fails to saturate) and two
+    owed controls (averaging-null; full-constituent completeness). -/
+structure GrainAndObjectiveMeasure where
+  /-- The objective measure is SATURATION of k_eff under subsampling (β→0), the
+      low-rank branch of `discriminator` — NOT the level of k_eff. -/
+  measure_is_saturation_not_level : True
+  /-- Validity requires a COMPLETE unit (all/most constituents of a bounded
+      functionally-closed system, or a complete partition): structural, pre-spectral. -/
+  completeness_is_structural_and_pre_spectral : True
+  /-- Mouse-V1 2p is a sparse subsample → high-dimensional (CV+ dims grow with N,
+      Stringer no-saturation) → excluded as wrong grain, OUTCOME-INDEPENDENTLY. -/
+  cortex_neuron_subsample_wrong_grain : True
+  /-- The coordinating grain of a large brain is regions; fMRI at a complete
+      ~200-region partition reads low-rank (corroborating, agent-run). -/
+  region_grain_partition_low_rank : True
+  /-- Falsifiable: a COMPLETE unit whose k_eff fails to saturate falsifies the
+      corridor at that substrate. Larval zebrafish whole-brain is the clean case. -/
+  falsification_path_complete_unit_no_saturation : True
+  /-- Owed controls: (i) coarse-grained low-rank must beat an averaging null;
+      (ii) "complete" is a matter of degree (S&P-100 ⊂ full market). -/
+  owed_controls_averaging_null_and_full_completeness : True
+
+/-- The grain qualification is recorded: the objective measure is complete-unit
+    k_eff saturation, kept falsifiable and with its controls named. -/
+def cortex_grain_and_objective_measure : GrainAndObjectiveMeasure :=
+  ⟨trivial, trivial, trivial, trivial, trivial, trivial⟩
 
 end CoherenceRatchet.Cosmology

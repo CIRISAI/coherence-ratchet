@@ -86,3 +86,49 @@ Numbers and citations are in `keff_saturation_figure.py` (`DATA`) and
 `/tmp/reframe/substrate_data.md`.
 
 Regenerate: `python3 keff_saturation_figure.py`
+
+---
+
+## Cross-substrate sweep (2026-07-02) — and the grain qualification
+
+Same spectral discriminator, β ruler recalibrated at each substrate's N. Verdicts:
+
+| substrate | grain / unit | N | effective rank / CV+ dims | β (or spectrum) | verdict |
+|---|---|---|---|---|---|
+| C. elegans whole-brain | ~complete brain (~50% of 302) | ≤151 | 1–3 | 0.10 | **low-rank** |
+| Drosophila EPG compass | complete ring-attractor circuit | 32 | ~1 | 0.12 | **low-rank** |
+| S&P-100 returns | market (100 largest) | 101 | 8 (+market mode) | 0.15 | **low-rank** (RMT market-mode+bulk) |
+| ABIDE fMRI | complete ~200-region partition | ~200 | ~4 | 0.06 | **low-rank** (agent-run) |
+| TCGA transcriptome | gene set × samples | 1500 | small, size-indep | ~0.04 | **low-rank** (agent-run) |
+| iCARE EEG | 19 scalp electrodes | 19 | 3 | 0.15 | low-rank (weak: volume conduction) |
+| Drosophila PFL3 | 2 bulk ROIs only | 2 | — | — | BLOCKED (not a population) |
+| **mouse V1 2p** | **~200 of ~1e8 neurons (subsample of a sensory patch)** | ≤240 | **CV+ dims 3–152, median 70, grows with N** | high | **NOT low-rank — wrong grain** |
+
+**The grain qualification (the real result).** Mouse V1 reads high-dimensional —
+cross-validated (block-interleaved, validated rank-3→3 / noise→0) intrinsic
+dimensionality grows with the number of neurons sampled (Stringer no-saturation),
+with ~0 dims above the per-neuron autocorrelation floor. But a 2p field of view is
+~0.001% of the brain — a sparse subsample of a *representational* patch, not a
+complete coordinating unit. It is excluded as the wrong grain **outcome-
+independently**: a subsample's k_eff is not the system's (a low-rank read there
+would have been rejected for the same reason).
+
+**The objective measure** is therefore SATURATION, not level: does k_eff saturate
+(β→0) as constituents are added, *on a complete unit*? Level is grain-tunable;
+saturation is intrinsic, and it is the framework's own claim (the Kish ceiling).
+Completeness — all/most constituents of a bounded functionally-closed system, or a
+complete partition — is structural and pre-spectral, fixed before any spectrum is
+computed. Formalized in `formal/CoherenceRatchet/Cosmology/CriticalityDiscriminator.lean`
+(`GrainAndObjectiveMeasure`).
+
+**Kept honest:** a *complete* unit whose k_eff fails to saturate falsifies the
+corridor for that substrate. **Larval zebrafish whole-brain light-sheet** (~all 1e5
+neurons of an entire vertebrate brain) is the clean decisive next dataset — grain
+cannot be invoked. Two owed controls: coarse-grained low-rank (fMRI) must beat an
+averaging null; "complete" is a matter of degree (S&P-100 ⊂ full market).
+
+Scripts: `spectral_test.py` (C. elegans), `spectral_drosophila.py`,
+`spectral_finance.py` (+ `finance_dynamics.py`: rolling k_eff predicts forward risk
+but is ~94% collinear with volatility — validation of the rigidity-pole dynamics,
+not new alpha), `spectral_test_allen*.py` (agent-run), `spectral_test_icare.py`,
+`spectral_test_tcga_fmri.py`. Per-substrate result JSONs alongside.

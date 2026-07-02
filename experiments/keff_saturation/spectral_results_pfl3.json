@@ -1,0 +1,281 @@
+{
+ "substrate": "Drosophila PFL3 (fan-shaped-body -> lateral-accessory-lobe steering neurons), two-photon LAL imaging",
+ "genotype": "57C10-AD-VT037220-DBD",
+ "n_recordings": 18,
+ "status": "BLOCKED / NOT APPLICABLE",
+ "reason": "Stored imaging traces are bilateral bulk-LAL fluorescence, not a segmented population. Each _im.h5 is a pandas HDF with columns [t, ps_c1_roi_1_F (Left LAL GCaMP), ps_c1_roi_2_F (Right LAL GCaMP), ps_c2_roi_1_F (Left LAL tdTomato ref), ps_c2_roi_2_F (Right LAL tdTomato ref)]. Only 2 activity ROIs (left/right LAL summed pixel means) plus 2 anatomical-reference (tdTomato) traces. The spectral criticality-vs-low-rank discriminator needs N (units) large enough for a covariance eigenspectrum, a Marchenko-Pastur edge, and a PR subsampling exponent beta over N in {10..150}. N=2 activity units makes all of these undefined. No per-column/per-glomerulus segmentation is stored to recover a higher-N matrix, and hand-segmentation from a raw movie is not possible (no movie is stored).",
+ "verdict": "INCONCLUSIVE (insufficient dimensionality: N=2 activity ROIs per recording; spectral test not runnable)",
+ "no_fabrication_note": "No synthetic or imputed units were substituted. Verdict reflects only what is on disk.",
+ "recordings": [
+  {
+   "rec": "2022_07_01_0002",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0003",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0004",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0005",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0006",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0007",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0009",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0010",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_01_0011",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0001",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0002",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0003",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0004",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0005",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0006",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0007",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0008",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  },
+  {
+   "rec": "2022_07_03_0009",
+   "n_columns": 5,
+   "columns": [
+    "t",
+    "ps_c1_roi_1_F",
+    "ps_c1_roi_2_F",
+    "ps_c2_roi_1_F",
+    "ps_c2_roi_2_F"
+   ],
+   "n_rows": 14100,
+   "n_activity_rois": 2,
+   "n_reference_rois": 2,
+   "duration_s": 1539.6
+  }
+ ]
+}

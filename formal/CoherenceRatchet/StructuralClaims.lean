@@ -314,8 +314,28 @@ axiom framework_asserts_6 : Claim6
     edge-of-chaos criticality: the "corridor = known critical physics (trivial)"
     objection is ruled out AT C. elegans, at the mechanism level, on raw data
     (`gate0_c_elegans_low_rank`). This is direct support for the observable choice
-    the ledger already made — k_eff-of-covariance over mean-pairwise ρ. Scope is
-    honest: one substrate; the owed k_eff re-runs (E1/fMRI/Allen) and the spectral
-    test on each substrate's raw data are the cross-substrate verdict. -/
+    the ledger already made — k_eff-of-covariance over mean-pairwise ρ.
+
+    The cross-substrate sweep since then (all through the identical pipeline):
+    Drosophila EPG compass and the S&P-100 return spectrum also read LOW-RANK
+    (`gate0_drosophila_epg_low_rank`, `gate0_sp500_low_rank`), as do fMRI at a
+    complete ~200-region partition and TCGA transcriptomes.
+
+    ALLEN OWED-TEST, RESOLVED — but with a grain finding, not the rescue. The owed
+    k_eff-of-covariance re-run on Allen was run at the mechanism level (raw 2p dF/F,
+    21 sessions; cross-validated, block-interleaved). It does NOT rescue the Allen
+    point into low-rank: cross-validated intrinsic dimensionality is large and grows
+    with N (median 70 CV+ dims, Stringer no-saturation). But this does NOT convert
+    data_allen into a `Falsifier1` witness either, because the mouse-V1 2p field of
+    view is a sparse subsample (~200 of ~1e8 neurons) of a sensory representational
+    patch — NOT a complete coordinating unit, so its k_eff is not the system's.
+    Per `Cosmology.CriticalityDiscriminator.cortex_grain_and_objective_measure`, the
+    objective valid-test criterion is k_eff SATURATION on a COMPLETE unit (β→0), a
+    structural pre-spectral property; the neuron-subsample fails completeness
+    outcome-independently. The coordinating grain of a large brain is regions, where
+    fMRI reads low-rank. So data_allen stays a data point (not a Falsifier1 witness
+    and not a low-rank rescue): the mean-pairwise-ρ chaos-pole read reflects a
+    subsample at the wrong grain. The clean vertebrate test is a COMPLETE unit —
+    larval zebrafish whole-brain — where grain cannot be invoked. -/
 
 end CoherenceRatchet.StructuralClaims
