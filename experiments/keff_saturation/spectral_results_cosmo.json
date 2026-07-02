@@ -1,0 +1,90 @@
+{
+ "substrate": "SDSS DR17 galaxy density-field covariance (emergent cosmic web; NOT the CMB)",
+ "construction": "micro-cell overdensity matrix; units=relative micro-cell positions, observations=survey-interior sub-cubes; unit x unit correlation = normalized two-point density covariance, eigenvalues = discrete P(k) modes",
+ "n_galaxies": 389751,
+ "micro_cell_Mpc_h": 10.0,
+ "subcube_Mpc_h": 50.0,
+ "N_units": 125,
+ "T_observations": 159,
+ "PR_keff": 51.76440895416891,
+ "mp_edge": 3.5594807773423502,
+ "eff_rank_mp": 7,
+ "eff_rank_surr": 7,
+ "surr_rank_mp": 0,
+ "beta_sub": 0.574442047898201,
+ "beta_top": 0.49288514453840404,
+ "alpha_powerlaw": 0.7449956457830684,
+ "top_eigs": [
+  6.077007652142841,
+  5.52102815707028,
+  4.954501229546768,
+  4.539116497956616,
+  4.121842547099014,
+  3.8706337266923536,
+  3.590279778776649,
+  3.293039755590643,
+  3.214600739758597,
+  2.84875094130096,
+  2.7004873971898844,
+  2.5176155077915587,
+  2.422560363898861,
+  2.3818941377916425,
+  2.319780157926405,
+  2.210971718793805
+ ],
+ "subsample": [
+  [
+   8,
+   7.420612831663203,
+   0.19700124740640937
+  ],
+  [
+   12,
+   10.673217677177552,
+   0.25686957558862616
+  ],
+  [
+   16,
+   13.72188698141681,
+   0.3788844842119629
+  ],
+  [
+   24,
+   19.058469873108827,
+   0.45652111167808485
+  ],
+  [
+   32,
+   23.66691390260404,
+   0.3729191077717165
+  ],
+  [
+   48,
+   31.358213142019174,
+   0.7054214550206884
+  ],
+  [
+   64,
+   37.24031267375683,
+   0.5979420504896176
+  ],
+  [
+   80,
+   42.03806637540266,
+   0.5490958060236014
+  ],
+  [
+   100,
+   47.01581475679243,
+   0.42882950451150553
+  ],
+  [
+   125,
+   51.76440895416888,
+   1.4343462764675755e-14
+  ]
+ ],
+ "primordial_ns_ref": 0.96,
+ "grain_caveat": "any dataset is a subsample of the one complete unit (the universe); a non-saturating read can be grain-driven, as mouse-V1 cortex was.",
+ "verdict": "NON-SATURATING / POWER-LAW (alpha>0): the adversarial cosmological scale-invariance signature -- BUT GRAIN-CONFOUNDED (survey = finite past-light-cone subsample), so GRAIN-INCONCLUSIVE, not a falsification."
+}

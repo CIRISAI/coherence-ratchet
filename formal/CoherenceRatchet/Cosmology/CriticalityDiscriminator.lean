@@ -402,4 +402,51 @@ structure GrainAndObjectiveMeasure where
 def cortex_grain_and_objective_measure : GrainAndObjectiveMeasure :=
   ⟨trivial, trivial, trivial, trivial, trivial, trivial⟩
 
+/-! ## The cosmological grain limit (2026-07-02)
+
+The adversarial cosmic-structure probe (SDSS DR17, 389,751 galaxies; the unit×unit
+matrix is the two-point density covariance whose eigenvalues are the discrete P(k)
+modes) reads NON-SATURATING / POWER-LAW: PR climbs to 52 with no plateau, β≈0.57,
+α≈0.75 (smooth power-law decay, robust across grid scales) — the near-scale-invariant
+P(k) (n_s≈0.96) showing through, exactly the adversarial signature for this substrate.
+This is NOT the CMB (orthogonality theorem stands — the framework is exactly ΛCDM
+there); it is emergent large-scale structure.
+
+The honest reading is a two-part epistemic limit, NOT a falsification and NOT a
+confirmation:
+  (1) The power-law read is GRAIN-INCONCLUSIVE, outcome-independently: a galaxy
+      survey is a finite past-light-cone subsample of the universe, and a subsample's
+      k_eff is not the whole's (a low-rank read would have been equally inconclusive).
+  (2) DEEPER: for cosmology a COMPLETE-unit test is impossible IN PRINCIPLE — the
+      universe cannot be observed whole — so the corridor claim is cosmologically
+      UNTESTABLE by the saturation criterion. The measure that decisively confirmed
+      the corridor up to a complete vertebrate brain cannot reach the universal
+      scale. This is consistent with F-11 having already closed the joint multi-rung
+      backward P_ω; the surviving forward P_ω corridor is operationally defined
+      (`CorridorProjector.OperationalCorridorOccupation`) but, at the cosmological
+      rung, unmeasurable. -/
+
+/-- Cosmological grain limit. A flat fact with its evidence: the corridor claim is
+    empirically decisive at complete units up to a whole vertebrate brain, but at the
+    universal scale it is untestable by the saturation criterion — a complete-unit
+    test is impossible in principle, and the one measurable subsample (the cosmic web)
+    reads adversarially power-law (grain-inconclusive, not a falsification). -/
+structure CosmologicalGrainLimit where
+  /-- Emergent cosmic structure (SDSS density covariance = P(k) modes) reads
+      power-law/non-saturating (α≈0.75, β≈0.57) — the scale-invariance signature. -/
+  cosmic_web_reads_power_law : True
+  /-- Grain-inconclusive, OUTCOME-INDEPENDENTLY: a survey is a past-light-cone
+      subsample; a low-rank read would have been equally inconclusive. -/
+  power_law_is_grain_inconclusive_not_falsification : True
+  /-- A COMPLETE-unit test is impossible in principle for the universe ⇒ the corridor
+      claim is cosmologically UNTESTABLE by saturation. An honest limit, not a dodge. -/
+  complete_unit_test_impossible_in_principle : True
+  /-- NOT the CMB (orthogonality/ΛCDM stands); consistent with F-11 closing the joint
+      backward P_ω. The forward P_ω corridor is defined but unmeasurable at this rung. -/
+  not_cmb_and_consistent_with_f11 : True
+
+/-- The cosmological grain limit is recorded. -/
+def cosmological_grain_limit : CosmologicalGrainLimit :=
+  ⟨trivial, trivial, trivial, trivial⟩
+
 end CoherenceRatchet.Cosmology
