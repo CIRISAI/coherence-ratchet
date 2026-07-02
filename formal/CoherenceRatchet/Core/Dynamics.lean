@@ -1,26 +1,42 @@
 /-
-Core.Dynamics — Piece 2: the dynamical equation for ρ(t)
+Core.Dynamics — Piece 2: the dynamical equation for ρ(t)  [TWO-POLE form]
 
 The Kish identity is kinematic. The dynamics that makes the corridor a
-non-trivial attractor is:
+non-trivial MAINTAINED state is:
 
   dρ/dt = α(ρ, S) − γ·M(t)
 
 Where:
 - α(ρ, S) is the spontaneous correlation drift driven by shared environment
-  or shared selection pressure S.
+  or shared selection pressure S. Its SIGN is substrate/perturbation-specific:
+  α > 0 drives toward the RIGIDITY pole (ρ → 1); α < 0 drives toward the CHAOS
+  pole (ρ → 0).
 - γ·M(t) is the active coherence-management work being done.
-- The corridor is sustained only by non-trivial M(t).
-- At M = 0, ρ drifts monotonically toward 1.
+- The corridor is a MAINTAINED state, held by non-trivial M(t) AGAINST α
+  (`corridor_requires_maintenance`: at equilibrium γM = α).
+- At M = 0, ρ drifts OUT of the corridor toward the pole selected by sign(α)
+  (`rho_drift_at_zero_maintenance` = the α>0 rigidity exit; `rho_exit_chaos`
+  = the α<0 chaos exit).
 
-This is the load-bearing dynamical structure. Without active maintenance,
-any coordinating system collapses to ρ → 1 over time. Active maintenance
-γ·M(t) IS the work of coherence management at every substrate.
+CORRECTION (2026-07-02, from the arousal/dynamics probe). An earlier version of
+this header claimed "at M=0, ρ drifts monotonically toward 1" — a SINGLE-pole
+over-specification. The corridor has TWO exits: rigidity (ρ→1, e.g. seizure /
+deep slow-wave anesthesia — the α>0 case) and chaos (ρ→0, e.g. burst-suppression
+/ post-anoxic silence — the α<0 case). Both are corridor exits; consciousness =
+corridor-occupation is corroborated by both poles being unconscious. Which pole a
+given substrate+perturbation takes is set by the sign of α in the corridor — an
+empirical, substrate-specific fact, NOT universally ρ→1.
 
-The corridor's upper bound ρ_c ≈ 0.43 is the empirical anchor from CCA v3
-cross-substrate measurement. The framework asserts the corridor as the
-structural object; behavior near ρ_c is non-trivial but no specific
-scaling form is prescribed.
+HONEST FALSIFIABILITY CAVEAT. "M=0 → exit to *some* pole" is more defensible but
+WEAKER than the single-pole claim — a system out of the corridor is at one pole
+or the other almost by definition. The falsifiable content is QUANTITATIVE: for a
+given substrate + graded perturbation, does ρ follow the predicted trajectory to
+the SPECIFIC predicted pole, measured at the COORDINATING GRAIN (not a coarse
+proxy like scalp EEG)? That test is owed (`experiments/keff_saturation/`); until
+it runs, the two-pole dynamics is a structure, not a confirmed law.
+
+The corridor's bounds are substrate-specific (the earlier universal ρ_c ≈ 0.43 is
+retracted); the framework asserts the corridor as the structural object.
 -/
 
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
@@ -36,11 +52,12 @@ structure SelectionPressure where
   nonneg : 0 ≤ intensity
 
 /-- The spontaneous correlation drift function α(ρ, S). Framework primitive.
-    Monotone in S; increasing in ρ in the rigidity regime; positive at ρ < 1
-    (drift toward higher correlation is the default). Functional form is
-    substrate-specific; the framework asserts existence and uses properties
-    via dρ/dt = α − γM. Declared as `axiom` rather than `def := sorry` to
-    make the framework-primitive status explicit. -/
+    Monotone in S. Its SIGN is substrate- and perturbation-specific: α > 0 drives
+    ρ up toward the rigidity pole (ρ → 1); α < 0 drives ρ down toward the chaos
+    pole (ρ → 0). The earlier assertion "positive at ρ < 1 is the default" is
+    RETRACTED (single-pole over-specification). Functional form substrate-specific;
+    the framework asserts existence and uses properties via dρ/dt = α − γM.
+    Declared as `axiom` to make the framework-primitive status explicit. -/
 axiom α (ρ : ℝ) (S : SelectionPressure) : ℝ
 
 /-- The active coherence-management coefficient γ. Framework primitive set
@@ -57,15 +74,40 @@ axiom M : ℝ → ℝ
 noncomputable def dρ_dt (ρ : ℝ) (S : SelectionPressure) (t : ℝ) : ℝ :=
   α ρ S - γ * M t
 
-/-- The drift theorem at M = 0: without active maintenance, ρ monotonically
-    increases toward 1. This is the structural argument for why coherence
-    management is necessary work, not optional polish. -/
+/-- RIGIDITY EXIT (α > 0 case). At M = 0 with α > 0, ρ increases — the system
+    drifts toward the rigidity pole (ρ → 1). This is ONE of the two corridor
+    exits; the other is `rho_exit_chaos`. Together they are the structural
+    argument for why coherence management is necessary work, not optional polish.
+    (Reused by `Cosmology.RecursiveLifecycle`.) -/
 theorem rho_drift_at_zero_maintenance
     (ρ : ℝ) (S : SelectionPressure) (t : ℝ)
     (h : M t = 0) (h_alpha_pos : α ρ S > 0) :
     dρ_dt ρ S t > 0 := by
   unfold dρ_dt
   rw [h]
+  linarith
+
+/-- CHAOS EXIT (α < 0 case). At M = 0 with α < 0, ρ decreases — the system drifts
+    toward the chaos pole (ρ → 0). The second corridor exit, missing from the
+    earlier single-pole formulation. Empirically the post-anoxic-coma direction:
+    maintenance withdrawal that suppresses/fragments rather than homogenizes. -/
+theorem rho_exit_chaos
+    (ρ : ℝ) (S : SelectionPressure) (t : ℝ)
+    (h : M t = 0) (h_alpha_neg : α ρ S < 0) :
+    dρ_dt ρ S t < 0 := by
+  unfold dρ_dt
+  rw [h]
+  linarith
+
+/-- CORRIDOR REQUIRES MAINTENANCE. At any equilibrium (dρ/dt = 0) the active
+    maintenance exactly balances the spontaneous drift: γ·M(t) = α(ρ, S). Hence
+    whenever α ≠ 0, holding the corridor requires non-trivial maintenance
+    (γ·M ≠ 0) — the corridor is a MAINTAINED state, not a passive attractor. -/
+theorem corridor_requires_maintenance
+    (ρ : ℝ) (S : SelectionPressure) (t : ℝ)
+    (h_eq : dρ_dt ρ S t = 0) :
+    γ * M t = α ρ S := by
+  unfold dρ_dt at h_eq
   linarith
 
 /-- The upper corridor bound ρ_c (= ρ_upper). Substrate-specific framework
