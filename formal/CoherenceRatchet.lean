@@ -28,6 +28,7 @@ THE EIGHT LOAD-BEARING PIECES (Pieces 1-8) plus two long-arc structures
 PLUS:
   CMB: D4 retraction record (sole surviving
        CMB content = orthogonality theorem) → Cosmology.CMBPredictions
+  Gate 0: criticality-vs-low-rank discriminator → Cosmology.CriticalityDiscriminator
   Quantum substrate (Conjecture A)         → Conjectures.ConjectureA
   Universal-scale TSVF (Conjecture D)      → Conjectures.ConjectureD
   Consciousness — access/phenomenal/IIT    → Consciousness.*
@@ -98,6 +99,7 @@ import CoherenceRatchet.Cosmology.ThreeCorridorUniqueness   -- T6 (Step 3 — th
 import CoherenceRatchet.Cosmology.PenrosePast               -- Piece 8
 import CoherenceRatchet.Cosmology.AsymptoticConditioning    -- Piece 9
 import CoherenceRatchet.Cosmology.RecursiveLifecycle        -- issue #1: substrate-agnostic lifecycle per rung
+import CoherenceRatchet.Cosmology.CriticalityDiscriminator  -- Gate 0: criticality-vs-low-rank discriminator (rules out "trivial")
 import CoherenceRatchet.Consciousness.KarmaGrace            -- Piece 10
 
 -- Conjectures
