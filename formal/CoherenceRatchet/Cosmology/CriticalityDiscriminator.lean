@@ -58,18 +58,22 @@ real content of this update.
   neurons, a sparse field-of-view of a sensory representational patch — NOT a
   complete coordinating unit). The RAW k_eff (up to 44-59, above the corridor
   ceiling) is noise-inflated; after cross-validation (block-interleaved, validated
-  rank-3→3 / noise→0) the noise-free k_eff is only ~5 (session values 1, 4.1, 4.8,
-  6.9, 13.5), which by LEVEL alone looks corridor-sized. But the SATURATION reads
-  reveal the truth the level hides: the CV eigenspectrum is a power law with
-  exponent α ≈ 1.0 at the best-powered (largest-N) sessions (0.97, 1.06 — matching
-  Stringer 2019 mouse-V1 α≈1.04; smaller sessions lack the dims to fit α),
-  reproducible dims grow with N, and β is high (0.83). So cortex-at-neuron-grain is
-  genuinely HIGH-DIMENSIONAL / scale-free, NOT low-rank — a case where the
-  participation-ratio LEVEL (~5) MISLEADS and only saturation/α classifies it (a
-  live validation of "saturation not level"). Caveat: ~0 CV dims exceed the
-  per-neuron autocorrelation surrogate floor, so cross-neuron coordination above
-  single-neuron structure is weak; and the CV magnitude (n_cv_pos) is method- and
-  N-sensitive — α is the stable, interpretable readout, not a specific dim count.
+  rank-3→3 / noise→0) the noise-free k_eff median is only ~4.8 (21 sessions,
+  even BELOW a pure-noise null's ~11), so a few dominant modes carry the variance
+  and by LEVEL it looks corridor-sized. But the SATURATION reads reveal the truth
+  the level hides: the CV eigenspectrum is a power law with exponent α median 0.97
+  (95% CI [0.88, 1.22] over 16 fittable sessions — matching Stringer 2019 mouse-V1
+  α≈1.04), whose participation ratio GROWS with N (β=0.83), i.e. NON-saturating. So
+  cortex-at-neuron-grain is a few dominant modes over a non-saturating scale-free
+  tail = genuinely HIGH-DIMENSIONAL, NOT low-rank — the participation-ratio LEVEL
+  (~5) MISLEADS (PR is a poor discriminator for a power law) and only saturation/α
+  classifies it (a live validation of "saturation not level"). It is distinguishable
+  from pure noise (α≈1 vs the noise null's α≈0), so it is genuine scale-free
+  structure, not noise. Caveat: ~0 CV dims exceed the per-neuron autocorrelation
+  surrogate floor, so cross-neuron coordination above single-neuron structure is
+  weak; and the CV dim COUNT is method- and N-sensitive — α is the stable readout.
+  (A parallel agent verdict of "low-rank, rescue holds" is a level-trap misread,
+  annotated as superseded in spectral_allen_cv_summary.md.)
   Recorded below as a SCOPE finding (`cortex_grain_and_objective_measure`), NOT a
   low-rank determination and NOT a falsification — see that record for why the
   disqualification is outcome-independent and what the objective measure is. The earlier proxy reads were
