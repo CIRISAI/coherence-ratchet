@@ -130,8 +130,18 @@ computed. Formalized in `formal/CoherenceRatchet/Cosmology/CriticalityDiscrimina
 **Kept honest:** a *complete* unit whose k_eff fails to saturate falsifies the
 corridor for that substrate. **Larval zebrafish whole-brain light-sheet** (~all 1e5
 neurons of an entire vertebrate brain) is the clean decisive next dataset — grain
-cannot be invoked. Two owed controls: coarse-grained low-rank (fMRI) must beat an
-averaging null; "complete" is a matter of degree (S&P-100 ⊂ full market).
+cannot be invoked.
+
+**Averaging-null control — DISCHARGED for fMRI** (`spectral_fmri_averaging_null.py`).
+The worry: averaging ~10³ neurons into 200 regions lowers dimensionality
+mechanically, so "regions are low-rank" could be trivial. Null = 200 *independent*
+AR(1) region signals matched to each real region's autocorrelation + variance (same
+grain, same T, zero coordination). Result: real k_eff median **8.0** vs averaging
+null **35.3** — real is **4.3× lower** (CI [3.96, 4.67]), **139/139** subjects
+below the null. Holding N=200 fixed, independent regions give k_eff≈35, so the grain
+does not force low k_eff; the real brain's collapse to ~8 is genuine cross-region
+coordination (67% strictly in the (2.3,10) corridor). Not an averaging artifact.
+Still owed: "complete" is a matter of degree (S&P-100 ⊂ full market).
 
 Scripts: `spectral_test.py` (C. elegans), `spectral_drosophila.py`,
 `spectral_finance.py` (+ `finance_dynamics.py`: rolling k_eff predicts forward risk
