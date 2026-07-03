@@ -8,6 +8,31 @@ Where RATCHET is bounded, falsifiable, and engineering-grade, **coherence-ratche
 
 The engineering paper (RATCHET) stratifies audiences and keeps each level non-load-bearing on the levels above. The coherence-ratchet paper inherits the same stratification structure but does not hedge on the universal-scale content for readers who proceed past Level 4.
 
+## CURRENT DIRECTION (2026-07): the two-axis discriminator — do not lose this
+
+The active empirical work is a **two-axis operational discriminator** for coordination. This is where effort is going; keep it front-of-mind across sessions.
+
+- **Axis 1 — STRUCTURE (saturation):** does `k_eff` SATURATE (bounded / low-rank) as constituents are added, measured on a COMPLETE unit? Objective measure is **saturation, not level** (levels are substrate-specific). The completeness/grain discipline (fixed before the spectrum) is the load-bearing method — the complete zebrafish brain saturating kills the "wrong grain / sampled a patch" objection. Validated across substrates (Gate 0). Formal: `Cosmology/CriticalityDiscriminator.lean`; empirical: `experiments/keff_saturation/`.
+- **Axis 2 — MAINTENANCE (detailed balance = the γM term):** does the system BREAK detailed balance (actively coordinating) or SATISFY it (bound / conservative)? Validated estimator (`experiments/keff_saturation/entropy_production.py`: null |z|≈1.5, driven ≈41, cyclic ≈16.6).
+
+The 2×2 (real-data anchors so far):
+
+|  | breaks detailed balance | DB-satisfying |
+|---|---|---|
+| low-rank | coordinating — macaque motor cortex \|z\|=8.8 | bound — galaxy gas baryon cycle z≈0 |
+| high-rank | turbulent/driven — OPEN | dead/thermal — OPEN |
+
+**Honest positioning (enforce it):** unification + methodological discipline, NOT a novel phenomenon. Low-D structure (Cunningham–Yu, Gao–Ganguli) and broken detailed balance in living systems (Battle 2016; Lynn 2021) are prior art; the maintenance axis = the atmospheric-disequilibrium biosignature (Lovelock; Krissansen-Totton). The discriminator ADJUDICATES a live criticality-vs-low-dimensionality debate (Muñoz/Bialek vs the low-D-manifold camp); it does not "discover low-rank," and criticality is not "trivial."
+
+**Open questions being pursued** (each testable with data in hand or near-reach):
+1. Does high-dimensional cortex BREAK DB (→ "turbulent/driven", decoupling the two axes)? Allen data + the DB estimator — immediately runnable.
+2. Fill the "dead" cell (high-rank + DB-satisfying = thermal equilibrium) → completing the 2×2 demonstrates axis INDEPENDENCE (the load-bearing conceptual claim).
+3. The 2×2 TRAJECTORY as coordination fails (anesthesia ECoG already fetched: does γM drop before/with/after the k_eff change?).
+4. Which galaxies break baryon-cycle DB — star-forming (feedback-driven) vs quenched? (TNG subbox pipeline + API access now in hand.)
+5. CONTENT vs TAUTOLOGY (deepest): does k_eff track an INDEPENDENT driver dimensionality or is it near-definitional? Needs matched-design stimuli (the Allen stimulus-type test was design-confounded).
+
+**NOT claimed / do not overreach:** cross-substrate universality (domain-clustered, thin), the dynamics as a predictive law (modest — clean ECoG supports M=0→rigidity default; the two-pole *predictive* version failed), the cosmological tier (F-11 dead / grain-untestable), the AI-safety adversarial-`N_eff` result (spec'd `experiments/adversarial_neff/SPEC.md`; semantic `N_eff`≈6–8 measured, CEG/adversarial half unrun). Discipline note: across this work I over-read results several times (dynamics "falsification", "tautological" content read) that were confounds/artifacts caught on scrutiny — anchor verdicts to controlled measures, not first passes.
+
 ## The Ten Load-Bearing Pieces
 
 The full formal structure has eight load-bearing pieces, plus two long-arc structures (Pieces 9-10). Granted everything: one identity (Kish), one dynamical equation (`dρ/dt` with corridor attractor), one corridor (ρ ∈ (0.1, 0.43)), one operator (P_ω), and one inner-product structure (TSVF). Applied at successively larger scales with the rung hierarchy as the indexing structure. Everything else falls out of this combination under specific substrate-instantiations.

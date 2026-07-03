@@ -10,6 +10,29 @@ This is the research companion to [RATCHET](../RATCHET). RATCHET is the practica
 
 The whole thing is deliberately layered: you can accept the plain, well-tested parts and stop there, or keep reading into the speculative parts. Rejecting a later layer costs you nothing in the earlier ones.
 
+## Current direction (2026-07): the two-axis discriminator for coordination
+
+The active work is a **two-axis operational discriminator** that places any system as *coordinating*, *bound*, *dead*, or *turbulent*:
+
+- **Axis 1 — structure:** does effective dimensionality `k_eff` **saturate** (bounded / low-rank) as constituents are added, measured on a **complete** unit? The *completeness-fixed-before-spectrum* grain discipline is the load-bearing method — a complete larval-zebrafish brain saturating is what kills the "you only sampled a patch" objection.
+- **Axis 2 — maintenance:** does the system **break detailed balance** (actively coordinated — the `γM` term) or **satisfy** it (bound / conservative)?
+
+|  | breaks detailed balance | detailed-balance-satisfying |
+|---|---|---|
+| **low-rank** | **coordinating** — macaque motor cortex ✓ | **bound** — galaxy gas baryon cycle ✓ |
+| **high-rank** | turbulent / driven — *(open)* | dead / thermal — *(open)* |
+
+Two cells have real-data anchors; the two high-rank cells are the next tests (they establish the axes are **independent**). Honest positioning: this is **unification + methodological discipline**, *not* a novel phenomenon — low-dimensional population structure (Cunningham–Yu, Gao–Ganguli) and broken detailed balance in living systems (Battle 2016; Lynn 2021) are established prior art; the maintenance axis on exoplanets reduces to the atmospheric-disequilibrium biosignature (Lovelock; Krissansen-Totton).
+
+**Open questions being pursued** (`experiments/keff_saturation/`):
+1. Where does high-dimensional cortex fall on the maintenance axis? If it breaks DB → "turbulent/driven," which *decouples* the two axes.
+2. Fill the "dead" cell (high-rank + DB-satisfying = thermal equilibrium) — completing the 2×2 demonstrates axis independence.
+3. The **trajectory** through the 2×2 as coordination fails (anesthesia ECoG: does `γM` drop before / with / after the dimensionality change?).
+4. Which galaxies break baryon-cycle detailed balance — actively star-forming (feedback-driven) vs. quenched?
+5. **Content vs. tautology** (deepest): does `k_eff` track an *independent* driver dimensionality, or is it near-definitional? Needs a matched-design stimulus experiment.
+
+**Not claimed here:** universality (domain-clustered / thin), the dynamics as a predictive law (modest single-substrate support), the cosmological tier (F-11 dead / untestable), or the AI-safety `N_eff` adversarial result (spec'd, semantic-only measured, adversarial half unrun). Details, per-substrate results, and honest caveats: [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md).
+
 ## The framework in one paragraph (for the technical reader)
 
 One identity ([Kish 1965](#references)), one dynamical equation (`dρ/dt = α − γM`), one corridor, and one inner-product structure ([TSVF](#references)). Applied at successively larger scales, with a hierarchy of "rungs" (molecules → cells → … → societies) as the indexing structure.
