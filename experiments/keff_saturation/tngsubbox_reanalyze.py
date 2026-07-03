@@ -39,9 +39,9 @@ def oue(T):
 res["estimator_check"]=dict(equilibrium_z=float(cz(*oue(T).T)),driven_z=float(np.mean([cz(*oud(T).T) for _ in range(8)])))
 res["detailed_balance"]=dict(percell_mean_z=float(pcz.mean()),percell_frac_sig=float((np.abs(pcz)>2).mean()),global_meanstate_z=zg)
 res["detailed_balance_verdict"]=("DB-SATISFYING / no sustained coordinating cycle (BOUND)" if abs(zg)<2 and (np.abs(pcz)>2).mean()<0.1 else "MARGINAL")
-res["caveats"]=["span 0.94 Gyr ~ 1 baryon-cycle period (better than the T=14/0.44 Gyr; full T=50/~1.65 Gyr = several periods would strengthen)",
-                "estimator dynamic range modest at T=28 (driven calibrator z~2.2): detects a strong cycle, a very weak one could hide",
-                "TNG gas has cooling+feedback by construction -> some irreversibility guaranteed; we find NO net circulation (one-way/transient dissipation, not a sustained loop)",
+res["caveats"]=[f"span {span:.2f} Gyr ~ several baryon-cycle periods (maximally-powered: {T} clean of the T=50 build; supersedes the T=14/0.44 Gyr and T=28/0.94 Gyr passes -- verdict unchanged across all three)",
+                f"estimator dynamic range is MODEST even here (driven calibrator z={res['estimator_check']['driven_z']:.2f}, separation from equilibrium ~{res['estimator_check']['driven_z']-res['estimator_check']['equilibrium_z']:.1f}): it detects a STRONG sustained cycle; a WEAK one (z~1-2) could hide. Real gas z~{zg:.2f} sits well below driven, closer to equilibrium.",
+                "TNG gas has cooling+feedback by construction -> some irreversibility guaranteed; we find NO net circulation (one-way/transient dissipation, not a sustained homeostatic loop)",
                 "one galaxy, one subbox; simulation-physics dissipation is NOT the framework's gamma*M maintenance term"]
 json.dump(res,open('spectral_results_tngsubbox.json','w'),indent=1)
 print("SATURATION:",{k:round(v['PR_keff'],2) for k,v in sat.items()})
