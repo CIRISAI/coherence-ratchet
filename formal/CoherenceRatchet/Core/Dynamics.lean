@@ -32,19 +32,25 @@ WEAKER than the single-pole claim — a system out of the corridor is at one pol
 or the other almost by definition. The falsifiable content is QUANTITATIVE: for a
 given substrate + graded perturbation, does ρ go to the SPECIFIC predicted pole?
 
-EMPIRICAL STATUS (2026-07-03): that test was RUN cleanly — macaque ECoG (128-ch
-subdural, right grain), propofol vs ketamine, predicting propofol→rigidity and
-ketamine→chaos (two agents, two poles = the predictive signature). IT FAILED. Both
-anesthetics moved to RIGIDITY broadband (k_eff↓, ρ↑; no agent-fork); ketamine never
-reached its predicted chaos; and the pole assignment FLIPS with the analysis band
-(propofol → chaos in gamma) — so "which pole" is a researcher degree of freedom,
-not mechanism-determined. Only the weak, near-unfalsifiable reading ("anesthesia
-moves ρ off the awake point") survives. So the two-pole dynamics, as a PREDICTIVE
-claim, is UNSUPPORTED at every grain currently measurable: ρ on a mesoscopic field
-is band- and grain-confounded to where the pole is not a stable property. The
-STRUCTURE (saturation, Piece 3) is solid; this DYNAMICS piece is not a confirmed
-law. A grain-robust test needs single-unit ρ + a principled timescale, not field
-potentials. (`experiments/keff_saturation/spectral_twopole_summary.md`.)
+EMPIRICAL STATUS (2026-07-03): tested cleanly — macaque ECoG (128-ch subdural,
+right grain), propofol vs ketamine, matched awake baseline on the same implant.
+RESULT: the framework's ORIGINAL single-pole direction (M=0 → ρ↑ toward RIGIDITY)
+is SUPPORTED. Both anesthetics drove k_eff↓ / ρ↑ broadband — propofol 14.9→6.4
+(ρ 0.062→0.153), ketamine 14.5→5.3 (ρ 0.064→0.185), large effects (d≈−5, p≈4e-5) —
+REVERSING the earlier confounded scalp-EEG / post-anoxic arousal result (which had
+shown the opposite; it was a grain + perturbation artifact). So maintenance
+withdrawal drives toward rigidity at the coordinating grain, as originally claimed.
+
+What is NOT supported is the stronger PREDICTIVE embellishment — that the
+anesthetic's receptor mechanism selects the pole (propofol→rigidity vs
+ketamine→chaos). Both agents went to rigidity; ketamine never reached chaos; and
+the pole flips with analysis band (propofol → chaos in gamma). So the CHAOS exit
+(`rho_exit_chaos`) is real MATHEMATICALLY (α<0) and at EXTREMES (burst-suppression /
+isoelectric death), but it is NOT agent-selected; the empirically-supported default
+under clean maintenance-withdrawal is RIGIDITY. Robustness caveats: one monkey
+(Chibi), ECoG field (not single-unit), gamma-band flip. Net: the original
+directional dynamics gains support at a second clean substrate; the two-pole
+predictive speculation does not. (`experiments/keff_saturation/spectral_twopole_summary.md`.)
 
 The corridor's bounds are substrate-specific (the earlier universal ρ_c ≈ 0.43 is
 retracted); the framework asserts the corridor as the structural object.
