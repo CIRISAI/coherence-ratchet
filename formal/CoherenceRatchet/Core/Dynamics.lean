@@ -52,6 +52,42 @@ under clean maintenance-withdrawal is RIGIDITY. Robustness caveats: one monkey
 directional dynamics gains support at a second clean substrate; the two-pole
 predictive speculation does not. (`experiments/keff_saturation/spectral_twopole_summary.md`.)
 
+TRAJECTORY / ORDERING TEST (2026-07-03). The prior test compared two endpoints
+(awake vs deep). This one slides a window across the CONTINUOUS induction to ask
+the causal-ordering question this file's framing stakes a claim on: the corridor
+is written as "a MAINTAINED state, held by non-trivial M(t)", which predicts that
+under anesthesia the maintenance term γM (Axis 2, measured as broken detailed
+balance) should withdraw BEFORE or WITH the structural k_eff collapse (Axis 1) —
+maintenance withdrawal DRIVES the exit, so it cannot lag. Same macaque ECoG
+(Chibi, 128-ch, continuous Session2), propofol and ketamine, broadband 1–100 Hz,
+20 s / 5 s windows; DB via winding + phase-randomized circulation null.
+RESULT: the ordering prediction is NOT supported.
+  • k_eff (Axis 1) collapses under BOTH agents and is the robust correlate of
+    fading consciousness (propofol sharp, midpoint 142 s ±4 s; ketamine gradual,
+    176 s). This is the part `rho_drift_at_zero_maintenance` speaks to and it holds.
+  • Propofol: γM DOES eventually withdraw (circulation |z| 5.4→0.93, dropping below
+    the ~1.5 null into the DB-satisfying "bound" cell) — but its transition is noisy
+    and NOT resolvably before k_eff (winding −14 s, circ +41 s; wide CIs straddle the
+    sharp k_eff time; the strong estimator if anything LAGS). Ordering: UNRESOLVED.
+  • Ketamine (DECISIVE): k_eff collapses just as fully while detailed balance is
+    PRESERVED (winding 3.3→4.3↑, circ 5.6→6.9↑, both far above null throughout deep).
+    So structural corridor-exit occurs WITHOUT maintenance withdrawal — a clean
+    counter-example in the NECESSITY direction to "the corridor structure is held by
+    γM". Deep ketamine sits in the coordinating cell (low-rank + breaks DB) yet is
+    unconscious: the 2×2 CELL does not determine consciousness; the k_eff DROP from
+    the system's own baseline does.
+IMPLICATION for the theorems below. `rho_drift_at_zero_maintenance` (M=0 → drift)
+is a conditional and is NOT contradicted — ketamine never sets M=0. What is undercut
+is the stronger EXPLANATORY reading that structural corridor-exit IMPLIES maintenance
+failure: real loss of consciousness (ketamine) exits the k_eff corridor with γM
+fully intact. Maintenance withdrawal is (at most) sufficient, NOT necessary, for
+structural collapse. POSITIVE by-product: the two agents land in DIFFERENT 2×2 cells
+(propofol→bound, ketamine→coordinating), the dynamical echo of the static
+axis-independence result — Axis 1 collapses while Axis 2 does (propofol) or does not
+(ketamine), independently. Caveats: ECoG field grain, weak/noisy DB signal (ordering
+limited by the DB estimator, not k_eff), one monkey, broadband only.
+(`experiments/keff_saturation/spectral_anesthesia_trajectory_summary.md`.)
+
 The corridor's bounds are substrate-specific (the earlier universal ρ_c ≈ 0.43 is
 retracted); the framework asserts the corridor as the structural object.
 -/
