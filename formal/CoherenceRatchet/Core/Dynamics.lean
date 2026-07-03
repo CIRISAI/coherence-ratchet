@@ -30,10 +30,21 @@ empirical, substrate-specific fact, NOT universally ρ→1.
 HONEST FALSIFIABILITY CAVEAT. "M=0 → exit to *some* pole" is more defensible but
 WEAKER than the single-pole claim — a system out of the corridor is at one pole
 or the other almost by definition. The falsifiable content is QUANTITATIVE: for a
-given substrate + graded perturbation, does ρ follow the predicted trajectory to
-the SPECIFIC predicted pole, measured at the COORDINATING GRAIN (not a coarse
-proxy like scalp EEG)? That test is owed (`experiments/keff_saturation/`); until
-it runs, the two-pole dynamics is a structure, not a confirmed law.
+given substrate + graded perturbation, does ρ go to the SPECIFIC predicted pole?
+
+EMPIRICAL STATUS (2026-07-03): that test was RUN cleanly — macaque ECoG (128-ch
+subdural, right grain), propofol vs ketamine, predicting propofol→rigidity and
+ketamine→chaos (two agents, two poles = the predictive signature). IT FAILED. Both
+anesthetics moved to RIGIDITY broadband (k_eff↓, ρ↑; no agent-fork); ketamine never
+reached its predicted chaos; and the pole assignment FLIPS with the analysis band
+(propofol → chaos in gamma) — so "which pole" is a researcher degree of freedom,
+not mechanism-determined. Only the weak, near-unfalsifiable reading ("anesthesia
+moves ρ off the awake point") survives. So the two-pole dynamics, as a PREDICTIVE
+claim, is UNSUPPORTED at every grain currently measurable: ρ on a mesoscopic field
+is band- and grain-confounded to where the pole is not a stable property. The
+STRUCTURE (saturation, Piece 3) is solid; this DYNAMICS piece is not a confirmed
+law. A grain-robust test needs single-unit ρ + a principled timescale, not field
+potentials. (`experiments/keff_saturation/spectral_twopole_summary.md`.)
 
 The corridor's bounds are substrate-specific (the earlier universal ρ_c ≈ 0.43 is
 retracted); the framework asserts the corridor as the structural object.
