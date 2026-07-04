@@ -100,3 +100,53 @@ reading both axes cleanly on the same recording.
 control), `spectral_axis_independence.py` (analysis; reuses `spectral_test.py`,
 `entropy_production.py`, `spectral_galaxy_db.py`). Real data only; the dead cell is a labelled
 constructed control. No commit, no `.lean` edits.*
+
+---
+
+## METHODOLOGY CAVEATS — post-hoc scrutiny (2026-07-04)
+
+Adversarial re-read of this run's own numbers. Net: the STATIC axis-independence claim here
+is **suggestive but not established**; the strongest independence evidence in the program is the
+*dynamical* anesthesia result (real system vs its own baseline), not this fill. Downgrade the
+headline from "demonstrably independent" to "consistent with independence, pending the gray-screen
+deconfound."
+
+**1. The "turbulent" cell is not shown high-rank BY THIS RUN — the label is imported.** The
+script's own classifier returns `verdict:"intermediate"`, `high_rank:false` for the visual data
+(needs `eff_rank_surr≥15 ∧ α>0.5`; got `eff_rank_surr=8`, `α=0.46`). At **matched N=142 motor
+cortex is *higher* on the shot-noise-robust surrogate eff-rank** (8.4 vs 4.5). The only estimator
+putting visual above motor is the power-law α (0.48 vs 0.39) plus the *external* 2p-calcium α≈0.97
+run. So independence-argument #2 ("two DB-breakers at different rank") rests on one thin estimator +
+prior data, not on this experiment.
+
+**2. Real-vs-scrambled (argument #1) is a manipulation check, not an independence proof — and read
+literally it cuts the wrong way.** Phase-randomization destroys ALL relational structure at once:
+flattens the spectrum (→higher rank) AND kills the arrow of time (→DB-satisfying) by construction.
+One destructive knob moving both axes is not evidence they're independent; if anything it is weak
+evidence they COVARY. A clean proof needs two *natural* systems matched on one axis, differing on the
+other — a scramble cannot isolate a single axis. Valid as an estimator-response check; oversold as the
+independence demonstration.
+
+**3. The "breaks DB" signal may be stimulus-driven, not internal γM — and it rests on one mode-pair.**
+Turbulent-cell circulation z=4.0 is carried almost entirely by ONE pair: 0-1 z=1.5, **0-2 z=−6.1**,
+1-2 z=0.2 (two of three at null). And **`natural_movie_three` LOOPS** — a response locked to the
+movie's repeat period yields exactly a top-mode rotation that reads "breaks DB" and survives
+phase-randomization, but whose *source* is the external periodic drive, not the system's own
+maintenance. Winding picks a *different* carrier pair (0-3) than circulation (0-2) — they don't even
+agree on which modes hold the irreversibility. This confound is the deepest and was not flagged in the
+body above.
+
+**Smaller:** smoothing is cited as strengthening ("up to 6.96") — backwards: temporal low-pass
+*manufactures* apparent irreversibility, and winding DROPS under smoothing (4.15→2.89) while
+circulation rises, so the estimators diverge (fragile signal); the least-smoothed 4.0 is the
+trustworthy value. The "dead" cell is high-rank because it is NOISE (`eff_rank_surr=1`, nothing above
+its own surrogate) — a legitimate control, but near-definitionally populated.
+
+**What survives:** visual-cortex spikes DO show a real arrow of time on the least-smoothed data
+(|z|=4.0 > ~1.5 null and > the scrambled twin) — the estimators behave. But "high-rank + breaks-DB,
+cleanly independent of rank" is over-stated on this data.
+
+**The clean fix (queued):** compute DB on **gray-screen / spontaneous** epochs of the same visual
+cortex (Allen has them). Break DB with NO external periodicity ⇒ intrinsic γM, turbulent cell real.
+Only during the looping movie ⇒ stimulus-driven, cell collapses. Deconfounds argument #3 on data in
+hand.
