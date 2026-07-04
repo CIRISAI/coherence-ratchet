@@ -88,6 +88,7 @@ import CoherenceRatchet.MaximalClaim
 import CoherenceRatchet.Core.BaseIdentity                  -- Piece 1
 import CoherenceRatchet.Core.Dynamics                       -- Piece 2
 import CoherenceRatchet.Core.Corridor                       -- Piece 3
+import CoherenceRatchet.Core.Coherence                      -- CC 6.2.4 (J = F = k_eff·λ_op·σ)
 import CoherenceRatchet.Cosmology.TSVF                      -- Piece 4 (TSVF)
 import CoherenceRatchet.Cosmology.GoalProjection            -- Piece 4 (goal projector)
 import CoherenceRatchet.Cosmology.JointGoalProjector        -- Piece 5 (operator form)
