@@ -172,3 +172,102 @@ S(k,ρ) as the measured potential (its divergence rate near the rigidity pole,
 CAUTION: these are prediction CANDIDATES pending a spec-level writeup (grain, complete-
 unit criterion, estimator, null model — per the Gate-0 methodology). Do not cite this
 section as validated framework content.
+
+## 7. Critical literature (checked 2026-07-09)
+
+### 7.1 "Gravity is not an entropic force" (Phys. Lett. B, 2025)
+
+Published article: [ScienceDirect S0370269325008962](https://www.sciencedirect.com/science/article/pii/S0370269325008962)
+(Phys. Lett. B, online 31 Dec 2025). I could **not** locate/verify a matching arXiv
+preprint — treat the arXiv availability as **unverified**.
+
+- **What it refutes:** the *thermodynamic-force* lineage — Jacobson–Verlinde–Padmanabhan
+  — and specifically Verlinde's load-bearing assumption that *the entropy of the
+  gravitational field changes with the position of a test object* (screen entropy → force).
+  It does **not** target variational entropic-*action* constructions.
+- **Argument structure:** it constructs two quasi-static thermodynamic processes and an
+  adiabatic one in which the system (and the gravitational field) is adiabatically isolated.
+  In the adiabatic process the field entropy stays constant (ΔS = 0, no heat exchanged)
+  while the gravitational force is fully present — a direct counterexample to the ΔS = Q/T
+  identification that Verlinde's derivation needs. Conclusion: the gravity↔thermodynamics
+  correspondence holds only where there is local thermal equilibrium and heat flow across
+  local null surfaces (i.e. near horizons), not universally.
+- **Does it touch Bianconi?** No mention of Bianconi, quantum relative entropy, or entropic
+  Lagrangians surfaced in the accessible text. The construction it attacks (entropy of a
+  screen driving a force) is a **different object class** from Bianconi's action (a pointwise
+  quantum-relative-entropy Lagrangian extremized variationally). The critique's premise —
+  "field entropy must change with position for the force to be entropic" — is simply not a
+  premise Bianconi's variational theory (or our S(k,ρ)) makes.
+
+### 7.2 Bianconi, "The Thermodynamics of the Gravity from Entropy Theory" (arXiv:2510.22545)
+
+[abs](https://arxiv.org/abs/2510.22545) · [html v1](https://arxiv.org/html/2510.22545v1)
+(submitted 26 Oct 2025).
+
+- **Yes — it gives a free-energy/Hamiltonian reading.** The Hamiltonian is the Legendre
+  transform of the GfE entropy action. With conjugate variable `𝒢_k = ∂ℒ/∂τ_k = 1/(1−τ_k)`,
+  it is `ℋ = Σ_k z_k[𝒢_k − 1 − ln 𝒢_k]`, stated to be **positive and equal to the emergent
+  cosmological constant Λ^G**. It defines **k-temperatures** `θ_k = τ_k/(1−τ_k) = 𝒢_k − 1`,
+  **k-pressures** `π_k = θ_k δs_k/δv − δε_k/δv`, and a **first law** `δε_k = θ_k δs_k − π_k δv`.
+  For FRW spacetimes the low-curvature limit recovers Friedmann cosmology.
+- **Bearing on the bridge's "S as Lyapunov potential" reading — strengthens but requires a
+  hedge.** The Hamiltonian's summand `𝒢 − 1 − ln 𝒢` is exactly a Bregman/relative-entropy
+  divergence (positive, zero only at 𝒢 = 1), the same convex "distance-from-vacuum" shape as
+  our `S(k,ρ) = −Σ ln λ'`. And Bianconi states the local GQRE per unit volume is
+  **non-increasing** ("coherently with its relative-entropy nature") while total Friedmann
+  entropy is non-decreasing. That monotonicity is consistent in spirit with §3's Lyapunov
+  claim. **But** Bianconi herself does **not** call the action a Lyapunov function or assert
+  a gradient-descent dynamics; and it is the *Hamiltonian*, not the action, that she equates
+  to Λ. So §3 should cite this as a *supporting analogy* (relative entropy is monotone; the
+  potential form is positive and convex), not as Bianconi endorsing a Lyapunov reading.
+- **Invertibility-fails-at-collapse — directly supported.** The Hamiltonian "diverges for
+  τ_k → 0 or τ_k → ∞," and the theory imposes `t > t_0`, `H < H_0` precisely to keep
+  `G̃g̃⁻¹` positive-definite. This is the same divergence-at-degeneracy structure §3's
+  rigidity pole (ρ → 1⁻, S → +∞, rank collapse) relies on — good corroboration for the
+  Eq.-12 invertibility point.
+
+### 7.3 Black-hole / area-law paper (Entropy 27, 266, 2025) and its correction
+
+[MDPI 27/3/266](https://www.mdpi.com/1099-4300/27/3/266). I could **not** fetch the full
+text (MDPI 403), so the specific invertibility-at-collapse claim in that paper is
+**unverified from source** here; the §7.2 Hamiltonian-divergence result covers the same
+ground independently. A **Correction** was issued ([Entropy 27, 724, 4 Jul 2025](https://www.mdpi.com/1099-4300/27/7/724)):
+it reintroduces an adimensional β, fixes a factor-2 error in Eq. 35 (Figure 2 updated,
+trend unchanged), and amends typos — **scientific conclusions unaffected** per the authors.
+Minor, self-issued; not an external rebuttal.
+
+### 7.4 Independent standing of the theory (2025–2026)
+
+I found **no published independent critique, rebuttal, or replication** of Bianconi's
+gravity-from-entropy framework. What exists is: (a) her **own** follow-ups — the
+thermodynamics paper (§7.2) and "Spherically symmetric black holes in Gravity from Entropy
+and spontaneous emission" (arXiv:2602.13694, 2026, **unverified beyond listing**); (b) an
+**independent parallel** paper, Dorau & Much (Leipzig), *From Quantum Relative Entropy to
+the Semiclassical Einstein Equations* ([arXiv:2510.24491](https://arxiv.org/html/2510.24491v2)),
+which builds on Jacobson and cites Bianconi only as contemporaneous parallel work — neither
+endorsement nor critique; (c) popular-science coverage (phys.org, zmescience). Standing:
+**novel, ~18 months old, actively developed by its originator, generating parallel interest,
+but not yet stress-tested — neither independently confirmed nor independently refuted.**
+
+### 7.5 Bottom line
+
+**Nothing found threatens the bridge.** The one critique paper (§7.1) attacks the
+thermodynamic-force lineage (screen entropy → force) on a premise our construction never
+uses; it does not touch quantum-relative-entropy *actions*. More importantly, the
+load-bearing content of this note — the closed-form `S(k,ρ) = −ln(1+ρ(k−1)) − (k−1)ln(1−ρ)`
+and the T-E1–T-E4 theorems — is **pure finite-dimensional linear algebra on the spectrum of
+a correlation matrix**. It borrows only the *form* of Bianconi's object (relative entropy
+between an identity substrate and an induced-correlation metric), not any physical claim
+about gravity. **It survives intact even if Bianconi's theory is wrong, entropic gravity is
+false, and every gravitational reading is discarded** — what would be lost is only the
+physical-rung *analogy* (§2, §6-leg-1), not the mathematics or the corridor dynamics.
+
+**Recommended hedge for Corridor Dynamics v2 (§ candidate, per §5 item 3):** cite Bianconi
+for the *relative-entropy-between-metrics construction* as motivating analogy for the
+potential form, explicitly flagged as (i) a young theory under active development by its
+originator and not yet independently validated, and (ii) borrowed at the level of
+mathematical form only. State plainly that S(k,ρ) is theorem-backed independently of
+gravity. Optionally note the §7.1 critique to preempt a reviewer conflating this with
+Verlinde-style entropic force — and to make clear that critique does not reach a variational
+entropic action. Do **not** present Bianconi's theory as established physics, and do **not**
+attribute the Lyapunov reading to Bianconi (§7.2) — it is ours.
