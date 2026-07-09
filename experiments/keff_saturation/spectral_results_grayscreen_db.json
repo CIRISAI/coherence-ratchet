@@ -1,0 +1,509 @@
+{
+ "test": "grayscreen deconfound of the turbulent-cell DB signal",
+ "dataset": "DANDI:000021 Allen Visual Coding Neuropixels, session 721123822 (brain_observatory_1.1)",
+ "source_asset": "npx_ses721123822.nwb",
+ "bin_s": 0.02,
+ "kmodes": 4,
+ "population": "VIS cortical units active >0.5 Hz in ALL three windows (held fixed)",
+ "n_units_fixed": 403,
+ "winding_null_ceiling_reference": 1.5,
+ "prior_movie_anchor": {
+  "winding_abs_z": 4.15,
+  "circulation_abs_z": 4.01,
+  "carrier_pair": "0-2 z=-6.1 (single dominant), winding pair 0-3"
+ },
+ "windows": {
+  "spontaneous": {
+   "t0": 3778.3522281484657,
+   "t1": 4079.603792141096,
+   "desc": "gray screen, single 301s block",
+   "periodicity": "NONE (intrinsic condition)"
+  },
+  "natural_movie": {
+   "t0": 2218.049252141096,
+   "t1": 2818.5507521410964,
+   "desc": "natural_movie_three_presentations (largest contiguous block: 18000 frames, 601s)",
+   "periodicity": "LOOPING clip (prior turbulent anchor)"
+  },
+  "drifting_gratings": {
+   "t0": 4710.1302421410965,
+   "t1": 5393.701088148467,
+   "desc": "228 gratings, 684s block",
+   "periodicity": "periodic, DIFFERENT period than movie loop"
+  }
+ },
+ "conditions": {
+  "spontaneous": {
+   "rank": {
+    "label": "spontaneous",
+    "N": 403,
+    "T": 15063,
+    "PR": 182.51559809452908,
+    "eff_rank_surr": 5,
+    "eff_rank_mp": 43,
+    "mp_edge": 1.3538891247163147,
+    "alpha": 0.41207409276854107,
+    "alpha_surr": 0.2431354616501421,
+    "beta_sub": 0.5806892077994805,
+    "top_eigs": [
+     14.04316757903081,
+     12.232198784435807,
+     7.6940872101198865,
+     7.149155716092362,
+     4.815207395909416,
+     4.167963081819778,
+     3.5525145540376313,
+     3.386116351460842
+    ],
+    "subsample": [
+     [
+      10,
+      9.719741076200181,
+      0.18677515305968379
+     ],
+     [
+      15,
+      14.445730935975917,
+      0.25297907872052966
+     ],
+     [
+      20,
+      18.942581706716073,
+      0.3980691852844103
+     ],
+     [
+      30,
+      27.34393844183279,
+      0.49657828322538666
+     ],
+     [
+      40,
+      36.05089011256699,
+      1.0786695226144
+     ],
+     [
+      60,
+      51.62555272682276,
+      1.394879920729277
+     ],
+     [
+      80,
+      64.36761550453119,
+      2.27751676082954
+     ],
+     [
+      100,
+      76.43000303083866,
+      2.3127204185683174
+     ],
+     [
+      150,
+      102.88572611244152,
+      2.7234531537568167
+     ],
+     [
+      200,
+      124.67889784542187,
+      4.1671423369141225
+     ],
+     [
+      300,
+      157.80740676540648,
+      3.644953685000288
+     ],
+     [
+      400,
+      181.8349852389091,
+      0.8033399563803144
+     ]
+    ],
+    "verdict": "intermediate",
+    "high_rank": false
+   },
+   "db": {
+    "label": "spontaneous",
+    "winding_rate": -0.01780323206116078,
+    "winding_abs_z": 4.8704768422180935,
+    "winding_pair": [
+     1,
+     3
+    ],
+    "T": 15063,
+    "circulation_sum": 0.006411808739547295,
+    "circulation_abs_z": 3.2766403444150405,
+    "circulation_pairs": {
+     "0-1": {
+      "omega": -0.001778814465599407,
+      "z": -1.297175347400168
+     },
+     "0-2": {
+      "omega": 0.0020063164819217726,
+      "z": 2.5888017886937336
+     },
+     "1-2": {
+      "omega": -0.0026266777920261144,
+      "z": -2.304191408712364
+     }
+    },
+    "max_pair_abs_z": 2.5888017886937336
+   },
+   "db_null_ceiling": {
+    "label": "spontaneous_PHASERAND(null_ceiling)",
+    "winding_rate": 0.0024813348109998363,
+    "winding_abs_z": 1.2385940276220835,
+    "winding_pair": [
+     0,
+     1
+    ],
+    "T": 15063,
+    "circulation_sum": 0.004610803247102486,
+    "circulation_abs_z": 1.3815204123108904,
+    "circulation_pairs": {
+     "0-1": {
+      "omega": 0.001109143874913918,
+      "z": 1.0831250848838867
+     },
+     "0-2": {
+      "omega": 0.0006776860311890279,
+      "z": 0.6211381838255632
+     },
+     "1-2": {
+      "omega": -0.0028239733409995407,
+      "z": -1.9840773664315312
+     }
+    },
+    "max_pair_abs_z": 1.9840773664315312
+   },
+   "periodicity": "NONE (intrinsic condition)"
+  },
+  "natural_movie": {
+   "rank": {
+    "label": "natural_movie",
+    "N": 403,
+    "T": 30026,
+    "PR": 168.55899151908469,
+    "eff_rank_surr": 6,
+    "eff_rank_mp": 56,
+    "mp_edge": 1.2451258331563198,
+    "alpha": 0.45485434721517287,
+    "alpha_surr": 0.2816098924674883,
+    "beta_sub": 0.5354477595035116,
+    "top_eigs": [
+     18.14690106376078,
+     10.179297932571124,
+     6.603078496493586,
+     5.2462804769529985,
+     4.8065418409934475,
+     4.606744824312969,
+     4.083527132432063,
+     3.838263634398687
+    ],
+    "subsample": [
+     [
+      10,
+      9.652914744180759,
+      0.27015126311909743
+     ],
+     [
+      15,
+      14.28869929218521,
+      0.2890690919140135
+     ],
+     [
+      20,
+      18.878309455701764,
+      0.37944329638905017
+     ],
+     [
+      30,
+      27.54257406837857,
+      0.49330975698593166
+     ],
+     [
+      40,
+      35.36770686739072,
+      1.192369198869023
+     ],
+     [
+      60,
+      49.880644168364455,
+      2.0822295405676146
+     ],
+     [
+      80,
+      62.533559869200914,
+      1.9362420696345464
+     ],
+     [
+      100,
+      74.53842248393428,
+      2.978701330739949
+     ],
+     [
+      150,
+      99.58935165012512,
+      4.397953202663948
+     ],
+     [
+      200,
+      118.22904896640432,
+      3.6523143734557
+     ],
+     [
+      300,
+      147.90275399674982,
+      4.356649918209734
+     ],
+     [
+      400,
+      167.9080264164837,
+      0.5953182281369032
+     ]
+    ],
+    "verdict": "intermediate",
+    "high_rank": false
+   },
+   "db": {
+    "label": "natural_movie",
+    "winding_rate": -0.005403472802747657,
+    "winding_abs_z": 2.913757673236116,
+    "winding_pair": [
+     0,
+     1
+    ],
+    "T": 30026,
+    "circulation_sum": 0.014858739107374053,
+    "circulation_abs_z": 5.415120478712708,
+    "circulation_pairs": {
+     "0-1": {
+      "omega": -0.004882402032963446,
+      "z": -1.476257640156041
+     },
+     "0-2": {
+      "omega": 0.008382226424825686,
+      "z": 7.269729994808837
+     },
+     "1-2": {
+      "omega": 0.0015941106495849192,
+      "z": 1.4252477738974096
+     }
+    },
+    "max_pair_abs_z": 7.269729994808837
+   },
+   "db_null_ceiling": {
+    "label": "natural_movie_PHASERAND(null_ceiling)",
+    "winding_rate": -0.004166851405234848,
+    "winding_abs_z": 1.4149756991514488,
+    "winding_pair": [
+     2,
+     3
+    ],
+    "T": 30026,
+    "circulation_sum": 0.001623797779929214,
+    "circulation_abs_z": 0.2073090878216176,
+    "circulation_pairs": {
+     "0-1": {
+      "omega": 0.0005617930174079193,
+      "z": 0.799581002801787
+     },
+     "0-2": {
+      "omega": -0.00028014902525315405,
+      "z": -0.35973193801322434
+     },
+     "1-2": {
+      "omega": 0.0007818557372681408,
+      "z": 1.0359485611853931
+     }
+    },
+    "max_pair_abs_z": 1.0359485611853931
+   },
+   "periodicity": "LOOPING clip (prior turbulent anchor)"
+  },
+  "drifting_gratings": {
+   "rank": {
+    "label": "drifting_gratings",
+    "N": 403,
+    "T": 34179,
+    "PR": 105.36749452511383,
+    "eff_rank_surr": 10,
+    "eff_rank_mp": 44,
+    "mp_edge": 1.2289623715676832,
+    "alpha": 0.4860396477672835,
+    "alpha_surr": 0.19341095874881728,
+    "beta_sub": 0.3747419027389387,
+    "top_eigs": [
+     27.512358080690447,
+     13.774275071987677,
+     8.023101080506004,
+     7.330362466663808,
+     7.184297509264573,
+     5.671422287951604,
+     5.010901811020826,
+     4.349336726690071
+    ],
+    "subsample": [
+     [
+      10,
+      9.432342063552806,
+      0.29287174980675595
+     ],
+     [
+      15,
+      13.625518338796136,
+      0.6302483908695203
+     ],
+     [
+      20,
+      17.597046265538776,
+      0.8395452371966149
+     ],
+     [
+      30,
+      25.20525363950945,
+      1.0963881428878919
+     ],
+     [
+      40,
+      31.054483137825503,
+      1.575990048674301
+     ],
+     [
+      60,
+      42.38728927034909,
+      2.2621397498987834
+     ],
+     [
+      80,
+      51.84438714432305,
+      2.67998566025935
+     ],
+     [
+      100,
+      59.06158503504366,
+      3.1363164956342806
+     ],
+     [
+      150,
+      73.05231258926617,
+      4.5065280182567475
+     ],
+     [
+      200,
+      81.94760924011142,
+      2.5926682104762913
+     ],
+     [
+      300,
+      95.97922952938572,
+      2.8692711122372447
+     ],
+     [
+      400,
+      105.23638221477889,
+      0.5713663039221277
+     ]
+    ],
+    "verdict": "intermediate",
+    "high_rank": false
+   },
+   "db": {
+    "label": "drifting_gratings",
+    "winding_rate": 0.022632228289395005,
+    "winding_abs_z": 6.207372571347514,
+    "winding_pair": [
+     0,
+     1
+    ],
+    "T": 34179,
+    "circulation_sum": 0.05352045186788902,
+    "circulation_abs_z": 15.91742716526166,
+    "circulation_pairs": {
+     "0-1": {
+      "omega": 0.018194118115077915,
+      "z": 4.488645549657283
+     },
+     "0-2": {
+      "omega": 0.026258478179740908,
+      "z": 11.379251777011403
+     },
+     "1-2": {
+      "omega": -0.009067855573070204,
+      "z": -5.27088500543559
+     }
+    },
+    "max_pair_abs_z": 11.379251777011403
+   },
+   "db_null_ceiling": {
+    "label": "drifting_gratings_PHASERAND(null_ceiling)",
+    "winding_rate": -0.03253454369678883,
+    "winding_abs_z": 17.11424290691059,
+    "winding_pair": [
+     0,
+     1
+    ],
+    "T": 34179,
+    "circulation_sum": 0.034053118518783204,
+    "circulation_abs_z": 1.1285179946577741,
+    "circulation_pairs": {
+     "0-1": {
+      "omega": -0.026550726765687874,
+      "z": -1.3709463678104892
+     },
+     "0-2": {
+      "omega": -0.0025587572207021237,
+      "z": -0.6668913003551504
+     },
+     "1-2": {
+      "omega": 0.004943634532393203,
+      "z": 1.2852791856459427
+     }
+    },
+    "max_pair_abs_z": 1.3709463678104892
+   },
+   "periodicity": "periodic, DIFFERENT period than movie loop"
+  }
+ },
+ "verdict": {
+  "call": "INTRINSIC gamma*M \u2014 turbulent-cell DB claim HOLDS, with an honest amendment (confound real but partial).",
+  "reasoning": [
+   "SPONTANEOUS gray-screen (no external periodicity, T=15063) STILL breaks detailed balance: winding |z|=4.87 vs its OWN phase-randomized null ceiling 1.24 (~3.9x) and above the ~1.5 winding reference null; circulation |z|=3.28 vs null ceiling 1.38. So an intrinsic arrow of time survives with the stimulus removed.",
+   "SMOKING-GUN single-dominant-pair signature VANISHES in spontaneous. Movie circulation is carried by ONE pair (0-2, z=+7.27; others at null |z|<1.5); gratings even more so (0-2, z=+11.38). Spontaneous circulation is DISTRIBUTED and modest (per-pair z: 0-2=+2.59, 1-2=-2.30, 0-1=-1.30; max 2.59, none dominant). The sharp drive-locked pair is a stimulus artifact.",
+   "So the movie's headline DB MAGNITUDE was partly stimulus-inflated and concentrated into one drive-locked mode-pair, but the signal is NOT purely a stimulus artifact: real intrinsic irreversibility (winding |z|=4.87) remains during gray screen.",
+   "ESTIMATOR TRUST (condition-dependent): winding is trustworthy for spontaneous (null ceiling 1.24) and movie (1.41) but NOT for drifting gratings, where phase-randomizing the SAME data yields winding |z|=17.11 > the real 6.21 \u2014 strong narrowband stimulus periodicity corrupts the winding estimator. For gratings trust CIRCULATION (null 1.13, real 15.92). T=15063 for spontaneous is large (half the movie), so winding does NOT degenerate here (unlike the short-T anesthesia case).",
+   "Gratings (a DIFFERENT imposed period than the movie loop) show the STRONGEST, most single-pair-concentrated circulation (|z|=15.92, pair 0-2 z=11.38) \u2014 confirming that external periodicity DOES inject a drive-locked rotation, exactly the confound mechanism; spontaneous lacking it confirms the concentration is stimulus-sourced."
+  ],
+  "key_numbers": {
+   "spontaneous": {
+    "winding_abs_z": 4.87,
+    "winding_null_ceiling": 1.24,
+    "circulation_abs_z": 3.28,
+    "circulation_null_ceiling": 1.38,
+    "max_pair_abs_z": 2.59,
+    "single_dominant_pair": false,
+    "T": 15063
+   },
+   "natural_movie": {
+    "winding_abs_z": 2.91,
+    "winding_null_ceiling": 1.41,
+    "circulation_abs_z": 5.42,
+    "circulation_null_ceiling": 0.21,
+    "max_pair_abs_z": 7.27,
+    "single_dominant_pair": true,
+    "carrier": "0-2 z=+7.27",
+    "T": 30026
+   },
+   "drifting_gratings": {
+    "winding_abs_z": 6.21,
+    "winding_null_ceiling": 17.11,
+    "winding_UNRELIABLE": true,
+    "circulation_abs_z": 15.92,
+    "circulation_null_ceiling": 1.13,
+    "max_pair_abs_z": 11.38,
+    "single_dominant_pair": true,
+    "carrier": "0-2 z=+11.38",
+    "T": 34179
+   }
+  },
+  "single_pair_signature_vanishes_in_spontaneous": true
+ }
+}

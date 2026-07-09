@@ -15,7 +15,8 @@ Real data only. No commit.
 """
 import os, json, numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
-RES = os.path.join(HERE, "spectral_results_anesthesia_trajectory.json")
+TAG = os.environ.get("TRAJ_TAG", "")
+RES = os.path.join(HERE, f"spectral_results_anesthesia_trajectory{TAG}.json")
 
 def cliffs_delta(a, b):
     a = np.asarray(a); b = np.asarray(b)
@@ -45,7 +46,7 @@ def analyze_agent(agent, sess, base):
     ts = np.array([r["t_center"] for r in rows])
     out = {"injection_t": inj, "deep_t0": d0, "deep_t1": d1}
     # awake-baseline window arrays (Session1)
-    bpath = os.path.join(HERE, f"baseline_windows_{agent}.json")
+    bpath = os.path.join(HERE, f"baseline_windows_{agent}{TAG}.json")
     bwin = json.load(open(bpath)) if os.path.exists(bpath) else []
     deep_rows = [r for r in rows if r["epoch"] == "deep"]
     keys = [("k_eff","k_eff",False), ("db_z_winding","db_winding",True),
@@ -127,7 +128,7 @@ def plot(results, post):
         l1,lab1 = ax.get_legend_handles_labels(); l2,lab2 = ax2.get_legend_handles_labels()
         ax.legend(l1+l2, lab1+lab2, fontsize=8, loc="upper right")
     fig.tight_layout()
-    p = os.path.join(HERE, "spectral_anesthesia_trajectory.png")
+    p = os.path.join(HERE, f"spectral_anesthesia_trajectory{TAG}.png")
     fig.savefig(p, dpi=130); print("wrote", p)
 
 def main():
@@ -146,7 +147,7 @@ def main():
                   f"CI={r['t_mid_ci']}")
         print("  ORDERING:")
         for line in verdict(a): print(line)
-    json.dump(post, open(os.path.join(HERE, "anesthesia_trajectory_ordering.json"), "w"), indent=1)
+    json.dump(post, open(os.path.join(HERE, f"anesthesia_trajectory_ordering{TAG}.json"), "w"), indent=1)
     plot(results, post)
 
 if __name__ == "__main__":

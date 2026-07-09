@@ -1,5 +1,20 @@
 # Anesthesia TRAJECTORY: does maintenance (γM / detailed balance) collapse BEFORE, WITH, or AFTER structure (k_eff)?
 
+> ⚠ **PARTIALLY SUPERSEDED (2026-07-04) by the George replication**
+> (`spectral_anesthesia_george_summary.md`). Read them together.
+>
+> - **RETRACTED:** "k_eff collapses under both agents and is the robust correlate of fading
+>   consciousness." The collapse is **Chibi-specific**. In George it does not occur and the
+>   sign *reverses* (propofol 7.10→7.88, ketamine 5.83→6.94, both rising). Absolute ECoG-field
+>   k_eff is not portable across animals and its within-session sign is not stable.
+> - **RETRACTED as a replicated result:** the ketamine counter-example below ("structure
+>   collapses while maintenance persists") is **n=1**. George shows no structural collapse, so
+>   the configuration never arises there; only the "ketamine preserves DB" half replicates.
+> - **HOLDS (2/2 animals):** the maintenance split — deep propofol falls below the null (bound),
+>   deep ketamine stays above it (coordinating). This is a **drug-specific** signature, not a
+>   consciousness correlate: both agents produce unconsciousness in *different* cells.
+
+
 **The dynamical complement to the static axis-independence proof.** The static run
 (`spectral_axis_independence.py`) showed the two axes — STRUCTURE (k_eff / rank) and
 MAINTENANCE (detailed balance = the γM term) — vary *independently* at a frozen instant.
