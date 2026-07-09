@@ -91,6 +91,7 @@ import CoherenceRatchet.Core.Corridor                       -- Piece 3
 import CoherenceRatchet.Core.Coherence                      -- CC 6.2.4 (J = F = k_eff·λ_op·σ)
 import CoherenceRatchet.Core.CollapseTheorem              -- CC 6.2.1 (collapse bound, O(r²·k_eff) remainder — closes #4)
 import CoherenceRatchet.Core.SignalSourceDiscount         -- CC 6.2.3.1 (σ Kish discount on sources — closes #5)
+import CoherenceRatchet.Core.EntropicPotential            -- T-E1..T-E4 (entropic-action bridge, Bianconi 2025)
 import CoherenceRatchet.Cosmology.TSVF                      -- Piece 4 (TSVF)
 import CoherenceRatchet.Cosmology.GoalProjection            -- Piece 4 (goal projector)
 import CoherenceRatchet.Cosmology.JointGoalProjector        -- Piece 5 (operator form)
