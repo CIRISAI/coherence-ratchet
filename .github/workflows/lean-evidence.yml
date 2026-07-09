@@ -1,0 +1,39 @@
+name: lean-evidence
+
+# Builds the Lean lake and verifies the `lean:` tier of the CC evidence registry
+# (evidence/cc_lean.tsv). Guards against the Constitution overclaiming a proof:
+# a renamed/deleted theorem, or one that becomes `sorry`-dependent, fails here.
+on:
+  push:
+    branches: [main]
+    paths: ['formal/**', 'evidence/**', '.github/workflows/lean-evidence.yml']
+  pull_request:
+    paths: ['formal/**', 'evidence/**', '.github/workflows/lean-evidence.yml']
+  workflow_dispatch:
+
+jobs:
+  verify-anchors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the Lean lake (elan + mathlib cache)
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal
+          build: true
+          test: false
+          lint: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # A green check that cannot go red is worthless. The lake is sorry-free, so
+      # synthesise both failure modes through real Lean and assert they are caught
+      # BEFORE trusting the real run below.
+      - name: Self-test the verifier's traps
+        run: python3 evidence/verify_lean_anchors.py --self-test
+
+      - name: Verify every mechanized anchor resolves and is sorry-free
+        run: python3 evidence/verify_lean_anchors.py
