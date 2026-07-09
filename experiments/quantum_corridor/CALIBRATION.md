@@ -101,36 +101,72 @@ Operationalization A, and the reason the SPEC requires ≥2 MUBs.
 
 ## C3 leg — the depolarized-GHZ maintenance ramp
 
-Sweep p (mixing rate of independent product noise into GHZ; p↑ = withdrawing the
-coordinating drive). Measured trajectory (N=53, S=1e5):
+> **CORRECTED 2026-07-09 (issue #7).** The first version of this leg was **vacuous**. It
+> set `S_measured = potential_S(PR, ρ̄)` — evaluating the *closed form* at the
+> participation ratio, never taking a log-determinant — and compared it against
+> `curve_C3(PR, ρ̄) = −(PR−1)ln(1−ρ̄)`, which is the **second term of that same formula**.
+> The reported `deviation` was therefore identically `−ln(1+ρ̄(PR−1))` **by algebra**
+> (verified: max |reported − analytic| = 2.8e-17 over all 11 points). The test could not
+> fail, and the old table's `S measured` column was wrong by three orders of magnitude
+> (0.123 where `−Tr ln C(53, 0.979) = 197.2`). Substituting PR for the matrix *dimension*
+> also manufactured the old "S stays finite and does not diverge" caveat — which the fix
+> dissolves. Numbers below are from the corrected estimator.
 
-| p | ρ̄ | k_eff (PR) | S measured | −(k−1)ln(1−ρ̄) | deviation |
-|---|---|---|---|---|---|
-| 0.02 | 0.979 | 1.04 | 0.123 | 0.164 | −0.041 |
-| 0.05 | 0.950 | 1.11 | 0.222 | 0.319 | −0.097 |
-| 0.10 | 0.900 | 1.23 | 0.341 | 0.529 | −0.188 |
-| 0.20 | 0.802 | 1.54 | 0.514 | 0.874 | −0.360 |
-| 0.30 | 0.700 | 2.00 | 0.675 | 1.206 | −0.532 |
-| 0.55 | 0.448 | 4.64 | 1.195 | 2.162 | −0.967 |
-| 0.70 | 0.300 | 9.31 | 1.717 | 2.969 | −1.252 |
-| 0.85 | 0.150 | 24.44 | 2.299 | 3.806 | −1.507 |
-| 1.00 | ≈0    | 52.97 | 0.000 | −0.002 | ≈0 |
+Sweep p (mixing rate of independent product noise into GHZ; p↑ = withdrawing the
+coordinating drive). Trajectory (N=53, S=1e5). `S_spectral = −Tr ln C = −Σ ln λᵢ` over the
+**measured** eigenvalues; `S_closed(N,ρ̄)` is the equicorrelation prediction at the true
+dimension; `S_C3 = −(N−1)ln(1−ρ̄)` is the parameter-free rigidity asymptote.
+
+| p | ρ̄ | k_eff (PR) | **S_spectral** | S_closed(53,ρ̄) | S_C3 | dev_equicorr | S/C3 |
+|---|---|---|---|---|---|---|---|
+| 0.02 | 0.979 | 1.04 | **197.80** | 197.20 | 201.15 | +0.609 | **0.983** |
+| 0.05 | 0.950 | 1.11 | **151.62** | 151.37 | 155.29 | +0.248 | 0.976 |
+| 0.10 | 0.900 | 1.23 | **115.84** | 115.71 | 119.58 | +0.123 | 0.969 |
+| 0.15 | 0.849 | 1.38 | 94.40 | 94.32 | 98.13 | +0.082 | 0.962 |
+| 0.20 | 0.802 | 1.54 | 80.39 | 80.32 | 84.08 | +0.069 | 0.956 |
+| 0.30 | 0.700 | 2.00 | 58.99 | 58.95 | 62.57 | +0.043 | 0.943 |
+| 0.40 | 0.601 | 2.68 | 44.32 | 44.29 | 47.77 | +0.032 | 0.928 |
+| 0.55 | 0.448 | 4.64 | 27.68 | 27.66 | 30.85 | +0.025 | 0.897 |
+| 0.70 | 0.300 | 9.31 | 15.79 | 15.77 | 18.58 | +0.019 | 0.850 |
+| 0.85 | 0.150 | 24.44 | 6.29 | 6.27 | 8.44 | +0.016 | 0.744 |
+| 1.00 | ≈0 | 52.97 | 0.014 | 0.000 | −0.002 | +0.014 | n/a |
 
 - **C2 direction (pre-declared) confirmed:** ρ̄ moves **monotonically** from ≈0 (p=1,
-  chaos) up to 0.98 (p=0.02, rigidity pole). Withdrawing the drive drives the unit to the
+  chaos) up to 0.98 (p=0.02, rigidity pole). Withdrawing the drive takes the unit to the
   correct declared pole.
-- **C3 deviation band:** the deviation between the measured potential and the
-  parameter-free curve is *exactly* the bounded first term, deviation = −ln(1+ρ̄(k−1)).
-  It **vanishes as ρ̄→1 (−0.04 at ρ̄=0.98)** — i.e. near the rigidity pole, the regime C3
-  is declared for, the parameter-free −(k−1)ln(1−ρ̄) tracks S within ≈±0.05. Away from the
-  pole the full two-term form is needed and the deviation grows smoothly to ≈−1.5 at
-  mid-ramp.
-- **Honest caveat on the divergence rate:** in the depolarized-GHZ surrogate k_eff and ρ̄
-  are *coupled* (the coordinated part is rank-1, so k_eff→1 as ρ̄→1). The pole is therefore
-  approached along a path where (k−1)→0, so **S stays finite and does not diverge** — this
-  ramp confirms the curve *tracking* and the exit *direction*, but does **not** exhibit a
-  true S-divergence (that needs a fixed-k, ρ̄→1 path, which this class does not provide).
-  The quantitative "divergence rate" content of C3 is thus only partially exercised here.
+- **S genuinely diverges toward the rigidity pole.** With `k` correctly the dimension
+  N=53, `S_spectral` climbs 0.01 → 197.8 along the ramp, and on the pure GHZ (ρ̄=1) the
+  correlation matrix is rank-1: 52 singular eigenvalues, `S = +∞` (`n_singular=52`). That
+  is T-E1b exhibited, not asserted. The old leg's "no divergence" caveat was an artifact
+  of substituting PR (which → 1) for N.
+- **The parameter-free asymptote is approached, and this is now a real test.**
+  `S_spectral / S_C3 → 0.983` as ρ̄ → 0.98, falling away from the pole to 0.744 at ρ̄=0.15
+  (where the neglected first term matters). C3's declared regime is the pole, and there the
+  parameter-free `−(N−1)ln(1−ρ̄)` tracks the measured potential to within ~2%.
+- **`dev_equicorr` is a residual that can fail.** It is `S_spectral − S_closed(N,ρ̄)`, zero
+  iff the measured spectrum is exactly equicorrelated. On this ramp (a genuinely
+  equicorrelated family) it stays ≤ 0.61. On non-equicorrelated classes it explodes:
+
+  | class | ρ̄ | S_spectral | S_closed(N,ρ̄) | dev_equicorr |
+  |---|---|---|---|---|
+  | ghz_depol p=0.3 (equicorrelated) | 0.701 | 59.13 | 59.08 | **0.045** |
+  | product (equicorrelated, ρ̄≈0) | ≈0 | 0.014 | 0.000 | **0.014** |
+  | low_rank r=3 | −0.004 | 36.69 | 0.031 | **36.66** |
+  | powerlaw α=0.8 | −0.001 | 7.35 | 0.002 | **7.35** |
+  | ghz_z (rigidity) | 1.000 | +∞ | +∞ | 0 (both diverge) |
+
+  Three orders of magnitude between equicorrelated and structured spectra. The falsifier
+  now has teeth.
+
+- **What this exposes about ρ̄.** `low_rank r=3` has ρ̄ ≈ −0.004 — the *mean* off-diagonal
+  is ≈0 because its correlations are **signed and cancel** — yet its true log-det is 36.7.
+  Consequently `k_eff_kish(N, ρ̄) = 53.0` ("chaos") while the spectral `k_eff_PR = 7.8`
+  ("low-rank"). **The Kish ρ̄-parameterization is only faithful on the equicorrelation
+  manifold**; off it, the first moment is blind to structure that the spectrum sees. Gate-0
+  reads PR / eff-rank (spectral), so it is unaffected — but any k_eff computed *from ρ̄*
+  inherits this blind spot. This sharpens the note's "two functionals of one spectrum"
+  claim: `k_eff_PR` and `S_spectral` are both spectral; `k_eff_kish(N,ρ̄)` is a
+  first-moment object and agrees with them only when the state is equicorrelated.
 
 ## ±1-thresholding attenuation caveat
 
@@ -175,11 +211,15 @@ tested here rather than on Gaussian latents.
 after ±1-thresholding attenuation — so a real-data C1 verdict at N≈53 would be admissible.**
 It **fails at IBM scale (N=20)**, where the short subsample range collapses the
 corridor/criticality β-distinction and only eff-rank still separates the classes. The
-depolarized-GHZ ramp confirms the C2 exit direction (monotone to the rigidity pole) and C3
-curve-tracking near the pole (deviation ≈±0.05 for ρ̄>0.95), with the honest caveat that
-the surrogate's k–ρ coupling prevents a true S-divergence. GHZ reproduces the N4
-basis-fragility exactly (rigidity in Z, chaos in X), confirming the MUB requirement is
-load-bearing.
+depolarized-GHZ ramp confirms the C2 exit direction (monotone to the rigidity pole) and,
+**with the corrected estimator (issue #7)**, exhibits a genuine S-divergence
+(`S_spectral` 0.01 → 197.8 → +∞ at rank-1, `n_singular=52`) and a real approach to the
+parameter-free asymptote (`S/S_C3 → 0.983`). The `dev_equicorr` residual now separates
+equicorrelated (≤0.05) from structured spectra (low-rank 36.7, power-law 7.4) by three
+orders of magnitude, so the C3 falsifier can actually fail. The earlier "k–ρ coupling
+prevents a true S-divergence" caveat was an artifact of substituting the participation
+ratio for the matrix dimension and is withdrawn. GHZ reproduces the N4 basis-fragility
+exactly (rigidity in Z, chaos in X), confirming the MUB requirement is load-bearing.
 
 Artifacts: `synth_shots.py`, `calibrate.py`, `make_figures.py`,
 `calibration_results.json`, `beta_separation.png`, `c3_ramp_overlay.png`, `run.log`.
