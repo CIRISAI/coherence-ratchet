@@ -63,9 +63,11 @@ maintenance withdrawal DRIVES the exit, so it cannot lag. Same macaque ECoG
 20 s / 5 s windows; DB via winding + phase-randomized circulation null.
 RESULT: the ordering prediction is NOT supported.
   • k_eff (Axis 1) collapses under BOTH agents (propofol sharp, midpoint 142 s ±4 s;
-    ketamine gradual, 176 s). ⚠ SUPERSEDED BY THE GEORGE REPLICATION (see below):
-    this collapse is CHIBI-SPECIFIC and did not replicate; the earlier reading of it
-    as "the robust correlate of fading consciousness" is RETRACTED.
+    ketamine gradual, 176 s). ⚠ The collapse is large and clean IN THIS ANIMAL (every
+    deep window lies below every awake window), but the reading of it as "the ROBUST
+    correlate of fading consciousness" is RETRACTED: it rests on one animal with an
+    awake baseline of only ~4 independent samples, and the George attempt could not
+    test it (see below). Unsupported, not disproved.
   • Propofol: γM DOES eventually withdraw (circulation |z| 5.4→0.93, dropping below
     the ~1.5 null into the DB-satisfying "bound" cell) — but its transition is noisy
     and NOT resolvably before k_eff (winding −14 s, circ +41 s; wide CIs straddle the
@@ -89,17 +91,39 @@ axis-independence result — Axis 1 collapses while Axis 2 does (propofol) or do
 limited by the DB estimator, not k_eff), one monkey, broadband only.
 (`experiments/keff_saturation/spectral_anesthesia_trajectory_summary.md`.)
 
-GEORGE REPLICATION (2026-07-04) — the structural claim does NOT survive a second
-animal; the maintenance claim does. Same pipeline, second macaque (George), both
-anesthetics, within-session contrasts against George's own awake baseline.
-  • ⚠ k_eff COLLAPSE FAILS TO REPLICATE, and reverses sign. George: propofol
-    7.10→7.88, ketamine 5.83→6.94 — both RISE (Cliff's δ 0.51 / 0.44, p≈1e-3 /
-    3e-7), against Chibi's 13.9→6.2 and 13.8→5.25 (δ=1.0 both). This is not mere
-    dynamic-range compression (George's absolute k_eff ≈6–7 vs Chibi ≈14, a
-    field/reference confound): the DIRECTION is opposite. Therefore "k_eff collapse
-    is the robust dynamical correlate of fading consciousness" is FALSIFIED as a
-    cross-animal claim; it was preparation-specific. Absolute ECoG-field k_eff is
-    not portable across animals, and its within-session sign is not stable either.
+GEORGE REPLICATION (2026-07-04; CORRECTED 2026-07-09 after audit) — the structural
+claim is NOT ESTABLISHED and NOT DISPROVED; the maintenance claim replicates.
+Same pipeline, second macaque (George), both anesthetics, within-session contrasts.
+  • ⚠ k_eff COLLAPSE: REPLICATION INCONCLUSIVE (an uninterpretable measurement, NOT
+    a negative result). An earlier version of this block said "FALSIFIED … reverses
+    sign … not mere dynamic-range compression". All three clauses were wrong — an
+    over-read of a confounded null, the mirror of the over-claim it was correcting.
+    What the audit found:
+      (a) NOT a reversal, a NULL. George deep/awake ratio: propofol 1.11, ketamine
+          1.00 EXACTLY; awake↔deep distributional overlap 18% / 46%. No direction.
+      (b) George's AWAKE BASELINE IS ITSELF A MIXTURE: 27% of propofol awake windows
+          have k_eff < 5 (min 3.94). An awake reference spending a quarter of its
+          time in the anesthetized range is not a state. Chibi awake min = 16.59,
+          0% below 5.
+      (c) George's DEEP EPOCH IS BIMODAL (burst-suppression): a low cluster (k_eff
+          2–4, 18% of windows) and a high cluster (7–9, 77%), separated by an empty
+          bin; Chibi's deep is unimodal (3% below 5). The deep MEDIAN is therefore a
+          mixture statistic tracking the burst-suppression ratio, not coordination.
+          Near-isoelectric suppression ⇒ uncorrelated instrumentation noise ⇒
+          correlation matrix → identity ⇒ k_eff RISES. That one mechanism explains
+          the entire George "rise".
+      (d) The collapse signature IS present in George, hidden by the median: 26% of
+          ketamine deep windows fall below EVERY awake window (non-circular). For
+          Chibi that figure is 100% — total separation.
+      (e) ALL p-values here are invalid, in both animals: 20 s windows at 5 s step
+          are 75% overlapping; effective sample size on the awake side is 3.0–4.1.
+          Only effect sizes are usable. (Chibi's collapse is a large effect with
+          complete separation; that survives. Its BASELINE is still ~4 samples.)
+    NET: "k_eff collapse is a robust cross-animal correlate of consciousness" is
+    UNSUPPORTED (n = 1 clean animal, thin baseline) — but it is not falsified either.
+    Absolute ECoG-field k_eff is not portable across animals. A decisive retest needs
+    burst/suppression segmentation by SIGNAL POWER (independent of k_eff), matched-SNR
+    contrasts, and reference-invariant (bipolar/Laplacian) derivations.
   • ✓ THE MAINTENANCE SPLIT REPLICATES 2/2, on the trustworthy phase-randomized
     circulation null: deep propofol falls BELOW the ~1.5 null (Chibi 0.93, George
     1.07) = the BOUND cell; deep ketamine stays ABOVE it (Chibi 6.9, George 4.62)
@@ -107,23 +131,37 @@ anesthetics, within-session contrasts against George's own awake baseline.
     is baseline-independent. This is a drug-specific signature (GABAergic quiescence
     vs dissociative activation), NOT a consciousness correlate — both agents render
     the animal unconscious yet land in DIFFERENT cells.
-  • ⚠ THE KETAMINE COUNTER-EXAMPLE IS CHIBI-ONLY (n=1), not replicated. The
-    counter-example requires structure to collapse WHILE maintenance persists;
-    George has no structural collapse, so the configuration never arises there. Only
-    its "ketamine preserves DB" half replicates. The necessity-direction refutation
-    of "the corridor is held by γM" therefore rests on a single animal.
-  • ✓ BUT George supplies the BEST axis-independence evidence in the program, and it
-    is NATURAL rather than constructed: at deep, in the SAME animal, same electrodes,
-    same band, same estimator, the two agents are MATCHED on rank (k_eff 7.88 vs
-    6.94) while differing 4.3× on maintenance (circ |z| 1.07 vs 4.62, straddling the
-    null). Two real conditions matched on one axis and differing on the other — which
-    the phase-randomized scramble in the static run could not provide (scrambling
-    destroys both axes at once). Structure and maintenance are independent knobs.
-NET: neither axis is a validated consciousness correlate. What reproduces across
-animals is a drug-specific MAINTENANCE signature and the INDEPENDENCE of the two
-axes. Caveats: ECoG field grain; one session per agent per animal; broadband only
-(band-lability shown by the two-pole test); winding is the weak estimator, direct
-circulation the trustworthy one; ketamine George had a top-up injection.
+  • ✓ AND IT SURVIVES THE BURST-SUPPRESSION CONFOUND (control run 2026-07-09). If the
+    DB drop were merely low-SNR suppression, it would appear only in suppression
+    windows. It does not: within George's propofol deep, BOTH burst (|z| = 0.67) and
+    suppression (|z| = 1.07) windows sit below the null; within ketamine deep, BOTH
+    (3.97, 4.89) sit above it. The split holds within matched burst/suppression
+    states in the same animal, so it is not an amplitude artifact.
+  • ⚠ THE KETAMINE COUNTER-EXAMPLE REMAINS CHIBI-ONLY (n=1). It requires structure to
+    collapse WHILE maintenance persists. George cannot adjudicate it: its structural
+    axis is unreadable (see (b)–(c) above), so the configuration is untested there,
+    not absent. Only the "ketamine preserves DB" half replicates. The
+    necessity-direction refutation of "the corridor is held by γM" rests on one animal.
+  • ✓ AND George still supplies the BEST axis-independence evidence in the program —
+    NATURAL rather than constructed. Take it STRATIFIED (the medians are mixture
+    statistics, so do not lean on them): in the SAME animal, same electrodes, band and
+    estimator, compare the two agents WITHIN a matched k_eff stratum.
+        burst stratum (k_eff < 5):       propofol |z| = 0.67   ketamine |z| = 3.97
+        suppression stratum (k_eff > 7): propofol |z| = 1.07   ketamine |z| = 4.89
+    At matched rank the maintenance axis differs by 4.6–5.9×, straddling the null in
+    both strata. Two real conditions matched on one axis and differing on the other —
+    which the phase-randomized scramble of the static run could not provide (scrambling
+    destroys both axes at once). Independently: within the deep epoch,
+    spearman(k_eff, |circ z|) ≈ 0 (+0.18, +0.08, +0.03, −0.24). Structure and
+    maintenance are independent knobs.
+NET: neither axis is a validated consciousness correlate. The STRUCTURAL axis is
+UNSUPPORTED as such (one clean animal, ~4-sample baseline) and NOT disproved. What
+reproduces across animals is a drug-specific MAINTENANCE signature and the
+INDEPENDENCE of the two axes (now shown stratified, not just from medians). Caveats:
+ECoG field grain; one session per agent per animal; broadband only (band-lability
+shown by the two-pole test); winding is the weak estimator, direct circulation the
+trustworthy one; ketamine George had a top-up injection; every p-value in this note is
+inflated by 75%-overlapping windows — read effect sizes, not p.
 (`experiments/keff_saturation/spectral_anesthesia_george_summary.md`.)
 
 The corridor's bounds are substrate-specific (the earlier universal ρ_c ≈ 0.43 is

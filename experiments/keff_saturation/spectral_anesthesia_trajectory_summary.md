@@ -1,18 +1,33 @@
 # Anesthesia TRAJECTORY: does maintenance (γM / detailed balance) collapse BEFORE, WITH, or AFTER structure (k_eff)?
 
 > ⚠ **PARTIALLY SUPERSEDED (2026-07-04) by the George replication**
-> (`spectral_anesthesia_george_summary.md`). Read them together.
+> (`spectral_anesthesia_george_summary.md`); **banner CORRECTED 2026-07-09 after audit.**
+> Read them together.
 >
-> - **RETRACTED:** "k_eff collapses under both agents and is the robust correlate of fading
->   consciousness." The collapse is **Chibi-specific**. In George it does not occur and the
->   sign *reverses* (propofol 7.10→7.88, ketamine 5.83→6.94, both rising). Absolute ECoG-field
->   k_eff is not portable across animals and its within-session sign is not stable.
-> - **RETRACTED as a replicated result:** the ketamine counter-example below ("structure
->   collapses while maintenance persists") is **n=1**. George shows no structural collapse, so
->   the configuration never arises there; only the "ketamine preserves DB" half replicates.
+> An earlier version of this banner said the collapse "does not occur in George and the sign
+> *reverses*", and called the claim falsified. **That was an over-read of a confounded null** —
+> the mirror image of the over-claim it was correcting. Corrected status:
+>
+> - **RETRACTED:** "k_eff collapses under both agents and is the **robust** correlate of fading
+>   consciousness." It rests on **one animal** whose awake baseline is only ~4 independent
+>   samples (20 s windows at 5 s step are 75% overlapping). **Unsupported — not disproved.**
+> - **George is INCONCLUSIVE, not negative.** It is not a reversal but a null (deep/awake ratio
+>   1.11 propofol, **1.00 exactly** ketamine; 18%/46% distributional overlap), and it is
+>   uninterpretable: George's *awake* epoch is itself a mixture (27% of windows k_eff<5), and
+>   its *deep* epoch is bimodal burst-suppression (low cluster 2–4, high cluster 7–9). Suppression
+>   ⇒ near-isoelectric ⇒ uncorrelated noise ⇒ k_eff *rises*: that alone explains the "rise".
+>   The collapse signature is in fact present but hidden by the median — **26% of George's
+>   ketamine deep windows fall below every awake window** (Chibi: 100%).
+> - **The ketamine counter-example below is n=1.** George cannot adjudicate it: its structural
+>   axis is unreadable, so the configuration is *untested* there, not absent.
 > - **HOLDS (2/2 animals):** the maintenance split — deep propofol falls below the null (bound),
->   deep ketamine stays above it (coordinating). This is a **drug-specific** signature, not a
->   consciousness correlate: both agents produce unconsciousness in *different* cells.
+>   deep ketamine stays above it (coordinating) — and it **survives a burst/suppression-matched
+>   control**: within George's deep, propofol is below the null in *both* burst (0.67) and
+>   suppression (1.07) windows, ketamine above it in *both* (3.97, 4.89). Not an SNR artifact.
+>   It is a **drug-specific** signature, not a consciousness correlate: both agents produce
+>   unconsciousness in *different* cells.
+> - **All p-values in this document are inflated** by the 75% window overlap (awake effective
+>   n = 3–4). Read effect sizes and distributional separation, not p.
 
 
 **The dynamical complement to the static axis-independence proof.** The static run

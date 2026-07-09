@@ -10,28 +10,35 @@ This is the research companion to [RATCHET](../RATCHET). RATCHET is the practica
 
 The whole thing is deliberately layered: you can accept the plain, well-tested parts and stop there, or keep reading into the speculative parts. Rejecting a later layer costs you nothing in the earlier ones.
 
-## Current direction (2026-07): the two-axis discriminator for coordination
+## Status (2026-07): mid-program
 
-The active work is a **two-axis operational discriminator** that places any system as *coordinating*, *bound*, *dead*, or *turbulent*:
+This is an **active research program, not a finished result.** A few things are solid, most are open, and several claims have been retracted after they failed — including one we retracted twice, having first over-claimed it and then over-retracted it. The ledger below is the current honest state. Method, per-substrate numbers, and every caveat: [`experiments/keff_saturation/`](experiments/keff_saturation/README.md).
 
-- **Axis 1 — structure:** does effective dimensionality `k_eff` **saturate** (bounded / low-rank) as constituents are added, measured on a **complete** unit? The *completeness-fixed-before-spectrum* grain discipline is the load-bearing method — a complete larval-zebrafish brain saturating is what kills the "you only sampled a patch" objection.
-- **Axis 2 — maintenance:** does the system **break detailed balance** (actively coordinated — the `γM` term) or **satisfy** it (bound / conservative)?
+The organizing idea is a **two-axis discriminator**: *structure* (does `k_eff` saturate — bounded/low-rank — as constituents are added, measured on a **complete** unit?) and *maintenance* (does the system **break detailed balance**, the `γM` term, or satisfy it?). Honest positioning: **unification and methodological discipline, not a novel phenomenon.** Low-dimensional population structure (Cunningham–Yu, Gao–Ganguli) and broken detailed balance in living systems (Battle 2016; Lynn 2021) are established prior art; the maintenance axis on exoplanets reduces to the atmospheric-disequilibrium biosignature (Lovelock; Krissansen-Totton).
 
-|  | breaks detailed balance | detailed-balance-satisfying |
-|---|---|---|
-| **low-rank** | **coordinating** — macaque motor cortex ✓ | **bound** — galaxy gas baryon cycle ✓ |
-| **high-rank** | turbulent / driven — *(open)* | dead / thermal — *(open)* |
+### What is robust
 
-Two cells have real-data anchors; the two high-rank cells are the next tests (they establish the axes are **independent**). Honest positioning: this is **unification + methodological discipline**, *not* a novel phenomenon — low-dimensional population structure (Cunningham–Yu, Gao–Ganguli) and broken detailed balance in living systems (Battle 2016; Lynn 2021) are established prior art; the maintenance axis on exoplanets reduces to the atmospheric-disequilibrium biosignature (Lovelock; Krissansen-Totton).
+- **Saturation, on complete units.** `k_eff` stays bounded as constituents are added — low-rank, not criticality — across *C. elegans*, the *Drosophila* compass, the S&P, human resting-state fMRI, gene expression, and the decisive case: a **complete larval-zebrafish brain (all 71,721 neurons)**. The objective measure is **saturation, not level**; levels are substrate-specific. The completeness/grain rule is fixed *before* the spectrum is looked at, so no failure can be rescued by "you only sampled a patch."
+- **A second, thermodynamic axis exists and is measurable.** Breaking detailed balance separates actively-maintained coordination from merely *bound* structure. Validated estimator (null ≈1.5, driven ≈41), with real anchors at both poles: macaque motor cortex `|z|=8.8` (coordinating) and the IllustrisTNG galaxy baryon cycle `z≈0.5` (bound).
+- **The two axes are independent.** Shown several ways; the strongest is within-animal and stratified — under anesthesia, *at matched `k_eff`*, propofol sits below the detailed-balance null while ketamine sits above it. Structure and maintenance are separate knobs.
+- **Anesthetics carry a reproducible maintenance signature** (2/2 animals, and it survives a burst-suppression control): propofol → *bound*, ketamine → *coordinating*. This is **drug-specific pharmacology, not a consciousness marker** — both agents render the animal unconscious, in *different* cells.
+- **The formal core is mechanized and machine-checked.** Kish identity and its ceiling, the collapse bound with the corrected `O(r²·k_eff)` remainder, `J = F = k_eff·λ_op·σ`, the σ decay semigroup and its signal-source discount, and the entropic potential `S = −ln det C`. CI resolves every Constitution `lean:` pointer *through Lean* and fails on a renamed theorem or a `sorry` ([`evidence/`](evidence/)).
 
-**Open questions being pursued** (`experiments/keff_saturation/`):
-1. Where does high-dimensional cortex fall on the maintenance axis? If it breaks DB → "turbulent/driven," which *decouples* the two axes.
-2. Fill the "dead" cell (high-rank + DB-satisfying = thermal equilibrium) — completing the 2×2 demonstrates axis independence.
-3. The **trajectory** through the 2×2 as coordination fails (anesthesia ECoG: does `γM` drop before / with / after the dimensionality change?).
-4. Which galaxies break baryon-cycle detailed balance — actively star-forming (feedback-driven) vs. quenched?
-5. **Content vs. tautology** (deepest): does `k_eff` track an *independent* driver dimensionality, or is it near-definitional? Needs a matched-design stimulus experiment.
+### What is not established
 
-**Not claimed here:** universality (domain-clustered / thin), the dynamics as a predictive law (modest single-substrate support), the cosmological tier (F-11 dead / untestable), or the AI-safety `N_eff` adversarial result (spec'd, semantic-only measured, adversarial half unrun). Details, per-substrate results, and honest caveats: [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md).
+- **`k_eff` as a consciousness correlate.** A large, clean collapse in one macaque; the second animal's recording is uninterpretable (its awake baseline is itself a mixture; its deep epoch is bimodal burst-suppression). **Unsupported — not disproved.**
+- **That maintenance *drives* structural collapse.** The ordering is unresolved, and the one counter-example (ketamine: structure collapses while maintenance persists) rests on a single animal.
+- **Content vs. tautology — the deepest question.** Does `k_eff` track an *independent* driver dimensionality, or is it near-definitional? The clean matched-design experiment has not been run.
+- **Cross-substrate universality:** domain-clustered and thin.
+- **The cosmological tier:** F-11 fired; the joint backward `P_ω` is a documented no-go (below).
+- **AI-safety adversarial `N_eff`:** spec'd, the benign-trace value measured, the adversarial half unrun.
+- **Quantum transport:** nothing has been run on hardware, and pairwise `k_eff` is *provably blind to N-body entanglement* — a GHZ state reads rigidity in one basis and chaos in another.
+
+### Measurement limits we had to learn
+
+- Absolute `k_eff` is **not portable across preparations** (field/reference effects in ECoG); only within-session contrasts are readable.
+- The Kish `ρ̄`-parameterization is faithful **only on the equicorrelation manifold** — signed correlations cancel in the first moment, so a genuinely low-rank state can read as chaos.
+- Overlapping analysis windows inflate p-values. Effect sizes and distributional separation are the usable statistics.
 
 ## The framework in one paragraph (for the technical reader)
 
@@ -47,7 +54,7 @@ k_eff(k, ρ) = k / (1 + ρ(k-1))
 
 **What's been measured (Gate 0, 2026-07-02).** The corridor's sharpest empirical question: is it a *real* bounded-dimensionality (low-rank) structure, or just the known criticality / edge-of-chaos physics relabeled? The discriminator is **saturation** — does effective dimensionality `k_eff` stay bounded as you add parts (low-rank, the corridor's claim), or grow without bound (criticality)? Run as one mechanism-level test across wildly different **complete** systems, all read **low-rank**: *C. elegans* whole brain, the *Drosophila* compass circuit, the S&P market, human resting-state fMRI, gene expression, and — the decisive case, where the "you only sampled part of it" objection cannot be raised — a **complete larval-zebrafish brain (all 71,721 neurons)**. It saturates. Mouse visual cortex reads high-dimensional, but a two-photon patch is ~0.001% of the brain — the *wrong grain*, excluded on a rule fixed before the measurement. The cosmic web reads power-law, but the universe can't be observed as a complete unit, so the corridor is *untestable* at that scale (an honest limit, not a claim). The lesson sharpens the retraction above: what is universal is **saturation**, not any specific band — each substrate has its own level.
 
-A **second axis** surfaced. Saturation says *coordinated structure exists*; it cannot say whether that structure is *actively maintained* (the `γM` term) or merely *bound* by a conservative force (like gravity). The distinguishing signature is thermodynamic: an actively-coordinating system is a non-equilibrium steady state that **breaks detailed balance** (a directed cycle / entropy production in its collective modes); a bound one is time-reversible. Validated positive control: **macaque motor cortex** during reaching is low-rank *and* breaks detailed balance strongly. On exoplanets this second axis reduces to the established atmospheric-disequilibrium biosignature. Status: the saturation axis is solid; the detailed-balance axis has a validated estimator and a clean real positive control, with a real *negative* control still pending (the ideal data — a fine-cadence bound-galaxy simulation — is behind a free login). Full method, per-substrate results, honest caveats, and every script live in [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md).
+A **second axis** surfaced. Saturation says *coordinated structure exists*; it cannot say whether that structure is *actively maintained* (the `γM` term) or merely *bound* by a conservative force (like gravity). The distinguishing signature is thermodynamic: an actively-coordinating system is a non-equilibrium steady state that **breaks detailed balance** (a directed cycle / entropy production in its collective modes); a bound one is time-reversible. Both controls are now real data: **macaque motor cortex** during reaching is low-rank *and* strongly breaks detailed balance (positive); the **IllustrisTNG galaxy baryon cycle**, at maximal cadence, is low-rank *and* detailed-balance-satisfying (negative). On exoplanets this second axis reduces to the established atmospheric-disequilibrium biosignature. Full method, per-substrate results, honest caveats, and every script live in [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md).
 
 ## AI-safety application: effective dimensionality as deception-resistance
 
@@ -125,7 +132,7 @@ Requires Lean 4 v4.14.0 (`leanprover/lean4:v4.14.0`) and mathlib v4.14.0.
 
 ## The open formal steps
 
-1. Corridor reproducibility at the quantum substrate (Conjecture A / Exp 5).
+1. Corridor reproducibility at the quantum substrate (Conjecture A / Exp 5). **Blocked on a real limitation:** `k_eff` and `ρ̄` read only *pairwise* correlation, so they are blind to N-body entanglement — a GHZ state scores as rigidity in one measurement basis and chaos in another. Any quantum claim needs either a basis-invariant coordination measure or a stated restriction to states whose coordination is pairwise-visible.
 2. Per-substrate corridor calibration (each system's own band, measured).
 3. Substrate-readiness wait-time modeling (cross-rung τ evolution).
 
