@@ -101,6 +101,8 @@ import CoherenceRatchet.Cosmology.CorridorProjector         -- Piece 7 (configur
 import CoherenceRatchet.Cosmology.ConsentProjector          -- Piece 7 (constrained tensor product, load-bearing)
 import CoherenceRatchet.Cosmology.ThreeCorridorUniqueness   -- T6 (Step 3 — three-corridor uniqueness)
 import CoherenceRatchet.Cosmology.PenrosePast               -- Piece 8
+import CoherenceRatchet.Cosmology.EntropicInitialCondition  -- T-P1..T-P3: WCH ⇔ S=0 (chaos pole = potential's unique zero)
+import CoherenceRatchet.Cosmology.EntropicLinearization     -- T-L1..T-L3: power sector exact, shape sector O(ρ²)
 import CoherenceRatchet.Cosmology.AsymptoticConditioning    -- Piece 9
 import CoherenceRatchet.Cosmology.RecursiveLifecycle        -- issue #1: substrate-agnostic lifecycle per rung
 import CoherenceRatchet.Cosmology.CriticalityDiscriminator  -- Gate 0: criticality-vs-low-rank discriminator (rules out "trivial")
