@@ -73,11 +73,23 @@ one law and read by one functional, across three physically unrelated ledgers �
 classical instrument is a faithful shadow of the quantum entanglement structure that gravity
 itself couples to.
 
-**Is not:** an explanation of dark matter (it is not — the dark sector's coordination is the
-visible sector's, biased), nor a theory that beats ΛCDM (it does not), nor novel physics (the
-gravity-ledger agreement is standard galaxy bias in cosmology's own language; the entanglement
-result is on a well-known model). The contribution is unification and the classical→quantum
-bridge, not a new phenomenon.
+**Is not:** an explanation of dark *matter* (it is not — the dark sector's coordination is the
+visible sector's, biased), nor novel physics on the instrument side (the gravity-ledger
+agreement is standard galaxy bias in cosmology's own language; the entanglement result is on a
+well-known model). The contribution here is unification and the classical→quantum bridge, not a
+new phenomenon.
+
+**SCOPE CORRECTION (do not let the instrument nulls blanket the whole program):** on *dark
+energy*, the framework DOES currently beat ΛCDM. Its near-parameter-free w(z) curve, projected
+through DESI DR2's own CPL fit, sits 1.9–2.4σ from the best fit; ΛCDM sits 3.28σ from it — a
+better fit to present data than the cosmological constant, with zero parameters tuned to the
+data (`retrodiction_reexamined.md`, `desi_thawing_likelihood.md`, Mahalanobis independently
+re-verified). Fences: a better fit is not a detection; DESI's evolving-DE preference is itself
+2.8–4.2σ and SNe-dependent; it is a retrodiction until the frozen pipeline
+(`PREREGISTRATION.md`) is tested against DESI DR3 geometry-only (~2027). But "fits DESI better
+than ΛCDM, near-parameter-free" is a fact, and it is the program's strongest empirical result —
+it must not be erased by the (correct) statement that the dark-matter/instrument side does not
+beat ΛCDM.
 
 ## Fences (kept as fences)
 
