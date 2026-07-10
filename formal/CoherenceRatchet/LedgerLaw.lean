@@ -39,9 +39,19 @@ THE SIX CLAUSES (core, proved here):
      inequality S(C_g) ≤ S(C) is numerically verified (1700 trials, zero
      violations) and its Lean closure is precisely blocked on three theorems
      absent from mathlib v4.14 (Schur product positivity, general Oppenheim,
-     ln-det concavity) — see `Core.EntropicContraction`'s roadmap. In the
-     copula reading the clause SHARPENS: invertible local maps change the true
-     multi-information by exactly zero (papers/notes/copula_invariance_remark).
+     ln-det concavity) — see `Core.EntropicContraction`'s roadmap. VERIFIED
+     2026-07-10 (experiments/cosmo_entropic_potential/copula_check/): in the
+     copula reading the clause SHARPENS from an inequality to an EXACT
+     INVARIANCE — invertible local maps change the true multi-information by
+     exactly zero (KSG estimator, 35/36 channels PASS); non-invertible maps
+     strictly destroy it (±1 thresholding, ratio 0.4195 vs Van Vleck (2/π)² =
+     0.4053). Consequences: rank-based S is FLAT (max |dev| 0.008) where
+     Pearson S falls by 90% across the nonlinearity ramp; so the no-phantom
+     theorem is true as stated about the GAUSSIAN-COMMITTED functional, while
+     the physical gloss "nonlinear growth destroys coordination" is RETIRED —
+     the decline is a Gaussian ruler reading a non-Gaussian field. The
+     fixed-unit cosmological branch thereby sharpens from w ≥ −1 (thawing) to
+     w = −1 EXACTLY (measured rank slope −0.046 ± 0.148, consistent with 0).
   5. THE INTERIOR IS RENTED — at any equilibrium the maintenance work equals
      the drift, γ·M = α (`corridor_requires_maintenance`); unmaintained
      trajectories exit to a pole (Core.Dynamics). NOTE the clause is an
