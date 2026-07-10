@@ -1,0 +1,189 @@
+{
+  "seed": 20260710,
+  "prediction": {
+    "P1": "partial rho(delta, f_bul) < 0",
+    "P2": "partial rho(delta, f_gas) >= 0",
+    "P3": "sign(rho_bul) != sign(rho_gas), else EMPTY-VARIABLE",
+    "bands": "|rho|<0.1 NULL; 0.1-0.3 WEAK; >=0.3 & CI excl 0 STRONG"
+  },
+  "instrument": {
+    "gdag_fit": 1.1603275024743999e-10,
+    "gdag_fit_e10": -9.935419413839472,
+    "rar_scatter_dex_fitted": 0.1326442141473278,
+    "rar_scatter_dex_stdgdag": 0.13270653782415429,
+    "n_points": 2700,
+    "n_galaxies": 149,
+    "reference_band": "0.11-0.13 dex (McGaugh+16, Lelli+17a)",
+    "instrument_ok": true
+  },
+  "proxies": {
+    "n_points_with_bulge": 1079,
+    "n_galaxies_with_bulge": 31,
+    "f_bul": {
+      "min": 0.0,
+      "max": 0.9966906281354119,
+      "mean": 0.1680549587096814
+    },
+    "f_gas": {
+      "min": -0.22928349040104903,
+      "max": 0.9540555870674986,
+      "mean": 0.20207995920137864
+    },
+    "f_disk": {
+      "min": 0.003527076747856036,
+      "max": 1.229283490401049,
+      "mean": 0.62986508208894
+    },
+    "corr_fbul_fgas": -0.5504007316712067
+  },
+  "tests": {
+    "raw": {
+      "controls": [],
+      "label": "no controls (raw Spearman)",
+      "f_bul": {
+        "rho": 0.10933907485817268,
+        "ci": [
+          -0.06689731222215758,
+          0.2638288271732385
+        ],
+        "p": 0.22466666666666665,
+        "nboot": 3000
+      },
+      "f_gas": {
+        "rho": -0.17740109496897816,
+        "ci": [
+          -0.29300222426759504,
+          -0.04932923240051804
+        ],
+        "p": 0.007333333333333333,
+        "nboot": 3000
+      },
+      "f_disk": {
+        "rho": 0.09098812266038532,
+        "ci": [
+          -0.02996888405329734,
+          0.2231357255656281
+        ],
+        "p": 0.13933333333333334,
+        "nboot": 3000
+      }
+    },
+    "primary": {
+      "controls": [
+        "inc",
+        "Qual"
+      ],
+      "label": "pre-registered: control inc + Qual",
+      "f_bul": {
+        "rho": 0.11888403133515535,
+        "ci": [
+          -0.059513448532899284,
+          0.2751485163861764
+        ],
+        "p": 0.194,
+        "nboot": 3000
+      },
+      "f_gas": {
+        "rho": -0.17716279873397547,
+        "ci": [
+          -0.28879036477701847,
+          -0.03662331698601236
+        ],
+        "p": 0.014666666666666666,
+        "nboot": 3000
+      },
+      "f_disk": {
+        "rho": 0.08345897606658435,
+        "ci": [
+          -0.05232066129507935,
+          0.2274401510219825
+        ],
+        "p": 0.22466666666666665,
+        "nboot": 3000
+      }
+    },
+    "robust": {
+      "controls": [
+        "inc",
+        "Qual",
+        "lgbar",
+        "SBeff"
+      ],
+      "label": "robustness: + lgbar + SBeff",
+      "f_bul": {
+        "rho": 0.055080520404133644,
+        "ci": [
+          -0.10685200285988654,
+          0.20712136330013442
+        ],
+        "p": 0.498,
+        "nboot": 3000
+      },
+      "f_gas": {
+        "rho": -0.22342630686778067,
+        "ci": [
+          -0.3249064130621376,
+          -0.11276806412891126
+        ],
+        "p": 0.0006666666666666666,
+        "nboot": 3000
+      },
+      "f_disk": {
+        "rho": 0.0892264637423185,
+        "ci": [
+          -0.03671461084754808,
+          0.22392374004605434
+        ],
+        "p": 0.16466666666666666,
+        "nboot": 3000
+      }
+    }
+  },
+  "bulge_only_subsample": {
+    "primary": {
+      "rho": -0.031260795386650594,
+      "ci": [
+        -0.32318911288919994,
+        0.24687116095894351
+      ],
+      "p": 0.7573333333333333,
+      "nboot": 3000
+    },
+    "robust": {
+      "rho": -0.005495991056980819,
+      "ci": [
+        -0.35439305196439325,
+        0.3626672756697132
+      ],
+      "p": 0.9933333333333333,
+      "nboot": 3000
+    },
+    "n_points": 1079,
+    "n_galaxies": 31
+  },
+  "sensitivity": {
+    "systematic_floor_dex": 0.1,
+    "intrinsic_scatter_dex": 0.034,
+    "measured_rar_scatter_dex": 0.1326442141473278,
+    "rho_resolvable_2sig": 0.08219949365267865,
+    "n_galaxies": 149,
+    "note": "Effect sizes are reported as partial rho AND in dex. Any dex-scale effect below the 0.10 dex floor is systematics-limited."
+  },
+  "verdict_components": {
+    "rho_bul": 0.11888403133515535,
+    "ci_bul": [
+      -0.059513448532899284,
+      0.2751485163861764
+    ],
+    "band_bul": "WEAK",
+    "sign_matches_P1": false,
+    "rho_gas": -0.17716279873397547,
+    "ci_gas": [
+      -0.28879036477701847,
+      -0.03662331698601236
+    ],
+    "gas_matches_P2": false,
+    "same_sign_EMPTY": false
+  },
+  "verdict": "NULL"
+}
