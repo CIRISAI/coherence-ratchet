@@ -103,6 +103,18 @@ corollaries composing with the drift theorems. Also proved: Klein nonnegativity
   (strengthens `rho_drift_at_zero_maintenance` / `corridor_requires_maintenance` from
   "the corridor needs maintenance" to "maintenance is the Lagrange multiplier of an
   entropic constraint" — Bianconi's Eq. 49–50 shape).
+- **T-E5 (multi-information identity — PROVED 2026-07-10):** S = −ln det C(k,ρ) with the
+  determinant derived from the ACTUAL uniform-ρ matrix via the matrix determinant lemma
+  (`kishMatrix_det`, `entropicPotential_eq_neg_log_det`), and **S = 2·I** where I is the
+  Gaussian multi-information (`entropicPotential_eq_two_mul_multiInformation`). Readings:
+  S/2 nats/sample = the array's joint-entropy DEFICIT vs independent sensors (per-stream
+  entropy certification is blind to it — marginals of C(k,ρ) are all 1) = the
+  Chernoff–Stein detection exponent (Tr C = k ⇒ KL from the independent baseline = S/2),
+  so detection latency ~ ln(1/P_err)/(S/2). Small-ρ: S ≈ ½k(k−1)ρ² — correlation-channel
+  sensitivity scales ~k², minimal detectable ρ ~ 1/k (documented, not mechanized).
+  Gaussian interpretations are modeling commitments (real timing marginals are
+  fat-tailed); the det identity and factor 2 are theorems. Axioms: kernel-only.
+  Hardware read: CIRISArray exp117 (first S measurement on a real sensor array).
 
 All four are finite-dimensional real analysis over the closed-form spectrum — the same
 proof style as `BaseIdentity`. No operator axioms, no framework primitives.

@@ -45,8 +45,10 @@ Bianconi's action is local and bulk-geometric, the class closed by T1
 -/
 
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.Analysis.Calculus.MeanValue
 import Mathlib.Analysis.Asymptotics.Asymptotics
+import Mathlib.LinearAlgebra.Matrix.SchurComplement
 import CoherenceRatchet.Core.Dynamics
 
 namespace CoherenceRatchet.Core
@@ -328,5 +330,115 @@ theorem unmaintained_chaos_drift_descends_potential
         entropicPotential k ρ' < entropicPotential k ρ :=
   ⟨Dynamics.rho_exit_chaos ρ Sp t h_m h_alpha,
    fun ρ' hρ' hlt => entropicPotential_strictMonoOn k hk hρ' hρ hlt⟩
+
+/-! ## T-E5 — the multi-information / joint-entropy identity
+
+The entropic potential is not only Bianconi's Lagrangian evaluated on the Kish
+spectrum — it is (twice) the **Gaussian multi-information** (total correlation)
+of the k-sensor array, because −Tr ln C = −ln det C and, for a multivariate
+Gaussian with correlation matrix C, the multi-information is
+I = −½ ln det C. Hence
+
+  S(k, ρ) = 2·I,   and   H_joint = Σ marginals − S/2.
+
+Three readings, one mechanized identity:
+- **TRNG reading**: S/2 nats/sample is the array's joint-entropy DEFICIT vs
+  independent sensors — the entropy consumed by coordination. Per-stream
+  entropy certification is blind to it (the marginals of C(k,ρ) are all 1).
+- **Detection reading**: since Tr C(k,ρ) = k, the KL divergence from the
+  independent baseline is D(N(0,C) ‖ N(0,I)) = ½(Tr C − k − ln det C)
+  = −½ ln det C = S/2 — the Chernoff–Stein exponent: S/2 nats/sample is the
+  optimal per-sample discrimination information for detecting the
+  coordination, so detection latency scales as ln(1/P_err)/(S/2).
+- **Small-ρ sensing law** (documented, not mechanized): expanding S at ρ → 0
+  gives S ≈ ½·k(k−1)·ρ², so the correlation channel's per-sample information
+  grows ~k² in array size — the minimal detectable ρ scales as 1/k.
+
+Both Gaussian interpretations (multi-information; KL/Stein) are MODELING
+COMMITMENTS documented here (the timing marginals are fat-tailed, so on real
+hardware they are approximations); the mechanized content is the determinant
+identity and the factor 2, plus the matrix grounding: the closed-form spectrum
+this file has used throughout is here derived from the actual uniform-ρ
+correlation MATRIX via the matrix determinant lemma, not assumed. -/
+
+open Matrix in
+/-- The uniform-ρ correlation matrix on k units: 1 on the diagonal, ρ off it.
+    The concrete matrix behind the Kish spectrum {1 + ρ(k−1), (1−ρ)^{×(k−1)}}. -/
+def kishMatrix (k : ℕ) (ρ : ℝ) : Matrix (Fin k) (Fin k) ℝ :=
+  fun i j => if i = j then 1 else ρ
+
+open Matrix in
+/-- T-E5a (matrix grounding). det C(k, ρ) = (1 + ρ(k−1))·(1−ρ)^(k−1) — the
+    determinant of the ACTUAL uniform-ρ matrix, via the matrix determinant
+    lemma on the rank-one decomposition C = (1−ρ)·I + ρ·𝟙𝟙ᵀ. This derives the
+    closed-form spectrum used throughout this file rather than assuming it. -/
+theorem kishMatrix_det (k : ℕ) (hk : 1 ≤ k) (ρ : ℝ) (hρ : ρ ≠ 1) :
+    (kishMatrix k ρ).det = (1 + ρ * ((k : ℝ) - 1)) * (1 - ρ) ^ (k - 1) := by
+  have h1ρ : (1 : ℝ) - ρ ≠ 0 := sub_ne_zero.mpr (Ne.symm hρ)
+  -- rank-one decomposition: C = (1−ρ) • (1 + col u * row v), u ≡ ρ/(1−ρ), v ≡ 1
+  have decomp : kishMatrix k ρ
+      = (1 - ρ) • (1 + col Unit (fun _ => ρ / (1 - ρ)) * row Unit (fun _ => (1:ℝ))) := by
+    ext i j
+    simp only [kishMatrix, Matrix.smul_apply, Matrix.add_apply, Matrix.one_apply,
+      Matrix.mul_apply, Matrix.col_apply, Matrix.row_apply, Finset.univ_unique,
+      Finset.sum_singleton, smul_eq_mul]
+    split_ifs with h
+    · field_simp
+    · field_simp
+  rw [decomp, Matrix.det_smul, Matrix.det_one_add_col_mul_row]
+  have hdot : (fun _ : Fin k => (1:ℝ)) ⬝ᵥ (fun _ => ρ / (1 - ρ)) = k * (ρ / (1 - ρ)) := by
+    simp [dotProduct, Finset.sum_const, nsmul_eq_mul]
+  rw [hdot]
+  have hcard : Fintype.card (Fin k) = k := Fintype.card_fin k
+  rw [hcard]
+  -- (1−ρ)^k · (1 + k·ρ/(1−ρ)) = (1 + ρ(k−1)) · (1−ρ)^(k−1)
+  have hpow : (1 - ρ) ^ k = (1 - ρ) ^ (k - 1) * (1 - ρ) := by
+    conv_lhs => rw [← Nat.sub_add_cancel hk]
+    rw [pow_succ]
+  rw [hpow]
+  field_simp
+  ring
+
+open Matrix in
+/-- T-E5b. The entropic potential IS −ln det of the actual correlation matrix:
+    S(k, ρ) = −ln det C(k, ρ) on the physical domain. Bianconi's −Tr ln C,
+    grounded in the matrix rather than the asserted spectrum. -/
+theorem entropicPotential_eq_neg_log_det (k : ℕ) (hk : 1 ≤ k) (ρ : ℝ)
+    (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) :
+    entropicPotential (k : ℝ) ρ = -Real.log (kishMatrix k ρ).det := by
+  rw [kishMatrix_det k hk ρ (ne_of_lt hρ1)]
+  have hk1 : (1 : ℝ) ≤ (k : ℝ) := by exact_mod_cast hk
+  have h1 : (0:ℝ) < 1 + ρ * ((k : ℝ) - 1) := by nlinarith
+  have h2 : (0:ℝ) < 1 - ρ := by linarith
+  rw [Real.log_mul (ne_of_gt h1) (ne_of_gt (pow_pos h2 _)), Real.log_pow]
+  have hcast : ((k - 1 : ℕ) : ℝ) = (k : ℝ) - 1 := by
+    rw [Nat.cast_sub hk, Nat.cast_one]
+  rw [hcast]
+  unfold entropicPotential
+  ring
+
+/-- Gaussian multi-information (total correlation) of the uniform-ρ array,
+    in closed form: I = −½ ln det C(k, ρ). For a multivariate Gaussian with
+    correlation matrix C this is the KL divergence from the product of its
+    marginals; since Tr C(k,ρ) = k it also equals D(N(0,C) ‖ N(0,I)), the
+    Chernoff–Stein detection exponent (see section docstring). Stated over
+    real k with rpow, matching `entropicPotential`. -/
+noncomputable def gaussianMultiInformation (k ρ : ℝ) : ℝ :=
+  -(1/2) * Real.log ((1 + ρ * (k - 1)) * (1 - ρ) ^ (k - 1))
+
+/-- T-E5c. THE IDENTITY: S = 2·I — the entropic potential is twice the
+    Gaussian multi-information. Equivalently: the array's joint-entropy
+    deficit (and its Stein detection exponent) is exactly S/2 nats/sample.
+    One spectrum, three functionals: participation (k_eff), relative entropy
+    (S), information (I) — and the last two differ by exactly the factor 2. -/
+theorem entropicPotential_eq_two_mul_multiInformation (k ρ : ℝ)
+    (hk : 1 ≤ k) (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) :
+    entropicPotential k ρ = 2 * gaussianMultiInformation k ρ := by
+  unfold entropicPotential gaussianMultiInformation
+  have h1 : (0:ℝ) < 1 + ρ * (k - 1) := by nlinarith
+  have h2 : (0:ℝ) < 1 - ρ := by linarith
+  rw [Real.log_mul (ne_of_gt h1) (ne_of_gt (Real.rpow_pos_of_pos h2 _)),
+    Real.log_rpow h2]
+  ring
 
 end CoherenceRatchet.Core
