@@ -3,10 +3,32 @@ r"""
 SPARC coherence-residual test — does effective dark mass track KINEMATICALLY
 COHERENT baryons rather than total baryonic mass?
 
+*******************************************************************************
+*** PREDICTION ORPHANED (2026-07-10, AFTER registration, BEFORE conclusion). ***
+*** The mechanism that GENERATED the sign below has been RETRACTED. The source
+*** note papers/notes/bullet_cluster_correction.md is itself retracted; see
+*** papers/notes/reversal_adversarial_audit.md and experiments/dm_coherence/
+*** mean_removal_toy.py. The kill: S = -ln det C acts on a MEAN-REMOVED
+*** correlation matrix, so a coherent bulk/rotational velocity is a MEAN and is
+*** INVISIBLE to S (sweeping V_bulk 0 -> 1e6 km/s leaves S flat at ~0.001).
+*** "Cold rotationally coherent baryons source dark mass via high S" is FALSE
+*** for the functional the framework uses. There is NO surviving mechanism and
+*** hence no derived sign. The prediction below is preserved VERBATIM for
+*** pre-registration integrity ONLY; it is not endorsed.
+***
+*** The measurement is completed anyway (data is data). It is now a CLEAN
+*** NULL-HYPOTHESIS CHECK: with no mechanism, the expected result is NULL, and a
+*** strong coherence-residual correlation would be a SURPRISE worth reporting.
+*** The f_gas-vs-f_bul internal check remains diagnostic regardless: it asks
+*** whether the "coherence" proxies are anything beyond a surface-brightness/mass
+*** proxy. Note the retraction's own logic predicts the null here: f_gas and
+*** f_disk encode exactly the rotational/bulk coherence that S cannot see.
+*******************************************************************************
+
 ===============================================================================
 PRE-REGISTERED PREDICTION (fixed BEFORE any residual was computed; verbatim from
 papers/notes/bullet_cluster_correction.md §"The test this makes available today"
-and gravity_dark_matter_reading.md §8.3-8.4):
+and gravity_dark_matter_reading.md §8.3-8.4 -- SOURCE NOTE NOW RETRACTED, see banner):
 ===============================================================================
 
   The ledger reading claims effective dark mass tracks the KINEMATICALLY
@@ -327,11 +349,6 @@ def main():
     ci_gas  = tests["primary"]["f_gas"]["ci"]
     same_sign = (np.sign(rho_bul) == np.sign(rho_gas))
 
-    # sensitivity: what partial-rho does the delta scatter let us resolve?
-    # For n_eff galaxies clusters, the sampling sd of Spearman ~ 1/sqrt(n_eff-1).
-    n_eff = ngal
-    rho_resolvable = 1.0 / np.sqrt(max(n_eff - 1, 1))   # ~2-sigma-ish detectable |rho|
-
     def band(rho, ci):
         if not np.isfinite(rho):
             return "UNDEFINED"
@@ -346,26 +363,68 @@ def main():
     sign_ok  = rho_bul < 0            # P1: negative predicted
     gas_ok   = rho_gas >= 0           # P2: gas not negative
 
-    # Overall verdict:
-    #  - floor first: the residual scatter is dominated by the ~0.10 dex systematic
-    #    floor; effect sizes in dex below that are uninterpretable regardless of rho.
-    #  - EMPTY-VARIABLE if f_bul and f_gas carry the SAME sign after controls.
-    #  - SUPPORTED only if band>=WEAK-to-STRONG, sign matches, opposite to gas.
-    #  - else NULL, unless power says UNDERPOWERED.
+    # Per-variable power. f_bul only VARIES across the galaxies that HAVE a bulge,
+    # so its effective N is the bulge-galaxy count, not the full sample. f_gas
+    # varies across all galaxies.
+    n_bulge_gal = proxy_summary["n_galaxies_with_bulge"]
+    rho_resolv_bul = 1.0 / np.sqrt(max(n_bulge_gal - 1, 1))   # ~1-sigma; 2-sigma is 2x
+    rho_resolv_gas = 1.0 / np.sqrt(max(ngal - 1, 1))
+    # dex-scale effect implied by the correlation (fraction of the residual sd it moves):
+    dex_bul = abs(rho_bul) * obs_scatter
+    dex_gas = abs(rho_gas) * obs_scatter
+
+    # Overall verdict, decided on the DISCRIMINATING variable f_bul but reported with
+    # the floor and power caveats the reading's own s8.3 demands:
+    #  - EMPTY-VARIABLE : f_bul & f_gas carry the SAME sign after controls (coherence
+    #                     is just a relabelled mass/SB proxy).
+    #  - SUPPORTED      : f_bul band STRONG, correct (negative) sign, gas not negative.
+    #  - UNDERPOWERED   : the CI on f_bul cannot separate the predicted band from 0,
+    #                     i.e. 2-sigma resolution is coarser than the 0.3 threshold,
+    #                     OR the implied dex effect is below the 0.10 systematic floor.
+    #  - NULL           : predicted (negative) effect resolvably absent AND floor allows.
+    strong_negative_excluded = ci_bul[0] > -0.3        # CI rules out rho <= -0.3
     if same_sign:
         verdict = "EMPTY-VARIABLE"
     elif band_bul == "STRONG" and sign_ok and gas_ok:
         verdict = "SUPPORTED"
-    elif band_bul in ("WEAK", "STRONG") and sign_ok and gas_ok:
+    elif band_bul == "WEAK" and sign_ok and gas_ok and dex_bul >= 0.10:
         verdict = "WEAK-SUPPORT"
-    elif abs(rho_bul) < rho_resolvable and band_bul == "NULL":
+    elif (2 * rho_resolv_bul) > 0.3 or dex_bul < 0.10:
+        # cannot resolve the predicted strong band, or effect is sub-floor:
         verdict = "UNDERPOWERED"
     else:
         verdict = "NULL"
 
+    # The mechanism behind P1/P2's SIGN was retracted after registration (mean
+    # blindness: S acts on a mean-removed correlation matrix, so coherent bulk/
+    # rotational motion is invisible to S). The test is therefore reframed as a
+    # null-hypothesis check: expected NULL, a strong correlation would be a surprise.
+    surprise = (abs(rho_bul) >= 0.3 and (ci_bul[0] > 0 or ci_bul[1] < 0)) or \
+               (abs(rho_gas) >= 0.3 and (ci_gas[0] > 0 or ci_gas[1] < 0))
+    reframed_verdict = ("SURPRISE — strong coherence-residual correlation despite no mechanism; "
+                        "report loudly") if surprise else \
+                       ("NULL as expected — no coherence-residual correlation survives the "
+                        "systematic floor; the orphaned prediction is not resurrected")
+
     out = dict(
         seed=SEED,
+        status="PREDICTION ORPHANED — motivating mechanism retracted after registration",
+        orphan=dict(
+            retraction="papers/notes/bullet_cluster_correction.md RETRACTED same day",
+            audit="papers/notes/reversal_adversarial_audit.md; experiments/dm_coherence/mean_removal_toy.py",
+            kill=("S = -ln det C acts on a MEAN-REMOVED correlation matrix; coherent bulk/"
+                  "rotational velocity is a MEAN and invisible to S (V_bulk sweep leaves S~0.001). "
+                  "The derived sign no longer has a mechanism behind it."),
+            reframe=("Completed as a null-hypothesis check. Expected NULL; a strong coherence-"
+                     "residual correlation would be a surprise. f_gas/f_bul internal check still "
+                     "diagnostic of whether 'coherence' is more than a surface-brightness proxy."),
+            note_consistency=("f_gas and f_disk encode the rotational/bulk coherence S cannot see; "
+                              "the retraction's own logic therefore predicts the null observed here."),
+            reframed_verdict=reframed_verdict,
+            surprise=bool(surprise),
+        ),
         prediction=dict(
+            registered_but_ORPHANED=True,
             P1="partial rho(delta, f_bul) < 0",
             P2="partial rho(delta, f_gas) >= 0",
             P3="sign(rho_bul) != sign(rho_gas), else EMPTY-VARIABLE",
@@ -379,15 +438,25 @@ def main():
             systematic_floor_dex=0.10,
             intrinsic_scatter_dex=0.034,
             measured_rar_scatter_dex=obs_scatter,
-            rho_resolvable_2sig=float(rho_resolvable),
             n_galaxies=ngal,
-            note=("Effect sizes are reported as partial rho AND in dex. Any dex-scale "
-                  "effect below the 0.10 dex floor is systematics-limited."),
+            n_galaxies_with_bulge=int(n_bulge_gal),
+            rho_resolvable_1sig_fbul=float(rho_resolv_bul),
+            rho_resolvable_1sig_fgas=float(rho_resolv_gas),
+            dex_effect_fbul=float(dex_bul),
+            dex_effect_fgas=float(dex_gas),
+            strong_negative_excluded_fbul=bool(strong_negative_excluded),
+            note=("Effect sizes reported as partial rho AND in dex (rho*sigma_resid). "
+                  "f_bul varies only across the %d bulge galaxies, so its power is set "
+                  "by that count, not the full sample. Any dex effect below the 0.10 "
+                  "dex floor is systematics-limited (Ups*, distance, inclination)."
+                  % n_bulge_gal),
         ),
         verdict_components=dict(
             rho_bul=rho_bul, ci_bul=ci_bul, band_bul=band_bul,
             sign_matches_P1=bool(sign_ok), rho_gas=rho_gas, ci_gas=ci_gas,
             gas_matches_P2=bool(gas_ok), same_sign_EMPTY=bool(same_sign),
+            strong_negative_excluded_fbul=bool(strong_negative_excluded),
+            dex_effect_fbul=float(dex_bul), dex_effect_fgas=float(dex_gas),
         ),
         verdict=verdict,
     )
@@ -411,8 +480,13 @@ def main():
         bo = bulge_only["primary"]
         print(f"[bulge-only] f_bul rho={bo['rho']:+.3f} CI{np.round(bo['ci'],3).tolist()} "
               f"(n={bulge_only['n_points']} pts / {bulge_only['n_galaxies']} gal)")
-    print(f"[power] rho resolvable at 2sig ~ {rho_resolvable:.3f} (n_gal={ngal})")
-    print(f"VERDICT: {verdict}")
+    print(f"[power] f_bul resolvable |rho| (2sig) ~ {2*rho_resolv_bul:.3f} over {n_bulge_gal} bulge gal; "
+          f"f_gas ~ {2*rho_resolv_gas:.3f} over {ngal} gal")
+    print(f"[floor] dex effect f_bul={dex_bul:.3f}, f_gas={dex_gas:.3f} vs floor 0.10 dex")
+    print("*** STATUS: PREDICTION ORPHANED — motivating mechanism (bullet_cluster_correction.md)")
+    print("*** RETRACTED on mean blindness; reframed as null-hypothesis check.")
+    print(f"MEASUREMENT VERDICT (power): {verdict}")
+    print(f"REFRAMED VERDICT (null check): {reframed_verdict}")
     return out
 
 

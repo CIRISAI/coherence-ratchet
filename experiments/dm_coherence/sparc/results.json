@@ -1,6 +1,17 @@
 {
   "seed": 20260710,
+  "status": "PREDICTION ORPHANED \u2014 motivating mechanism retracted after registration",
+  "orphan": {
+    "retraction": "papers/notes/bullet_cluster_correction.md RETRACTED same day",
+    "audit": "papers/notes/reversal_adversarial_audit.md; experiments/dm_coherence/mean_removal_toy.py",
+    "kill": "S = -ln det C acts on a MEAN-REMOVED correlation matrix; coherent bulk/rotational velocity is a MEAN and invisible to S (V_bulk sweep leaves S~0.001). The derived sign no longer has a mechanism behind it.",
+    "reframe": "Completed as a null-hypothesis check. Expected NULL; a strong coherence-residual correlation would be a surprise. f_gas/f_bul internal check still diagnostic of whether 'coherence' is more than a surface-brightness proxy.",
+    "note_consistency": "f_gas and f_disk encode the rotational/bulk coherence S cannot see; the retraction's own logic therefore predicts the null observed here.",
+    "reframed_verdict": "NULL as expected \u2014 no coherence-residual correlation survives the systematic floor; the orphaned prediction is not resurrected",
+    "surprise": false
+  },
   "prediction": {
+    "registered_but_ORPHANED": true,
     "P1": "partial rho(delta, f_bul) < 0",
     "P2": "partial rho(delta, f_gas) >= 0",
     "P3": "sign(rho_bul) != sign(rho_gas), else EMPTY-VARIABLE",
@@ -165,9 +176,14 @@
     "systematic_floor_dex": 0.1,
     "intrinsic_scatter_dex": 0.034,
     "measured_rar_scatter_dex": 0.1326442141473278,
-    "rho_resolvable_2sig": 0.08219949365267865,
     "n_galaxies": 149,
-    "note": "Effect sizes are reported as partial rho AND in dex. Any dex-scale effect below the 0.10 dex floor is systematics-limited."
+    "n_galaxies_with_bulge": 31,
+    "rho_resolvable_1sig_fbul": 0.18257418583505536,
+    "rho_resolvable_1sig_fgas": 0.08219949365267865,
+    "dex_effect_fbul": 0.015769278911117974,
+    "dex_effect_fgas": 0.023499620214209378,
+    "strong_negative_excluded_fbul": true,
+    "note": "Effect sizes reported as partial rho AND in dex (rho*sigma_resid). f_bul varies only across the 31 bulge galaxies, so its power is set by that count, not the full sample. Any dex effect below the 0.10 dex floor is systematics-limited (Ups*, distance, inclination)."
   },
   "verdict_components": {
     "rho_bul": 0.11888403133515535,
@@ -183,7 +199,10 @@
       -0.03662331698601236
     ],
     "gas_matches_P2": false,
-    "same_sign_EMPTY": false
+    "same_sign_EMPTY": false,
+    "strong_negative_excluded_fbul": true,
+    "dex_effect_fbul": 0.015769278911117974,
+    "dex_effect_fgas": 0.023499620214209378
   },
-  "verdict": "NULL"
+  "verdict": "UNDERPOWERED"
 }
