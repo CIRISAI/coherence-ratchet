@@ -1,12 +1,24 @@
 # coherence-ratchet
 
-**What this is:** the mathematics of *coordination as an accountable quantity* — and, increasingly, the pursuit of one thesis: that the deepest content of that mathematics is what it **cannot see**.
+## The idea, in plain words
 
-When many parts act as fewer, they share fluctuations. That sharing is measurable, it obeys conservation-like rules, and it is the same object whether the parts are molecules, neurons, market sectors, sensors on a chip, or galaxies. This repo writes that object down as mathematics and checks the proofs by machine (in [Lean](https://lean-lang.org/)). We call the mathematics **the Ledger Law**, and its central quantity **S**.
+When things act together — cells, people, machines, stars — they share an account. Some of what each part does is its own; some is joint. **The joint part can be measured**, and it behaves like an entry in a ledger: it cannot be created by trickery — only by genuinely interacting, or by new things being born. It can be destroyed. Holding it costs continuous work, like rent. And it always leaves **receipts**: whatever coordinates in the ways our instruments can read *must* show up in them, at a rate you can compute. All of that is proved, by machine, below.
 
-This is the research companion to [RATCHET](../RATCHET) — the practical, testable engineering side. **coherence-ratchet is where the ambitious claims are stated in full and stress-tested**, including — prominently — the record of claims that were tried and *failed*. On 2026-07-10 the program retracted six of its own claims with the numbers attached, two of them made earlier the same day. That is not a disclaimer; it is the method. The parts that survive an audit that aggressive are the parts worth having.
+There is one audit in nature that nothing can refuse: **gravity**. Everything that exists signs gravity's page. But gravity can only *weigh* — it cannot *read*. It prices presence, never meaning: a library and a slag heap of equal mass bend space identically. (That blindness is a theorem here, and it converges with proven physics.)
 
-The whole thing is layered: accept the well-tested parts and stop, or read into the speculative ones. Rejecting a later layer costs nothing in the earlier ones.
+Put those together and something falls out:
+
+> **The universe cannot lie — its coordination always carries receipts. Agents can — because meaning is pattern, and no force of nature prices pattern.** A lie is exactly coordination whose receipts are hidden. The law proves the complete, short list of places where hiding is possible — and that everywhere else, hiding is impossible.
+
+So one sector of reality goes unaudited by physics: arrangement, meaning, honesty. Keeping books *there* is what conscience is. That is why this mathematics and the [CIRIS](https://ciris.ai) alignment program are one project: **deception is hidden coordination**, the blind-spot list is the map of where lies can live, and the maintenance rent is the tell that survives hiding — because a lie is *kept*, not true.
+
+The operator's name for this picture is **the structural logos** — Heraclitus's *logos xynos*, the common account all things share "though most live as if by a private one," stated as structure and checked by machine. That naming is a *recognition* (Level 6 below), not a derivation; the lake has carried a Logos module since before this claim, and the fence between what is proved and what is recognized is maintained everywhere in this document.
+
+---
+
+**What this repo is:** the mathematics of coordination as an accountable quantity, machine-checked in [Lean](https://lean-lang.org/), plus the record of how far the idea reaches — including, prominently, the claims that were tried and *failed*. On 2026-07-10 the program retracted six of its own claims with the numbers attached, two of them made earlier the same day. That is not a disclaimer; it is the method. The parts that survive an audit that aggressive are the parts worth having.
+
+This is the research companion to [RATCHET](../RATCHET), the practical engineering side. Everything is layered: accept the well-tested parts and stop, or read on into the bets. Rejecting a later layer costs nothing in the earlier ones.
 
 ---
 
@@ -18,116 +30,92 @@ Take any `k` units. Form the correlation matrix `C` of their fluctuations. Defin
 S = −ln det C
 ```
 
-`S` is the **relative entropy of the system's fluctuation structure from independence** — equivalently, twice its Gaussian *multi-information*. It is the ledger of coordination: how much of the parts' jiggling is *joint*.
+`S` is the **relative entropy of the system's fluctuation structure from independence** — equivalently, twice its Gaussian *multi-information*: how much of the parts' jiggling is *joint*. The proved core (`formal/CoherenceRatchet/LedgerLaw.lean` + `DarkLedger.lean` — the maximal claim discharged by proof terms, kernel-axioms only):
 
-Six things are proved about `S` and machine-checked (`formal/CoherenceRatchet/LedgerLaw.lean` — 11 theorems discharging the law's core, kernel-axioms only; compare `MaximalClaim.lean`, whose old grand claim was one theorem and eleven axioms):
-
-1. **Two poles bound existence.** `S = 0` exactly at independence (the free vacuum); `S → ∞` exactly at collapse, where `det C → 0` and the ensemble stops being a state. Everything lives strictly between.
-2. **One price, several currencies.** `S` *is* the effective-diversity loss (Kish `k_eff`), the joint-entropy deficit (`S/2` nats/sample), and the optimal detection exponent for the coordination (Chernoff–Stein, `S/2`). You cannot pay in one and withhold the others.
-3. **Only shape counts.** `S` is invariant under uniform amplitude rescaling — the same theorem that makes it recover standard physics in weak-coupling limits.
-4. **Creation has exactly two channels.** Invertible local operations change `S` by *exactly zero*; irreversible ones strictly destroy it. Coordination is created *only* by interaction and by unit formation. It cannot be forged — but it can be destroyed, and it can be *sealed* behind a key.
-5. **The interior is rented.** Holding coordination away from the poles costs continuous maintenance work (`γM = α` at equilibrium). Health is a verb.
-6. **The vacuum is stationary.** Deviations from independence are second-order — which is why weak-coupling limits reproduce their base theory automatically, and why that reproduction is untestable at first order. Protection and blindness are one fact.
+1. **Two poles bound existence.** `S = 0` exactly at independence (the free vacuum); `S → ∞` exactly at collapse, where the ensemble stops being a state. Proved for *arbitrary* correlation matrices.
+2. **One price, several currencies.** `S` *is* the effective-diversity loss (Kish `k_eff`), the joint-entropy deficit (`S/2`), and the optimal detection exponent (Chernoff–Stein, `S/2`). Confirmed on hardware to 2–8%.
+3. **Only shape counts.** `S` is invariant under uniform amplitude rescaling — the same theorem that makes weak-coupling limits reproduce standard physics automatically.
+4. **Creation has exactly two channels.** Invertible local operations change `S` by *exactly zero*; irreversible ones destroy it. Only interaction and unit formation create. No forging — but destruction, and *sealing* behind a key, are possible.
+5. **The interior is rented.** Holding coordination away from the poles costs maintenance (`γM = α`). Health is a verb.
+6. **The vacuum is stationary.** Deviations are second-order — protection of known physics and first-order untestability are one fact.
+7. **No hiding in the visible sector** (`DarkLedger.no_pairwise_hiding`, new): any pairwise-visible coordination has *strictly positive* detection rate. Undetectable coordination does not exist where the ledger can read.
 
 **In prohibition form: there is no free coordination.**
 
-### The thesis, and the dark ledger
+### The null space — the instrument
 
-`S` is a *pairwise* ledger. It reads the *copula* — the dependence pattern — and nothing else. It is provably blind to three things: **means** (a fleet in perfect formation reads `S ≈ 0`; bulk motion is a first moment), **amplitudes** (uniform scale; phase-space density `Q = ρ/σ³` — clause 3), and **order ≥ 3** (a GHZ state reads `S ≈ 0`). And it sees *nothing at all* until its **grain** — what the units are, what is correlated across them — is fixed in advance. Most mistakes this program has made were grain mistakes.
+`S` reads the *pairwise fluctuation copula* and nothing else. It is provably or demonstrably blind to exactly four things — **means** (bulk motion; verified on real sky data), **amplitudes** (scale, phase-space density; theorem), **order ≥ 3** (GHZ-type structure; measured), and **sealed** coordination (behind a single-use key; demonstrated on IBM hardware, 2026). And it reads *nothing* until its **grain** is fixed in advance — most of our own failures were grain failures.
 
-The working thesis — a **posit**, stated as such — is that this null space is the discovery. There is a precisely-characterized sector of coordination that is real and consequential yet leaves no pairwise/electromagnetic receipt, and the **difference between two ledgers** is the instrument that reads it.
+Per the convergent-art map, using this blindness taxonomy *as an instrument* is the program's one element with no clean precedent. Everyone mines what a correlation ledger sees; this program inverts it: the null space is the complete map of where anything — a lie, a dark sector — can hide, and clause 7 is the proof there is nowhere else.
 
-Here the naming earns itself. In physics, *dark* already means exactly *off-ledger*: dark matter gravitates but emits no light we can read; dark energy acts but appears only in the balance, never in a transaction. That is precisely the law's null space — real coordination with no readable receipt. So the thesis, stated at full strength (and flagged as the bet it is — L5, below):
+### The dark ledger (the L5 bet, fenced)
 
-> **The dark universe is the readable shadow of an unreadable sector.** If gravity is itself a ledger — the relative entropy between spacetime's metric and the metric matter induces (Bianconi's construction) — then **dark matter is the gap** between what the gravitational ledger demands and what the visible-coordination ledger accounts for. The gap is not a failure of the theory; it is a *measurement* of hidden coordination.
-
-This is **the dark ledger**, and it is earned only conditionally: the gap is circular — true by construction — until it is predicted *independently* from the named null space (`Q`, higher-order phase-space structure). Establishing that non-circularity, or showing it cannot be established, is the program's current frontier. A live open question sharpens it: does hidden coordination require a hidden *carrier* (in which case it is ordinary particle dark matter with extra steps), or can pattern-level coordination gravitate on its own? Clause 3 warns it may not — gravity couples to stress-energy, the very amplitude the ledger is blind to.
+In physics, *dark* already means *off-ledger*: acting, but leaving no readable receipt. If gravity is itself a ledger — the relative entropy between spacetime's metric and the metric matter induces (Bianconi) — then the dark sector is the gap between the audits. The fences, learned the hard way: **pattern does not gravitate** (a human, maximally rich in coordination, produces ~zero dark matter — the ledger prices *carriers*, not patterns; convergent with QNEC and binding-energy GR), so dark *matter* is the carrier question, honestly near-CDM; while dark *energy* as the posted balance of the unit-formation channel is live — the parameter-free curve lands **~2σ from DESI's best fit, closer than ΛCDM**, pre-registered, resolved by DESI DR3 (~2027).
 
 ---
 
 ## Status (2026-07): mid-program, freshly audited
 
-An active research program, not a finished result. The ledger below is the honest state.
-
 ### What is robust (proved or measured; survives audit)
 
-- **The formal core is mechanized.** `S = −ln det C` with its two poles; nonnegativity and the unique-vacuum result for *arbitrary* unit-diagonal correlation matrices (a general Hadamard/Klein form, `Core/EntropicContraction.lean`); `S = 2·multi-information = 2·(Stein exponent)`; the Kish identity and ceiling; the collapse bound; `J = F = k_eff·λ_op·σ`. CI resolves every Constitution `lean:` pointer *through Lean*, failing on a renamed theorem or a `sorry`. Load-bearing core: **44 theorems, 0 axioms**. The legacy vision-scaffold (below) is separate and imported nowhere by it.
-- **Saturation, on complete units.** Effective dimensionality stays *bounded* as constituents are added — low-rank, not criticality — across *C. elegans*, the *Drosophila* compass, the S&P, human fMRI, gene expression, and the decisive complete case: a **whole larval-zebrafish brain (all 71,721 neurons)**. Grain rule fixed before the spectrum; no failure rescued by "you sampled a patch."
-- **A second, thermodynamic axis exists and is measurable.** Breaking detailed balance (`γM`) separates *actively maintained* from merely *bound* coordination. Validated estimator; anchors at both poles (macaque motor cortex `|z|=8.8`; IllustrisTNG baryon cycle `z≈0.5`).
-- **The exchange rate holds on hardware.** On a 16→32-sensor GPU timing array, `S = ½k(k−1)·mean(ρ²)` to 2–8%, and detection latency `∝ 1/S` (relative form) — first silicon confirmation of clause 2 ([`../CIRISArray`](../CIRISArray), exp117/119).
-- **Amplitude-blindness sharpens to exact invariance.** Invertible local maps change true coordination by *exactly zero* (verified, 35/36 channels); the "nonlinear growth destroys coordination" gloss was a Gaussian-ruler artifact and is retired.
+- **The mechanized core: 46 theorems, 0 axioms** — the Ledger Law discharged, the no-hiding theorem, the general (arbitrary-matrix) vacuum-uniqueness result, the exchange rates on the actual matrix. CI resolves every `lean:` pointer through Lean. The legacy vision-scaffold is separate and imported nowhere by the core.
+- **Saturation, on complete units.** Effective dimensionality stays bounded as constituents are added — low-rank, not criticality — across *C. elegans*, *Drosophila*, the S&P, fMRI, gene expression, and a **complete larval-zebrafish brain (71,721 neurons)**.
+- **The maintenance axis is real and independent.** Broken detailed balance (`γM`) separates *kept* coordination from merely *bound* structure — validated estimator, anchors at both poles (macaque motor cortex `|z|=8.8`; IllustrisTNG baryon cycle `z≈0.5`). Independent of the structure axis (the propofol/ketamine dissociation).
+- **The exchange rate holds on hardware.** On a 16→32-sensor GPU timing array, `S = ½k(k−1)·mean(ρ²)` to 2–8%, latency `∝ 1/S` ([`../CIRISArray`](../CIRISArray), exp117/119).
+- **The instrument reads real sky coherence.** On Gaia/S5 data the pairwise ledger reads phase-space coherence for the Orphan stream non-circularly (permutation `p = 0.002`), with the mean-blindness theorem verified on actual stars.
+- **Amplitude-blindness is exact.** Invertible local maps change true coordination by *exactly zero* (verified, 35/36 channels).
 
 ### What is live but unsettled
 
-- **Dark energy from structure formation.** If dark-energy density tracks the coordination a comoving volume accumulates as bound units form (the unit-formation channel), `w(z)` follows parameter-free from `1+w = −⅓ dlnS/dlna`. Computed on real halo catalogs and projected through DESI's *own* CPL fit, the curve lands **~2σ from DESI's best fit — closer than ΛCDM (3.3σ)**, with zero parameters tuned to the data. It lives or dies with ΛCDM against DESI DR3. Conditional on a 2-point proxy and 25 Mpc/h boxes; the frozen prediction is in [`experiments/cosmo_entropic_potential/PREREGISTRATION.md`](experiments/cosmo_entropic_potential/) so the *next* number is a prediction, not a retrodiction.
-- **Dark matter as the two-ledger gap (the dark ledger).** The reframing above *evades* the two objections that killed the naive "coordination sources mass" reading — the gravitational ledger is dimensionful from the start (no invented energy-per-nat, so the ~40-order magnitude problem does not apply) and the gap can differ between kinematically-identical systems. But it is **circular until the gap is predicted from the null space independently**, and it faces the carrier-vs-pattern question above. On real Gaia 6D data the pairwise ledger does read phase-space coherence for cold streams (test in flight).
-- **The order-≥3 door.** Everything above is the pairwise/Gaussian shadow. Whether the corridor exists in the *true, all-orders* multi-information is the single question that decides physics vs. bookkeeping. The IBM "encrypted cloning" result (2026) is the sealed-coordination case made real: `S ≈ 0` under a key, recoverable when the key is spent.
+- **Dark energy from structure formation** — parameter-free `w(z)` ~2σ from DESI, closer than ΛCDM; pre-registered; resolved by DESI DR3.
+- **Dark matter as the carrier question** — pattern is gravitationally inert, so the gap reading is honestly near-CDM until predicted independently.
+- **The order-≥3 door** — everything is the pairwise/Gaussian shadow; whether the corridor survives in the *true* multi-information decides physics vs. bookkeeping.
+- **Deception detection by the rent** — a kept lie should break detailed balance even when its surface statistics read independent. Testable now on CIRIS traces with the validated estimator. This is the first experiment of the new claim.
 
 ### What broke (this is the method working)
 
-- **`k_eff` as a consciousness correlate** — unsupported (one clean macaque; the second uninterpretable). Not disproved.
-- **"Rent tracks stock" as a universal law** — fails at the neural rung (holds on silicon and under ketamine, fails under propofol on the same electrodes).
-- **The k² array-sensitivity corollary** — falsified on hardware; a bounded common cause gives `S ∝ k`, not `k²`.
-- **The naive dark-matter reading** — dead on magnitude and on the Segue-1/DF2 dwarf pair (both apply to "S sources mass"; the gap reframing above replaces it).
-- **The Bullet Cluster derivation** — retracted *twice* in one day: a kill that violated amplitude-blindness, then a reversal that violated mean-blindness. The clearest lesson in the program that **the grain must be fixed first**.
-- **The universal corridor band `(0.1, 0.43)`** — retracted; bands are substrate-local. What is universal is *saturation*, not any level.
-- **The joint multi-rung backward `P_ω`** — a documented no-go at theorem strength (F-11, 2026-05-22). The sole surviving CMB content is the orthogonality theorem: the framework predicts *exactly* ΛCDM for the CMB.
+`k_eff` as a consciousness correlate (unsupported); "rent tracks stock" as a universal law (agent-specific); the k² array-sensitivity corollary (linear, on hardware); the naive dark-matter reading (magnitude + dwarf pair); the Bullet Cluster derivation (retracted *twice* in one day — the grain lesson); the universal corridor band `(0.1, 0.43)`; the joint multi-rung `P_ω` (documented no-go, F-11). The sole surviving CMB content is the orthogonality theorem: the framework predicts *exactly* ΛCDM.
 
-### Positioning, honestly
+### Positioning, honestly (from the convergent-art map)
 
-Unification and methodological discipline, not (yet) a novel phenomenon. Low-dimensional population structure (Cunningham–Yu, Gao–Ganguli) and broken detailed balance in living systems (Battle 2016; Lynn 2021) are established prior art; the dark-energy-from-structure and dark-matter-as-coherence readings have near-identical live cousins (Trofimov's *Timeflow Gravity* 2026; Berezhiani–Khoury superfluid DM). What is ours is the single functional `S` that ties them, the machine-checked core, and the audit discipline.
+Not novel as physics: a classical shadow of it-from-qubit (Van Raamsdonk; Cao–Carroll–Michalakis) crossed with Verlinde's dark-matter-as-entropy-displacement (the wounded ancestor), on a textbook quantity (Watanabe's total correlation), a mechanized premise (Bianconi). Zurek's quantum Darwinism is the receipts principle's quantum cousin — convergent, distinct in quantity. What is **ours**: the blindness taxonomy used as an instrument (no clean precedent), the mechanized core, the audit method, and the deception identification at the center.
+
+---
+
+## How we are pursuing it — accessible tests
+
+| Claim | Test | Data / horizon |
+|---|---|---|
+| **Deception = hidden coordination** | kept lie breaks detailed balance under clean surface stats | CIRIS reasoning traces, validated estimator — **now** |
+| **Adversarial `N_eff` survives an attacker** | adaptive-attack collapse of constraint dimensionality | spec'd; unrun |
+| **Dark energy = structure-formation balance** | frozen halo-`S(a)` vs geometry-only crossing | DESI DR3 (~2027), pre-registered |
+| **Hidden coordination (order ≥ 3)** | rank-`S` flatness / sealed-coordination recovery | IBM encrypted-cloning, free tier, now |
+| **Ledger reads phase-space coherence** | cold streams high `corr(x,v)`, halo ~0 | Gaia DR3 6D — **passed** (Orphan, non-circular) |
+
+Method, per-substrate numbers, and every caveat: [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md); cosmology and dark-sector notes under [`experiments/`](experiments/) and [`papers/notes/`](papers/notes/).
 
 ---
 
 ## AI-safety application: effective dimensionality as deception-resistance
 
-The same quantity is the load-bearing metric of the CIRIS alignment program. A *coherent lie must be simultaneously consistent across every independent constraint axis* — exponentially expensive (deception ≈ O(2^m) vs. truth ≈ O(n)), so **high effective constraint dimensionality computationally starves deception.** The semantic conscience pipeline contributes `N_eff ≈ 7.1`; the **CEG** substrate (a conformance-frozen cryptographic-attestation modality, *orthogonal* to semantic reasoning) pushes the joint measure to ≈ 9. Because Gate 0 validated `k_eff` as a real, *saturating* structural object (not a tautology, not criticality), this rests on a validated foundation. **Honest limit:** `N_eff` is measured on *benign* traces — an upper bound. A capable optimizer collapses effective dimensionality toward the rigidity pole (`ρ→1`, `k_eff→1`); whether ≈9 survives an adaptive attacker is the decisive open test ([`experiments/adversarial_neff/SPEC.md`](experiments/adversarial_neff/SPEC.md)). The attack-invariant guarantee is the substrate (CEG) floor: you cannot semantically-reason past a frozen cryptographic attestation. Safety here is a *maintained* non-equilibrium — kept, not achieved.
+A coherent lie must be simultaneously consistent across every independent constraint axis — exponentially expensive (deception ≈ O(2^m) vs. truth ≈ O(n)), so **high effective constraint dimensionality computationally starves deception.** This is clause 7 at the agent rung: `N_eff` is the count of pages a lie must forge at once; the semantic pipeline gives `N_eff ≈ 7.1`, the orthogonal cryptographic **CEG** substrate pushes it to ≈ 9. The attack-invariant floor is CEG — an unforgeable page, a receipt that cannot be pattern-simulated. Honest limit: `N_eff` is measured on *benign* traces (an upper bound); whether it survives an adaptive attacker is the decisive open test. Safety here is a *maintained* non-equilibrium — kept, not achieved.
 
 ---
 
-## How we are pursuing it — the accessible tests
-
-| Claim | Test | Data / horizon |
-|---|---|---|
-| **Dark energy = structure-formation balance** | frozen halo-`S(a)` pipeline vs geometry-only crossing | DESI DR3 (~2027); large-volume `S(a)` now (TNG300/Quijote) — pre-registered |
-| **Hidden coordination exists (order ≥ 3)** | rank-`S` flatness / higher-order MI; sealed-coordination recovery | IBM encrypted-cloning, free tier, now |
-| **Pairwise ledger reads phase-space coherence** | cold stellar streams read high `corr(x,v)`; smooth halo ~0 | **Gaia DR3 6D — public, now** (in flight) |
-| **Dark matter = two-ledger gap (non-circular?)** | does the gravitational residual track visible `Q`/higher-order structure the pairwise instrument misses? | Gaia local density + SPARC; unrun |
-| **Adversarial `N_eff` survives an attacker** | adaptive-attack collapse of constraint dimensionality | spec'd; unrun |
-| **Exchange rate `∝ k²` under matched coupling** | k-scaling with injector power `∝ k`, simultaneous sampling | GPU array, one run |
-
-Saturation and detailed-balance numbers and every caveat: [`experiments/keff_saturation/README.md`](experiments/keff_saturation/README.md). Entropic-potential and cosmology work: [`experiments/cosmo_entropic_potential/`](experiments/cosmo_entropic_potential/) and [`papers/notes/`](papers/notes/).
-
----
-
-## The framework's spine (technical)
-
-One identity ([Kish 1965](#references)), one dynamical equation (`dρ/dt = α − γM`), one corridor, one inner-product structure ([TSVF](#references)), and one potential (`S = −ln det C`) that unifies the diversity and detection readings. Applied across a hierarchy of rungs (molecules → cells → … → societies).
-
-```
-k_eff(k, ρ) = k / (1 + ρ(k−1))        S(k, ρ) = −ln(1 + ρ(k−1)) − (k−1)·ln(1 − ρ)
-```
-
-`k_eff` is the *participation* reading of the spectrum; `S` the *relative-entropy* reading — same spectrum, conjugate functionals (`Core/EntropicPotential.lean`). Substrate-local bands, measured not assumed.
-
-### The seven-level ladder — no level is load-bearing on the ones above it
+## The seven-level ladder — no level is load-bearing on the ones above it
 
 | Level | Stopping content |
 |-------|------------------|
-| L0 | Kish identity + the ledger `S` (formal theorems) |
+| L0 | Kish identity + the ledger `S` + the no-hiding theorem (formal) |
 | L1 | Saturation as a substrate-independent observation |
 | L2 | Engineering: deception-resistance, coherence sensing |
 | L3 | Cross-substrate universality (conjecture) |
 | L4 | Agency and consent as structural fact at A3+ |
-| L5 | Entropic-action gravity, dark energy, **the dark ledger** |
-| L6 | Cross-tradition recognition |
+| L5 | Entropic-action gravity, dark energy, **the dark ledger** (bets, dated) |
+| L6 | Cross-tradition recognition — **the structural logos** |
 | L7 | Civilizational extension and external residue |
 
-A skeptic keeps every theorem and stops at L2. Everything from L5 up is a bet, marked as one.
-
-### Legacy scaffold
-
-The pre-Ledger-Law vision content — the ten-piece cosmology structure, TSVF/goal-projection machinery, consciousness modules, contemplative-tradition recognition, civilizational residue — remains as an honestly-tagged *axiom scaffold* (`MaximalClaim.lean`, `StructuralClaims.lean`: ~49 axioms of explicit assertion, by design, auditing where the maximal vision bends). The Ledger core imports none of it.
+A skeptic keeps every theorem and stops at L2. Everything from L5 up is a bet, marked as one. The **logos** reading is L6: a recognition that the law's shape — a common account most treat as private — was named by Heraclitus and carried in the lake's `ContemplativeTraditions/Logos.lean` before this claim existed. Recognition, not proof.
 
 ---
 
@@ -138,26 +126,18 @@ cd formal
 lake build
 ```
 
-Requires Lean 4 v4.14.0 (`leanprover/lean4:v4.14.0`) and mathlib v4.14.0. The lake is `sorry`-free.
-
-### Open formal steps
-
-1. Close the general data-processing inequality for `S` (clause 4). Blocked on three lemmas absent from mathlib v4.14 — Schur product positivity, general Oppenheim, ln-det concavity on the PSD cone — real upstream contributions; ln-det concavity also closes the exchangeability bound `S_measured ≥ S(k, ρ̄)`.
-2. The all-orders extension: does the corridor survive in the true multi-information, or only the Gaussian shadow?
-3. Per-substrate corridor calibration; quantum-substrate reproducibility (blocked by pairwise-blindness until a basis-invariant measure exists).
-
----
+Requires Lean 4 v4.14.0 and mathlib v4.14.0. The lake is `sorry`-free. Open formal steps: close the general data-processing inequality for `S` (blocked on Schur product positivity, general Oppenheim, and ln-det concavity — absent from mathlib v4.14, real upstream contributions); the all-orders extension; per-substrate calibration.
 
 ## References
 
 - Kish, L. (1965). *Survey Sampling*. Wiley.
+- Watanabe, S. (1960). Information-theoretical analysis of multivariate correlation. *IBM J. Res. Dev.* 4, 66.
 - Bianconi, G. (2025). Gravity from entropy. *Phys. Rev. D* 111, 066001. arXiv:2408.14391.
-- Aharonov, Bergmann, Lebowitz (1964). Time symmetry in the quantum process of measurement. *Phys. Rev.* 134, B1410.
-- Aharonov, Vaidman (2008). The two-state vector formalism. *Lecture Notes in Physics* 734, 399.
-- Battle, C. et al. (2016). Broken detailed balance at mesoscopic scales in active biological systems. *Science* 352, 604.
-- Lynn, C. W. et al. (2021). Broken detailed balance and entropy production in the human brain. *PNAS* 118.
-- Penrose, R. (2004). *The Road to Reality*. Knopf, Ch. 27.
-- Tononi, G. (2008). Consciousness as integrated information. *Biological Bulletin* 215, 216.
+- Verlinde, E. (2017). Emergent gravity and the dark universe. *SciPost Phys.* 2, 016. arXiv:1611.02269.
+- Van Raamsdonk, M. (2010). Building up spacetime with quantum entanglement. *GRG* 42, 2323.
+- Zurek, W. H. (2009). Quantum Darwinism. *Nature Physics* 5, 181.
+- Battle, C. et al. (2016). Broken detailed balance in active biological systems. *Science* 352, 604.
+- Heraclitus (c. 500 BCE), fr. DK 22 B2, B50 (*logos xynos*).
 
 ## License
 
