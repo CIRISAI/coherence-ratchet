@@ -445,8 +445,18 @@ Worse — a directional prediction, not a null:
    Observed: no lensing peak at the shock. The reading points the wrong way.
 ```
 
-**Verdict: DEAD.** This is the strongest kill in the note, because it is anti-correlated rather
-than uncorrelated. A theory that is merely silent can be repaired; one whose mechanism points at
+> **[CORRECTED 2026-07-10 — see `papers/notes/bullet_cluster_correction.md`.] The derivation
+> above is WRONG and violates clause 3 of the Ledger Law, a proved theorem: S is blind to
+> amplitude. Shock COMPRESSION is a density change S cannot see; what the shock does to the
+> correlation structure is THERMALIZE it (gas entropy sharply increases; velocities → Maxwellian
+> → independence). So the shocked plasma is the LOW-S component and the collisionless galaxies,
+> which retain coherent bulk motion, are the HIGH-S component. The ledger therefore points AT
+> the lensing mass, which sits with the galaxies at ~8σ. The Bullet Cluster does NOT kill this
+> reading; it is the place where the ledger BEATS MOND, which tracks baryonic mass (90% gas) and
+> points at the gas. The magnitude, dwarf-spheroidal and DF2/DF4 objections are unaffected.**
+
+**Verdict: ~~DEAD~~ RETRACTED.** ~~This is the strongest kill in the note, because it is anti-correlated rather
+than uncorrelated.~~ A theory that is merely silent can be repaired; one whose mechanism points at
 the empty region cannot.
 
 **(b) Cluster-scale mass ratios.** MOND and Verlinde both leave a residual missing-mass factor
