@@ -44,8 +44,20 @@ THE SIX CLAUSES (core, proved here):
      multi-information by exactly zero (papers/notes/copula_invariance_remark).
   5. THE INTERIOR IS RENTED — at any equilibrium the maintenance work equals
      the drift, γ·M = α (`corridor_requires_maintenance`); unmaintained
-     trajectories exit to a pole (Core.Dynamics). Hardware datum (exp118,
-     moderate confidence): the rent tracks the held STOCK.
+     trajectories exit to a pole (Core.Dynamics). NOTE the clause is an
+     ALGEBRAIC IDENTITY at any zero of the posited ODE; the empirical content
+     lives in the modeling commitment (α exists, is signed, M enters
+     linearly), and the sign is OPPOSITE Schrödinger's — unmaintained systems
+     rigidify (death is the crystal, not the soup); the framework owes an
+     argument for that sign it has not paid.
+     RETIRED (2026-07-10): the gloss "the rent tracks the held STOCK" was
+     anchored on ONE substrate (exp118, a GPU array, r = +0.84). It DOES NOT
+     REPLICATE at the neural rung: within-session partial correlations across
+     4 macaque ECoG sessions give ketamine +0.24/+0.17 (positive, 2/2) but
+     propofol −0.15/−0.13 (no positive relation, trending negative) —
+     agent-specific, not a law. See experiments/keff_saturation/rent_stock/.
+     Proxy-limited (DB significance scores, not entropy-production rates);
+     the failure retires an overclaim, it does not establish the negation.
   6. THE VACUUM IS STATIONARY — S has no first-order deviation from its zero
      (Klein); quadratic coefficient k(k−1)/2 (T-L1). Protection of the
      GR/ΛCDM limit and untestability at first order are the same fact.
@@ -232,8 +244,14 @@ structure ReceiptsReading where
   /-- Receipts record substance, not packaging: amplitude-blind, copula-borne
       (clause 3). -/
   receipts_record_substance_not_packaging : True
-  /-- The rent is itemized: γ·M = α at every equilibrium (clause 5); the
-      hardware datum says the rent tracks the held stock (exp118). -/
+  /-- The rent is itemized: γ·M = α at every equilibrium (clause 5) — an
+      algebraic identity given the posited drift law, not an empirical result.
+      The stronger gloss "the rent tracks the held stock" is RETIRED as a
+      universal claim (2026-07-10): true on silicon (exp118, r = +0.84),
+      true under ketamine, FALSE under propofol on the same electrodes. The
+      coupling between maintenance and stock is substrate- and agent-specific.
+      Receipts are itemized; what the itemization is proportional to is not
+      settled. -/
   the_rent_is_itemized : True
   /-- The account opens at zero and may only ascend, never reaching the pole
       (permitted history). Why it opened at zero is relocated, not solved. -/
