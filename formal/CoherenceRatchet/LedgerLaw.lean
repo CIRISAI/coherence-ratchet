@@ -30,6 +30,20 @@ THE SIX CLAUSES (core, proved here):
      −ln det of the actual correlation matrix, not an assumed closed form
      (T-E5b); the per-unit density saturates at −ln(1−ρ), the entropy face of
      the Kish ceiling (T-E3).
+     HARDWARE STATUS (exp119, CIRISArray, k ∈ {4,8,16,32}): the IDENTITY is
+     confirmed to 2–8% at every k in its heterogeneity-correct form
+     S = ½·k(k−1)·mean(ρ²). The k² SENSITIVITY COROLLARY — advertised earlier
+     in this project — is FALSIFIED as stated: it silently assumed ρ ⊥ k, and
+     a bounded-strength common cause instead injects a mode of fixed excess
+     eigenvalue (λ_max − 1 ≈ const), forcing ρ̄ ∝ 1/k, so per-sample
+     information grows LINEARLY in k (measured S ∝ k^0.92) and latency falls
+     as k^−0.93, not k^−2. Also: the Stein/Wald ABSOLUTE error calibration
+     does not transfer to this substrate — GPU timing is Student-t (κ ≈ 210),
+     so a Gaussian LLR is not the true log-likelihood ratio and the nominal
+     α is unattainable (measured false-alarm 0.63–0.96 at nominal 1e−3). What
+     survives, and is confirmed, is the RELATIVE law: N × KL ≈ A to 7–19% at
+     every k, i.e. latency ∝ 1/S. Absolute detection claims require a
+     distribution-free detector (variance ratio).
   3. ONLY SHAPE COUNTS — the post-selection weight is invariant under uniform
      amplitude rescaling: one blindness that is simultaneously the CMB
      orthogonality fence, the w = −1 linear fence, and the invisibility of

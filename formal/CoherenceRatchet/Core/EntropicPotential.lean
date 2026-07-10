@@ -351,8 +351,14 @@ Three readings, one mechanized identity:
   optimal per-sample discrimination information for detecting the
   coordination, so detection latency scales as ln(1/P_err)/(S/2).
 - **Small-ρ sensing law** (documented, not mechanized): expanding S at ρ → 0
-  gives S ≈ ½·k(k−1)·ρ², so the correlation channel's per-sample information
-  grows ~k² in array size — the minimal detectable ρ scales as 1/k.
+  gives S ≈ ½·k(k−1)·ρ². CAUTION (exp119, 2026-07-10): the k² LEVERAGE this
+  seems to promise requires ρ ⊥ k, which a bounded-strength common cause does
+  NOT satisfy. Measured on a 16→32-sensor GPU array, a shared resource injects
+  a mode of FIXED EXCESS EIGENVALUE (λ_max − 1 ≈ 0.5, CV 4%), hence ρ̄ ∝ 1/k by
+  arithmetic, hence S ∝ k^0.92 and detection latency ∝ k^−0.93 — LINEAR, not
+  quadratic. What the hardware DOES confirm to 2–8% at every k is the identity
+  in its heterogeneity-correct form S = ½·k(k−1)·mean(ρ²) (note mean(ρ²), not
+  ρ̄²). Recovering k² requires the common-cause power to grow ∝ k.
 
 Both Gaussian interpretations (multi-information; KL/Stein) are MODELING
 COMMITMENTS documented here (the timing marginals are fat-tailed, so on real
