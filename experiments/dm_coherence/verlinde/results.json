@@ -1,0 +1,271 @@
+{
+  "seed": 20260710,
+  "title": "Verlinde EG on SPARC: reproduce the death, test the maintenance repair",
+  "eg_equations": {
+    "a0": "c H0 / 6 ~ 1.2e-10 m/s^2 (MOND convention, Lelli+2017)",
+    "eq3": "int_0^r G M_D^2/r'^2 dr' = M_b(r) a0 r   (Verlinde 2016 Eq 7.40)",
+    "eq5": "g_t = g_b (1 + sqrt(a0/g_b) sqrt(1 + (G/(g_b r)) dM_b/dr))",
+    "eq5_reduced": "inner term = 3 + d ln g_b/d ln r (spherical M_b = g_b r^2/G)",
+    "eq6": "deep-MOND point-mass limit: g_t = sqrt(a0 g_b)",
+    "delta_EG": "log10 g_obs - log10 g_EG, per radius per galaxy"
+  },
+  "hypothesis": {
+    "H1": "delta_EG correlates MORE with maintenance than with radius (joint model)",
+    "H2": "controlling maintenance FLATTENS the delta_EG-vs-radius correlation",
+    "H3": "maintenance survives explicit g_bar control (gate ii)",
+    "bands": "|rho|<0.1 NULL; 0.1-0.3 WEAK; >=0.3 & CI excl 0 STRONG"
+  },
+  "instrument": {
+    "gdag_fit": 1.1662026671321424e-10,
+    "rar_scatter_dex": 0.13164188154683618,
+    "n_points": 2688,
+    "n_galaxies": 141,
+    "reference": "g_dag~1.16e-10, scatter 0.11-0.13 dex (McGaugh+16, Lelli+17a)",
+    "instrument_ok": true
+  },
+  "eg_reproduction": {
+    "mean_delta_EG": -0.15318960839889645,
+    "median_delta_EG": -0.14871391475600326,
+    "std_delta_EG": 0.14915954183977354,
+    "term_min": -0.7440633380364541,
+    "term_med": 1.8036822460940556,
+    "term_max": 6.801057582722869,
+    "note": "delta_EG<0 => EG overpredicts g at fiducial Ups=0.5/0.7; the mean offset is the log10 M/L suppression EG requires (Lelli+17 finding i)."
+  },
+  "his_death": {
+    "delta_EG_vs_lgr": {
+      "rho": 0.26106415593691507,
+      "ci": [
+        0.1519449447581659,
+        0.3711131329151718
+      ],
+      "p": 0.0,
+      "nboot": 3000
+    },
+    "delta_EG_vs_lgbar": {
+      "rho": -0.006167324134432349,
+      "ci": [
+        -0.14385633965652328,
+        0.10113002088052579
+      ],
+      "p": 0.7726666666666666,
+      "nboot": 3000
+    },
+    "delta_EG_vs_term": {
+      "rho": -0.4243703555065642,
+      "ci": [
+        -0.5118735260997687,
+        -0.33699501605619026
+      ],
+      "p": 0.0,
+      "nboot": 3000
+    },
+    "raw_lgr": {
+      "rho": 0.25996334048834024,
+      "ci": [
+        0.14094935982281684,
+        0.37108459547377837
+      ],
+      "p": 0.0,
+      "nboot": 3000
+    }
+  },
+  "repair_maintenance": {
+    "f_gas_primary": {
+      "rho": -0.0635089383942766,
+      "ci": [
+        -0.16933121897910153,
+        0.08289386489304057
+      ],
+      "p": 0.41333333333333333,
+      "nboot": 3000
+    },
+    "f_gas_gbar": {
+      "rho": -0.1362637383360718,
+      "ci": [
+        -0.24003696099328412,
+        -0.027494766312441698
+      ],
+      "p": 0.018,
+      "nboot": 3000
+    },
+    "f_bul_primary": {
+      "rho": 0.20909026884553714,
+      "ci": [
+        0.048249363528654915,
+        0.3427455500044386
+      ],
+      "p": 0.011333333333333334,
+      "nboot": 3000
+    },
+    "f_bul_gbar": {
+      "rho": 0.2698892526763473,
+      "ci": [
+        0.1272970654785366,
+        0.39641009933115073
+      ],
+      "p": 0.0,
+      "nboot": 3000
+    },
+    "f_disk_primary": {
+      "rho": -0.02285835656686849,
+      "ci": [
+        -0.15922267439444954,
+        0.11050443272421476
+      ],
+      "p": 0.7706666666666667,
+      "nboot": 3000
+    }
+  },
+  "repair_flatten": {
+    "radius_before": {
+      "rho": 0.26106415593691507,
+      "ci": [
+        0.1513269141623232,
+        0.3692438714940495
+      ],
+      "p": 0.0,
+      "nboot": 3000
+    },
+    "radius_after_fgas": {
+      "rho": 0.30007404269273397,
+      "ci": [
+        0.16350362503546803,
+        0.41614060884842174
+      ],
+      "p": 0.0,
+      "nboot": 3000
+    },
+    "maint_before": {
+      "rho": -0.0635089383942766,
+      "ci": [
+        -0.16842520532399052,
+        0.08096736329687124
+      ],
+      "p": 0.41,
+      "nboot": 3000
+    },
+    "maint_after_radius": {
+      "rho": -0.1656188053394112,
+      "ci": [
+        -0.2967591638365203,
+        -0.004326676074423034
+      ],
+      "p": 0.046,
+      "nboot": 3000
+    },
+    "radius_maint_corr": 0.33557140827126963,
+    "gbar_maint_corr": -0.8628812421083274
+  },
+  "repair_horserace": {
+    "base": {
+      "r2_full": 0.09921193267061545,
+      "std_coeff": {
+        "lgr": 0.31907313843325724,
+        "f_gas": -0.1692289431542955
+      },
+      "partial_r2": {
+        "lgr": 0.08913726321865922,
+        "f_gas": 0.025405097552849254
+      },
+      "controls": [
+        "inc",
+        "Qual"
+      ],
+      "predictors": [
+        "lgr",
+        "f_gas"
+      ]
+    },
+    "with_gbar": {
+      "r2_full": 0.11111185878644358,
+      "std_coeff": {
+        "lgr": 0.3146423400075828,
+        "f_gas": -0.3544109308883022,
+        "lgbar": -0.21670139673706695
+      },
+      "partial_r2": {
+        "lgr": 0.08655382715404225,
+        "f_gas": 0.03133127571455063,
+        "lgbar": 0.01189992611582813
+      },
+      "controls": [
+        "inc",
+        "Qual"
+      ],
+      "predictors": [
+        "lgr",
+        "f_gas",
+        "lgbar"
+      ]
+    },
+    "with_bul": {
+      "r2_full": 0.11402194896396556,
+      "std_coeff": {
+        "lgr": 0.2765493185490414,
+        "f_gas": -0.06937338194133498,
+        "f_bul": 0.15811543478714038
+      },
+      "partial_r2": {
+        "lgr": 0.060494324196750604,
+        "f_gas": 0.0026729003840831878,
+        "f_bul": 0.014810016293350103
+      },
+      "controls": [
+        "inc",
+        "Qual"
+      ],
+      "predictors": [
+        "lgr",
+        "f_gas",
+        "f_bul"
+      ]
+    }
+  },
+  "sensitivity": {
+    "systematic_floor_dex": 0.1,
+    "intrinsic_scatter_dex": 0.034,
+    "measured_rar_scatter_dex": 0.13164188154683618,
+    "n_galaxies": 141,
+    "n_points": 2688,
+    "rho_resolvable_1sig": 0.08451542547285165,
+    "rho_resolvable_2sig": 0.1690308509457033,
+    "dex_effect_fgas": 0.008360436145264676,
+    "dex_effect_fgas_gbarcontrolled": 0.017938014901166244,
+    "note": "Effect in dex = |partial rho| * sigma_resid. Any dex effect below the 0.10 dex floor (Ups*, distance, inclination) is systematics-limited and uninterpretable as physics; intrinsic RAR scatter is only 0.034 dex."
+  },
+  "verdict_components": {
+    "rho_gas": -0.0635089383942766,
+    "ci_gas": [
+      -0.16933121897910153,
+      0.08289386489304057
+    ],
+    "gas_signif": false,
+    "rho_gas_gbarcontrolled": -0.1362637383360718,
+    "ci_gas_gbar": [
+      -0.24003696099328412,
+      -0.027494766312441698
+    ],
+    "rho_bul": 0.20909026884553714,
+    "ci_bul": [
+      0.048249363528654915,
+      0.3427455500044386
+    ],
+    "opposite_poles": true,
+    "rho_radius": 0.26106415593691507,
+    "rho_radius_after_maint": 0.30007404269273397,
+    "horse_std_coeff_radius": 0.31907313843325724,
+    "horse_std_coeff_maint": -0.1692289431542955,
+    "horse_partialR2_radius": 0.08913726321865922,
+    "horse_partialR2_maint": 0.025405097552849254,
+    "radius_wins_factor": 3.5086369195485427,
+    "H1_maint_beats_radius": false,
+    "H2_flatten": false,
+    "H3_survives_gbar": true,
+    "dex_effect_fgas": 0.008360436145264676,
+    "above_floor": false,
+    "confound_note": "f_gas is 86% rank-collinear with g_bar (Spearman -0.863) and 34% with radius (Spearman 0.336); BUT delta_EG itself does NOT track g_bar (rho -0.006), so the EG residual is a RADIUS residual, not an acceleration one. The maintenance proxy is entangled with both, and radius wins the disentangling."
+  },
+  "verdict": "NULL",
+  "verdict_reason": "REPAIR REFUTED. A weak maintenance signal exists (f_gas -0.064, f_bul +0.209, opposite poles as predicted) but it LOSES to radius on both decisive tests: horse-race partial R^2 radius 0.089 vs maintenance 0.025 (radius wins 3.5x), and controlling maintenance does NOT flatten the radius residual (0.261 -> 0.300, it STRENGTHENS). The residual maintenance effect (0.008 dex) sits an order of magnitude below the 0.10 dex systematic floor. Radius, not maintenance, owns the EG residual."
+}
