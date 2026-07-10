@@ -84,6 +84,9 @@ import CoherenceRatchet.CMBOrthogonality
 -- The maximal claim scaffolded — an honest audit of where it bends and breaks
 import CoherenceRatchet.MaximalClaim
 
+-- THE LEDGER LAW: the maximal claim by discharge — eleven conjuncts, eleven theorems, zero assertions
+import CoherenceRatchet.LedgerLaw
+
 -- The 10-piece formal structure
 import CoherenceRatchet.Core.BaseIdentity                  -- Piece 1
 import CoherenceRatchet.Core.Dynamics                       -- Piece 2

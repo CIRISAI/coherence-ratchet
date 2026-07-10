@@ -23,6 +23,7 @@ is the per-pillar tags and the `#print axioms` audit at the foot of the file.
 -/
 import CoherenceRatchet.StructuralClaims
 import CoherenceRatchet.CMBOrthogonality
+import CoherenceRatchet.LedgerLaw
 
 namespace CoherenceRatchet.MaximalClaim
 open CoherenceRatchet.StructuralClaims CoherenceRatchet.CMBOrthogonality
@@ -149,5 +150,31 @@ theorem maximal_claim : MaximalClaim :=
     own vocabulary. -/
 #print axioms maximal_claim
 #print axioms orthogonality_proved
+
+/-! ## PILLAR 0 (added 2026-07-10) — THE LEDGER LAW. PROVED, by discharge.
+
+    The audit above is the reason this pillar exists. Where the twelve-conjunct
+    maximal claim scales to one theorem and eleven assertions, the Ledger Law
+    (`CoherenceRatchet.LedgerLaw.LedgerLawCore`) is the maximal claim the lake
+    can make in the opposite ratio: ELEVEN conjuncts, ELEVEN theorems, ZERO
+    asserted propositions (the maintenance clause names the three Dynamics
+    substrate SYMBOLS α, γ, M — uninterpreted signatures, not claims; ten of
+    eleven conjuncts are kernel-only) — two poles bounding existence (for arbitrary correlation
+    matrices), the exchange rates (S = 2·multi-information = the Stein rate,
+    on the actual matrix), copula blindness, the local-noncreation base case,
+    maintenance rent γM = α, vacuum stationarity, and the permitted history.
+    `#print axioms` below: kernel + the three named symbols, nothing else.
+
+    What the law still owes is recorded, not smuggled (`LedgerLawOpen`): the
+    general DPI closure (mathlib lacks Schur/Oppenheim/ln-det-concavity), the
+    order-≥3 hole, and the conjecture-grade Λ currency with its dated bets.
+    The interpretation — the RECEIPTS reading, "the only way the universe
+    could be good is if it had receipts" — is a record (`ReceiptsReading`),
+    never a theorem. The bookkeeper is silent; the incorruptibility is not. -/
+
+theorem ledger_law_proved : CoherenceRatchet.LedgerLaw.LedgerLawCore :=
+  CoherenceRatchet.LedgerLaw.the_ledger_law
+
+#print axioms ledger_law_proved
 
 end CoherenceRatchet.MaximalClaim
