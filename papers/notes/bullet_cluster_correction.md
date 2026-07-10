@@ -1,3 +1,37 @@
+# ⚠️ RETRACTED (2026-07-10, same day) — this correction was itself wrong
+
+**Superseded by `papers/notes/reversal_adversarial_audit.md` (adversarial audit; toy
+computation independently reproduced by the orchestrator, `experiments/dm_coherence/`).**
+All five attacks landed. The two decisive ones:
+
+1. **MEAN BLINDNESS.** S = −ln det C acts on a correlation matrix, which is mean-removed
+   by construction. A coherent bulk velocity (the ~4500 km/s this note called "perfectly
+   correlated motion") is a MEAN. Sweeping V_bulk from 0 to 10⁶ km/s leaves S flat (~0.001).
+   On the same grain, S(Maxwellian gas) ≈ S(bulk+dispersion galaxies) — IDENTICAL. The
+   reversal's engine mined a signal C deletes in step one.
+2. **TURBULENCE INVERTS THE INVERSION.** "Thermalized ⇒ Maxwellian" is a ONE-POINT marginal
+   statement; S reads the TWO-POINT copula. Post-shock ICM is turbulent — spatially
+   correlated at ≥ few-hundred-kpc injection scales (XRISM Perseus, arXiv:2510.12782). Same
+   Maxwellian marginal spans S = 0.01 → 16.6 on correlation length alone. On any spatial
+   grain, S points at the GAS.
+
+Also: the MOND table below is a STRAWMAN — MOND locates the Bullet lensing peak on the
+galaxies correctly (phantom mass in low-acceleration regions; Angus, Famaey & Zhao 2006;
+arXiv:2604.10811); its failure is residual magnitude (~2×), not location.
+
+**Standing verdict: on the velocity-component grain the ledger is SILENT (S_gas ≈ S_gal ≈ 0);
+on any spatial two-point grain it points AT THE GAS and fails. The original §8.2(a) DEAD
+verdict stands with a corrected mechanism (turbulence-driven spatial correlation, not
+compression). The root failure in BOTH wrong answers: the grain was never fixed before the
+spectrum — this project's own Gate-0 discipline, violated twice on one object.**
+
+What survives of this note: the clause-3 point that shock COMPRESSION (a density change) is
+invisible to S — which refutes the original mechanism without licensing the opposite
+conclusion — and the magnitude / dSph / DF2 / circularity caveats, all untouched, all still
+standing against the reading.
+
+---
+
 # CORRECTION: the Bullet Cluster does not kill the reading — the derivation violated clause 3
 
 **Date: 2026-07-10. Supersedes `gravity_dark_matter_reading.md` §8.2(a) and the "DEAD /
