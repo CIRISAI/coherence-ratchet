@@ -160,10 +160,21 @@ of this document.
 | K6 | Euclid + LSST/Rubin **concordant** crossing at ≥5σ, SNe-independent | Euclid cosmo ~2028, LSST ~2027–28 | **Both branches** (`w≥−1` dead) | — |
 | K7 | Large-volume `w_today` outside **[−1.22, −0.84]** in a *resolved* cell | when big box reached | **P3** (magnitude claim) | Sign-structure claim (P1/K3) may still hold |
 
-Realistic verdict horizon: **~2027–2028**, gated by DESI DR3 geometry-only, SNe
-recalibration, and reachability of a ≥100-Mpc/h well-resolved halo catalog (all three
-large-volume options were gated/unreachable as of 2026-07-10; `sweep/results.json →
-volume_test.reachability`).
+Realistic verdict horizon: **~2027–2028**, gated by DESI DR3 geometry-only and SNe
+recalibration.
+
+> **UPDATE (2026-07-10, same day, per the update rules of P1/P3): the large-volume test has
+> been run** — TNG300-1 (205 Mpc/h) via operator-supplied API access; pre-committed pipeline
+> decisions in `large_volume/DECISIONS.md`; full record in `large_volume/SUMMARY.md`.
+> - **P1 registered prediction for DR3 is now: crossing epoch z = 0.59 ± 0.03 physical /
+>   0.46 CPL-projected** (replaces z ≈ 1.05). Both inside DESI DR2's 90% crossing interval.
+> - **K3 did not fire** (interior peak, 8/8 jackknife replicates). Mechanism confirmed
+>   (k(a) peaks z = 0.55; S peaks z = 0.59).
+> - **K7 fired by the letter**: w_today = −0.833 ± 0.057 lies 0.007 (0.12σ) outside
+>   [−1.22, −0.84]. The small-volume magnitude interval is dead by its own criterion;
+>   **P3's registered magnitude prediction is now w_today = −0.833 ± 0.057.**
+> - Headline: DESI-projected (w₀, wₐ) = (−0.767, −0.742), **1.36σ** from DESI DR2
+>   (small box: 2.42σ; ΛCDM: 3.28σ).
 
 ---
 
