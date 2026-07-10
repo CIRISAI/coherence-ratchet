@@ -87,6 +87,9 @@ import CoherenceRatchet.MaximalClaim
 -- THE LEDGER LAW: the maximal claim by discharge — eleven conjuncts, eleven theorems, zero assertions
 import CoherenceRatchet.LedgerLaw
 
+-- THE DARK LEDGER: maximal claim v2 — the law + the no-hiding theorem, deception at the center
+import CoherenceRatchet.DarkLedger
+
 -- The 10-piece formal structure
 import CoherenceRatchet.Core.BaseIdentity                  -- Piece 1
 import CoherenceRatchet.Core.Dynamics                       -- Piece 2
