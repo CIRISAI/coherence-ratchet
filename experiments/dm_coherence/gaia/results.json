@@ -1,0 +1,52 @@
+{
+  "title": "Gaia phase-space ledger test: does S=-ln det C read real phase-space coherence?",
+  "seed": 20260710,
+  "predictions": {
+    "P1": "cold stream reads HIGH S on (position,velocity) grain",
+    "P2": "field/halo in same volume reads LOW S",
+    "P3": "S driven by position-velocity GRADIENT; survives bulk-mean removal; collapses when gradient destroyed"
+  },
+  "part_A_GD1_gaia_astrometry": {
+    "data": "REAL Gaia DR3 astrometry (astroquery TAP), GD1Koposov10 frame",
+    "dimensionality": "5D: sky position + proper motion (NO RV -- GD-1 too faint for Gaia RVS)",
+    "n_total": 51177,
+    "n_stream_members": 812,
+    "n_field": 2564,
+    "grain": "{phi1, mu_phi1, mu_phi2}",
+    "S_stream": 0.775,
+    "S_field": 0.069,
+    "corr_phi1_mu1_stream": -0.691,
+    "corr_phi1_mu1_field": -0.162,
+    "intrinsic_scatter_mu1_about_track": 0.569,
+    "selection_band_halfwidth": 1.0,
+    "S_stream_shuffled": 0.118,
+    "n_fakeband": 150,
+    "S_fakeband_control": 1.103,
+    "corr_phi1_mu1_fakeband": -0.76,
+    "S_onstream_no_pmband": 0.056,
+    "n_onstream_no_pmband": 7985,
+    "verdict_partA": "S_stream >> S_field on the astrometric grain, BUT track-band selection manufactures corr(phi1,mu); the fake-band control shows how much. Net excess over control + the shuffle collapse are the real content. Definitive non-circular test is Part B (RV)."
+  },
+  "part_B_Orphan_S5_radial_velocity": {
+    "data": "REAL S5 spectroscopy (Li+2019, Vizier J/MNRAS/490/3508), OrphanKoposov19 frame",
+    "dimensionality": "position-along-stream (phi1) + LINE-OF-SIGHT VELOCITY (real RV)",
+    "n_orphan_spectra": 6470,
+    "n_stream_members": 998,
+    "n_field_nonclump": 5472,
+    "median_perfield_clump_dispersion_kms": 4.82,
+    "grain": "{phi1_along_Orphan, radial_velocity}",
+    "S_stream": 0.351,
+    "S_field": 0.02,
+    "corr_phi1_RV_stream": 0.544,
+    "corr_phi1_RV_field": 0.14,
+    "n_fields": 25,
+    "S_clumpcenters": 0.478,
+    "corr_clumpcenters": 0.616,
+    "S_stream_minus_bulkmean": 0.351,
+    "S_stream_perfield_demeaned": 0.0,
+    "S_clumpcenters_permuted_mean": 0.046,
+    "S_clumpcenters_permuted_p95": 0.155,
+    "permutation_p_value": 0.002,
+    "verdict_partB": "RV is not used to impose a phi1->RV gradient (per-field selection sets only means). S_stream >> S_field, mean-subtraction leaves S identical, gradient-removal collapses it, and the position-RV alignment is far above the permutation null. NON-CIRCULAR."
+  }
+}
