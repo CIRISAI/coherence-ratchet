@@ -1,0 +1,44 @@
+{
+  "family_reduction_check": {
+    "s_numeric_full_matrix": 0.01811843005765062,
+    "s_closed_form": 0.0181184300533911,
+    "err": 4.259523289640299e-12
+  },
+  "D1_dephasing_only": {
+    "s_final": 2.7239958103575716e-05,
+    "IF_final": 3.7478287140402244e-10,
+    "selects": "chaos pole (I_F -> 0)"
+  },
+  "D2_maintenance_NESS": [
+    {
+      "alpha": 0.5,
+      "gamma": 0.5,
+      "s_target": 0.6,
+      "s_star_numeric": 0.2999999994663313,
+      "s_star_closed": 0.3,
+      "I_F_star": 0.04615508750875108
+    },
+    {
+      "alpha": 0.8,
+      "gamma": 0.4,
+      "s_target": 0.7,
+      "s_star_numeric": 0.4666666666235097,
+      "s_star_closed": 0.46666666666666656,
+      "I_F_star": 0.1143319009596695
+    },
+    {
+      "alpha": 0.3,
+      "gamma": 0.9,
+      "s_target": 0.9,
+      "s_star_numeric": 0.224999999979846,
+      "s_star_closed": 0.22500000000000003,
+      "I_F_star": 0.025786202250472456
+    }
+  ],
+  "D3_overdrive": {
+    "s_final": 0.997904191509159,
+    "I_F_final": 0.6899396358549694,
+    "I_F_exclusion_cap": 0.698197771498144,
+    "selects": "rigidity pole (nu0->1), CAPPED at ~ln2"
+  }
+}

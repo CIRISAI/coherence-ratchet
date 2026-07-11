@@ -1,0 +1,223 @@
+{
+  "date": "2026-07-11",
+  "planck": {
+    "H0": 67.36,
+    "ombh2": 0.02237,
+    "omch2": 0.12,
+    "Om": 0.3153,
+    "theta100": 1.04109,
+    "zstar": 1089.8,
+    "rstar": 144.39,
+    "sigma8": 0.8111,
+    "S8": 0.834,
+    "S8_err": 0.016
+  },
+  "sh0es": {
+    "H0": 73.04,
+    "err": 1.04
+  },
+  "lensing": {
+    "S8_kids": 0.759,
+    "S8_combined": 0.762,
+    "err": 0.025
+  },
+  "omh2_fixed": 0.14237,
+  "omr_h2": 4.15e-05,
+  "H0_gap_kms": 5.680000000000007,
+  "taskA_corner": {
+    "label": "corner-rule (frozen large-volume)",
+    "Dm_target_Mpc": 13894.540728015685,
+    "Dm_from_rs_over_theta": 13869.117943693627,
+    "H0_lcdm": 67.36,
+    "H0_ours": 67.40285585926836,
+    "dH0": 0.04285585926835722,
+    "w_today": -0.8332054965762253,
+    "g_at_apeak": 1.12050767807517,
+    "frac_Dm_from_zgt3": 0.5401870466733486,
+    "H0_ours_constextrap": 67.35059237159187,
+    "extrap_sens_kms": -0.05226348767648492,
+    "gap_before": 5.680000000000007,
+    "gap_after": 5.63714414073165,
+    "meta": {
+      "a_min": 0.24949283896377986,
+      "slope_min": 5.312382017373126,
+      "S1": 8867.5458598258
+    }
+  },
+  "elapsed_s": 0.2,
+  "taskA_full": {
+    "label": "complete-book (full population >1e11, T=2)",
+    "Dm_target_Mpc": 13894.540728015685,
+    "Dm_from_rs_over_theta": 13869.117943693627,
+    "H0_lcdm": 67.36,
+    "H0_ours": 66.10027301876393,
+    "dH0": -1.2597269812360707,
+    "w_today": -0.9351289202805837,
+    "g_at_apeak": 1.1544561567157432,
+    "frac_Dm_from_zgt3": 0.5398843706393779,
+    "H0_ours_constextrap": 66.00099671267148,
+    "extrap_sens_kms": -0.09927630609245508,
+    "gap_before": 5.680000000000007,
+    "gap_after": 6.939726981236078,
+    "meta": {
+      "a_min": 0.24949283896377986,
+      "slope_min": 2.5877817256337274,
+      "S1": 166503.0313193607
+    }
+  },
+  "taskB_corner": {
+    "label": "corner-rule (frozen large-volume)",
+    "D_ratio": 1.0074395104994522,
+    "sigma8_lcdm": 0.8111,
+    "sigma8_ours": 0.8171341869661057,
+    "S8_lcdm": 0.834,
+    "S8_ours": 0.8402045517565432,
+    "dS8": 0.0062045517565432196,
+    "pct_shift": 0.743951049945224,
+    "w_today": -0.8332054965762253,
+    "S8_lensing": 0.762,
+    "gap_before_sigma": 2.879999999999998,
+    "gap_after_sigma": 3.128182070261727,
+    "z": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "fs8_ours": [
+      0.4674276916702359,
+      0.4703838979723063,
+      0.46974747296945285,
+      0.466444016344971,
+      0.46119225407079106,
+      0.45451788728366493
+    ],
+    "fs8_lcdm": [
+      0.47372900286206193,
+      0.4764108245142117,
+      0.47470702202846166,
+      0.469661885795905,
+      0.4621634067589952,
+      0.4529364795343997
+    ],
+    "fs8_frac_diff": [
+      -0.013301510259570937,
+      -0.012650691864633745,
+      -0.010447599948735231,
+      -0.006851459631391776,
+      -0.002101318871207347,
+      0.0034914559120760025
+    ],
+    "Om_lcdm": 0.3137721026737606,
+    "Om_ours_from_H0": 0.31337322645410076,
+    "S8_relshift_phi": 1.0067989636660437,
+    "S8_ours_coupled": 0.8396703356974804,
+    "gap_after_sigma_coupled": 3.1068134278992154
+  },
+  "taskB_full": {
+    "label": "complete-book (full population >1e11, T=2)",
+    "D_ratio": 0.9942443249776421,
+    "sigma8_lcdm": 0.8111,
+    "sigma8_ours": 0.8064315719893655,
+    "S8_lcdm": 0.834,
+    "S8_ours": 0.8291997670313536,
+    "dS8": -0.004800232968646401,
+    "pct_shift": -0.5755675022357853,
+    "w_today": -0.9351289202805837,
+    "S8_lensing": 0.762,
+    "gap_before_sigma": 2.879999999999998,
+    "gap_after_sigma": 2.687990681254142,
+    "z": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "fs8_ours": [
+      0.4611498009151654,
+      0.4634383231107488,
+      0.4623259222311165,
+      0.45827042225671744,
+      0.45201203792654776,
+      0.44427594769374396
+    ],
+    "fs8_lcdm": [
+      0.47372900286206193,
+      0.4764108245142117,
+      0.47470702202846166,
+      0.469661885795905,
+      0.4621634067589952,
+      0.4529364795343997
+    ],
+    "fs8_frac_diff": [
+      -0.026553582049860913,
+      -0.027229652929676273,
+      -0.026081560252552594,
+      -0.02425460503332777,
+      -0.02196489095412324,
+      -0.01912085299368782
+    ],
+    "Om_lcdm": 0.3137721026737606,
+    "Om_ours_from_H0": 0.3258456881681192,
+    "S8_relshift_phi": 1.013192452495355,
+    "S8_ours_coupled": 0.8450025053811261,
+    "gap_after_sigma_coupled": 3.320100215245043
+  },
+  "crosscheck_selfconsistency": {
+    "sc_g_at_a1": 0.9874,
+    "our_D_ratio_corner": 1.0074395104994522,
+    "our_D_ratio_full": 0.9942443249776421,
+    "note": "selfconsistency used CAMELS pooled S0 (25 Mpc/h) not the frozen large box; both are sub-percent growth suppressions of the same sign -> consistent."
+  },
+  "VERDICT": {
+    "registered_primary": "corner-rule",
+    "H0": {
+      "corner": {
+        "dH0_kms": 0.043,
+        "extrap_floor_kms": 0.052,
+        "gap": [
+          5.680000000000007,
+          5.64
+        ],
+        "word": "NEGLIGIBLE"
+      },
+      "full": {
+        "dH0_kms": -1.26,
+        "extrap_floor_kms": 0.099,
+        "gap": [
+          5.680000000000007,
+          6.94
+        ],
+        "word": "WORSENS"
+      }
+    },
+    "S8_self_consistent": {
+      "baseline_sigma": 2.88,
+      "corner": {
+        "S8": 0.8397,
+        "sigma": 3.11,
+        "word": "WORSENS"
+      },
+      "full": {
+        "S8": 0.845,
+        "sigma": 3.32,
+        "word": "WORSENS"
+      }
+    },
+    "S8_growth_only_fixed_Om": {
+      "corner": {
+        "sigma": 3.13,
+        "word": "WORSENS"
+      },
+      "full": {
+        "sigma": 2.69,
+        "word": "RELIEVES"
+      }
+    },
+    "note": "Self-consistent S8 folds the Om=omega_m/h^2 shift forced by each Task-A H0 result into S8=sigma8*sqrt(Om/0.3); this is the CMB-anchored prediction. The full-book's growth-only relief is cancelled and reversed once its H0 drop raises Om."
+  }
+}

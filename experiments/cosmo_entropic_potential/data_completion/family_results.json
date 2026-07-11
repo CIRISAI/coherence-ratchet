@@ -1,0 +1,34 @@
+{
+  "desi_dr2_crossing_posterior": {
+    "median": 0.35,
+    "lo90": 0.19,
+    "hi90": 0.7
+  },
+  "method": "CPL-projected crossing via epoch_check/cpl_projection.py project_distance (BAO+CMB), same fit DESI applies to distances; frozen TNG300-1 records.",
+  "variants": {
+    "extensive_S": {
+      "phys_crossing_z": 0.5896633869209742,
+      "proj_w0": -0.7666191523146305,
+      "proj_wa": -0.7423928100872467,
+      "proj_crossing_z": 0.45849776611165316,
+      "proj_chi2": 0.3538709647858519,
+      "inside_desi_90": true
+    },
+    "intensive_S_over_k": {
+      "phys_crossing_z": 0.7312164087394502,
+      "proj_w0": -0.9204779505615566,
+      "proj_wa": -0.1847643799214866,
+      "proj_crossing_z": 0.7556089747675834,
+      "proj_chi2": 0.046980376354948145,
+      "inside_desi_90": false
+    },
+    "count_k": {
+      "phys_crossing_z": 0.4760236439666157,
+      "proj_w0": -0.8386389699252048,
+      "proj_wa": -0.5801698046786863,
+      "proj_crossing_z": 0.3852856956672177,
+      "proj_chi2": 0.1826800129181438,
+      "inside_desi_90": true
+    }
+  }
+}

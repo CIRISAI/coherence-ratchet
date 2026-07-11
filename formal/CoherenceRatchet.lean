@@ -99,6 +99,9 @@ import CoherenceRatchet.Core.CollapseTheorem              -- CC 6.2.1 (collapse 
 import CoherenceRatchet.Core.SignalSourceDiscount         -- CC 6.2.3.1 (σ Kish discount on sources — closes #5)
 import CoherenceRatchet.Core.EntropicPotential            -- T-E1..T-E4 (entropic-action bridge, Bianconi 2025)
 import CoherenceRatchet.Core.EntropicContraction          -- T-C0/T-C1/Oppenheim(k=2): Klein for ARBITRARY unit-diag PSD C; DPI roadmap
+import CoherenceRatchet.Core.SectorPartition              -- blockwise additivity + sector-symmetric shared-budget steady state (forced-partition companion)
+import CoherenceRatchet.Core.NestedKish                    -- two-level (coupled) correlation spectrum: equicorr det + nested log-det decomposition (coupled_model companion)
+import CoherenceRatchet.Core.FermionicLedger               -- T-FL0..T-FL3: fermionic multi-information; EXCLUSION CAP of the rigidity pole (fermionic_ledger companion)
 import CoherenceRatchet.Cosmology.TSVF                      -- Piece 4 (TSVF)
 import CoherenceRatchet.Cosmology.GoalProjection            -- Piece 4 (goal projector)
 import CoherenceRatchet.Cosmology.JointGoalProjector        -- Piece 5 (operator form)

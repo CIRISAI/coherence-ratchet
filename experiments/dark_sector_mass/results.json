@@ -1,0 +1,93 @@
+{
+  "inputs": {
+    "rho_Lambda_eV4": 2.5152722200256138e-11,
+    "rho_Lambda_qtr_meV": 2.2394751543445133,
+    "rho_DM_eV4": 9.716510912761426e-12,
+    "T_deSitter_eV": 2.2868486947476466e-34,
+    "H0_eV": 1.4368694118581228e-33,
+    "S_deSitter": 9.024609406263764e+120,
+    "allowed_window_keV": [
+      0.3,
+      10.0
+    ],
+    "g_dof": 2.0
+  },
+  "standard_physics": {
+    "TG_bounds": {
+      "Segue1_like": {
+        "Q_obs_eV4": 12283955484.46808,
+        "rho_eV4": 2.9178038912994535e-05,
+        "sigma_over_c": 1.3342563807926082e-05,
+        "m_lower_bound_eV": 557.6921227003421
+      },
+      "classical_dSph": {
+        "Q_obs_eV4": 157234630.2011914,
+        "rho_eV4": 5.835607782598907e-06,
+        "sigma_over_c": 3.3356409519815205e-05,
+        "m_lower_bound_eV": 187.58452271758094
+      }
+    }
+  },
+  "candidate_links": {
+    "c1_naive_dimensional": {
+      "m_eV": 0.003751510793368613,
+      "m_keV": 3.751510793368613e-06,
+      "assumption": "rho_Lambda = Q_max(m) as raw eV^4 objects (bridge O(1)). No velocity/entropy scale inserted.",
+      "derivable": false,
+      "verdict_window": "OUTSIDE (predicts meV, ~6 orders below keV)",
+      "note": "This IS the known DE<->neutrino-mass meV coincidence (rho_L^1/4 ~ m_nu scale). Not new ledger content."
+    },
+    "a_i_maint_TdS": {
+      "m_eV": 167486973.15936354,
+      "m_keV": 167486.97315936355,
+      "assumption": "E_mode = de Sitter temperature H0/2pi (INSERTED scale); mode density = degenerate fermion; identify Fermi momentum with m.",
+      "derivable": false,
+      "verdict_window": "OUTSIDE (predicts ~1.7e+08 eV)"
+    },
+    "a_ii_maint_Em_equals_m": {
+      "m_eV": null,
+      "m_keV": null,
+      "assumption": "E_mode = m: then rho_L = ln2 * n * m = ln2 * rho_DM. m CANCELS.",
+      "derivable": false,
+      "predicts_mass": false,
+      "check_ratio": "rho_L/(ln2*rho_DM) = 3.735 (should be 1 if link held; observed ratio of rho_L to ln2*rho_DM)",
+      "verdict_window": "NO MASS PREDICTED (m cancels); and the density identity misses by the ratio above"
+    },
+    "b_lnn2_times_nDM": {
+      "m_eV": null,
+      "m_keV": null,
+      "assumption": "same as a-ii once an energy/mode is chosen; ln2*n_DM is a number density (eV^3), not an energy density (eV^4) -- needs an inserted eV scale.",
+      "derivable": false,
+      "predicts_mass": false,
+      "verdict_window": "ILL-POSED without inserted scale; reduces to (a)."
+    },
+    "d_horizon_entropy": {
+      "m_eV": 1.0537658014418451e-33,
+      "m_keV": 1.0537658014418452e-36,
+      "assumption": "de Sitter horizon entropy = ln2 per DM particle in horizon volume.",
+      "derivable": false,
+      "verdict_window": "OUTSIDE (predicts ~1.1e-33 eV, ~36 orders off keV)"
+    },
+    "e_dwarf_sigma_TG": {
+      "m_eV": 557.6921227003421,
+      "m_keV": 0.5576921227003421,
+      "assumption": "insert dwarf sigma~4-10 km/s (Q_obs=rho/sigma^3). This is standard TG; rho_Lambda and the ledger do NOT enter.",
+      "derivable": "standard-physics-not-ledger",
+      "verdict_window": "IN-WINDOW (lower bound) but NOT a ledger prediction -- pure prior art."
+    }
+  },
+  "verdict": {
+    "HIT": false,
+    "kill_a_no_nonarbitrary_link": true,
+    "kill_b_all_derivable_links_out_of_window": null,
+    "kill_c_only_working_link_is_known_coincidence": true,
+    "predicted_mass_span_orders_of_magnitude": 41.20123693400994,
+    "statement": "KILL. No non-arbitrary ledger link exists between rho_Lambda and Q_max(m). The ledger emits only dimensionless numbers (ln2/mode, corridor, k_eff<=10); bridging two eV^4 quantities requires an inserted dimensionful scale the ledger does not contain (this is exactly the undetermined kappa of lambda_maintenance_wz 7a). Predicted m spans ~41 orders across the arbitrary scale choices. The only route landing in [0.3,10] keV inserts the dwarf sigma (standard Tremaine-Gunn, zero rho_Lambda content); the only route using rho_Lambda alone reproduces the KNOWN meV DE<->neutrino-mass coincidence, 6 orders below the DM window."
+  },
+  "notes": {
+    "rho_Lambda": "STANDARD (Planck2018 Omega_L,h). rho_L^(1/4) reproduces the textbook 2.24 meV.",
+    "Qmax_form": "STANDARD: Q_max = g m^4 / (2 pi)^{3/2} (natural units, sigma in c). O(1) convention-dependent coefficient; flagged, does not move the verdict.",
+    "TG_bound": "STANDARD (reproduces literature m>~100-400 eV, Boyarsky2009/DiPaolo2017 robust model-independent bound m>~100 eV from Segue-1/Willman-1).",
+    "window": "STANDARD: [~0.3, ~10] keV (TG lower / Lyman-alpha upper). Fetched, not rederived."
+  }
+}

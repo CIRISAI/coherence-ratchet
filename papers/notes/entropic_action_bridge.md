@@ -44,7 +44,7 @@ where λ' are the eigenvalues of `G̃g̃⁻¹`. Key facts:
 | induced metric `G̃ = g̃ + αM̃ − βR̃` | coordination-induced structure on the substrate | `M̃` is rank-one dressing — same object class as the lake's rank-one `⟨G_self|` projector (`Cosmology/GoalProjection.lean`) |
 | relative entropy `𝓛 = −Σ ln λ'` | misalignment functional between substrate and coordination | zero iff `G̃ = g̃` |
 | coupling α | drift coupling α in `dρ/dt = α − γM` | both name the rate at which coordination writes itself into the substrate |
-| G-field (Lagrange multipliers, physical) | maintenance term γ·M(t) | **the sharpest rhyme**: the field that holds the system on the constraint surface, given physical status |
+| G-field (Lagrange multipliers, physical) | **Λ — the standing maintenance *bill*** (CORRECTED 2026-07-10, `sm_escalator_gauge.md` §4: the G-field enforcement is *conservative* — a holonomic constraint with zero entropy production — so it maps to the standing cost Λ, NOT to γ·M, which is the *measured dissipative* detailed-balance-breaking current, \|z\|=8.8. A conservative constraint field must not claim the γM slot.) | the earlier "sharpest rhyme" row conflated constraint *field* with constraint *cost*; the rhyme survives only as cost ↔ Λ |
 | emergent small positive Λ (G-field only) | residual cost of sustained corridor occupation | forward-P_ω-shaped: a steady-state output, not a boundary condition |
 | exact GR at low coupling | orthogonality theorem (strict ΛCDM extension) | identical fence-move: the new structure is invisible where the old theory is tested |
 

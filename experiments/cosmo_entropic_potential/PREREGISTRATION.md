@@ -175,6 +175,27 @@ recalibration.
 >   **P3's registered magnitude prediction is now w_today = −0.833 ± 0.057.**
 > - Headline: DESI-projected (w₀, wₐ) = (−0.767, −0.742), **1.36σ** from DESI DR2
 >   (small box: 2.42σ; ΛCDM: 3.28σ).
+>
+> **AMENDMENT (same day, TNG100-1 cross-check — `tng100_cross/`):** the resolved-corner rule
+> is **resolution-contingent**: on TNG100-1 it selects the box's resolution floor
+> (2.6×10¹⁰ M⊙/h dwarfs, early-forming, non-DESI curve at 2.76σ), while at the MATCHED
+> galaxy-host threshold (7×10¹¹) the S peak reproduces across boxes (z = 0.551 vs 0.546).
+> **The registered object is therefore the galaxy-host-scale unit definition (~7×10¹¹ M⊙/h),
+> declared as a physical input** — box-robust, but an input the framework does not yet derive;
+> the rule's TNG300 selection coincided with it through cap+resolution. The mechanism
+> (S-peak = formation turnover) is confirmed on this box as everywhere (5th independent
+> confirmation). Rule wording in §2 is superseded accordingly; frozen values stay on record.
+>
+> **REFINEMENT (same day, 26-snapshot dense grid — `large_volume/fine_grid/`):** the
+> distance-level result is grid-robust and improves to **1.26σ**, projected crossing
+> **z = 0.465**. The dense grid reveals the S peak is a **broad plateau** (within 5.7% of max
+> across z ∈ 0.10–0.65, global max z = 0.503) and exposes two frozen estimators as fragile at
+> dense sampling (last-sign-change peak finder latches onto 0.06% wiggles; endpoint w_today is
+> not well-measured: −1.152 ± 0.172 dense vs −0.833 ± 0.057 coarse). **The DR3-facing
+> registered quantities are therefore: CPL-projected crossing z = 0.46–0.47 (grid-robust,
+> primary) and physical global-max epoch z ≈ 0.50 on a ±0.25-broad plateau (secondary);
+> w_today is retired as a headline quantity.** Documented refinement, not a silent swap; the
+> frozen 10-snap spec's values remain on record above.
 
 ---
 

@@ -1,0 +1,209 @@
+{
+ "note": "growing-D sweep at fixed per-unit budget; sectors heterogeneous (d=2 and d=5 alternating); no d=1 sectors",
+ "b": 0.55,
+ "rows": [
+  {
+   "m": 1,
+   "n_sectors": 2,
+   "D": 7,
+   "keff": {
+    "A_equal": 4.278,
+    "B_stock": 4.461,
+    "C_rate": 4.575,
+    "D_need": 4.278
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  {
+   "m": 2,
+   "n_sectors": 4,
+   "D": 14,
+   "keff": {
+    "A_equal": 8.555,
+    "B_stock": 8.922,
+    "C_rate": 9.15,
+    "D_need": 8.555
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  {
+   "m": 4,
+   "n_sectors": 8,
+   "D": 28,
+   "keff": {
+    "A_equal": 17.11,
+    "B_stock": 17.844,
+    "C_rate": 18.3,
+    "D_need": 17.11
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  {
+   "m": 8,
+   "n_sectors": 16,
+   "D": 56,
+   "keff": {
+    "A_equal": 34.221,
+    "B_stock": 35.688,
+    "C_rate": 36.6,
+    "D_need": 34.221
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  {
+   "m": 16,
+   "n_sectors": 32,
+   "D": 112,
+   "keff": {
+    "A_equal": 68.442,
+    "B_stock": 71.377,
+    "C_rate": 73.201,
+    "D_need": 68.442
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  {
+   "m": 32,
+   "n_sectors": 64,
+   "D": 224,
+   "keff": {
+    "A_equal": 136.883,
+    "B_stock": 142.753,
+    "C_rate": 146.401,
+    "D_need": 136.883
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  {
+   "m": 64,
+   "n_sectors": 128,
+   "D": 448,
+   "keff": {
+    "A_equal": 273.767,
+    "B_stock": 285.506,
+    "C_rate": 292.803,
+    "D_need": 273.767
+   },
+   "rho_range": {
+    "A_equal": [
+     0.45,
+     0.45
+    ],
+    "B_stock": [
+     0.4116,
+     0.5461
+    ],
+    "C_rate": [
+     0.3845,
+     0.6137
+    ],
+    "D_need": [
+     0.45,
+     0.45
+    ]
+   }
+  }
+ ]
+}

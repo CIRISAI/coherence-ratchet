@@ -1,0 +1,52 @@
+{
+ "J_max_global": 0.09622504486493763,
+ "cases": {
+  "CKM": {
+   "angles_deg": {
+    "th12": 13.002878162913944,
+    "th23": 2.398528859939038,
+    "th13": 0.2114219061954276,
+    "delta_deg": 65.54637176296617
+   },
+   "J_max_angles": 3.382491226238735e-05,
+   "J_observed": 3.079070264869059e-05,
+   "sin_delta_abs": 0.910296600619102,
+   "structural_factor": 0.00035151879960008655,
+   "chosen_factor": 0.910296600619102,
+   "saturation_of_phase_ceiling": 0.9102966006191022,
+   "MI": 0.9563713393111786,
+   "d_perm": 0.10212621170621884
+  },
+  "PMNS": {
+   "angles_deg": {
+    "th12": 33.70916346871883,
+    "th23": 43.280093616242404,
+    "th13": 8.529810628425786,
+    "delta_deg": -113.445643435903
+   },
+   "J_max_angles": 0.03342454195333549,
+   "J_observed": 0.030664943425899177,
+   "sin_delta_abs": 0.9174379552818098,
+   "structural_factor": 0.3473580292973673,
+   "chosen_factor": 0.9174379552818098,
+   "saturation_of_phase_ceiling": 0.9174379552818097,
+   "MI": 0.19101866364546938,
+   "d_perm": 1.0706610781355166
+  }
+ },
+ "asymmetry": {
+  "ratio_J_observed": 995.9156754483237,
+  "ratio_structural": 988.1634487047269,
+  "ratio_chosen": 1.00784508550054
+ },
+ "haar_ensemble": {
+  "n": 200000,
+  "spearman_MI_vs_absJ": -0.7183092337766668,
+  "spearman_dperm_vs_absJ": 0.4561178438737424,
+  "meanabsJ_top_MI_decile": 0.0074960300803183656,
+  "meanabsJ_bottom_MI_decile": 0.07259598207133157,
+  "meanabsJ_near_permutation_decile": 0.01084577006275716,
+  "meanabsJ_far_permutation_decile": 0.049828368858447956,
+  "meanabsJ_all": 0.02988491177899412
+ }
+}

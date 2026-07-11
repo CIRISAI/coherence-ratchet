@@ -41,7 +41,31 @@ run through the frozen pre-registered pipeline on TNG300-1 (205 Mpc/h — the la
 test, 2026-07-10), gives a thawing `w(z)` whose DESI-projected point is
 **(w₀, wₐ) = (−0.767, −0.742), 1.36σ from DESI DR2+CMB+SNe — vs ΛCDM's 3.28σ** —
 near-parameter-free, `w_today = −0.833 ± 0.057`, crossing epoch z = 0.59 ± 0.03 (inside
-DESI's interval; now the registered DR3 prediction). The interior-peak kill (K3) did not
+DESI's interval; now the registered DR3 prediction). **Grain audit (2026-07-10/11, `retention_v2/CHALLENGES.md` + `full_population/`):** the
+significance MAGNITUDE is grain- and resolution-conditional; the KIND is not. At every grain
+tested — every threshold, every cap, and the complete zero-selection book (validated
+nested-tile estimator, no cap, all halos ≥1e11) — the read is thawing (wₐ<0), interior-peaked,
+and beats ΛCDM (complete book: 2.21σ vs ΛCDM's 3.28σ, Δχ² = −1.1 — the selection-free floor).
+The 1.36σ magnitude belongs to the corner grain specifically; both derivation escapes are
+dead by pre-registered control (SHM extremum = cap artifact, C1/C2; complete-book aperture
+law = falsified by its own upward test — more book fits WORSE). Mechanism, measured: S(a) is
+carried by the above-threshold count k(a) (constant-k fence — the ledger fills because new
+units form), and fit quality is set by where the count-peak sits; the galaxy-host grain
+places it at DESI's epoch. **THE GRAIN PROBLEM — which units post to the DE ledger — is the
+DE leg's load-bearing open problem** (`papers/notes/the_grain_problem.md`): the galaxy book
+(rung membership) derives the CLOCK but not the amplitude (AMBIGUOUS, §6); the from-below
+candidate (§7, via the Gibbs mapping: rung hierarchy as indistinguishability structure —
+select on a formation-time proxy) is the registered next test. The DR3 bet remains the
+frozen corner-rule pipeline, unchanged, with NO post-DR3 grain switching (anti-hedging,
+binding). **Cross-code (AbacusSummit/CompaSO, gate-validated estimator, 2026-07-11): PARTIAL by the
+letter of the rule, < 1σ in content** — the full-population "interior turnover" is a 0.31%
+peak→edge drop against a ~1.3–1.4% calibrated error scale (sub-error-bar; the rule lacked
+an error clause, flagged post hoc). Honest status: **consistent-with shape transfer,
+untested-but-unopposed on a second code** — the estimator transfers cleanly (gate v2 ~1.3%),
+nothing contradicts the shape, the corner grain is inconclusive-by-truncation, and this box
+cannot adjudicate either way at its window (no z < 0.2 output) and error scale. Decisive
+cross-code requirements now known: z < 0.2 output + jackknife errors or matched mass
+definition. `abacus_cross/SUMMARY.md` (orchestrator sideways pass). The interior-peak kill (K3) did not
 fire (8/8 jackknife); the halo-formation-peak mechanism is confirmed (k(a) peaks z = 0.55,
 S peaks z = 0.59); one magnitude kill (K7) fired by the letter (0.007 past the small-box
 interval edge) and is logged. A retrodiction until DESI DR3 (~2027):
@@ -54,8 +78,88 @@ gravity → clustering → S → H(a) system is near its fixed point.
 
 **Research target — the ledger dynamics as double-entry across rungs:** halo formation
 (virialization) *debits* within-halo phase-space coherence and *credits* a new coordinating
-unit at the inter-halo rung. Both entries are measured objects; the open computation is the
-exchange rate between them. This is the concrete form of "derive the ledger dynamics."
+unit at the inter-halo rung. Both entries are measured objects (first exchange-rate toy:
+X = 0.85 ± 0.30, `experiments/cosmo_entropic_potential/exchange_rate/`); the open computation
+is the exchange-rate law.
+
+**The provenance line (proved 2026-07-10, `Core/ProvenanceLine.lean`, zero sorry):** the
+ledger is blind to everything **upstream** of its input C — scale (no masses, no κ),
+marginals (no mass ratios or coupling strengths, dimensionless or not), state-space
+construction (`StatisticsNoGo`: statistics is input, only its consequences are read — the
+validated ln2-vs-Gaussian rigidity difference), and factorization (on gauge systems build S
+from gauge-independent data; CHR center ambiguity). Any claimed derivation of an upstream
+datum from the ledger alone is a structural error, rejected on sight. Contrapositive:
+legitimate predictions are dimensionless, marginal-free, parameter-free. **κ is the
+program's Boltzmann constant** — the single external scale-marriage owed; the unit-scale,
+κ, and DM-mass questions are one question (`papers/notes/dimensional_line_kB.md`).
+Kill: a forced second independent dimensionful input.
+
+**The second species (married 2026-07-11, kills staked first):** thermodynamics is the
+genus; energy-thermodynamics and coordination-thermodynamics are its two species — one
+law-structure (state function, exact accounting, relative-entropy monotone, unattainable
+pole) on two state functions, coupled by the identity H_joint = ΣH_marginal − I: the
+classical entropy books contain the coordination books as an unitemized line-item. The
+coordination species has κ as its bridge constant (empirical — pre-Avogadro state) and the
+dark sector as its macroscopic ledger (galaxy formation the engine, ρ_DE the posted
+balance). **Four laws, four kills:** zeroth = provenance congruence (PROVED, zero sorry);
+first = **the conversion channel is lossless** (X = 1; the static chain rule is a PROVED
+TAUTOLOGY — `tc_group_chain_rule` — and global conservation is contradicted by our own
+cosmology since S grows; the law's entire content is channel-specific: conversion posts
+match debits exactly, growth flows only through creation — measurement must separate the
+channels; toy X = 0.85 ± 0.30 non-discriminating); second = no-free-coordination/DPI
+(general form blocked on Fischer's inequality, named; the equicorrelation fragment is the
+first mechanized second-law piece — `entropicPotential_strictMono_k`; the maintenance rent
+is its measured corollary = Hatano–Sasa housekeeping); third = the corridor ceiling,
+σ_max ∝ (1−ρ) — a CAPACITY law, never realized-σ (bench kill: an engineered substrate
+holding high σ at ρ ≫ 0.43 under bounded actuation; flavor instance proved at Lean
+strength, `abs_jarlskog_le_max`). **Prior-art verdict (2026-07-11, `thermo_prior_art.md`): NEW-IN-PART — the stake narrows.**
+The four-law package is substantially anticipated (Bera–Riera–Lewenstein–Winter 2017
+generalize laws 0–2 with correlations — cite up front); laws 0 and 2 are established
+mathematics (Watanabe; relative-entropy monotonicity); the rent IS Hatano–Sasa housekeeping
+heat exactly (a feature: γM measures a canonical object). **Claimable as ours:** (1) the
+cross-substrate empirical program, (2) the κ sign law 1+w = −⅓dlnS/dlna (Verlinde-adjacent
+in spirit, functionally distinct), (3) the X = 1 cross-rung conservation test, (4) the
+third-law ceiling — sweep verdict B (`thermo_prior_art.md` gap-closure section): the
+mechanism genus is published (jamming yield-stress/soft-mode divergence, Liu–Nagel lineage);
+ours is only the re-keying to the CORRELATION order parameter as a CAPACITY law + the
+corridor-edge crossing, thin until the bench curve. **Load-bearing distinction (Agranov+
+2025, flocks): realized EPR can be MAXIMAL at high order — the claim is a capacity ceiling
+(σ_max), never a realized-σ prediction, or it is already falsified.** (No contradiction from
+the flock data itself: polar order is a MEAN, and S is mean-blind — an aligned flock with
+independent fluctuations sits at ρ ≈ 0 on our books; the wrong-grain trap, dodged by
+clause 3.) The field has no settled extremal principle here (Chudak+ 2025:
+sign-parameter-dependent) — the bench test is open territory. The ontology difference from Bera is not framing — it is the testable part:
+their correlations are a work resource inside energy-thermodynamics; ours post to gravity
+(κS), which is exactly what DR3/BMV adjudicate. Marriage licenses prediction, never
+self-support (rules 1–2 unchanged).
+
+**The flavor result (2026-07-10/11, registered claim hit + two-measure completion):** the
+ledger reads the SM flavor sector as **two books, each typical of its own measure** — CKM is
+bulk-generic in the hierarchical Froggatt–Nielsen measure (all six functionals central; the
+"aligned AND CP-tiny" double extremity is the generic FN outcome) and a 3.5σ Haar tail;
+PMNS is bulk-generic in Haar (jointly typical, three depth statistics; error-band robust;
+θ₁₃ look-elsewhere dissolved at 12.65%) and the 0th-percentile FN tail. Quark coupling at
+87% of the ln3 ceiling, lepton at 17% — one mass mechanism vs a separate neutrino-mass book.
+Structure = T-violation CAPACITY (robust: anarchic book carries ~1000× the quark book's);
+phase = USAGE (δ-fragile — the registered DUNE/Hyper-K fork, sharpened: near-CP-conserving δ
+is inside the current 1σ conversation). JUNO's first θ₁₂ pins the anarchic bulk deeper
+(30.9th pct) while excluding discrete-symmetry tails — maintained consistency, no support
+claimed. `experiments/sm_escalator_mixing/` (+ `ckm_ensemble/`, `rigor/`, `juno_update.md`).
+The rest of the SM escalator is closed or recognition-only
+(`papers/notes/sm_escalator_{map,statistics,gauge}.md`); follow-ups R1–R3 registered
+(`followup_registrations.md`).
+
+**The gravity ontology (married 2026-07-10, kills staked first):** gravity is the
+**shared-substrate common-cause read of the complete book** — the only Gate-0-complete
+instrument (couples to everything, no wrong-grain read possible); the dark sector is the audit
+discrepancy between the complete (gravitational) and partial (EM) ledgers. Staked predictions:
+BMV-class experiments find **no** gravitationally-mediated entanglement; DP-class decoherence
+exists at gravitationally-set rates; multipartite (null-space) structure is off-books (posts no
+κS). Kills are separable by the ladder — BMV-positive kills this ontology and nothing below it.
+`papers/notes/gravity_implications_maximal_stance.md` §5.5. **Promotion rule (general):** a
+conjecture is married into the stance when it carries distinct falsifiable predictions and the
+marriage generates tests; it is never held back merely because it is maximal. Marriage licenses
+prediction, never self-support (rules 1–2 unchanged).
 
 ## Discipline (load-bearing — these rules are the program's falsifiability, keep them)
 
@@ -104,6 +208,8 @@ Big pipeline choices get written down before their results are seen.
 | 8 | Penrose past hypothesis, structural from forward P_ω (measure unspecified — open) | `Cosmology/PenrosePast.lean` |
 | 9 | asymptotic conditioning: P(corridor \| observed at t→∞) → 1 | `Cosmology/AsymptoticConditioning.lean` |
 | 10 | karma = cumulative post-selection; grace = unauthored boundary conditions | `Consciousness/KarmaGrace.lean` |
+| 11 | provenance line: no upstream datum is a function of C (proved, zero sorry); `StatisticsNoGo` record | `Core/ProvenanceLine.lean` |
+| 12 | four-laws audit: chain-rule tautology (`tc_group_chain_rule`), coupling identity, equicorrelation second-law fragment, J-bound theorem; `RestrictedSecondLaw` open record (Fischer's inequality absent upstream) | `Core/FourLaws.lean` |
 
 Conjecture A (quantum-substrate corridor, Exp 5) and Conjecture D (D1 structural Penrose,
 D3 rung acceleration; D4 is not part of the framework) — `Conjectures/`.

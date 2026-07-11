@@ -1,0 +1,272 @@
+{
+ "n_haar": 200000,
+ "seed": 20260710,
+ "reproduction_check": {
+  "max_haar_mean_absdiff_vs_results_json": 0.0,
+  "per_functional": {
+   "MI": {
+    "mean_mine": 0.26531240159149144,
+    "mean_ref": 0.26531240159149144,
+    "mean_absdiff": 0.0,
+    "q99.9_mine": 0.8718757660261344,
+    "q99.9_ref": 0.8718757660261344,
+    "q99.9_absdiff": 0.0
+   },
+   "S_onehot": {
+    "mean_mine": 1.2981896238295754,
+    "mean_ref": 1.2981896238295754,
+    "mean_absdiff": 0.0,
+    "q99.9_mine": 4.953892398138462,
+    "q99.9_ref": 4.953892398138462,
+    "q99.9_absdiff": 0.0
+   },
+   "PR_sv": {
+    "mean_mine": 1.8288146689215672,
+    "mean_ref": 1.8288146689215672,
+    "mean_absdiff": 0.0,
+    "q99.9_mine": 2.9720105833680655,
+    "q99.9_ref": 2.9720105833680655,
+    "q99.9_absdiff": 0.0
+   },
+   "d_anarchy": {
+    "mean_mine": 0.6786240991229177,
+    "mean_ref": 0.6786240991229177,
+    "mean_absdiff": 0.0,
+    "q99.9_mine": 1.3043096188431076,
+    "q99.9_ref": 1.3043096188431076,
+    "q99.9_absdiff": 0.0
+   },
+   "d_perm": {
+    "mean_mine": 0.8989914629249083,
+    "mean_ref": 0.8989914629249083,
+    "mean_absdiff": 0.0,
+    "q99.9_mine": 1.326553468360111,
+    "q99.9_ref": 1.326553468360111,
+    "q99.9_absdiff": 0.0
+   },
+   "absJ": {
+    "mean_mine": 0.02993622589036433,
+    "mean_ref": 0.02993622589036433,
+    "mean_absdiff": 0.0,
+    "q99.9_mine": 0.09289382919328196,
+    "q99.9_ref": 0.09289382919328196,
+    "q99.9_absdiff": 0.0
+   }
+  }
+ },
+ "stat1_joint_typicality": {
+  "method": "outlyingness percentile = frac of Haar strictly less extreme; ~50 typical, >99.9 extreme pole",
+  "vec6": [
+   "MI",
+   "S_onehot",
+   "PR_sv",
+   "d_anarchy",
+   "d_perm",
+   "absJ"
+  ],
+  "cases": {
+   "CKM_PDG2024": {
+    "mahalanobis_D2": 965.4437623126597,
+    "mahalanobis_outlyingness_pct": 99.995,
+    "mahalanobis_chi2_6_cdf_pct": 100.0,
+    "normalscores_mahalanobis_D2": 40.13398807852371,
+    "normalscores_outlyingness_pct": 99.599,
+    "spatial_depth": 0.008530267095653854,
+    "spatial_outlyingness_pct": 99.98333333333333
+   },
+   "PMNS_NuFit60_NO_loweroctant": {
+    "mahalanobis_D2": 0.7696206178175109,
+    "mahalanobis_outlyingness_pct": 1.273,
+    "mahalanobis_chi2_6_cdf_pct": 0.7136408784313653,
+    "normalscores_mahalanobis_D2": 0.8711679141948938,
+    "normalscores_outlyingness_pct": 5.2035,
+    "spatial_depth": 0.6196597283141101,
+    "spatial_outlyingness_pct": 15.866666666666667
+   },
+   "PMNS_NuFit60_NO_upperoctant": {
+    "mahalanobis_D2": 0.8938328029641226,
+    "mahalanobis_outlyingness_pct": 2.3115,
+    "mahalanobis_chi2_6_cdf_pct": 1.0681309731408795,
+    "normalscores_mahalanobis_D2": 1.0522854327775122,
+    "normalscores_outlyingness_pct": 7.405,
+    "spatial_depth": 0.6199499572491287,
+    "spatial_outlyingness_pct": 15.866666666666667
+   }
+  }
+ },
+ "stat2_theta13_lookelsewhere": {
+  "level_pct": 4.4135,
+  "per_angle_lower_threshold": {
+   "sin2_12": 0.042852073657365444,
+   "sin2_13": 0.021999906403943878,
+   "sin2_23": 0.044504040366215344
+  },
+  "P_at_least_one_angle_in_lower_4.4pct": 0.12654,
+  "P_at_least_one_angle_outside_central_pm4.4pct_twosided": 0.242015,
+  "independence_baseline_lower_union": 0.1266472758131605,
+  "observed_low_angle": "sin2_13 = 0.022 at 4.41th Haar marginal pct",
+  "note": "angles back-out is NOT independent under Haar; union computed directly on ensemble"
+ },
+ "stat3_error_bands": {
+  "n_mc": 3000,
+  "band": "[2.5, 50, 97.5] percentiles across MC draws",
+  "cases": {
+   "CKM_PDG2024": {
+    "haar_pct_band": {
+     "MI": [
+      99.98,
+      99.981,
+      99.9815
+     ],
+     "S_onehot": [
+      99.9945,
+      99.995,
+      99.996
+     ],
+     "PR_sv": [
+      99.8985,
+      99.9025,
+      99.9055
+     ],
+     "d_anarchy": [
+      99.973,
+      99.97399999999999,
+      99.9745
+     ],
+     "d_perm": [
+      0.0545,
+      0.055999999999999994,
+      0.058
+     ],
+     "absJ": [
+      0.0825,
+      0.0905,
+      0.097
+     ]
+    },
+    "joint_mahalanobis_outlyingness_pct_band": [
+     99.9945,
+     99.995,
+     99.9955
+    ],
+    "sin2_13_marginal_pct_band": [
+     0.002,
+     0.002,
+     0.0025
+    ]
+   },
+   "PMNS_NuFit60_NO_loweroctant": {
+    "haar_pct_band": {
+     "MI": [
+      33.77605,
+      39.04275,
+      43.650087500000005
+     ],
+     "S_onehot": [
+      31.813562499999996,
+      36.554500000000004,
+      41.213987499999995
+     ],
+     "PR_sv": [
+      29.631537499999997,
+      35.01575,
+      40.1149375
+     ],
+     "d_anarchy": [
+      30.9543375,
+      35.88974999999999,
+      40.492737500000004
+     ],
+     "d_perm": [
+      62.42515,
+      70.89099999999999,
+      80.77200000000002
+     ],
+     "absJ": [
+      2.3010250000000005,
+      40.182249999999996,
+      60.90215
+     ]
+    },
+    "joint_mahalanobis_outlyingness_pct_band": [
+     0.3604875000000002,
+     14.6535,
+     74.23931250000001
+    ],
+    "sin2_13_marginal_pct_band": [
+     4.2255,
+     4.4385,
+     4.651000000000001
+    ]
+   },
+   "PMNS_NuFit60_NO_upperoctant": {
+    "haar_pct_band": {
+     "MI": [
+      37.0589125,
+      41.598749999999995,
+      45.7902
+     ],
+     "S_onehot": [
+      33.655325,
+      38.46125,
+      42.9451375
+     ],
+     "PR_sv": [
+      30.423625,
+      34.407,
+      38.0443625
+     ],
+     "d_anarchy": [
+      32.385675,
+      36.88075,
+      41.0271125
+     ],
+     "d_perm": [
+      74.16375000000001,
+      81.26375,
+      86.6356125
+     ],
+     "absJ": [
+      0.9727875000000001,
+      17.35575,
+      45.820000000000014
+     ]
+    },
+    "joint_mahalanobis_outlyingness_pct_band": [
+     12.376875,
+     56.2065,
+     76.81802499999999
+    ],
+    "sin2_13_marginal_pct_band": [
+     4.181462499999999,
+     4.3985,
+     4.6020125
+    ]
+   }
+  }
+ },
+ "registered_claim_robustness": {
+  "PMNS_MI_stays_in_central_90_across_band": true,
+  "CKM_MI_stays_beyond_99.9_across_band": true,
+  "PMNS_lower_MI_band": [
+   33.77605,
+   39.04275,
+   43.650087500000005
+  ],
+  "PMNS_upper_MI_band": [
+   37.0589125,
+   41.598749999999995,
+   45.7902
+  ],
+  "CKM_MI_band": [
+   99.98,
+   99.981,
+   99.9815
+  ]
+ },
+ "measurement_models": {
+  "note": "PMNS centered on CURRENT NuFit-6.0 best fits (delta 212/177 deg); frozen registration used delta=-1.98 rad (246.6 deg) -- see SUMMARY flag",
+  "NuFit6.0": "arXiv:2410.05380 Table 1",
+  "CKM": "PDG2024 std param"
+ }
+}
