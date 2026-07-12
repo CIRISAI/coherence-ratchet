@@ -183,4 +183,29 @@ by more than one tier, verdict = AMBIGUOUS).
 
 ---
 
+## AMENDMENT (2026-07-11, pre-data — no sky value seen; reasoned from mathematics only)
+
+**Correction to functional 6 (`S_logdet`), made before any anomaly datum is touched** (the
+Planck map is still downloading; nothing has been computed on it). The originally-frozen
+definition — the (L×L) correlation of the per-ℓ *field* maps `m_ℓ(n̂)` across directions — is
+**degenerate by spherical-harmonic orthogonality**: distinct-ℓ real fields obey
+`∫ m_ℓ m_{ℓ'} dΩ = 0`, so their demeaned across-direction correlation is ≈ 0 by identity for
+both data and null, carrying only quadrature-sampling noise. It would read no coordination by
+construction. This is a pre-data mathematical defect, so it is corrected here (documented, not
+silently), keeping the same intent — a native `−ln det C` across-ℓ-block coordination read:
+
+- **`S_logdet` (corrected)** = `−ln det Ĉ`, where `Ĉ` is the (L×L) sample **correlation matrix,
+  across the 768 fixed HEALPix Nside=8 directions, of the per-ℓ POWER maps**
+  `p_ℓ(n̂) = m_ℓ(n̂)²` (m_ℓ the ℓ-map as before), ℓ = 2..ℓ_max, L = ℓ_max−1. Power maps are NOT
+  orthogonal across ℓ: a spatial region hot/cold across several ℓ (common concentration) makes
+  `p_ℓ, p_{ℓ'}` covary → off-diagonal `Ĉ` → `S_logdet > 0`; isotropic independent ℓ →
+  `Ĉ ≈ I` → `S_logdet ≈ 0`. UPPER tail = coordination. This reads cross-scale common structure
+  (the native content the degenerate version could not). All other functionals unchanged.
+
+The two directional Group-B functionals are thus: `axis_conc` = λ_max of the axis dyadic
+(alignment amplitude), `S_logdet` = −ln det of the cross-ℓ power-map correlation (cross-scale
+coordination). `pr_lowell` unchanged.
+
+---
+
 **Frozen. Data touch begins only after this file is committed.**
