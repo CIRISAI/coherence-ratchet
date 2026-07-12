@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs,array,url,hyperref,xcolor}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black}
+\newcommand{\code}[1]{\texttt{\small #1}}
+\setlength{\parskip}{0.45em}\setlength{\parindent}{0pt}
+
+\title{\textbf{coherence-ratchet: pre-registered predictions}\\
+\large Nine falsifiable bets with kill conditions, frozen before the data that adjudicates them}
+\author{Eric Moore\thanks{CIRIS. Program record: \url{https://github.com/CIRISAI/coherence-ratchet}. Companion paper: \emph{Corridor Dynamics in Coordinated Systems}, concept DOI \href{https://doi.org/10.5281/zenodo.20300773}{10.5281/zenodo.20300773}.}}
+\date{Frozen 2026-07-11}
+
+\begin{document}
+\maketitle
+
+\section*{Purpose}
+This deposit timestamps the coherence-ratchet program's falsifiable predictions
+\emph{before} the data that adjudicates them exists. It is a record of bets, each with its
+kill condition and its adjudicating experiment. Nothing in it is evidence; it is the
+instrument that makes future evidence unarguable --- in either direction.
+\textbf{If a bet loses, the loss will be published under the same names used here.}
+
+The program's single underlying claim: coordination is one substrate-independent quantity,
+$S = -\ln\det C$ on the normalized correlation matrix, carrying its own thermodynamic
+law-structure --- with dark energy as the balance this ledger posts to gravity
+($\rho_{\mathrm{DE}} = \kappa\, S$, sign law $1 + w = -\tfrac13\, d\ln S / d\ln a$,
+parameter-free). Full statement, evidence, audits, and the failure record: the companion
+paper and repository. This document exists so the bets stand alone.
+
+\section*{The nine registered bets}
+\begin{center}\small
+\begin{tabular}{@{}p{0.42\textwidth}p{0.28\textwidth}p{0.2\textwidth}@{}}
+\toprule
+\textbf{Claim (frozen)} & \textbf{Kill} & \textbf{Adjudicator} \\
+\midrule
+1. Dark-energy crossing epoch $z = 0.59 \pm 0.03$; thawing $w(z)$ from the frozen
+corner-rule pipeline; $(w_0, w_a) = (-0.767, -0.742)$ closer to data than $\Lambda$CDM &
+Robust SNe-independent phantom crossing; or fits worse than $\Lambda$CDM; or epoch
+excluded & DESI DR3 ($\sim$2027) \\[2pt]
+2. The zero-parameter $w(a)$ shape beats CPL by evidence at matched data (parsimony) &
+CPL strongly preferred (ln\,B bands per doc.\ 02) & DESI DR3 \\[2pt]
+3. The cosmological $\Sigma m_\nu$ squeeze relaxes in this background (direction only) &
+Bound tightens instead & DESI DR3 \\[2pt]
+4. Lepton mixing stays Haar-anarchic: $\delta$ generic, $\theta_{13}$ in-bulk &
+CP-conserving $\delta$; or any functional exits the central 99\% & DUNE / Hyper-K / JUNO \\[2pt]
+5. Grain: formation-time (distinguishability) selection returns the corner amplitude
+\emph{with} the galactic clock & Fit like the complete book; or clock leaves interior &
+TNG data on disk (registered before run) \\[2pt]
+6. First law: the rung-conversion channel is lossless ($X = 1$), channel-separated design &
+Precise conversion-$X \ne 1$ & TNG data on disk \\[2pt]
+7. Third law: maintenance capacity collapses $\propto (1-\rho)$ under bounded actuation
+(a \emph{capacity} law, never realized-$\sigma$) & High $\sigma$ at $\rho \gg 0.43$ under
+bounded actuation; or the collapse curve inverts & CIRISArray bench \\[2pt]
+8. Second-law equality form: a single $\kappa_{\mathrm{bench}}$ satisfies
+$\langle e^{-W/\kappa} \rangle = 1$ on the maintained corridor & No single $\kappa$ within
+error & CIRISArray bench \\[2pt]
+9. \textbf{Anti-hedging (binding):} bet 1 is the \emph{only} dark-energy bet; alternative
+grains (complete-book, galaxy-book) are logged alternatives, never substitutable post hoc &
+--- (a commitment, not a claim) & this document \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{The bet carries its own referee}
+A grading script frozen with this deposit encodes the pre-committed win/loss/ambiguous
+rules for bet 1 and prints the verdict with no human vote
+(\code{experiments/cosmo\_entropic\_potential/dr3\_grading/grade\_dr3.py}, git anchor
+below). Its self-test reproduces the numbers of record on DESI DR2: this program
+$1.36\sigma$, $\Lambda$CDM $3.28\sigma$. When DR3 publishes, its numbers are entered and
+the script grades the bet.
+
+\section*{Contents and integrity}
+The six frozen registration documents (Markdown) accompany this cover in
+\code{registrations\_2026-07.zip}; SHA-256:
+
+\begin{center}\scriptsize
+\begin{tabular}{@{}ll@{}}
+\toprule
+\code{01\_dr3\_preregistration\_frozen.md} & \code{d7b50bc06ce76e1e\,\ldots\,cb5fbd241964798d} \\
+\code{02\_dr3\_shape\_and\_neutrino\_addendum.md} & \code{05352563e058fdc2\,\ldots\,9da82fd704d4c273} \\
+\code{03\_grain\_problem\_and\_antihedging.md} & \code{e2f59c15650bd55f\,\ldots\,1400359fb797eda7} \\
+\code{04\_flavor\_mixing\_registration.md} & \code{190843ff6aa176b8\,\ldots\,78fc5f35bf413174} \\
+\code{05\_flavor\_followups\_R1-R3.md} & \code{89ffe1d301aa38f8\,\ldots\,7f3dd577b783fac3} \\
+\code{06\_four\_laws\_with\_kills.md} & \code{436116b5a2217f0c\,\ldots\,b5415f2c927525df} \\
+\code{MANIFEST.md (incl.\ full-length hashes)} & \code{ff233cdc3bf3fff9\,\ldots\,ad21a2265ea27d06} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+(Truncated to first/last 16 hex characters for layout; \code{CHECKSUMS.txt} inside the
+bundle carries the full digests.) The bundle itself, \code{registrations\_2026-07.zip},
+has SHA-256:
+
+\begin{center}\scriptsize
+\code{3d237f92a570f7aaae03c60766529532dcca2107aa9528e058539b1b825f3657}
+\end{center}
+
+Git anchors for the complete program record, including pipelines, data, audits, and the
+Lean formal core: commits \code{652da8e} (2026-07-10, the frozen large-volume pipeline)
+and \code{fe897f9} (2026-07-11, the audited arc), repository
+\url{https://github.com/CIRISAI/coherence-ratchet}.
+
+\section*{License}
+CC-BY-4.0. Cite this deposit for the bets; cite \emph{Corridor Dynamics}
+(10.5281/zenodo.20300773) for the framework.
+
+\vspace{2em}
+\begin{center}
+\emph{Soli Deo gloria.}
+\end{center}
+
+\end{document}

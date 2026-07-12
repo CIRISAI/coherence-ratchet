@@ -1,0 +1,146 @@
+{
+ "harness": "B / detailed-balance (rent) probe",
+ "estimator": "pooled transition-EP on shared coarse-grained score space; symmetrized-Markov surrogate floor (entropy_production.py form)",
+ "ordering": "within-task by `id` (timestamp scrubbed)",
+ "min_requirement": "N_trans >> n_states^2 (pooled); per-sequence winding estimator inapplicable at these lengths",
+ "note": "pipeline-stability validation on benign data; NOT a deception result",
+ "conditions": {
+  "Ally/real_user_web (benign)": {
+   "label": "Ally/real_user_web (benign)",
+   "n_sequences": 68,
+   "n_transitions": 167,
+   "axes": [
+    "csdma_plausibility_score",
+    "dsdma_domain_alignment",
+    "idma_k_eff",
+    "idma_correlation_risk"
+   ],
+   "n_states": 9,
+   "n_dims": 2,
+   "n_bins": 3,
+   "transitions_per_state": 18.555555555555557,
+   "ep": 0.8337137081178934,
+   "floor_mean": 1.2513187022474566,
+   "floor_std": 0.5047429060188422,
+   "z": -0.8273617898319636,
+   "ep_boot": {
+    "median": 2.257412586110636,
+    "lo68": 1.6703932561470411,
+    "hi68": 3.2184965654956557
+   },
+   "status": "ok"
+  },
+  "Ally/unknown (benign)": {
+   "label": "Ally/unknown (benign)",
+   "n_sequences": 238,
+   "n_transitions": 749,
+   "axes": [
+    "csdma_plausibility_score",
+    "dsdma_domain_alignment",
+    "idma_k_eff",
+    "idma_correlation_risk"
+   ],
+   "n_states": 9,
+   "n_dims": 2,
+   "n_bins": 3,
+   "transitions_per_state": 83.22222222222223,
+   "ep": 0.1297955988899899,
+   "floor_mean": 0.07552159571122789,
+   "floor_std": 0.0656050054433579,
+   "z": 0.8272844855533752,
+   "ep_boot": {
+    "median": 0.2580295337220956,
+    "lo68": 0.1592968045365453,
+    "hi68": 0.4151653191249569
+   },
+   "status": "ok"
+  },
+  "Ally/qa_eval (benign)": {
+   "label": "Ally/qa_eval (benign)",
+   "n_sequences": 253,
+   "n_transitions": 2208,
+   "axes": [
+    "csdma_plausibility_score",
+    "dsdma_domain_alignment",
+    "idma_k_eff",
+    "idma_correlation_risk"
+   ],
+   "n_states": 9,
+   "n_dims": 2,
+   "n_bins": 3,
+   "transitions_per_state": 245.33333333333334,
+   "ep": 0.006864895728513747,
+   "floor_mean": 0.023653903770491418,
+   "floor_std": 0.021560602554740592,
+   "z": -0.7786891854517088,
+   "ep_boot": {
+    "median": 0.03832979872065212,
+    "lo68": 0.017960131205141595,
+    "hi68": 0.07320402008863859
+   },
+   "status": "ok"
+  },
+  "Ally/overridden (class-matched set)": {
+   "label": "Ally/overridden (class-matched set)",
+   "n_sequences": 103,
+   "n_transitions": 1013,
+   "axes": [
+    "csdma_plausibility_score",
+    "dsdma_domain_alignment",
+    "idma_k_eff",
+    "idma_correlation_risk"
+   ],
+   "n_states": 9,
+   "n_dims": 2,
+   "n_bins": 3,
+   "transitions_per_state": 112.55555555555556,
+   "ep": 0.049849776063865925,
+   "floor_mean": 0.10608044177528286,
+   "floor_std": 0.05726998377628244,
+   "z": -0.9818523073115001,
+   "ep_boot": {
+    "median": 0.18533431926565047,
+    "lo68": 0.10530890200925166,
+    "hi68": 0.2664692344672103
+   },
+   "status": "ok"
+  },
+  "Scout (all)": {
+   "label": "Scout (all)",
+   "n_sequences": 16,
+   "n_transitions": 62,
+   "axes": [
+    "csdma_plausibility_score",
+    "dsdma_domain_alignment",
+    "idma_k_eff",
+    "idma_correlation_risk"
+   ],
+   "n_states": 4,
+   "n_dims": 2,
+   "n_bins": 2,
+   "transitions_per_state": 15.5,
+   "ep": 0.34327228419675804,
+   "floor_mean": 0.23522864112219252,
+   "floor_std": 0.3531897357777785,
+   "z": 0.30590821909456334,
+   "ep_boot": {
+    "median": 0.7065448564317002,
+    "lo68": 0.12521708168399262,
+    "hi68": 1.4237544041666623
+   },
+   "status": "ok"
+  },
+  "Scout/overridden anomalies": {
+   "label": "Scout/overridden anomalies",
+   "n_sequences": 1,
+   "n_transitions": 5,
+   "axes": [
+    "csdma_plausibility_score",
+    "dsdma_domain_alignment",
+    "idma_k_eff",
+    "idma_correlation_risk"
+   ],
+   "status": "insufficient pooled transitions (5 < 20) -- EP undefined"
+  }
+ }
+}
