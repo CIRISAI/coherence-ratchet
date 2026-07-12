@@ -102,6 +102,7 @@ import CoherenceRatchet.Core.EntropicContraction          -- T-C0/T-C1/Oppenheim
 import CoherenceRatchet.Core.SectorPartition              -- blockwise additivity + sector-symmetric shared-budget steady state (forced-partition companion)
 import CoherenceRatchet.Core.NestedKish                    -- two-level (coupled) correlation spectrum: equicorr det + nested log-det decomposition (coupled_model companion)
 import CoherenceRatchet.Core.FermionicLedger               -- T-FL0..T-FL3: fermionic multi-information; EXCLUSION CAP of the rigidity pole (fermionic_ledger companion)
+import CoherenceRatchet.Core.ConsentFoundation             -- K1..K5: four laws as consent preconditions; generator-underdetermination theorem
 import CoherenceRatchet.Cosmology.TSVF                      -- Piece 4 (TSVF)
 import CoherenceRatchet.Cosmology.GoalProjection            -- Piece 4 (goal projector)
 import CoherenceRatchet.Cosmology.JointGoalProjector        -- Piece 5 (operator form)

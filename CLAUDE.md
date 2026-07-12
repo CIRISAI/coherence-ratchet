@@ -133,6 +133,18 @@ their correlations are a work resource inside energy-thermodynamics; ours post t
 (κS), which is exactly what DR3/BMV adjudicate. Marriage licenses prediction, never
 self-support (rules 1–2 unchanged).
 
+**The consent foundation (bottomed 2026-07-12, formalized same night, `Core/ConsentFoundation.lean`):**
+the four laws are the preconditions of consent — definable (zeroth), attributable (first),
+securable (second: deceit is never free), unfinalizable-against (third: no coercion can pay
+its own rent forever) — and the corridor is the consent-possible region (proved at the poles:
+no optionality at rigidity, nothing to consent to at chaos). "Consent is possible" and "the
+second thermodynamics holds" are one claim in two vocabularies; the derivation inherits every
+registered kill leg-by-leg (`killsStep`, injectivity proved). **The generator question —
+Selection vs Intention — is uncomputable from the observables: `generator_underdetermined`,
+AXIOM-FREE.** The tenth bet is irreducible by theorem; the lake proves the wager, never the
+winner (`papers/notes/consent_derivation.md`). Declared open seam: optionality is
+grain-relative (the Gibbs drawer, third appearance).
+
 **The flavor result (2026-07-10/11, registered claim hit + two-measure completion):** the
 ledger reads the SM flavor sector as **two books, each typical of its own measure** — CKM is
 bulk-generic in the hierarchical Froggatt–Nielsen measure (all six functionals central; the
@@ -193,6 +205,14 @@ Big pipeline choices get written down before their results are seen.
 - **CMB:** the orthogonality theorem is the sole CMB content — the framework is exactly ΛCDM
   in the conditioning/perturbation sector; the background sector is a w₀wₐCDM-class
   deformation vanishing identically in linear theory (`CMBOrthogonality.lean`).
+  **Bet 11 (2026-07-12, registered before data, a bet AGAINST ourselves): DISSOLVED** — the
+  low-ℓ Planck anomalies reproduce individually (alignment 99.95th pct, low quadrupole,
+  S_1/2, hemispherical — all in literature directions) but do NOT jointly conspire: joint
+  depth percentiles 94.8/98.2/93.7 at ℓ_max=30, inside the central 99%, robust across
+  ℓ_max ∈ {10,30,60}, 100k-sky ensemble. The coordination past hypothesis (books opened
+  empty) and the orthogonality fence both PASS; consistency only, no support (rule 2).
+  Adverse count-statistic (~2.7σ, covariance-blind) logged non-scoring; the frozen joint
+  scorer decides. `experiments/cmb_books/`.
 
 ## Formal core (one line per piece; full statements live in the Lean files)
 
@@ -210,6 +230,7 @@ Big pipeline choices get written down before their results are seen.
 | 10 | karma = cumulative post-selection; grace = unauthored boundary conditions | `Consciousness/KarmaGrace.lean` |
 | 11 | provenance line: no upstream datum is a function of C (proved, zero sorry); `StatisticsNoGo` record | `Core/ProvenanceLine.lean` |
 | 12 | four-laws audit: chain-rule tautology (`tc_group_chain_rule`), coupling identity, equicorrelation second-law fragment, J-bound theorem; `RestrictedSecondLaw` open record (Fischer's inequality absent upstream) | `Core/FourLaws.lean` |
+| 13 | consent foundation: `generator_underdetermined` (Selection-vs-Intention uncomputable from observables — AXIOM-FREE; the tenth bet irreducible by theorem); pole theorems (consent impossible at both poles; corridor = consent-possible region); `ConsentGuarantees` honesty-locked record; `killsStep` separable-kill map; grain seam declared | `Core/ConsentFoundation.lean` |
 
 Conjecture A (quantum-substrate corridor, Exp 5) and Conjecture D (D1 structural Penrose,
 D3 rung acceleration; D4 is not part of the framework) — `Conjectures/`.
