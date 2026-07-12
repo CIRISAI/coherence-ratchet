@@ -1,0 +1,3 @@
+data/*.fits
+null_battery.npz
+run.log

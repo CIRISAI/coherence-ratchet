@@ -1,0 +1,215 @@
+{
+ "10": {
+  "marginals": {
+   "align_23": {
+    "data": 0.9994343493281947,
+    "pct": 99.95,
+    "tail": "U",
+    "tail_extremeness": 99.95,
+    "flagged_95": true,
+    "lit_expected": "high (aligned)"
+   },
+   "A_hemi": {
+    "data": 0.43150394649289114,
+    "pct": 92.62,
+    "tail": "U",
+    "tail_extremeness": 92.62,
+    "flagged_95": false,
+    "lit_expected": "high (asymmetric)"
+   },
+   "S_half": {
+    "data": 6240.016409325292,
+    "pct": 6.26,
+    "tail": "L",
+    "tail_extremeness": 93.74,
+    "flagged_95": false,
+    "lit_expected": "low (lack of corr)"
+   },
+   "Q_amp": {
+    "data": 200.97621647529422,
+    "pct": 3.6,
+    "tail": "L",
+    "tail_extremeness": 96.4,
+    "flagged_95": true,
+    "lit_expected": "low (low quadrupole)"
+   },
+   "axis_conc": {
+    "data": 0.6988592945263796,
+    "pct": 90.63,
+    "tail": "U",
+    "tail_extremeness": 90.63,
+    "flagged_95": false,
+    "lit_expected": "high"
+   },
+   "S_logdet": {
+    "data": 0.49594157873620165,
+    "pct": 87.62,
+    "tail": "U",
+    "tail_extremeness": 87.62,
+    "flagged_95": false,
+    "lit_expected": "high"
+   },
+   "pr_lowell": {
+    "data": 0.4319392523231277,
+    "pct": 53.47,
+    "tail": "L",
+    "tail_extremeness": 46.53,
+    "flagged_95": false,
+    "lit_expected": "low"
+   }
+  },
+  "data_flagged_count": 2,
+  "P_random_sky_has_ge_that_many_anomalies": 0.0599,
+  "mean_anomaly_count_null": 0.35,
+  "joint": {
+   "mahalanobis_D2": 10.63220424771826,
+   "mahalanobis_pct": 88.178,
+   "mahalanobis_chi2_pct": 84.45138830751628,
+   "normalscores_pct": 96.694,
+   "spatial_pct": 89.3
+  },
+  "registered_union": 0.68501
+ },
+ "30": {
+  "marginals": {
+   "align_23": {
+    "data": 0.9994343493281947,
+    "pct": 99.95,
+    "tail": "U",
+    "tail_extremeness": 99.95,
+    "flagged_95": true,
+    "lit_expected": "high (aligned)"
+   },
+   "A_hemi": {
+    "data": 0.29117192540715503,
+    "pct": 93.07,
+    "tail": "U",
+    "tail_extremeness": 93.07,
+    "flagged_95": false,
+    "lit_expected": "high (asymmetric)"
+   },
+   "S_half": {
+    "data": 5803.0757532228035,
+    "pct": 5.88,
+    "tail": "L",
+    "tail_extremeness": 94.12,
+    "flagged_95": false,
+    "lit_expected": "low (lack of corr)"
+   },
+   "Q_amp": {
+    "data": 200.97621647529422,
+    "pct": 3.6,
+    "tail": "L",
+    "tail_extremeness": 96.4,
+    "flagged_95": true,
+    "lit_expected": "low (low quadrupole)"
+   },
+   "axis_conc": {
+    "data": 0.5390717179294249,
+    "pct": 77.15,
+    "tail": "U",
+    "tail_extremeness": 77.15,
+    "flagged_95": false,
+    "lit_expected": "high"
+   },
+   "S_logdet": {
+    "data": 1.9164510615020047,
+    "pct": 97.89,
+    "tail": "U",
+    "tail_extremeness": 97.89,
+    "flagged_95": true,
+    "lit_expected": "high"
+   },
+   "pr_lowell": {
+    "data": 0.38944209981099676,
+    "pct": 59.51,
+    "tail": "L",
+    "tail_extremeness": 40.49,
+    "flagged_95": false,
+    "lit_expected": "low"
+   }
+  },
+  "data_flagged_count": 3,
+  "P_random_sky_has_ge_that_many_anomalies": 0.0069,
+  "mean_anomaly_count_null": 0.35,
+  "joint": {
+   "mahalanobis_D2": 13.907146600154592,
+   "mahalanobis_pct": 94.836,
+   "mahalanobis_chi2_pct": 94.71422980309559,
+   "normalscores_pct": 98.217,
+   "spatial_pct": 93.68333333333332
+  },
+  "registered_union": 0.74022
+ },
+ "60": {
+  "marginals": {
+   "align_23": {
+    "data": 0.9994343493281947,
+    "pct": 99.95,
+    "tail": "U",
+    "tail_extremeness": 99.95,
+    "flagged_95": true,
+    "lit_expected": "high (aligned)"
+   },
+   "A_hemi": {
+    "data": 0.20482044691088114,
+    "pct": 88.63,
+    "tail": "U",
+    "tail_extremeness": 88.63,
+    "flagged_95": false,
+    "lit_expected": "high (asymmetric)"
+   },
+   "S_half": {
+    "data": 5850.806497427264,
+    "pct": 5.93,
+    "tail": "L",
+    "tail_extremeness": 94.07,
+    "flagged_95": false,
+    "lit_expected": "low (lack of corr)"
+   },
+   "Q_amp": {
+    "data": 200.97621647529422,
+    "pct": 3.6,
+    "tail": "L",
+    "tail_extremeness": 96.4,
+    "flagged_95": true,
+    "lit_expected": "low (low quadrupole)"
+   },
+   "axis_conc": {
+    "data": 0.4749551679206011,
+    "pct": 68.3,
+    "tail": "U",
+    "tail_extremeness": 68.3,
+    "flagged_95": false,
+    "lit_expected": "high"
+   },
+   "S_logdet": {
+    "data": 5.628027389067024,
+    "pct": 76.06,
+    "tail": "U",
+    "tail_extremeness": 76.06,
+    "flagged_95": false,
+    "lit_expected": "high"
+   },
+   "pr_lowell": {
+    "data": 0.37296058955294265,
+    "pct": 74.22,
+    "tail": "L",
+    "tail_extremeness": 25.78,
+    "flagged_95": false,
+    "lit_expected": "low"
+   }
+  },
+  "data_flagged_count": 2,
+  "P_random_sky_has_ge_that_many_anomalies": 0.0576,
+  "mean_anomaly_count_null": 0.35,
+  "joint": {
+   "mahalanobis_D2": 9.188434881929636,
+   "mahalanobis_pct": 81.71300000000001,
+   "mahalanobis_chi2_pct": 76.05911002260896,
+   "normalscores_pct": 96.759,
+   "spatial_pct": 75.78333333333333
+  },
+  "registered_union": 0.88979
+ }
+}
