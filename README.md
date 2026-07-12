@@ -16,7 +16,13 @@ The operator's name for this picture is **the structural logos** — Heraclitus'
 
 ---
 
-**What this repo is:** the mathematics of coordination as an accountable quantity, machine-checked in [Lean](https://lean-lang.org/), plus the record of how far the idea reaches — including, prominently, the claims that were tried and *failed*. On 2026-07-10/11, in one two-day audit, the program killed its own same-day discovery (the SHM anchor — executed by pre-registered control within hours of being found), falsified its own favored rescue (the aperture law, by its own upward test), and declined a marriage the arithmetic wouldn't support (the neutrino mass scale). That is not a disclaimer; it is the method. The parts that survive an audit that aggressive are the parts worth having.
+**What this repo is, in three honest layers — read them separately:**
+
+1. **A machine-checked core.** The coordination functional `S = −ln det C` and its properties, formalized in [Lean](https://lean-lang.org/) and kernel-checked: the two-pole bounds, amplitude-invariance, the creation channels, the no-hiding theorem, the **provenance line** (the theory's proved statement of its own blind spots), the four-laws tautology audit, the consent foundation (including an *axiom-free* underdetermination theorem), and the flavor-sector Jarlskog bound. These are true once the definitions are accepted, and they are checked by machine, not by prose. **This is the layer that stands on its own.**
+2. **A measured layer.** `S` computed on real data — a complete larval-zebrafish brain, macaque cortex, markets, IllustrisTNG halos, the CKM/PMNS mixing matrices — with results and error bars, tagged *measured* vs *model* throughout.
+3. **A bet layer.** Physical interpretations — dark energy as the coordination balance, the flavor sector as two books, coordination as a second thermodynamics — offered as **dated, falsifiable predictions**, each with a stated kill condition and, where possible, a script that grades it with no human vote (`experiments/.../grade_dr3.py`).
+
+The layers are kept apart on purpose, and no upper layer is load-bearing on a lower one: **reject every bet and the proofs still stand; reject a proof and tell us which line.** Every claim carries its kill and the program publishes its losses — but the *specific* hypotheses killed along the way live in the git log and `papers/notes/`, not here. A README is a stance, not a diary.
 
 This is the research companion to [RATCHET](../RATCHET), the practical engineering side. Everything is layered: accept the well-tested parts and stop, or read on into the bets. Rejecting a later layer costs nothing in the earlier ones.
 
@@ -136,9 +142,9 @@ experiments adjudicate.
 - **Cross-code (AbacusSummit): consistent-with at < 1σ — untested-but-unopposed.** The estimator transfers cleanly (~1.3%); the box cannot adjudicate the shape at its window and error scale; the decisive requirements are now spec'd (z < 0.2 output + error bars or matched mass definition).
 - **Two in-house kill-tests, spec'd:** the ceiling bench collapse curve, and the coordination-Jarzynski single-κ equality test — the cheapest way the whole genus claim can die.
 
-### What broke this audit (the method working)
+### The falsification discipline (why the kills matter more than the wins)
 
-The SHM anchor (its extremum tracks the GPU cap — killed within hours of discovery); the aperture law (falsified by its own pre-registered upward test); the per-neutrino ln2 posting (misses by ~200×) and the fourth-root neutrino "prediction" (circular — the observed ρ_Λ fed back); the band-tightness amplitude mechanism (refuted by the ladder the same hour it was proposed); the *static* first law (exposed as a tautology by our own Lean audit — holds for arbitrary numbers, demoted to bookkeeping); a favorable cross-code verdict (walked back to < 1σ when its turnover proved smaller than its own error bar); ledger-derivations of statistics, gauge group, and generations (closed at strength, revival conditions staked). Earlier program retractions remain in the record and in git.
+Every residual is a dated debt with a kill condition; a claim with no way to die is rejected before it is entertained; a residual is never counted as support. The program kills its own hypotheses on schedule — a same-day "eureka" executed by pre-registered control within hours, a favored rescue falsified by its own upward test, a favorable verdict walked back when its signal proved smaller than its error bar, a "law" exposed as a tautology by the Lean audit and demoted. **The full graveyard — what has been killed, when, and why — lives in the git log and the dated notes in `papers/notes/`, kept in version control where it belongs.** The point of surfacing the discipline here, rather than the enumeration, is the discipline: the parts that survive an audit this aggressive are the parts worth having.
 
 ---
 

@@ -1,0 +1,395 @@
+{
+ "registration": "DECISIONS.md (2026-07-12)",
+ "n_haar": 200000,
+ "seed_ensemble": 20260710,
+ "seed_bootstrap": 20260712,
+ "sigma_formula": "sigma_max_N1(C)=max_{i<j}(1/li+1/lj)/(1/li^2+1/lj^2), P=1",
+ "checks": {
+  "provenance_max_relerr": 8.01747146419727e-15,
+  "provenance_ok": true,
+  "faithfulness_max_abserr": 0.0,
+  "faithfulness_ok": true
+ },
+ "observed": {
+  "CKM_PDG2024": {
+   "sigma": 1.2011906004599275,
+   "MI": 0.9563713393111786,
+   "absJ": 3.079070264869059e-05,
+   "sinDelta": 0.910296600619102,
+   "S_onehot": 7.466839160323306
+  },
+  "PMNS_NuFit60_NO_loweroctant": {
+   "sigma": 1.3195194118632405,
+   "MI": 0.19101866364546938,
+   "absJ": 0.030664943425899177,
+   "sinDelta": 0.9174379552818097,
+   "S_onehot": 0.9737238492733904
+  },
+  "PMNS_NuFit60_NO_upperoctant": {
+   "sigma": 1.376020535973652,
+   "MI": 0.1944018501981466,
+   "absJ": 0.030490812320582705,
+   "sinDelta": 0.9174379552818098,
+   "S_onehot": 0.983442113899722
+  },
+  "PMNS_deltaCPconserving": {
+   "sigma": 1.2654199353625224,
+   "MI": 0.20325523571416104,
+   "absJ": 4.093325831611872e-18,
+   "sinDelta": 1.224646799147353e-16,
+   "S_onehot": 0.9925837058600409
+  }
+ },
+ "ensemble_progress": {
+  "done": "200000/200000"
+ },
+ "A_concentration": {
+  "sigma_haar": {
+   "mean": 1.3686508826218458,
+   "median": 1.4489061907237795,
+   "quantiles": {
+    "1": 0.7803867964338475,
+    "5": 0.8910032496490387,
+    "10": 0.9833095877529632,
+    "25": 1.2097645028221922,
+    "50": 1.4489061907237795,
+    "75": 1.552585155564375,
+    "90": 1.6174064760554763,
+    "95": 1.646435605835507,
+    "99": 1.6931683914756015
+   }
+  },
+  "spearman_sigma_MI": 0.06270880543193871,
+  "spearman_sigma_MI_p": 2.1720710655622624e-173,
+  "spearman_sigma_absJ": [
+   -0.031528507841439714,
+   3.6192966516232566e-45
+  ],
+  "spearman_sigma_Jmax_ang": [
+   -0.03434084568153652,
+   2.937724431968883e-53
+  ],
+  "sigma_selects": "comonotone/CKM-like (pos MI corr)",
+  "observed_sigma_percentile": {
+   "CKM_PDG2024": 24.407999999999998,
+   "PMNS_NuFit60_NO_loweroctant": 33.933,
+   "PMNS_NuFit60_NO_upperoctant": 39.831,
+   "PMNS_deltaCPconserving": 29.2245
+  },
+  "E_MI_flat": 0.26554389633498865,
+  "E_MI_observed": {
+   "CKM_PDG2024": 0.9563713393111786,
+   "PMNS_NuFit60_NO_loweroctant": 0.19101866364546938,
+   "PMNS_NuFit60_NO_upperoctant": 0.1944018501981466,
+   "PMNS_deltaCPconserving": 0.20325523571416104
+  },
+  "top10pct_sigma": {
+   "E_MI": 0.4567148426963284,
+   "E_absJ": 0.013030120324196658,
+   "E_sinDelta": 0.5709110875809469,
+   "median_MI": 0.438821827957773
+  },
+  "top5pct_sigma": {
+   "E_MI": 0.5251408603244335,
+   "E_absJ": 0.009400075132722407,
+   "E_sinDelta": 0.5490000867807142,
+   "median_MI": 0.5122105919826623
+  },
+  "top1pct_sigma": {
+   "E_MI": 0.6735515915925536,
+   "E_absJ": 0.004526385449704595,
+   "E_sinDelta": 0.5226597779040888,
+   "median_MI": 0.669857718004691
+  }
+ },
+ "B_forward_fork": {
+  "selectors": {
+   "top5pct": {
+    "n_selected": 10000,
+    "absJ": {
+     "mean": 0.009400075132722407,
+     "median": 0.007615886194717321,
+     "quantiles": {
+      "1": 0.0001164435723969741,
+      "5": 0.0006206340447422809,
+      "10": 0.0012707143677799864,
+      "25": 0.003279647045869136,
+      "50": 0.007615886194717321,
+      "75": 0.013887549608380803,
+      "90": 0.020488960358357636,
+      "95": 0.024208149948460364,
+      "99": 0.02975170742480176
+     }
+    },
+    "sinDelta": {
+     "mean": 0.5490000867807142,
+     "median": 0.5552792725201947,
+     "quantiles": {
+      "1": 0.012885837097716905,
+      "5": 0.05860671929575293,
+      "10": 0.11275320514303719,
+      "25": 0.28704123525136804,
+      "50": 0.5552792725201947,
+      "75": 0.8304542070699772,
+      "90": 0.9669432201037872,
+      "95": 0.991880897069938,
+      "99": 0.999641144781606
+     }
+    },
+    "MI": {
+     "mean": 0.5251408603244335,
+     "median": 0.5122105919826623,
+     "quantiles": {
+      "1": 0.2885210829872006,
+      "5": 0.32736170878353643,
+      "10": 0.35945208212244567,
+      "25": 0.4235117221467307,
+      "50": 0.5122105919826623,
+      "75": 0.6063979242486873,
+      "90": 0.7139531457728595,
+      "95": 0.7770953422648786,
+      "99": 0.8911938514087819
+     }
+    },
+    "vs_anarchy": {
+     "KS_absJ_p": 0.0,
+     "KS_sinDelta_p": 1.1299203068114527e-155,
+     "median_shift_absJ": {
+      "shift": -0.01787100351997531,
+      "ci95": [
+       -0.018114116438814058,
+       -0.017678008680385916
+      ],
+      "excludes_zero": true
+     },
+     "median_shift_sinDelta": {
+      "shift": -0.1524187198370528,
+      "ci95": [
+       -0.16359904410892767,
+       -0.14165520743231982
+      ],
+      "excludes_zero": true
+     }
+    },
+    "distinct_from_anarchy": true
+   },
+   "top1pct": {
+    "n_selected": 2000,
+    "absJ": {
+     "mean": 0.004526385449704595,
+     "median": 0.003731442018672303,
+     "quantiles": {
+      "1": 5.343685249801293e-05,
+      "5": 0.00024416782907271385,
+      "10": 0.000561871321607877,
+      "25": 0.00155412254731279,
+      "50": 0.003731442018672303,
+      "75": 0.006959894635119705,
+      "90": 0.009856586093862444,
+      "95": 0.011451096302919461,
+      "99": 0.013969804478755848
+     }
+    },
+    "sinDelta": {
+     "mean": 0.5226597779040888,
+     "median": 0.5156885210420459,
+     "quantiles": {
+      "1": 0.009878963707323829,
+      "5": 0.05730025054118358,
+      "10": 0.09732664424695903,
+      "25": 0.2586302212877005,
+      "50": 0.5156885210420459,
+      "75": 0.7975442448470569,
+      "90": 0.9634189517454743,
+      "95": 0.9919894602057144,
+      "99": 0.9997134130622111
+     }
+    },
+    "MI": {
+     "mean": 0.6735515915925536,
+     "median": 0.669857718004691,
+     "quantiles": {
+      "1": 0.45262085311154643,
+      "5": 0.4877375155983401,
+      "10": 0.515014694993513,
+      "25": 0.5836342821551299,
+      "50": 0.669857718004691,
+      "75": 0.7540095841665053,
+      "90": 0.8382954789821765,
+      "95": 0.887299558085805,
+      "99": 0.9620536100277919
+     }
+    },
+    "vs_anarchy": {
+     "KS_absJ_p": 0.0,
+     "KS_sinDelta_p": 4.379436925146325e-55,
+     "median_shift_absJ": {
+      "shift": -0.02175544769602033,
+      "ci95": [
+       -0.022069501075981584,
+       -0.021476381525621896
+      ],
+      "excludes_zero": true
+     },
+     "median_shift_sinDelta": {
+      "shift": -0.19200947131520163,
+      "ci95": [
+       -0.21787331377652808,
+       -0.17494512457219677
+      ],
+      "excludes_zero": true
+     }
+    },
+    "distinct_from_anarchy": true
+   },
+   "top10pct": {
+    "n_selected": 20000,
+    "absJ": {
+     "mean": 0.013030120324196658,
+     "median": 0.01081555264128366,
+     "quantiles": {
+      "1": 0.00017189197933309847,
+      "5": 0.0008900217013329198,
+      "10": 0.0017858390898381356,
+      "25": 0.004791437505230608,
+      "50": 0.01081555264128366,
+      "75": 0.01946266097027015,
+      "90": 0.0279502000077488,
+      "95": 0.032516608923155645,
+      "99": 0.03964052864624639
+     }
+    },
+    "sinDelta": {
+     "mean": 0.5709110875809469,
+     "median": 0.592086782641398,
+     "quantiles": {
+      "1": 0.013692826080822236,
+      "5": 0.06285505235601192,
+      "10": 0.1222997872488004,
+      "25": 0.30714307057782975,
+      "50": 0.592086782641398,
+      "75": 0.8572237889311858,
+      "90": 0.9733241096001787,
+      "95": 0.9933590714041362,
+      "99": 0.9996948192332868
+     }
+    },
+    "MI": {
+     "mean": 0.4567148426963284,
+     "median": 0.438821827957773,
+     "quantiles": {
+      "1": 0.22441922943470008,
+      "5": 0.2624620934797428,
+      "10": 0.29357199148690427,
+      "25": 0.3530564517638774,
+      "50": 0.438821827957773,
+      "75": 0.5391094337249047,
+      "90": 0.6467969255163688,
+      "95": 0.7201800460398771,
+      "99": 0.8478383354599228
+     }
+    },
+    "vs_anarchy": {
+     "KS_absJ_p": 0.0,
+     "KS_sinDelta_p": 1.4250804975893968e-172,
+     "median_shift_absJ": {
+      "shift": -0.01467133707340897,
+      "ci95": [
+       -0.014901227381257558,
+       -0.014446493453985224
+      ],
+      "excludes_zero": true
+     },
+     "median_shift_sinDelta": {
+      "shift": -0.11561120971584948,
+      "ci95": [
+       -0.12449393113463743,
+       -0.10837390015676111
+      ],
+      "excludes_zero": true
+     }
+    },
+    "distinct_from_anarchy": true
+   }
+  },
+  "tilt_robustness": {
+   "beta1.0": {
+    "absJ_median": 0.023589089625862085,
+    "sinDelta_median": 0.7018715504712066,
+    "MI_median": 0.24787066796832002
+   },
+   "beta2.0": {
+    "absJ_median": 0.019620059588840687,
+    "sinDelta_median": 0.6821372308473107,
+    "MI_median": 0.29181087928543104
+   },
+   "beta5.0": {
+    "absJ_median": 0.010615737946552819,
+    "sinDelta_median": 0.6062400924743385,
+    "MI_median": 0.4357442808825174
+   },
+   "beta_star_PMNS_matched": {
+    "beta_star": -0.1899999999999995,
+    "absJ_median": 0.025102542352969336,
+    "sinDelta_median": 0.7045283763432619,
+    "MI_median": 0.23705863798192028
+   }
+  },
+  "flat_anarchy_reference": {
+   "absJ_median": 0.02548688971469263,
+   "sinDelta_median": 0.7076979923572475,
+   "MI_median": 0.23328472955030755
+  },
+  "minimization_surrogate": {
+   "note": "bottom-5% |J| Haar region (surrogate for Thaler-Trifinopoulos CP-suppression); pole |sinDelta|->0",
+   "absJ_median": 0.0010438883120027567,
+   "sinDelta_median": 0.04691238573938619
+  },
+  "distinct_from_minimization": {
+   "median_sinDelta_shift_vs_min": {
+    "shift": 0.5083668867808085,
+    "ci95": [
+     0.49714943227519554,
+     0.5178029220689911
+    ],
+    "excludes_zero": true
+   },
+   "distinct": true
+  }
+ },
+ "C_leptogenesis": {
+  "capacity_channel_spearman_sigma_Jmax_ang": [
+   -0.03434084568153652,
+   2.937724431968883e-53
+  ],
+  "capacity_channel_spearman_sigma_MI": [
+   0.06270880543193871,
+   2.1720710655622624e-173
+  ],
+  "usage_channel_partial_corr_sigma_sinDelta_given_angles": -0.0012693107365538304,
+  "usage_partial_ci95": [
+   -0.005722298327906763,
+   0.0029465925035481516
+  ],
+  "usage_channel_live": false,
+  "verdict": "usage decoupled: sigma acts through angles only -> under high-scale leptogenesis the observable-delta fork is WEAKENED (selected quantity is the angle structure, not low-energy delta)"
+ },
+ "VERDICT": {
+  "sigma_selects": "comonotone/CKM-like (pos MI corr)",
+  "distinct_from_anarchy_top5": true,
+  "distinct_from_minimization": true,
+  "leptogenesis_keeps_delta_observable": false,
+  "THICK_or_THIN": "THICKENING: distinct registered DUNE fork exists"
+ },
+ "VERDICT_CORRECTED": {
+  "why_auto_booleans_overcounted": "The raw VERDICT booleans are large-N artifacts. (1) distinct_from_anarchy=True fires only in the top-sigma TAIL (KS p~0 at N=2e5 on a real but tail-only shift); the OBSERVED copulas sit at sigma percentile 24-40 (below median), NOT in that tail, and the moment-matched tilt to reproduce PMNS sigma is beta*=-0.19 (NEGATIVE) -> at the observed sigma level MEPP tilting gives |J|,|sinD|,MI within noise of flat anarchy. (2) distinct_from_minimization=True compared |sinDelta| MAGNITUDES; but the DIRECTION of the sigma-max CP shift is SUPPRESSION (|J| 0.0255->0.0037), the SAME sign as minimization, not opposed. Per DECISIONS.md clause (D), a sigma-max that suppresses |J| colliding with minimization is NOT a distinct third prong.",
+  "concentration_on_observed": "NO \u2014 observed CKM/PMNS are low-sigma (pct 24.4/33.9), beta*_PMNS=-0.19<0; MEPP selects AWAY from observed",
+  "spearman_sigma_MI": 0.063,
+  "sigma_MI_effect": "negligible (r=0.063); sigma_flavor ~orthogonal to coordination; weak drift is toward comonotone in the tail, away from anarchic PMNS",
+  "delta_fork_distinct_from_anarchy_at_observed_regime": false,
+  "delta_fork_distinct_from_minimization": false,
+  "cp_direction_of_sigma_max": "SUPPRESSES |J| (same sign as minimization)",
+  "leptogenesis_keeps_delta_observable": false,
+  "THICK_or_THIN": "THIN \u2014 no distinct registered DUNE fork. sigma-max mis-selects the observed copula (low-sigma; beta*<0), and where it moves CP it suppresses it, colliding with minimization rather than opposing it. Reported as a null per DECISIONS.md."
+ }
+}
