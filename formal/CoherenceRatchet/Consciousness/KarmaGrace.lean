@@ -169,13 +169,20 @@ structure FelevenNoGo where
       classical g/J, CMB ℓ=3 shadows) all failed or nulled — the surviving
       inter-agent grace (component (i)) is structurally obscured. -/
   surviving_grace_not_measurable : True
+  /-- OPEN SCOPE (2026-07-20): T1/T2 are pairwise; the coordinated non-pairwise
+      (Thirdness) case of the universal grace operator is untested. Note the
+      surviving inter-agent component (i) IS a coordinated cross-rung dynamics
+      (vouching / composition) — the very coupling F-11's independent k-body test
+      lacked. Scope note; the operator is not constructed.
+      papers/notes/the_third_prenup.md. -/
+  coordinated_nonpairwise_case_open : True
 
-/-- F-11 is fired on the grace construction: the no-go record is inhabited.
+/-- F-11 is fired on the grace construction: the no-go record is inhabited
+    (pairwise closed; coordinated non-pairwise case open scope).
     Mirrors `CorridorProjector.F11_joint_backward_P_omega_no_go` and
-    `ConsentProjector.F11_constrained_tensor_product_P_omega_no_go` — same
-    no-go, recorded on the universal component of grace. -/
+    `ConsentProjector.F11_constrained_tensor_product_P_omega_no_go`. -/
 def F11_universal_grace_operator_no_go : FelevenNoGo :=
-  ⟨trivial, trivial, trivial, trivial⟩
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
 
 /-! ## GRACE — re-grounded to the surviving inter-agent component (i)
 

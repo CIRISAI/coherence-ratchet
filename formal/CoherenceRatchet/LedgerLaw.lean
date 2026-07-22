@@ -106,12 +106,16 @@ books keep themselves" are the same equations; what the theorems rule out is
 narrower and sharper: a corruptible ledger.
 
 KNOWN HOLE, carried on the face: the pairwise/Gaussian shadow of the monotone
-is blind above second order (GHZ-type coordination pays no visible tax).
-Either the true ledger is the all-orders multi-information — and these
-theorems are its small-non-Gaussianity limit — or purely higher-order
-coordination is off-ledger: entropically dark, undetectable at rate S/2. The
-discriminator is specified (rank-based-S flatness test). This is the law's
-own L-01, and the most likely place the structure deepens or breaks.
+is blind above second order (GHZ-type coordination pays no visible tax). This
+hole now has its first-class home in `Core.Thirdness`: coordination is ONE
+quantity (the all-orders multi-information I_total), S = 2·I⁽²⁾ is its pairwise
+TRUNCATION (lower bound I_total ≥ S/2), and the Third is the rest of the same
+quantity — inside the same corridor, undercounted, NOT a second axis. The
+2026-07-20 measurement (TNG300, ~20% of the 3-point, forward-authored;
+experiments/cosmo_entropic_potential/thirdness/) DISFAVORS the "purely higher-
+order is off-ledger / entropically dark" horn: the Third is non-empty and
+measured. The truncation-gap inequality's mechanization is the named open step.
+This is the law's own L-01; prenup papers/notes/the_third_prenup.md (K1–K4).
 
 F-11 SCOPE. Everything here is forward, per-rung content. Nothing reopens
 the joint multi-rung backward P_ω no-go
@@ -236,8 +240,10 @@ structure LedgerLawOpen where
       Roadmap: `Core.EntropicContraction` docstring. -/
   dpi_general_closure_open : True
   /-- ALL-ORDERS EXTENSION. The pairwise/Gaussian S is blind above second
-      order (GHZ pays no tax). Bug or prediction; discriminator specified
-      (rank-based-S flatness; papers/notes/copula_invariance_remark.md). -/
+      order (GHZ pays no tax) — S is the TRUNCATION of the one quantity I_total,
+      the Third its higher-order part (`Core.Thirdness`: `thirdness_line` proved;
+      I_total ≥ S/2 the open step). Measured non-empty (~20%, forward-authored).
+      Prenup: papers/notes/the_third_prenup.md. -/
   higher_order_hole_open : True
   /-- THE Λ CURRENCY. Dark energy as the posted balance is conjecture-grade:
       stock-Λ (exp118, one substrate, moderate), evolving-unit channel with

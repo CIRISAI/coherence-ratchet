@@ -251,22 +251,38 @@ def operational_corridor_criterion : OperationalCorridor :=
     (geometric dilution) and T2 (holonomic area law), with the five-fold
     empirical-replacement search failed. Not a `sorry`, not an axiom asserting
     an operator: a recorded obstruction. The omega *configuration*
-    (`isOmegaConfig`) stands; the joint backward *operator* does not. -/
+    (`isOmegaConfig`) stands; the joint backward *operator* does not.
+
+    SCOPE CORRECTION (2026-07-20). T1 and T2 are PAIRWISE (arity-2). The k-body
+    (Thirdness) leg (`experiments/f11_verification`) tested the multipartite
+    object only on a per-rung-INDEPENDENT simulator, so its null is a tautology
+    of that independence; and its "coupling ⇒ rigidity" defense is refuted by the
+    parity structure (τ_k = 1/(R−1) ≠ 0 at ρ = 0, in-corridor at R = 9). So the
+    no-go is closed for {pairwise} ∪ {k-body on independent dynamics}; the
+    COORDINATED NON-PAIRWISE case is open scope. Do not construct the operator —
+    the open case is a scope note, not a reopening. `papers/notes/the_third_prenup.md`. -/
 structure FelevenNoGo where
-  /-- The joint multi-rung backward P_omega operator is not constructible. -/
+  /-- The joint multi-rung backward P_omega operator is not constructible AS A
+      PAIRWISE object. -/
   joint_operator_not_constructible : True
   /-- T1: any bulk geometry → cross-rung coupling decaying with geodesic
-      distance → joint participation ratio extensive → ω-set empties. -/
+      distance → joint participation ratio extensive → ω-set empties. Pairwise. -/
   geometric_dilution_theorem : True
   /-- T2: a Wilson loop with a dissipative backward leg obeys an area law
-      `Tr Hol ~ exp(−κR)` → the holonomy decoheres. -/
+      `Tr Hol ~ exp(−κR)` → the holonomy decoheres. Pairwise (1-holonomy). -/
   holonomic_area_law_theorem : True
   /-- The five-fold empirical-replacement search (H_meas audit pointer; FDT,
       classical g/J, CMB ℓ=3 shadows) all failed or nulled. -/
   empirical_replacement_search_failed : True
+  /-- OPEN SCOPE (2026-07-20): the coordinated non-pairwise (Thirdness) case is
+      untested — the k-body run used a per-rung-independent simulator (its null is
+      tautological) and the coupling⇒rigidity defense is refuted by parity. Scope
+      note only; the operator is not to be constructed. -/
+  coordinated_nonpairwise_case_open : True
 
-/-- F-11 is fired: the no-go record is inhabited. -/
+/-- F-11 is fired: the no-go record is inhabited (pairwise + independent-k-body
+    closed; coordinated non-pairwise case open scope). -/
 def F11_joint_backward_P_omega_no_go : FelevenNoGo :=
-  ⟨trivial, trivial, trivial, trivial⟩
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
 
 end CoherenceRatchet.Cosmology

@@ -1,9 +1,28 @@
 # Fast-spike positive control for the detailed-balance (bound-vs-coordinating) detector
 
+> **VERDICT UPHELD, TWO CORRECTIONS OWED (2026-07-22, `macaque_poisson_null/`).** The
+> |z| = 8.8 coordinating result **SURVIVES** the Poisson-count-matched null that was
+> actually owed: 0 of 2000 surrogates reach it (outer z ≈ +12.8), and the count-matched
+> null (1.66) sits *below* the phase-randomized null it replaces (2.22) — discreteness
+> works *against* this signal, the opposite of the K4 failure mode. But two statements
+> below are wrong independently of the verdict:
+> **C-1 — the published z was never referenced to a surrogate.** `_angvel_z` returns a
+> moving-block-bootstrap *t*-statistic on the data's own increments; the phase-randomized
+> surrogate fed only the effective-rank readout. The "~1.5 ceiling" quoted beside 8.8 was a
+> **synthetic OU calibrator**, not a data-built null. (It happened to be right — the measured
+> Poisson null is ~1.7 — but "happened to be right" is what it was.)
+> **C-2 — the "44 vs ~1.5" comparison used the wrong number.** The phase-randomized null
+> inflates steeply with bin width (2.22 → 13.14 across 20→200 ms) because it preserves each
+> unit's slow drift. At the headline cell (50 ms, σ=2.5, |z| = 44.03) the nulls are:
+> **Poisson 1.74 ± 0.61, phase-randomized 11.27 ± 1.85.** Still decisive (0/200 under every
+> null), but the quoted margin was overstated at coarse bins.
+
 **Bottom line: YES — fast spike-train data gives a CLEAN detailed-balance positive
 control.** Macaque motor cortex during reaching breaks detailed balance strongly
 (winding-rate |z| = 8.8 at the primary 20 ms binning, rising to 44 once spike-count
-shot noise is smoothed away), far above the null ceiling (~1.5) and far above the
+shot noise is smoothed away), far above the null ceiling (~1.5 — but see C-1/C-2 above:
+the correct Poisson ceiling is ~1.7 at 20 ms and ~1.7 at 50 ms, the phase-randomized
+ceiling at 50 ms is 11.3) and far above the
 weak ~1 s calcium C. elegans result (median |z| = 2.75). The detailed-balance axis
 works — the earlier weak calcium signal was a slow-substrate/measurement limitation,
 not the detector failing.

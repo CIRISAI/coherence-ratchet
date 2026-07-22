@@ -1,0 +1,992 @@
+[
+  {
+    "tag": "scaling",
+    "coupling": "independent",
+    "R": 3,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.499294,
+    "occ_marginal_max": 0.500042,
+    "occ_marginal_mean": 0.4997811666666667,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0001253012880548887,
+      "mean_abs_adj": 0.00018694134107480467,
+      "max_abs": 0.00034500126125669943
+    },
+    "invariants": {
+      "TC": {
+        "measured": 9.913033105490854e-08,
+        "null_mean": 6.864550681218162e-07,
+        "null_scatter": 4.502892704028919e-07,
+        "genuine": -5.873247370669077e-07
+      },
+      "tau_k": {
+        "measured": 4.956516552745427e-08,
+        "null_mean": 3.432275340609081e-07,
+        "null_scatter": 2.2514463520144595e-07,
+        "genuine": -2.9366236853345384e-07
+      },
+      "tri_II_abs_mean": {
+        "measured": 1.2666663717908477e-08,
+        "null_mean": 1.1053881358395283e-07,
+        "null_scatter": 1.8448221648278227e-07,
+        "genuine": -9.787214986604435e-08
+      },
+      "II_Rbody": {
+        "measured": 1.2666663717908477e-08,
+        "null_mean": 1.1050419949458028e-07,
+        "null_scatter": 1.8450295228263968e-07,
+        "genuine": -9.78375357766718e-08
+      }
+    },
+    "runtime_s": 2.8
+  },
+  {
+    "tag": "scaling",
+    "coupling": "independent",
+    "R": 5,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49953275,
+    "occ_marginal_max": 0.50028475,
+    "occ_marginal_mean": 0.49987955,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0006087265356498224,
+      "mean_abs_adj": 0.0005781927980831548,
+      "max_abs": 0.0013166152793709805
+    },
+    "invariants": {
+      "TC": {
+        "measured": 6.133214395021014e-06,
+        "null_mean": 3.829402026145345e-06,
+        "null_scatter": 7.336411051577054e-07,
+        "genuine": 2.3038123688756684e-06
+      },
+      "tau_k": {
+        "measured": 1.5333035987552535e-06,
+        "null_mean": 9.573505065363364e-07,
+        "null_scatter": 1.8341027628942636e-07,
+        "genuine": 5.759530922189171e-07
+      },
+      "tri_II_abs_mean": {
+        "measured": 9.256135280466538e-08,
+        "null_mean": 1.2037046431206338e-07,
+        "null_scatter": 1.1847814913865493e-07,
+        "genuine": -2.7809111507398e-08
+      },
+      "II_Rbody": {
+        "measured": 6.629401294588888e-08,
+        "null_mean": 2.0256309044934065e-07,
+        "null_scatter": 2.3155035079626034e-07,
+        "genuine": -1.3626907750345177e-07
+      }
+    },
+    "runtime_s": 6.4
+  },
+  {
+    "tag": "scaling",
+    "coupling": "independent",
+    "R": 7,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49944875,
+    "occ_marginal_max": 0.5003935,
+    "occ_marginal_mean": 0.5000024642857143,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00041995461384720223,
+      "mean_abs_adj": 0.00045336353870153995,
+      "max_abs": 0.0009927714878575056
+    },
+    "invariants": {
+      "TC": {
+        "measured": 2.2019540265816318e-05,
+        "null_mean": 2.0273121988712006e-05,
+        "null_scatter": 1.6182177321790744e-06,
+        "genuine": 1.7464182771043113e-06
+      },
+      "tau_k": {
+        "measured": 3.669923377636053e-06,
+        "null_mean": 3.3788536647853342e-06,
+        "null_scatter": 2.6970295536317905e-07,
+        "genuine": 2.910697128507187e-07
+      },
+      "tri_II_abs_mean": {
+        "measured": 9.276524259860253e-08,
+        "null_mean": 2.1539204690945722e-07,
+        "null_scatter": 1.1621909165117261e-07,
+        "genuine": -1.226268043108547e-07
+      },
+      "II_Rbody": {
+        "measured": 5.750294107542686e-08,
+        "null_mean": 9.749961904503834e-08,
+        "null_scatter": 8.742515915892597e-08,
+        "genuine": -3.999667796961148e-08
+      }
+    },
+    "runtime_s": 17.2
+  },
+  {
+    "tag": "scaling",
+    "coupling": "independent",
+    "R": 9,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49951675,
+    "occ_marginal_max": 0.5005915,
+    "occ_marginal_mean": 0.4999578888888888,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0004756693793478215,
+      "mean_abs_adj": 0.00034724001866999303,
+      "max_abs": 0.0017438463198850543
+    },
+    "invariants": {
+      "TC": {
+        "measured": 9.7340161104853e-05,
+        "null_mean": 8.709772261550341e-05,
+        "null_scatter": 5.35637808755475e-06,
+        "genuine": 1.0242438489349581e-05
+      },
+      "tau_k": {
+        "measured": 1.2167520138106624e-05,
+        "null_mean": 1.0887215326937927e-05,
+        "null_scatter": 6.695472609443437e-07,
+        "genuine": 1.2803048111686977e-06
+      },
+      "tri_II_abs_mean": {
+        "measured": 2.5326656327706587e-08,
+        "null_mean": 2.6498470208556414e-07,
+        "null_scatter": 4.192549389217351e-08,
+        "genuine": -2.3965804575785755e-07
+      },
+      "II_Rbody": {
+        "measured": 2.4372692308816113e-08,
+        "null_mean": 1.6518087786465685e-07,
+        "null_scatter": 1.093102876103035e-07,
+        "genuine": -1.4080818555584074e-07
+      }
+    },
+    "runtime_s": 56.3
+  },
+  {
+    "tag": "scaling",
+    "coupling": "independent",
+    "R": 11,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49978525,
+    "occ_marginal_max": 0.50029175,
+    "occ_marginal_mean": 0.5000677727272728,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00037384612387983326,
+      "mean_abs_adj": 0.00030143087144540715,
+      "max_abs": 0.001173885462463631
+    },
+    "invariants": {
+      "TC": {
+        "measured": 0.00036309278101320785,
+        "null_mean": 0.0003570800817091306,
+        "null_scatter": 8.83843257285728e-06,
+        "genuine": 6.012699304077274e-06
+      },
+      "tau_k": {
+        "measured": 3.630927810132079e-05,
+        "null_mean": 3.5708008170913054e-05,
+        "null_scatter": 8.838432572857271e-07,
+        "genuine": 6.012699304077342e-07
+      },
+      "tri_II_abs_mean": {
+        "measured": 7.448537120424703e-08,
+        "null_mean": 1.6379090789837076e-07,
+        "null_scatter": 4.9958706560273996e-08,
+        "genuine": -8.930553669412373e-08
+      },
+      "II_Rbody": {
+        "measured": 9.73315223973259e-08,
+        "null_mean": 2.4196166788688817e-07,
+        "null_scatter": 3.9651954589472715e-07,
+        "genuine": -1.4463014548956227e-07
+      }
+    },
+    "runtime_s": 398.2
+  },
+  {
+    "tag": "scaling",
+    "coupling": "independent",
+    "R": 13,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49965575,
+    "occ_marginal_max": 0.500618,
+    "occ_marginal_mean": 0.5000115192307693,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00040251049941754786,
+      "mean_abs_adj": 0.0004634649959898701,
+      "max_abs": 0.0013185033913239068
+    },
+    "invariants": {
+      "TC": {
+        "measured": 0.0014745656481487401,
+        "null_mean": 0.0014822798782549995,
+        "null_scatter": 1.424481912659241e-05,
+        "genuine": -7.714230106259379e-06
+      },
+      "tau_k": {
+        "measured": 0.0001228804706790617,
+        "null_mean": 0.00012352332318791662,
+        "null_scatter": 1.1870682605493721e-06,
+        "genuine": -6.428525088549302e-07
+      },
+      "tri_II_abs_mean": {
+        "measured": 1.1718265045181718e-07,
+        "null_mean": 1.911867688541451e-07,
+        "null_scatter": 6.60877110049915e-08,
+        "genuine": -7.400411840232791e-08
+      }
+    },
+    "runtime_s": 24.7
+  },
+  {
+    "tag": "scaling",
+    "coupling": "global_parity",
+    "R": 3,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.499294,
+    "occ_marginal_max": 0.500042,
+    "occ_marginal_mean": 0.4997835,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0005082793753998,
+      "mean_abs_adj": 0.0007204394952334006,
+      "max_abs": 0.0014119975695738916
+    },
+    "invariants": {
+      "TC": {
+        "measured": 0.9999999999950491,
+        "null_mean": 3.123029462444767e-07,
+        "null_scatter": 1.2486351396344419e-07,
+        "genuine": 0.9999996876921028
+      },
+      "tau_k": {
+        "measured": 0.49999999999752454,
+        "null_mean": 1.5615147312223834e-07,
+        "null_scatter": 6.243175698172209e-08,
+        "genuine": 0.4999998438460514
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999985561306521,
+        "null_mean": 7.76211970254792e-08,
+        "null_scatter": 1.0512903195974698e-07,
+        "genuine": 0.9999984785094551
+      },
+      "II_Rbody": {
+        "measured": 0.9999985561306521,
+        "null_mean": 7.76204681270561e-08,
+        "null_scatter": 1.0512957013228216e-07,
+        "genuine": 0.999998478510184
+      }
+    },
+    "runtime_s": 6.4
+  },
+  {
+    "tag": "scaling",
+    "coupling": "global_parity",
+    "R": 5,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49953275,
+    "occ_marginal_max": 0.50028475,
+    "occ_marginal_mean": 0.4999835,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00045741449090319587,
+      "mean_abs_adj": 0.00044796552840348203,
+      "max_abs": 0.0013166152793709805
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.0000025037249216,
+        "null_mean": 4.75250827432679e-06,
+        "null_scatter": 1.0720271759822417e-06,
+        "genuine": 0.9999977512166472
+      },
+      "tau_k": {
+        "measured": 0.2500006259312304,
+        "null_mean": 1.1881270685816976e-06,
+        "null_scatter": 2.6800679399556043e-07,
+        "genuine": 0.2499994378041618
+      },
+      "tri_II_abs_mean": {
+        "measured": 5.892921395300732e-08,
+        "null_mean": 1.5732256462995684e-07,
+        "null_scatter": 1.5620893581576763e-07,
+        "genuine": -9.839335067694952e-08
+      },
+      "II_Rbody": {
+        "measured": 0.9999965406011198,
+        "null_mean": 1.7948865845459258e-07,
+        "null_scatter": 1.2638329631686485e-07,
+        "genuine": 0.9999963611124613
+      }
+    },
+    "runtime_s": 19.1
+  },
+  {
+    "tag": "scaling",
+    "coupling": "global_parity",
+    "R": 7,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49944875,
+    "occ_marginal_max": 0.5003935,
+    "occ_marginal_mean": 0.4999612142857143,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0004007817745992216,
+      "mean_abs_adj": 0.00047960248061876937,
+      "max_abs": 0.0010185296912065868
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.0000111925034005,
+        "null_mean": 2.1598778196481778e-05,
+        "null_scatter": 3.1463772530526914e-06,
+        "genuine": 0.999989593725204
+      },
+      "tau_k": {
+        "measured": 0.1666685320839001,
+        "null_mean": 3.599796366080296e-06,
+        "null_scatter": 5.243962088421151e-07,
+        "genuine": 0.166664932287534
+      },
+      "tri_II_abs_mean": {
+        "measured": 6.261250105055182e-08,
+        "null_mean": 2.4678827251397216e-07,
+        "null_scatter": 8.18246713095278e-08,
+        "genuine": -1.8417577146342034e-07
+      },
+      "II_Rbody": {
+        "measured": 0.9999867946095948,
+        "null_mean": 3.487822470837898e-07,
+        "null_scatter": 3.073249161046273e-07,
+        "genuine": 0.9999864458273477
+      }
+    },
+    "runtime_s": 56.0
+  },
+  {
+    "tag": "scaling",
+    "coupling": "global_parity",
+    "R": 9,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49951675,
+    "occ_marginal_max": 0.500521,
+    "occ_marginal_mean": 0.49995005555555555,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0004654963161665751,
+      "mean_abs_adj": 0.0003469798312303069,
+      "max_abs": 0.0017438463198850543
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.0000473763227715,
+        "null_mean": 9.016475112666456e-05,
+        "null_scatter": 5.047962384072944e-06,
+        "genuine": 0.9999572115716449
+      },
+      "tau_k": {
+        "measured": 0.12500592204034644,
+        "null_mean": 1.127059389083307e-05,
+        "null_scatter": 6.30995298009118e-07,
+        "genuine": 0.1249946514464556
+      },
+      "tri_II_abs_mean": {
+        "measured": 3.5270058936934645e-08,
+        "null_mean": 2.3622173199521785e-07,
+        "null_scatter": 5.258190710438905e-08,
+        "genuine": -2.0095167305828322e-07
+      },
+      "II_Rbody": {
+        "measured": 0.9999487205389004,
+        "null_mean": 1.0944894264971101e-07,
+        "null_scatter": 9.178652175137902e-08,
+        "genuine": 0.9999486110899577
+      }
+    },
+    "runtime_s": 169.9
+  },
+  {
+    "tag": "scaling",
+    "coupling": "global_parity",
+    "R": 11,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49978525,
+    "occ_marginal_max": 0.50029175,
+    "occ_marginal_mean": 0.500057659090909,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0003836840280968253,
+      "mean_abs_adj": 0.0003544284300649174,
+      "max_abs": 0.001174385704396353
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.000183245921125,
+        "null_mean": 0.0003621007460698304,
+        "null_scatter": 7.954949071512704e-06,
+        "genuine": 0.9998211451750553
+      },
+      "tau_k": {
+        "measured": 0.1000183245921125,
+        "null_mean": 3.621007460698304e-05,
+        "null_scatter": 7.954949071512704e-07,
+        "genuine": 0.09998211451750552
+      },
+      "tri_II_abs_mean": {
+        "measured": 1.6043935518399937e-07,
+        "null_mean": 1.641715196133554e-07,
+        "null_scatter": 5.5402873710667815e-08,
+        "genuine": -3.732164429356034e-09
+      }
+    },
+    "runtime_s": 27.2
+  },
+  {
+    "tag": "scaling",
+    "coupling": "global_parity",
+    "R": 13,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49965575,
+    "occ_marginal_max": 0.50025225,
+    "occ_marginal_mean": 0.4999636923076923,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0004385830452339308,
+      "mean_abs_adj": 0.00046289991900331134,
+      "max_abs": 0.0015069969726604292
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.0007234701221943,
+        "null_mean": 0.0014728509465034751,
+        "null_scatter": 1.761519531506579e-05,
+        "genuine": 0.9992506191756908
+      },
+      "tau_k": {
+        "measured": 0.08339362251018285,
+        "null_mean": 0.00012273757887528962,
+        "null_scatter": 1.4679329429221508e-06,
+        "genuine": 0.08327088493130756
+      },
+      "tri_II_abs_mean": {
+        "measured": 1.756804540630309e-07,
+        "null_mean": 1.8435765383655592e-07,
+        "null_scatter": 4.367657147826845e-08,
+        "genuine": -8.677199773525019e-09
+      }
+    },
+    "runtime_s": 32.8
+  },
+  {
+    "tag": "scaling",
+    "coupling": "block_parity",
+    "R": 3,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.499294,
+    "occ_marginal_max": 0.500042,
+    "occ_marginal_mean": 0.4997835,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0005082793753998,
+      "mean_abs_adj": 0.0007204394952334006,
+      "max_abs": 0.0014119975695738916
+    },
+    "invariants": {
+      "TC": {
+        "measured": 0.9999999999950491,
+        "null_mean": 3.123029462444767e-07,
+        "null_scatter": 1.2486351396344419e-07,
+        "genuine": 0.9999996876921028
+      },
+      "tau_k": {
+        "measured": 0.49999999999752454,
+        "null_mean": 1.5615147312223834e-07,
+        "null_scatter": 6.243175698172209e-08,
+        "genuine": 0.4999998438460514
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999985561306521,
+        "null_mean": 7.76211970254792e-08,
+        "null_scatter": 1.0512903195974698e-07,
+        "genuine": 0.9999984785094551
+      },
+      "II_Rbody": {
+        "measured": 0.9999985561306521,
+        "null_mean": 7.76204681270561e-08,
+        "null_scatter": 1.0512957013228216e-07,
+        "genuine": 0.999998478510184
+      }
+    },
+    "runtime_s": 6.9
+  },
+  {
+    "tag": "scaling",
+    "coupling": "block_parity",
+    "R": 5,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49956075,
+    "occ_marginal_max": 0.50028475,
+    "occ_marginal_mean": 0.4999651,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0005169149861875206,
+      "mean_abs_adj": 0.0004005276346929438,
+      "max_abs": 0.0013166152793709805
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.000003773432974,
+        "null_mean": 4.52527095839983e-06,
+        "null_scatter": 8.54090361259282e-07,
+        "genuine": 0.9999992481620157
+      },
+      "tau_k": {
+        "measured": 0.2500009433582435,
+        "null_mean": 1.1313177395999574e-06,
+        "null_scatter": 2.135225903148205e-07,
+        "genuine": 0.24999981204050392
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.33333332093127294,
+        "null_mean": 3.0791323288623414e-07,
+        "null_scatter": 2.4460337695324847e-07,
+        "genuine": 0.33333301301804
+      },
+      "II_Rbody": {
+        "measured": -5.543977263933186e-07,
+        "null_mean": 1.6041125805443812e-07,
+        "null_scatter": 1.1953233995741645e-07,
+        "genuine": -7.148089844477568e-07
+      }
+    },
+    "runtime_s": 18.8
+  },
+  {
+    "tag": "scaling",
+    "coupling": "block_parity",
+    "R": 7,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49944875,
+    "occ_marginal_max": 0.5002455,
+    "occ_marginal_mean": 0.4999642857142857,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00046286811687101017,
+      "mean_abs_adj": 0.0002481485441608556,
+      "max_abs": 0.0011025813981322538
+    },
+    "invariants": {
+      "TC": {
+        "measured": 2.0000051726141574,
+        "null_mean": 2.0832619108605382e-05,
+        "null_scatter": 2.7543313478481137e-06,
+        "genuine": 1.9999843399950488
+      },
+      "tau_k": {
+        "measured": 0.3333341954356929,
+        "null_mean": 3.472103184767563e-06,
+        "null_scatter": 4.590552246413522e-07,
+        "genuine": 0.3333307233325082
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.39999986702896445,
+        "null_mean": 2.6972933625894294e-07,
+        "null_scatter": 1.1023769626399275e-07,
+        "genuine": 0.3999995972996282
+      },
+      "II_Rbody": {
+        "measured": 1.6354100660365134e-06,
+        "null_mean": 3.7851472978189804e-07,
+        "null_scatter": 2.49064003966117e-07,
+        "genuine": 1.2568953362546154e-06
+      }
+    },
+    "runtime_s": 47.9
+  },
+  {
+    "tag": "scaling",
+    "coupling": "block_parity",
+    "R": 9,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.499576,
+    "occ_marginal_max": 0.50046775,
+    "occ_marginal_mean": 0.4999879444444444,
+    "pairwise_rho": {
+      "mean_abs_all": 0.0005244960956025683,
+      "mean_abs_adj": 0.00037764273302425097,
+      "max_abs": 0.0017438463198850543
+    },
+    "invariants": {
+      "TC": {
+        "measured": 3.000012644467862,
+        "null_mean": 8.942977572849269e-05,
+        "null_scatter": 5.029423745484291e-06,
+        "genuine": 2.9999232146921337
+      },
+      "tau_k": {
+        "measured": 0.37500158055848276,
+        "null_mean": 1.1178721966061586e-05,
+        "null_scatter": 6.286779681855363e-07,
+        "genuine": 0.3749904018365167
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.42857123805674685,
+        "null_mean": 1.7525930304901614e-07,
+        "null_scatter": 6.718251139862543e-08,
+        "genuine": 0.4285710627974438
+      },
+      "II_Rbody": {
+        "measured": -4.2238785384896005e-06,
+        "null_mean": 2.427833978302374e-07,
+        "null_scatter": 3.47622802553334e-07,
+        "genuine": -4.466661936319838e-06
+      }
+    },
+    "runtime_s": 163.4
+  },
+  {
+    "tag": "scaling",
+    "coupling": "block_parity",
+    "R": 11,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49978525,
+    "occ_marginal_max": 0.50029175,
+    "occ_marginal_mean": 0.5000360454545455,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00040273775025972584,
+      "mean_abs_adj": 0.00031874776057798663,
+      "max_abs": 0.001174385704396353
+    },
+    "invariants": {
+      "TC": {
+        "measured": 3.0000373190464282,
+        "null_mean": 0.000361027510152212,
+        "null_scatter": 7.683004515139355e-06,
+        "genuine": 2.999676291536276
+      },
+      "tau_k": {
+        "measured": 0.3000037319046428,
+        "null_mean": 3.61027510152212e-05,
+        "null_scatter": 7.683004515139348e-07,
+        "genuine": 0.29996762915362757
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.3333327450406651,
+        "null_mean": 2.434803653262997e-07,
+        "null_scatter": 9.318031304217315e-08,
+        "genuine": 0.3333325015602998
+      }
+    },
+    "runtime_s": 29.5
+  },
+  {
+    "tag": "scaling",
+    "coupling": "block_parity",
+    "R": 13,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.49965575,
+    "occ_marginal_max": 0.500618,
+    "occ_marginal_mean": 0.5000966153846153,
+    "pairwise_rho": {
+      "mean_abs_all": 0.00037204988191632263,
+      "mean_abs_adj": 0.0004983948185381759,
+      "max_abs": 0.001304653127003312
+    },
+    "invariants": {
+      "TC": {
+        "measured": 4.000083896519273,
+        "null_mean": 0.0014818296110232037,
+        "null_scatter": 8.196606412532142e-06,
+        "genuine": 3.99860206690825
+      },
+      "tau_k": {
+        "measured": 0.3333403247099394,
+        "null_mean": 0.0001234858009186003,
+        "null_scatter": 6.830505343776794e-07,
+        "genuine": 0.3332168389090208
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.36363628020642563,
+        "null_mean": 1.2127418015944916e-07,
+        "null_scatter": 4.007665634811143e-08,
+        "genuine": 0.3636361589322455
+      }
+    },
+    "runtime_s": 33.1
+  },
+  {
+    "tag": "scaling",
+    "coupling": "vouching",
+    "R": 3,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.499294,
+    "occ_marginal_max": 0.499294,
+    "occ_marginal_mean": 0.49929400000000007,
+    "pairwise_rho": {
+      "mean_abs_all": 1.0,
+      "mean_abs_adj": 1.0,
+      "max_abs": 1.0
+    },
+    "invariants": {
+      "TC": {
+        "measured": 1.9999971236344625,
+        "null_mean": 4.319806679031757e-07,
+        "null_scatter": 5.286392877349285e-07,
+        "genuine": 1.9999966916537946
+      },
+      "tau_k": {
+        "measured": 0.9999985618172312,
+        "null_mean": 2.1599033395158784e-07,
+        "null_scatter": 2.6431964386746423e-07,
+        "genuine": 0.9999983458268973
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999985618172313,
+        "null_mean": 1.7883570653983347e-07,
+        "null_scatter": 3.741765219451936e-07,
+        "genuine": 0.9999983829815248
+      },
+      "II_Rbody": {
+        "measured": -0.9999985618172313,
+        "null_mean": 1.7883570653983347e-07,
+        "null_scatter": 3.741765219451936e-07,
+        "genuine": -0.9999987406529379
+      }
+    },
+    "runtime_s": 6.9
+  },
+  {
+    "tag": "scaling",
+    "coupling": "vouching",
+    "R": 5,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.5001205,
+    "occ_marginal_max": 0.5001205,
+    "occ_marginal_mean": 0.5001205,
+    "pairwise_rho": {
+      "mean_abs_all": 1.0,
+      "mean_abs_adj": 1.0,
+      "max_abs": 1.0
+    },
+    "invariants": {
+      "TC": {
+        "measured": 3.999999832413658,
+        "null_mean": 4.678281362450558e-06,
+        "null_scatter": 4.740786210932447e-07,
+        "genuine": 3.9999951541322956
+      },
+      "tau_k": {
+        "measured": 0.9999999581034145,
+        "null_mean": 1.1695703406126394e-06,
+        "null_scatter": 1.1851965527331118e-07,
+        "genuine": 0.9999987885330739
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999999581034146,
+        "null_mean": 1.2548702963164103e-07,
+        "null_scatter": 1.160961984191099e-07,
+        "genuine": 0.9999998326163849
+      },
+      "II_Rbody": {
+        "measured": -0.9999999581034145,
+        "null_mean": 1.293131357549271e-07,
+        "null_scatter": 1.4019739332828736e-07,
+        "genuine": -1.0000000874165502
+      }
+    },
+    "runtime_s": 19.1
+  },
+  {
+    "tag": "scaling",
+    "coupling": "vouching",
+    "R": 7,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.4998945,
+    "occ_marginal_max": 0.4998945,
+    "occ_marginal_mean": 0.49989449999999996,
+    "pairwise_rho": {
+      "mean_abs_all": 1.0,
+      "mean_abs_adj": 1.0,
+      "max_abs": 1.0
+    },
+    "invariants": {
+      "TC": {
+        "measured": 5.999999807309321,
+        "null_mean": 2.0528859241123836e-05,
+        "null_scatter": 3.2496195490295943e-06,
+        "genuine": 5.99997927845008
+      },
+      "tau_k": {
+        "measured": 0.9999999678848868,
+        "null_mean": 3.421476540187306e-06,
+        "null_scatter": 5.416032581715991e-07,
+        "genuine": 0.9999965464083466
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999999678848868,
+        "null_mean": 1.2397020429470255e-07,
+        "null_scatter": 7.449713412702416e-08,
+        "genuine": 0.9999998439146824
+      },
+      "II_Rbody": {
+        "measured": -0.9999999678848868,
+        "null_mean": 2.701804659999141e-07,
+        "null_scatter": 2.0492500713187238e-07,
+        "genuine": -1.0000002380653528
+      }
+    },
+    "runtime_s": 56.1
+  },
+  {
+    "tag": "scaling",
+    "coupling": "vouching",
+    "R": 9,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.500334,
+    "occ_marginal_max": 0.500334,
+    "occ_marginal_mean": 0.500334,
+    "pairwise_rho": {
+      "mean_abs_all": 0.9999999999999998,
+      "mean_abs_adj": 0.9999999999999999,
+      "max_abs": 0.9999999999999999
+    },
+    "invariants": {
+      "TC": {
+        "measured": 7.999997424939202,
+        "null_mean": 8.84869572006508e-05,
+        "null_scatter": 5.203416367273308e-06,
+        "genuine": 7.999908937982001
+      },
+      "tau_k": {
+        "measured": 0.9999996781174002,
+        "null_mean": 1.106086965008135e-05,
+        "null_scatter": 6.504270459091635e-07,
+        "genuine": 0.9999886172477501
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999996781174002,
+        "null_mean": 1.4093752113512417e-07,
+        "null_scatter": 4.8780665305492757e-08,
+        "genuine": 0.9999995371798791
+      },
+      "II_Rbody": {
+        "measured": -0.9999996781174002,
+        "null_mean": 2.8356537651319513e-07,
+        "null_scatter": 3.1694338491473526e-07,
+        "genuine": -0.9999999616827767
+      }
+    },
+    "runtime_s": 159.3
+  },
+  {
+    "tag": "scaling",
+    "coupling": "vouching",
+    "R": 11,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.50000975,
+    "occ_marginal_max": 0.50000975,
+    "occ_marginal_mean": 0.5000097500000001,
+    "pairwise_rho": {
+      "mean_abs_all": 1.0,
+      "mean_abs_adj": 1.0,
+      "max_abs": 1.0
+    },
+    "invariants": {
+      "TC": {
+        "measured": 9.999999997257076,
+        "null_mean": 0.00036798937187724573,
+        "null_scatter": 1.0333376546987919e-05,
+        "genuine": 9.999632007885198
+      },
+      "tau_k": {
+        "measured": 0.9999999997257076,
+        "null_mean": 3.679893718772458e-05,
+        "null_scatter": 1.0333376546987926e-06,
+        "genuine": 0.9999632007885199
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999999997257076,
+        "null_mean": 2.1207462348378142e-07,
+        "null_scatter": 1.2062551464909738e-07,
+        "genuine": 0.9999997876510841
+      }
+    },
+    "runtime_s": 22.3
+  },
+  {
+    "tag": "scaling",
+    "coupling": "vouching",
+    "R": 13,
+    "g": 1.0,
+    "q": 1.0,
+    "N": 4000000,
+    "occ_marginal_min": 0.50012875,
+    "occ_marginal_max": 0.50012875,
+    "occ_marginal_mean": 0.50012875,
+    "pairwise_rho": {
+      "mean_abs_all": 1.0,
+      "mean_abs_adj": 1.0,
+      "max_abs": 1.0
+    },
+    "invariants": {
+      "TC": {
+        "measured": 11.999999426041803,
+        "null_mean": 0.0014606578776067043,
+        "null_scatter": 2.3786449081425596e-05,
+        "genuine": 11.998538768164197
+      },
+      "tau_k": {
+        "measured": 0.9999999521701503,
+        "null_mean": 0.00012172148980055871,
+        "null_scatter": 1.9822040901187994e-06,
+        "genuine": 0.9998782306803496
+      },
+      "tri_II_abs_mean": {
+        "measured": 0.9999999521701504,
+        "null_mean": 2.003277869582142e-07,
+        "null_scatter": 4.576968151912428e-08,
+        "genuine": 0.9999997518423634
+      }
+    },
+    "runtime_s": 26.1
+  }
+]

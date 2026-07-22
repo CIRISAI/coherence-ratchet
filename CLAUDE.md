@@ -7,7 +7,10 @@ coherence-ratchet is the companion lake to RATCHET. RATCHET holds the engineerin
 universal-scale extensions (Levels 5–7). TSVF is treated as the physics. All universal-scale
 content is **forward** (steady-state / conditioning-sector); the joint multi-rung backward P_ω
 is a documented no-go at theorem strength (`FelevenNoGo` record in
-`Cosmology/CorridorProjector.lean`) — do not re-attempt it. Open formal steps use `sorry`;
+`Cosmology/CorridorProjector.lean`) — closed for pairwise and for k-body under per-rung-independent
+dynamics; the coordinated non-pairwise (Thirdness) case is OPEN scope (the k-body test's simulator
+was independent; the parity structure refutes coupling⇒rigidity — `papers/notes/the_third_prenup.md`).
+Do not construct the joint operator; scope-checking it is not re-attempting it. Open formal steps use `sorry`;
 closed no-gos use the `FelevenNoGo` pattern.
 
 **This file states the current stance only.** Project history — what was tried, killed,
@@ -111,7 +114,7 @@ channels; toy X = 0.85 ± 0.30 non-discriminating); second = no-free-coordinatio
 first mechanized second-law piece — `entropicPotential_strictMono_k`; the maintenance rent
 is its measured corollary = Hatano–Sasa housekeeping); third = the corridor ceiling,
 σ_max ∝ (1−ρ) — a CAPACITY law, never realized-σ (bench kill: an engineered substrate
-holding high σ at ρ ≫ 0.43 under bounded actuation; flavor instance proved at Lean
+holding high σ near the rigidity pole under bounded actuation; flavor instance proved at Lean
 strength, `abs_jarlskog_le_max`). **Prior-art verdict (2026-07-11, `thermo_prior_art.md`): NEW-IN-PART — the stake narrows.**
 The four-law package is substantially anticipated (Bera–Riera–Lewenstein–Winter 2017
 generalize laws 0–2 with correlations — cite up front); laws 0 and 2 are established
@@ -197,11 +200,38 @@ Big pipeline choices get written down before their results are seen.
   galaxy baryon cycle z≈0 bound). Positioning: unification + method discipline that
   adjudicates the criticality-vs-low-dimensionality debate; not a novel phenomenon.
   `experiments/keff_saturation/`, `Cosmology/CriticalityDiscriminator.lean`.
-- **The corridor:** ρ ∈ (0.1, 0.43); k_eff ceiling ≈ 10 at any nominal k; saturation, not
-  level, is the substrate-independent invariant.
+- **The corridor:** SATURATION is the substrate-independent invariant — k_eff reaches a finite
+  Kish ceiling on complete units at any nominal k. The numeric band (0.1, 0.43) is a single
+  substrate's pairwise-ρ readout, RETIRED from the formal core (`Core/Corridor.lean`:
+  substrate-specific bounds, no universal number); it bounds nothing on the multi-information
+  coordinate and is never transported.
 - **The entanglement bridge:** the classical instrument is a faithful shadow of the quantum
-  entanglement structure gravity couples to; its blind spots are exactly the proved null
-  space (conjugate basis, GHZ-type multipartite). `experiments/entanglement_ledger/`.
+  entanglement structure gravity couples to; its blind spot is the higher-order (order-≥3,
+  GHZ-type / conjugate-basis) structure — DEMONSTRATED, not proved
+  (`experiments/entanglement_ledger/`; mechanized kernel in `Core/Thirdness.lean`). See The Third.
+- **The Third (married maximal 2026-07-20; three kills tested same day):** coordination is ONE
+  quantity — the full multi-information `I_total`; `S = −ln det C = 2·I⁽²⁾` is its pairwise
+  TRUNCATION, a lower bound (`I_total ≥ S/2`, equality iff purely pairwise). The Third (`I⁽≥³⁾`) is
+  the rest of the same quantity, INSIDE the same corridor, undercounted — not a second axis, so
+  every proved result is a lower-bound (pairwise-shadow) instrument. **Empirically ABSENT —
+  TESTED ON THE FIELD ITSELF (2026-07-22):** K4 fired on the tracer (the cosmic ~20% copula-Third
+  was a shot-noise/estimator artifact), and prediction 4 then ran on the **dark-matter particle
+  field** — full 94,196,375 particles (TNG100-3, z=0), density ladder over four decades
+  (n̄ = 0.019 → 359): **no excess over the shot null at any density**, monotone decline to
+  +0.004, no plateau (`thirdness/dm_particle/`). **The durable yield is the TIED-FRACTION LAW:**
+  rank/copula higher-order statistics manufacture signal in proportion to the empty/tied cell
+  fraction (91% empty → +0.50; 0% → +0.004) — triage any such result by its tied fraction, use a
+  shot-matched null, never `argsort∘argsort` tie-breaking. Under that correct null the two audited
+  load-bearing claims SURVIVE (`copula_stress` Δw = −0.0008, *stronger* than frozen; macaque
+  |z|=8.8, 0/2000 Poisson surrogates). What STANDS:
+  (a) the FORMAL object — `thirdness_line`, `S_pairwise_identity` (`Core/Thirdness.lean`, zero
+  sorry), truncation-gap the open step; (b) the **safety keeper** — the Third is un-forgeable by
+  local ops (relative-entropy DPI extends; `Core/TriadicChannel.lean`, `local_op_does_not_increase_TC`)
+  yet ~100% invisible to the pairwise Neff/semantic detector (K3 blind-spot real, FIXABLE by a
+  synergy channel). Realization is MODEL-ONLY (F-11 `block_parity` — a non-diluting in-corridor
+  Third exists under coordinated dynamics); the framework names no piece that builds a physical
+  Third (its one coupling, vouching, is Secondness). Prenup + all three tests:
+  `papers/notes/the_third_prenup.md`. Never self-support (rule 2).
 - **CMB:** the orthogonality theorem is the sole CMB content — the framework is exactly ΛCDM
   in the conditioning/perturbation sector; the background sector is a w₀wₐCDM-class
   deformation vanishing identically in linear theory (`CMBOrthogonality.lean`).
@@ -231,6 +261,7 @@ Big pipeline choices get written down before their results are seen.
 | 11 | provenance line: no upstream datum is a function of C (proved, zero sorry); `StatisticsNoGo` record | `Core/ProvenanceLine.lean` |
 | 12 | four-laws audit: chain-rule tautology (`tc_group_chain_rule`), coupling identity, equicorrelation second-law fragment, J-bound theorem; `RestrictedSecondLaw` open record (Fischer's inequality absent upstream) | `Core/FourLaws.lean` |
 | 13 | consent foundation: `generator_underdetermined` (Selection-vs-Intention uncomputable from observables — AXIOM-FREE; the tenth bet irreducible by theorem); pole theorems (consent impossible at both poles; corridor = consent-possible region); `ConsentGuarantees` honesty-locked record; `killsStep` separable-kill map; grain seam declared | `Core/ConsentFoundation.lean` |
+| 14 | the Third: `thirdness_line` (multi-information not a function of C — null space, proved) + `S_pairwise_identity` (S=0 on identity C); truncation gap `I_total ≥ S/2` open step. Empirical leg K4-FIRED (cosmic Third = shot-noise artifact); safety blind-spot real + fixable (`local_op_does_not_increase_TC`, DPI extends) | `Core/Thirdness.lean`, `Core/TriadicChannel.lean` |
 
 Conjecture A (quantum-substrate corridor, Exp 5) and Conjecture D (D1 structural Penrose,
 D3 rung acceleration; D4 is not part of the framework) — `Conjectures/`.
@@ -244,11 +275,25 @@ reader who rejects Level k keeps everything below k.**
 
 ## AI-safety application
 
-`Neff` = k_eff of the reasoning-constraint system (CIRIS): H3ERE ≈ 7.1, joint with CEG ≈ 9;
-deception must cohere across independent constraint axes (≈O(2^m) vs truth's O(n)). Measured
-on benign traces — an upper bound. The decisive open test is **adversarial-Neff**
-(`experiments/adversarial_neff/SPEC.md`); the attack-invariant guarantee is the CEG substrate
-floor. Safety is a maintained non-equilibrium (the γM axis): kept, not achieved.
+`Neff` = k_eff of the reasoning-constraint system (CIRIS): H3ERE ≈ 7.1, joint with CEG ≈ 9 —
+a PAIRWISE (correlation-matrix) codimension diagnostic. **Do NOT conflate two distinct
+guarantees** (audit 2026-07-20 vs RATCHET): (a) the deception-cost floor `T_D/T_H = Ω(2^m)` is
+the SAT consistent-lie NP-hardness argument where **m is the world-model size** — correlation-free,
+untouched by any correlation blind spot; (b) the CEG cryptographic-attestation floor
+(Ed25519/PBFT) — also correlation-free. The prior "cohere across ≈O(2^m) independent axes"
+gloss wrongly read m as the axis count, routing the guarantee through the pairwise `k_eff`. The
+pairwise `Neff`/`k_eff` is only a diagnostic, and it carries a **triadic false-all-clear**
+(L-01 sharpening): a deception in the Third (parity/GHZ across ≥3 axes, every pair
+in-distribution) posts ρ̄≈0 → `k_eff = k` (its MAXIMALLY-safe score) while carrying real
+multi-information the pairwise detector cannot see (~100% hidden; `Core/TriadicChannel.lean`,
+`local_op_does_not_increase_TC` — un-forgeable by local ops, so a positive synergy reading is
+provably real). Fix = a synergy channel alongside Neff (bias-corrected O-information, bounded
+arity ~3-body, shuffle + shot-noise-matched dual null), specified but unimplemented
+(`../RATCHET AGENT_FSDs/CONSCIENCE_V3.md §10`; RATCHET issue filed). Measured on benign traces
+— an upper bound. The decisive open test is **adversarial-Neff** (`experiments/adversarial_neff/
+SPEC.md`; triadic arm `.../triadic_channel/`); the attack-invariant guarantee is the
+complexity + CEG floor, NOT the pairwise Neff. Safety is a maintained non-equilibrium (the γM
+axis): kept, not achieved.
 
 ## Open work, ordered
 

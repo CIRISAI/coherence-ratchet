@@ -181,12 +181,21 @@ structure FelevenNoGo where
   /-- The five-fold empirical-replacement search (H_meas audit pointer; FDT,
       classical g/J, CMB ℓ=3 shadows) all failed or nulled. -/
   empirical_replacement_search_failed : True
+  /-- OPEN SCOPE (2026-07-20): a tensor product P_{G_1}⊗…⊗P_{G_n} is SEPARABLE
+      by construction — it cannot represent a genuinely multipartite (non-
+      separable, GHZ/Thirdness) joint object at all. So this no-go closes the
+      separable / pairwise formulation; the coordinated non-pairwise (entangled)
+      case is OUT OF ITS SCOPE, not closed by it. The ω-condition "all rungs in
+      corridor simultaneously" is exactly a non-separable joint property a product
+      ansatz cannot express. Scope note; operator not constructed.
+      papers/notes/the_third_prenup.md. -/
+  coordinated_nonpairwise_case_open : True
 
 /-- F-11 is fired on the constrained-tensor-product branch: the no-go record
-    is inhabited. Mirrors `CorridorProjector.F11_joint_backward_P_omega_no_go`
-    — same no-go, recorded on the tensor-product formulation. -/
+    is inhabited (separable/pairwise closed; non-separable multipartite case
+    open scope). Mirrors `CorridorProjector.F11_joint_backward_P_omega_no_go`. -/
 def F11_constrained_tensor_product_P_omega_no_go : FelevenNoGo :=
-  ⟨trivial, trivial, trivial, trivial⟩
+  ⟨trivial, trivial, trivial, trivial, trivial⟩
 
 /-! ## What survives — the finite-federation consent structure
 

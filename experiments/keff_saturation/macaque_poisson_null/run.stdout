@@ -1,0 +1,114 @@
+
+########## run 2026-07-21 11:43:43 ##########
+loaded 142 units, 131669 spikes, span 293.7s, 100 reaches
+GATE: frozen |z| = 8.83, reproduced = 8.830 (delta 0.0000)  units=142 spikes=131669 reaches=100  -> PASS
+
+=== bin = 20 ms  (primary_20ms)  N x T = (142, 14684)  sigma_rate = 25.0 bins ===
+  REAL: |z|_inner = 8.830  mu = +0.030823  se = 0.003491  pair = [0, 1]  T = 14684
+    ... 25/800 surrogates  (5s)
+    ... 50/800 surrogates  (11s)
+    ... 75/800 surrogates  (16s)
+    ... 100/800 surrogates  (22s)
+    ... 125/800 surrogates  (28s)
+    ... 150/800 surrogates  (33s)
+    ... 175/800 surrogates  (38s)
+    ... 200/800 surrogates  (43s)
+    ... 225/800 surrogates  (48s)
+    ... 250/800 surrogates  (52s)
+    ... 275/800 surrogates  (56s)
+    ... 300/800 surrogates  (60s)
+    ... 325/800 surrogates  (65s)
+    ... 350/800 surrogates  (70s)
+    ... 375/800 surrogates  (75s)
+    ... 400/800 surrogates  (80s)
+    ... 425/800 surrogates  (85s)
+    ... 450/800 surrogates  (90s)
+    ... 475/800 surrogates  (95s)
+    ... 500/800 surrogates  (100s)
+    ... 525/800 surrogates  (106s)
+    ... 550/800 surrogates  (112s)
+    ... 575/800 surrogates  (116s)
+    ... 600/800 surrogates  (121s)
+    ... 625/800 surrogates  (126s)
+    ... 650/800 surrogates  (132s)
+    ... 675/800 surrogates  (137s)
+    ... 700/800 surrogates  (143s)
+    ... 725/800 surrogates  (148s)
+    ... 750/800 surrogates  (153s)
+    ... 775/800 surrogates  (157s)
+    ... 800/800 surrogates  (161s)
+  NULL-P : |z|_inner null =   2.22 +-  0.74 (max   4.37) | outer z(|mu|) =   +3.15  p = 0.0050 | outer z(|z|) =   +8.97  p = 0.0050
+  NULL-A : |z|_inner null =   1.64 +-  0.54 (max   3.25) | outer z(|mu|) =   +3.02  p = 0.0100 | outer z(|z|) =  +13.25  p = 0.0050
+  NULL-B1: |z|_inner null =   1.72 +-  0.60 (max   4.40) | outer z(|mu|) =   +3.29  p = 0.0199 | outer z(|z|) =  +11.90  p = 0.0050
+  NULL-B0: |z|_inner null =   2.45 +-  0.81 (max   4.93) | outer z(|mu|) =   +3.03  p = 0.0050 | outer z(|z|) =   +7.88  p = 0.0050
+
+=== bin = 50 ms  (sweep_50ms)  N x T = (142, 5874)  sigma_rate = 10.0 bins ===
+  REAL: |z|_inner = 23.130  mu = -0.100620  se = 0.004350  pair = [0, 1]  T = 5874
+    ... 25/400 surrogates  (2s)
+    ... 50/400 surrogates  (4s)
+    ... 75/400 surrogates  (5s)
+    ... 100/400 surrogates  (7s)
+    ... 125/400 surrogates  (8s)
+    ... 150/400 surrogates  (9s)
+    ... 175/400 surrogates  (10s)
+    ... 200/400 surrogates  (11s)
+    ... 225/400 surrogates  (13s)
+    ... 250/400 surrogates  (14s)
+    ... 275/400 surrogates  (16s)
+    ... 300/400 surrogates  (17s)
+    ... 325/400 surrogates  (18s)
+    ... 350/400 surrogates  (20s)
+    ... 375/400 surrogates  (21s)
+    ... 400/400 surrogates  (22s)
+  NULL-P : |z|_inner null =   5.52 +-  1.19 (max   8.13) | outer z(|mu|) =   +5.34  p = 0.0099 | outer z(|z|) =  +14.84  p = 0.0099
+  NULL-A : |z|_inner null =   1.67 +-  0.49 (max   3.46) | outer z(|mu|) =  +11.19  p = 0.0099 | outer z(|z|) =  +44.12  p = 0.0099
+  NULL-B1: |z|_inner null =   1.84 +-  0.57 (max   3.31) | outer z(|mu|) =  +12.25  p = 0.0099 | outer z(|z|) =  +37.67  p = 0.0099
+  NULL-B0: |z|_inner null =   6.61 +-  1.33 (max  11.50) | outer z(|mu|) =   +5.97  p = 0.0099 | outer z(|z|) =  +12.41  p = 0.0099
+
+=== bin = 100 ms  (sweep_100ms)  N x T = (142, 2937)  sigma_rate = 5.0 bins ===
+  REAL: |z|_inner = 37.803  mu = -0.207695  se = 0.005494  pair = [0, 1]  T = 2937
+    ... 25/400 surrogates  (1s)
+    ... 50/400 surrogates  (1s)
+    ... 75/400 surrogates  (2s)
+    ... 100/400 surrogates  (3s)
+    ... 125/400 surrogates  (4s)
+    ... 150/400 surrogates  (4s)
+    ... 175/400 surrogates  (5s)
+    ... 200/400 surrogates  (5s)
+    ... 225/400 surrogates  (6s)
+    ... 250/400 surrogates  (7s)
+    ... 275/400 surrogates  (8s)
+    ... 300/400 surrogates  (8s)
+    ... 325/400 surrogates  (9s)
+    ... 350/400 surrogates  (10s)
+    ... 375/400 surrogates  (10s)
+    ... 400/400 surrogates  (11s)
+  NULL-P : |z|_inner null =   9.43 +-  1.58 (max  14.39) | outer z(|mu|) =   +6.90  p = 0.0099 | outer z(|z|) =  +17.93  p = 0.0099
+  NULL-A : |z|_inner null =   1.75 +-  0.54 (max   3.17) | outer z(|mu|) =  +16.35  p = 0.0099 | outer z(|z|) =  +66.64  p = 0.0099
+  NULL-B1: |z|_inner null =   2.20 +-  0.80 (max   4.85) | outer z(|mu|) =  +15.62  p = 0.0099 | outer z(|z|) =  +44.71  p = 0.0099
+  NULL-B0: |z|_inner null =  10.32 +-  1.49 (max  14.79) | outer z(|mu|) =   +8.39  p = 0.0099 | outer z(|z|) =  +18.44  p = 0.0099
+
+=== bin = 200 ms  (sweep_200ms)  N x T = (142, 1469)  sigma_rate = 2.5 bins ===
+  REAL: |z|_inner = 47.003  mu = +0.410984  se = 0.008744  pair = [0, 1]  T = 1469
+    ... 25/400 surrogates  (0s)
+    ... 50/400 surrogates  (1s)
+    ... 75/400 surrogates  (1s)
+    ... 100/400 surrogates  (2s)
+    ... 125/400 surrogates  (2s)
+    ... 150/400 surrogates  (3s)
+    ... 175/400 surrogates  (3s)
+    ... 200/400 surrogates  (3s)
+    ... 225/400 surrogates  (4s)
+    ... 250/400 surrogates  (4s)
+    ... 275/400 surrogates  (4s)
+    ... 300/400 surrogates  (5s)
+    ... 325/400 surrogates  (5s)
+    ... 350/400 surrogates  (5s)
+    ... 375/400 surrogates  (6s)
+    ... 400/400 surrogates  (6s)
+  NULL-P : |z|_inner null =  13.14 +-  2.88 (max  19.75) | outer z(|mu|) =   +4.81  p = 0.0099 | outer z(|z|) =  +11.74  p = 0.0099
+  NULL-A : |z|_inner null =   1.75 +-  0.61 (max   4.62) | outer z(|mu|) =  +24.97  p = 0.0099 | outer z(|z|) =  +74.32  p = 0.0099
+  NULL-B1: |z|_inner null =   2.17 +-  0.76 (max   4.40) | outer z(|mu|) =  +23.50  p = 0.0099 | outer z(|z|) =  +58.66  p = 0.0099
+  NULL-B0: |z|_inner null =  11.24 +-  2.08 (max  17.72) | outer z(|mu|) =   +6.73  p = 0.0099 | outer z(|z|) =  +17.18  p = 0.0099
+
+done.
